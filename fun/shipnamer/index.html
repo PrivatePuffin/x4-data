@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Random Ship Namer - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="random, name, generator, gaming, roguey">
+		<META NAME="Description" CONTENT="Random ship name generator">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/fun/shipnamer/">
+		<meta property="og:description" content="Random ship name generator">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Random Ship Namer">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+ 	<h1>Random name generator</h1>
+
+
+	Have you ever thought about making your own ship? why not try my <a href="../shipmake/" target="_new">ship maker</a>.
+	<br><br>
+
+
+	<div style="width: 95%; border: 1px solid #E1E1E1; overflow-x:hidden; overflow-y:hidden; margin-left: auto; margin-right: auto;" id="ship_names">
+	</div>
+
+	<br>
+
+	<div style="text-align: center;">
+		<input type="submit"  onClick="update_names();" value="Refresh" id="refresh_but">
+	</div>
+	<br><br>
+
+	<script>
+	
+	var http 		= new XMLHttpRequest();
+	var refresh_but	= document.getElementById('refresh_but');
+
+
+	function update_names()
+	{
+		var rand = Math.random(9999);
+
+		http.open("GET", "name_generator.php?id="+rand, true);
+
+		http.onreadystatechange=function() 
+		{
+			if(http.readyState == 4)
+				document.getElementById('ship_names').innerHTML = http.responseText;
+		}
+
+  		http.send(null);
+
+		refresh_but.value = 'Updating';
+		refresh_but.disabled = true;
+
+		setTimeout("finish_update();", 3500);
+	}
+
+
+	function like_name($but, $sname)
+	{
+		var http = new XMLHttpRequest();
+		var postdata= "sname="+$sname;
+
+		http.open("POST", "like.php", true);
+
+		//Send the proper header information along with the request
+		http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		http.setRequestHeader("Content-length", postdata.length);
+
+		http.send(postdata);
+
+		// ------------
+
+		$but.disabled = true;
+		$but.value = "Added";
+
+		//disable all buttons for 5 secs
+		like_but_disabled(true);
+
+		setTimeout("like_but_disabled(false);", 3000);	
+
+	}
+
+	function like_but_disabled ($state)
+	{
+		if (but_1.value != "Added")
+			but_1.disabled = $state;
+		if (but_2.value != "Added")
+			but_2.disabled = $state;
+		if (but_3.value != "Added")
+			but_3.disabled = $state;
+		if (but_4.value != "Added")
+			but_4.disabled = $state;
+		if (but_5.value != "Added")
+			but_5.disabled = $state;
+		if (but_6.value != "Added")
+			but_6.disabled = $state;
+		if (but_7.value != "Added")
+			but_7.disabled = $state;
+		if (but_8.value != "Added")
+			but_8.disabled = $state;
+		if (but_9.value != "Added")
+			but_9.disabled = $state;
+		if (but_10.value != "Added")
+			but_10.disabled = $state;
+
+		// ---
+
+		if ($state == true)
+			refresh_but.disabled = true;
+		else
+			refresh_but.disabled = false;
+	}
+
+	function finish_update()
+	{
+		refresh_but.value = 'Refresh';
+		refresh_but.disabled = false;
+	}	
+
+
+	update_names();
+
+	</script>	
+
+	<b>A few of the names you like:</b>
+	<br>
+
+	<ul style="width: 100%;">
+
+
+<li style="display: block; float: left; width: 33%;">The alpha </li>
+<li style="display: block; float: left; width: 33%;">The bull </li>
+<li style="display: block; float: left; width: 33%;">The idolized beaver </li>
+<li style="display: block; float: left; width: 33%;">The anaconda </li>
+<li style="display: block; float: left; width: 33%;">Frozen anaconda </li>
+<li style="display: block; float: left; width: 33%;">Illustrious air </li>
+<li style="display: block; float: left; width: 33%;">Some bee </li>
+<li style="display: block; float: left; width: 33%;">The ideal boot </li>
+<li style="display: block; float: left; width: 33%;">Negative beta </li>
+<li style="display: block; float: left; width: 33%;">The bitch </li>
+<li style="display: block; float: left; width: 33%;">Marvelous bee </li>
+<li style="display: block; float: left; width: 33%;">The binary </li>
+<li style="display: block; float: left; width: 33%;">Possible bringer </li>
+<li style="display: block; float: left; width: 33%;">The binary )</li>
+<li style="display: block; float: left; width: 33%;">The binary &#34;&#39;`--</li>
+<li style="display: block; float: left; width: 33%;">Sold alpha </li>
+<li style="display: block; float: left; width: 33%;">Fruitful beaver </li>
+<li style="display: block; float: left; width: 33%;">The full blue </li>
+<li style="display: block; float: left; width: 33%;">The ashamed big brother </li>
+<li style="display: block; float: left; width: 33%;">The super backbreaker </li>
+<li style="display: block; float: left; width: 33%;">The binary </li>
+<li style="display: block; float: left; width: 33%;">Noteworthy bear </li>
+<li style="display: block; float: left; width: 33%;">Cavernous artillery </li>
+<li style="display: block; float: left; width: 33%;">The unfortunate artillery </li>
+<li style="display: block; float: left; width: 33%;">Run blister </li>
+<li style="display: block; float: left; width: 33%;">Cut bear </li>
+<li style="display: block; float: left; width: 33%;">The anaconda </li>
+<li style="display: block; float: left; width: 33%;">The vigilant bandage </li>
+<li style="display: block; float: left; width: 33%;">Blank bodyguard </li>
+<li style="display: block; float: left; width: 33%;">The black-widow </li>
+<li style="display: block; float: left; width: 33%;">Thrown black-widow </li>
+<li style="display: block; float: left; width: 33%;">Drawn brute </li>
+<li style="display: block; float: left; width: 33%;">The black-widow </li>
+
+	</ul>
+	<br style="clear: left">
+	<br>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00074 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

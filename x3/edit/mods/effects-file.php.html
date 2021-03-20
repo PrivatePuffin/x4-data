@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The effects file (Page 1 of 1) - Roguey's X3 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="simple, basic, bbs. scripting, scripts, tutorial, guide, gaming, roguey">
+		<META NAME="Description" CONTENT="Beginners guide to mods written by Roguey.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3/edit/mods/effects-file.php">
+		<meta property="og:description" content="Beginners guide to mods written by Roguey.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="The effects file (Page 1 of 1)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3/"><img src="/x3/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #FF800F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #FF800F;">
+				<li class="icon" style="background-color: #FF800F">&nbsp;</li><li><a href="/x3/">News</a></li><li><a href="/x3/pictures/">Pictures</a></li><li><a href="/x3/videos/">Videos</a></li><li><a href="/x3/help/">Help / Guides</a></li><li><a href="/x3/ships/">Ships</a></li><li><a href="/x3/universe/">Maps</a></li><li><a href="/x3/stations/">Stations</a></li><li><a href="/x3/lasers/">Lasers</a></li><li><a href="/x3/missiles/">Missiles</a></li><li><a href="/x3/shields/">Shields</a></li><li><a href="/x3/wares/">Wares</a></li><li><a href="/x3/mod/">X3 Mod</a></li><li><a href="/x3/edit/">Editing</a></li><li><a href="/forum/viewforum.php?id=1">Forum</a></li><li><a href="/x3/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>The effects file <span class="smalltext">(Page 1 of 1)</spann></h1>
+	Written by <b>Roguey</b>,<br><br>
+
+	<center><img src="images/effect-header.gif" alt="The effects file, written by Roguey"></center>
+	<br><br>
+
+	<h2>What is the effect file?</h2><br>
+
+	The effect file is a file found inside <b>types</b> folder that deals with visual effects such as explosions, light effects, impacts etc. <br>
+	The file is a text file separated into blocks (150 in X3).
+	<br><br>
+
+	<h2>The layout</h2><br>
+
+	The <i>first</i> line is important, as it tells the game how many entries follow after.
+	This is the first line, of the first effect in X3:
+	<br><br>
+
+	<div class="code">0;1;0;0;1.0; // Effect 0</div>
+	<br>
+
+
+	<h3>So, what does that mean?</h3><br>
+
+	The first number (<b>0</b>;1;0;0;1.0;) is the id number. Each effect will have a unique id, that is referenced from other type files. <br>
+	The id is always a number that starts from 0 and increases.
+	<br><br>
+
+	The second number (0;<b>1</b>;0;0;1.0;) tells you how many individual effects make up this effect,
+	which is 1.
+	<br><br>
+
+	The other numbers I dont think you need to worry about. So I recommend you leave them alone.
+	<br><br>
+
+
+	<h3>Individual effects</h3><br>
+
+	Now we know how many individual effects make up effect number 0, we need to look at one.
+	However effect 0 is bad example, so lets take effect number 16 - which is marked with a comment (<i>// Effect 16 impact effect PR </i>).
+	Effect 16 is made up from 3 Individual effects (16;<b>3</b>;0;0;1.0;). 
+	Each individual effect is made up of two lines: one to setup the effect, the second for scale, rotation and size.
+	<br><br>
+
+	So lets look at the first Individual effect of 16:
+	<br><br>
+
+	<div class="code">
+		EEDF_TIMEOUT|EEDF_GROWANDSHRINK|EEDF_FADEOUT|EEDF_RANDOMROT; 0;<br>
+		&nbsp;&nbsp;564; 0.0; 0.1; 400; 0.100;     0;     0;     0;  -1;  30; 0.250;    0;
+	</div>
+	<br>
+
+	The first line sets behaviour via. EEDF_TIMEOUT, EEDF_GROW, EEDF_FADEOUT, 
+	whilst the second value determines how the effect will be displayed.
+	<br><br>
+
+	Now the most important line (<i>564; 0.0; 0.1; 400;....</i>) setups scale, rotation etc.
+	Here's what they mean from left to right:
+	<br><br>
+
+	<table class="board_table">
+	<tr>
+		<th>pos.</th>
+		<th>value</th>
+		<th>Description</th>
+	</tr>
+
+	<tr>
+		<td>1</td>
+		<td>564</td>
+		<td>Which 3d object to use, can be either in <b>objects/v/</b> or <b>objects/cut</b> depending if the EEDF_CUT was set on the prevoius line.</th>
+	</tr>
+
+	<tr>
+		<td>2</td>
+		<td>0.000</td>
+		<td>When this effect is created, how big it is.</td>
+	</tr>
+
+	<tr>
+		<td>3</td>
+		<td>0.1</td>
+		<td>When the effect is over, how big is it.</td>
+	</tr>
+
+	<tr>
+		<td>4</td>
+		<td>400</td>
+		<td>How long does this effect last in milliseconds, 500 equals half a second.</td>
+	</tr>
+
+	<tr>
+		<td>5</td>
+		<td>0.100</td>
+		<td>This one is called rndsize, although im guessing it varies the size.</td>
+	</tr>
+
+	<tr>
+		<td>6, 7, 8</td>
+		<td>0;0;0</td>
+		<td>x, y and z offset. You can use these to move individual effects around.</td>
+	</tr>
+
+	<tr>
+		<td>9</td>
+		<td>-1</td>
+		<td>Possibly to do with lensflare's.</td>
+	</tr>
+
+	<tr>
+		<td>10</td>
+		<td>30</td>
+		<td>Attenuation, or strength. Used by few flags.</td>
+	</tr>
+
+	<tr>
+		<td>11</td>
+		<td>0.250</td>
+		<td>Not too sure - should define how fast the animation plays but probably best to leave alone.</td>
+	</tr>
+
+	<tr>
+		<td>12</td>
+		<td>0</td>
+		<td>How much of a delay (in milliseconds) before this individual effect starts. 0 is when the effect is just started.</td>
+	</tr>
+	</table>
+	<br>
+
+
+
+	<center>	
+		<font class="smalltext"><b>Next: End of guide</b></font><br>
+	</center>
+
+	<br>	
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0006 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

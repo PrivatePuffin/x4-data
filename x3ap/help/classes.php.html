@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ship classes - Roguey's X3AP site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="shields, statistics, stats, gaming, roguey">
+		<META NAME="Description" CONTENT="A List of ship classes, from largest to smallest.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3ap/help/classes.php">
+		<meta property="og:description" content="A List of ship classes, from largest to smallest.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Ship classes">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3ap/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3ap/"><img src="/x3ap/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3BAE2F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3BAE2F;">
+				<li class="icon" style="background-color: #3BAE2F">&nbsp;</li><li><a href="/x3ap/">News</a></li><li><a href="/x3ap/pictures/">Pictures</a></li><li><a href="/x3ap/videos/">Videos</a></li><li><a href="/x3ap/help/">Help / Guides</a></li><li><a href="/x3ap/ships/">Ships</a></li><li><a href="/x3ap/universe/">Maps</a></li><li><a href="/x3ap/missiles/">Missiles</a></li><li><a href="/x3ap/lasers/">Lasers</a></li><li><a href="/x3ap/shields/">Shields</a></li><li><a href="/x3ap/stations/">Stations</a></li><li><a href="/x3ap/wares/">Wares</a></li><li><a href="/x3ap/mod/">X3AP Mod</a></li><li><a href="/x3ap/edit/">Editing</a></li><li><a href="/x3ap/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=31">Forum</a></li><li><a href="/x3ap/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Ship classes</h1>
+
+	Below is a list of ship classes, from largest to smallest. You may notice that the M numbering is out of order,
+	this is because over many x-games, the ship classes have been added to (between the M2 and the M3) but 
+	since there was no room between the numbering, the newer classes got added to the bottom of the list.
+	<br><br>
+
+	<h2>Combat ships</h2><br>
+
+	<table class="board_table">
+	<tr>
+		<th width="100">Class</th>
+		<th width="140">Type</th>
+		<th>Description</th>
+	</tr>
+
+	<tr>
+		<td align="center"><font size="4">M1</font></td>
+		<td align="center">Large carriers</td>
+		<td>
+			The M1 class is the largest ship type, able to carry smaller ships such as M3/4/5.
+			The M1 may not have the largest weapon systems, but with a hanger of 30+ ships it can
+			deliver some serious damage. The fighters act as drones. Often the M1 itself is setup for anti-fighter.
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">M2</font></td>
+		<td align="center">Large destroyers</td>
+		<td>
+			These ships have the largest weapon systems in the game, featuring around 40-60 powerful weapons.
+			Destroyers also have very strong shields and are capable of taking on other Destroyers or fighters.
+			However M2 dont often have a hanger of any sort and are very slow.
+		</td>
+	</tr>
+
+	<tr>
+		<td align="center"><font size="4">M7M</font></td>
+		<td align="center">Missile frigates</td>
+		<td>
+			The M7M class is like the M7, as in shield and cargo size but rather than use normal guns, the M7M launches high powered missiles.
+			These missiles can do very large amounts of damage to capital ships and fighters.
+			The M7M class also have access to a special missile called the boarding pod. 
+			These missiles allow M7M's to send a group of 4 marines in a missile like craft.
+			The downside to the M7M class is that when the ship runs out of missiles, then the ship is easy pickings.
+		</td>
+	</tr>
+
+	<tr>
+		<td align="center"><font size="4">M7</font></td>
+		<td align="center">Frigates</td>
+		<td>
+			The M7 range is a half-way house between the M6 and the M2 class. They are roughly half the size of a M2.
+			They have a good amount of shielding and weapons. They can sometimes even take on a M2!
+			M7's are usually much faster than M2's, so can be more fun to pilot.
+		</td>
+	</tr>
+
+	<tr>
+		<td align="center"><font size="4">M7C</font></td>
+		<td align="center">Small carriers</td>
+		<td>
+			The M7C range is a newly introduced class, called the <i>small carrier</i>.  
+			The M7C is a mix of M1 and M7 technology, allowing fighters to dock inside the M7C hanger. 
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">M6</font></td>
+		<td align="center">Corvettes</td>
+		<td>
+			The M6 class is a medium sized ship that fits between M3 and M7's. They have a few turrets with and some 200MJ shields.
+			M6's normally do well against fighter ships because of the arrangement of weapons they carry. 
+			For many pilots getting your first M6 is a milestone, as they are very useful ships.
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">M8</font></td>
+		<td align="center">Bombers</td>
+		<td>
+			You may be forgiven if you think an M8 looks similar to that of a M3. 
+			That's because M8's are basically M3's but with one difference. The main weapon system has been replaced with a missile launcher. 
+			These missile launchers fire one type of missile and can deliver some serious damage to other ships. 
+			However when the ship runs out of missiles, then it becomes another easy target.
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">M3+</font></td>
+		<td align="center">Heavy fighters+</td>
+		<td>
+			The M3+ range are upgraded M3's that feature usually an turret or two. In-game they class as M3, 
+			so you can dock them anywhere an M3 can dock on, such as a M7 or M1. M3+ offer a good half way between M3 and M6.
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">M3</font></td>
+		<td align="center">Heavy fighters</td>
+		<td>
+			There are 3 main types of fighter, the M3 being the largest. 
+			M3's have usually a few 25MJ shields and a good arrangement of frontal weapons. 
+			They can deliver some serious damage in large groups, even to large destroyers.
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">M4+</font></td>
+		<td align="center">Interceptors+</td>
+		<td>
+			The M4+ range are basically upgraded M4, with usually better shields (similar to that of a M3).
+			They have a good top-speed making them great for gorilla style fighting.
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">M4</font></td>
+		<td align="center">Interceptors</td>
+		<td>
+			The M4 is the medium sized fighter, that is a balance between speed and damage. 
+			However because of this balance they dont specialise in either, making a bit of a mixed choice for most. 
+			They often get over-looked by most pilots.
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">M5</font></td>
+		<td align="center">Scouts</td>
+		<td>
+			The smallest of all the fighters - the M5. The M5 has one of the highest top-speeds making it great for exploring. 
+			However because its very light and fast design, the M5 only features very minimum shielding. 
+			In large groups they can be a pain for a M3 type craft, because they can be hard to shot-down. 
+			However a single M5 will struggle to take down anything bigger than a M4.
+		</td>
+	</tr>
+	</table>
+	<br>
+
+	<h2>Non-combat ships</h2><br>
+
+	<table class="board_table">
+	<tr>
+		<th width="100">Class</th>
+		<th width="140">Type</th>
+		<th>Description</th>
+	</tr>
+
+	<tr>
+		<td align="center"><font size="4">TL</font></td>
+		<td align="center">Station carriers</td>
+		<td>
+			The TL is the largest non-combat style ship with one feature not found on any other ship: ST sized cargo-bay. 
+			This ST sized cargo-bay allows a TL to pick-up and deploy stations in the x-universe. 
+			You can hire TL's but usually many pilots have they own TL. The reason for having your own is that you can fit a jumpdrive onto it, 
+			making much quicker to transport stations around. TL's do have a few weapons, however they are mainly just for defence.
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">TM</font></td>
+		<td align="center">Ships carriers</td>
+		<td>
+			TM's are a relativity new ship class in the x-games (only added in X3TC). 
+			They are basically mini ship carriers, that can carry around 3 or 4 ships M3 or smaller craft. 
+			This makes them great at transporting captured ships to a distance shipyard, because the carrier itself can have a jump-drive - 
+			transporting itself and all the docked ships to another sector. ie. out of danger.
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">TS</font></td>
+		<td align="center">Trade ships</td>
+		<td>
+			TS ships form the backbone of the economy, transporting wares all over the x-universe. 
+			You can think of TS ship being trucks that go down the motorways/roads. 
+			TS ships usually carry a few 25MJ shields but for defensive reasons only.
+		</td>
+	</tr>
+
+
+	<tr>
+		<td align="center"><font size="4">TP</font></td>
+		<td align="center">Personnel transporters</td>
+		<td>
+			TP's are slightly smaller TS ships that swap cargo-bay space for an area to transport passengers (like a bus). 
+			They do have some cargo-bay space but their main role is transport passengers (or even marines).
+		</td>
+	</tr>
+	</table>
+	<br>
+
+	<a href="./">&laquo; Back to help</a><br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00109 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

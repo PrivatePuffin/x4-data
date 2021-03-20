@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Whats changed - Roguey's X Rebirth site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="whats changed - roguey's x rebirth site, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/xrebirth/editing/changes/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Whats changed">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/xrebirth/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/xrebirth/"><img src="/xrebirth/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #6F9F6F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #6F9F6F;">
+				<li class="icon" style="background-color: #6F9F6F">&nbsp;</li><li><a href="/xrebirth/">News</a></li><li><a href="/xrebirth/pictures/">Pictures</a></li><li><a href="/xrebirth/videos/">Videos</a></li><li><a href="/xrebirth/help/">Help / Guides</a></li><li><a href="/xrebirth/ships/">Ships</a></li><li><a href="/xrebirth/universe/">Maps</a></li><li><a href="/xrebirth/statistics/">Statistics</a></li><li><a href="/xrebirth/stations/">Stations</a></li><li><a href="/xrebirth/wares/">Wares</a></li><li><a href="/xrebirth/teladi-outpost/">Teladi Outpost</a></li><li><a href="/xrebirth/home-of-light/">Home of Light</a></li><li><a href="/xrebirth/editing/">Editing</a></li><li><a href="/xrebirth/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=20">Forum</a></li><li><a href="/xrebirth/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Whats changed</h1>
+
+	If you are a scripter and/or modder from the previous x-games, you may be wondering what has changed since. 
+	Well here is a quick run-down of the changes in <b>X-Rebirth</b>:
+	<br><br>
+
+	<h2>Changed</h2>
+	<ul>
+		<li>XML used through-out (unlike before in certain places),</li>
+		<li>Universe split into clusters, sector, zones XML rather than a single XML (universe.xml),</li>
+		<li>No longer limited to 6 turrets, 12 lasers,</li>
+		<li>Ship sub-systems (Shields, engines, etc.),</li>
+		<li>Stations are built-up from modules (production, defence etc.)
+		<li>Music files changed from MP3, to xwma (DirectX),</li>
+		<li>Ships are defined in separate xml's rather than a single line in a CSV file,</li>
+		<li>DDS textures compressed by .gz,</li>
+		<li>Directory paths inside cat/dat's,</li>
+	</ul>
+
+
+
+	<h2>Removal</h2>
+	<ul>
+		<li><i>Type</i> folder gone - no more CSV,</li>
+		<li>No more editing scripts through a in-game <i>script editor</i>,</li>
+	</ul>
+	<br>
+
+
+	<div style="text-align:center;">	
+		<span class="smalltext"><b>Next: The structure of the dats</b></span><br>
+		<a href="../intro/">&lt;&lt; Previous Page</a> - <a href="../structure/">Next Page &gt;&gt;</a>
+	</div>
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00063 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

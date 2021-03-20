@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=7">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 7 of 16)</span></h1><br>
+	
+		<h2>BORDERLANDS 2 &#187; Searching for Jimmy Jenkins</h2>
+
+
+		<div class="pad">
+			For the past few days I have been hunting a guy called Jimmy Jenkins in <b>Borderlands 2</b>. Jimmy Jenkins is a miniature found when opening certain ammo crates, in a few locations. He is the rarest miniature, so the chances are you will find the others many times before finding Jimmy. Here is the places you can find him:<br><br>- Wildlife Preservation, <br>- Opportunity, <br>- Thousand Cuts (Hyperion Expansion),<br>- Hero&#039;s Pass,<br><br>I have spent awhile(at-least 20+ hours) doing ammo crate runs in <b>Opportunity</b> without no luck. I did find a few miniatures however but not Jimmy (probably every other miniature). I also did a few runs in Hero&#039;s pass but that was even worse, I never found even one miniature there.<br><br>So I thought
+			... <a href="/blogs/roguey/blog-76.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Wednesday 20th March, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-76.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-76.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Way of the Gun Chapter 3</h2>
+
+
+		<div class="pad">
+			<a href="http://roguey.co.uk/blogs/kirlack/blog-73.html" target="_blank">Chapter 2</a><br><br><b><span style="font-size: 4&#48;px;">Chapter 3: Zippidy Doo Da</span></b><br> <br>(yawn)<br> <br>Mornin&#039;. Urk, my head feels like a dog shat in it. That&#039;s the last time I drink that much frakkin&#039; whiskey. Had to try&#039;n&#039; blot out the image o&#039; them Khaak though, ya know? After staggerin&#039; out o&#039; the bar at silly o&#039;clock this mornin&#039; I slept in the Hermes. Saves shellin&#039; out fer a room. Made sure I&#039;d proper booby trapped the airlock though. Cos a girl can never be too careful.<br> <br>Actually, snaggin&#039; the Hermes yesterday was a huge bonus, fer all kinds o&#039; reasons. Firstly it gives me a bit o&#039; storage space for any excess gear I might
+			... <a href="/blogs/kirlack/blog-74.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/kirlack/"><b>Kirlack</b></a></b> on Wednesday 13th March, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/kirlack/blog-74.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/kirlack/blog-74.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Way of the Gun Chapter 1</h2>
+
+
+		<div class="pad">
+			<a href="http://roguey.co.uk/blogs/kirlack/blog-71.html#comments" target="_blank">Prelude</a><br><br><b><span style="font-size: 4&#48;px;">Chapter 1: Moolah</span></b><br> <br>Ah yes, money, the so called root of all evil. Horse shit if you ask me, but people rarely do. Unless they want someone made dead o&#039; course and then I&#039;m all too willin&#039; to oblige &#039;em. So long as they&#039;re payin&#039;.<br> <br>Mayhap there&#039;s some truth to that root of all evil thing after all? Meh.<br> <br>So, first things first, let&#039;s take a look at my nice shiny ship.<br><br><a href="http://img199.imageshack.us/img199/5906/x3screen00002.bmp" target="_blank"><img src="http://img199.imageshack.us/img199/5906/x3screen00002.bmp" alt="Picture" style="max-width: 825px; width: expression(this.width > 825 ? 825: true); border: 0;"></a> <br><br>Okay, so she ain&#039;t so shiny, but she is pretty nice. She&#039;s fully tuned for speed which is a bonus, but she handles like a log and right now the
+			... <a href="/blogs/kirlack/blog-72.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/kirlack/"><b>Kirlack</b></a></b> on Saturday 2nd March, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/kirlack/blog-72.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 2 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/kirlack/blog-72.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Way of the Gun Chapter 2</h2>
+
+
+		<div class="pad">
+			<a href="http://roguey.co.uk/blogs/kirlack/blog-72.html#comments" target="_blank">Chapter 1</a><br><br><b><span style="font-size: 6&#48;px;">Chapter 2: Violence is going to ensue</span></b><br> <br>Room for the night? Check. Somethin&#039; decent to drink? Yeah, alright I&#039;ll let &#039;em have that. Gettin&#039; laid? No frakkin&#039; chance. These OTAS boys can party, but they ain&#039;t got the stamina for any post liquor activities. Shame.<br> <br>So, I started the day with a hot shower, a light breakfast and copious amounts o&#039; coffee to nurse my hangover before gettin&#039; back in the cockpit. My goals fer the day are makin&#039; some more money, hopefully gettin&#039; the pirates, or at least their bounty hunter dogs, off my back and a spot o&#039; general piracy to net me some
+			... <a href="/blogs/kirlack/blog-73.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/kirlack/"><b>Kirlack</b></a></b> on Saturday 2nd March, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/kirlack/blog-73.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 3 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/kirlack/blog-73.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Way of the Gun - DiD (TC 3.2)</h2>
+
+
+		<div class="pad">
+			I&#039;ve already posted this over on the egosoft boards, but I thought I&#039;d post it up here as well. Since this is my first blog here I&#039;m hoping there&#039;ll be a few people wanting to read it <img src="/forum/images/smilies/smile.gif" alt="Smile"><br><br><b><span style="font-size: 8&#48;px;">Way of the Gun</span></b><br><br>Prelude: <i>Tequila</i><br><br>Ain&#039;t nothin&#039; like it ya know? Drinking after a hit I mean. I get paid to erase some dudes and then get to drink till dawn&#039;s sweet light spills through the curtains. At least, that&#039;s usually how it goes. Today?<br><br>Not so much.<br><br>I got a call from one o&#039; my contacts in Aladna Hill, a weasely little frakbag named Neol &#039;Ferret&#039; Jerrigan. He reckons he&#039;s got the stones to play with the big boys, but every time I speak with him I
+			... <a href="/blogs/kirlack/blog-71.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/kirlack/"><b>Kirlack</b></a></b> on Thursday 28th February, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/kirlack/blog-71.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 6 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/kirlack/blog-71.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>DIABLO 3 &#187; Diablo 3 v1.07 fewer legendary items</h2>
+
+
+		<div class="pad">
+			When v1.07 came out I was excited to about many of the new additions to the game; like public games with monster power (a bit over-due tbh), new crafting recipes and improvements to monk/wizard classes. So during the past few days I have been getting back into Diablo 3.<br><br>The new crafting recipes act like resource sinks, eating up a lot of spare resources that ive been collecting since Diablo 3 came out (good idea). However these recipes also eat your up money. This isn’t usually too big of problem as I do normally make quite good money from it.. well, before v1.07 came out.<br><br>I have farmed Act1/3 countless times on MP1 upto 6 during a few days now. I find very few legendary items now since v1.07 came out. It can be anything from 4 or
+			... <a href="/blogs/roguey/blog-70.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 18th February, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-70.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 3 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-70.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>DIABLO 3 &#187; Another look at Diablo 3</h2>
+
+
+		<div class="pad">
+			During the past few days ive been looking at my blog section, when I noticed about my Diablo 3 blogs. In some of last blogs I noticed that I was getting a bit frustrated by the game (ie. Calling it boring and that). However these blogs were written a while back and since then a lot has changed in Diablo 3. So much so, that’s not the same any-more, nor are these blogs are kind-of correct now.<br><br>When Diablo 3 came out, it was very hard work to get anywhere in the game. You needed the very best items to really adventure into the hardest areas but catch 22; without the best items it was near impossible to find anything. In a few patches back the difficulty was nerf and made it more accessible for more players.<br><br>The next big change to
+			... <a href="/blogs/roguey/blog-69.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 17th February, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-69.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-69.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Ok... Ok... I&#039;ve been away. (Bozo&#039;s Blog #6)</h2>
+
+
+		<div class="pad">
+			Well not really, I have been a very active member on Rogueys site, but recently I ain&#039;t done nothing! But once again i&#039;m back! <img src="/forum/images/smilies/tongue2.gif" alt=":P"><br>I got a job, and now spend more time fixing PCs than playing with them &#039;yay&#039;. However i still have time for X3, I started a fresh game of X3TC, this time not doing the story line, I become an Mercenary, you can make so much money!<br>Starting off is hard, but once you rise though the ranks, you can make 10-20 million in a couple of missions. <br>So I started off in the old M5, sold my Mercury (started as Humble Merchant) and set off doing missions that got you a few thousand credits, but then luck hit me like a pot of good flying towards you at light speed, a pirate had been fighting the Argon
+			... <a href="/blogs/bozo64r/blog-68.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/bozo64r/"><b>bozo64r</b></a></b> on Friday 28th December, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/bozo64r/blog-68.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/bozo64r/blog-68.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=6">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<b class="page_box_on">7</b>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=8">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00419 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

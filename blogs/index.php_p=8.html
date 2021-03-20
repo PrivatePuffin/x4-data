@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=8">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 8 of 16)</span></h1><br>
+	
+		<h2>X3AP &#187; Advanced Capture Guide part 2 Fundamentals </h2>
+
+
+		<div class="pad">
+			     Its been a while since I last blogged a capture guide <br><br>     The first thing about these ships is that they dont give up ever. This means you have to take them by force. In order to do this several conditions need to be satisfied. First, you need at least one equipped ship that can board, second you need to work on the weapons, finally you need the marines.<br><br>Part 1 Essential equipment:<br>     Your ship is the core of your capture efforts. The ship you are using should have several essential systems. First it should be well shielded or maneuverable enough to dodge enemy fire. You will take damage so they need to have shielding. It should have lethal and less lethal weapons on board. I also suggest you buy several &quot;sacrificial
+			... <a href="/blogs/joelnussbaum/blog-67.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/joelnussbaum/"><b>JoelNussbaum</b></a></b> on Friday 10th August, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/joelnussbaum/blog-67.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/joelnussbaum/blog-67.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; x3tc player</h2>
+
+
+		<div class="pad">
+			 Hi I been playing x3 for about 7 months or so. Very addicting,but I am trying to cap a Hyperion vanguard with out success so far.I do want to cap some ships but I got so many u traders that I do want to lose them.  Been using the heavy dragon as my personnel ship. First time I played used the x shuttle then I reloaded and used the skate prototype. Now I used the blast-claw pro type wow awesome ship, then switched to the dragoon then to the heavy dragon better ship<br> I have restarted several times, each time learning more from the last. hope to start with the poisoned paranoid start next time doing the terrian plot in a Hyperion might be fun. please feel free to make suggestion etc   thanks
+			... <a href="/blogs/scott/blog-66.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/scott/"><b>Scott</b></a></b> on Sunday 5th August, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/scott/blog-66.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 13 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/scott/blog-66.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3AP &#187; Advanced Capture Guide Part 1 Fighters</h2>
+
+
+		<div class="pad">
+			     For people like me capturing ships is my primary source of income in the x universe. Now every guide I&#039;ve run across is the same thing: missile boat torpedo flail flail flail. This works of course, but it has no details further than what I mentioned. In this guide I will not only discuss the capture of capitol ships but strategies on the capture of capitol ships and fighters. This guide will cover capturing fighters. Methods Strategies and dangers.<br><br>     Fighter capture is much cheaper than capitol capture and some fighters when repaired can sell for as high as 1.6 million credits a pop. There are 2 strategies in the &quot;liberation&quot; of enemy fighters. There are things you want to avoid when capturing enemy fighters.<br><br>1
+			... <a href="/blogs/joelnussbaum/blog-65.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/joelnussbaum/"><b>JoelNussbaum</b></a></b> on Saturday 4th August, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/joelnussbaum/blog-65.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 2 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/joelnussbaum/blog-65.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Verified by Visa Sucks!</h2>
+
+
+		<div class="pad">
+			A day or so ago I tried to place an order online with play.com for a couple of items. After going through the checkout stage, I was greeted by the Verified by Visa (VbV) iframe, immediately a sigh – when I&#039;ve seen this, it usually meets my order is going to be rejected 8 out of 10 times (happened to mum so many times over the years).<br><br><center><a href="/blogs/images/user_1/large/pic_52.jpg"><img src="/blogs/images/user_1/large/pic_52.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>It must have been months, maybe even a more (could be a year) since I&#039;ve seen this screen: I haven&#039;t used many online retailers recently and if I do mostly eBay/PayPal. So when it asks for my password, I haven&#039;t got a clue. So I thought I&#039;ll try a couple that I use: 2 attempts later and I&#039;m told I am not allowed to try again. Fine, so let&#039;s ask
+			... <a href="/blogs/roguey/blog-64.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 16th July, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-64.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 3 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-64.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>DIABLO 3 &#187; Is Diablo 3 boring..?</h2>
+
+
+		<div class="pad">
+			You may think this is a bit of an odd question to ask for a video-game; however I have spent quite a lot of hours in it now, reaching into Hell mode. At first Diablo 3 was fun, running around exploring places and killing stuff etc. Very rarely would I die.<br><br>However now I am finding Diablo 3 hard work (since entering into Hell mode). In hell mode it&#039;s much easier to die (the increasing revive timer can really annoy you, forcing you wait up-to 30 seconds before <i>coming back</i>). This is bad enough, however if you were deep into a dungeon level, you are often put back at the very start. This is the same for bosses, forcing you to restart them. So you can easily spend a minute or two getting back to the place you were only to die
+			... <a href="/blogs/roguey/blog-63.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Saturday 23rd June, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-63.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-63.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>MOBILE &#187; Console Emulation on a HTC Wildfire S</h2>
+
+
+		<div class="pad">
+			During the past few weeks I have been trying to get a SNES/Genesis (Megadrive in the UK) emulator for my smartphone (a <b>HTC Wildfire S</b>). This is when I came across <a href="http://www.supergnes.com/" target="_blank">SuperGNES</a> (A SNES emulator for Android). I got it off the Market, and then copied some Roms over to my SD-Card (by plugging my phone into the PC). A few moments later, my old SNES games appeared.. And they are actually running quite well too – which I was really surprised.<br><br>So, I start the game and try to use the touch panel controller. Well, it wasn&#039;t too well, sometimes the button wouldn&#039;t register (in a game like F-Zero this could end your race, if you don&#039;t turn correctly). I couldn&#039;t even control Bomberman
+			... <a href="/blogs/roguey/blog-62.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 18th June, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-62.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-62.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Upgrading from a 9800GT to a 670GTX</h2>
+
+
+		<div class="pad">
+			For many years I had 9800GT: it was a great card and only cost £100 from a local seller. The 9800GT gave me a performance increase of 4x times my previous card, so for £100 it was a great deal. <br><br>Last year I upgraded my PC to an i7 2600k, however left upgrading the graphics card (so I was running a 9800GT on an i7). This was fine for a bit, has I wasnt really playing any new games as such (most ran on the 9800GT fine).<br><br>Now the time has come to update the graphics card: A month ago NVidia released a new series called the Kepler range. The Kepler seems to be the card to go for: support for the latest technology, more energy efficiency (I hate how cards demand more and more power), fast fps and even the type of cooler I like (blowing
+			... <a href="/blogs/roguey/blog-61.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Thursday 7th June, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-61.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-61.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; A weekend later</h2>
+
+
+		<div class="pad">
+			Well I decided to be rid of the save in hopes of one that may bear sweeter fruit.  I opted to go with the Poisoned Paranid start.  If you haven&#039;t played this start before, there is an initial mission to obtain 25,000,000 Credits in 3 hours in the hopes of regaining you belongings as a holy one.  Refusing to sell certain obtainable ships (because it is almost impossible to find other copies of several of them), I decided that capping, war missions, and mining was the way to go.  Two in game days later, (8 hours IRL) I had finally acquired to necessary money to cure myself of the wretched disease that had afflicted me.  Returning as close as was still possible to the Holy Paranid Theocracy, I retrieved my blessed Hyperion Vanguard and
+			... <a href="/blogs/sha1hulud/blog-60.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/sha1hulud/"><b>Sha1hulud</b></a></b> on Tuesday 5th June, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/sha1hulud/blog-60.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/sha1hulud/blog-60.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=7">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<b class="page_box_on">8</b>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=9">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0033 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

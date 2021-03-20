@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Statistics - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="statistics - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="Basic summary of user statistics.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/users/statistics/">
+		<meta property="og:description" content="Basic summary of user statistics.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Statistics">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<h1>Statistics</h1>
+
+		<div class="vnavbar-div">
+			<div id="vnavbar">
+				<ul id="v_tabs">
+					<li><a href="/users/">Recent</a></li>
+					<li><a href="/users/comments.php">Comments</a></li>
+					<li><a href="/users/list.php">List</a></li>
+					<li><a href="/users/locations/">Locations</a></li>
+					<li><a href="/users/statistics/">Statistics</a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="vnavbar-content">
+	
+			<script>
+			
+			var which_tab		= 4;
+			var nav_tabs 		= document.getElementById('v_tabs').getElementsByTagName('li'); 
+
+			// toggle the sub-nav tabs
+			for (var i=0; i < nav_tabs.length; i++)
+			{
+				if (which_tab == i)
+					nav_tabs[i].className = 'tabon';
+				else
+					nav_tabs[i].className = 'taboff';
+			}			
+			</script>
+
+			<div class="list_head_1">Activity per month</div><br>
+		
+			<canvas id="users_graph" width="850" height="300">No HTML5</canvas>
+			<br><br>
+			
+			<div class="list_head_2">Registration per day</div><br>
+		
+			<canvas id="reg_graph" width="850" height="300">No HTML5</canvas>
+			<br><br>
+			
+			<div class="list_head_3">Totals</div>
+			
+			<table class="board_table">
+			<tr>
+				<td width="30%"><b>Members</b></td>
+				<td>7,499 (101 active last month) </td>
+			</tr>
+
+			<tr>
+				<td><b>Moderators</b></td>
+				<td>4 global, 1 Admin</td>
+			</tr>
+
+			<tr>
+				<td><b>Banned members</b></td>
+				<td>63 banned</td>
+			</tr>
+
+			</table>
+		</div>
+	
+		<script src="/modules/js/draw_ml_graph.js"></script>
+
+		<script>
+			// -------------------
+			// activity graph
+			// -------------------
+			
+			// data_points
+			var act_data_points 	= new Array();
+			act_data_points[0]		= [78, 99, 96, 83, 124, 67, 65, 59, 111, 127, 109, 149];
+
+			
+			for (var i=0; i<act_data_points.length; i++)
+				act_data_points[i].reverse();
+			
+			
+			// x_axis_data
+			var act_x_axis_data		= ["Mar '21", "Feb '21", "Jan '21", "Dec '20", "Nov '20", "Oct '20", "Sep '20", "Aug '20", "Jul '20", "Jun '20", "May '20", "Apr '20"];
+			act_x_axis_data.reverse();
+			
+			// x-axis labels
+			var act_label_names		= ['Activity'];
+
+			// colours
+			var act_line_colours	= ['#F18B1D'];
+
+			
+			// now draw graph (data_points, x_axis_data, label_names, line_colours)
+			window.onload =  draw_ml_graph('users_graph', act_data_points, act_x_axis_data, act_label_names, act_line_colours);
+			
+			// -------------------
+			// registration graph
+			// -------------------
+			
+			// data_points
+			var reg_data_points 	= new Array();
+				reg_data_points[0]		= [1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0];
+			reg_data_points[1]		= [1, 2, 1, 5, 2, 2, 5, 3, 3, 4, 3, 3];
+
+
+			
+			for (var i=0; i<reg_data_points.length; i++)
+				reg_data_points[i].reverse();
+			
+			
+			// x_axis_data
+			var reg_x_axis_data		= ["20 Mar", "19 Mar", "18 Mar", "17 Mar", "16 Mar", "15 Mar", "14 Mar", "13 Mar", "12 Mar", "11 Mar", "10 Mar", "9 Mar"];
+			reg_x_axis_data.reverse();
+			
+			// x-axis labels
+			var reg_label_names		= ['Facebook', 'Email'];
+
+			// colours
+			var reg_line_colours	= ['#0000ff', '#ff0000'];
+			
+			// now draw graph (data_points, x_axis_data, label_names, line_colours)
+			window.onload =  draw_ml_graph('reg_graph', reg_data_points, reg_x_axis_data, reg_label_names, reg_line_colours);
+			
+			// -------------------
+		</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.01603 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

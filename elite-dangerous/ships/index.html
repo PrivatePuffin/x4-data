@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ships - Elite &amp; Dangerous Roguey</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="ships, spacecraft, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/elite-dangerous/ships/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Ships">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/elite-dangerous/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/elite-dangerous/"><img src="/elite-dangerous/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #A98135;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #A98135;">
+				<li class="icon" style="background-color: #A98135">&nbsp;</li><li><a href="/elite-dangerous/">News</a></li><li><a href="/elite-dangerous/help/">Help / Guides</a></li><li><a href="/elite-dangerous/trade-helper/">Trade Helper</a></li><li><a href="/elite-dangerous/ships/">Ships</a></li><li><a href="/elite-dangerous/ship-builds/">Builds</a></li><li><a href="/elite-dangerous/universe/">Universe</a></li><li><a href="/elite-dangerous/equipment/">Equipment</a></li><li><a href="/elite-dangerous/engineers/">Engineers</a></li><li><a href="/elite-dangerous/commanders/">Commanders</a></li><li><a href="/elite-dangerous/powers/">Powers</a></li><li><a href="/elite-dangerous/fleet-carriers/">Fleet Carriers</a></li><li><a href="/elite-dangerous/wares/">Wares</a></li><li><a href="/elite-dangerous/videos/">Videos</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=36">Forum</a></li><li><a href="/elite-dangerous/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Ships</h1>
+	
+	Last updated: 28th April 2019, <a href="./compare">compare ships?</a>
+	<br><br>
+	
+	<div style="background-color: #000000; text-align: center; height: 300px; background-image: url('./images/header-4.jpg'); background-position: right top; background-repeat: no-repeat;"></div>
+
+			<table class="board_table sortable">
+			<tr>
+				<th style="width: 20%;">Ship</th>
+				<th>Range</th>
+				<th>Speed</th>
+				<th>Boost</th>
+				<th>Mass</th>
+				<th>Mov</th>
+				<th>Cargo</th>
+				<th>Guns</th>
+				<th>Int</th>
+				<th>Price</th>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./adder/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Adder</a></td>
+				<td sorttable_customkey="27.79">27.79<span class="smalltext">ly</span></td>			
+				<td>220<span class="smalltext">m/s</span></td>
+				<td>320<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="35">35<span class="smalltext">t</span></td>
+				<td style="text-align: center;">4</td>
+				<td sorttable_customkey="30" style="text-align: center;">30<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">3</td>				
+				<td style="text-align: center;">7</td>
+				<td sorttable_customkey="87808">87,808<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./alliance-challenger/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Alliance Challenger</a></td>
+				<td sorttable_customkey="22.56">22.56<span class="smalltext">ly</span></td>			
+				<td>204<span class="smalltext">m/s</span></td>
+				<td>316<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="450">450<span class="smalltext">t</span></td>
+				<td style="text-align: center;">4</td>
+				<td sorttable_customkey="146" style="text-align: center;">146<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">7</td>				
+				<td style="text-align: center;">9</td>
+				<td sorttable_customkey="29413342">29,413,342<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./alliance-chieftain/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Alliance Chieftain</a></td>
+				<td sorttable_customkey="23.87">23.87<span class="smalltext">ly</span></td>			
+				<td>235<span class="smalltext">m/s</span></td>
+				<td>338<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="400">400<span class="smalltext">t</span></td>
+				<td style="text-align: center;">0</td>
+				<td sorttable_customkey="122" style="text-align: center;">122<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">6</td>				
+				<td style="text-align: center;">9</td>
+				<td sorttable_customkey="18708720">18,708,720<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./alliance-crusader/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Alliance Crusader</a></td>
+				<td sorttable_customkey="20.67">20.67<span class="smalltext">ly</span></td>			
+				<td>183<span class="smalltext">m/s</span></td>
+				<td>305<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="500">500<span class="smalltext">t</span></td>
+				<td style="text-align: center;">3</td>
+				<td sorttable_customkey="122" style="text-align: center;">122<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">6</td>				
+				<td style="text-align: center;">10</td>
+				<td sorttable_customkey="22071737">22,071,737<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./anaconda/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Anaconda</a></td>
+				<td sorttable_customkey="31.18">31.18<span class="smalltext">ly</span></td>			
+				<td>180<span class="smalltext">m/s</span></td>
+				<td>240<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="400">400<span class="smalltext">t</span></td>
+				<td style="text-align: center;">1</td>
+				<td sorttable_customkey="470" style="text-align: center;">470<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">8</td>				
+				<td style="text-align: center;">13</td>
+				<td sorttable_customkey="146969451">146,969,451<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./asp-explorer/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Asp Explorer</a></td>
+				<td sorttable_customkey="33.84">33.84<span class="smalltext">ly</span></td>			
+				<td>250<span class="smalltext">m/s</span></td>
+				<td>345<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="280">280<span class="smalltext">t</span></td>
+				<td style="text-align: center;">4</td>
+				<td sorttable_customkey="130" style="text-align: center;">130<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">6</td>				
+				<td style="text-align: center;">8</td>
+				<td sorttable_customkey="6661153">6,661,153<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./asp-scout/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Asp Scout</a></td>
+				<td sorttable_customkey="29.85">29.85<span class="smalltext">ly</span></td>			
+				<td>223<span class="smalltext">m/s</span></td>
+				<td>304<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="150">150<span class="smalltext">t</span></td>
+				<td style="text-align: center;">5</td>
+				<td sorttable_customkey="46" style="text-align: center;">46<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">4</td>				
+				<td style="text-align: center;">5</td>
+				<td sorttable_customkey="3862130">3,862,130<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./beluga-liner/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Beluga Liner</a></td>
+				<td sorttable_customkey="24.36">24.36<span class="smalltext">ly</span></td>			
+				<td>197<span class="smalltext">m/s</span></td>
+				<td>275<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="1100">1100<span class="smalltext">t</span></td>
+				<td style="text-align: center;">2</td>
+				<td sorttable_customkey="370" style="text-align: center;">370<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">5</td>				
+				<td style="text-align: center;">12</td>
+				<td sorttable_customkey="81595261">81,595,261<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./cobra-mk3/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Cobra Mk. III</a></td>
+				<td sorttable_customkey="26.32">26.32<span class="smalltext">ly</span></td>			
+				<td>280<span class="smalltext">m/s</span></td>
+				<td>400<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="180">180<span class="smalltext">t</span></td>
+				<td style="text-align: center;">5</td>
+				<td sorttable_customkey="64" style="text-align: center;">64<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">4</td>				
+				<td style="text-align: center;">8</td>
+				<td sorttable_customkey="379718">379,718<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./cobra-mk4/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Cobra Mk. IV</a></td>
+				<td sorttable_customkey="23.16">23.16<span class="smalltext">ly</span></td>			
+				<td>200<span class="smalltext">m/s</span></td>
+				<td>299<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="210">210<span class="smalltext">t</span></td>
+				<td style="text-align: center;">3</td>
+				<td sorttable_customkey="92" style="text-align: center;">92<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">5</td>				
+				<td style="text-align: center;">10</td>
+				<td sorttable_customkey="745610">745,610<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./diamondback-explorer/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Diamondback Explorer</a></td>
+				<td sorttable_customkey="37.55">37.55<span class="smalltext">ly</span></td>			
+				<td>240<span class="smalltext">m/s</span></td>
+				<td>315<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="260">260<span class="smalltext">t</span></td>
+				<td style="text-align: center;">4</td>
+				<td sorttable_customkey="60" style="text-align: center;">60<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">3</td>				
+				<td style="text-align: center;">8</td>
+				<td sorttable_customkey="1635691">1,635,691<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./diamondback-scout/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Diamondback Scout</a></td>
+				<td sorttable_customkey="27.84">27.84<span class="smalltext">ly</span></td>			
+				<td>280<span class="smalltext">m/s</span></td>
+				<td>380<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="170">170<span class="smalltext">t</span></td>
+				<td style="text-align: center;">5</td>
+				<td sorttable_customkey="32" style="text-align: center;">32<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">4</td>				
+				<td style="text-align: center;">6</td>
+				<td sorttable_customkey="461342">461,342<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./dolphin/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Dolphin</a></td>
+				<td sorttable_customkey="31.3">31.30<span class="smalltext">ly</span></td>			
+				<td>290<span class="smalltext">m/s</span></td>
+				<td>390<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="140">140<span class="smalltext">t</span></td>
+				<td style="text-align: center;">3</td>
+				<td sorttable_customkey="88" style="text-align: center;">88<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">2</td>				
+				<td style="text-align: center;">9</td>
+				<td sorttable_customkey="1290861">1,290,861<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./eagle-mk2/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Eagle Mk. II</a></td>
+				<td sorttable_customkey="23.91">23.91<span class="smalltext">ly</span></td>			
+				<td>250<span class="smalltext">m/s</span></td>
+				<td>350<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="50">50<span class="smalltext">t</span></td>
+				<td style="text-align: center;">7</td>
+				<td sorttable_customkey="20" style="text-align: center;">20<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">3</td>				
+				<td style="text-align: center;">7</td>
+				<td sorttable_customkey="44800">44,800<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./federal-assault-ship/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Federal Assault Ship</a></td>
+				<td sorttable_customkey="21.38">21.38<span class="smalltext">ly</span></td>			
+				<td>215<span class="smalltext">m/s</span></td>
+				<td>358<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="480">480<span class="smalltext">t</span></td>
+				<td style="text-align: center;">4</td>
+				<td sorttable_customkey="98" style="text-align: center;">98<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">4</td>				
+				<td style="text-align: center;">9</td>
+				<td sorttable_customkey="19814211">19,814,211<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./federal-corvette/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Federal Corvette</a></td>
+				<td sorttable_customkey="18.99">18.99<span class="smalltext">ly</span></td>			
+				<td>198<span class="smalltext">m/s</span></td>
+				<td>257<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="900">900<span class="smalltext">t</span></td>
+				<td style="text-align: center;">2</td>
+				<td sorttable_customkey="618" style="text-align: center;">618<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">7</td>				
+				<td style="text-align: center;">13</td>
+				<td sorttable_customkey="180327022">180,327,022<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./federal-dropship/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Federal Dropship</a></td>
+				<td sorttable_customkey="18.22">18.22<span class="smalltext">ly</span></td>			
+				<td>250<span class="smalltext">m/s</span></td>
+				<td>350<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="580">580<span class="smalltext">t</span></td>
+				<td style="text-align: center;">3</td>
+				<td sorttable_customkey="166" style="text-align: center;">166<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">5</td>				
+				<td style="text-align: center;">10</td>
+				<td sorttable_customkey="14313210">14,313,210<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./federal-gunship/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Federal Gunship</a></td>
+				<td sorttable_customkey="17.7">17.70<span class="smalltext">ly</span></td>			
+				<td>172<span class="smalltext">m/s</span></td>
+				<td>283<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="580">580<span class="smalltext">t</span></td>
+				<td style="text-align: center;">1</td>
+				<td sorttable_customkey="170" style="text-align: center;">170<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">7</td>				
+				<td style="text-align: center;">9</td>
+				<td sorttable_customkey="35814210">35,814,210<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./fer-de-lance/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Fer-de-lance</a></td>
+				<td sorttable_customkey="18.33">18.33<span class="smalltext">ly</span></td>			
+				<td>260<span class="smalltext">m/s</span></td>
+				<td>350<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="250">250<span class="smalltext">t</span></td>
+				<td style="text-align: center;">4</td>
+				<td sorttable_customkey="72" style="text-align: center;">72<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">5</td>				
+				<td style="text-align: center;">6</td>
+				<td sorttable_customkey="51232230">51,232,230<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./hauler/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Hauler</a></td>
+				<td sorttable_customkey="32.48">32.48<span class="smalltext">ly</span></td>			
+				<td>200<span class="smalltext">m/s</span></td>
+				<td>300<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="14">14<span class="smalltext">t</span></td>
+				<td style="text-align: center;">4</td>
+				<td sorttable_customkey="26" style="text-align: center;">26<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">1</td>				
+				<td style="text-align: center;">6</td>
+				<td sorttable_customkey="52720">52,720<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./keelback/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Keelback</a></td>
+				<td sorttable_customkey="26.62">26.62<span class="smalltext">ly</span></td>			
+				<td>200<span class="smalltext">m/s</span></td>
+				<td>300<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="180">180<span class="smalltext">t</span></td>
+				<td style="text-align: center;">2</td>
+				<td sorttable_customkey="98" style="text-align: center;">98<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">4</td>				
+				<td style="text-align: center;">7</td>
+				<td sorttable_customkey="3048000">3,048,000<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./krait-phantom/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Krait Phantom</a></td>
+				<td sorttable_customkey="29.19">29.19<span class="smalltext">ly</span></td>			
+				<td>256<span class="smalltext">m/s</span></td>
+				<td>358<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="270">270<span class="smalltext">t</span></td>
+				<td style="text-align: center;">3</td>
+				<td sorttable_customkey="190" style="text-align: center;">190<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">4</td>				
+				<td style="text-align: center;">9</td>
+				<td sorttable_customkey="36170092">36,170,092<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./krait-mk2/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Krait Mk2</a></td>
+				<td sorttable_customkey="26.09">26.09<span class="smalltext">ly</span></td>			
+				<td>245<span class="smalltext">m/s</span></td>
+				<td>337<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="320">320<span class="smalltext">t</span></td>
+				<td style="text-align: center;">3</td>
+				<td sorttable_customkey="232" style="text-align: center;">232<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">5</td>				
+				<td style="text-align: center;">10</td>
+				<td sorttable_customkey="44222163">44,222,163<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./imperial-courier/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Imperial Courier</a></td>
+				<td sorttable_customkey="26.83">26.83<span class="smalltext">ly</span></td>			
+				<td>280<span class="smalltext">m/s</span></td>
+				<td>380<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="35">35<span class="smalltext">t</span></td>
+				<td style="text-align: center;">4</td>
+				<td sorttable_customkey="34" style="text-align: center;">34<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">3</td>				
+				<td style="text-align: center;">8</td>
+				<td sorttable_customkey="2479400">2,479,400<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./imperial-cutter/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Imperial Cutter</a></td>
+				<td sorttable_customkey="23.96">23.96<span class="smalltext">ly</span></td>			
+				<td>202<span class="smalltext">m/s</span></td>
+				<td>323<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="1100">1100<span class="smalltext">t</span></td>
+				<td style="text-align: center;">0</td>
+				<td sorttable_customkey="794" style="text-align: center;">794<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">7</td>				
+				<td style="text-align: center;">12</td>
+				<td sorttable_customkey="203745220">203,745,220<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./imperial-clipper/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Imperial Clipper</a></td>
+				<td sorttable_customkey="24.63">24.63<span class="smalltext">ly</span></td>			
+				<td>290<span class="smalltext">m/s</span></td>
+				<td>370<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="400">400<span class="smalltext">t</span></td>
+				<td style="text-align: center;">5</td>
+				<td sorttable_customkey="250" style="text-align: center;">250<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">4</td>				
+				<td style="text-align: center;">9</td>
+				<td sorttable_customkey="22295860">22,295,860<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./imperial-eagle/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Imperial Eagle</a></td>
+				<td sorttable_customkey="23.55">23.55<span class="smalltext">ly</span></td>			
+				<td>300<span class="smalltext">m/s</span></td>
+				<td>399<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="50">50<span class="smalltext">t</span></td>
+				<td style="text-align: center;">5</td>
+				<td sorttable_customkey="20" style="text-align: center;">20<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">3</td>				
+				<td style="text-align: center;">7</td>
+				<td sorttable_customkey="110831">110,831<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./lakon-type6/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Type 6</a></td>
+				<td sorttable_customkey="30.32">30.32<span class="smalltext">ly</span></td>			
+				<td>220<span class="smalltext">m/s</span></td>
+				<td>350<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="155">155<span class="smalltext">t</span></td>
+				<td style="text-align: center;">3</td>
+				<td sorttable_customkey="114" style="text-align: center;">114<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">2</td>				
+				<td style="text-align: center;">8</td>
+				<td sorttable_customkey="1045945">1,045,945<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./lakon-type7/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Type 7</a></td>
+				<td sorttable_customkey="25.03">25.03<span class="smalltext">ly</span></td>			
+				<td>180<span class="smalltext">m/s</span></td>
+				<td>300<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="420">420<span class="smalltext">t</span></td>
+				<td style="text-align: center;">1</td>
+				<td sorttable_customkey="310" style="text-align: center;">310<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">4</td>				
+				<td style="text-align: center;">10</td>
+				<td sorttable_customkey="17472252">17,472,252<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./lakon-type9-heavy/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Type 9 Heavy</a></td>
+				<td sorttable_customkey="20.06">20.06<span class="smalltext">ly</span></td>			
+				<td>130<span class="smalltext">m/s</span></td>
+				<td>200<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="850">850<span class="smalltext">t</span></td>
+				<td style="text-align: center;">0</td>
+				<td sorttable_customkey="790" style="text-align: center;">790<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">5</td>				
+				<td style="text-align: center;">11</td>
+				<td sorttable_customkey="76555842">76,555,842<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./lakon-type10-defender/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Type 10 Defender</a></td>
+				<td sorttable_customkey="23.7">23.70<span class="smalltext">ly</span></td>			
+				<td>179<span class="smalltext">m/s</span></td>
+				<td>219<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="1200">1200<span class="smalltext">t</span></td>
+				<td style="text-align: center;">0</td>
+				<td sorttable_customkey="534" style="text-align: center;">534<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">9</td>				
+				<td style="text-align: center;">12</td>
+				<td sorttable_customkey="120420094">120,420,094<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./mamba/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Mamba</a></td>
+				<td sorttable_customkey="18.33">18.33<span class="smalltext">ly</span></td>			
+				<td>179<span class="smalltext">m/s</span></td>
+				<td>219<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="250">250<span class="smalltext">t</span></td>
+				<td style="text-align: center;">0</td>
+				<td sorttable_customkey="66" style="text-align: center;">66<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">5</td>				
+				<td style="text-align: center;">6</td>
+				<td sorttable_customkey="53925661">53,925,661<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./orca/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Orca</a></td>
+				<td sorttable_customkey="18.01">18.01<span class="smalltext">ly</span></td>			
+				<td>300<span class="smalltext">m/s</span></td>
+				<td>380<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="580">580<span class="smalltext">t</span></td>
+				<td style="text-align: center;">1</td>
+				<td sorttable_customkey="194" style="text-align: center;">194<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">3</td>				
+				<td style="text-align: center;">9</td>
+				<td sorttable_customkey="48539887">48,539,887<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./python/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Python</a></td>
+				<td sorttable_customkey="24.54">24.54<span class="smalltext">ly</span></td>			
+				<td>250<span class="smalltext">m/s</span></td>
+				<td>280<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="350">350<span class="smalltext">t</span></td>
+				<td style="text-align: center;">2</td>
+				<td sorttable_customkey="294" style="text-align: center;">294<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">5</td>				
+				<td style="text-align: center;">10</td>
+				<td sorttable_customkey="56978179">56,978,179<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./sidewinder/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Sidewinder</a></td>
+				<td sorttable_customkey="23.62">23.62<span class="smalltext">ly</span></td>			
+				<td>220<span class="smalltext">m/s</span></td>
+				<td>320<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="25">25<span class="smalltext">t</span></td>
+				<td style="text-align: center;">5</td>
+				<td sorttable_customkey="14" style="text-align: center;">14<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">2</td>				
+				<td style="text-align: center;">5</td>
+				<td sorttable_customkey="32000">32,000<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./viper-mk3/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Viper Mk3</a></td>
+				<td sorttable_customkey="22.68">22.68<span class="smalltext">ly</span></td>			
+				<td>320<span class="smalltext">m/s</span></td>
+				<td>500<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="50">50<span class="smalltext">t</span></td>
+				<td style="text-align: center;">4</td>
+				<td sorttable_customkey="26" style="text-align: center;">26<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">4</td>				
+				<td style="text-align: center;">7</td>
+				<td sorttable_customkey="142931">142,931<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./viper-mk4/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Viper Mk4</a></td>
+				<td sorttable_customkey="25.29">25.29<span class="smalltext">ly</span></td>			
+				<td>271<span class="smalltext">m/s</span></td>
+				<td>342<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="190">190<span class="smalltext">t</span></td>
+				<td style="text-align: center;">3</td>
+				<td sorttable_customkey="54" style="text-align: center;">54<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">4</td>				
+				<td style="text-align: center;">9</td>
+				<td sorttable_customkey="426990">426,990<span class="smalltext">cr</span></td>
+			</tr>
+
+			<tr class="hover">
+				<td><a href="./vulture/"><img src="../images/link_s.gif" alt="link" style="border: none;"> Vulture</a></td>
+				<td sorttable_customkey="21.13">21.13<span class="smalltext">ly</span></td>			
+				<td>210<span class="smalltext">m/s</span></td>
+				<td>340<span class="smalltext">m/s</span></td>
+				<td sorttable_customkey="230">230<span class="smalltext">t</span></td>
+				<td style="text-align: center;">5</td>
+				<td sorttable_customkey="60" style="text-align: center;">60<span class="smalltext">t</span></td>			
+				<td style="text-align: center;">2</td>				
+				<td style="text-align: center;">8</td>
+				<td sorttable_customkey="4925615">4,925,615<span class="smalltext">cr</span></td>
+			</tr>
+
+			</table>
+
+			<span class="subtext">38 ships known. Jump-ranges are worked out using the long-range build, without engineer modifications.</span>
+			<br><br>
+			
+			<script src="/modules/sorttable.js"></script>
+			
+			<script>
+				
+				var myTH = document.getElementsByTagName('th')[0];
+				sorttable.init();
+				sorttable.innerSortFunction.apply(myTH, []);
+				
+			</script>
+<br>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00062 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

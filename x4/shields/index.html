@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Shields - Roguey's X4 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="X4 foundations, egosoft, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x4/shields/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Shields">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x4/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x4/"><img src="/x4/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #4830AE;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #4830AE;">
+				<li class="icon" style="background-color: #4830AE">&nbsp;</li><li><a href="/x4/">Home</a></li><li><a href="/x4/help/">Help</a></li><li><a href="/x4/ships/">Ships</a></li><li><a href="/x4/shields/">Shields</a></li><li><a href="/x4/weapons/">Weapons</a></li><li><a href="/x4/universe/">Maps</a></li><li><a href="/x4/wares/">Wares</a></li><li><a href="/x4/factions/">Factions</a></li><li><a href="/x4/dlc/split-vendetta/">Split Vendetta</a></li><li><a href="/x4/dlc/cradle-of-humanity/">Cradle of Humanity</a></li><li><a href="/x4/steam/">Achievements</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=44">Forum</a></li><li><a href="/x4/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+ 
+		<h1>Shields</h1>
+
+		<span style="font-size: 9pt;">Last updated: 19/3/2021 (v4.0)</span>
+		<br><br>
+
+		<table class="board_table sortable">
+		<tr>
+			<th>Name</th>
+			<th style="width: 80px;">Race</th>
+			<th style="width: 80px;">Class</th>
+			<th style="width: 80px;">Mk</th>
+			<th style="width: 120px;">Strength</th>
+			<th style="width: 120px;">Recharge</th>
+			<th style="width: 120px;">Delay</th>
+			<th style="width: 200px;">Recharge time</th>
+		</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">ARG L Shield Generator Mk1</span></td>
+					<td style="text-align: center;">ARG</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="38844">38,844 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="173">+173<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="225">3 mins, 45 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">ARG L Shield Generator Mk2</span></td>
+					<td style="text-align: center;">ARG</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="46282">46,282 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="268">+268<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="173">2 mins, 53 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">ARG M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">ARG</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="5147">5,147 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="26">+26<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="198">3 mins, 18 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">ARG M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">ARG</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="6133">6,133 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="41">+41<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="150">2 mins, 30 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">ARG M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">ARG</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="5147">5,147 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="26">+26<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="198">3 mins, 18 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">ARG M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">ARG</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="6133">6,133 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="41">+41<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="150">2 mins, 30 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">ARG S Shield Generator Mk1</span></td>
+					<td style="text-align: center;">ARG</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="827">827 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="82">+82<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="12">1.2 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="10">10 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">ARG S Shield Generator Mk2</span></td>
+					<td style="text-align: center;">ARG</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="988">988 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="128">+128<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="12">1.2 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="8">8 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">ARG S Shield Generator Mk3</span></td>
+					<td style="text-align: center;">ARG</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">3</td>
+					<td style="text-align: center;" sorttable_customkey="1411">1,411 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="219">+219<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="12">1.2 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="6">6 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">ARG XL Shield Generator Mk1</span></td>
+					<td style="text-align: center;">ARG</td>
+					<td style="text-align: center;">XL</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="129481">129,481 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="492">+492<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="263">4 mins, 23 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">KHA M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">KHA</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="4632">4,632 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="25">+25<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="185">3 mins, 5 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">KHA M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">KHA</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="4632">4,632 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="25">+25<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="185">3 mins, 5 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">KHA S Shield Generator Mk1</span></td>
+					<td style="text-align: center;">KHA</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="745">745 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="79">+79<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="13">1.3 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="9">9 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">PAR L Shield Generator Mk1</span></td>
+					<td style="text-align: center;">PAR</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="34960">34,960 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="184">+184<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="190">3 mins, 10 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">PAR L Shield Generator Mk2</span></td>
+					<td style="text-align: center;">PAR</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="41654">41,654 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="284">+284<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="147">2 mins, 27 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">PAR M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">PAR</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="4632">4,632 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="28">+28<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="165">2 mins, 45 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">PAR M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">PAR</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="5520">5,520 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="43">+43<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="128">2 mins, 8 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">PAR M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">PAR</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="4632">4,632 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="28">+28<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="165">2 mins, 45 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">PAR M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">PAR</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="5520">5,520 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="43">+43<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="128">2 mins, 8 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">PAR S Shield Generator Mk1</span></td>
+					<td style="text-align: center;">PAR</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="745">745 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="87">+87<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="10">1.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="9">9 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">PAR S Shield Generator Mk2</span></td>
+					<td style="text-align: center;">PAR</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="889">889 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="135">+135<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="10">1.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="7">7 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">PAR S Shield Generator Mk3</span></td>
+					<td style="text-align: center;">PAR</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">3</td>
+					<td style="text-align: center;" sorttable_customkey="1270">1,270 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="232">+232<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="10">1.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="5">5 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">PAR XL Shield Generator Mk1</span></td>
+					<td style="text-align: center;">PAR</td>
+					<td style="text-align: center;">XL</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="116532">116,532 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="521">+521<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="224">3 mins, 44 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">TEL L Shield Generator Mk1</span></td>
+					<td style="text-align: center;">TEL</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="42729">42,729 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="166">+166<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="257">4 mins, 17 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">TEL L Shield Generator Mk2</span></td>
+					<td style="text-align: center;">TEL</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="50911">50,911 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="257">+257<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="198">3 mins, 18 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">TEL M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">TEL</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="5662">5,662 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="25">+25<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="226">3 mins, 46 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">TEL M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">TEL</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="6746">6,746 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="39">+39<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="173">2 mins, 53 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">TEL M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">TEL</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="5662">5,662 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="25">+25<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="226">3 mins, 46 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">TEL M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">TEL</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="6746">6,746 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="39">+39<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="173">2 mins, 53 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">TEL S Shield Generator Mk1</span></td>
+					<td style="text-align: center;">TEL</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="910">910 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="79">+79<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="13">1.3 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="12">12 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">TEL S Shield Generator Mk2</span></td>
+					<td style="text-align: center;">TEL</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="1087">1,087 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="122">+122<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="13">1.3 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="9">9 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">TEL S Shield Generator Mk3</span></td>
+					<td style="text-align: center;">TEL</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">3</td>
+					<td style="text-align: center;" sorttable_customkey="1552">1,552 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="210">+210<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="13">1.3 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="7">7 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">TEL XL Shield Generator Mk1</span></td>
+					<td style="text-align: center;">TEL</td>
+					<td style="text-align: center;">XL</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="142429">142,429 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="470">+470<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="303">5 mins, 3 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">XEN L Shield Generator Mk1</span></td>
+					<td style="text-align: center;">XEN</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="36902">36,902 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="194">+194<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="190">3 mins, 10 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">XEN L Shield Generator Mk2</span></td>
+					<td style="text-align: center;">XEN</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="43968">43,968 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="300">+300<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="147">2 mins, 27 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">XEN M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">XEN</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="4890">4,890 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="29">+29<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="169">2 mins, 49 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">XEN M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">XEN</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="5826">5,826 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="45">+45<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="129">2 mins, 9 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">XEN M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">XEN</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="4890">4,890 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="29">+29<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="169">2 mins, 49 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">XEN M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">XEN</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="5826">5,826 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="45">+45<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="129">2 mins, 9 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">XEN S Shield Generator Mk1</span></td>
+					<td style="text-align: center;">XEN</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="786">786 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="92">+92<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="13">1.3 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="9">9 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">XEN S Shield Generator Mk2</span></td>
+					<td style="text-align: center;">XEN</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="938">938 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="143">+143<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="13">1.3 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="7">7 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: black">XEN XL Shield Generator Mk1</span></td>
+					<td style="text-align: center;">XEN</td>
+					<td style="text-align: center;">XL</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="123007">123,007 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="550">+550<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="224">3 mins, 44 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: red">SPL L Shield Generator Mk1</span></td>
+					<td style="text-align: center;">SPL</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="33018">33,018 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="140">+140<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="236">3 mins, 56 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: red">SPL L Shield Generator Mk2</span></td>
+					<td style="text-align: center;">SPL</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="39340">39,340 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="217">+217<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="181">3 mins, 1 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: red">SPL M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">SPL</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="4375">4,375 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="21">+21<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="208">3 mins, 28 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: red">SPL M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">SPL</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="5213">5,213 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="33">+33<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="158">2 mins, 38 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: red">SPL M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">SPL</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="4375">4,375 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="21">+21<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="208">3 mins, 28 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: red">SPL M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">SPL</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="5213">5,213 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="33">+33<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="158">2 mins, 38 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: red">SPL S Shield Generator Mk1</span></td>
+					<td style="text-align: center;">SPL</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="703">703 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="67">+67<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="8">0.8 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="10">10 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: red">SPL S Shield Generator Mk2</span></td>
+					<td style="text-align: center;">SPL</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="840">840 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="103">+103<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="8">0.8 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="8">8 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: red">SPL S Shield Generator Mk3</span></td>
+					<td style="text-align: center;">SPL</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">3</td>
+					<td style="text-align: center;" sorttable_customkey="1200">1,200 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="177">+177<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="8">0.8 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="7">7 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: red">SPL XL Shield Generator Mk1</span></td>
+					<td style="text-align: center;">SPL</td>
+					<td style="text-align: center;">XL</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="110058">110,058 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="398">+398<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="277">4 mins, 37 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER L Shield Generator Mk1</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="40786">40,786 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="173">+173<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="236">3 mins, 56 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER L Shield Generator Mk2</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="48597">48,597 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="247">+247<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="197">3 mins, 17 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER L Shield Generator Mk3</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">L</td>
+					<td style="text-align: center;">3</td>
+					<td style="text-align: center;" sorttable_customkey="69424">69,424 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="424">+424<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="164">2 mins, 44 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="5405">5,405 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="29">+29<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="186">3 mins, 6 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="6439">6,439 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="45">+45<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="143">2 mins, 23 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER M Shield Generator Mk3</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">3</td>
+					<td style="text-align: center;" sorttable_customkey="9199">9,199 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="77">+77<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="119">1 mins, 59 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER M Shield Generator Mk1</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="5405">5,405 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="29">+29<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="186">3 mins, 6 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER M Shield Generator Mk2</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="6439">6,439 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="45">+45<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="143">2 mins, 23 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER M Shield Generator Mk3</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">M</td>
+					<td style="text-align: center;">3</td>
+					<td style="text-align: center;" sorttable_customkey="9199">9,199 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="77">+77<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="119">1 mins, 59 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER S Shield Generator Mk1</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="869">869 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="91">+91<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="11">1.1 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="10">10 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER S Shield Generator Mk2</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="1037">1,037 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="141">+141<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="11">1.1 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="7">7 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER S Shield Generator Mk3</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">S</td>
+					<td style="text-align: center;">3</td>
+					<td style="text-align: center;" sorttable_customkey="1482">1,482 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="242">+242<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="11">1.1 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="6">6 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER XL Shield Generator Mk1</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">XL</td>
+					<td style="text-align: center;">1</td>
+					<td style="text-align: center;" sorttable_customkey="135955">135,955 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="544">+544<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="250">4 mins, 10 secs</td>
+				</tr>
+
+				<tr class="hover">
+					<td><img src="./images/shield_icon.gif"> <span style="color: blue">TER XL Shield Generator Mk2</span></td>
+					<td style="text-align: center;">TER</td>
+					<td style="text-align: center;">XL</td>
+					<td style="text-align: center;">2</td>
+					<td style="text-align: center;" sorttable_customkey="161988">161,988 <span style="font-size: 8pt;">MJ</span></td>
+					<td style="text-align: center;" sorttable_customkey="842">+842<span style="font-size: 8pt;">/sec</span></td>
+					<td style="text-align: center;" sorttable_customkey="0">0.0 <span style="font-size: 8pt;">sec</span></td>
+					<td sorttable_customkey="192">3 mins, 12 secs</td>
+				</tr>
+</table><br>
+
+		<script src="/modules/sorttable.js"></script>
+		
+		<script>
+			function shield_startup()
+			{
+				// sort
+				var myTH = document.getElementsByTagName('th')[0];
+				sorttable.init();
+				sorttable.innerSortFunction.apply(myTH, []);
+				
+				// reset
+				category_filter();
+			}
+		
+			// on startup
+			window.onLoad 		= shield_startup();
+		</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00082 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

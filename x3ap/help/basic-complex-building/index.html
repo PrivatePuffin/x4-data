@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Complex Building, The Basics - Roguey's X3AP site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="complex building, basics, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3ap/help/basic-complex-building/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Complex Building, The Basics">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3ap/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3ap/"><img src="/x3ap/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3BAE2F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3BAE2F;">
+				<li class="icon" style="background-color: #3BAE2F">&nbsp;</li><li><a href="/x3ap/">News</a></li><li><a href="/x3ap/pictures/">Pictures</a></li><li><a href="/x3ap/videos/">Videos</a></li><li><a href="/x3ap/help/">Help / Guides</a></li><li><a href="/x3ap/ships/">Ships</a></li><li><a href="/x3ap/universe/">Maps</a></li><li><a href="/x3ap/missiles/">Missiles</a></li><li><a href="/x3ap/lasers/">Lasers</a></li><li><a href="/x3ap/shields/">Shields</a></li><li><a href="/x3ap/stations/">Stations</a></li><li><a href="/x3ap/wares/">Wares</a></li><li><a href="/x3ap/mod/">X3AP Mod</a></li><li><a href="/x3ap/edit/">Editing</a></li><li><a href="/x3ap/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=31">Forum</a></li><li><a href="/x3ap/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+	<h1>Complex Building, The Basics <span class="smalltext">(Moved from wiki)</span></h1>
+	
+	Complexes are large installations made up of multiple stations connected via Complex Construction Kits. These installations, although they can be demanding on a computers ability to render, can be very useful for establishing an infrastructure to your own personal corporation/empire. They can produce just about anything you can buy in the game, saving you money in the long run and potentially make millions per hour in profits.
+	<br><br>
+
+	<br>
+	<h3>Plan for Success</h3>
+	<br>
+	The most basic thing to remember for complex building is to plan what you want to achieve. With this in mind using the Online Complex Calculator which can be found within the links section or Xadrian&#039;s complex calculator which can be downloaded <a href="http://forum.egosoft.com/viewtopic.php?t=239659" target="_blank">Here</a> can be very helpful to plan which individual stations you will need for the complex to fulfill its purpose.
+	<br><br>
+	
+	Things you need to consider when planning a complex are: 
+	<br>
+
+	<ul>
+		<li>
+			<b>1. What is your goal? </b>
+			<br>
+			Do you want the complex to produce food or weapons or sellable high tech goods?
+			<br><br>
+			
+		</li>
+		
+		<li>
+			<b>2. How do you want to start? </b>
+			<br>
+			Are you going to begin with a small food complex, then add on the second tier food and onwards, or are you able to build all at once?
+			<br><br>
+		</li>
+
+		<li>
+			<b>3.Where is your complex going to be built? </b>
+			<br>
+			Usually the question is &quot;Where are the resources required for the complex?&quot;, but also consider what the product is being used for. If it is for personal use for example then building it in an out-of-the-way Unknown Sector might be a good idea setting up freighters to transport the goods to where you need them. But if you want to sell your products, consider how to do so. If you&#039;re using NPC traders to sell your wares then you really want to be setup in a fairly busy sector where there are more ships passing by, if not you may want to have it at least within a few jumps of the area you&#039;re selling it, in order to cut down on costs and time for transport.
+			<br>
+		</li>
+	</ul>
+	<br><br>
+	
+	<h3>Implementation</h3>
+	<br>
+	Now that you know what you want to build, it&#039;s time to start building, but you need to be able to buy your stations and transport them to the construction site. The only way to do so is by using a TL-class ship.
+	<br>
+	There is two ways to do so: 
+	<br>
+	The first and most obvious is to buy one of your own, if you dont have one already. 
+	<br>
+	The other is to hire one, normally unless it hasn&#039;t been destroyed you&#039;ll find a TL in every sector with a shipyard. These hired TL&#039;s will cost you, though (obviously), since charge 500 to 2000 Cr per sector travelled. 
+	<br>
+	The second option is less useful, since hired TL&#039;s never use their jumpdrive, therefore taking a lot of time to deliver to distant sectors
+	<br><br>
+	
+	One thing I also recommend is to always have an advanced sattelite with you. When deployed these will allow you to activate a real time view of the sector map when you&#039;re building your station, allowing you to build your stations more accurately. This function can be accessed from a small button on the top right of the sector map which looks like a small camera. Also keep in mind that the sector maps are three dimensional, just because your initial view makes the stations look close together doesnt mean they actually are, so always tilt the screen via the small button next to your camera view which will look like a small &quot;+/-&quot; sign depending what elevation you&#039;re looking from. The only other button next them is your zoom functions, which are quite useful if your trying to place stations close together. 
+	<br><br>
+
+
+	<h3>Things to remember/consider</h3>
+	<br>
+	Always plan your complexes backwards, so decide what you are going to be selling, then add the stations you need to produce that and then add the stations to supply them and so on.
+	<br>
+
+	<br>
+	Remember to carry an adv. sat. in order to get access to the real time sector view.
+	<br><br>
+	
+	Make sure you keep the stations relatively close together, the complex construction kits can only connect stations together if they are within 25km of each other.
+	<br><br>
+	
+	As with all things X, save regularly, it will let you fix any mistakes you may make when building. I&#039;d also suggest creating a separate save just before you start building your complex, that way if things go horribly wrong for some reason you can reload before building began and you won&#039;t loose any money.
+	<br><br>
+	
+	<h3>Need More?</h3>
+	<br>
+	a further stage to complex building will be coming soon.
+	<br>
+	-ConCorDian
+	<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00106 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Compare ships - Roguey's X2 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Compare ships, gaming, roguey">
+		<META NAME="Description" CONTENT="Compare up-to 3 ships from X2.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x2/ships/compare.php">
+		<meta property="og:description" content="Compare up-to 3 ships from X2.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Compare ships">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x2/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x2/"><img src="/x2/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #D401DC;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #D401DC;">
+				<li class="icon" style="background-color: #D401DC">&nbsp;</li><li><a href="/x2/">News</a></li><li><a href="/x2/pictures/">Pictures</a></li><li><a href="/x2/videos/">Videos</a></li><li><a href="/x2/help/">Help / Guides</a></li><li><a href="/x2/ships/">Ships</a></li><li><a href="/x2/universe/">Maps</a></li><li><a href="/x2/lasers/">Lasers</a></li><li><a href="/x2/missiles/">Missiles</a></li><li><a href="/x2/shields/">Shields</a></li><li><a href="/x2/wares/">Wares</a></li><li><a href="/x2/mods.php">My Mods</a></li><li><a href="/forum/viewforum.php?id=11">Forum</a></li><li><a href="/x2/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+	<h1>Compare ships</h1><br>
+
+
+	<table class="board_table">
+
+
+	<tr>
+		<th style="width: 33%;">
+			Ship 1 &nbsp;
+			<select size="1" id="select_1" onChange="load_ship('select_1');" style="width: 150px;">
+<option value="0">Please pick a ship</option>
+<optgroup label="TL">
+<option value="1">Argon Mammoth</option>
+<option value="16">Split Elephant</option>
+<option value="23">Paranid Hercules</option>
+<option value="30">Boron Orca</option>
+<option value="37">Teladi Albatross</option>
+</optgroup>
+<optgroup label="TS">
+<option value="2">Argon Mercury</option>
+<option value="24">Paranid Demeter</option>
+<option value="31">Boron Dolphin</option>
+<option value="38">Teladi Vulture</option>
+<option value="44">Pirate Ship</option>
+<option value="87">Split Caiman</option>
+</optgroup>
+<optgroup label="M1">
+<option value="3">Argon Colossus</option>
+<option value="11">Xenon J</option>
+<option value="18">Split Raptor</option>
+<option value="25">Paranid Zeus</option>
+<option value="32">Boron Shark</option>
+<option value="39">Teladi Condor</option>
+<option value="75">Khaak Carrier</option>
+</optgroup>
+<optgroup label="M2">
+<option value="4">Argon Titan</option>
+<option value="12">Xenon K</option>
+<option value="19">Split Python</option>
+<option value="26">Paranid Odysseus</option>
+<option value="33">Boron Ray</option>
+<option value="40">Teladi Phoenix</option>
+<option value="76">Khaak Destroyer</option>
+</optgroup>
+<optgroup label="M4">
+<option value="6">Argon Buster</option>
+<option value="14">Xenon M</option>
+<option value="21">Split Scorpion</option>
+<option value="63">Pirate Bayamon</option>
+<option value="73">Khaak Interceptor</option>
+<option value="82">Teladi Buzzard</option>
+<option value="91">Boron Mako</option>
+<option value="94">Paranid Pericles</option>
+</optgroup>
+<optgroup label="M5">
+<option value="7">Argon Discoverer</option>
+<option value="15">Xenon N</option>
+<option value="29">Paranid Pegasus</option>
+<option value="36">Boron Octopus</option>
+<option value="64">Pirate Mandalay</option>
+<option value="74">Khaak Scout</option>
+<option value="83">Teladi Harrier</option>
+<option value="86">Split Jaguar</option>
+</optgroup>
+<optgroup label="M3">
+<option value="13">Xenon L</option>
+<option value="20">Split Mamba</option>
+<option value="27">Paranid Perseus</option>
+<option value="41">Teladi Falcon</option>
+<option value="62">Pirate Orinoco</option>
+<option value="72">Khaak Fighter</option>
+<option value="78">Argon Nova</option>
+<option value="90">Boron Barracuda</option>
+</optgroup>
+<optgroup label="M6">
+<option value="77">Argon Centaur</option>
+<option value="81">Teladi Osprey</option>
+<option value="85">Split Dragon</option>
+<option value="89">Boron Hydra</option>
+<option value="93">Paranid Nemesis</option>
+</optgroup>
+<optgroup label="TP">
+<option value="80">Argon Express</option>
+<option value="84">Teladi Toucan</option>
+<option value="88">Split Iguana</option>
+<option value="92">Boron Manta</option>
+<option value="96">Paranid Hermes</option>
+</optgroup>
+
+			</select>
+		<th>
+		<th style="width: 33%;">
+			Ship 2 &nbsp;			
+			<select size="1" id="select_2" onChange="load_ship('select_2');" style="width: 150px;"><option value="0">Please pick a ship</option>
+<optgroup label="TL">
+<option value="1">Argon Mammoth</option>
+<option value="16">Split Elephant</option>
+<option value="23">Paranid Hercules</option>
+<option value="30">Boron Orca</option>
+<option value="37">Teladi Albatross</option>
+</optgroup>
+<optgroup label="TS">
+<option value="2">Argon Mercury</option>
+<option value="24">Paranid Demeter</option>
+<option value="31">Boron Dolphin</option>
+<option value="38">Teladi Vulture</option>
+<option value="44">Pirate Ship</option>
+<option value="87">Split Caiman</option>
+</optgroup>
+<optgroup label="M1">
+<option value="3">Argon Colossus</option>
+<option value="11">Xenon J</option>
+<option value="18">Split Raptor</option>
+<option value="25">Paranid Zeus</option>
+<option value="32">Boron Shark</option>
+<option value="39">Teladi Condor</option>
+<option value="75">Khaak Carrier</option>
+</optgroup>
+<optgroup label="M2">
+<option value="4">Argon Titan</option>
+<option value="12">Xenon K</option>
+<option value="19">Split Python</option>
+<option value="26">Paranid Odysseus</option>
+<option value="33">Boron Ray</option>
+<option value="40">Teladi Phoenix</option>
+<option value="76">Khaak Destroyer</option>
+</optgroup>
+<optgroup label="M4">
+<option value="6">Argon Buster</option>
+<option value="14">Xenon M</option>
+<option value="21">Split Scorpion</option>
+<option value="63">Pirate Bayamon</option>
+<option value="73">Khaak Interceptor</option>
+<option value="82">Teladi Buzzard</option>
+<option value="91">Boron Mako</option>
+<option value="94">Paranid Pericles</option>
+</optgroup>
+<optgroup label="M5">
+<option value="7">Argon Discoverer</option>
+<option value="15">Xenon N</option>
+<option value="29">Paranid Pegasus</option>
+<option value="36">Boron Octopus</option>
+<option value="64">Pirate Mandalay</option>
+<option value="74">Khaak Scout</option>
+<option value="83">Teladi Harrier</option>
+<option value="86">Split Jaguar</option>
+</optgroup>
+<optgroup label="M3">
+<option value="13">Xenon L</option>
+<option value="20">Split Mamba</option>
+<option value="27">Paranid Perseus</option>
+<option value="41">Teladi Falcon</option>
+<option value="62">Pirate Orinoco</option>
+<option value="72">Khaak Fighter</option>
+<option value="78">Argon Nova</option>
+<option value="90">Boron Barracuda</option>
+</optgroup>
+<optgroup label="M6">
+<option value="77">Argon Centaur</option>
+<option value="81">Teladi Osprey</option>
+<option value="85">Split Dragon</option>
+<option value="89">Boron Hydra</option>
+<option value="93">Paranid Nemesis</option>
+</optgroup>
+<optgroup label="TP">
+<option value="80">Argon Express</option>
+<option value="84">Teladi Toucan</option>
+<option value="88">Split Iguana</option>
+<option value="92">Boron Manta</option>
+<option value="96">Paranid Hermes</option>
+</optgroup>
+		</select>
+		</th>
+		<th style="width: 33%;">
+			Ship 3 &nbsp;
+			<select size="1" id="select_3" onChange="load_ship('select_3');" style="width: 150px;"><option value="0">Please pick a ship</option>
+<optgroup label="TL">
+<option value="1">Argon Mammoth</option>
+<option value="16">Split Elephant</option>
+<option value="23">Paranid Hercules</option>
+<option value="30">Boron Orca</option>
+<option value="37">Teladi Albatross</option>
+</optgroup>
+<optgroup label="TS">
+<option value="2">Argon Mercury</option>
+<option value="24">Paranid Demeter</option>
+<option value="31">Boron Dolphin</option>
+<option value="38">Teladi Vulture</option>
+<option value="44">Pirate Ship</option>
+<option value="87">Split Caiman</option>
+</optgroup>
+<optgroup label="M1">
+<option value="3">Argon Colossus</option>
+<option value="11">Xenon J</option>
+<option value="18">Split Raptor</option>
+<option value="25">Paranid Zeus</option>
+<option value="32">Boron Shark</option>
+<option value="39">Teladi Condor</option>
+<option value="75">Khaak Carrier</option>
+</optgroup>
+<optgroup label="M2">
+<option value="4">Argon Titan</option>
+<option value="12">Xenon K</option>
+<option value="19">Split Python</option>
+<option value="26">Paranid Odysseus</option>
+<option value="33">Boron Ray</option>
+<option value="40">Teladi Phoenix</option>
+<option value="76">Khaak Destroyer</option>
+</optgroup>
+<optgroup label="M4">
+<option value="6">Argon Buster</option>
+<option value="14">Xenon M</option>
+<option value="21">Split Scorpion</option>
+<option value="63">Pirate Bayamon</option>
+<option value="73">Khaak Interceptor</option>
+<option value="82">Teladi Buzzard</option>
+<option value="91">Boron Mako</option>
+<option value="94">Paranid Pericles</option>
+</optgroup>
+<optgroup label="M5">
+<option value="7">Argon Discoverer</option>
+<option value="15">Xenon N</option>
+<option value="29">Paranid Pegasus</option>
+<option value="36">Boron Octopus</option>
+<option value="64">Pirate Mandalay</option>
+<option value="74">Khaak Scout</option>
+<option value="83">Teladi Harrier</option>
+<option value="86">Split Jaguar</option>
+</optgroup>
+<optgroup label="M3">
+<option value="13">Xenon L</option>
+<option value="20">Split Mamba</option>
+<option value="27">Paranid Perseus</option>
+<option value="41">Teladi Falcon</option>
+<option value="62">Pirate Orinoco</option>
+<option value="72">Khaak Fighter</option>
+<option value="78">Argon Nova</option>
+<option value="90">Boron Barracuda</option>
+</optgroup>
+<optgroup label="M6">
+<option value="77">Argon Centaur</option>
+<option value="81">Teladi Osprey</option>
+<option value="85">Split Dragon</option>
+<option value="89">Boron Hydra</option>
+<option value="93">Paranid Nemesis</option>
+</optgroup>
+<optgroup label="TP">
+<option value="80">Argon Express</option>
+<option value="84">Teladi Toucan</option>
+<option value="88">Split Iguana</option>
+<option value="92">Boron Manta</option>
+<option value="96">Paranid Hermes</option>
+</optgroup>
+		</select>
+		</th>
+	</tr>
+	</table>
+
+	<table width="100%" style="border:solid 1px #E6E6E6;">
+	<tr>
+		<td valign="top" width="33%"><div id="div_1"></div></td>
+		<td valign="top" width="33%"><div id="div_2"></div></td>
+		<td valign="top" width="33%"><div id="div_3"></div></td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center" style="background: #E6E6E6;"><div id="share_link">On this page you can compare up-to 3 ships, from any class or race.</div></td>
+	</tr>
+	</table>
+
+	<script>
+
+	var ship1_id = 0;
+	var ship2_id = 0;
+	var ship3_id = 0;
+
+	function Chr(AsciiNum)
+	{
+		return String.fromCharCode(AsciiNum);
+	}
+
+	function encode(id)
+	{
+		return Chr(65 + (id / 26)) + Chr(65 + (id % 26));
+	}
+
+	function decode(id)
+	{
+		var part1 = id.charCodeAt(0)-65;
+		var part2 = id.charCodeAt(1)-65;
+
+		return ((part1 * 26) + part2);
+	}
+
+
+	function load_ship(which)
+	{
+		var select_box = document.getElementById(which);
+		var option_value = select_box.options[select_box.selectedIndex].value;
+
+		http = new XMLHttpRequest();
+		http.open('GET', 'get_comp.php?id='+option_value, true);
+
+		http.onreadystatechange=function() 
+		{
+			if(http.readyState == 4)
+			{
+				if (which == 'select_1')
+				{
+					document.getElementById('div_1').innerHTML = http.responseText;
+					ship1_id = option_value;
+				}
+
+				else if (which == 'select_2')
+				{
+					document.getElementById('div_2').innerHTML = http.responseText;
+					ship2_id = option_value;
+				}
+
+				else
+				{
+					document.getElementById('div_3').innerHTML = http.responseText;
+					ship3_id = option_value;
+				}
+
+
+				//----------------------
+				// work-out share id
+				//----------------------
+	
+				var share_id = encode(ship1_id) + encode(ship2_id) + encode(ship3_id);
+
+				document.getElementById('share_link').innerHTML = '<b>Share link</b>: <input value="http://roguey.co.uk/x2/ships/compare.php?id='+share_id+'" readonly type="text" size="75" style="background: #EBEBEB;"><br>';
+
+			}
+		}
+
+	  	http.send(null);
+
+		//----------------------
+	}
+
+	function setSelectedIndex(s, v)
+	{
+		for ( var i = 0; i < s.options.length; i++ )
+		{
+			if ( s.options[i].value == v )
+			{
+				s.options[i].selected = true;
+				return;
+			}
+		}
+	}
+
+	function share_load()
+	{
+		var load_ids = '';
+		var ship1 = decode(load_ids.substring(0,2));
+		var ship2 = decode(load_ids.substring(2,4));
+		var ship3 = decode(load_ids.substring(4,6));
+
+		var load_html = '<br><br><center><b>Loading ship</b>...<br><br><img src="/images/bar.gif"></center>';
+
+		if (ship1 > 0)
+		{
+			setSelectedIndex(select_1, ship1);
+			document.getElementById('div_1').innerHTML = load_html;
+			window.setTimeout("document.getElementById('select_1').onchange();", 100);
+		}
+
+		if (ship2 > 0)
+		{
+			setSelectedIndex(select_2, ship2);
+			document.getElementById('div_2').innerHTML = load_html;
+			window.setTimeout("document.getElementById('select_2').onchange();", 500);
+		}
+
+		if (ship3 > 0)
+		{
+			setSelectedIndex(select_3, ship3);
+			document.getElementById('div_3').innerHTML = load_html;
+			window.setTimeout("document.getElementById('select_3').onchange();", 900);
+		}
+
+		
+	}
+
+	
+
+	</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00203 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

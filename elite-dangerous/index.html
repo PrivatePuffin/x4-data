@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Elite &amp; Dangerous Roguey</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="news, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/elite-dangerous/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Elite &amp; Dangerous Roguey">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/elite-dangerous/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/elite-dangerous/"><img src="/elite-dangerous/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #A98135;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #A98135;">
+				<li class="icon" style="background-color: #A98135">&nbsp;</li><li><a href="/elite-dangerous/">News</a></li><li><a href="/elite-dangerous/help/">Help / Guides</a></li><li><a href="/elite-dangerous/trade-helper/">Trade Helper</a></li><li><a href="/elite-dangerous/ships/">Ships</a></li><li><a href="/elite-dangerous/ship-builds/">Builds</a></li><li><a href="/elite-dangerous/universe/">Universe</a></li><li><a href="/elite-dangerous/equipment/">Equipment</a></li><li><a href="/elite-dangerous/engineers/">Engineers</a></li><li><a href="/elite-dangerous/commanders/">Commanders</a></li><li><a href="/elite-dangerous/powers/">Powers</a></li><li><a href="/elite-dangerous/fleet-carriers/">Fleet Carriers</a></li><li><a href="/elite-dangerous/wares/">Wares</a></li><li><a href="/elite-dangerous/videos/">Videos</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=36">Forum</a></li><li><a href="/elite-dangerous/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<h1>News</h1>
+	<h2>Pre-alpha: Mission Playthrough</h2>
+
+			<span class="smalltext">
+				Thursday 4th March, 2021 &middot; Posted by <a href="/users/profile.php?id=1" class="admin">Roguey</a> 
+					
+				&middot; 
+
+				<a href="/elite-dangerous/news/single.php?id=643#comments" class="smalllink colourlink">
+					<img src="/images/site/comment.gif" style="border: 0;" alt="Comment"> 2 comments</a>			
+
+			</span>
+
+
+			<div class="pad">
+				Today Frontier posted a video showing three commanders sneaking into an outpost. The team head towards the power centre and disable it - making the opposing faction powerless. Each commander has their own role/equipment to complete to the mission. Here is the video;<br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/lrLjC47iwlY" allowfullscreen></iframe></div><br><br>What do you think? Do feel that Odyssey compliments the rest of the game or feels completely different? I will be interested to hear what you think!
+				<br><br>
+
+			</div>
+			<br><br>
+	<h2>Powerplay reaches 300th week</h2>
+
+			<span class="smalltext">
+				Monday 1st March, 2021 &middot; Posted by <a href="/users/profile.php?id=1" class="admin">Roguey</a> 
+					
+				&middot; 
+
+				<a href="/elite-dangerous/news/single.php?id=641#comments" class="smalllink colourlink">
+					<img src="/images/site/comment.gif" style="border: 0;" alt="Comment"> 0 comments</a>			
+
+			</span>
+
+
+			<div class="pad">
+				I thought id just make a quick news post. Powerplay has now reached its 300th week! Powerplay was intended to group players together, so they could fight other players to gain control of universe. Players would get a weekly cash bonus and could access some unique rewards; many being underwhelming but a couple of them being useful. <br><br>Frontier never expanded on powerplay, and I felt that over-time was forgotten about. Nowadays I feel that aligning with a power can often be a hindrance, often npcs are sent to attack you from opposing sides. Frontier was thought that powerplay was a major feature of the game.<br><br>Anyway, I thought id just let you know. How many of you guys still participate in powerplay?<br><br><div style="text-align: center;"><img src="/news/pics/user_1/large/news_241_b.jpg" alt="News picture 241" style="border: none;"></div>
+				<br><br>
+
+			</div>
+			<br><br>
+	<h2>Elite Dangerous for FREE</h2>
+
+			<span class="smalltext">
+				Friday 20th November, 2020 &middot; Posted by <a href="/users/profile.php?id=1" class="admin">Roguey</a> 
+					
+				&middot; 
+
+				<a href="/elite-dangerous/news/single.php?id=640#comments" class="smalllink colourlink">
+					<img src="/images/site/comment.gif" style="border: 0;" alt="Comment"> 0 comments</a>			
+
+			</span>
+
+
+			<div class="pad">
+				You can now get Elite Dangerous for FREE on the Epic store. All you need to do is to login/create an Epic account, then claim the Free game;<br><br><div style="text-align: center;"><img src="/news/pics/user_1/large/news_240_b.jpg" alt="News picture 240" style="border: none;"></div><br><br>You will get the addon (Horizons) too, as its free to anyone who owns the base game. I would highly suggest picking up a copy - what do you have to loose?!<br><br>For those with an existing accounts, this would be a great opportunity to get a second account. Make sure you use a different email for your new Frontier/Epic accounts. You will need to link them together, and dont want to link to your old account. If your Epic account uses the same as your primary Frontier account, you could change the Epic account by going into the account settings (I dont know if you need to do this, but might be a good idea).<br><br>Please bare in-mind that the servers could be very busy at this time.<br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/P0P-cwPBMJU" allowfullscreen></iframe></div>
+				<br><br>
+
+			</div>
+			<br><br>
+
+		
+		<b>Older news</b><br>
+		<ul>
+			<li><a href="/elite-dangerous/news/archive.php">News archive</a></li>
+		</ul>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00157 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

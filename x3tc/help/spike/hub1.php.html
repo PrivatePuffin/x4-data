@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hub Plot (Page 1 of 2) - Roguey's X3TC site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Hub, Plot, Walkthrough, Spike, guide, gaming, roguey">
+		<META NAME="Description" CONTENT="Hub Plot Walkthrough written by Spike.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3tc/help/spike/hub1.php">
+		<meta property="og:description" content="Hub Plot Walkthrough written by Spike.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Hub Plot (Page 1 of 2)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3tc/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3tc/"><img src="/x3tc/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #F34D4D;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #F34D4D;">
+				<li class="icon" style="background-color: #F34D4D">&nbsp;</li><li><a href="/x3tc/">News</a></li><li><a href="/x3tc/pictures/">Pictures</a></li><li><a href="/x3tc/videos/">Videos</a></li><li><a href="/x3tc/help/">Help / Guides</a></li><li><a href="/x3tc/ships/">Ships</a></li><li><a href="/x3tc/universe/">Maps</a></li><li><a href="/x3tc/missiles/">Missiles</a></li><li><a href="/x3tc/lasers/">Lasers</a></li><li><a href="/x3tc/shields/">Shields</a></li><li><a href="/x3tc/stations/">Stations</a></li><li><a href="/x3tc/wares/">Wares</a></li><li><a href="/x3tc/steam/">STEAM achievements</a></li><li><a href="/forum/viewforum.php?id=2">Forum</a></li><li><a href="/x3tc/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Hub Plot <span class="smalltext">(Page 1 of 2)</span></h1>
+	Written by <b>Spike</b>,<br><br>
+
+	<center><img src="./images/hub-header.jpg" alt="Hub Plot Walkthrough, written by Spike"></center>
+	<br><br>
+
+	<center><b>This guide contains spoilers!</b></center>
+	<br><br>
+
+	<b>Requirements for this plot</b><br>
+	<ul>
+		<li>Boron rank 8 <span class="smalltext">(King's Knight)</span></li>
+		<li>Trade rank 6 <span class="smalltext">(Apprentice Trader)</span></li>
+	</ul>
+	
+	As one of the original plotlines, only very early versions of the game have appreciable bugs. However, if you have mods, 
+	it is possible that they may introduce problems with the plot. As this is a Vanilla forum and a repository for information 
+	and issues regarding the unmodded game, if you have a problem with a modded game you are requested to post in the Scripts and Modding forum.
+
+	The resource requirements for this plot are as follow;
+	<br>
+	
+	<br>Stage 1: <b>Gate pair 1</b>
+	<ul>
+		<li>400 Computer Components</li>
+		<li>500 Microchips</li>
+   </ul>
+   
+   <br>Stage 2: <b>Realignment</b>
+   <ul>
+		<li>150,000 Teladianium</li>
+		<li>450,000 Ore</li>
+   </ul>
+   
+   <br>Stage 3: <b>Gate pair 2</b>
+   <ul>
+		<li>500 Nividium</li>
+		<li>250,000 Crystals</li>
+   </ul>
+   
+   <br>Stage 4: <b>Gate pair 3</b>
+   <ul>
+		<li>15 million Credits <span class="smalltext">(Paranid Communications Facility)</span></li>
+		<li>400,000 Silicon wafers</li>
+		<li>75,000 Microchips</li>
+   </ul>
+	<br>
+
+	The Hub Plot begins when you fly into a Boron sector with the ranks of King's Knight (Boron rank 8 ) and Apprentice Trader (Trade rank 6). 
+	A Boron named Mahi Ma asks you to excuse him, but he needs help. Turn around, fly back to him, and start chatting.
+	<br><br>
+
+	Apparently, two of his friends went for a hike in Xenon territory. One would have thought that Darwin would have had his way with 
+	them by now but you agree to go look for them anyway. Head for Xenon Core 023. Yes, a core Xenon sector. That's what you're 
+	getting yourself into. Best ship for it is a Kestrel; the Xenon can't kill what they can't catch.
+	<br><br>
+
+	To get to your destination, you go north from Grand Exchange or south from Zyarth's Dominion into Xenon Sector 598. Skirt around the 
+	Xenon forces and head for the East gate. In the next sector, X627, skirt round the edge again, steering well clear of any hostiles, 
+	and through this Gate to Xenon Core 023.
+	<br><br>
+
+	... Except that it isn't Xenon Core 023, it's something else. You are inside a massive structure the size of a Sector with no less than six 
+	Gates embedded around the ecliptic. Only two function, however. There's also what looks like a control node on the roof above the centre of the sector. 
+	There's a derelict ship in the middle of the sector; moving in close to it is your objective as it causes download of the ship's log. Turns out, 
+	Mahi Ma's two 'friends' are none other than Julian Brennan and Bala Gi. They went looking for a Xenon sector and found this - the Hub - instead. 
+	Now, they've disappeared. Time to get back to Mahi Ma and tell him what happened. Get out the same way you got it; stay well 
+	clear of any Xenon ship using your speed.
+	<br><br>
+
+	Before moving on, pick up 400 Computer Components and 500 Microchips. Once acquired, return to the sector where Mahi Ma gave you the job and comm. 
+	him. He asks if you found his friends; you tell him their names and that they found something big. He asks to take a look, and bails out of his ship. 
+	You have to pick him up; at this point, you can also claim his ship, an Enhanced Dolphin, for yourself if you so choose.
+	<br><br>
+
+	Now you need to fly back to the Hub. There's two ways of doing this; using a jumpdrive or flying there as before. If you take the jumpdrive option 
+	(recommended, given the freight you're carrying) you'll need to find the sector in the Sector Map; it's one place west of Argon Sector M148.
+	<br><br>
+
+	When you jump in, Mahi Ma takes a deep breath and decides that the next step is to dock with the control node. He manages to interface with the 
+	docking protocols and the node switches to your control. It will stay this way from now on. You must dock so that Mahi Ma can get on board.
+	<br><br>
+
+	He finds that the structure is badly damaged, but still functioning. He also finds evidence that Bala Gi and Julian Brennan were here, 
+	but they've moved on. To find them, Mahi Ma must build an interface for the computers. His request has gone down in X-Universe legend 
+	as the very epitome of understatement;
+	<br><br>
+
+	<div class="quote">
+		can you please get me a couple of things?
+	</div>
+	<br>
+
+	This is the beginning of a long campaign of resource collection, complex building and logistics that will see you amass mind-boggling 
+	amounts of resources. In the immediate future, all Mahi Ma needs is the 400 Computer Components and 500 Microchips you were told to collect. 
+	However, as I said, this is just the first step of a very large mountain. Offload these wares into the Hub; you won't be able to offload all 
+	of them at once, you'll have to wait for one lot to be 'absorbed' before you can load the next lot in.
+	<br><br>
+
+	Mahi Ma will then try to connect the second set of jumpgates; but he fries the system doing it. Your next job is to repair the damaged capacitors. 
+	Three objects will appear near two Gates, you must fly over, eject from your ship, and repair all the objects to full hull. 
+	You should do this all at once, because Xenon ships have been known to attack the Hub once you've gained control of it.
+	<br><br>
+
+	To continue, you must then talk to Mahi Ma on the Hub.
+	<br><br>
+
+	You now need to pick a Sector with lots and lots of asteroids with good yields; this should be located somewhere safe, a place that you 
+	call your own sector and can defend well. This just became your home sector.
+	<br><br>
+
+	You can now connect the first set of Gates (which, confusingly, is Gate Set 2), but you only have one shot as the Hub's power generator is not working. 
+	You should connect the Hub to your home Sector; to do this, in the Hub's menu, select 'Gate realignment' and select one of the Gates 
+	that you want to be connected to. The Hub will disconnect that Gate from its opposite end in the next Sector, and place itself between the 
+	two Gates (for example, if you select the North gate of Argon Prime, then the Hub will connect one of the gates to that and the other to the 
+	South gate of Herron's Nebula. You then have to fly through the Hub to get from Argon Prime to Herron's Nebula).
+	<br><br>
+
+	When the realignment is completed, you have to get the next set of gates working. Mahi Ma needs more resources, and this time, the numbers are astronomical.
+	<br><br>
+
+	It is suggested that you begin complex building. The suggestions in this Walkthrough will stand you in good stead for future plots as well. 
+	I will only ask you to build complexes that you will find useful in later plots as well as this one; as such, you may want to build more 
+	factories than I suggest. The factory complexes that you should build are as follows (you might want to start on another plot in the meantime); 
+	<br><br>
+
+
+	<br>
+
+	<center>	
+		<font class="smalltext"><b>Next: Continued</b></font><br>
+		<a href="hub2.php">Next Page >></a>
+	</center>
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00059 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

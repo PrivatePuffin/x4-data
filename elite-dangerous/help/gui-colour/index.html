@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>GUI colour adjustment - Elite &amp; Dangerous Roguey</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="gui, colour, color, adjustment, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/elite-dangerous/help/gui-colour/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="GUI colour adjustment">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/elite-dangerous/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/elite-dangerous/"><img src="/elite-dangerous/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #A98135;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #A98135;">
+				<li class="icon" style="background-color: #A98135">&nbsp;</li><li><a href="/elite-dangerous/">News</a></li><li><a href="/elite-dangerous/help/">Help / Guides</a></li><li><a href="/elite-dangerous/trade-helper/">Trade Helper</a></li><li><a href="/elite-dangerous/ships/">Ships</a></li><li><a href="/elite-dangerous/ship-builds/">Builds</a></li><li><a href="/elite-dangerous/universe/">Universe</a></li><li><a href="/elite-dangerous/equipment/">Equipment</a></li><li><a href="/elite-dangerous/engineers/">Engineers</a></li><li><a href="/elite-dangerous/commanders/">Commanders</a></li><li><a href="/elite-dangerous/powers/">Powers</a></li><li><a href="/elite-dangerous/fleet-carriers/">Fleet Carriers</a></li><li><a href="/elite-dangerous/wares/">Wares</a></li><li><a href="/elite-dangerous/videos/">Videos</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=36">Forum</a></li><li><a href="/elite-dangerous/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>GUI colour adjustment</h1>
+
+	On this page you can preview changing the GUI colours. This can be done by editing the file 
+	<i>Frontier\EDLaunch\Products\FORC-FDEV-D-1002\GraphicsConfiguration.xml</i>.
+	Please note, the preview images will show everything changed not just the HUD.
+	<br><br>
+	
+	<div class="subheader">
+		Preview image: 
+		
+		<select id="select_preview" onChange="ChangePreviewPic();">
+			<option value="preview-1.jpg" selected>1. Combat</option>
+			<option value="preview-2.jpg">2. Docked</option>
+			<option value="preview-3.jpg">3. Info panel</option>
+		</select>
+	</div>
+	
+    <img id="hud-preview-picture" style="width: 100%; height: 100%;" src="/elite-dangerous/help/gui-colour/images/preview-1.jpg">
+	
+	<table class="board_table">
+	<tr>
+		<th colspan="5">Colour adjustment</th>
+	</tr>
+	<tr>
+		<td></td>
+		
+		<td><b>Red</b></td>
+		<td><b>Green</b></td>
+		<td><b>Blue</b></td>
+
+	</tr>
+	<tr>
+		<td>Red</td>
+		<td><input type="range" id="col-rr" min="0" max="1" step="0.05" value="1.0" onmousemove="adjust_colours(this);"></td>
+		<td><input type="range" id="col-rg" min="0" max="1" step="0.05" value="0.0" onmousemove="adjust_colours(this);"></td>
+		<td><input type="range" id="col-rb" min="0" max="1" step="0.05" value="0.0" onmousemove="adjust_colours(this);"></td>
+	</tr>
+	
+	<tr>
+		<td>Green</td>
+		<td><input type="range" id="col-gr" min="0" max="1" step="0.05" value="0.0" onmousemove="adjust_colours(this);"></td>
+		<td><input type="range" id="col-gg" min="0" max="1" step="0.05" value="1.0" onmousemove="adjust_colours(this);"></td>
+		<td><input type="range" id="col-gb" min="0" max="1" step="0.05" value="0.0" onmousemove="adjust_colours(this);"></td>
+	</tr>
+	
+	<tr>
+		<td>Blue</td>
+		<td><input type="range" id="col-br" min="0" max="1" step="0.05" value="0.0" onmousemove="adjust_colours(this);"></td>
+		<td><input type="range" id="col-bg" min="0" max="1" step="0.05" value="0.0" onmousemove="adjust_colours(this);"></td>
+		<td><input type="range" id="col-bb" min="0" max="1" step="0.05" value="1.0" onmousemove="adjust_colours(this);"></td>
+	</tr>
+	</table>
+	<br>
+	
+			
+	<b>Matrix</b><br>
+	<textarea id="game_matrix" rows="3" cols="40"></textarea>
+	<br><br>
+		
+	<b>Share link</b>: <input id="share_link" type="input" readonly size="80" style="background: #EBEBEB;">
+	
+	<svg width="0" height="0">
+
+		<filter id="filter_gui">
+
+		<feColorMatrix id="gui_matrix" type="matrix" values="
+		1.0 0.0 0.0 0 0		// red
+		0.0 1.0 0.0 0 0		// green
+		0.0 0.0 1.0 0 0		// blue
+
+		0 0 0 1 0" />
+
+		</filter>
+
+	</svg>
+	
+	<script>
+	
+		// last selections
+		var last_obj;
+		var last_value;
+		
+		// share link?
+		var share_link = '';
+		
+		function Chr(AsciiNum)
+		{
+			return String.fromCharCode(AsciiNum);
+		}
+
+		function encode(id)
+		{
+			var		int_id	= id * 10;
+			return Chr(65 + int_id);
+		}
+
+		function decode(id)
+		{
+			return (id.charCodeAt(0)-65) / 10;
+		}
+		
+		function check_share_link()
+		{
+			// checks if we loaded on a share link			
+			if (share_link != "")
+			{
+									
+				// get range values (RED)
+				document.getElementById('col-rr').value		= decode(share_link.substr(0, 1));
+				document.getElementById('col-rg').value		= decode(share_link.substr(3, 1));
+				document.getElementById('col-rb').value		= decode(share_link.substr(6, 1));
+				
+
+				// get range values (GREEN)
+				document.getElementById('col-gr').value		= decode(share_link.substr(1, 1));
+				document.getElementById('col-gg').value		= decode(share_link.substr(4, 1));
+				document.getElementById('col-gb').value		= decode(share_link.substr(7, 1));
+				
+				// get range values (BLUE)
+				document.getElementById('col-br').value		= decode(share_link.substr(2, 1));
+				document.getElementById('col-bg').value		= decode(share_link.substr(5, 1));
+				document.getElementById('col-bb').value		= decode(share_link.substr(8, 1));
+			}
+		}
+		
+		function ChangePreviewPic()
+		{
+			// find out what's selected
+			var sel_pic 	= document.getElementById('select_preview');
+			var pic_id	 	= sel_pic.options[sel_pic.selectedIndex].value;
+			
+			// if set, lets change it
+			if (pic_id != "")
+				document.getElementById('hud-preview-picture').src	= '/elite-dangerous/help/gui-colour/images/'+pic_id;
+			
+		}
+		
+		function adjust_colours(obj)
+		{
+			// ---------------------
+			// apply colour filter
+			// ---------------------
+			
+			// get range values (RED)
+			var col_rr = parseFloat(document.getElementById('col-rr').value);
+			var col_rg = parseFloat(document.getElementById('col-rg').value);
+			var col_rb = parseFloat(document.getElementById('col-rb').value);
+			
+
+			// get range values (GREEN)
+			var col_gr = parseFloat(document.getElementById('col-gr').value);
+			var col_gg = parseFloat(document.getElementById('col-gg').value);
+			var col_gb = parseFloat(document.getElementById('col-gb').value);
+			
+			// get range values (BLUE)
+			var col_br = parseFloat(document.getElementById('col-br').value);
+			var col_bg = parseFloat(document.getElementById('col-bg').value);
+			var col_bb = parseFloat(document.getElementById('col-bb').value);
+			
+			// ---------------------
+			// check for changes
+			// ---------------------
+			
+			if (obj != null)
+			{
+				if ((last_obj != obj.id) || (last_value != obj.value))
+				{
+					last_obj	= obj.id;
+					last_value 	= obj.value;
+				}
+				else
+					return;
+			}
+			
+			// ---------------------
+			// update matrix
+			// ---------------------
+			
+			gui_matrix			=	document.getElementById('gui_matrix');
+			gui_matrix.setAttribute("values",
+									col_rr+" "+col_gr+" "+col_br+" 0 0 "+
+									col_rg+" "+col_gg+" "+col_bg+" 0 0 "+
+									col_rb+" "+col_gb+" "+col_bb+" 0 0 "+
+									"0 0 0 1 0");
+									
+			// ---------------------
+			// update game matrix
+			// ---------------------
+			
+			document.getElementById('game_matrix').value	=
+									"<MatrixRed>"+col_rr+", "+col_gr+", "+col_br+"</MatrixRed>"+
+									"<MatrixGreen>"+col_rg+", "+col_gg+", "+col_bg+"</MatrixGreen>"+
+									"<MatrixBlue>"+col_rb+", "+col_gb+", "+col_bb+"</MatrixBlue>";
+
+			// ---------------------
+			// update share link
+			// ---------------------
+			
+			document.getElementById('share_link').value	= "http://roguey.co.uk/elite-dangerous/help/gui-colour/x"+
+									encode(col_rr) + encode(col_gr) + encode(col_br)+
+									encode(col_rg) + encode(col_gg) + encode(col_bg)+
+									encode(col_rb) + encode(col_gb) + encode(col_bb);
+
+			// ---------------------
+		}
+
+		check_share_link();
+		adjust_colours(null);
+		document.getElementById('hud-preview-picture').style = "filter: url(#filter_gui);";
+		
+	</script>
+	
+
+	
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00076 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

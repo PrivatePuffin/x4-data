@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Website problems or errors board - Roguey's Forum</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Website problems or errors, gaming, roguey">
+		<META NAME="Description" CONTENT="In this area, post about Website problems or errors are found.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/forum/viewforum.php?id=9">
+		<meta property="og:description" content="In this area, post about Website problems or errors are found.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Website problems or errors board">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/forum/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/forum/"><img src="/forum/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #79B4BD;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #79B4BD;">
+				<li class="icon" style="background-color: #79B4BD">&nbsp;</li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+
+	
+		<br>
+		
+		<span style="font-size: 9pt;">
+			<img src="/forum/images/icons/home.gif" alt="Home"> <a href="/forum/" class="nav_link">Board Index</a> &raquo;
+			<a href="/forum/cat.php?id=3" class="nav_link">Website</a> &raquo; <a href="viewforum.php?id=9" class="nav_link">Website problems or errors</a>
+		</span>
+
+		<br><br>
+		
+		<h1>Website problems or errors board</h1>
+		<br>
+<div style="width: 100%; height: 220px; background-color: #ffffff; background-size: cover; background-position-y: 35%; text-align: center; background-repeat:no-repeat; background-image: url('/forum/images/tab/web-errors.jpg');"></div>
+
+
+		<table class="board_table">
+		<tr>
+			<th colspan="2"></th>
+			<th>Replies</th>
+			<th colspan="2">Last Post</th>
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Threads showing 0 views - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1706" class="cat_link" style="font-size: 1.0em;">Threads showing 0 views</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=411" target="_blank"><b>Sinxar</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 weeks ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Error updating various lists... - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1692" class="cat_link" style="font-size: 1.0em;">Error updating various lists...</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=8468" target="_blank"><b>MikeV</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 9 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="X4 Ship database not working - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1675" class="cat_link" style="font-size: 1.0em;">X4 Ship database not working</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=7772" target="_blank"><b>blifneb</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 1 year ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Thread subscription suddenly stopped working. - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1667" class="cat_link" style="font-size: 1.0em;">Thread subscription suddenly stopped working.</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=411" target="_blank"><b>Sinxar</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Last Reply 48 years ago - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1654" class="cat_link" style="font-size: 1.0em;">Last Reply 48 years ago</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=21" target="_blank"><b>bozo64r</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[X3TC][X3AP] Ship acceleration values disappeared - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1640" class="cat_link" style="font-size: 1.0em;">[X3TC][X3AP] Ship acceleration values disappeared</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=7107" target="_blank"><b>SpaceTrauma</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">3</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[REQUEST] Add 2 SHIPs for page trader helper - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1639" class="cat_link" style="font-size: 1.0em;">[REQUEST] Add 2 SHIPs for page trader helper</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=6733" target="_blank"><b>KingRider</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Flight Log size limit? - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1616" class="cat_link" style="font-size: 1.0em;">Flight Log size limit?</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=5921" target="_blank"><b>Kernyx</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">3</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 3 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Outfitting in outpost for large vessels - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1589" class="cat_link" style="font-size: 1.0em;">Outfitting in outpost for large vessels</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=3805" target="_blank"><b>UbajaraMalok</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 3 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Forum updates - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1570" class="cat_link" style="font-size: 1.0em;">Forum updates</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=1" target="_blank"><b>Roguey</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">13</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_411_avatar.jpg" alt="Sinxar avatar" title="Last posted by Sinxar, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=411" target="_blank" class="admin">Sinxar</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 3 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[ED] Update data available on the website - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1566" class="cat_link" style="font-size: 1.0em;">[ED] Update data available on the website</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=5053" target="_blank"><b>Oxidire</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"> <a href="viewtopic.php?id=1566&amp;p=1" class="page_box_off">1</a> &#8230; <a href="viewtopic.php?id=1566&amp;p=2" class="page_box_off">2</a></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">17</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 4 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[XR] Rebirth wares problem - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1510" class="cat_link" style="font-size: 1.0em;">[XR] Rebirth wares problem</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=4123" target="_blank"><b>cjmartin</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[ED] TradeHelp listing ships locations incorrectly - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1508" class="cat_link" style="font-size: 1.0em;">[ED] TradeHelp listing ships locations incorrectly</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=2559" target="_blank"><b>Flinx100</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=4123" target="_blank" class="normal">cjmartin</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[ED] Trade-helper sorting bug - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1489" class="cat_link" style="font-size: 1.0em;">[ED] Trade-helper sorting bug</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=3934" target="_blank"><b>lesto</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">3</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[ED] system update - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1472" class="cat_link" style="font-size: 1.0em;">[ED] system update</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=3729" target="_blank"><b>bombero</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[ED] Problem with Mk1 - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1450" class="cat_link" style="font-size: 1.0em;">[ED] Problem with Mk1</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=3545" target="_blank"><b>RobWoz</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">4</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=3545" target="_blank" class="normal">RobWoz</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[ED] ross 733 missing in database - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1434" class="cat_link" style="font-size: 1.0em;">[ED] ross 733 missing in database</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=3169" target="_blank"><b>ARC333</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">8</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=3169" target="_blank" class="normal">ARC333</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[ED] MK2 Trade Helper not working : ( - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1429" class="cat_link" style="font-size: 1.0em;">[ED] MK2 Trade Helper not working : (</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=3113" target="_blank"><b>stos247</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=3113" target="_blank" class="normal">stos247</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[ED] equipment list - removing wrong entry - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1426" class="cat_link" style="font-size: 1.0em;">[ED] equipment list - removing wrong entry</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=2255" target="_blank"><b>DHLF</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="[ED] System name mistyped.. - Website problems or errors"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1389" class="cat_link" style="font-size: 1.0em;">[ED] System name mistyped..</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=2255" target="_blank"><b>DHLF</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">6</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		</table>
+
+		<br>
+
+		<div id="last"></div>
+
+		<table style="width: 100%">
+		<tr>
+			<td style="width: 20%"></td>
+
+			<td style="text-align: center; padding: 4px;">
+&laquo; Previous | <b>Pages</b> <b class="page_box_on">1</b><a href="viewforum.php?id=9&amp;p=2" class="page_box_off">2</a><a href="viewforum.php?id=9&amp;p=3" class="page_box_off">3</a><a href="viewforum.php?id=9&amp;p=4" class="page_box_off">4</a><a href="viewforum.php?id=9&amp;p=5" class="page_box_off">5</a> | <a href="viewforum.php?id=9&amp;p=2">Next &raquo;</a></td>
+
+			<td style="width: 20%; text-align: center">
+</td>
+
+		</tr>
+		</table>
+<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00071 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

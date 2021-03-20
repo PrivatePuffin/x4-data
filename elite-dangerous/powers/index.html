@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Powers - Elite &amp; Dangerous Roguey</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Powers, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/elite-dangerous/powers/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Powers">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/elite-dangerous/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/elite-dangerous/"><img src="/elite-dangerous/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #A98135;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #A98135;">
+				<li class="icon" style="background-color: #A98135">&nbsp;</li><li><a href="/elite-dangerous/">News</a></li><li><a href="/elite-dangerous/help/">Help / Guides</a></li><li><a href="/elite-dangerous/trade-helper/">Trade Helper</a></li><li><a href="/elite-dangerous/ships/">Ships</a></li><li><a href="/elite-dangerous/ship-builds/">Builds</a></li><li><a href="/elite-dangerous/universe/">Universe</a></li><li><a href="/elite-dangerous/equipment/">Equipment</a></li><li><a href="/elite-dangerous/engineers/">Engineers</a></li><li><a href="/elite-dangerous/commanders/">Commanders</a></li><li><a href="/elite-dangerous/powers/">Powers</a></li><li><a href="/elite-dangerous/fleet-carriers/">Fleet Carriers</a></li><li><a href="/elite-dangerous/wares/">Wares</a></li><li><a href="/elite-dangerous/videos/">Videos</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=36">Forum</a></li><li><a href="/elite-dangerous/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+ 
+		<h1>Powers</h1>
+		
+		Below is a list of known Powers found in the Elite: Dangerous universe (added in v1.3). 
+		A list of rewards can seen <a href="../news/single.php?id=538">here</a>.
+		<br><br>
+		
+		<span style="font-size: 1.2em; font-weight: bold;">Current cycle week: #303</span>
+		<br style="clear: both;"><br>
+		
+		<div id="snavbar">
+			<ul id="th_tabs">
+				<li><a style="cursor: pointer;" onclick="toggle_powers();">Browse</a></li>
+				<li><a style="cursor: pointer;" onclick="toggle_history();">History</a></li>
+			</ul>
+		</div>
+		<br style="clear: both;">
+		
+		<div id="powers_div" style="padding: 12px 8px;">
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./aisling-duval/" style="font-weight: bold; font-size: 1.4em; color: #234978;">
+					<div style="background-image: url('./images/med/aisling-duval.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					Aisling Duval
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('aisling-duval');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_aisling-duval_count">555</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_aisling-duval_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_aisling-duval_rank">0</div>
+					
+				</div>
+				<div id="standing_aisling-duval_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_aisling-duval_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('aisling-duval');">
+				</div>
+				
+			</div>
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./lavigny-duval/" style="font-weight: bold; font-size: 1.4em; color: #EF9E1F;">
+					<div style="background-image: url('./images/med/lavigny-duval.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					A Lavigny-duval
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('lavigny-duval');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_lavigny-duval_count">230</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_lavigny-duval_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_lavigny-duval_rank">0</div>
+					
+				</div>
+				<div id="standing_lavigny-duval_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_lavigny-duval_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('lavigny-duval');">
+				</div>
+				
+			</div>
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./archon-delaine/" style="font-weight: bold; font-size: 1.4em; color: #6AE281;">
+					<div style="background-image: url('./images/med/archon-delaine.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					Archon Delaine
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('archon-delaine');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_archon-delaine_count">45</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_archon-delaine_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_archon-delaine_rank">0</div>
+					
+				</div>
+				<div id="standing_archon-delaine_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_archon-delaine_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('archon-delaine');">
+				</div>
+				
+			</div>
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./denton-patreus/" style="font-weight: bold; font-size: 1.4em; color: #C41410;">
+					<div style="background-image: url('./images/med/denton-patreus.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					Denton Patreus
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('denton-patreus');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_denton-patreus_count">49</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_denton-patreus_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_denton-patreus_rank">0</div>
+					
+				</div>
+				<div id="standing_denton-patreus_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_denton-patreus_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('denton-patreus');">
+				</div>
+				
+			</div>
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./edmund-mahon/" style="font-weight: bold; font-size: 1.4em; color: #486B60;">
+					<div style="background-image: url('./images/med/edmund-mahon.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					Edmund Mahon
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('edmund-mahon');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_edmund-mahon_count">200</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_edmund-mahon_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_edmund-mahon_rank">0</div>
+					
+				</div>
+				<div id="standing_edmund-mahon_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_edmund-mahon_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('edmund-mahon');">
+				</div>
+				
+			</div>
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./felicia-winters/" style="font-weight: bold; font-size: 1.4em; color: #ABA79D;">
+					<div style="background-image: url('./images/med/felicia-winters.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					Felicia Winters
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('felicia-winters');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_felicia-winters_count">108</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_felicia-winters_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_felicia-winters_rank">0</div>
+					
+				</div>
+				<div id="standing_felicia-winters_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_felicia-winters_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('felicia-winters');">
+				</div>
+				
+			</div>
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./pranav-antal/" style="font-weight: bold; font-size: 1.4em; color: #0D586B;">
+					<div style="background-image: url('./images/med/pranav-antal.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					Pranav Antal
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('pranav-antal');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_pranav-antal_count">27</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_pranav-antal_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_pranav-antal_rank">0</div>
+					
+				</div>
+				<div id="standing_pranav-antal_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_pranav-antal_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('pranav-antal');">
+				</div>
+				
+			</div>
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./li-yong-rui/" style="font-weight: bold; font-size: 1.4em; color: #01AEBF;">
+					<div style="background-image: url('./images/med/li-yong-rui.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					Li Yong-Rui
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('li-yong-rui');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_li-yong-rui_count">72</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_li-yong-rui_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_li-yong-rui_rank">0</div>
+					
+				</div>
+				<div id="standing_li-yong-rui_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_li-yong-rui_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('li-yong-rui');">
+				</div>
+				
+			</div>
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./yuri-grom/" style="font-weight: bold; font-size: 1.4em; color: #505840;">
+					<div style="background-image: url('./images/med/yuri-grom.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					Yuri Grom
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('yuri-grom');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_yuri-grom_count">14</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_yuri-grom_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_yuri-grom_rank">0</div>
+					
+				</div>
+				<div id="standing_yuri-grom_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_yuri-grom_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('yuri-grom');">
+				</div>
+				
+			</div>
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./zachary-hudson/" style="font-weight: bold; font-size: 1.4em; color: #91A0BD;">
+					<div style="background-image: url('./images/med/zachary-hudson.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					Zachary Hudson
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('zachary-hudson');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_zachary-hudson_count">330</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_zachary-hudson_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_zachary-hudson_rank">0</div>
+					
+				</div>
+				<div id="standing_zachary-hudson_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_zachary-hudson_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('zachary-hudson');">
+				</div>
+				
+			</div>
+
+			<div style="display: inline-block; width: 300px; height: 335px; text-align: center;">
+				<a href="./zemina-torval/" style="font-weight: bold; font-size: 1.4em; color: #202020;">
+					<div style="background-image: url('./images/med/zemina-torval.jpg'); height: 245px; width: 245px; display: inline-block;"></div>
+					<br style="clear: both;">
+					Zemina Torval
+				</a>
+				<br>
+				
+				<!-- Pledge -->
+				<div style="width: 120px; text-align: left; display: inline-block;">
+					<input type="button" value="Pledge" onClick="pledge_to_power('zemina-torval');" name="pledge_button" style="height: 20px; background-color: #FFF7E9; border: 1px solid #FFA500; background-image: url('./images/small/pledge.gif'); background-repeat: no-repeat; background-position: 4px 0px; padding-left: 22px; display: inline-block; vertical-align: top;">
+					<span style="border: 1px solid #FFA500; height: 18px; font-size: 1.1em; line-height: 90%; display: inline-block; vertical-align: top; padding: 0px 4px;" id="pledge_zemina-torval_count">65</span>
+				</div>
+
+				<!-- Galactic standing -->
+				<div id="standing_zemina-torval_div" style="width: 120px; text-align: center; display: inline-block;">
+					<div style="width: 25px; height: 25px; font-size: 1.5em; line-height: 25px; background-image: url('./images/small/empty-orange-triangle.gif'); background-repeat: no-repeat; background-position: 0px 0px; text-align: center; display: inline-block;" id="current_zemina-torval_rank">0</div>
+					
+				</div>
+				<div id="standing_zemina-torval_update_div" style="display: none; text-align: center;">
+					<span class="smalltext"><b>New standing</b></span> &nbsp;
+					<input type="text" size="5" maxlength="3" value="" id="input_zemina-torval_update_rank" placeholder="?"> <input type="button" value="Go" onClick="update_standing('zemina-torval');">
+				</div>
+				
+			</div>
+
+		</div>
+		
+		<div id="history_div" style="display: none; padding: 24px 8px;">
+			<canvas id="power_graph" width="1200" height="550">No HTML5, get a newer browser!</canvas>
+		</div>
+		
+		<br><br>
+
+		<script src="/modules/js/draw_ml_graph.js"></script>
+		<script src="./powerplay.js"></script>
+		
+		<script>
+			// ----------------------
+			// variables
+			// ----------------------
+			
+			var cur_cycle		= 303;
+			var viewer_ip		= '3.249.228.169';
+			var viewer_id		= ;
+			var current_tab		= 0;
+			
+			// the various divs
+			var powers_div 		= document.getElementById('powers_div');
+			var history_div 	= document.getElementById('history_div');
+			
+			// ----------------------
+			// show powers
+			// ----------------------
+
+			function toggle_powers()
+			{
+				if (current_tab != 0)
+				{
+					// show powers
+					powers_div.style.display 		= '';
+					history_div.style.display 		= 'none';
+					
+					// update current tab (stop double-clickers)
+					current_tab 					= 0;
+					
+					// high-light correct tab
+					nav_bar_sel('th_tabs', 0);
+				}
+			}
+			
+			// ----------------------
+			// show history/graph
+			// ----------------------
+
+			function toggle_history()
+			{
+				if (current_tab != 1)
+				{
+					// show powers
+					history_div.style.display 		= '';
+					powers_div.style.display 		= 'none';
+					
+					// update current tab (stop double-clickers)
+					current_tab 					= 1;
+					
+					// high-light correct tab
+					nav_bar_sel('th_tabs', 1);
+				}
+			}
+			
+			// ----------------------
+			// toggle nav bar
+			// ----------------------
+			
+			function nav_bar_sel(id, which_tab)
+			{
+				var th_tabs 		= document.getElementById(id).getElementsByTagName('li'); 
+				
+				for (var i=0; i < th_tabs.length; i++)
+				{
+					if (which_tab == i)
+						th_tabs[i].className = 'tabon';
+					else
+						th_tabs[i].className = 'taboff';
+				}
+			}
+			
+			// ----------------------
+			// init
+			// ----------------------
+		
+			function init_powers()
+			{				
+
+				// data_points
+				var data_points 	= new Array();
+				data_points[0]	= [4, 4, 4, 4, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4];
+				data_points[1]	= [1, 3, 2, 1, 3, 3, 1, 1, 3, 1, 1, 1, 1, 1, 1];
+				data_points[2]	= [10, 10, 10, 10, 10, 10, 10, 10, 10, 9, 8, 6, 7, 6, 6];
+				data_points[3]	= [7, 5, 5, 5, 4, 4, 4, 7, 6, 5, 6, 7, 8, 5, 5];
+				data_points[4]	= [3, 1, 1, 2, 2, 1, 3, 3, 1, 3, 2, 3, 3, 2, 3];
+				data_points[5]	= [6, 6, 6, 6, 6, 6, 6, 5, 5, 10, 11, 10, 9, 8, 7];
+				data_points[6]	= [8, 8, 8, 9, 9, 8, 9, 6, 9, 8, 9, 9, 10, 9, 10];
+				data_points[7]	= [5, 9, 7, 7, 7, 7, 7, 8, 8, 7, 7, 5, 5, 7, 8];
+				data_points[8]	= [9, 7, 9, 8, 8, 9, 8, 9, 7, 6, 5, 8, 6, 10, 11];
+				data_points[9]	= [2, 2, 3, 3, 1, 2, 2, 2, 2, 2, 3, 2, 2, 3, 2];
+				data_points[10]	= [11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 10, 11, 11, 11, 9];
+
+
+				// x_axis_data
+				var x_axis_data		= ['#289', '#290', '#291', '#292', '#293', '#294', '#295', '#296', '#297', '#298', '#299', '#300', '#301', '#302', '#303'];
+			
+				
+				// x-axis labels
+				var label_names		= ['Aisling Duval', 'A Lavigny-duval', 'Archon Delaine', 'Denton Patreus', 'Edmund Mahon', 'Felicia Winters', 'Pranav Antal', 'Li Yong-Rui', 'Yuri Grom', 'Zachary Hudson', 'Zemina Torval'];				
+
+				// colours
+				var line_colours	= ['#234978', '#EF9E1F', '#6AE281', '#C41410', '#486B60', '#ABA79D', '#0D586B', '#01AEBF', '#505840', '#91A0BD', '#202020'];
+
+				// now draw graph (data_points, x_axis_data, label_names, line_colours)
+				draw_ml_graph('power_graph', data_points, x_axis_data, label_names, line_colours);
+				
+				// high-light correct tab
+				nav_bar_sel('th_tabs', 0);
+
+				// -------------------			
+			}
+			
+			window.onload = init_powers();
+		</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0258 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

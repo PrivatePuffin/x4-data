@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Roguey's X4 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="X4 foundations, egosoft, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x4/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Roguey's X4 site">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x4/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x4/"><img src="/x4/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #4830AE;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #4830AE;">
+				<li class="icon" style="background-color: #4830AE">&nbsp;</li><li><a href="/x4/">Home</a></li><li><a href="/x4/help/">Help</a></li><li><a href="/x4/ships/">Ships</a></li><li><a href="/x4/shields/">Shields</a></li><li><a href="/x4/weapons/">Weapons</a></li><li><a href="/x4/universe/">Maps</a></li><li><a href="/x4/wares/">Wares</a></li><li><a href="/x4/factions/">Factions</a></li><li><a href="/x4/dlc/split-vendetta/">Split Vendetta</a></li><li><a href="/x4/dlc/cradle-of-humanity/">Cradle of Humanity</a></li><li><a href="/x4/steam/">Achievements</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=44">Forum</a></li><li><a href="/x4/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<h1>News</h1>
+<br>
+	<h2>The recent shut-down of the X4 site</h2>
+
+			<span class="smalltext">
+				Friday 19th March, 2021 &middot; Posted by <a href="/users/profile.php?id=1" class="admin">Roguey</a> 
+					
+				&middot; 
+
+				<a href="/x4/news/single.php?id=645#comments" class="smalllink colourlink">
+					<img src="/images/site/comment.gif" style="border: 0;" alt="Comment"> 5 comments</a>			
+
+			</span>
+
+
+			<div class="pad">
+				As you many of seen, the X4 site has been off-line for a couple of days. This wasnt something I wanted to do; the whole reason to create content is to help people whether its a map, stats or just advice or tips. As you can imagine creating content takes many hours, from design, coding, testing and updating. To the end-user everything should just work, regardless of the amount of parts behind the scene.<br><br>When the X4 site was created it was designed to use the same files as the game; remember that X4 has been created by a team of developers and my X4 site is only by me. When Split Vendetta was released, support for DLC patching was added. I know most of this doesnt really matter to you, but hopefully gives you an idea of how much time is spent coding.<br><br>So recently big update was released (v4.0) and the second DLC - Cradle of Humanity. I had been following the progress of both of these - making time to revisit X4 and start adding/updating content. Days went past and nothing happen. So it looked like we been forgotten about again. We were forgotten about during the Split Vendetta release (only getting a copy after someone contacting them on our behalf). This put a bit of a downer on the first DLC for me.<br><br>Every so often I check around to see whats happening - some guys were saying that the shield stats were wrong in the ship pages. So I started looking into why; found out that I was counting shields part of a group, so fixed it. At this point I was thinking it was sad that I cant add the Cradle of Humanity content. They really forgotten about me again?<br><br>At this point I wondered if anyone really cared about the site, so I shut-down the X4 site. Its not something I wanted to do, the whole reason to create content is to help others out. I dont want to spend time writting code to block content, nor spend countless more hours developing/updating content if no one is that bothered about it. <br><br>After a few days and have recieved many supporting messages including one from Egosoft (Cradle of Humanity content should be added soon now). Hopefully we can put all this behind us now and get on with enjoying the game, creating content and having fun. You guys are the best and one of the reasons I do this. I am sorry for the recent down-time. I hope you all stay safe and well!
+				<br><br>
+
+			</div>
+			<br><br>
+	<h2>X4 v4.0 and Cradle of Humanity release today</h2>
+
+			<span class="smalltext">
+				Tuesday 16th March, 2021 &middot; Posted by <a href="/users/profile.php?id=1" class="admin">Roguey</a> 
+					
+				&middot; 
+
+				<a href="/x4/news/single.php?id=644#comments" class="smalllink colourlink">
+					<img src="/images/site/comment.gif" style="border: 0;" alt="Comment"> 1 comments</a>			
+
+			</span>
+
+
+			<div class="pad">
+				Today marks the release of v4.0 update for X4. The update includes lots of new featrues such as Terraforming planets, improved fleet control, a new emergency eject feature and many more features. A full change log of v4.0 can be found <a href="https://forum.egosoft.com/viewtopic.php?p=5020635#p5020635" target="_blank">here</a>. The only negative is that the updated <i>ventures</i> wont be ready at launch, but hopefully should be online within a few weeks.<br><br><div style="text-align: center;"><img src="/news/pics/user_1/large/news_242_b.jpg" alt="News picture 242" style="border: none;"></div><br><br>However v4.0 isnt the only thing being released by Egosft today; the longly awaited Cradle of Humanity DLC is too. The new DLC adds two Terran factions, ships, equipment and new locations to explore.<br><br><div style="text-align: center;"><img src="/news/pics/user_1/large/news_243_b.jpg" alt="News picture 243" style="border: none;"></div><br><br>And finally, Egosoft are also doing a Midweek-madness event on Steam. In this event you can pickup some of the older titles (and base-game X4) at an reduced rate. You can see the event <a href="https://store.steampowered.com/developer/egosoft/sale/x4midweekmadness" target="_blank">here</a>.
+				<br><br>
+
+			</div>
+			<br><br>
+	<h2>X4: Cradle of Humanity Launch Trailer</h2>
+
+			<span class="smalltext">
+				Tuesday 2nd March, 2021 &middot; Posted by <a href="/users/profile.php?id=411" class="admin">Sinxar</a> 
+					
+				&middot; 
+
+				<a href="/x4/news/single.php?id=642#comments" class="smalllink colourlink">
+					<img src="/images/site/comment.gif" style="border: 0;" alt="Comment"> 2 comments</a>			
+
+			</span>
+
+
+			<div class="pad">
+				Release date of the CoH expansion is March 16, 2021.<br><br>You can preorder on Steam or GoG:<br>Steam: <a href="https://store.steampowered.com/app/1288460/X4_Cradle_of_Humanity/" target="_blank">https://store.steampowered.com/app/1288460/X4_Cradle_of_Humanity/</a><br>GoG: <a href="https://www.gog.com/game/x4_cradle_of_humanity" target="_blank">https://www.gog.com/game/x4_cradle_of_humanity</a><br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/Zs2BwzOKjhs" allowfullscreen></iframe></div><br><br>What do you think about this launch trailer and the upcoming CoH expansion?
+				<br><br>
+
+			</div>
+			<br><br>
+
+		
+		<b>Older news</b><br>
+		<ul>
+			<li><a href="/x4/news/archive.php">News archive</a></li>
+		</ul>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00161 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

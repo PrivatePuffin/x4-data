@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>High-scores (Arcade game) - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="high-scores (arcade game) - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/fun/arcade/highscores.php">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="High-scores (Arcade game)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<br><b>No scores for this month found..</b><br>Get playing....<br><br><br>
+<br style="clear: both;">
+
+		<script>
+			// ----------------------------
+			// selects a vnav tab
+			// ----------------------------
+			
+			function sel_vnav_tab(which_tab)
+			{
+				// toggle the sub-nav tabs
+				var v_tabs 			= document.getElementById('v_tabs').getElementsByTagName('li'); 
+				
+				for (var i=0; i < v_tabs.length; i++)
+				{
+					if (which_tab == i)
+						v_tabs[i].className = 'tabon';
+					
+					else if ( v_tabs[i].className != 'green')
+						v_tabs[i].className = '';
+				}
+			}
+			
+			// ----------------------------
+			
+		</script>
+		
+		<div style="float: left; padding: 8px; width: 200px;">
+			<div id="vnavbar">
+				<ul id="v_tabs">
+					<li><a href="/fun/arcade/genre.php?id=all">All games</a></li>
+					<li><a href="/fun/arcade/genre.php?id=arcade">Arcade games</a></li>
+					<li><a href="/fun/arcade/genre.php?id=physical">Physical games</a></li>
+					<li><a href="/fun/arcade/genre.php?id=mental">Mental games</a></li>
+					<li><a href="/fun/arcade/genre.php?id=skill">Skill games</a></li>
+					<li><a href="/fun/arcade/genre.php?id=survival">Survival games</a></li>
+					<li><a href="/fun/arcade/genre.php?id=rogueys">Rogueys games</a></li>
+
+					<li style="margin: 20px 0;"></li>
+					<li><a href="/fun/arcade/highscores.php">High-scores</a></li>
+					<li><a href="/fun/arcade/scorelog.php"> Score log</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="float: left; padding: 8px; width: 75%;">
+
+
+	<div class="list_head_3" style="width: 99%;">Top arcade scores</div>
+
+	<table class="board_table">
+	<tr>
+		<th colspan="2">Game</th>
+		<th colspan="2">March high-score</th>
+		<th colspan="2">High-score</th>
+	</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=30">
+					<img src="games/air_sk8ing/air_sk8ing.gif" border="0" title="Air Sk8ing" alt="Air Sk8ing"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=30" style="font-size: 1.2em; font-weight: bold;">Air Sk8ing</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>18,560 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=47">
+					<img src="games/alex_bh/alex_bh.gif" border="0" title="Alex in danger" alt="Alex in danger"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=47" style="font-size: 1.2em; font-weight: bold;">Alex in danger</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>14,300 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=46">
+					<img src="games/add/add.gif" border="0" title="Amazing Dare Dozen" alt="Amazing Dare Dozen"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=46" style="font-size: 1.2em; font-weight: bold;">Amazing Dare Dozen</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Futurama/bender_dance-2.gif" alt="Dillpickle avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=808" class="normal" style="font-size: 1.1em;">Dillpickle</a><br>490 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=48">
+					<img src="games/animalrescue/animalrescue.gif" border="0" title="Animal Rescue" alt="Animal Rescue"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=48" style="font-size: 1.2em; font-weight: bold;">Animal Rescue</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=1" class="admin" style="font-size: 1.1em;">Roguey</a><br>1,820 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=49">
+					<img src="games/antkendo/antkendo.gif" border="0" title="Ant Kendo" alt="Ant Kendo"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=49" style="font-size: 1.2em; font-weight: bold;">Ant Kendo</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/People/swordman.gif" alt="NicSpartan avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=109" class="normal" style="font-size: 1.1em;">NicSpartan</a><br>1,000 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=38">
+					<img src="games/asteroids/asteroids.gif" border="0" title="Asteroids" alt="Asteroids"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=38" style="font-size: 1.2em; font-weight: bold;">Asteroids</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>16,710 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=57">
+					<img src="games/astrevengemp/astrevengemp.gif" border="0" title="Asteroids Revenge" alt="Asteroids Revenge"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=57" style="font-size: 1.2em; font-weight: bold;">Asteroids Revenge</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>1,650 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=31">
+					<img src="games/aussiexmas/aussiexmas.gif" border="0" title="Aussie xmas" alt="Aussie xmas"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=31" style="font-size: 1.2em; font-weight: bold;">Aussie xmas</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_205_avatar.jpg" alt="TechnoVin avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=205" class="normal" style="font-size: 1.1em;">TechnoVin</a><br>86 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=36">
+					<img src="games/balloon_shoot/balloon_shoot.gif" border="0" title="Balloon Shoot" alt="Balloon Shoot"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=36" style="font-size: 1.2em; font-weight: bold;">Balloon Shoot</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>134 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=13">
+					<img src="games/beatthecheese/beatthecheese.gif" border="0" title="Beat The Cheese" alt="Beat The Cheese"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=13" style="font-size: 1.2em; font-weight: bold;">Beat The Cheese</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/People/21.gif" alt="Gomorragh avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=27" class="normal" style="font-size: 1.1em;">Gomorragh</a><br>60 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=50">
+					<img src="games/bmxbackflipsibpg/bmxbackflipsibpg.gif" border="0" title="BMX Backflips" alt="BMX Backflips"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=50" style="font-size: 1.2em; font-weight: bold;">BMX Backflips</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>347,072 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=21">
+					<img src="games/boilerroom/boilerroom.gif" border="0" title="Boiler Room" alt="Boiler Room"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=21" style="font-size: 1.2em; font-weight: bold;">Boiler Room</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>7,070 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=51">
+					<img src="games/bongoballs/bongoballs.gif" border="0" title="Bongo Balls" alt="Bongo Balls"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=51" style="font-size: 1.2em; font-weight: bold;">Bongo Balls</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Futurama/bender_dance-2.gif" alt="Dillpickle avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=808" class="normal" style="font-size: 1.1em;">Dillpickle</a><br>55,490 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=15">
+					<img src="games/bonuspong/bonuspong.gif" border="0" title="Bonus Pong" alt="Bonus Pong"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=15" style="font-size: 1.2em; font-weight: bold;">Bonus Pong</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>15,805 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=29">
+					<img src="games/brainiac/brainiac.gif" border="0" title="Brainiac" alt="Brainiac"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=29" style="font-size: 1.2em; font-weight: bold;">Brainiac</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>1,757 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=4">
+					<img src="games/breakout/breakout.gif" border="0" title="Breakout" alt="Breakout"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=4" style="font-size: 1.2em; font-weight: bold;">Breakout</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>26,580 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=52">
+					<img src="games/carparkchaos/carparkchaos.gif" border="0" title="Car Park Chaos" alt="Car Park Chaos"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=52" style="font-size: 1.2em; font-weight: bold;">Car Park Chaos</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>405 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=22">
+					<img src="games/chopper2/chopper2.gif" border="0" title="Chopper2" alt="Chopper2"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=22" style="font-size: 1.2em; font-weight: bold;">Chopper2</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Austin%20Powers/Mustafa.gif" alt="Seygantte avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=556" class="normal" style="font-size: 1.1em;">Seygantte</a><br>961 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=27">
+					<img src="games/collapse/collapse.gif" border="0" title="Collapse" alt="Collapse"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=27" style="font-size: 1.2em; font-weight: bold;">Collapse</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_963_avatar.jpg" alt="Raptor avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=963" class="normal" style="font-size: 1.1em;">Raptor</a><br>5,155 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=10">
+					<img src="games/deltafighter/deltafighter.gif" border="0" title="Delta Fighter" alt="Delta Fighter"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=10" style="font-size: 1.2em; font-weight: bold;">Delta Fighter</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_753_avatar.jpg" alt="Klord avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=753" class="normal" style="font-size: 1.1em;">Klord</a><br>7,095 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=55">
+					<img src="games/divatron/divatron.gif" border="0" title="Divatron" alt="Divatron"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=55" style="font-size: 1.2em; font-weight: bold;">Divatron</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>2,337,100 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=42">
+					<img src="games/dodgingcircles/dodgingcircles.gif" border="0" title="Dodging Circles" alt="Dodging Circles"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=42" style="font-size: 1.2em; font-weight: bold;">Dodging Circles</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>976 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=44">
+					<img src="games/doublewires/doublewires.gif" border="0" title="Double Wires" alt="Double Wires"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=44" style="font-size: 1.2em; font-weight: bold;">Double Wires</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=1" class="admin" style="font-size: 1.1em;">Roguey</a><br>4,353 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=41">
+					<img src="games/dwarfwharf/dwarfwharf.gif" border="0" title="Dwarf on a Wharf" alt="Dwarf on a Wharf"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=41" style="font-size: 1.2em; font-weight: bold;">Dwarf on a Wharf</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>117,813 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=14">
+					<img src="games/evilballoons/evilballoons.gif" border="0" title="Evil Balloon Siege!" alt="Evil Balloon Siege!"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=14" style="font-size: 1.2em; font-weight: bold;">Evil Balloon Siege!</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>530 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=40">
+					<img src="games/eyedrops/eyedrops.gif" border="0" title="Eye Drops" alt="Eye Drops"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=40" style="font-size: 1.2em; font-weight: bold;">Eye Drops</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>7,390 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=5">
+					<img src="games/frogger2/frogger2.gif" border="0" title="Frogger2" alt="Frogger2"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=5" style="font-size: 1.2em; font-weight: bold;">Frogger2</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>8,100 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=26">
+					<img src="games/bushdrunk/bushdrunk.gif" border="0" title="George Wants Beer" alt="George Wants Beer"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=26" style="font-size: 1.2em; font-weight: bold;">George Wants Beer</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_793_avatar.gif" alt="Java avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=793" class="normal" style="font-size: 1.1em;">Java</a><br>87 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=56">
+					<img src="games/giftshift/giftshift.gif" border="0" title="Gift shift" alt="Gift shift"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=56" style="font-size: 1.2em; font-weight: bold;">Gift shift</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>5,300 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=2">
+					<img src="games/goldminerse3/goldminerse3.gif" border="0" title="Gold Miner" alt="Gold Miner"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=2" style="font-size: 1.2em; font-weight: bold;">Gold Miner</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>101,706 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=19">
+					<img src="games/goldstrike/goldstrike.gif" border="0" title="Gold Strike" alt="Gold Strike"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=19" style="font-size: 1.2em; font-weight: bold;">Gold Strike</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Random/yellowflower.jpg" alt="X2-Illuminatus avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=814" class="normal" style="font-size: 1.1em;">X2-Illuminatus</a><br>459,364 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=7">
+					<img src="games/gta/gta.gif" border="0" title="GTA" alt="GTA"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=7" style="font-size: 1.2em; font-weight: bold;">GTA</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Fallout/gunnner.gif" alt="Relicalchaos avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=382" class="normal" style="font-size: 1.1em;">Relicalchaos</a><br>58 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=58">
+					<img src="games/hangaroo/hangaroo.gif" border="0" title="Hangaroo" alt="Hangaroo"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=58" style="font-size: 1.2em; font-weight: bold;">Hangaroo</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>9 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=20">
+					<img src="games/hangman/hangman.gif" border="0" title="Hangman" alt="Hangman"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=20" style="font-size: 1.2em; font-weight: bold;">Hangman</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>1,378 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=11">
+					<img src="games/happypill/happypill.gif" border="0" title="Happy Pill" alt="Happy Pill"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=11" style="font-size: 1.2em; font-weight: bold;">Happy Pill</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>350 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=24">
+					<img src="games/hexxagon/hexxagon.gif" border="0" title="Hexxagon" alt="Hexxagon"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=24" style="font-size: 1.2em; font-weight: bold;">Hexxagon</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>58 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=32">
+					<img src="games/hybrid_fighter/hybrid_fighter.gif" border="0" title="Hybrid Fighter" alt="Hybrid Fighter"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=32" style="font-size: 1.2em; font-weight: bold;">Hybrid Fighter</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>29,430 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=43">
+					<img src="games/inv360/inv360.gif" border="0" title="Invader 360" alt="Invader 360"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=43" style="font-size: 1.2em; font-weight: bold;">Invader 360</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>65,860 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=39">
+					<img src="games/junglekid/junglekid.gif" border="0" title="Jungle Kid" alt="Jungle Kid"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=39" style="font-size: 1.2em; font-weight: bold;">Jungle Kid</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Futurama/bender_dance-2.gif" alt="Dillpickle avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=808" class="normal" style="font-size: 1.1em;">Dillpickle</a><br>122 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=18">
+					<img src="games/killpopups/killpopups.gif" border="0" title="Kill The Pop ups" alt="Kill The Pop ups"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=18" style="font-size: 1.2em; font-weight: bold;">Kill The Pop ups</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_205_avatar.jpg" alt="TechnoVin avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=205" class="normal" style="font-size: 1.1em;">TechnoVin</a><br>248 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=45">
+					<img src="games/letters/letters.gif" border="0" title="LEtters" alt="LEtters"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=45" style="font-size: 1.2em; font-weight: bold;">LEtters</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_4578_avatar.png" alt="j0lt avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=4578" class="normal" style="font-size: 1.1em;">j0lt</a><br>180 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=6">
+					<img src="games/looser/looser.gif" border="0" title="Looser" alt="Looser"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=6" style="font-size: 1.2em; font-weight: bold;">Looser</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>3,809 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=16">
+					<img src="games/marble/marble.gif" border="0" title="Marble Mayhem" alt="Marble Mayhem"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=16" style="font-size: 1.2em; font-weight: bold;">Marble Mayhem</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>805 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=28">
+					<img src="games/missilestrike/missilestrike.gif" border="0" title="Missile Strike" alt="Missile Strike"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=28" style="font-size: 1.2em; font-weight: bold;">Missile Strike</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>51,700 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=9">
+					<img src="games/monkey_b/monkey_b.gif" border="0" title="Monkey business" alt="Monkey business"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=9" style="font-size: 1.2em; font-weight: bold;">Monkey business</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>44,555 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=12">
+					<img src="games/mumu/mumu.gif" border="0" title="MuMu" alt="MuMu"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=12" style="font-size: 1.2em; font-weight: bold;">MuMu</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>1,689 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=3">
+					<img src="games/myhouse/myhouse.gif" border="0" title="My House" alt="My House"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=3" style="font-size: 1.2em; font-weight: bold;">My House</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>1,744 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=25">
+					<img src="games/pacman/pacman.gif" border="0" title="Pacman" alt="Pacman"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=25" style="font-size: 1.2em; font-weight: bold;">Pacman</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>28,050 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=53">
+					<img src="games/perfectpitch/perfectpitch.gif" border="0" title="Perfect Pitch" alt="Perfect Pitch"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=53" style="font-size: 1.2em; font-weight: bold;">Perfect Pitch</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>3,885 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=34">
+					<img src="games/poux/poux.gif" border="0" title="Poux" alt="Poux"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=34" style="font-size: 1.2em; font-weight: bold;">Poux</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_1099_avatar.gif" alt="AlphanInfidel avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=1099" class="normal" style="font-size: 1.1em;">AlphanInfidel</a><br>127,400 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=33">
+					<img src="games/project_orion/project_orion.gif" border="0" title="Project Orion" alt="Project Orion"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=33" style="font-size: 1.2em; font-weight: bold;">Project Orion</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>193,600 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=61">
+					<img src="games/qix/qix.gif" border="0" title="Qix" alt="Qix"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=61" style="font-size: 1.2em; font-weight: bold;">Qix</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_963_avatar.jpg" alt="Raptor avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=963" class="normal" style="font-size: 1.1em;">Raptor</a><br>13,537 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=59">
+					<img src="games/red_wire/red_wire.gif" border="0" title="Red Wire" alt="Red Wire"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=59" style="font-size: 1.2em; font-weight: bold;">Red Wire</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_963_avatar.jpg" alt="Raptor avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=963" class="normal" style="font-size: 1.1em;">Raptor</a><br>12,815 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=62">
+					<img src="games/rog_words/rog_words.gif" border="0" title="Rogueys Words" alt="Rogueys Words"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=62" style="font-size: 1.2em; font-weight: bold;">Rogueys Words</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>278,661 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=37">
+					<img src="games/santas_sack/santas_sack.gif" border="0" title="Santas Sack" alt="Santas Sack"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=37" style="font-size: 1.2em; font-weight: bold;">Santas Sack</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=1" class="admin" style="font-size: 1.1em;">Roguey</a><br>45 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=17">
+					<img src="games/simon/simon.gif" border="0" title="Simon" alt="Simon"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=17" style="font-size: 1.2em; font-weight: bold;">Simon</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Made%20by%20Roguey/14.jpg" alt="WinkyWoofWoof avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=2" class="normal" style="font-size: 1.1em;">WinkyWoofWoof</a><br>40 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=35">
+					<img src="games/spacedodge/spacedodge.gif" border="0" title="Space Dodge" alt="Space Dodge"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=35" style="font-size: 1.2em; font-weight: bold;">Space Dodge</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_4116_avatar.jpg" alt="Rebelboy avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=4116" class="normal" style="font-size: 1.1em;">Rebelboy</a><br>41,523 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=8">
+					<img src="games/invaders/invaders.gif" border="0" title="Space Invaders" alt="Space Invaders"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=8" style="font-size: 1.2em; font-weight: bold;">Space Invaders</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>138,160 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=60">
+					<img src="games/squarestwo/squarestwo.gif" border="0" title="Squares 2" alt="Squares 2"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=60" style="font-size: 1.2em; font-weight: bold;">Squares 2</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Uploaded/user_963_avatar.jpg" alt="Raptor avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=963" class="normal" style="font-size: 1.1em;">Raptor</a><br>15,312 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=54">
+					<img src="games/straw/straw.gif" border="0" title="Straw Game" alt="Straw Game"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=54" style="font-size: 1.2em; font-weight: bold;">Straw Game</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>777 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=1">
+					<img src="games/tetris/tetris.gif" border="0" title="Tetris" alt="Tetris"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=1" style="font-size: 1.2em; font-weight: bold;">Tetris</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>54,281 points </td>
+		</tr>
+
+		<tr class="hover">
+			<td style="text-align: center; width: 5px;">
+				<a href="game.php?id=23">
+					<img src="games/trafficjam/trafficjam.gif" border="0" title="Traffic Jam" alt="Traffic Jam"><br>
+				</a>
+			</td>
+			
+			<td><a href="game.php?id=23" style="font-size: 1.2em; font-weight: bold;">Traffic Jam</a></td>
+			
+			<td class="bg1" style="width: 50px;"></td>
+			<td class="bg1" style="width: 20%;"></td>
+			
+			<td class="bg1" style="width: 50px;"><img src="/users/avatars/Red%20Alert%203/RedAlert3CmdrHanley_avatar.jpg" alt="PuppyOfWar avatar" style="border: none; height: 40px; width: 40px; padding: 4px;"> </td>
+			<td class="bg1" style="width: 20%;"><a href="/users/profile.php?id=269" class="normal" style="font-size: 1.1em;">PuppyOfWar</a><br>84,178 points </td>
+		</tr>
+
+			</table>
+		</div>
+
+		<script>
+			window.onload = sel_vnav_tab(8);
+		</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00195 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

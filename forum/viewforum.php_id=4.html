@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Chit-chat board - Roguey's Forum</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Chit-chat, gaming, roguey">
+		<META NAME="Description" CONTENT="In this area, post about Chit-chat are found.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/forum/viewforum.php?id=4">
+		<meta property="og:description" content="In this area, post about Chit-chat are found.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Chit-chat board">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/forum/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/forum/"><img src="/forum/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #79B4BD;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #79B4BD;">
+				<li class="icon" style="background-color: #79B4BD">&nbsp;</li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+
+	
+		<br>
+		
+		<span style="font-size: 9pt;">
+			<img src="/forum/images/icons/home.gif" alt="Home"> <a href="/forum/" class="nav_link">Board Index</a> &raquo;
+			<a href="/forum/cat.php?id=4" class="nav_link">Other</a> &raquo; <a href="viewforum.php?id=4" class="nav_link">Chit-chat</a>
+		</span>
+
+		<br><br>
+		
+		<h1>Chit-chat board</h1>
+		<br>
+<div style="width: 100%; height: 220px; background-color: #ffffff; background-size: cover; background-position-y: 35%; text-align: center; background-repeat:no-repeat; background-image: url('/forum/images/tab/chit-chat.jpg');"></div>
+
+
+		<table class="board_table">
+		<tr>
+			<th colspan="2"></th>
+			<th>Replies</th>
+			<th colspan="2">Last Post</th>
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="images/icons/sticklock.gif" style="border: none; height: 32px; width: 32px" alt="Story Time II so far.... - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=205" class="cat_link" style="font-size: 1.0em;">Story Time II so far....</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=21" target="_blank"><b>bozo64r</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">0</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">---</td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="images/icons/stick.gif" style="border: none; height: 32px; width: 32px" alt="A small UBB tutorial - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=27" class="cat_link" style="font-size: 1.0em;">A small UBB tutorial</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=1" target="_blank"><b>Roguey</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">0</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">---</td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="images/icons/sticklock.gif" style="border: none; height: 32px; width: 32px" alt="Forum rules - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=26" class="cat_link" style="font-size: 1.0em;">Forum rules</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=1" target="_blank"><b>Roguey</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">0</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">---</td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Another forum update - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1676" class="cat_link" style="font-size: 1.0em;">Another forum update</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=1" target="_blank"><b>Roguey</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 1 year ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Merry Christmas  - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1657" class="cat_link" style="font-size: 1.0em;">Merry Christmas </a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=931" target="_blank"><b>MacRaven</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_50_avatar.jpg" alt="TheWhiteTiger avatar" title="Last posted by TheWhiteTiger, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=50" target="_blank" class="mod">TheWhiteTiger</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Diablo 3.. anyone playing? - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=534" class="cat_link" style="font-size: 1.0em;">Diablo 3.. anyone playing?</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=1" target="_blank"><b>Roguey</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"> <a href="viewtopic.php?id=534&amp;p=1" class="page_box_off">1</a>  <a href="viewtopic.php?id=534&amp;p=2" class="page_box_off">2</a>  <a href="viewtopic.php?id=534&amp;p=3" class="page_box_off">3</a> &#8230; <a href="viewtopic.php?id=534&amp;p=4" class="page_box_off">4</a></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">48</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_411_avatar.jpg" alt="Sinxar avatar" title="Last posted by Sinxar, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=411" target="_blank" class="admin">Sinxar</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="More than 800 Games available for Linux at Steam - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1312" class="cat_link" style="font-size: 1.0em;">More than 800 Games available for Linux at Steam</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=1767" target="_blank"><b>edqe</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Futurama/bender_dance-1.gif" alt="Chrisatorain avatar" title="Last posted by Chrisatorain, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=7221" target="_blank" class="normal">Chrisatorain</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Funny Photos - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1624" class="cat_link" style="font-size: 1.0em;">Funny Photos</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=6254" target="_blank"><b>khouji</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">7</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 3 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="X4 - New Board Needed - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1607" class="cat_link" style="font-size: 1.0em;">X4 - New Board Needed</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=2933" target="_blank"><b>BigVern</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">3</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 3 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Starpoint Gemini Warlords - anyone wants to try? - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1593" class="cat_link" style="font-size: 1.0em;">Starpoint Gemini Warlords - anyone wants to try?</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=5498" target="_blank"><b>plchung3</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=5498" target="_blank" class="normal">plchung3</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 3 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="The list of ranks - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=233" class="cat_link" style="font-size: 1.0em;">The list of ranks</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=1" target="_blank"><b>Roguey</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">14</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_4578_avatar.png" alt="j0lt avatar" title="Last posted by j0lt, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=4578" target="_blank" class="normal">j0lt</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 4 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Star Trek Online - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=505" class="cat_link" style="font-size: 1.0em;">Star Trek Online</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=21" target="_blank"><b>bozo64r</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">11</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_4578_avatar.png" alt="j0lt avatar" title="Last posted by j0lt, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=4578" target="_blank" class="normal">j0lt</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 4 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="The random games we play - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=833" class="cat_link" style="font-size: 1.0em;">The random games we play</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=411" target="_blank"><b>Sinxar</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">8</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_4578_avatar.png" alt="j0lt avatar" title="Last posted by j0lt, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=4578" target="_blank" class="normal">j0lt</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 4 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Which space-game are you looking forward to most? - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=862" class="cat_link" style="font-size: 1.0em;">[poll] Which space-game are you looking forward to most?</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=1" target="_blank"><b>Roguey</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">4</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_4578_avatar.png" alt="j0lt avatar" title="Last posted by j0lt, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=4578" target="_blank" class="normal">j0lt</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 4 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Minecraft - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=795" class="cat_link" style="font-size: 1.0em;">Minecraft</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=411" target="_blank"><b>Sinxar</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"> <a href="viewtopic.php?id=795&amp;p=1" class="page_box_off">1</a>  <a href="viewtopic.php?id=795&amp;p=2" class="page_box_off">2</a> &#8230; <a href="viewtopic.php?id=795&amp;p=3" class="page_box_off">3</a></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">39</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_4578_avatar.png" alt="j0lt avatar" title="Last posted by j0lt, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=4578" target="_blank" class="normal">j0lt</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 4 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Guild Wars 2.. anyone playing? - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=648" class="cat_link" style="font-size: 1.0em;">Guild Wars 2.. anyone playing?</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=1" target="_blank"><b>Roguey</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">13</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_4578_avatar.png" alt="j0lt avatar" title="Last posted by j0lt, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=4578" target="_blank" class="normal">j0lt</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 4 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Best Game Soundtracks! - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1089" class="cat_link" style="font-size: 1.0em;">Best Game Soundtracks!</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=600" target="_blank"><b>XeNoN</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">11</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_4578_avatar.png" alt="j0lt avatar" title="Last posted by j0lt, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=4578" target="_blank" class="normal">j0lt</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 4 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Happy Christmas - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1483" class="cat_link" style="font-size: 1.0em;">Happy Christmas</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=3799" target="_blank"><b>ssarleni</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">5</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_50_avatar.jpg" alt="TheWhiteTiger avatar" title="Last posted by TheWhiteTiger, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=50" target="_blank" class="mod">TheWhiteTiger</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Hello England! - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1346" class="cat_link" style="font-size: 1.0em;">Hello England!</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=191" target="_blank"><b>NetHawk</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">5</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="My new PC is finally complete! (well, mostly) - Chit-chat"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1432" class="cat_link" style="font-size: 1.0em;">My new PC is finally complete! (well, mostly)</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=411" target="_blank"><b>Sinxar</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">6</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_411_avatar.jpg" alt="Sinxar avatar" title="Last posted by Sinxar, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=411" target="_blank" class="admin">Sinxar</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 years ago.</span></td>
+			
+		</tr>
+
+		</table>
+
+		<br>
+
+		<div id="last"></div>
+
+		<table style="width: 100%">
+		<tr>
+			<td style="width: 20%"></td>
+
+			<td style="text-align: center; padding: 4px;">
+&laquo; Previous | <b>Pages</b> <b class="page_box_on">1</b><a href="viewforum.php?id=4&amp;p=2" class="page_box_off">2</a><a href="viewforum.php?id=4&amp;p=3" class="page_box_off">3</a><a href="viewforum.php?id=4&amp;p=4" class="page_box_off">4</a><a href="viewforum.php?id=4&amp;p=5" class="page_box_off">5</a><a href="viewforum.php?id=4&amp;p=6" class="page_box_off">6</a><a href="viewforum.php?id=4&amp;p=7" class="page_box_off">7</a><a href="viewforum.php?id=4&amp;p=8" class="page_box_off">8</a><a href="viewforum.php?id=4&amp;p=9" class="page_box_off">9</a> | <a href="viewforum.php?id=4&amp;p=2">Next &raquo;</a></td>
+
+			<td style="width: 20%; text-align: center">
+</td>
+
+		</tr>
+		</table>
+<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00075 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

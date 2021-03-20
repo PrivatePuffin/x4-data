@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Compare ships - Elite &amp; Dangerous Roguey</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Compare ships, gaming, roguey">
+		<META NAME="Description" CONTENT="Compare up-to 3 ships from Elite Dangerous.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/elite-dangerous/ships/compare/">
+		<meta property="og:description" content="Compare up-to 3 ships from Elite Dangerous.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Compare ships">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/elite-dangerous/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/elite-dangerous/"><img src="/elite-dangerous/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #A98135;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #A98135;">
+				<li class="icon" style="background-color: #A98135">&nbsp;</li><li><a href="/elite-dangerous/">News</a></li><li><a href="/elite-dangerous/help/">Help / Guides</a></li><li><a href="/elite-dangerous/trade-helper/">Trade Helper</a></li><li><a href="/elite-dangerous/ships/">Ships</a></li><li><a href="/elite-dangerous/ship-builds/">Builds</a></li><li><a href="/elite-dangerous/universe/">Universe</a></li><li><a href="/elite-dangerous/equipment/">Equipment</a></li><li><a href="/elite-dangerous/engineers/">Engineers</a></li><li><a href="/elite-dangerous/commanders/">Commanders</a></li><li><a href="/elite-dangerous/powers/">Powers</a></li><li><a href="/elite-dangerous/fleet-carriers/">Fleet Carriers</a></li><li><a href="/elite-dangerous/wares/">Wares</a></li><li><a href="/elite-dangerous/videos/">Videos</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=36">Forum</a></li><li><a href="/elite-dangerous/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+	<h1>Compare ships</h1>
+	
+	On this page you can do a quick comparison of the ships found in Elite Dangerous.
+	<br><br>
+
+
+	<table class="board_table">		
+	<tr>
+		<th style="width: 33%;">Ship 1</th>
+		<th style="width: 33%;">Ship 2</th>
+		<th style="width: 33%;">Ship 3</th>
+	</tr>
+
+	<tr>
+		<td style="text-align: center;">
+
+			<select size="1" id="select_1" onChange="load_ship('select_1');">
+<option value="-">-</option>
+<option value="1">Adder</option>
+<option value="34">Alliance Challenger</option>
+<option value="33">Alliance Chieftain</option>
+<option value="36">Alliance Crusader</option>
+<option value="2">Anaconda</option>
+<option value="3">Asp Explorer</option>
+<option value="4">Asp Scout</option>
+<option value="5">Beluga Liner</option>
+<option value="6">Cobra Mk. III</option>
+<option value="7">Cobra Mk. IV</option>
+<option value="8">Diamondback Explorer</option>
+<option value="9">Diamondback Scout</option>
+<option value="10">Dolphin</option>
+<option value="11">Eagle Mk. II</option>
+<option value="12">Federal Assault Ship</option>
+<option value="13">Federal Corvette</option>
+<option value="14">Federal Dropship</option>
+<option value="15">Federal Gunship</option>
+<option value="16">Fer-de-lance</option>
+<option value="17">Hauler</option>
+<option value="21">Imperial Clipper</option>
+<option value="19">Imperial Courier</option>
+<option value="20">Imperial Cutter</option>
+<option value="22">Imperial Eagle</option>
+<option value="18">Keelback</option>
+<option value="35">Krait Mk2</option>
+<option value="38">Krait Phantom</option>
+<option value="32">Type 10 Defender</option>
+<option value="23">Type 6</option>
+<option value="24">Type 7</option>
+<option value="25">Type 9 Heavy</option>
+<option value="37">Mamba</option>
+<option value="26">Orca</option>
+<option value="27">Python</option>
+<option value="28">Sidewinder</option>
+<option value="29">Viper Mk3</option>
+<option value="30">Viper Mk4</option>
+<option value="31">Vulture</option>
+
+			</select>
+		</td>
+		<td style="text-align: center;">
+			<select size="1" id="select_2" onChange="load_ship('select_2');"><option value="-">-</option>
+<option value="1">Adder</option>
+<option value="34">Alliance Challenger</option>
+<option value="33">Alliance Chieftain</option>
+<option value="36">Alliance Crusader</option>
+<option value="2">Anaconda</option>
+<option value="3">Asp Explorer</option>
+<option value="4">Asp Scout</option>
+<option value="5">Beluga Liner</option>
+<option value="6">Cobra Mk. III</option>
+<option value="7">Cobra Mk. IV</option>
+<option value="8">Diamondback Explorer</option>
+<option value="9">Diamondback Scout</option>
+<option value="10">Dolphin</option>
+<option value="11">Eagle Mk. II</option>
+<option value="12">Federal Assault Ship</option>
+<option value="13">Federal Corvette</option>
+<option value="14">Federal Dropship</option>
+<option value="15">Federal Gunship</option>
+<option value="16">Fer-de-lance</option>
+<option value="17">Hauler</option>
+<option value="21">Imperial Clipper</option>
+<option value="19">Imperial Courier</option>
+<option value="20">Imperial Cutter</option>
+<option value="22">Imperial Eagle</option>
+<option value="18">Keelback</option>
+<option value="35">Krait Mk2</option>
+<option value="38">Krait Phantom</option>
+<option value="32">Type 10 Defender</option>
+<option value="23">Type 6</option>
+<option value="24">Type 7</option>
+<option value="25">Type 9 Heavy</option>
+<option value="37">Mamba</option>
+<option value="26">Orca</option>
+<option value="27">Python</option>
+<option value="28">Sidewinder</option>
+<option value="29">Viper Mk3</option>
+<option value="30">Viper Mk4</option>
+<option value="31">Vulture</option>
+	
+		</select>
+		</td>
+		
+		<td style="text-align: center;">
+			<select size="1" id="select_3" onChange="load_ship('select_3');"><option value="-">-</option>
+<option value="1">Adder</option>
+<option value="34">Alliance Challenger</option>
+<option value="33">Alliance Chieftain</option>
+<option value="36">Alliance Crusader</option>
+<option value="2">Anaconda</option>
+<option value="3">Asp Explorer</option>
+<option value="4">Asp Scout</option>
+<option value="5">Beluga Liner</option>
+<option value="6">Cobra Mk. III</option>
+<option value="7">Cobra Mk. IV</option>
+<option value="8">Diamondback Explorer</option>
+<option value="9">Diamondback Scout</option>
+<option value="10">Dolphin</option>
+<option value="11">Eagle Mk. II</option>
+<option value="12">Federal Assault Ship</option>
+<option value="13">Federal Corvette</option>
+<option value="14">Federal Dropship</option>
+<option value="15">Federal Gunship</option>
+<option value="16">Fer-de-lance</option>
+<option value="17">Hauler</option>
+<option value="21">Imperial Clipper</option>
+<option value="19">Imperial Courier</option>
+<option value="20">Imperial Cutter</option>
+<option value="22">Imperial Eagle</option>
+<option value="18">Keelback</option>
+<option value="35">Krait Mk2</option>
+<option value="38">Krait Phantom</option>
+<option value="32">Type 10 Defender</option>
+<option value="23">Type 6</option>
+<option value="24">Type 7</option>
+<option value="25">Type 9 Heavy</option>
+<option value="37">Mamba</option>
+<option value="26">Orca</option>
+<option value="27">Python</option>
+<option value="28">Sidewinder</option>
+<option value="29">Viper Mk3</option>
+<option value="30">Viper Mk4</option>
+<option value="31">Vulture</option>
+</select></td>
+	</tr>
+	</table>
+	
+	<table style="border:solid 1px #E6E6E6; width: 100%;">
+	<tr>
+		<td valign="top" width="33%"><div id="div_1"></div></td>
+		<td valign="top" width="33%"><div id="div_2"></div></td>
+		<td valign="top" width="33%"><div id="div_3"></div></td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center" style="background: #E6E6E6;"><div id="share_link">On this page you can compare up-to 3 ships, from any class or race.</div></td>
+	</tr>
+	</table>
+	
+	<br>
+	
+	<a href="../">&laquo; Back to ships</a>
+
+	<script>
+
+	var ship1_id = 0;
+	var ship2_id = 0;
+	var ship3_id = 0;
+
+	function Chr(AsciiNum)
+	{
+		return String.fromCharCode(AsciiNum);
+	}
+
+	function encode(id)
+	{
+		return Chr(65 + (id / 26)) + Chr(65 + (id % 26));
+	}
+
+	function decode(id)
+	{
+		var part1 = id.charCodeAt(0)-65;
+		var part2 = id.charCodeAt(1)-65;
+
+		return ((part1 * 26) + part2);
+	}
+
+
+	function load_ship(which)
+	{
+		var select_box = document.getElementById(which);
+		var option_value = select_box.options[select_box.selectedIndex].value;
+
+
+		// check if first option, or load
+		if (option_value == '-')
+		{
+			if (which == 'select_1')
+				document.getElementById('div_1').innerHTML = '';
+
+			else if (which == 'select_2')
+				document.getElementById('div_2').innerHTML = '';
+
+			else
+				document.getElementById('div_3').innerHTML = '';
+			
+		}
+		else
+		{
+			// load in tab
+			http = new XMLHttpRequest();
+			http.open('GET', 'get_comp.php?id='+option_value, true);
+
+			http.onreadystatechange=function() 
+			{
+				if(http.readyState == 4)
+				{
+					if (which == 'select_1')
+					{
+						document.getElementById('div_1').innerHTML = http.responseText;
+						ship1_id = option_value;
+					}
+
+					else if (which == 'select_2')
+					{
+						document.getElementById('div_2').innerHTML = http.responseText;
+						ship2_id = option_value;
+					}
+
+					else
+					{
+						document.getElementById('div_3').innerHTML = http.responseText;
+						ship3_id = option_value;
+					}
+
+
+					//----------------------
+					// work-out share id
+					//----------------------
+		
+
+					var share_id = encode(ship1_id) + encode(ship2_id) + encode(ship3_id);
+
+					document.getElementById('share_link').innerHTML = '<b>Share link</b>: <input value="https://roguey.co.uk/elite-dangerous/ships/compare/'+share_id+'" readonly type="text" size="75" style="background: #EBEBEB;"><br>';
+
+				}
+			}
+
+			http.send(null);
+		}
+
+		//----------------------
+	}
+
+	function setSelectedIndex(s, v)
+	{
+		for ( var i = 0; i < s.options.length; i++ )
+		{
+			if ( s.options[i].value == v )
+			{
+				s.options[i].selected = true;
+				return;
+			}
+		}
+	}
+
+	function share_load()
+	{
+		var load_ids = '';
+		var ship1 = decode(load_ids.substring(0,2));
+		var ship2 = decode(load_ids.substring(2,4));
+		var ship3 = decode(load_ids.substring(4,6));
+
+		var load_html = '<br><br><center><b>Loading ship</b>...<br><br><img src="/images/bar.gif"></center>';
+
+		if (ship1 > 0)
+		{
+			setSelectedIndex(select_1, ship1);
+			document.getElementById('div_1').innerHTML = load_html;
+			window.setTimeout("document.getElementById('select_1').onchange();", 100);
+		}
+
+		if (ship2 > 0)
+		{
+			setSelectedIndex(select_2, ship2);
+			document.getElementById('div_2').innerHTML = load_html;
+			window.setTimeout("document.getElementById('select_2').onchange();", 2000);
+		}
+
+		if (ship3 > 0)
+		{
+			setSelectedIndex(select_3, ship3);
+			document.getElementById('div_3').innerHTML = load_html;
+			window.setTimeout("document.getElementById('select_3').onchange();", 4000);
+		}
+
+		
+	}
+
+	
+	</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00065 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

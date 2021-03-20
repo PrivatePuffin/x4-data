@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>How engines and thrusters work - Roguey's X4 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="X4 foundations, egosoft, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x4/help/technical/engines_and_thrusters/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="How engines and thrusters work">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x4/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x4/"><img src="/x4/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #4830AE;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #4830AE;">
+				<li class="icon" style="background-color: #4830AE">&nbsp;</li><li><a href="/x4/">Home</a></li><li><a href="/x4/help/">Help</a></li><li><a href="/x4/ships/">Ships</a></li><li><a href="/x4/shields/">Shields</a></li><li><a href="/x4/weapons/">Weapons</a></li><li><a href="/x4/universe/">Maps</a></li><li><a href="/x4/wares/">Wares</a></li><li><a href="/x4/factions/">Factions</a></li><li><a href="/x4/dlc/split-vendetta/">Split Vendetta</a></li><li><a href="/x4/dlc/cradle-of-humanity/">Cradle of Humanity</a></li><li><a href="/x4/steam/">Achievements</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=44">Forum</a></li><li><a href="/x4/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>How engines and thrusters work</h1>
+	
+
+	In this short guide I will explain how engines and thrusters work. I want to say a big thanks to <b>j.harshaw</b> for helping me understand how most of this stuff works (and being an awesome guy).
+	You may of seen a ship's xml and wondered how it works. Lets take a look at the <b>Elite Vanguard</b> (or \X4\01\assets\units\size_s\macros\ship_arg_s_fighter_02_a_macro);
+	<br><br>
+	
+	<div class="code">
+		&lt;macros&gt;<br>
+		  &lt;macro name="ship_arg_s_fighter_02_a_macro" class="ship_s"&gt;<br>
+			&lt;component ref="ship_arg_s_fighter_02" /&gt;<br>
+			&lt;properties&gt;<br>
+			  &lt;identification name="{20101,11902}" basename="{20101,11901}" description="{20101,11912}" variation="{20111,1101}" shortvariation="{20111,1103}" icon="ship_s_fight_01" /&gt;<br>
+			  &lt;software&gt;<br>
+				&lt;software ware="software_dockmk2" compatible="1" /&gt;<br>
+				&lt;software ware="software_flightassistmk1" default="1" /&gt;<br>
+				&lt;software ware="software_scannerlongrangemk1" default="1" /&gt;<br>
+				&lt;software ware="software_scannerlongrangemk2" compatible="1" /&gt;<br>
+				&lt;software ware="software_scannerobjectmk1" default="1" /&gt;<br>
+				&lt;software ware="software_scannerobjectmk2" compatible="1" /&gt;<br>
+				&lt;software ware="software_targetmk1" default="1" /&gt;<br>
+				&lt;software ware="software_trademk1" compatible="1" /&gt;<br>
+			  &lt;/software&gt;<br>
+			  &lt;storage missile="20" /&gt;<br>
+			  &lt;hull max="1800" /&gt;<br>
+			  &lt;secrecy level="2" /&gt;<br>
+			  &lt;purpose primary="fight" /&gt;<br>
+			  &lt;people capacity="1" /&gt;<br>
+			  &lt;sounds&gt;<br>
+				&lt;shipdetail ref="shipdetail_ship_02" /&gt;<br>
+			  &lt;/sounds&gt;<br>
+			  &lt;physics mass="3.772"&gt;<br>
+				&lt;inertia pitch="0.451" yaw="0.451" roll="0.361" /&gt;<br>
+				&lt;drag forward="2.193" reverse="8.772" horizontal="3.381" vertical="3.381" pitch="2.585" yaw="2.585" roll="2.585" /&gt;<br>
+			  &lt;/physics&gt;<br>
+			  &lt;thruster tags="small" /&gt;<br>
+			  &lt;ship type="interceptor" /&gt;<br>
+			  &lt;sound_occlusion inside="0.5" /&gt;<br>
+			&lt;/properties&gt;<br>
+			&lt;connections&gt;<br>
+			  &lt;connection ref="con_cockpit"&gt;<br>
+				&lt;macro ref="cockpit_gen_virtual_01_macro" connection="ship" /&gt;<br>
+			  &lt;/connection&gt;<br>
+			  &lt;connection ref="con_dock_xs"&gt;<br>
+				&lt;macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" /&gt;<br>
+			  &lt;/connection&gt;<br>
+			  &lt;connection ref="con_storage01"&gt;<br>
+				&lt;macro ref="storage_arg_s_fighter_02_a_macro" connection="ShipConnection" /&gt;<br>
+			  &lt;/connection&gt;<br>
+			&lt;/connections&gt;<br>
+		  &lt;/macro&gt;<br>
+		&lt;/macros&gt;<br>
+	</div>
+	<br>
+	
+	So as you can see there is no engine or thruster speeds, but instead we have physics, inertia and drag.
+	In X4 the player can change the engine and/or thrusters which effects the physics of the ship.
+	This is because each engine and thuster have different amounts of thrust. So if you look at the above, you will see under <i>thruster</i>, the parameter <i>tags</i> is set to small.
+	This tells us that only small thrusters can be used, as for engine I think its to-do with the macro name (will update this in time).
+	<br><br>
+	
+	So in this example we will take a the <b>Argon S All-round Mk1</b> thruster (\X4\01\assets\props\Engines\macros\engine_arg_s_allround_01_mk1_macro.xml),
+	and <b>Argon S Travel thrusters Mk1</b> ((\X4\01\assets\props\Engines\macros\engine_arg_s_travel_01_mk1_macro). So if we short-list the important stats, we get the following:
+	<br><br>
+
+	<div class="code">
+		<b>Ship: ship_arg_s_fighter_02_a_macro</b><br>
+		Mass: 3.772 t<br>
+		Pitch/Yaw Inertia: 0.451<br>
+		Roll Inertia: 0.361<br>
+		Forward Drag: 2.193<br>
+		Reverse Drag: 8.772<br>
+		Vertical/Horzontal Drag: 3.381<br>
+		Pitch/Yaw/Roll Drag: 2.585<br>
+		<br>
+
+		<b>Engine: engine_arg_s_travel_01_mk1_macro</b><br>
+		Forward Thrust: 396<br>
+		Reverse Thrust: 396<br>
+		<br>
+
+		<b>Thrusters: thruster_gen_s_allround_01_mk1_macro</b><br>
+		Vertical Thrust: 199<br>
+		Horizontal Thrust: 199<br>
+		Yaw Thrust: 184<br>
+		Pitch Thrust: 171<br>
+		Roll Thrust: 236<br>
+	</div>
+	<br>
+	
+	So to calculate the various stats, check the formulas below:
+	<br><br>
+	
+	<div class="code">
+		Forward acceleration = (Engine forward thrust * Number of engines) / Hull mass<br>
+		= (396 * 1) / 3.772<br>
+		= 105 m/s^2<br>
+		<br>
+
+		Maximum forward speed = (Engine forward thrust * Number of engines) / Hull forward drag<br>
+		= (396 * 1) / 2.193<br>
+		= 181 m/s<br>
+		<br>
+
+		Time to max speed = Max forward speed / Forward acceleration<br>
+		= 181 / 105<br>
+		= 1.7 s<br>
+		<br>
+
+
+		Yaw accel = Thruster yaw thrust / Hull yaw inertia<br>
+		= 184 / 0.451<br>
+		= 407<br>
+		<br>
+
+		Max yaw speed = Thruster yaw thrust / Hull yaw drag<br>
+		= 184 / 2.585<br>
+		= 71<br>
+		<br>
+
+		Yaw sluggishness = Max yaw speed / Yaw accel<br>
+		= 71 / 407<br>
+		= 0.04 (lower is better)<br>
+		<br>
+
+		Pitch accel = Thruster pitch thrust / Hull pitch inertia<br>
+		= 171 / 0.451<br>
+		= 379<br>
+		<br>
+
+		Max pitch speed = Thruster pitch thrust / Hull pitch drag<br>
+		= 171 / 2.585<br>
+		= 66<br>
+		<br>
+
+		Roll accel = Thruster roll thrust / Hull roll inertia<br>
+		= 236 / 0.361<br>
+		= 654<br>
+
+		Max roll speed = Thruster roll thrust / Hull roll drag<br>
+		= 236 / 2.585<br>
+		= 91<br>
+		<br>
+
+		Vertical strafe accel = Thruster vertical thrust / Hull mass<br>
+		= 199 / 3.772<br>
+		= 53<br>
+		<br>
+
+		Max vertical strafe speed = Thruster vertical thrust / Hull vertical drag<br>
+		= 199 / 3.381<br>
+		= 59<br>
+	</div>
+	<br><br>
+
+	<a href="../">&laquo; Back to technical help section</a>
+	<br><br>
+	
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00067 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

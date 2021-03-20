@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Wares - Elite &amp; Dangerous Roguey</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Wares, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/elite-dangerous/wares/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Wares">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/elite-dangerous/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/elite-dangerous/"><img src="/elite-dangerous/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #A98135;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #A98135;">
+				<li class="icon" style="background-color: #A98135">&nbsp;</li><li><a href="/elite-dangerous/">News</a></li><li><a href="/elite-dangerous/help/">Help / Guides</a></li><li><a href="/elite-dangerous/trade-helper/">Trade Helper</a></li><li><a href="/elite-dangerous/ships/">Ships</a></li><li><a href="/elite-dangerous/ship-builds/">Builds</a></li><li><a href="/elite-dangerous/universe/">Universe</a></li><li><a href="/elite-dangerous/equipment/">Equipment</a></li><li><a href="/elite-dangerous/engineers/">Engineers</a></li><li><a href="/elite-dangerous/commanders/">Commanders</a></li><li><a href="/elite-dangerous/powers/">Powers</a></li><li><a href="/elite-dangerous/fleet-carriers/">Fleet Carriers</a></li><li><a href="/elite-dangerous/wares/">Wares</a></li><li><a href="/elite-dangerous/videos/">Videos</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=36">Forum</a></li><li><a href="/elite-dangerous/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+ 
+		<h1>Wares</h1>
+		
+		Below is a list of known wares found in the Elite: Dangerous universe.
+		<br><br>
+		
+		<div class="subheader">
+			Fliter by name
+			<input type="text" placeholder="Ware filter" id="ware_search_str" onkeyup="ware_filter();">
+		</div>
+
+					<table class="board_table">
+					<tr>
+						<th>Ware name</th>
+						<th colspan="2">Supply</th>
+						<th colspan="2">Demand</th>
+					</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Chemicals</b></td></tr>
+
+				<tr class="hover" id="ware_0">
+					<td style="padding-left: 32px;"><a href="./agronomic-treatment/"><img src="/images/link_s.gif"> Agronomic Treatment</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="agronomic-treatment_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="agronomic-treatment_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="agronomic-treatment_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="agronomic-treatment_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_1">
+					<td style="padding-left: 32px;"><a href="./explosives/"><img src="/images/link_s.gif"> Explosives</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="explosives_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="explosives_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="explosives_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="explosives_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_2">
+					<td style="padding-left: 32px;"><a href="./hydrogen-fuel/"><img src="/images/link_s.gif"> Hydrogen Fuel</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="hydrogen-fuel_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="hydrogen-fuel_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="hydrogen-fuel_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="hydrogen-fuel_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_3">
+					<td style="padding-left: 32px;"><a href="./hydrogen-peroxide/"><img src="/images/link_s.gif"> Hydrogen Peroxide</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="hydrogen-peroxide_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="hydrogen-peroxide_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="hydrogen-peroxide_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="hydrogen-peroxide_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_4">
+					<td style="padding-left: 32px;"><a href="./liquid-oxygen/"><img src="/images/link_s.gif"> Liquid Oxygen</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="liquid-oxygen_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="liquid-oxygen_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="liquid-oxygen_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="liquid-oxygen_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_5">
+					<td style="padding-left: 32px;"><a href="./mineral-oil/"><img src="/images/link_s.gif"> Mineral Oil</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="mineral-oil_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="mineral-oil_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="mineral-oil_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="mineral-oil_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_6">
+					<td style="padding-left: 32px;"><a href="./nerve-agents/"><img src="/images/link_s.gif"> Nerve Agents</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="nerve-agents_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="nerve-agents_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="nerve-agents_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="nerve-agents_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_7">
+					<td style="padding-left: 32px;"><a href="./pesticides/"><img src="/images/link_s.gif"> Pesticides</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="pesticides_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="pesticides_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="pesticides_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="pesticides_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_8">
+					<td style="padding-left: 32px;"><a href="./surface-stabilisers/"><img src="/images/link_s.gif"> Surface Stabilisers</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="surface-stabilisers_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="surface-stabilisers_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="surface-stabilisers_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="surface-stabilisers_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_9">
+					<td style="padding-left: 32px;"><a href="./synthetic-reagents/"><img src="/images/link_s.gif"> Synthetic Reagents</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="synthetic-reagents_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="synthetic-reagents_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="synthetic-reagents_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="synthetic-reagents_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_10">
+					<td style="padding-left: 32px;"><a href="./water/"><img src="/images/link_s.gif"> Water</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="water_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="water_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="water_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="water_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_11">
+					<td style="padding-left: 32px;"><a href="./tritium/"><img src="/images/link_s.gif"> Tritium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="tritium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="tritium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="tritium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="tritium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Consumer items</b></td></tr>
+
+				<tr class="hover" id="ware_12">
+					<td style="padding-left: 32px;"><a href="./clothing/"><img src="/images/link_s.gif"> Clothing</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="clothing_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="clothing_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="clothing_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="clothing_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_13">
+					<td style="padding-left: 32px;"><a href="./consumer-technology/"><img src="/images/link_s.gif"> Consumer Technology</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="consumer-technology_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="consumer-technology_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="consumer-technology_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="consumer-technology_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_14">
+					<td style="padding-left: 32px;"><a href="./domestic-appliances/"><img src="/images/link_s.gif"> Domestic Appliances</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="domestic-appliances_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="domestic-appliances_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="domestic-appliances_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="domestic-appliances_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_15">
+					<td style="padding-left: 32px;"><a href="./evacuation-shelter/"><img src="/images/link_s.gif"> Evacuation Shelter</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="evacuation-shelter_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="evacuation-shelter_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="evacuation-shelter_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="evacuation-shelter_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_16">
+					<td style="padding-left: 32px;"><a href="./survival-equipment/"><img src="/images/link_s.gif"> Survival Equipment</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="survival-equipment_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="survival-equipment_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="survival-equipment_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="survival-equipment_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Drugs</b></td></tr>
+
+				<tr class="hover" id="ware_17">
+					<td style="padding-left: 32px;"><a href="./narcotics/"><img src="/images/link_s.gif"> Narcotics</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="narcotics_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="narcotics_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="narcotics_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="narcotics_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_18">
+					<td style="padding-left: 32px;"><a href="./beer/"><img src="/images/link_s.gif"> Beer</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="beer_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="beer_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="beer_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="beer_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_19">
+					<td style="padding-left: 32px;"><a href="./bootleg-liquor/"><img src="/images/link_s.gif"> Bootleg Liquor</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bootleg-liquor_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bootleg-liquor_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bootleg-liquor_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bootleg-liquor_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_20">
+					<td style="padding-left: 32px;"><a href="./liquor/"><img src="/images/link_s.gif"> Liquor</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="liquor_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="liquor_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="liquor_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="liquor_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_21">
+					<td style="padding-left: 32px;"><a href="./tobacco/"><img src="/images/link_s.gif"> Tobacco</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="tobacco_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="tobacco_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="tobacco_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="tobacco_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_22">
+					<td style="padding-left: 32px;"><a href="./wine/"><img src="/images/link_s.gif"> Wine</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="wine_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="wine_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="wine_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="wine_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Foods</b></td></tr>
+
+				<tr class="hover" id="ware_23">
+					<td style="padding-left: 32px;"><a href="./algae/"><img src="/images/link_s.gif"> Algae</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="algae_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="algae_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="algae_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="algae_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_24">
+					<td style="padding-left: 32px;"><a href="./animal-meat/"><img src="/images/link_s.gif"> Animal Meat</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="animal-meat_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="animal-meat_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="animal-meat_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="animal-meat_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_25">
+					<td style="padding-left: 32px;"><a href="./coffee/"><img src="/images/link_s.gif"> Coffee</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="coffee_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="coffee_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="coffee_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="coffee_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_26">
+					<td style="padding-left: 32px;"><a href="./fish/"><img src="/images/link_s.gif"> Fish</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="fish_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="fish_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="fish_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="fish_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_27">
+					<td style="padding-left: 32px;"><a href="./food-cartridges/"><img src="/images/link_s.gif"> Food Cartridges</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="food-cartridges_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="food-cartridges_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="food-cartridges_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="food-cartridges_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_28">
+					<td style="padding-left: 32px;"><a href="./fruit-and-vegetables/"><img src="/images/link_s.gif"> Fruit and Vegetables</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="fruit-and-vegetables_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="fruit-and-vegetables_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="fruit-and-vegetables_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="fruit-and-vegetables_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_29">
+					<td style="padding-left: 32px;"><a href="./grain/"><img src="/images/link_s.gif"> Grain</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="grain_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="grain_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="grain_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="grain_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_30">
+					<td style="padding-left: 32px;"><a href="./synthetic-meat/"><img src="/images/link_s.gif"> Synthetic Meat</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="synthetic-meat_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="synthetic-meat_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="synthetic-meat_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="synthetic-meat_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_31">
+					<td style="padding-left: 32px;"><a href="./tea/"><img src="/images/link_s.gif"> Tea</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="tea_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="tea_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="tea_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="tea_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Industrial materials</b></td></tr>
+
+				<tr class="hover" id="ware_32">
+					<td style="padding-left: 32px;"><a href="./ceramic-composites/"><img src="/images/link_s.gif"> Ceramic Composites</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="ceramic-composites_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="ceramic-composites_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="ceramic-composites_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="ceramic-composites_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_33">
+					<td style="padding-left: 32px;"><a href="./cmm-composite/"><img src="/images/link_s.gif"> CMM Composite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="cmm-composite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="cmm-composite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="cmm-composite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="cmm-composite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_34">
+					<td style="padding-left: 32px;"><a href="./insulating-membrane/"><img src="/images/link_s.gif"> Insulating Membrane</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="insulating-membrane_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="insulating-membrane_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="insulating-membrane_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="insulating-membrane_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_35">
+					<td style="padding-left: 32px;"><a href="./meta-alloys/"><img src="/images/link_s.gif"> Meta-Alloys</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="meta-alloys_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="meta-alloys_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="meta-alloys_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="meta-alloys_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_36">
+					<td style="padding-left: 32px;"><a href="./polymers/"><img src="/images/link_s.gif"> Polymers</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="polymers_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="polymers_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="polymers_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="polymers_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_37">
+					<td style="padding-left: 32px;"><a href="./semiconductors/"><img src="/images/link_s.gif"> Semiconductors</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="semiconductors_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="semiconductors_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="semiconductors_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="semiconductors_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_38">
+					<td style="padding-left: 32px;"><a href="./superconductors/"><img src="/images/link_s.gif"> Superconductors</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="superconductors_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="superconductors_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="superconductors_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="superconductors_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Machinery</b></td></tr>
+
+				<tr class="hover" id="ware_39">
+					<td style="padding-left: 32px;"><a href="./articulation-motors/"><img src="/images/link_s.gif"> Articulation Motors</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="articulation-motors_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="articulation-motors_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="articulation-motors_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="articulation-motors_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_40">
+					<td style="padding-left: 32px;"><a href="./atmospheric-extractors/"><img src="/images/link_s.gif"> Atmospheric extractors</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="atmospheric-extractors_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="atmospheric-extractors_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="atmospheric-extractors_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="atmospheric-extractors_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_41">
+					<td style="padding-left: 32px;"><a href="./atmospheric-processors/"><img src="/images/link_s.gif"> Atmospheric Processors</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="atmospheric-processors_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="atmospheric-processors_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="atmospheric-processors_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="atmospheric-processors_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_42">
+					<td style="padding-left: 32px;"><a href="./building-fabricators/"><img src="/images/link_s.gif"> Building Fabricators</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="building-fabricators_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="building-fabricators_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="building-fabricators_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="building-fabricators_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_43">
+					<td style="padding-left: 32px;"><a href="./crop-harvesters/"><img src="/images/link_s.gif"> Crop Harvesters</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="crop-harvesters_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="crop-harvesters_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="crop-harvesters_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="crop-harvesters_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_44">
+					<td style="padding-left: 32px;"><a href="./emergency-power-cells/"><img src="/images/link_s.gif"> Emergency Power Cells</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="emergency-power-cells_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="emergency-power-cells_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="emergency-power-cells_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="emergency-power-cells_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_45">
+					<td style="padding-left: 32px;"><a href="./energy-grid-assembly/"><img src="/images/link_s.gif"> Energy Grid Assembly</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="energy-grid-assembly_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="energy-grid-assembly_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="energy-grid-assembly_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="energy-grid-assembly_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_46">
+					<td style="padding-left: 32px;"><a href="./exhaust-manifold/"><img src="/images/link_s.gif"> Exhaust Manifold</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="exhaust-manifold_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="exhaust-manifold_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="exhaust-manifold_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="exhaust-manifold_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_47">
+					<td style="padding-left: 32px;"><a href="./geological-equipment/"><img src="/images/link_s.gif"> Geological Equipment</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="geological-equipment_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="geological-equipment_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="geological-equipment_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="geological-equipment_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_48">
+					<td style="padding-left: 32px;"><a href="./heatsink-interlink/"><img src="/images/link_s.gif"> Heatsink Interlink</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="heatsink-interlink_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="heatsink-interlink_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="heatsink-interlink_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="heatsink-interlink_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_49">
+					<td style="padding-left: 32px;"><a href="./hn-shock-mount/"><img src="/images/link_s.gif"> HN Shock Mount</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="hn-shock-mount_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="hn-shock-mount_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="hn-shock-mount_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="hn-shock-mount_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_50">
+					<td style="padding-left: 32px;"><a href="./ion-distributor/"><img src="/images/link_s.gif"> Ion Distributor</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="ion-distributor_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="ion-distributor_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="ion-distributor_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="ion-distributor_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_51">
+					<td style="padding-left: 32px;"><a href="./magnetic-emitter-coil/"><img src="/images/link_s.gif"> Magnetic Emitter Coil</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="magnetic-emitter-coil_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="magnetic-emitter-coil_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="magnetic-emitter-coil_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="magnetic-emitter-coil_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_52">
+					<td style="padding-left: 32px;"><a href="./marine-equipment/"><img src="/images/link_s.gif"> Marine Equipment</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="marine-equipment_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="marine-equipment_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="marine-equipment_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="marine-equipment_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_53">
+					<td style="padding-left: 32px;"><a href="./micro-weave-cooling-hoses/"><img src="/images/link_s.gif"> Micro-Weave Cooling Hoses</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="micro-weave-cooling-hoses_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="micro-weave-cooling-hoses_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="micro-weave-cooling-hoses_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="micro-weave-cooling-hoses_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_54">
+					<td style="padding-left: 32px;"><a href="./microbial-furnaces/"><img src="/images/link_s.gif"> Microbial Furnaces</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="microbial-furnaces_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="microbial-furnaces_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="microbial-furnaces_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="microbial-furnaces_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_55">
+					<td style="padding-left: 32px;"><a href="./mineral-extractors/"><img src="/images/link_s.gif"> Mineral Extractors</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="mineral-extractors_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="mineral-extractors_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="mineral-extractors_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="mineral-extractors_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_56">
+					<td style="padding-left: 32px;"><a href="./modular-terminals/"><img src="/images/link_s.gif"> Modular Terminals</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="modular-terminals_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="modular-terminals_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="modular-terminals_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="modular-terminals_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_57">
+					<td style="padding-left: 32px;"><a href="./power-converter/"><img src="/images/link_s.gif"> Power Converter</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="power-converter_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="power-converter_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="power-converter_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="power-converter_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_58">
+					<td style="padding-left: 32px;"><a href="./power-generators/"><img src="/images/link_s.gif"> Power Generators</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="power-generators_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="power-generators_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="power-generators_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="power-generators_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_59">
+					<td style="padding-left: 32px;"><a href="./power-transfer-bus/"><img src="/images/link_s.gif"> Power Transfer Bus</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="power-transfer-bus_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="power-transfer-bus_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="power-transfer-bus_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="power-transfer-bus_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_60">
+					<td style="padding-left: 32px;"><a href="./radiation-baffle/"><img src="/images/link_s.gif"> Radiation Baffle</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="radiation-baffle_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="radiation-baffle_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="radiation-baffle_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="radiation-baffle_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_61">
+					<td style="padding-left: 32px;"><a href="./reinforced-mounting-plate/"><img src="/images/link_s.gif"> Reinforced Mounting Plate</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="reinforced-mounting-plate_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="reinforced-mounting-plate_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="reinforced-mounting-plate_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="reinforced-mounting-plate_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_62">
+					<td style="padding-left: 32px;"><a href="./skimmer-components/"><img src="/images/link_s.gif"> Skimer Components</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="skimmer-components_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="skimmer-components_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="skimmer-components_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="skimmer-components_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_63">
+					<td style="padding-left: 32px;"><a href="./telemetry-suite/"><img src="/images/link_s.gif"> Telemetry Suite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="telemetry-suite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="telemetry-suite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="telemetry-suite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="telemetry-suite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_64">
+					<td style="padding-left: 32px;"><a href="./thermal-cooling-units/"><img src="/images/link_s.gif"> Thermal Cooling Units</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="thermal-cooling-units_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="thermal-cooling-units_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="thermal-cooling-units_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="thermal-cooling-units_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_65">
+					<td style="padding-left: 32px;"><a href="./water-purifiers/"><img src="/images/link_s.gif"> Water Purifiers</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="water-purifiers_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="water-purifiers_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="water-purifiers_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="water-purifiers_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Medicines</b></td></tr>
+
+				<tr class="hover" id="ware_66">
+					<td style="padding-left: 32px;"><a href="./advanced-medicines/"><img src="/images/link_s.gif"> Advanced Medicines</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="advanced-medicines_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="advanced-medicines_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="advanced-medicines_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="advanced-medicines_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_67">
+					<td style="padding-left: 32px;"><a href="./agri-medicines/"><img src="/images/link_s.gif"> Agri-Medicines</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="agri-medicines_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="agri-medicines_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="agri-medicines_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="agri-medicines_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_68">
+					<td style="padding-left: 32px;"><a href="./basic-medicines/"><img src="/images/link_s.gif"> Basic Medicines</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="basic-medicines_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="basic-medicines_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="basic-medicines_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="basic-medicines_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_69">
+					<td style="padding-left: 32px;"><a href="./combat-stabilisers/"><img src="/images/link_s.gif"> Combat Stabilisers</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="combat-stabilisers_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="combat-stabilisers_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="combat-stabilisers_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="combat-stabilisers_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_70">
+					<td style="padding-left: 32px;"><a href="./performance-enhancers/"><img src="/images/link_s.gif"> Performance Enhancers</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="performance-enhancers_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="performance-enhancers_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="performance-enhancers_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="performance-enhancers_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_71">
+					<td style="padding-left: 32px;"><a href="./progenitor-cells/"><img src="/images/link_s.gif"> Progenitor Cells</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="progenitor-cells_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="progenitor-cells_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="progenitor-cells_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="progenitor-cells_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Metals</b></td></tr>
+
+				<tr class="hover" id="ware_72">
+					<td style="padding-left: 32px;"><a href="./aluminium/"><img src="/images/link_s.gif"> Aluminium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="aluminium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="aluminium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="aluminium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="aluminium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_73">
+					<td style="padding-left: 32px;"><a href="./beryllium/"><img src="/images/link_s.gif"> Beryllium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="beryllium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="beryllium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="beryllium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="beryllium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_74">
+					<td style="padding-left: 32px;"><a href="./bismuth/"><img src="/images/link_s.gif"> Bismuth</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bismuth_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bismuth_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bismuth_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bismuth_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_75">
+					<td style="padding-left: 32px;"><a href="./cobalt/"><img src="/images/link_s.gif"> Cobalt</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="cobalt_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="cobalt_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="cobalt_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="cobalt_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_76">
+					<td style="padding-left: 32px;"><a href="./copper/"><img src="/images/link_s.gif"> Copper</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="copper_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="copper_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="copper_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="copper_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_77">
+					<td style="padding-left: 32px;"><a href="./gallium/"><img src="/images/link_s.gif"> Gallium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="gallium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="gallium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="gallium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="gallium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_78">
+					<td style="padding-left: 32px;"><a href="./gold/"><img src="/images/link_s.gif"> Gold</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="gold_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="gold_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="gold_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="gold_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_79">
+					<td style="padding-left: 32px;"><a href="./indium/"><img src="/images/link_s.gif"> Indium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="indium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="indium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="indium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="indium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_80">
+					<td style="padding-left: 32px;"><a href="./lanthanum/"><img src="/images/link_s.gif"> Lanthanum</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="lanthanum_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="lanthanum_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="lanthanum_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="lanthanum_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_81">
+					<td style="padding-left: 32px;"><a href="./lithium/"><img src="/images/link_s.gif"> Lithium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="lithium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="lithium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="lithium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="lithium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_82">
+					<td style="padding-left: 32px;"><a href="./osmium/"><img src="/images/link_s.gif"> Osmium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="osmium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="osmium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="osmium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="osmium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_83">
+					<td style="padding-left: 32px;"><a href="./palladium/"><img src="/images/link_s.gif"> Palladium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="palladium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="palladium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="palladium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="palladium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_84">
+					<td style="padding-left: 32px;"><a href="./platinum/"><img src="/images/link_s.gif"> Platinum</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="platinum_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="platinum_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="platinum_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="platinum_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_85">
+					<td style="padding-left: 32px;"><a href="./praseodymium/"><img src="/images/link_s.gif"> Praseodymium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="praseodymium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="praseodymium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="praseodymium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="praseodymium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_86">
+					<td style="padding-left: 32px;"><a href="./samarium/"><img src="/images/link_s.gif"> Samarium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="samarium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="samarium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="samarium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="samarium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_87">
+					<td style="padding-left: 32px;"><a href="./silver/"><img src="/images/link_s.gif"> Silver</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="silver_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="silver_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="silver_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="silver_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_88">
+					<td style="padding-left: 32px;"><a href="./tantalum/"><img src="/images/link_s.gif"> Tantalum</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="tantalum_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="tantalum_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="tantalum_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="tantalum_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_89">
+					<td style="padding-left: 32px;"><a href="./thallium/"><img src="/images/link_s.gif"> Thallium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="thallium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="thallium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="thallium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="thallium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_90">
+					<td style="padding-left: 32px;"><a href="./thorium/"><img src="/images/link_s.gif"> Thorium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="thorium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="thorium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="thorium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="thorium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_91">
+					<td style="padding-left: 32px;"><a href="./titanium/"><img src="/images/link_s.gif"> Titanium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="titanium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="titanium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="titanium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="titanium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_92">
+					<td style="padding-left: 32px;"><a href="./uranium/"><img src="/images/link_s.gif"> Uranium</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="uranium_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="uranium_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="uranium_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="uranium_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Minerals</b></td></tr>
+
+				<tr class="hover" id="ware_93">
+					<td style="padding-left: 32px;"><a href="./alexandrite/"><img src="/images/link_s.gif"> Alexandrite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="alexandrite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="alexandrite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="alexandrite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="alexandrite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_94">
+					<td style="padding-left: 32px;"><a href="./bauxite/"><img src="/images/link_s.gif"> Bauxite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bauxite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bauxite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bauxite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bauxite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_95">
+					<td style="padding-left: 32px;"><a href="./benitoite/"><img src="/images/link_s.gif"> Benitoite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="benitoite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="benitoite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="benitoite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="benitoite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_96">
+					<td style="padding-left: 32px;"><a href="./bertrandite/"><img src="/images/link_s.gif"> Bertrandite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bertrandite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bertrandite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bertrandite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bertrandite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_97">
+					<td style="padding-left: 32px;"><a href="./bromellite/"><img src="/images/link_s.gif"> Bromellite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bromellite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bromellite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bromellite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bromellite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_98">
+					<td style="padding-left: 32px;"><a href="./coltan/"><img src="/images/link_s.gif"> Coltan</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="coltan_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="coltan_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="coltan_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="coltan_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_99">
+					<td style="padding-left: 32px;"><a href="./cryolite/"><img src="/images/link_s.gif"> Cryolite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="cryolite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="cryolite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="cryolite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="cryolite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_100">
+					<td style="padding-left: 32px;"><a href="./gallite/"><img src="/images/link_s.gif"> Gallite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="gallite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="gallite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="gallite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="gallite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_101">
+					<td style="padding-left: 32px;"><a href="./goslarite/"><img src="/images/link_s.gif"> Goslarite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="goslarite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="goslarite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="goslarite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="goslarite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_102">
+					<td style="padding-left: 32px;"><a href="./grandidierite/"><img src="/images/link_s.gif"> Grandidierite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="grandidierite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="grandidierite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="grandidierite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="grandidierite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_103">
+					<td style="padding-left: 32px;"><a href="./indite/"><img src="/images/link_s.gif"> Indite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="indite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="indite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="indite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="indite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_104">
+					<td style="padding-left: 32px;"><a href="./jadeite/"><img src="/images/link_s.gif"> Jadeite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="jadeite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="jadeite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="jadeite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="jadeite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_105">
+					<td style="padding-left: 32px;"><a href="./lepidolite/"><img src="/images/link_s.gif"> Lepidolite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="lepidolite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="lepidolite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="lepidolite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="lepidolite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_106">
+					<td style="padding-left: 32px;"><a href="./lithium-hydroxide/"><img src="/images/link_s.gif"> Lithium Hydroxide</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="lithium-hydroxide_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="lithium-hydroxide_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="lithium-hydroxide_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="lithium-hydroxide_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_107">
+					<td style="padding-left: 32px;"><a href="./low-temperature-diamonds/"><img src="/images/link_s.gif"> Low Temperature Diamonds</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="low-temperature-diamonds_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="low-temperature-diamonds_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="low-temperature-diamonds_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="low-temperature-diamonds_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_108">
+					<td style="padding-left: 32px;"><a href="./methane-clathrate/"><img src="/images/link_s.gif"> Methane Clathrate</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="methane-clathrate_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="methane-clathrate_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="methane-clathrate_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="methane-clathrate_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_109">
+					<td style="padding-left: 32px;"><a href="./methanol-monohydrate-crystals/"><img src="/images/link_s.gif"> Methanol Monohydrate Crystals</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="methanol-monohydrate-crystals_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="methanol-monohydrate-crystals_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="methanol-monohydrate-crystals_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="methanol-monohydrate-crystals_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_110">
+					<td style="padding-left: 32px;"><a href="./moissanite/"><img src="/images/link_s.gif"> Moissanite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="moissanite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="moissanite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="moissanite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="moissanite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_111">
+					<td style="padding-left: 32px;"><a href="./monazite/"><img src="/images/link_s.gif"> Monazite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="monazite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="monazite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="monazite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="monazite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_112">
+					<td style="padding-left: 32px;"><a href="./musgravite/"><img src="/images/link_s.gif"> Musgravite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="musgravite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="musgravite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="musgravite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="musgravite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_113">
+					<td style="padding-left: 32px;"><a href="./painite/"><img src="/images/link_s.gif"> Painite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="painite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="painite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="painite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="painite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_114">
+					<td style="padding-left: 32px;"><a href="./pyrophyllite/"><img src="/images/link_s.gif"> Pyrophyllite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="pyrophyllite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="pyrophyllite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="pyrophyllite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="pyrophyllite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_115">
+					<td style="padding-left: 32px;"><a href="./rhodplumsite/"><img src="/images/link_s.gif"> Rhodplumsite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="rhodplumsite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="rhodplumsite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="rhodplumsite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="rhodplumsite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_116">
+					<td style="padding-left: 32px;"><a href="./rutile/"><img src="/images/link_s.gif"> Rutile</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="rutile_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="rutile_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="rutile_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="rutile_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_117">
+					<td style="padding-left: 32px;"><a href="./serendibite/"><img src="/images/link_s.gif"> Serendibite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="serendibite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="serendibite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="serendibite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="serendibite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_118">
+					<td style="padding-left: 32px;"><a href="./taaffeite/"><img src="/images/link_s.gif"> Taaffeite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="taaffeite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="taaffeite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="taaffeite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="taaffeite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_119">
+					<td style="padding-left: 32px;"><a href="./uraninite/"><img src="/images/link_s.gif"> Uraninite</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="uraninite_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="uraninite_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="uraninite_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="uraninite_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_120">
+					<td style="padding-left: 32px;"><a href="./void-opals/"><img src="/images/link_s.gif"> Void Opals</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="void-opals_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="void-opals_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="void-opals_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="void-opals_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Salvage</b></td></tr>
+
+				<tr class="hover" id="ware_121">
+					<td style="padding-left: 32px;"><a href="./ai-relics/"><img src="/images/link_s.gif"> AI Relics</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="ai-relics_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="ai-relics_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="ai-relics_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="ai-relics_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_122">
+					<td style="padding-left: 32px;"><a href="./hafnium-178/"><img src="/images/link_s.gif"> Hafnium 178</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="hafnium-178_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="hafnium-178_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="hafnium-178_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="hafnium-178_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_123">
+					<td style="padding-left: 32px;"><a href="./sap-8-core-container/"><img src="/images/link_s.gif"> Sap 8 Core Container</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="sap-8-core-container_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="sap-8-core-container_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="sap-8-core-container_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="sap-8-core-container_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Technology</b></td></tr>
+
+				<tr class="hover" id="ware_124">
+					<td style="padding-left: 32px;"><a href="./advanced-catalysers/"><img src="/images/link_s.gif"> Advanced Catalysers</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="advanced-catalysers_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="advanced-catalysers_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="advanced-catalysers_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="advanced-catalysers_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_125">
+					<td style="padding-left: 32px;"><a href="./animal-monitors/"><img src="/images/link_s.gif"> Animal Monitors</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="animal-monitors_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="animal-monitors_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="animal-monitors_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="animal-monitors_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_126">
+					<td style="padding-left: 32px;"><a href="./aquaponic-systems/"><img src="/images/link_s.gif"> Aquaponic Systems</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="aquaponic-systems_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="aquaponic-systems_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="aquaponic-systems_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="aquaponic-systems_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_127">
+					<td style="padding-left: 32px;"><a href="./auto-fabricators/"><img src="/images/link_s.gif"> Auto Fabricators</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="auto-fabricators_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="auto-fabricators_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="auto-fabricators_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="auto-fabricators_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_128">
+					<td style="padding-left: 32px;"><a href="./bio-reducing-lichen/"><img src="/images/link_s.gif"> Bio-reducing Lichen</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bio-reducing-lichen_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="bio-reducing-lichen_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bio-reducing-lichen_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="bio-reducing-lichen_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_129">
+					<td style="padding-left: 32px;"><a href="./computer-components/"><img src="/images/link_s.gif"> Computer Components</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="computer-components_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="computer-components_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="computer-components_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="computer-components_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_130">
+					<td style="padding-left: 32px;"><a href="./he-suits/"><img src="/images/link_s.gif"> H.E. Suits</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="he-suits_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="he-suits_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="he-suits_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="he-suits_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_131">
+					<td style="padding-left: 32px;"><a href="./hardware-diagnostic-sensor/"><img src="/images/link_s.gif"> Hardware Diagnostic Sensor</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="hardware-diagnostic-sensor_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="hardware-diagnostic-sensor_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="hardware-diagnostic-sensor_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="hardware-diagnostic-sensor_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_132">
+					<td style="padding-left: 32px;"><a href="./land-enrichment-systems/"><img src="/images/link_s.gif"> Land Enrichment Systems</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="land-enrichment-systems_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="land-enrichment-systems_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="land-enrichment-systems_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="land-enrichment-systems_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_133">
+					<td style="padding-left: 32px;"><a href="./medical-diagnostic-equipment/"><img src="/images/link_s.gif"> Medical Diagnostic Equipment</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="medical-diagnostic-equipment_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="medical-diagnostic-equipment_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="medical-diagnostic-equipment_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="medical-diagnostic-equipment_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_134">
+					<td style="padding-left: 32px;"><a href="./micro-controllers/"><img src="/images/link_s.gif"> Micro Controllers</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="micro-controllers_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="micro-controllers_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="micro-controllers_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="micro-controllers_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_135">
+					<td style="padding-left: 32px;"><a href="./muon-imager/"><img src="/images/link_s.gif"> Muon Imager</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="muon-imager_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="muon-imager_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="muon-imager_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="muon-imager_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_136">
+					<td style="padding-left: 32px;"><a href="./nanobreakers/"><img src="/images/link_s.gif"> Nanobreakers</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="nanobreakers_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="nanobreakers_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="nanobreakers_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="nanobreakers_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_137">
+					<td style="padding-left: 32px;"><a href="./resonating-separators/"><img src="/images/link_s.gif"> Resonating Separators</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="resonating-separators_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="resonating-separators_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="resonating-separators_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="resonating-separators_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_138">
+					<td style="padding-left: 32px;"><a href="./robotics/"><img src="/images/link_s.gif"> Robotics</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="robotics_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="robotics_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="robotics_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="robotics_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_139">
+					<td style="padding-left: 32px;"><a href="./structural-regulators/"><img src="/images/link_s.gif"> Structural Regulators</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="structural-regulators_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="structural-regulators_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="structural-regulators_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="structural-regulators_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Textiles</b></td></tr>
+
+				<tr class="hover" id="ware_140">
+					<td style="padding-left: 32px;"><a href="./conductive-fabrics/"><img src="/images/link_s.gif"> Conductive Fabrics</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="conductive-fabrics_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="conductive-fabrics_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="conductive-fabrics_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="conductive-fabrics_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_141">
+					<td style="padding-left: 32px;"><a href="./leather/"><img src="/images/link_s.gif"> Leather</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="leather_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="leather_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="leather_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="leather_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_142">
+					<td style="padding-left: 32px;"><a href="./military-grade-fabrics/"><img src="/images/link_s.gif"> Military Grade Fabrics</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="military-grade-fabrics_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="military-grade-fabrics_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="military-grade-fabrics_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="military-grade-fabrics_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_143">
+					<td style="padding-left: 32px;"><a href="./natural-fabrics/"><img src="/images/link_s.gif"> Natural Fabrics</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="natural-fabrics_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="natural-fabrics_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="natural-fabrics_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="natural-fabrics_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_144">
+					<td style="padding-left: 32px;"><a href="./neofabric-insulation/"><img src="/images/link_s.gif"> Neofabric Insulation</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="neofabric-insulation_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="neofabric-insulation_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="neofabric-insulation_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="neofabric-insulation_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_145">
+					<td style="padding-left: 32px;"><a href="./synthetic-fabrics/"><img src="/images/link_s.gif"> Synthetic Fabrics</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="synthetic-fabrics_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="synthetic-fabrics_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="synthetic-fabrics_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="synthetic-fabrics_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Waste</b></td></tr>
+
+				<tr class="hover" id="ware_146">
+					<td style="padding-left: 32px;"><a href="./biowaste/"><img src="/images/link_s.gif"> Biowaste</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="biowaste_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="biowaste_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="biowaste_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="biowaste_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_147">
+					<td style="padding-left: 32px;"><a href="./chemical-waste/"><img src="/images/link_s.gif"> Chemical Waste</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="chemical-waste_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="chemical-waste_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="chemical-waste_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="chemical-waste_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_148">
+					<td style="padding-left: 32px;"><a href="./scrap/"><img src="/images/link_s.gif"> Scrap</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="scrap_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="scrap_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="scrap_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="scrap_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_149">
+					<td style="padding-left: 32px;"><a href="./toxic-waste/"><img src="/images/link_s.gif"> Toxic Waste</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="toxic-waste_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="toxic-waste_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="toxic-waste_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="toxic-waste_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Slavery</b></td></tr>
+
+				<tr class="hover" id="ware_150">
+					<td style="padding-left: 32px;"><a href="./slaves/"><img src="/images/link_s.gif"> Slaves</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="slaves_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="slaves_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="slaves_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="slaves_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_151">
+					<td style="padding-left: 32px;"><a href="./imperial-slaves/"><img src="/images/link_s.gif"> Imperial Slaves</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="imperial-slaves_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="imperial-slaves_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="imperial-slaves_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="imperial-slaves_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr><td class="table_cell_yellow" colspan="5"><img src="/images/folder.gif" alt="Folder"> <b>Weapons</b></td></tr>
+
+				<tr class="hover" id="ware_152">
+					<td style="padding-left: 32px;"><a href="./battle-weapons/"><img src="/images/link_s.gif"> Battle Weapons</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="battle-weapons_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="battle-weapons_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="battle-weapons_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="battle-weapons_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_153">
+					<td style="padding-left: 32px;"><a href="./landmines/"><img src="/images/link_s.gif"> Landmines</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="landmines_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="landmines_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="landmines_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="landmines_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_154">
+					<td style="padding-left: 32px;"><a href="./non-lethal-weapons/"><img src="/images/link_s.gif"> Non-lethal Weapons</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="non-lethal-weapons_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="non-lethal-weapons_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="non-lethal-weapons_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="non-lethal-weapons_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_155">
+					<td style="padding-left: 32px;"><a href="./personal-weapons/"><img src="/images/link_s.gif"> Personal Weapons</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="personal-weapons_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="personal-weapons_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="personal-weapons_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="personal-weapons_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+				<tr class="hover" id="ware_156">
+					<td style="padding-left: 32px;"><a href="./reactive-armour/"><img src="/images/link_s.gif"> Reactive Armour</a></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="reactive-armour_supply_price" style="color: blue; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_blue"><span id="reactive-armour_supply_amount" style="color: blue; font-size: 12px;"></span></td>
+					
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="reactive-armour_demand_price" style="color: green; font-size: 12px;"></span></td>
+					<td style="text-align: center; width: 12%;" class="table_cell_green"><span id="reactive-armour_demand_amount" style="color: green; font-size: 12px;"></span></td>
+				</tr>
+
+
+			</table>
+			<br>
+		
+			<script>
+				var ware_count 			= 157;
+				var ware_data			= {0: {id: 'agronomic-treatment', wname: 'Agronomic Treatment'}, 1: {id: 'explosives', wname: 'Explosives'}, 2: {id: 'hydrogen-fuel', wname: 'Hydrogen Fuel'}, 3: {id: 'hydrogen-peroxide', wname: 'Hydrogen Peroxide'}, 4: {id: 'liquid-oxygen', wname: 'Liquid Oxygen'}, 5: {id: 'mineral-oil', wname: 'Mineral Oil'}, 6: {id: 'nerve-agents', wname: 'Nerve Agents'}, 7: {id: 'pesticides', wname: 'Pesticides'}, 8: {id: 'surface-stabilisers', wname: 'Surface Stabilisers'}, 9: {id: 'synthetic-reagents', wname: 'Synthetic Reagents'}, 10: {id: 'water', wname: 'Water'}, 11: {id: 'tritium', wname: 'Tritium'}, 12: {id: 'clothing', wname: 'Clothing'}, 13: {id: 'consumer-technology', wname: 'Consumer Technology'}, 14: {id: 'domestic-appliances', wname: 'Domestic Appliances'}, 15: {id: 'evacuation-shelter', wname: 'Evacuation Shelter'}, 16: {id: 'survival-equipment', wname: 'Survival Equipment'}, 17: {id: 'narcotics', wname: 'Narcotics'}, 18: {id: 'beer', wname: 'Beer'}, 19: {id: 'bootleg-liquor', wname: 'Bootleg Liquor'}, 20: {id: 'liquor', wname: 'Liquor'}, 21: {id: 'tobacco', wname: 'Tobacco'}, 22: {id: 'wine', wname: 'Wine'}, 23: {id: 'algae', wname: 'Algae'}, 24: {id: 'animal-meat', wname: 'Animal Meat'}, 25: {id: 'coffee', wname: 'Coffee'}, 26: {id: 'fish', wname: 'Fish'}, 27: {id: 'food-cartridges', wname: 'Food Cartridges'}, 28: {id: 'fruit-and-vegetables', wname: 'Fruit and Vegetables'}, 29: {id: 'grain', wname: 'Grain'}, 30: {id: 'synthetic-meat', wname: 'Synthetic Meat'}, 31: {id: 'tea', wname: 'Tea'}, 32: {id: 'ceramic-composites', wname: 'Ceramic Composites'}, 33: {id: 'cmm-composite', wname: 'CMM Composite'}, 34: {id: 'insulating-membrane', wname: 'Insulating Membrane'}, 35: {id: 'meta-alloys', wname: 'Meta-Alloys'}, 36: {id: 'polymers', wname: 'Polymers'}, 37: {id: 'semiconductors', wname: 'Semiconductors'}, 38: {id: 'superconductors', wname: 'Superconductors'}, 39: {id: 'articulation-motors', wname: 'Articulation Motors'}, 40: {id: 'atmospheric-extractors', wname: 'Atmospheric extractors'}, 41: {id: 'atmospheric-processors', wname: 'Atmospheric Processors'}, 42: {id: 'building-fabricators', wname: 'Building Fabricators'}, 43: {id: 'crop-harvesters', wname: 'Crop Harvesters'}, 44: {id: 'emergency-power-cells', wname: 'Emergency Power Cells'}, 45: {id: 'energy-grid-assembly', wname: 'Energy Grid Assembly'}, 46: {id: 'exhaust-manifold', wname: 'Exhaust Manifold'}, 47: {id: 'geological-equipment', wname: 'Geological Equipment'}, 48: {id: 'heatsink-interlink', wname: 'Heatsink Interlink'}, 49: {id: 'hn-shock-mount', wname: 'HN Shock Mount'}, 50: {id: 'ion-distributor', wname: 'Ion Distributor'}, 51: {id: 'magnetic-emitter-coil', wname: 'Magnetic Emitter Coil'}, 52: {id: 'marine-equipment', wname: 'Marine Equipment'}, 53: {id: 'micro-weave-cooling-hoses', wname: 'Micro-Weave Cooling Hoses'}, 54: {id: 'microbial-furnaces', wname: 'Microbial Furnaces'}, 55: {id: 'mineral-extractors', wname: 'Mineral Extractors'}, 56: {id: 'modular-terminals', wname: 'Modular Terminals'}, 57: {id: 'power-converter', wname: 'Power Converter'}, 58: {id: 'power-generators', wname: 'Power Generators'}, 59: {id: 'power-transfer-bus', wname: 'Power Transfer Bus'}, 60: {id: 'radiation-baffle', wname: 'Radiation Baffle'}, 61: {id: 'reinforced-mounting-plate', wname: 'Reinforced Mounting Plate'}, 62: {id: 'skimmer-components', wname: 'Skimer Components'}, 63: {id: 'telemetry-suite', wname: 'Telemetry Suite'}, 64: {id: 'thermal-cooling-units', wname: 'Thermal Cooling Units'}, 65: {id: 'water-purifiers', wname: 'Water Purifiers'}, 66: {id: 'advanced-medicines', wname: 'Advanced Medicines'}, 67: {id: 'agri-medicines', wname: 'Agri-Medicines'}, 68: {id: 'basic-medicines', wname: 'Basic Medicines'}, 69: {id: 'combat-stabilisers', wname: 'Combat Stabilisers'}, 70: {id: 'performance-enhancers', wname: 'Performance Enhancers'}, 71: {id: 'progenitor-cells', wname: 'Progenitor Cells'}, 72: {id: 'aluminium', wname: 'Aluminium'}, 73: {id: 'beryllium', wname: 'Beryllium'}, 74: {id: 'bismuth', wname: 'Bismuth'}, 75: {id: 'cobalt', wname: 'Cobalt'}, 76: {id: 'copper', wname: 'Copper'}, 77: {id: 'gallium', wname: 'Gallium'}, 78: {id: 'gold', wname: 'Gold'}, 79: {id: 'indium', wname: 'Indium'}, 80: {id: 'lanthanum', wname: 'Lanthanum'}, 81: {id: 'lithium', wname: 'Lithium'}, 82: {id: 'osmium', wname: 'Osmium'}, 83: {id: 'palladium', wname: 'Palladium'}, 84: {id: 'platinum', wname: 'Platinum'}, 85: {id: 'praseodymium', wname: 'Praseodymium'}, 86: {id: 'samarium', wname: 'Samarium'}, 87: {id: 'silver', wname: 'Silver'}, 88: {id: 'tantalum', wname: 'Tantalum'}, 89: {id: 'thallium', wname: 'Thallium'}, 90: {id: 'thorium', wname: 'Thorium'}, 91: {id: 'titanium', wname: 'Titanium'}, 92: {id: 'uranium', wname: 'Uranium'}, 93: {id: 'alexandrite', wname: 'Alexandrite'}, 94: {id: 'bauxite', wname: 'Bauxite'}, 95: {id: 'benitoite', wname: 'Benitoite'}, 96: {id: 'bertrandite', wname: 'Bertrandite'}, 97: {id: 'bromellite', wname: 'Bromellite'}, 98: {id: 'coltan', wname: 'Coltan'}, 99: {id: 'cryolite', wname: 'Cryolite'}, 100: {id: 'gallite', wname: 'Gallite'}, 101: {id: 'goslarite', wname: 'Goslarite'}, 102: {id: 'grandidierite', wname: 'Grandidierite'}, 103: {id: 'indite', wname: 'Indite'}, 104: {id: 'jadeite', wname: 'Jadeite'}, 105: {id: 'lepidolite', wname: 'Lepidolite'}, 106: {id: 'lithium-hydroxide', wname: 'Lithium Hydroxide'}, 107: {id: 'low-temperature-diamonds', wname: 'Low Temperature Diamonds'}, 108: {id: 'methane-clathrate', wname: 'Methane Clathrate'}, 109: {id: 'methanol-monohydrate-crystals', wname: 'Methanol Monohydrate Crystals'}, 110: {id: 'moissanite', wname: 'Moissanite'}, 111: {id: 'monazite', wname: 'Monazite'}, 112: {id: 'musgravite', wname: 'Musgravite'}, 113: {id: 'painite', wname: 'Painite'}, 114: {id: 'pyrophyllite', wname: 'Pyrophyllite'}, 115: {id: 'rhodplumsite', wname: 'Rhodplumsite'}, 116: {id: 'rutile', wname: 'Rutile'}, 117: {id: 'serendibite', wname: 'Serendibite'}, 118: {id: 'taaffeite', wname: 'Taaffeite'}, 119: {id: 'uraninite', wname: 'Uraninite'}, 120: {id: 'void-opals', wname: 'Void Opals'}, 121: {id: 'ai-relics', wname: 'AI Relics'}, 122: {id: 'hafnium-178', wname: 'Hafnium 178'}, 123: {id: 'sap-8-core-container', wname: 'Sap 8 Core Container'}, 124: {id: 'advanced-catalysers', wname: 'Advanced Catalysers'}, 125: {id: 'animal-monitors', wname: 'Animal Monitors'}, 126: {id: 'aquaponic-systems', wname: 'Aquaponic Systems'}, 127: {id: 'auto-fabricators', wname: 'Auto Fabricators'}, 128: {id: 'bio-reducing-lichen', wname: 'Bio-reducing Lichen'}, 129: {id: 'computer-components', wname: 'Computer Components'}, 130: {id: 'he-suits', wname: 'H.E. Suits'}, 131: {id: 'hardware-diagnostic-sensor', wname: 'Hardware Diagnostic Sensor'}, 132: {id: 'land-enrichment-systems', wname: 'Land Enrichment Systems'}, 133: {id: 'medical-diagnostic-equipment', wname: 'Medical Diagnostic Equipment'}, 134: {id: 'micro-controllers', wname: 'Micro Controllers'}, 135: {id: 'muon-imager', wname: 'Muon Imager'}, 136: {id: 'nanobreakers', wname: 'Nanobreakers'}, 137: {id: 'resonating-separators', wname: 'Resonating Separators'}, 138: {id: 'robotics', wname: 'Robotics'}, 139: {id: 'structural-regulators', wname: 'Structural Regulators'}, 140: {id: 'conductive-fabrics', wname: 'Conductive Fabrics'}, 141: {id: 'leather', wname: 'Leather'}, 142: {id: 'military-grade-fabrics', wname: 'Military Grade Fabrics'}, 143: {id: 'natural-fabrics', wname: 'Natural Fabrics'}, 144: {id: 'neofabric-insulation', wname: 'Neofabric Insulation'}, 145: {id: 'synthetic-fabrics', wname: 'Synthetic Fabrics'}, 146: {id: 'biowaste', wname: 'Biowaste'}, 147: {id: 'chemical-waste', wname: 'Chemical Waste'}, 148: {id: 'scrap', wname: 'Scrap'}, 149: {id: 'toxic-waste', wname: 'Toxic Waste'}, 150: {id: 'slaves', wname: 'Slaves'}, 151: {id: 'imperial-slaves', wname: 'Imperial Slaves'}, 152: {id: 'battle-weapons', wname: 'Battle Weapons'}, 153: {id: 'landmines', wname: 'Landmines'}, 154: {id: 'non-lethal-weapons', wname: 'Non-lethal Weapons'}, 155: {id: 'personal-weapons', wname: 'Personal Weapons'}, 156: {id: 'reactive-armour', wname: 'Reactive Armour'}};
+				var ware_prices			= {'imperial-slaves': {demand_price: 18430, demand_amount: 1942, demand_timestamp: 1616008117, supply_price: 1736, supply_amount: 22, supply_timestamp: 1616010659}, 'tritium': {demand_price: 61841, demand_amount: 7343, demand_timestamp: 1616074741, supply_price: 45377, supply_amount: 32, supply_timestamp: 1616185511}, 'polymers': {demand_price: 9256, demand_amount: 461630, demand_timestamp: 1616185688, supply_price: 6, supply_amount: 13108, supply_timestamp: 1616191556}, 'low-temperature-diamonds': {demand_price: 359876, demand_amount: 976, demand_timestamp: 1616206941, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'clothing': {demand_price: 1445, demand_amount: 100815, demand_timestamp: 1616125058, supply_price: 38, supply_amount: 52886, supply_timestamp: 1616151354}, 'consumer-technology': {demand_price: 8563, demand_amount: 36588, demand_timestamp: 1616103425, supply_price: 593, supply_amount: 4901, supply_timestamp: 1616220811}, 'domestic-appliances': {demand_price: 1216, demand_amount: 20097, demand_timestamp: 1616219962, supply_price: 45, supply_amount: 4187, supply_timestamp: 1616159421}, 'evacuation-shelter': {demand_price: 3786, demand_amount: 562135100, demand_timestamp: 1615474065, supply_price: 31, supply_amount: 290, supply_timestamp: 1615507469}, 'survival-equipment': {demand_price: 7026, demand_amount: 4208, demand_timestamp: 1615730393, supply_price: 292, supply_amount: 1103, supply_timestamp: 1615726131}, 'algae': {demand_price: 2167, demand_amount: 2785044, demand_timestamp: 1616029428, supply_price: 8, supply_amount: 24857, supply_timestamp: 1616190448}, 'animal-meat': {demand_price: 5036, demand_amount: 42161592, demand_timestamp: 1616022212, supply_price: 117, supply_amount: 253, supply_timestamp: 1616110652}, 'coffee': {demand_price: 3118, demand_amount: 35807, demand_timestamp: 1616159404, supply_price: 106, supply_amount: 442675, supply_timestamp: 1615808501}, 'fish': {demand_price: 6540, demand_amount: 780458, demand_timestamp: 1616149194, supply_price: 48, supply_amount: 233, supply_timestamp: 1615936607}, 'food-cartridges': {demand_price: 2252, demand_amount: 21623, demand_timestamp: 1616075148, supply_price: 5, supply_amount: 33342, supply_timestamp: 1616191440}, 'fruit-and-vegetables': {demand_price: 4176, demand_amount: 386263, demand_timestamp: 1615965858, supply_price: 26, supply_amount: 185708, supply_timestamp: 1616218052}, 'grain': {demand_price: 3480, demand_amount: 5566535, demand_timestamp: 1615674866, supply_price: 16, supply_amount: 163161, supply_timestamp: 1615768739}, 'synthetic-meat': {demand_price: 2373, demand_amount: 23639, demand_timestamp: 1615920505, supply_price: 16, supply_amount: 840, supply_timestamp: 1616077952}, 'tea': {demand_price: 3184, demand_amount: 248727, demand_timestamp: 1616224020, supply_price: 149, supply_amount: 73, supply_timestamp: 1616205151}, 'articulation-motors': {demand_price: 7851, demand_amount: 1414, demand_timestamp: 1613819051, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'atmospheric-extractors': {demand_price: 1838, demand_amount: 27430, demand_timestamp: 1615656242, supply_price: 28, supply_amount: 10667, supply_timestamp: 1615648203}, 'building-fabricators': {demand_price: 3342, demand_amount: 1, demand_timestamp: 1615589952, supply_price: 179, supply_amount: 37895, supply_timestamp: 1616107844}, 'crop-harvesters': {demand_price: 3532, demand_amount: 6834, demand_timestamp: 1616063447, supply_price: 175, supply_amount: 1905, supply_timestamp: 1613402045}, 'emergency-power-cells': {demand_price: 6668, demand_amount: 56074, demand_timestamp: 1616007701, supply_price: 1817, supply_amount: 130971, supply_timestamp: 1616162540}, 'energy-grid-assembly': {demand_price: 6788, demand_amount: 72513, demand_timestamp: 1616190987, supply_price: 2089, supply_amount: 18853, supply_timestamp: 1615598709}, 'exhaust-manifold': {demand_price: 2511, demand_amount: 13429, demand_timestamp: 1615987460, supply_price: 1532, supply_amount: 45330, supply_timestamp: 1615264856}, 'geological-equipment': {demand_price: 2875, demand_amount: 1559, demand_timestamp: 1616199957, supply_price: 143, supply_amount: 4120, supply_timestamp: 1615981281}, 'heatsink-interlink': {demand_price: 2764, demand_amount: 1780, demand_timestamp: 1616193084, supply_price: 1524, supply_amount: 15162, supply_timestamp: 1616187536}, 'hn-shock-mount': {demand_price: 2634, demand_amount: 11901, demand_timestamp: 1616185590, supply_price: 145, supply_amount: 9009, supply_timestamp: 1616218123}, 'ion-distributor': {demand_price: 3053, demand_amount: 2111, demand_timestamp: 1616210803, supply_price: 2036, supply_amount: 84801, supply_timestamp: 1616191179}, 'magnetic-emitter-coil': {demand_price: 1922, demand_amount: 202585, demand_timestamp: 1616058606, supply_price: 900, supply_amount: 51994, supply_timestamp: 1616123654}, 'marine-equipment': {demand_price: 5476, demand_amount: 5315, demand_timestamp: 1615962403, supply_price: 351, supply_amount: 1612, supply_timestamp: 1614608479}, 'micro-weave-cooling-hoses': {demand_price: 6147, demand_amount: 103303, demand_timestamp: 1616090152, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'microbial-furnaces': {demand_price: 2007, demand_amount: 2810, demand_timestamp: 1615408133, supply_price: 37, supply_amount: 6898, supply_timestamp: 1616100105}, 'mineral-extractors': {demand_price: 2641, demand_amount: 1923, demand_timestamp: 1615408147, supply_price: 41, supply_amount: 11866, supply_timestamp: 1615260331}, 'modular-terminals': {demand_price: 2634, demand_amount: 1893, demand_timestamp: 1616106743, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'power-converter': {demand_price: 2005, demand_amount: 8047, demand_timestamp: 1615340040, supply_price: 973, supply_amount: 50047, supply_timestamp: 1616072777}, 'power-generators': {demand_price: 3798, demand_amount: 199577, demand_timestamp: 1615916423, supply_price: 1795, supply_amount: 2653, supply_timestamp: 1616191995}, 'radiation-baffle': {demand_price: 2396, demand_amount: 2075, demand_timestamp: 1616217093, supply_price: 1282, supply_amount: 49642, supply_timestamp: 1615977478}, 'reinforced-mounting-plate': {demand_price: 3212, demand_amount: 1534, demand_timestamp: 1616217093, supply_price: 1910, supply_amount: 3009, supply_timestamp: 1616088772}, 'skimmer-components': {demand_price: 1683, demand_amount: 473, demand_timestamp: 1615587616, supply_price: 72, supply_amount: 922, supply_timestamp: 1612097344}, 'telemetry-suite': {demand_price: 3381, demand_amount: 1926, demand_timestamp: 1616084171, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'thermal-cooling-units': {demand_price: 4919, demand_amount: 2433, demand_timestamp: 1615596082, supply_price: 313, supply_amount: 650, supply_timestamp: 1614605643}, 'water-purifiers': {demand_price: 4596, demand_amount: 289442, demand_timestamp: 1616214406, supply_price: 131, supply_amount: 952372, supply_timestamp: 1616132927}, 'advanced-medicines': {demand_price: 11800, demand_amount: 999999, demand_timestamp: 1616225411, supply_price: 127, supply_amount: 4, supply_timestamp: 1616216236}, 'agri-medicines': {demand_price: 1817, demand_amount: 13649, demand_timestamp: 1616107062, supply_price: 80, supply_amount: 2666, supply_timestamp: 1616168289}, 'basic-medicines': {demand_price: 5248, demand_amount: 624345, demand_timestamp: 1616224183, supply_price: 28, supply_amount: 1846, supply_timestamp: 1616221882}, 'combat-stabilisers': {demand_price: 3891, demand_amount: 9664, demand_timestamp: 1615904838, supply_price: 2320, supply_amount: 6007, supply_timestamp: 1616090590}, 'performance-enhancers': {demand_price: 8153, demand_amount: 1543, demand_timestamp: 1616156208, supply_price: 5471, supply_amount: 70837, supply_timestamp: 1616101480}, 'progenitor-cells': {demand_price: 8529, demand_amount: 14721, demand_timestamp: 1615781389, supply_price: 576, supply_amount: 509, supply_timestamp: 1616198854}, 'aluminium': {demand_price: 2119, demand_amount: 668709, demand_timestamp: 1615683109, supply_price: 20, supply_amount: 963, supply_timestamp: 1615248693}, 'beryllium': {demand_price: 9595, demand_amount: 52565, demand_timestamp: 1616219962, supply_price: 734, supply_amount: 326, supply_timestamp: 1616070168}, 'bismuth': {demand_price: 3570, demand_amount: 79090, demand_timestamp: 1616125006, supply_price: 191, supply_amount: 5725, supply_timestamp: 1615496613}, 'cobalt': {demand_price: 20108, demand_amount: 494944, demand_timestamp: 1616185590, supply_price: 768, supply_amount: 474, supply_timestamp: 1616189667}, 'copper': {demand_price: 1879, demand_amount: 637786, demand_timestamp: 1615894516, supply_price: 32, supply_amount: 9263, supply_timestamp: 1616071910}, 'gallium': {demand_price: 6412, demand_amount: 676322, demand_timestamp: 1615683918, supply_price: 429, supply_amount: 834, supply_timestamp: 1616080763}, 'gold': {demand_price: 67653, demand_amount: 5202, demand_timestamp: 1616221936, supply_price: 4490, supply_amount: 1, supply_timestamp: 1616223781}, 'indium': {demand_price: 7236, demand_amount: 27673, demand_timestamp: 1615836702, supply_price: 494, supply_amount: 3166, supply_timestamp: 1616169192}, 'lanthanum': {demand_price: 10196, demand_amount: 15305, demand_timestamp: 1616070392, supply_price: 781, supply_amount: 2696, supply_timestamp: 1616188792}, 'lithium': {demand_price: 2756, demand_amount: 47814, demand_timestamp: 1615877686, supply_price: 121, supply_amount: 1125, supply_timestamp: 1616089861}, 'osmium': {demand_price: 269893, demand_amount: 11917, demand_timestamp: 1616133077, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'palladium': {demand_price: 71370, demand_amount: 9650, demand_timestamp: 1616217099, supply_price: 4788, supply_amount: 1, supply_timestamp: 1616199844}, 'platinum': {demand_price: 289683, demand_amount: 559, demand_timestamp: 1616052801, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'praseodymium': {demand_price: 11509, demand_amount: 8034, demand_timestamp: 1616122778, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'samarium': {demand_price: 48636, demand_amount: 35647, demand_timestamp: 1616123245, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'silver': {demand_price: 49319, demand_amount: 48198, demand_timestamp: 1616204410, supply_price: 3430, supply_amount: 46, supply_timestamp: 1616222237}, 'tantalum': {demand_price: 5246, demand_amount: 519954, demand_timestamp: 1615719564, supply_price: 332, supply_amount: 19615, supply_timestamp: 1615895745}, 'thallium': {demand_price: 5000, demand_amount: 93988, demand_timestamp: 1615925835, supply_price: 344, supply_amount: 1175, supply_timestamp: 1615913655}, 'thorium': {demand_price: 12917, demand_amount: 23015, demand_timestamp: 1616106743, supply_price: 9939, supply_amount: 1229, supply_timestamp: 1616134636}, 'titanium': {demand_price: 2177, demand_amount: 345922, demand_timestamp: 1615683109, supply_price: 75, supply_amount: 15813, supply_timestamp: 1616089861}, 'uranium': {demand_price: 3910, demand_amount: 72931, demand_timestamp: 1616104796, supply_price: 229, supply_amount: 87853, supply_timestamp: 1615860284}, 'alexandrite': {demand_price: 652665, demand_amount: 1020, demand_timestamp: 1616213198, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'bauxite': {demand_price: 31856, demand_amount: 2851, demand_timestamp: 1616110135, supply_price: 661, supply_amount: 9009, supply_timestamp: 1616013851}, 'benitoite': {demand_price: 791168, demand_amount: 41, demand_timestamp: 1616219113, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'bertrandite': {demand_price: 21649, demand_amount: 693, demand_timestamp: 1616115152, supply_price: 1624, supply_amount: 1565, supply_timestamp: 1616149302}, 'bromellite': {demand_price: 116750, demand_amount: 8034, demand_timestamp: 1616102026, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'coltan': {demand_price: 7849, demand_amount: 39419, demand_timestamp: 1616172606, supply_price: 475, supply_amount: 481, supply_timestamp: 1616176392}, 'cryolite': {demand_price: 29652, demand_amount: 33752, demand_timestamp: 1616202838, supply_price: 9597, supply_amount: 2096, supply_timestamp: 1616193231}, 'gallite': {demand_price: 15399, demand_amount: 5443, demand_timestamp: 1616210156, supply_price: 1009, supply_amount: 2525, supply_timestamp: 1616158546}, 'goslarite': {demand_price: 15860, demand_amount: 50973, demand_timestamp: 1616214996, supply_price: 514, supply_amount: 69, supply_timestamp: 1616189735}, 'grandidierite': {demand_price: 661030, demand_amount: 44, demand_timestamp: 1615866459, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'indite': {demand_price: 13505, demand_amount: 2249, demand_timestamp: 1616155913, supply_price: 966, supply_amount: 1880, supply_timestamp: 1616100591}, 'jadeite': {demand_price: 61520, demand_amount: 7554, demand_timestamp: 1615651703, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'lepidolite': {demand_price: 6370, demand_amount: 883, demand_timestamp: 1616194931, supply_price: 41, supply_amount: 1214, supply_timestamp: 1615673750}, 'lithium-hydroxide': {demand_price: 7729, demand_amount: 11550, demand_timestamp: 1616098531, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'methane-clathrate': {demand_price: 1740, demand_amount: 1884351, demand_timestamp: 1615989594, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'methanol-monohydrate-crystals': {demand_price: 3794, demand_amount: 1885604, demand_timestamp: 1615656904, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'moissanite': {demand_price: 80148, demand_amount: 3377, demand_timestamp: 1616207707, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'monazite': {demand_price: 773230, demand_amount: 1037, demand_timestamp: 1616166769, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'musgravite': {demand_price: 889350, demand_amount: 2611, demand_timestamp: 1616183004, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'painite': {demand_price: 420047, demand_amount: 2, demand_timestamp: 1616184716, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'pyrophyllite': {demand_price: 28824, demand_amount: 13169, demand_timestamp: 1616214996, supply_price: 1037, supply_amount: 43, supply_timestamp: 1616189735}, 'rhodplumsite': {demand_price: 838390, demand_amount: 896, demand_timestamp: 1615971091, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'rutile': {demand_price: 21940, demand_amount: 1436, demand_timestamp: 1616110135, supply_price: 1450, supply_amount: 4491, supply_timestamp: 1616206368}, 'serendibite': {demand_price: 784038, demand_amount: 2, demand_timestamp: 1616197223, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'taaffeite': {demand_price: 264170, demand_amount: 29122, demand_timestamp: 1615748622, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'uraninite': {demand_price: 4737, demand_amount: 21230, demand_timestamp: 1616216111, supply_price: 222, supply_amount: 5613, supply_timestamp: 1615936740}, 'void-opals': {demand_price: 945135, demand_amount: 1, demand_timestamp: 1616228608, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'advanced-catalysers': {demand_price: 3871, demand_amount: 11689, demand_timestamp: 1616164513, supply_price: 234, supply_amount: 25437, supply_timestamp: 1616182240}, 'animal-monitors': {demand_price: 4476, demand_amount: 166192, demand_timestamp: 1615085410, supply_price: 110, supply_amount: 140, supply_timestamp: 1616099633}, 'aquaponic-systems': {demand_price: 2621, demand_amount: 206416, demand_timestamp: 1616163125, supply_price: 38, supply_amount: 84, supply_timestamp: 1615934463}, 'auto-fabricators': {demand_price: 5471, demand_amount: 17671, demand_timestamp: 1616060279, supply_price: 347, supply_amount: 142, supply_timestamp: 1616144278}, 'bio-reducing-lichen': {demand_price: 1726, demand_amount: 25482, demand_timestamp: 1616066558, supply_price: 85, supply_amount: 55, supply_timestamp: 1616111752}, 'computer-components': {demand_price: 1788, demand_amount: 149181, demand_timestamp: 1616203765, supply_price: 307, supply_amount: 32034, supply_timestamp: 1616153148}, 'he-suits': {demand_price: 2270, demand_amount: 8066088, demand_timestamp: 1615910558, supply_price: 75, supply_amount: 1224, supply_timestamp: 1615892349}, 'hardware-diagnostic-sensor': {demand_price: 8012, demand_amount: 65870, demand_timestamp: 1616090152, supply_price: 5836, supply_amount: 11329, supply_timestamp: 1616184791}, 'land-enrichment-systems': {demand_price: 8679, demand_amount: 146143, demand_timestamp: 1615824886, supply_price: 412, supply_amount: 1419, supply_timestamp: 1616100591}, 'medical-diagnostic-equipment': {demand_price: 5781, demand_amount: 1, demand_timestamp: 1616094319, supply_price: 301, supply_amount: 162, supply_timestamp: 1616144278}, 'micro-controllers': {demand_price: 6770, demand_amount: 80969, demand_timestamp: 1616086013, supply_price: 4539, supply_amount: 13700, supply_timestamp: 1616189521}, 'nanobreakers': {demand_price: 2511, demand_amount: 2589, demand_timestamp: 1616084171, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'resonating-separators': {demand_price: 7718, demand_amount: 375380, demand_timestamp: 1616212200, supply_price: 515, supply_amount: 7971, supply_timestamp: 1616191463}, 'robotics': {demand_price: 3926, demand_amount: 75176, demand_timestamp: 1613689102, supply_price: 1263, supply_amount: 162, supply_timestamp: 1615656082}, 'structural-regulators': {demand_price: 3089, demand_amount: 1435, demand_timestamp: 1615734136, supply_price: 1098, supply_amount: 240, supply_timestamp: 1615717768}, 'conductive-fabrics': {demand_price: 5002, demand_amount: 1145286, demand_timestamp: 1616127685, supply_price: 39, supply_amount: 55153, supply_timestamp: 1616081371}, 'leather': {demand_price: 2321, demand_amount: 2639305, demand_timestamp: 1614231515, supply_price: 19, supply_amount: 947, supply_timestamp: 1614229078}, 'military-grade-fabrics': {demand_price: 13636, demand_amount: 163323, demand_timestamp: 1615812787, supply_price: 66, supply_amount: 46949, supply_timestamp: 1615732369}, 'natural-fabrics': {demand_price: 2648, demand_amount: 3490566, demand_timestamp: 1613858614, supply_price: 35, supply_amount: 3842, supply_timestamp: 1615724490}, 'neofabric-insulation': {demand_price: 19879, demand_amount: 39493, demand_timestamp: 1615742457, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'synthetic-fabrics': {demand_price: 4341, demand_amount: 4809105, demand_timestamp: 1615420030, supply_price: 9, supply_amount: 9314, supply_timestamp: 1616049713}, 'slaves': {demand_price: 15035, demand_amount: 6767, demand_timestamp: 1616206536, supply_price: 10092, supply_amount: 160556, supply_timestamp: 1615652856}, 'battle-weapons': {demand_price: 7755, demand_amount: 1049, demand_timestamp: 1616209304, supply_price: 609, supply_amount: 47, supply_timestamp: 1616083319}, 'landmines': {demand_price: 5223, demand_amount: 4899, demand_timestamp: 1616160733, supply_price: 3489, supply_amount: 1999, supply_timestamp: 1616209304}, 'non-lethal-weapons': {demand_price: 5235, demand_amount: 1696, demand_timestamp: 1616156221, supply_price: 157, supply_amount: 199, supply_timestamp: 1616154617}, 'personal-weapons': {demand_price: 5431, demand_amount: 1877, demand_timestamp: 1615929963, supply_price: 3480, supply_amount: 57906, supply_timestamp: 1616106784}, 'reactive-armour': {demand_price: 3007, demand_amount: 685, demand_timestamp: 1615980972, supply_price: 175, supply_amount: 2199, supply_timestamp: 1615811315}, 'biowaste': {demand_price: 1022, demand_amount: 11322460, demand_timestamp: 1615733942, supply_price: 2, supply_amount: 3, supply_timestamp: 1615734801}, 'scrap': {demand_price: 789, demand_amount: 126097, demand_timestamp: 1615497299, supply_price: 29, supply_amount: 12760, supply_timestamp: 1615735165}, 'chemical-waste': {demand_price: 744, demand_amount: 480, demand_timestamp: 1613721641, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'explosives': {demand_price: 2101, demand_amount: 43069, demand_timestamp: 1615768081, supply_price: 24, supply_amount: 81898, supply_timestamp: 1615786078}, 'hydrogen-fuel': {demand_price: 187, demand_amount: 3486705, demand_timestamp: 1615153649, supply_price: 9, supply_amount: 672, supply_timestamp: 1615158136}, 'liquid-oxygen': {demand_price: 4186, demand_amount: 607487, demand_timestamp: 1615458646, supply_price: 58, supply_amount: 564, supply_timestamp: 1616111716}, 'mineral-oil': {demand_price: 1483, demand_amount: 2642230, demand_timestamp: 1614613733, supply_price: 15, supply_amount: 42314, supply_timestamp: 1616020022}, 'nerve-agents': {demand_price: 14489, demand_amount: 2047, demand_timestamp: 1616217093, supply_price: 11493, supply_amount: 958, supply_timestamp: 1615982720}, 'pesticides': {demand_price: 1640, demand_amount: 4881, demand_timestamp: 1615724732, supply_price: 16, supply_amount: 3420, supply_timestamp: 1615721579}, 'surface-stabilisers': {demand_price: 2549, demand_amount: 178002, demand_timestamp: 1615603564, supply_price: 36, supply_amount: 987, supply_timestamp: 1615159910}, 'synthetic-reagents': {demand_price: 7851, demand_amount: 2236, demand_timestamp: 1615022535, supply_price: 626, supply_amount: 186, supply_timestamp: 1616155065}, 'water': {demand_price: 4641, demand_amount: 35387, demand_timestamp: 1616028473, supply_price: 3, supply_amount: 24280, supply_timestamp: 1616190448}, 'hydrogen-peroxide': {demand_price: 3301, demand_amount: 237592, demand_timestamp: 1615669836, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'narcotics': {demand_price: 11226, demand_amount: 6078, demand_timestamp: 1616155207, supply_price: 8141, supply_amount: 7740, supply_timestamp: 1616090590}, 'beer': {demand_price: 4752, demand_amount: 8030769, demand_timestamp: 1615466632, supply_price: 19, supply_amount: 5052, supply_timestamp: 1616175170}, 'liquor': {demand_price: 3474, demand_amount: 414441, demand_timestamp: 1616072482, supply_price: 55, supply_amount: 44, supply_timestamp: 1616083319}, 'tobacco': {demand_price: 7597, demand_amount: 769019, demand_timestamp: 1616076633, supply_price: 475, supply_amount: 921, supply_timestamp: 1616140656}, 'wine': {demand_price: 7179, demand_amount: 123947, demand_timestamp: 1616184563, supply_price: 23, supply_amount: 150, supply_timestamp: 1616093193}, 'bootleg-liquor': {demand_price: 5189, demand_amount: 442996, demand_timestamp: 1616006021, supply_price: 0, supply_amount: 0, supply_timestamp: 0}, 'ceramic-composites': {demand_price: 10323, demand_amount: 982559, demand_timestamp: 1615673366, supply_price: 88, supply_amount: 21102, supply_timestamp: 1616090195}, 'cmm-composite': {demand_price: 20092, demand_amount: 30439, demand_timestamp: 1616090152, supply_price: 5185, supply_amount: 449, supply_timestamp: 1616228426}, 'insulating-membrane': {demand_price: 20522, demand_amount: 18234, demand_timestamp: 1616090152, supply_price: 9351, supply_amount: 2, supply_timestamp: 1616189776}, 'meta-alloys': {demand_price: 271465, demand_amount: 1, demand_timestamp: 1616227144, supply_price: 271478, supply_amount: 2, supply_timestamp: 1616227144}, 'semiconductors': {demand_price: 2064, demand_amount: 1305336, demand_timestamp: 1616216536, supply_price: 66, supply_amount: 1861, supply_timestamp: 1616176185}, 'superconductors': {demand_price: 10590, demand_amount: 1156537, demand_timestamp: 1616182840, supply_price: 5393, supply_amount: 1880, supply_timestamp: 1615326218}, 'agronomic-treatment': {demand_price: 31813, demand_amount: 38724, demand_timestamp: 1616203704, supply_price: 290, supply_amount: 131, supply_timestamp: 1616191463}};
+				var current_timestamp	= 1616229590;
+				
+				function number_comma(x)
+				{
+					return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+				}
+				
+				// filters the material list
+				function ware_filter()
+				{
+					var search_str	= document.getElementById('ware_search_str').value.toLowerCase();
+
+					// do a filter
+					for (var t=0; t<ware_count; t++)
+					{
+						var ware_tr		= document.getElementById('ware_'+t);
+						var ware_name	= ware_data[t]['wname'];
+						
+						if (search_str.length > 0)
+						{
+							// do search
+							if (ware_name.toLowerCase().indexOf(search_str) >= 0)
+								ware_tr.style.display = 'table-row';
+							else
+								ware_tr.style.display = 'none';
+						}
+						
+						// show all
+						else
+							ware_tr.style.display = 'table-row';
+					}
+					
+					
+				}
+				
+				function status_image(time_diff)
+				{
+					// ------------------------
+					// traffic light of status 
+					// ------------------------
+					// (<3 hour good, <1 day okay, more than red)
+					
+					if (time_diff < 10800)
+						return 'good';
+						
+					else if (time_diff < 86400)
+						return 'okay';
+						
+					else
+						return 'bad';
+				}
+				
+				function howlongago(time_amount)
+				{
+					// seconds
+					if (time_amount < 60)
+						return time_amount+' seconds';
+					
+					// minutes
+					else if (time_amount < 3600)
+						return Math.floor(time_amount/ 60)+' minute(s)';
+					
+					// hours
+					else if (time_amount < 86400)
+						return Math.floor(time_amount/ 3600)+' hour(s)';
+					
+					// days
+					else if (time_amount < 604800)
+						return Math.floor(time_amount/ 86400)+' day(s)';
+				}
+				
+				
+				function add_ware_prices()
+				{
+					Object.keys(ware_prices).forEach(function (key)
+					{
+						// ------------------------
+						// get from table
+						// ------------------------
+						
+						var ware_supply_price	= document.getElementById(key+'_supply_price');
+						var ware_supply_amount	= document.getElementById(key+'_supply_amount');
+						
+						var ware_demand_price	= document.getElementById(key+'_demand_price');
+						var ware_demand_amount	= document.getElementById(key+'_demand_amount');
+						
+						// ------------------------
+						// supply stuff
+						// ------------------------
+
+						if (ware_prices[key]['supply_price'] > 0)
+						{
+							time_diff						= current_timestamp - ware_prices[key]['supply_timestamp'];
+							ware_supply_price.innerHTML 	= '<img src="/elite-dangerous/trade-helper/images/status_'+status_image(time_diff)+'.gif" title="'+howlongago(time_diff)+' ago." style="border: none;"> '+number_comma(ware_prices[key]['supply_price'])+'cr';
+							ware_supply_amount.innerHTML 	= number_comma(ware_prices[key]['supply_amount'])+' units';
+						}
+						else
+						{
+							ware_supply_price.innerHTML 	= '-';
+							ware_supply_amount.innerHTML 	= '-';
+						}
+						
+						// ------------------------
+						// demand stuff
+						// ------------------------
+						
+						if (ware_prices[key]['demand_price'] > 0)
+						{
+							time_diff						= current_timestamp - ware_prices[key]['demand_timestamp'];
+							ware_demand_price.innerHTML 	= '<img src="/elite-dangerous/trade-helper/images/status_'+status_image( time_diff)+'.gif" title="'+howlongago(time_diff)+' ago." style="border: none;"> '+number_comma(ware_prices[key]['demand_price'])+'cr';
+							ware_demand_amount.innerHTML 	= number_comma(ware_prices[key]['demand_amount'])+' units';
+						}
+						else
+						{
+							ware_demand_price.innerHTML 	= '-';
+							ware_demand_amount.innerHTML 	= '-';
+						}
+					});
+				}
+				
+				window.onload = add_ware_prices();
+			</script>
+<br>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00921 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

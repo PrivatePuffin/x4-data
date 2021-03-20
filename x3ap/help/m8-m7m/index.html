@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Introduction to M8's and M7M's - Roguey's X3AP site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="M8, M7M, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3ap/help/m8-m7m/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Introduction to M8's and M7M's">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3ap/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3ap/"><img src="/x3ap/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3BAE2F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3BAE2F;">
+				<li class="icon" style="background-color: #3BAE2F">&nbsp;</li><li><a href="/x3ap/">News</a></li><li><a href="/x3ap/pictures/">Pictures</a></li><li><a href="/x3ap/videos/">Videos</a></li><li><a href="/x3ap/help/">Help / Guides</a></li><li><a href="/x3ap/ships/">Ships</a></li><li><a href="/x3ap/universe/">Maps</a></li><li><a href="/x3ap/missiles/">Missiles</a></li><li><a href="/x3ap/lasers/">Lasers</a></li><li><a href="/x3ap/shields/">Shields</a></li><li><a href="/x3ap/stations/">Stations</a></li><li><a href="/x3ap/wares/">Wares</a></li><li><a href="/x3ap/mod/">X3AP Mod</a></li><li><a href="/x3ap/edit/">Editing</a></li><li><a href="/x3ap/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=31">Forum</a></li><li><a href="/x3ap/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+	<h1>Introduction to M8's and M7M's <span class="smalltext">(Moved from wiki)</span></h1>
+	
+	<br><br>
+
+	<h3>M8&#039;s</h3>
+	<br>
+	M8 Bombers are roughly twice the size of an M3 fighter, but rather than having multiple laser weapons upfront they have a pair of missile tubes. many also come with a rear turret similar to the M3s for defensive purposes only.
+	<br><br>
+	these missile tubes are not multi-purpose though like the launch tubes on fighters, they are designed for firing specialist heavy missiles, these heavy missiles are very powerful dishing out over a million units of damage a pair. thanks to these missiles this makes Bombers very deadly for their relativly cheap price tag.
+	<br>
+
+	<br>
+
+	<br>
+	<h3>M7M&#039;s</h3>
+	<br>
+	M7M&#039;s are a frigate sized vessel that is very similar to M8&#039;s in function, some come with a rear defensive turret but for the most part their offensive capability comes from up to 16 torpedo tubes that is capable of launching 4.8mil units of damage per barrage, this means in the opening of a battle these ships are the single most powerful class of vessel in the game. 
+	<br><br>
+	Either that or these vessels can also fire a swarm logic warhead that is designed to take down fighters, and on these circumstances can launch 16 warheads that split into 8 warheads each, that means you can have 128 anti fighter warheads dealing 5k damage per warhead in the air in a matter of seconds, they also can require a new target once the original target is destroyed. now if you do your maths that&#039;s 640000 units of damage per barrage, then take into account the better defended heavy fighters have a combined hull and shield rating of approx 170000 means these ships can take down 3.76 of the heaviest fighters per barrage, and can fire 2 rounds per second, that means one of these ships using their anti fighter missiles could launch enough missiles to take down an entire Carriers worth of fighters in under 10 seconds!!!
+	<br><br>
+
+	<br>
+	<h3>Function First</h3>
+	<br>
+	these classes of ships are what i class as &quot;Function First&quot; ships. in this i mean i pay more attention to their primary function over all others. what is their primary function? well they are long range tactical standoff vessels, with that there are key aspects to look for in the ships. the most important due to the fact that these types of ships are heavily dependant on missiles is their cargo capacity, obviously the larger the hold the more warheads you can carry and therefore the more damage you can dish out. for me the second is their sheilds/hull ratings, this is because the better their sheilds and hull the longer they can take punishment the longer they have to unload their missiles. this is normally against my veiw of long range vessels but since M7M&#039;s and M8&#039;s dont need to exist in the combat area for long for their benifits to be shown therefore sheilds and hull can be important. 
+	<br><br>
+
+	<br>
+	<h3>Function At A Cost</h3>
+	<br>
+	both of these ships as I&#039;ve said are extremely potent in their function, the big downside to these ships are that they have their function at a cost.
+	<br><br>
+	the ships are reliant on warheads, and obviously warheads are an ongoing cost, take the Commonwealth warheads, Tomahawks have an average price of 22500 per warhead, that&#039;s 45000 per barrage, a barrage that will do 1.25mil of damage, so on the condition all warheads strike (which in AP with MDS readily available is unlikely) it could cost at least 180k credits to bring down the average M7 by an M8 bomber.
+	<br><br>
+	this can be more expensive when it comes to firing Hammer Heavy Torpedo&#039;s from M7M&#039;s. HHT&#039;s cost 50k per warhead (average) which is 800k per barrage, that barrage can do 6mil damage. now try to compare that to the reward of bringing down an M7 class vessel, lets just say your defiantly not making a profit!! 
+	<br><br>
+	it is this fact that M7M&#039;s and M8&#039;s should be used sparingly in my opinion, especially in early to mid gameplay. once in late game it is possible to have your own complex to produce your own warheads which can to a degree counter this big downside.
+	<br><br>
+
+	<br>
+	<h3>Defensive Missile Ships</h3>
+	<br>
+	there is a secondary function for these ships though, with NPC groups capable of using M7M&#039;s and M8&#039;s enemies have the capability of deploying a similar number warheads, so having a way of counteracting these can be very useful. M7M&#039;s and M8&#039;s fitted with numerous Mosquito missiles and operating the MDS are the only ships capable of shooting down full M7M barrages of warheads. this can allow you to help protect other vessels in your fleet, and potentially cause an NPC M7M expend all of its warheads (since mosquitoes take up far less space than HHT&#039;s etc) which can leave it vulnerable to attack.
+	<br><br>
+
+	<br>
+	<h3>Boarding Via M7M&#039;s</h3>
+	<br>
+	since there will be guides to boarding I&#039;m not going to go into this much other than to say that most M7M have the ability to launch boarding pods, these boarding pods help make boarding easier. M7M&#039;s are a unique class of ship capable of launching these pods and it is this function that can help make M7M&#039;s slightly more profitable since other ships can be boarded and then sold in order to make potential millions at a time. one main point to this part is if your using an M7M for boarding then speed can become a more important aspect within your ship, even though that is in contradiction to what i said within the section Function First
+	<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00066 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

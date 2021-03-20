@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>X Rebirth 3.50 is here! : X: Rebirth - Roguey's Forum</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="X Rebirth 3.50 is here!, X: Rebirth, gaming, roguey">
+		<META NAME="Description" CONTENT="Our latest update for X: Rebirth is now available. New features include:">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/forum/viewtopic.php?id=1400">
+		<meta property="og:description" content="Our latest update for X: Rebirth is now available. New features include:">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="X Rebirth 3.50 is here! : X: Rebirth">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/forum/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/forum/"><img src="/forum/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #79B4BD;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #79B4BD;">
+				<li class="icon" style="background-color: #79B4BD">&nbsp;</li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+
+			<br>
+			
+			<span style="font-size: 9pt;">
+				<img src="/forum/images/icons/home.gif" alt="Home"><a href="/forum/" class="nav_link"> Board Index</a> &#187; 
+				<a href="/forum/cat.php?id=1" class="nav_link">X Universe</a> &raquo; 
+				<a href="viewforum.php?id=20" class="nav_link">X: Rebirth</a> &raquo; 
+				<a href="/forum/viewtopic.php?id=1400" class="nav_link">X Rebirth 3.50 is here!</a>
+			</span>
+			<br><br>
+			
+			<div style="float: right; padding: 8px; font-size: 10pt;">
+				
+			</div>
+			
+			<h1 style="clear: none;">X Rebirth 3.50 is here!</h1>
+			<br>
+
+			<br>
+
+		<div class="post_container" id="1400">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_1400">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 6 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1767" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Orbot</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_1400">Our latest update for X: Rebirth is now available. New features include:<br><br>â€¢ New generic missions and new upkeep missions for easier station management.<br>â€¢ New ships: The new Onil mining ships available in the Canteran shipyard in DeVries.<br>â€¢ New &#34;Container Magnet&#34; which helps to attract nearby collectables to the player ship.<br>â€¢ Easier navigation through text search field in map.<br>â€¢ New FXAA graphics option.<br><br>And among the many other improvements in 3.50 are:<br><br>â€¢ Improved station manager and station owned ship trade behavior.<br>â€¢ Improved balancing and accuracy of combat calculations when player is not present.<br>â€¢ Improved response of player owned stations to nearby player ships being attacked.<br>â€¢ Completely reworked Russian localization.<br>â€¢ Improved support for UI-modding and much more...<br><br><a href="http://steamcommunity.com/games/2870/announcements/detail/133193267298626913" target="_blank">http://steamcommunity.com/games/2870/announcements/detail/133193267298626913</a></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="12771">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_12771">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_12771">A big improvement in 3.50 for me that they didn&#39;t mention in their summary was the fixing of the map so that objects in our ships&#39; radar range are now display. Another, that I don&#39;t think even made it into the patch notes was that the plot URV Forge now produces a range of drones making it more useful to DeVries and the player.<br><br>3.51 was released on 20.03.2015. A highlight for me being that the Sucellus finally gains a drone bay. That provide an improved rationale and sink for drones made by the player&#39;s plot URV Forge. <br><br><div class="quote">â€¢ Collision shield damage now only applies to player ship, or drone when under player remote control. <br>â€¢ Improved balancing and accuracy of combat calculations when player is not present. <br>â€¢ Fixed missing drone docks on Sucellus and Balor. <br>â€¢ Fixed missing shield protection for drone bays on large Teladi ships (Teladi Outpost DLC only). <br>â€¢ Fixed player being thrown far into empty space when leaving super highway under autopilot. <br>â€¢ Fixed mass-traffic &#34;clumping&#34; after loading a savegame. <br>â€¢ Fixed problem with mapping buttons on certain joysticks. <br>â€¢ Fixed very rare case where a target might not be selected using gamepad controls. <br>â€¢ Fixed delay when launching mining drones from Teladi capital ship (Teladi Outpost DLC only). <br>â€¢ Fixed engineers not returning Construction URVs in some situations. <br>â€¢ Fixed incorrect maximum shield values during and after construction. <br>â€¢ Fixed repairing of station parts not correctly restoring surface elements. <br>â€¢ Fixed &#34;free&#34; upgrades on stations extended when the player is not present. <br>â€¢ Fixed scan station missions not completing. <br>â€¢ Fixed missing variation name on several ships. <br>â€¢ Fixed &#34;zombie&#34; NPCs on certain stations who will not respond to attempts to talk. <br>â€¢ Fixed capital ships not being able to boost if shields are too low. <br>â€¢ Fixed claimed ships not running commands after claim is complete. <br>â€¢ Fixed drones bumping while trying to dock on certain docks.<br><cite>- &#34;Rebirth 3.51&#34;</cite></div> <br><br>Full patch notes for 3.50, and for 3.51 can be found here:<br>http://forum.egosoft.com/viewtopic.php?t=347278<br></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="12772">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_12772">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1767" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Orbot</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_12772">Linux version (Alpha) is doing great progress as well. It works amazingly well already at this early state.<br>One of the developers (<a href="http://linolafett.deviantart.com/" target="_blank">linolafett</a>) mentioned that they are working on some bigger &#34;patch&#34; they can&#39;t talk about yet. Interesting to see what is coming. Great progress anyway.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+			<div style="width: 100%; text-align: center; font-size: 10pt;">&laquo; Previous
+ | <b>Page:</b> <b class="page_box_on">1</b>
+ | Next &raquo;
+</div>
+			
+			<br style="clear: both;"><br>
+	<b>You need to log-in to post here.</b><br>
+
+
+			<script src="/modules/syntaxhighlight.js"></script>
+
+			<script>FmtCodeBlocks();</script>
+			
+			<script>
+				// store when editing
+				var old_buttons 	= new Array();
+				var http_edit		= new XMLHttpRequest();
+				
+				function inline_editor(obj_type, obj_id, page)
+				{
+					
+					// store if not set
+					if (old_buttons[obj_id] == null)
+					{
+						old_buttons[obj_id] = document.getElementById('post_buttons_'+obj_id).innerHTML;
+						
+						document.getElementById('post_buttons_'+obj_id).innerHTML	= '';
+						
+						// get UBB code from database
+						http_edit.open('GET', '/forum/ajax/get_post.php?obj_type='+obj_type+'&obj_id='+obj_id, true);
+						http_edit.onreadystatechange=function() 
+						{
+							if ( (http_edit.readyState == 4) && (http_edit.status==200) )
+							{
+								// add support for the old type of editing (not inline)							
+								document.getElementById('post_msg_'+obj_id).innerHTML = '<textarea style="width: 100%; height: 250px;" id="post_editor_'+obj_id+'">'+http_edit.responseText+'</textarea><br><div style="float: right;"><a href="./edit.php?obj_type='+obj_type+'&amp;obj_id='+obj_id+'&amp;p='+page+'" class="smalllink">&raquo; full editor</a></div><input type="button" value="Update post" style="padding: 12px;" onclick="inline_save(\''+obj_type+'\', '+obj_id+', '+page+');">';
+							} 
+						}
+						
+						http_edit.send(null);
+					}
+				}
+	
+				
+				function inline_save(obj_type, obj_id, page)
+				{
+					
+					// fix for & in post data string
+					var postdata		= 	'message='+encodeURIComponent(document.getElementById('post_editor_'+obj_id).value)+
+											'&obj_id='+obj_id+'&obj_type='+obj_type;
+		
+					// open up
+					http_edit.open('POST', './ajax/update_post.php', true);
+					
+					//Send the proper header information along with the request
+					http_edit.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+				
+					http_edit.onreadystatechange=function()  
+					{
+					
+						if( (http_edit.readyState == 4) && (http_edit.status==200) )
+						{
+							document.getElementById('post_msg_'+obj_id).innerHTML  = http_edit.responseText;
+						}
+					}
+					
+					// send
+					http_edit.send(postdata);
+					
+					// change the buttons back
+					document.getElementById('post_buttons_'+obj_id).innerHTML 	= old_buttons[obj_id];
+					
+					// clear
+					old_buttons[obj_id] = null;
+				}
+				
+			</script>
+<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00632 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

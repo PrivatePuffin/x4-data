@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=13">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 13 of 16)</span></h1><br>
+	
+		<h2>HDD problems with P8Z68-Pro and Marvell controller</h2>
+
+
+		<div class="pad">
+			Yesterday I was having a few problems with Windows - every so often it would freeze for like 30 seconds, after-which everything would come back and resume. It seem to get worse the more data I transfer on my main HDD (the WD black drive). It looked like there could be a problem with either the HDD, power settings or a DVD-Rom drive (I started noticing ATAPI errors in my system log).<br><br>Things got pretty bad at one stage - Windows freezing quite often. The best way to describle it is by showing you the result from <b>HD Tach</b> (a HDD benchmarking tool):<br><br><center><a href="/blogs/images/user_1/large/pic_14.jpg"><img src="/blogs/images/user_1/large/pic_14.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center> <br><br>Normally the chart should start high, and taper off by curving. However to see this graph going all over the place wasnt right! It looked like the HDD was
+			... <a href="/blogs/roguey/blog-26.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Thursday 9th June, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-26.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-26.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Google auto-correction...</h2>
+
+
+		<div class="pad">
+			I am really worrying about google sometimes... why I hear you say. Well I was checking the spelling and term (to make sure I had the correct word) of the word <b>prepare</b> when google suggested the following: <br><br><center><a href="/blogs/images/user_1/large/pic_13.jpg"><img src="/blogs/images/user_1/large/pic_13.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center> <br><br>:lol not what I had in-mind! gesshhh google!
+			... <a href="/blogs/roguey/blog-25.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Saturday 28th May, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-25.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-25.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>A ton a junk a day</h2>
+
+
+		<div class="pad">
+			I dont know if its just me, however im finding a lot of emails in my junk folder everyday now. Last time I checked I had 159 junk emails - which was only empted a few days ago. I know sometimes good emails get in the junk folder, however I dont really have time to sort through so many emails each day.<br><br>Probably in 5 minutes ill probably have another 5 junk emails.<br><br>Am I the only one getting so much junk?
+			... <a href="/blogs/roguey/blog-24.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Tuesday 24th May, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-24.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 5 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-24.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Beep.. Beep.. Beep</h2>
+
+
+		<div class="pad">
+			That noise drives me up the wall... from either waking you up, or walking down the street all you hear sometimes is *beep *beep. I dont know who&#039;s idea it was, but putting beepers onto workmen vehicles was a bad idea. Maybe its just me, but dont you ever get fed up hearing that noise? Rarely a day go pass without hearing the dreaded *beep *beep... <img src="/forum/images/smilies/wallbash.gif" alt="Bash the wall">
+			... <a href="/blogs/roguey/blog-23.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Saturday 21st May, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-23.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-23.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Bad Mojo</h2>
+
+
+		<div class="pad">
+			Heyo to everyone reading this <img src="/forum/images/smilies/biggrin.gif" alt="Big grin"><br>Lately, I got tons of stuff to do. it&#039;s a hell for me at the moment, school is going into final rounds of tests, project deadlines are closing with FTL (faster then light), and I&#039;m tired.<br>Nonetheless I started work on a TShip editor for X3 Reunion and possibly X3 Terran Conflict.<br>While all info I need has been provided by Roguey, I still found some issues with it. For starters there is anything from 63 to 295 entries for a single ship. Many are Turret and Front Gun points and definitions, and while this isn&#039;t a big deal per se, it kinda destroyed my illusion of it being a simple parsing program.<br>I&#039;m kinda known by now for over-engineering things, but most of the time, somehow the
+			... <a href="/blogs/nethawk/blog-22.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/nethawk/"><b>NetHawk</b></a></b> on Wednesday 18th May, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/nethawk/blog-22.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/nethawk/blog-22.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Bozo&#039;s Blog 2</h2>
+
+
+		<div class="pad">
+			*coughs and curses* damn I lost my script.... here goes nothing!<br><br>I have recently started Roguey&#039;s forum again, i spent a lot of time off, when I was not playing on the X games.<br>I have re-started the campaign again, but cause I was board I scripted a Federation Defiant Class into my game, M2 class, with 4x10GJ shields <img src="/forum/images/smilies/tongue2.gif" alt=":P"> I could not be bothered having a challenge.... and I did put in on X-treame mode... but then again I see no difference between that and normal. <br><br>I have now gone off X2 and X3TC and can&#039;t wait for XR to come out it shall be good. <br><br>[h1]In other news.....[/h1] <br><br>Nothing much more to say, I have added a &#039;Story time 2&#039; post in which an ongoing story is made... it shall be fun. So far we have Argon
+			... <a href="/blogs/bozo64r/blog-21.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/bozo64r/"><b>bozo64r</b></a></b> on Wednesday 11th May, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/bozo64r/blog-21.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 3 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/bozo64r/blog-21.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3 &#187; Introduction, and X3 Reunion stuff</h2>
+
+
+		<div class="pad">
+			Ok, this seems to be my first blog entry. Well hello to everyone who reads this, and without bothering you too much, this is what&#039;s going to be happening around here: I&#039;m going to ramble about anything I feel about.<br>Sounds good doesn&#039;t it? <br><br>A couple of things I want to tell everyone, first off, If you like anything I create, please drop by and say hello.<br>Seondly if you DON&#039;T like something, or would change something, drop by, say hello, explain what and why you would change it. Maybe I&#039;ll feel the same way, or maybe I&#039;ll make a special version for that.<br>Thirdly, I will NOT bother scripting for TC. I haven&#039;t played it, and unless it gets ported to linux I probably won&#039;t. For this matter I cannot
+			... <a href="/blogs/nethawk/blog-20.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/nethawk/"><b>NetHawk</b></a></b> on Monday 9th May, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/nethawk/blog-20.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/nethawk/blog-20.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Making money in X-Tension</h2>
+
+
+		<div class="pad">
+			Ive been playing X-Tension for a few hours now and found out the fastest way of making money in X-Tension is by capturing <b>Pirate Orinoco&#039;s (M3)</b>. Each one is worth around half a million! You wont find such easy money is that.<br><br> <center><a href="/blogs/images/user_1/large/pic_12.jpg"><img src="/blogs/images/user_1/large/pic_12.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>I recommend 2 lasers, a powerful one (such as a A-HEPT) and the other to keep the shields down (A-PAC) for bailing. At first use both lasers to bring the shields down to like 10%, then remove the A-HEPT (by either pressing 1 or 2). Carry on holding the shields down with you A-PAC. Hopefully after few seconds they will bail.<br><br>Sometimes they will never bail, so dont spend 2 hours trying to capture one Orinoco. I hope that helps!<br><br>You may even find the bailed ship contains a
+			... <a href="/blogs/roguey/blog-19.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 29th April, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-19.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-19.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=12">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<b class="page_box_on">13</b>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=14">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00424 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

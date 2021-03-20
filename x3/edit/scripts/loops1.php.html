@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Loops scripting tutorial (Page 1 of 4) - Roguey's X3 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Loops, Scripting, scripts, tutorial, guide, gaming, roguey">
+		<META NAME="Description" CONTENT="Loops scripting tutorial written by Roguey.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3/edit/scripts/loops1.php">
+		<meta property="og:description" content="Loops scripting tutorial written by Roguey.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Loops scripting tutorial (Page 1 of 4)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3/"><img src="/x3/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #FF800F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #FF800F;">
+				<li class="icon" style="background-color: #FF800F">&nbsp;</li><li><a href="/x3/">News</a></li><li><a href="/x3/pictures/">Pictures</a></li><li><a href="/x3/videos/">Videos</a></li><li><a href="/x3/help/">Help / Guides</a></li><li><a href="/x3/ships/">Ships</a></li><li><a href="/x3/universe/">Maps</a></li><li><a href="/x3/stations/">Stations</a></li><li><a href="/x3/lasers/">Lasers</a></li><li><a href="/x3/missiles/">Missiles</a></li><li><a href="/x3/shields/">Shields</a></li><li><a href="/x3/wares/">Wares</a></li><li><a href="/x3/mod/">X3 Mod</a></li><li><a href="/x3/edit/">Editing</a></li><li><a href="/forum/viewforum.php?id=1">Forum</a></li><li><a href="/x3/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Loops scripting tutorial <font class="Smalltext">(Page 1 of 4)</font></h1>
+	Written by <b>Roguey</b>,<br><br>
+
+	<center><img src="images/loops-header.gif" alt="Loops scripting tutorial, written by Roguey"></center>
+	<br><br>
+
+
+	<h2>Building a loop</h2>
+
+	Hopefully now we should have the very basics covered - we can now open up the script editor, write a small script, save and then run it.
+	So the next logical step is making a loop. Loops are important in coding, as they can save you a lot of time from typing the same thing over and over. 
+	<br><br>
+
+	Okies... lets make a script to place a satellite in every <i>existing</i> sector. This could be very useful for mods - checking sectors to see whats in them.
+	The first step is to make a new script once again. You need to get the script editor open once again by setting the pilot's name to <b>Thereshallbewings</b>
+	(you dont need to change this each time, just if you start a new game). Once the script editor is activited, then once again open the the script editor:
+	<br><br>
+
+	<div class="quote">Ship &#187; Orders &#187; press <b>S</b> &#187; Script editor</div>
+	<br><br>
+
+	ie. You should have something to this on your screen (dont worry if you have different scripts than me - I have my X3 mod installed).
+	<br><br>
+
+	<center><img src="images/script-editor-list.jpg" alt="The script editor showing all the current scripts"></center>
+	<br>
+
+	So lets create a new script called <b>Make.Sats</b> - the dot doesnt do anything, its just there to split up the two words. <br>
+	We should get another blank script to work with.
+	<br><br>
+
+	Okies move to &#60;New Line&#62; and press enter. This time we need to set two variables: x and y. 
+	These variables dont need to be called x and y, it just makes easier to understand what they contain. 
+	We need two variables because the universe is laid out in 2D grid: x being left to right, whilst y being up and down.
+	So now select <b>General Commands</b>, then &#60;RetVar/IF&#62;&#60;Expression&#62;. What does this do? well.. this allows us to 
+	set something or make a If statement. At the moment we simply want to set two variables <b>x</b> and <b>y</b> to zero.
+	So add this to our code (by pressing enter once again), we next see this screen:
+	<br><br>
+
+	<center><img src="images/select-input3.jpg" alt="Inputs for our &#60;RetVar/IF&#62;&#60;Expression&#62; command"></center>
+	<br>
+
+	So select &#60;variable&#62; and write in x. We should be back at our script with <b>$x = &#60;?&#62;</b>. So we need to change that 
+	&#60;?&#62; to the number zero. So press enter, and scroll down the input list until you reach &#60;Number&#62; 
+	(this is just after null in the script input selection). Then press enter and write in the number 0. So now we should have the following:
+	<br><br>
+
+	<center><img src="images/x-equals.jpg" alt="X equals zero"></center>
+	<br>
+
+	Now we need to do this for <b>y</b> however we have two ways to do this: we could copy and paste (then change x to y) or do the above again... 
+	although thats not really learning is it?.. lets copy and paste! So make sure 001 is selected and then press <b>c</b> to copy this line.
+	Now to paste it press <b>v</b>. You should have something like this:
+	<br><br>
+
+	<center><img src="images/x-twice.jpg" alt="X equals zero.. twice!"></center>
+	<br>
+
+	So we need to change the second $x to $y. This can be done by moving your high-lighted <i>cursor</i> to the second $x. 
+	Now press enter and move down to &#60;variable&#62;. 
+	<br><br>
+
+	<center><img src="images/changing-xtoy.jpg" alt="Changing the variable x to y"></center>
+	<br>
+
+	Now press enter and type in y. Your script should now look like this:
+	<br><br>
+
+	<center><img src="images/xandy.jpg" alt="Our script with x and y set to zero"></center>
+	<br>
+
+	<center>	
+		<font class="smalltext"><b>Next: Building a loop</b></font><br>
+		<a href="loops2.php">Next Page >></a>
+	</center>
+
+	<br>	
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00056 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

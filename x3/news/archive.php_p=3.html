@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>News Archive - Roguey's X3 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="News Archive, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3/news/archive.php?p=3">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="News Archive">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3/"><img src="/x3/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #FF800F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #FF800F;">
+				<li class="icon" style="background-color: #FF800F">&nbsp;</li><li><a href="/x3/">News</a></li><li><a href="/x3/pictures/">Pictures</a></li><li><a href="/x3/videos/">Videos</a></li><li><a href="/x3/help/">Help / Guides</a></li><li><a href="/x3/ships/">Ships</a></li><li><a href="/x3/universe/">Maps</a></li><li><a href="/x3/stations/">Stations</a></li><li><a href="/x3/lasers/">Lasers</a></li><li><a href="/x3/missiles/">Missiles</a></li><li><a href="/x3/shields/">Shields</a></li><li><a href="/x3/wares/">Wares</a></li><li><a href="/x3/mod/">X3 Mod</a></li><li><a href="/x3/edit/">Editing</a></li><li><a href="/forum/viewforum.php?id=1">Forum</a></li><li><a href="/x3/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<h1>News archive</h1><table class="board_table">
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>5 Jun, 2010</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=201"><b>Roguey's X3 Mod moved</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>30 May, 2010</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=196"><b>v3.21 released</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>29 May, 2010</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=194"><b>Add your X3 mods/scripts</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>4 Dec, 2009</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=176"><b>X3 sector maps</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>29 Nov, 2009</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=175"><b>X3 station pages</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>27 Nov, 2009</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=174"><b>X3 sector maps update</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>25 Mar, 2009</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=164"><b>Ship stats for v3.2 added</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>14 Feb, 2009</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=159"><b>v3.2 released!</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>9 Feb, 2009</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=158"><b>New trailer for v3.2 released (HD - 720p)</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>2 Nov, 2008</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=150"><b>New Classic Rules trailer</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>16 Oct, 2008</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=147"><b>HD 720p Trailer back on the net</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>27 Aug, 2008</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=134"><b>Ships stats for v3.1 now available</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>10 Aug, 2008</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=132"><b>Roguey's Mod V3.1 released!</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>2 Mar, 2008</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=129"><b>Roguey X3 Mod spoilers</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>12 Feb, 2008</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=126"><b>Roguey's X3 MOD V3.00 OUT NOW!</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>7 Feb, 2008</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=125"><b>New X3 section open - Novels</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>4 Feb, 2008</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=124"><b>X3 ship statistics updated</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>21 Jan, 2008</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=123"><b>Roguey's X3 Mod v3.00 site updates</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>29 Nov, 2007</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=121"><b>Merging Roguey X3T to Roguey's X3 Mod</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>29 Nov, 2007</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=120"><b>Roguey X3 Mod help</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>21 Oct, 2007</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=116"><b>Ship Stat from other mods</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #F0F0F0; width: 15%;"><span class="smalltext"><b>18 Oct, 2007</b></span></td>
+			<td style="padding-left: 8px;"><a href="single.php?id=114"><b>Rate the ships</b></a></td>
+			<td class="smalltext"><img src="/images/site/comment.gif" alt="Comments" style="border: none;"> 0 comments</td>
+			<td style="text-align: center;"><a href="/users/profile.php?id=1" class="admin smalltext">Roguey</a></td>
+		</tr>
+</table><br>
+<div style="text-align: center;">
+<a href="archive.php?p=2">&laquo; Previous</a> | <b>Pages</b> <a href="archive.php?p=1" class="page_box_off">1</a><a href="archive.php?p=2" class="page_box_off">2</a><b class="page_box_on">3</b><a href="archive.php?p=4" class="page_box_off">4</a><a href="archive.php?p=5" class="page_box_off">5</a> | <a href="archive.php?p=4">Next &raquo;</a></div><br>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00197 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

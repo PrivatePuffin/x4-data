@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ConCorDian's Carrier Combat V1 - Roguey's X3AP site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="ConCorDian, Carrier Combat, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3ap/help/ccdscarrier/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="ConCorDian's Carrier Combat V1">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3ap/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3ap/"><img src="/x3ap/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3BAE2F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3BAE2F;">
+				<li class="icon" style="background-color: #3BAE2F">&nbsp;</li><li><a href="/x3ap/">News</a></li><li><a href="/x3ap/pictures/">Pictures</a></li><li><a href="/x3ap/videos/">Videos</a></li><li><a href="/x3ap/help/">Help / Guides</a></li><li><a href="/x3ap/ships/">Ships</a></li><li><a href="/x3ap/universe/">Maps</a></li><li><a href="/x3ap/missiles/">Missiles</a></li><li><a href="/x3ap/lasers/">Lasers</a></li><li><a href="/x3ap/shields/">Shields</a></li><li><a href="/x3ap/stations/">Stations</a></li><li><a href="/x3ap/wares/">Wares</a></li><li><a href="/x3ap/mod/">X3AP Mod</a></li><li><a href="/x3ap/edit/">Editing</a></li><li><a href="/x3ap/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=31">Forum</a></li><li><a href="/x3ap/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+	<h1>ConCorDian's Carrier Combat V1 <span class="smalltext">(Moved from wiki)</span></h1>
+	
+	for myself Carrier combat is one of the more fun aspects of the game, it has also been around from pretty much the start of the X series.
+	<br><br>
+	
+	basic things to remember about carrier combat, your carrier is not the primary weapon, if anything for the most part try to treat your Carrier as a Non Combatant, the true power of the carrier is in its Hanger and secondary in its cargo capacity. 
+	<br><br>
+	
+	Fighters are the Primary source of your power, not only do they hold the punching power in their weapon systems but can also create massive damage in a short period of time thanks to missiles.
+	<br><br>
+
+	<h3>Advantages/Disadvantages Of Carrier Combat</h3>
+	<br>
+	<b><u>Advantages:</u></b>
+	<br>
+	Carrier Combat can allow you to strike at enemies over distance, this helps you keep your high yeild investments (in this case your carrier itself) outside of the battle area whilst the fighters use their far higher speed ratings to cover the distance to the combat zone.
+	<br><br>
+	
+	Carriers are potentially one of the most versatile ships in the game, allowing you to carry smaller fast ships such as M5&#039;s for scouting area&#039;s, or by using the heavier fighters for taking down even the heaviest M2 destroyers. the fighters can even be used to assist in boarding operations by keeping the sheilds down via their &quot;Attack sheilds of&quot; command
+	<br><br>
+	
+	Carrier generally have more free cargo space than their heavier Destroyer counterparts (even though the destroyers have additional cargo capacity) thanks to the fact they do not carry as many heavy weapons taking up a lot of cargo space.
+	<br><br>
+	
+	Carriers are relativly quick in relation to their M2 counterparts, so it cuts down a lot of the travel time. this also means that one of the biggest threats to your carrier itself cannot catch you to destroy you!
+	<br><br>
+	
+	<b><u>Disadvantages:</u></b>
+	<br>
+	Carriers themselves are fairly weak for their size (as a general rule of thumb) as ships in their own right, which can make them vunerable to attacks when originally jumping through a gate to a sector you cannot activly see whats happening.
+	<br><br>
+	
+	due to the fact your using fighters as your main fighting ability, inevitably your going to take losses, for all this fact to me is a good thing as it helps with immersion it does however cost you credits to replace ships or risk comprimising your ships overall combat ability.
+	<br><br>
+	
+	Carrier combat can require a higher degree of micro management than fighting with Destroyers, for all this is what gives them the ability to truly multi task (attack numerous targets at once) some people do not have the patience to fight in this way
+	<br><br>
+	
+	the big one, the disadvantage to why many do not use carrier combat, the setup costs, to setup a true M1 carrier it can cost far far more than buying and outfitting some of the heaviest M2 destroyers. this is because the M1 carrier is fairly close in price to the M2, fair enough it does not cost as much for the weapon systems as carrier do not carry as many but the cost of say 35-65 fully equiped M3 fighters on top of the price of the fully outfitted carrier makes it the second most costly setup in the game, second to only setting up large self sustaining complex&#039;s. 
+	<br><br>
+
+	<h3>Carrier Combat, The Ships</h3>
+	<br>
+	the carriers as ships dont need to be great at combat themselves, this means the use of M1 Carriers and M7C&#039;s are not always nessecary to achieve Carrier Combat. infact its been my belief that the Argon Griffon has been one of the best ships to use in order to learn Carrier Combat thanks to its small size, impressive stats and its 9 ship hanger. 
+	<br><br>
+	
+	this means Carrier combat can actually be done with pretty much any ship that has a hanger, that said my own personal thoughts on Carriers are: 
+	<br><br>
+	
+	TM&#039;s as small escort carriers, especially early on in the game when your credits are at a premium, purchasing a TM can be money well spent, it has the XL cargohold to allow you to carry pretty much anything you want, but by using it you only need 1 Jumpdrive rather than 4 for the fighters its carrying. this means you can operate as a small pocket carrier that allows you to carry yourself and also a few wingmen for extra defence, later on the TM&#039;s youve aquired can be put on light patrol routes, or in some cases even switch to be used as Universe Traders whilst you transfer the fighters to a larger Carrier.
+	<br><br>
+	
+	M7&#039;s, even ships such as the Argon Cerberus or Teladi Shrike can operate as Carriers, infact people could argue that their speed, and firepower can make them better carriers than the M1 even though they dont carry as many fighters.
+	<br><br>
+	
+	M7Cs, one of the best new additions to AP in my opinion, fairly cheap but having respectable hangers on them, ships such as the Paranid Ariadne having the ability to carry 24 fighters makes it very potent when you consider price with many of the larger carriers. another favorite ship by players that i feel falls under the M7C catagory is the Split Panther, in all honesty if you look at cost to power to hanger effciency the Panther is probably THEE best carrier in the game.
+	<br><br>
+	
+	M1s, the big mamma carriers, capible of carrying the most fighters of all the classes, and therefore being the biggest threat to anyone, these are normally the Flagship of the fleets and i personally have used the M1 class as my personal flagship many times.
+	<br><br>
+	
+	<h3>Carrier Combat, The Equipment</h3>
+	<br>
+	other than the standard equipment you could normally put on your ships the biggest thing to mention here is the Carrier Command Software, purchasable at most respectible Teladi and Split EQd&#039;s. this allows you to use the Launch Fighter Commands. these commands allow you to deploy all your fighters very quickly and therefore get your firepower moving!!
+	<br><br>
+	
+	<h3>Carrier Combat, Drone Carriers</h3>
+	<br>
+	Drone carriers in this context is refering to ships carrying Mk1/Mk2 Fighter Drones or the Terran Keris. these can be highly effective as a combat vessel and very deadly. 
+	<br><br>
+	
+	yes Fd&#039;s carry very little weaponry, and yes their sheilds are non existant, but try using a Yaki Ryu, or a Split Elephant to drop 5000 FD Mk2&#039;s into a combat area and see just how quickly those big Terran Destroyers last... chances are youll destroy them in under a minute and still recover 80% of your drones, this can offer you a very cheap alternative carrier for high risk if not suicide missions. 
+	<br><br>
+	
+	N.B. this section may very well be updated a lot if/when EGOSOFT fix the M7 Drone Carriers (M7C&#039;s) to function properly as the Drone Carrier (which they are ment to be) rather than a cheapish Standard Carrier.
+	<br><br>
+	
+	<h3>Carrier Combat, Commands</h3>
+	<br>
+	this is where Carrier Combat can start to become complicated to many new players, trying to keep track of potentially hundreds of fighters whilst issuing commands can be a real pain... this can be partially reduced by planning your attacks and by having ships assigned to Wings which means you can command multiple ships with a single command.
+	<br><br>
+	
+	another way to make Carrier Command easier is to have the fighters Homebased to their relevant carriers this way you dont have to navigate through a very large list of vessels on the Sector Map to find the ships your looking for, all you need do is look for the relevant carrier and go to its &quot;Owned Ships&quot; and select the ship(s) your looking for from there.
+	<br><br>
+	
+	inevitably though carrier commanders will need to learn how to use their command console well, and even the setup of hotkeys to help command large engagements. 
+	<br><br>
+	
+	<h3>Food for thought</h3>
+	<br>
+	some small pointers for carrier commanders is to keep their own property lists quite clean, this can be achived by toggling weither or not a ship is hidden from the property lists within its own command console or by changing the filters within the options section of your Owned Property screen. 
+	<br><br>
+	
+	also your PHq can be a very powerful tool within AP thanks to the ability to equip multiple ships at once with weapons, missiles and sheilds... therefore id reckomend setting up a few &quot;default&quot; loadouts for the various fighters you dock at your carriers to help with quick loading of your ships. 
+	<br><br>
+
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00077 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Races - Roguey's X2 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Races, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x2/help/races.php">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Races">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x2/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x2/"><img src="/x2/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #D401DC;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #D401DC;">
+				<li class="icon" style="background-color: #D401DC">&nbsp;</li><li><a href="/x2/">News</a></li><li><a href="/x2/pictures/">Pictures</a></li><li><a href="/x2/videos/">Videos</a></li><li><a href="/x2/help/">Help / Guides</a></li><li><a href="/x2/ships/">Ships</a></li><li><a href="/x2/universe/">Maps</a></li><li><a href="/x2/lasers/">Lasers</a></li><li><a href="/x2/missiles/">Missiles</a></li><li><a href="/x2/shields/">Shields</a></li><li><a href="/x2/wares/">Wares</a></li><li><a href="/x2/mods.php">My Mods</a></li><li><a href="/forum/viewforum.php?id=11">Forum</a></li><li><a href="/x2/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>X2 Races</h1>
+
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+    <!-- Argon                        -->
+    <!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+
+	<h2>Argon</h2>
+	
+	<br>
+
+		<img src="/x2/help/images/logo_argon.gif" style="float: left; padding-right: 4px;" alt="Argon">
+
+             The Argon people are believed to be the descends of that of the Earth people, many years 
+             ago. Many years ago the AP Sorja 44 (AP Gunner) crashed landed, ever since the Argon 
+             have been battling the Xenon. A fews ago years a ship believed to be from Earth piloted 
+             by the captain Brennan, jumped across the galaxy without the use of a jumpgate. Many 
+             Argon's dont belive Brennan was from earth, however he helped in the final battle 
+             against the Xenon and then built the company Teracorp to fund his research on going back 
+             to Earth and into drive technology, this is where the jumpdrive comes from.
+             <br><br>
+             Argon ships very reversible but not being good or bad at anything.
+
+
+		<br style="clear: left;"><br>
+
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- Boron                        -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+
+
+	<h2>Boron</h2>
+	
+	<br>
+
+		<img src="/x2/help/images/logo_boron.gif" style="float: left; padding-right: 4px;" alt="Boron">
+             The Boron are a friendly species who live primarily under the sea. Their ships must be 
+             able to travel under the sea and also into space where awaiting factories supply them 
+             with resources. The Boron consider everyone an friend and will not attack automatically.
+             <br><br>
+             Teracorp are working with the Boron creature named Mi-Ton to create a drive which will 
+             work under and in space on other ships than that of the Boron.
+
+		<br style="clear: left;"><br>
+
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- Paranid                      -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+
+	<h2>Paranid</h2>
+	
+	<br>
+
+		<img src="/x2/help/images/logo_paranid.gif" style="float: left; padding-right: 4px;" alt="Paranid">
+
+             The correctly called Paranid, are simply paranoid of everyone including their own race. 
+             In order even to dock with one of their stations pilots have to show good will to them.
+             <br><br>
+             Paranid are known for their advance technology however the same cant be said about thier 
+             hospitality.
+             <br><br>
+             Paranid ships are fast, powerful and deadly, and even cheap in the case of the Paranid 
+             Hercules (TL).
+
+
+		<br style="clear: left;"><br>
+
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- Pirates                      -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+
+	<h2>Pirates</h2>
+	
+	<br>
+
+		<img src="/x2/help/images/logo_pirates.gif" style="float: left; padding-right: 4px;" alt="Pirates">
+             The Pirates are made of all the other species who don't want to conform to that of the 
+             'standard' way of doing things. The Pirates are believed that their ships are created 
+             by the Teladi, were the Orinoco (M3) have an similar design of the Teladi Falcon (M3).
+             <br><br>
+             Pirate ships are normally always armed and will attack anyone that don't agree with. 
+             Often they will attack to take cargo. The Pirates don't care so much about losing some 
+             cargo space for the gun mounts on their ships. It is luckily that the Pirates don't have 
+             any M1/M2/M6 ships to use!             
+
+
+		<br style="clear: left;"><br>
+
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- Split                        -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+
+	<h2>Split</h2>
+	
+	<br>
+
+		<img src="/x2/help/images/logo_split.gif" style="float: left; padding-right: 4px;" alt="Split">
+             The split are a warrior race who would rather fight and lose, than to die a coward death. 
+             This makes them very wearily of new people visiting their space, and to even dock with one 
+             of their station you need to show them a little good will. Their ships also follow the 
+             simpler design, where normally split ships have more guns than shielding. However this 
+             isn't always true such like the Python, M1 ship where only 17 guns are fitted than the 
+             normal 18. On a whole split ships are quite fast, making get to their target quicker than 
+             the other species.
+
+		<br style="clear: left;"><br>
+
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- Teladi                       -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+
+	<h2>Teladi</h2>
+	
+	<br>
+
+		<img src="/x2/help/images/logo_teladi.gif" style="float: left; padding-right: 4px;" alt="Teladi">
+             If the Teladi could, they would sell their grandmothers for some profit. Teladi are well 
+             known for doing anything if it makes them a profit. One thing that the Teladi do is make 
+             ships for the pirates on which they make large profits.
+             <br><br>
+             Teladi ships however normally have bigger cargo bays for making extra profit, however 
+             the Teladi haven't forgot to arm their larger M1/M2/M6 ships with loads of fire-power 
+             and shield, however the speed of the ships is generaly lower.
+             
+		<br style="clear: left;"><br>
+
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+		<!-- Xenon                        -->
+		<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\ -->
+
+	<h2>Xenon</h2>
+	
+	<br>
+
+		<img src="/x2/help/images/logo_xenon.gif" style="float: left; padding-right: 4px;" alt="Xenon">
+
+             The Xenon are an product of man's creation which returned on their masters. Xenon's were 
+             used to convert planets into livable places for humans to live on. Jumpgates were built 
+             to transport human and Xenon ships far across the galaxy. However after some years, the 
+             Xenon developed an problem in their programming and they turned on their human masters 
+             and a large battle was fort. One captain took it on himself to draw them away from Earth 
+             in his ship named 'AP-Sorja 44' aka AP Gunner. So the captian got the Xenon to follow 
+             him though an jumpgate and blew it up just after they arrived. This jumpgate was the only 
+             gate back to Earth, trapping them in this area of space (the jumpgate can be found in 
+             middle of Brennan's Triumph in X2).
+             <br><br>
+             The captain of the AP Gunner crashed landed. It is 
+             believed that the Argon people are descends of that of the Earth people. However much 
+             has been forgotten over the years.
+             <br><br>
+             After the last Xenon war with the Argon - which nearly cost the Argon's their homeland, 
+             the Xenon have been losing battles after battles. The biggest blow to the Xenon was the 
+             battle being lost by the Xenon in the sector Brennan Triumph were a guy called Brennan 
+             destroyed one of the Xenon main ships.
+             <br><br>
+             Xenon ships are still to this day deadly, so only attack when you have enough firepower.
+
+	<br>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00063 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

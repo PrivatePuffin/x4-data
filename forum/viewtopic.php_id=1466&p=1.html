@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>X: Rebirth version 4.00 : X: Rebirth - Roguey's Forum</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="X: Rebirth version 4.00, X: Rebirth, gaming, roguey">
+		<META NAME="Description" CONTENT="X: Rebirth version 4.00 on the X: Rebirth forum board.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/forum/viewtopic.php?id=1466&p=1">
+		<meta property="og:description" content="X: Rebirth version 4.00 on the X: Rebirth forum board.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="X: Rebirth version 4.00 : X: Rebirth">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/forum/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/forum/"><img src="/forum/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #79B4BD;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #79B4BD;">
+				<li class="icon" style="background-color: #79B4BD">&nbsp;</li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+
+			<br>
+			
+			<span style="font-size: 9pt;">
+				<img src="/forum/images/icons/home.gif" alt="Home"><a href="/forum/" class="nav_link"> Board Index</a> &#187; 
+				<a href="/forum/cat.php?id=1" class="nav_link">X Universe</a> &raquo; 
+				<a href="viewforum.php?id=20" class="nav_link">X: Rebirth</a> &raquo; 
+				<a href="/forum/viewtopic.php?id=1466" class="nav_link">X: Rebirth version 4.00</a>
+			</span>
+			<br><br>
+			
+			<div style="float: right; padding: 8px; font-size: 10pt;">
+				
+			</div>
+			
+			<h1 style="clear: none;">X: Rebirth version 4.00</h1>
+			<br>
+
+			<br>
+
+		<div class="post_container" id="1466">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_1466">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1767" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Orbot</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_1466"><b>Version 4.00 Beta 2 (202854)</b><br><br>â€¢ New Feature: Bulletin board system to keep track of offered missions.<br>â€¢ New Feature: Major overhaul of external view (enabled menus, target elements, external view in highways, and more). Feedback welcome.<br>â€¢ New Feature: Time acceleration using SETA (feature functional but item not yet available).<br>â€¢ New Feature: Player ship jump drive (feature functional but item not yet available).<br>â€¢ New Feature: Economy logging and statistics (feature not yet functional).<br>â€¢ New Feature: Flight School tutorial.<br>â€¢ Added &#39;Fly to position&#39; order selecting a position via map click (Replaces &#39;Fly to Zone&#39; order).<br>â€¢ Added ability to interact with on event monitor while controlling drones.<br>â€¢ Added option to start autopilot to current mission target.<br>â€¢ Added radar while remote controlling drones.<br>â€¢ Added heat damage from engine jets.<br>â€¢ Added savegame compression.<br>â€¢ Improved small ship AI to use boost in combat situations based on pilot skills.<br>â€¢ Improved behaviour when following mission target using autopilot.<br>â€¢ Improved HUD toggle now toggles more elements and works in more cases. Feedback welcome.<br>â€¢ Improved mouse accuracy in menus.<br>â€¢ Improved station manager logic to better coordinate multiple owned ships.<br>â€¢ Improved FXAA colour-correction.<br>â€¢ Changed default setting for menu display from &#34;Side Console&#34;-mode to &#34;HUD&#34;-mode.<br>â€¢ Fixed being able to issue multiple transfer orders for the same wares when using ware exchange with a station.<br>â€¢ Fixed another scenario that could lead to incorrect amounts of unavailable units.<br>â€¢ Fixed incorrect quantity of bought fuel cells on &#39;Refuel&#39; order if the ship had already some fuel.<br>â€¢ Fixed several bugs with Marauder Pirates not being able to steal dropped containers from their targets.<br>â€¢ Fixed several cases resulting in ships getting stuck when following other ships out-of-sector.<br>â€¢ Fixed missing command info for mining drones and for transport drones picking up ware containers.<br>â€¢ Fixed stations complaining when player destroys an ownerless ship.<br>â€¢ Fixed broken game controls after interacting with a trade offer while controlling a drone.<br>â€¢ Fixed aim-at-indicator being displayed incorrectly when remote controlling a drone.<br>â€¢ Fixed rare cases where objects showed incorrect outlines.<br>â€¢ Fixed area damage increasing with lower framerates.<br>â€¢ Fixed issue where a &#39;static&#39; effect remained over the event monitor during the plot.<br>â€¢ Fixed Particle Repeater weapons building up heat slower at higher framerates.<br>â€¢ Fixed player ship not being able to enter highways with an open menu.<br>â€¢ Fixed rare case of missing highway/gate/ship group target elements after starting/loading a game.<br>â€¢ Fixed rare case of non-working input controls after starting/loading a game.<br>â€¢ Fixed interact menu not always being on top of other target elements when using mouse/gamepad controls.<br>â€¢ Fixed current target not always on top of all other target elements.<br>â€¢ Fixed target elements not always on top of other target elements which are further away.<br>â€¢ Fixed rare cases of clicking on a target element actually targeting another object.<br>â€¢ Fixed target elements jumping when interacting with it while controlling a drone.<br>â€¢ Fixed rare cases of crosshair showing weird animations.<br>â€¢ Fixed rare cases of UI issues when switching to/from external and/or drone view.<br>â€¢ Fixed cases where weapon panels showed startup animation in cases other than entering the ship.<br>â€¢ Fixed various trade price discrepancies in menus due to incorrect rounding.<br>â€¢ Fixed game freezing when quitting the game with Alt+F4 while in loading screen.<br>â€¢ Fixed startup issues with corrupted or incorrect DLLs in Windows system directory.<br>â€¢ Fixed several small memory leaks.<br>â€¢ Fixed more causes of crashes.<br>â€¢ Several more small performance and memory optimisations.<br><br>Known Issues<br><br>The following issues in this version are known and will be fixed in a forthcoming update.<br><br>â€¢ Occasional graphical flash on entering a highway.<br>â€¢ Clothing on some character appears black.<br>â€¢ Flight School text remains on screen after playing the tutorial.<br>â€¢ Player ship can get stuck at the exit of a highway if a menu is open.<br>â€¢ Player ship can jump positions when changing zones while flying on autopilot.<br>â€¢ Texts that are new in 4.0 are not yet translated.<br>â€¢ Voice recordings for voiced texts that are new in 4.0 are not yet present.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13144">
+		
+			<div class="post_header" style="background-color: #9bffff;">
+				<div style="float: right;" id="post_buttons_13144">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1" class="admin">
+					<img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Roguey</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				<img src="/users/badges/tv/reddwarf-smeg.gif" alt="User Badge">
+				<div class="custom_title"><a href="/users/locations/" style="color: black;"><img src="/users/flags/united-kingdom.gif" alt="flag" style="float: left; margin-left: 4px; border: 0;">United Kingdom</a></div>
+				<div class="custom_title">Please insert pizza!</div>
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13144">geez, im surprised they are still updating that thing. Last time I checked egosoft forum was an ghost-town, I guess there is still a few people around although? </span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13150">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13150">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1767" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Orbot</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13150">I don&#39;t believe they are working for all these features for profit but prepare the engine for next game which is will have much bigger changes; many flyable ships, redesigned highway system, etc.<br><br>What ever is their reasons I personally like they keep improving X:Rebirth. It is quite exceptional that companies keeps updating their games after couple years.<br><br>I&#39;m still not fan of SETA. Hopefully they will not design the next game around it but instead add meaningful stuff for players can do.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13152">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13152">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2933" class="normal">
+					<img src="/users/avatars/Battlestar%20Galactica/74.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">BigVern</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13152">Some interesting changes - having been playing X3TC a bit to try and finish The Hub plot, I couldn&#39;t do it without SETA and, while the Rebirth universe is much smaller there were still occasions when I would have liked to use it.<br><br>Any idea what the likely ETA of a patch might be for the retail version?</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13153">
+		
+			<div class="post_header" style="background-color: #9bffff;">
+				<div style="float: right;" id="post_buttons_13153">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1" class="admin">
+					<img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Roguey</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				<img src="/users/badges/tv/reddwarf-smeg.gif" alt="User Badge">
+				<div class="custom_title"><a href="/users/locations/" style="color: black;"><img src="/users/flags/united-kingdom.gif" alt="flag" style="float: left; margin-left: 4px; border: 0;">United Kingdom</a></div>
+				<div class="custom_title">Please insert pizza!</div>
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13153">Well, when I had access to the alpha/beta versions of XR, it had an option to increase the speed - ie. SETA. So its totally possible for egosoft to add SETA to their next game. However I really hope they learnt their lesson and listen to their fans before releasing.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13157">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13157">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=647" class="normal">
+					<img src="/users/avatars/Uploaded/user_647_avatar.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">AlexanderSziller</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				<div class="custom_title"><a href="/users/locations/" style="color: black;"><img src="/users/flags/slovakia.gif" alt="flag" style="float: left; margin-left: 4px; border: 0;">Slovakia</a></div>
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13157">Yes, they are preparing for the next game, as it will run on the same engine. Improvements carry over.<br>I&#39;m definitely not a fan of SETA, but combining it with the new &#34;fly to position&#34; command, it&#39;ll make warship commanding much easier for me.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13188">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13188">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13188">The beta 3 change logs were released today:<br><br>â€¢ New Feature: Bulletin board system to keep track of offered missions. <br>â€¢ New Feature: Beta 3 Major overhaul of external view (enabled menus, target elements, external view in highways, and more). Feedback welcome. <br>â€¢ New Feature: Economy logging and statistics (feature not yet functional). <br>â€¢ New Feature: Time acceleration using SETA (feature functional but proper means to obtain item not yet available). <br>â€¢ New Feature: Beta 3 New mission to obtain player ship jump drive (feature now available). <br>â€¢ New Feature: Beta 3 New missions to hack stations and obtain rare or valuable items. <br>â€¢ New Feature: Beta 3 You can now find and craft rare weapon modifications that increase your weapon&#39;s stats when installed. <br>â€¢ New Feature: Flight School tutorial. <br>â€¢ Added &#39;Fly to position&#39; order selecting a position via map click (Replaces &#39;Fly to Zone&#39; order). <br>â€¢ Beta 3 Added ability to access various features (event monitor/info point interaction, comms, mission/trade offers, etc.) while remote controlling drones. <br>â€¢ Beta 3 Added event monitor and ability to open menus while remote controlling a torpedo (new feature in 4.00). <br>â€¢ Beta 3 Added ability to claim ownerless capital ships by placing NPC on platform. <br>â€¢ Beta 3 Added current target as default destination for autopilot hotkey (Shift+A), uses mission objective as before if no target set. <br>â€¢ Beta 3 Added new Nyanae ships to Omicron Lyrae, replacing the Gigurum ships there. <br>â€¢ Added heat damage from engine jets. <br>â€¢ Beta 3 Added new &#34;very hard&#34; difficulty level. <br>â€¢ Added savegame compression. <br>â€¢ Beta 3 Removed option to replace a working architect, which broke the both of them! <br>â€¢ Improved small ship AI to use boost in combat situations based on pilot skills. <br>â€¢ Improved behaviour when following mission target using autopilot. <br>â€¢ Improved HUD toggle now toggles more elements and works in more cases. Feedback welcome. <br>â€¢ Beta 3 Improved speed of medium sized ships. <br>â€¢ Improved mouse accuracy in menus. <br>â€¢ Improved station manager logic to better coordinate multiple owned ships. <br>â€¢ Improved FXAA colour-correction. <br>â€¢ Beta 3 Improved highway entry/exit sounds. <br>â€¢ Beta 3 Improved crash reports to indicate whether game has been modified. <br>â€¢ Beta 3 Improved balancing of ship prices (increased price of container transporters by 50%, reduced other medium sized ships by 25%). <br>â€¢ Beta 3 Improved NPC behaviour when flying through Jump Gates to clear the area. <br>â€¢ Beta 3 Improved accuracy of combat damage calculations when player is not present. <br>â€¢ Changed default setting for menu display from &#34;Side Console&#34;-mode to &#34;HUD&#34;-mode. <br>â€¢ Fixed trade ships assigned to stations not respecting their new commander&#39;s subordinate range. <br>â€¢ Fixed being able to issue multiple transfer orders for the same wares when using ware exchange with a station. <br>â€¢ Fixed another scenario that could lead to incorrect amounts of unavailable units. <br>â€¢ Fixed incorrect quantity of bought fuel cells on &#39;Refuel&#39; order if the ship had already some fuel. <br>â€¢ Fixed several bugs with Marauder Pirates not being able to steal dropped containers from their targets. <br>â€¢ Fixed several cases resulting in ships getting stuck when following other ships out-of-sector. <br>â€¢ Fixed missing command info for mining drones and for transport drones picking up ware containers. <br>â€¢ Fixed stations complaining when player destroys an ownerless ship. <br>â€¢ Fixed broken game controls after interacting with a trade offer while controlling a drone. <br>â€¢ Fixed aim-at-indicator being displayed incorrectly when remote controlling a drone. <br>â€¢ Fixed rare cases where objects showed incorrect outlines. <br>â€¢ Fixed encyclopedia display of maximum speed for capital ships. <br>â€¢ Beta 3 Fixed player ship sometimes jumping positions when changing zones while flying on autopilot. <br>â€¢ Beta 3 Fixed engine ambient sound volume and pitch not working correctly during autopilot. <br>â€¢ Beta 3 Fixed autopilot stopping when following a ship that changes zones. <br>â€¢ Beta 3 Fixed autopilot continuing when entering a remote-controlled drone. <br>â€¢ Beta 3 Fixed remote controlled missiles not moving while entry animation is running. <br>â€¢ Beta 3 Fixed AI roll rotation in several flight behaviours. <br>â€¢ Beta 3 Fixed small AI ships ramming into the player when boosting in some combat situations. <br>â€¢ Beta 3 Fixed event monitor hints overlapping the &#34;Press F&#34; text on the HUD eventmonitor. <br>â€¢ Beta 3 Fixed capital ships boosting backwards or sideways. <br>â€¢ Beta 3 Fixed broken aim indicator when controlling a drone. <br>â€¢ Beta 3 Fixed station owned in Empire Builder not being able to replace Construction Vessel. <br>â€¢ Beta 3 Fixed plot Construction Vessels being boardable. <br>â€¢ Beta 3 Fixed station managers losing their account when involved in ware exchange trades. <br>â€¢ Beta 3 Fixed ships on autopilot sometimes not accelerating to full speed (e.g. when player ship leaves a highway). <br>â€¢ Beta 3 Fixed player ship getting stuck at the exit of a highway if a menu is open. <br>â€¢ Beta 3 Fixed Xenon fighters being capturable. <br>â€¢ Beta 3 Fixed being able to shoot dumbfire missiles backwards in external view. <br>â€¢ Fixed area damage increasing with lower framerates. <br>â€¢ Fixed issue where a &#39;static&#39; effect remained over the event monitor during the plot. <br>â€¢ Fixed Particle Repeater weapons building up heat slower at higher framerates. <br>â€¢ Fixed player ship not being able to enter highways with an open menu. <br>â€¢ Fixed rare case of missing highway/gate/ship group target elements after starting/loading a game. <br>â€¢ Fixed rare case of non-working input controls after starting/loading a game. <br>â€¢ Fixed interact menu not always being on top of other target elements when using mouse/gamepad controls. <br>â€¢ Fixed current target not always on top of all other target elements. <br>â€¢ Fixed target elements not always on top of other target elements which are further away. <br>â€¢ Fixed rare cases of clicking on a target element actually targeting another object. <br>â€¢ Fixed target elements jumping when interacting with it while controlling a drone. <br>â€¢ Fixed rare cases of crosshair showing weird animations. <br>â€¢ Fixed rare cases of UI issues when switching to/from external and/or drone view. <br>â€¢ Fixed cases where weapon panels showed startup animation in cases other than entering the ship. <br>â€¢ Fixed various trade price discrepancies in menus due to incorrect rounding. <br>â€¢ Enabled radar while remote controlling drones. <br>â€¢ Fixed target elements being visible through the player ship and player drone in external view (new feature in 4.00). <br>â€¢ Fixed aim-at-indicator being displayed in external target view mode (new feature in 4.00). <br>â€¢ Beta 3 Fixed missing target elements when switching from target view to external view (new feature in 4.00). <br>â€¢ Fixed heat damage from engines applying to the ship the engines belong to (new feature in 4.00). <br>â€¢ Beta 3 Fixed heat damage from engines still being applied when engine is wrecked (new feature in 4.00). <br>â€¢ Beta 3 Fixed heat damage from engines not being applied after ship changes zone (new feature in 4.00). <br>â€¢ Fixed incorrect truncation when displaying money in menus (problem introduced in 4.00). <br>â€¢ Beta 3 Fixed case incorrectly allowing player to target objects in external target view (problem introduced in 4.00). <br>â€¢ Beta 3 Fixed black cockpit monitors when undocking from a station/ship while in external view (problem introduced in 4.00). <br>â€¢ Beta 3 Fixed bad flight paths that sometimes could occur when NPCs navigate through areas with dangerous regions (problem introduced in 4.00). <br>â€¢ Beta 3 Fixed occasional graphical flash on entering a highway (problem introduced in 4.00). <br>â€¢ Beta 3 Fixed clothing on some character appearring black (problem introduced in 4.00). <br>â€¢ Fixed game freezing when quitting the game with Alt+F4 while in loading screen. <br>â€¢ Fixed startup issues with corrupted or incorrect DLLs in Windows system directory. <br>â€¢ Fixed several small memory leaks. <br>â€¢ Fixed more causes of crashes. <br>â€¢ Several more small performance and memory optimisations. <br><br>Some other, points that players spotted:<br>â€¢ Beta 2 Added new gates to &#34;unknown systems&#34; in Maelstrom and Albion (potentially DLC-related).<br>â€¢ Beta 2 Added a 2nd Jump Beacon to a zone in DeVries and a zone in Maelstrom.<br>â€¢ Beta 2 Added mission availability to Crystal Castle and Badlands Colony via the Bulletin Board.<br>â€¢ Beta 2 Changed the speed of several L and XL ships (less so than M ships). <br>â€¢ Beta 2 Changed the name for a Manager&#39;s range setting to &#34;Trading Operational Range&#34; for clarity.<br>â€¢ Beta 2 Improved formatting of thousands along the lines of jth&#39;s recent mod. <br>â€¢ Beta 2 Improved organisation of Settings section of the main Options Menu (small but handy to know).<br>â€¢ Beta 2 Fixed the Titurel&#39;s encyclopedia entry to state that it has a top speed of 51 m/s (instead of 70 m/s). <br>â€¢ Beta 2 Fixed missing shield generator coverage over Vulture Jump Tunnel Devices.<br>â€¢ Beta 3 Fixed PLASMA/JET Turrets doing substantially increased damage (problem introduced in 4.00).<br></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13313">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13313">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=3888" class="normal">
+					<img src="/users/avatars/Uploaded/user_3888_avatar.png" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">gmccabe01</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13313">Haven&#39;t played in ages (maybe a year) is it worth re-downloading and giving it a go ?<br>Looking at the logs they haven&#39;t done anything with those horrible faces the women in the game have<br>(I suppose mod in steam workshop will fix that and most other things lol)</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13317">
+		
+			<div class="post_header" style="background-color: #9bffff;">
+				<div style="float: right;" id="post_buttons_13317">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1" class="admin">
+					<img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Roguey</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				<img src="/users/badges/tv/reddwarf-smeg.gif" alt="User Badge">
+				<div class="custom_title"><a href="/users/locations/" style="color: black;"><img src="/users/flags/united-kingdom.gif" alt="flag" style="float: left; margin-left: 4px; border: 0;">United Kingdom</a></div>
+				<div class="custom_title">Please insert pizza!</div>
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13317"><div class="quote">Haven&#39;t played in ages (maybe a year) is it worth re-downloading and giving it a go ?<br>Looking at the logs they haven&#39;t done anything with those horrible faces the women in the game have<br>(I suppose mod in steam workshop will fix that and most other things lol)<br><cite>- gmccabe01</cite></div><br>I dont know to be honest, XR had a lot of problems.<br><br>as for changing the faces, well last time I was in the ego camp (a long time ago), it wasnt possible to do any modelling for XR. Egosoft used a very expensive piece of software to generate the models, which made it impossible for fans to do. Maybe since someone has made a tool to convert them? no idea.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13319">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13319">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13319">There are no compulsory, old, female NPCs so you could simply avoid talking to them if you were interested in trying things out post-release. For example, via selecting male NPCs via the Side Bar.<br><br>Using the TAF! mod could be a good idea in case old, female NPCs started talking while you were placing Trade Agents (although the pauses between Small Talk initiation amongst groups of NPCs is short these days).</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13326">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13326">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1767" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Orbot</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13326">Version 4.00 Beta 4 (204597)<br><br>â€¢ New Feature: Bulletin board system to keep track of offered missions.<br>â€¢ New Feature: Beta 4 Economy logging and statistics (feature now partially functional).<br>â€¢ New Feature: Time acceleration using SETA (feature functional but item not yet available).<br>â€¢ New Feature: Flight School tutorial.<br>â€¢ Added &#39;Fly to position&#39; order selecting a position via map click (Replaces &#39;Fly to Zone&#39; order).<br>â€¢ Beta 4 Added navigation skill influence on effectiveness of AI pilots.<br>â€¢ Beta 4 Added efficiency influence on cooling rate so that some weapons (e.g. Pulsed Maser) don&#39;t stop building up heat when damaged.<br>â€¢ Beta 4 Added mouse look for camera rotation in all external views and in the cockpit (middle mouse button - ability to remap will be added).<br>â€¢ Beta 4 Added new M-sized traders to Republic of Cantera faction.<br>â€¢ Beta 4 Added notification if a player squad drone was lost or killed.<br>â€¢ Beta 4 Added missing ion and plasma resource fields to Maelstrom.<br>â€¢ Beta 4 Added weapon modifications as possible but rare mission rewards (improves feature introduced in 4.00).<br>â€¢ Beta 4 Added BBS functionality to more missions (improves feature introduced in 4.00).<br>â€¢ Added savegame compression.<br>â€¢ Beta 4 Removed legacy shaders.<br>â€¢ Improved small ship AI to use boost in combat situations based on pilot skills.<br>â€¢ Improved behaviour when following mission target using autopilot.<br>â€¢ Improved HUD toggle now toggles more elements and works in more cases. Feedback welcome.<br>â€¢ Improved mouse accuracy in menus.<br>â€¢ Improved station manager logic to better coordinate multiple owned ships.<br>â€¢ Improved FXAA colour-correction.<br>â€¢ Beta 4 Improved balance of pirate wings for easy and normal difficulty.<br>â€¢ Beta 4 Improved auto-aim behaviour when not firing at cursor.<br>â€¢ Beta 4 Improved docking behaviour of ships.<br>â€¢ Beta 4 Improved guided missiles flight behaviour.<br>â€¢ Beta 4 Improved target selection using gamepad controls.<br>â€¢ Beta 4 Improved text quality for smaller fonts in some rare cases.<br>â€¢ Beta 4 Improved readability of target element texts.<br>â€¢ Beta 4 Improved event monitor to show information about environment object in drone mode (improves feature introduced in 4.00).<br>â€¢ Beta 4 Improved cargo capacity of Nyanae traders in Omicron Lyrae slightly (improves feature introduced in 4.00).<br>â€¢ Changed default setting for menu display from &#34;Side Console&#34;-mode to &#34;HUD&#34;-mode.<br>â€¢ Fixed trade ships assigned to stations not respecting their new commander&#39;s subordinate range.<br>â€¢ Fixed being able to issue multiple transfer orders for the same wares when using ware exchange with a station.<br>â€¢ Fixed another scenario that could lead to incorrect amounts of unavailable units.<br>â€¢ Fixed incorrect quantity of bought fuel cells on &#39;Refuel&#39; order if the ship had already some fuel.<br>â€¢ Fixed several bugs with Marauder Pirates not being able to steal dropped containers from their targets.<br>â€¢ Fixed several cases resulting in ships getting stuck when following other ships out-of-sector.<br>â€¢ Fixed missing command info for mining drones and for transport drones picking up ware containers.<br>â€¢ Fixed stations complaining when player destroys an ownerless ship.<br>â€¢ Fixed broken game controls after interacting with a trade offer while controlling a drone.<br>â€¢ Fixed aim-at-indicator being displayed incorrectly when remote controlling a drone.<br>â€¢ Fixed rare cases where objects showed incorrect outlines.<br>â€¢ Fixed encyclopedia display of maximum speed for capital ships.<br>â€¢ Beta 4 Fixed broken jumpdrive not allowing refuel order to be given (still not allowed if jumping required to refuel).<br>â€¢ Beta 4 Fixed garbled text on target elements in Russian localisation.<br>â€¢ Beta 4 Fixed accumulating highway ad signs.<br>â€¢ Beta 4 Fixed calculation error with recommended budget resulting in value sometimes being too high.<br>â€¢ Beta 4 Fixed incorrect flight orientation on AI drones and Xenon fighters.<br>â€¢ Beta 4 Fixed wrong rotation on the mining movement of medium miners.<br>â€¢ Beta 4 Fixed player ship auto-roll when menus are open and the auto-roll option is off.<br>â€¢ Beta 4 Fixed capital ships flying too slowly or getting stuck when avoiding other ships.<br>â€¢ Beta 4 Fixed certain ships not being able to pick up collectables.<br>â€¢ Beta 4 Fixed Active Missions menu getting stuck during tutorial.<br>â€¢ Beta 4 Fixed dark or black loading screen when pressing ESC quickly after starting a new game.<br>â€¢ Beta 4 Fixed player being able to click on invisible UI elements, such as while HUD not displayed.<br>â€¢ Beta 4 Fixed several missions not cleaning up properly.<br>â€¢ Beta 4 Fixed traders having too much reduced scrap metal.<br>â€¢ Beta 4 Fixed hack panel missions telling the player to return to ship when docked.<br>â€¢ Beta 4 Fixed case where jump drive mission would not show mission objective to jump to a jump beacon (problem introduced in 4.00).<br>â€¢ Beta 4 Fixed case where jump drive mission would not end because an objective got stuck (problem introduced in 4.00).<br>â€¢ Beta 4 Fixed problems with the player auto pilot going through jump gates.<br>â€¢ Beta 4 Fixed tumbling highway ships when the player exits highway.<br>â€¢ Beta 4 Fixed production resource consumption not being calculated correctly in rare cases.<br>â€¢ Beta 4 Fixed double &#34;Cr&#34; in logbook messages for money transfer for Fuel Cells.<br>â€¢ Fixed area damage increasing with lower framerates.<br>â€¢ Fixed issue where a &#39;static&#39; effect remained over the event monitor during the plot.<br>â€¢ Fixed Particle Repeater weapons building up heat slower at higher framerates.<br>â€¢ Fixed player ship not being able to enter highways with an open menu.<br>â€¢ Fixed rare case of missing highway/gate/ship group target elements after starting/loading a game.<br>â€¢ Fixed rare case of non-working input controls after starting/loading a game.<br>â€¢ Fixed interact menu not always being on top of other target elements when using mouse/gamepad controls.<br>â€¢ Fixed current target not always on top of all other target elements.<br>â€¢ Fixed target elements not always on top of other target elements which are further away.<br>â€¢ Fixed rare cases of clicking on a target element actually targeting another object.<br>â€¢ Fixed target elements jumping when interacting with it while controlling a drone.<br>â€¢ Fixed rare cases of crosshair showing weird animations.<br>â€¢ Fixed rare cases of UI issues when switching to/from external and/or drone view.<br>â€¢ Fixed cases where weapon panels showed startup animation in cases other than entering the ship.<br>â€¢ Fixed various trade price discrepancies in menus due to incorrect rounding.<br>â€¢ Enabled radar while remote controlling drones.<br>â€¢ Fixed target elements being visible through the player ship and player drone in external view (new feature in 4.00).<br>â€¢ Fixed aim-at-indicator being displayed in external target view mode (new feature in 4.00).<br>â€¢ Beta 4 Fixed game over not showing player ship explosion (improved fix to come).<br>â€¢ Beta 4 Fixed game starting in non-default full-screen resolution when running it for the first time.<br>â€¢ Fixed game freezing when quitting the game with Alt+F4 while in loading screen.<br>â€¢ Fixed startup issues with corrupted or incorrect DLLs in Windows system directory.<br>â€¢ Fixed several small memory leaks.<br>â€¢ Beta 4 Fixed more causes of crashes.<br>â€¢ Beta 4 Several more small performance and memory optimisations.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13327">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13327">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1767" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Orbot</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13327"><div class="quote">as for changing the faces, well last time I was in the ego camp (a long time ago), it wasnt possible to do any modelling for XR. Egosoft used a very expensive piece of software to generate the models, which made it impossible for fans to do. Maybe since someone has made a tool to convert them? no idea.<br><cite>- Roguey</cite></div><br>This is interesting topic. Egosoft has nowadays a graphics designer Lino Thomas who uses open source applications GIMP and Blender. I hope he is able to push Egosoft in a direction that they would switch to 100% open source applications and open formats.<br><br>Valve is pushing openness to PC gaming more and more; Vulkan (open graphics API + open SDK), OpenVR/OSVR (open VR APIs), open platform to play and make games (SteamOS), Blender, etc. No more vendor lock-in technologies (DirectX) and operating systems/versions (Windows/10) but let gamers have a change to choose their platform. It is going to be very interesting year.<br><br>Just for interest - what does it mean to be in some camp? I hope it doesn&#39;t mean this silly &#34;space game war&#34; that has been going on among some gamers.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13387">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13387">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13387">Beta 5 is out. The highlight of which for me being the introduction of multi-select in the Property Owned screen for mass broadcasting of squad assignments and orders.<br><br><div class="quote"><br>â€¢ Beta 5 Added new options to legacy main menu. <br>â€¢ Beta 5 Added NPC population to player owned stations. <br>â€¢ Beta 5 Added indication of unread entries to encyclopedia. <br>â€¢ Beta 5 Added mouse-over tooltips for various conversation options. <br>â€¢ Beta 5 Added option to switch mouse look button to be a toggle rather than having to hold it down. <br>â€¢ Beta 5 Added status report notifications during boarding. <br>â€¢ Beta 5 Added new variation to mission where player must clear an area of explosives. <br>â€¢ Beta 5 Added jump drive and fuel storage to Xenon I. <br>â€¢ Beta 5 Added in-game links to tutorial videos.<br>â€¢ Beta 5 Replaced &#34;Broadcast&#34; order with orders for multiple selected ships in the Property Owned menu. <br>â€¢ Beta 5 Improved gate transitions for capital ships, with better entry positions and a queue system. <br>â€¢ Beta 5 Improved missiles cycling, skipping missiles for which you currently have no ammunition. <br>â€¢ Beta 5 Improved event monitor display when picking up multiple containers in space at the same time. <br>â€¢ Beta 5 Improved SETA, no longer stops when steering and stops less often in highways (new feature in 4.0). <br>â€¢ Beta 5 Improved balancing of NPC ship group sizes in Hard and Very Hard difficulty. <br>â€¢ Beta 5 Improved max skill engineers so they can now repair hull up to 100%. <br>â€¢ Beta 5 Improved balancing of weapon mod statistics (new feature in 4.0). <br>â€¢ Beta 5 Improved weapon mod UI (new feature in 4.0). <br>â€¢ Beta 5 Fixed excessive marine loss when attack strength slightly higher than defence strength. <br>â€¢ Beta 5 Fixed Transfer Wares order not working between small/medium ships and Construction Vessels. <br>â€¢ Beta 5 Fixed very rare cases where target elements were missing or being displayed when they shouldn&#39;t be. <br>â€¢ Beta 5 Fixed missing drone docks on warehouse stations. <br>â€¢ Beta 5 Fixed inconsistent checkbox state on certain menus. <br>â€¢ Beta 5 Fixed double sound effects in certain menus. <br>â€¢ Beta 5 Fixed ship capture chance ignoring hull state. <br>â€¢ Beta 5 Fixed various issues with economy statistics (new feature in 4.0). <br>â€¢ Beta 5 [TTO] Fixed playership being immovable on first game start in very rare situations. <br>â€¢ Beta 5 [HoL] Fixed player-owned warehouses being magically filled with certain wares and configured to trade these when a manager is assigned. <br>â€¢ Beta 5 [HoL] Fixed missing tradeoffer locations on Home of Light builder ships. <br>â€¢ Beta 5 [HoL] Fixed missing dock for m-sized ships on TerraCorp HQ. <br><br><cite>- &#34;CBJ&#34;</cite></div></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13408">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13408">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1767" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Orbot</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13408">Version 4.00 Beta 6<br><br>â€¢ Beta 6 Added axis labels to holomap.<br>â€¢ Beta 6 Added NPC flee and retreat manoeuvres based on skills.<br>â€¢ Beta 6 Added drones launching from stations depending on Defence Officer skills.<br>â€¢ Beta 6 Added revealing of NPC skills when they are hired.<br>â€¢ Beta 6 Added new achievements.<br>â€¢ Beta 6 Added money statistics for employees (improves feature introduced in 4.00).<br>â€¢ Beta 6 [HoL] Added new Generic Mission &#39;Scan Anomaly&#39;.<br>â€¢ Beta 6 [HoL] Added new mission chain in Toride.<br>â€¢ Beta 6 Improved visualization of jumpgate directions.<br>â€¢ Beta 6 Improved quality of local lights.<br>â€¢ Beta 6 Fixed several cases of small ships stuck and not following other ships into Highways.<br>â€¢ Beta 6 Fixed line selection in sector map with many zones.<br>â€¢ Beta 6 Fixed hitting a destroyed lock on a lockbox blowing up the lockbox.<br>â€¢ Beta 6 Fixed some cases of drones flying far away before docking on their launchpads.<br>â€¢ Beta 6 Fixed loading of buy/sell configuration for trade wares from savegame.<br>â€¢ Beta 6 Fixed blending at screen edges with FXAA.<br>â€¢ Beta 6 [HoL] Fixed missing dock for m-sized ships on TerraCorp HQ (completes fix not correctly applied in 4.0 Beta 5).<br>â€¢ Beta 6 Fixed more causes of crashes.<br>â€¢ Beta 6 Several more small performance and memory optimisations. </span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13431">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13431">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13431">A couple of further updates have been released:<br><br>2016-01-26<br><div class="quote">â€¢ Beta 6 Hotfix 1 Fixed case of production not progressing to next possible item if current item is blocked. <br>â€¢ Beta 6 Hotfix 1 Fixed drone resource cost (problem introduced in 4.0). <br>â€¢ Beta 6 Hotfix 1 Fixed upgrade resource calculation (problem introduced in 4.0). <br>â€¢ Beta 6 Hotfix 1 Fixed multi-sell on small ship trade (new feature in 4.0). <br>â€¢ Beta 6 Hotfix 1 Fixed Weaponsmith achievement (new feature in 4.0). <br>â€¢ Beta 6 Hotfix 1 Fixed partial wrecking of certain ships. <br><cite>- &#34;CBJ&#34;</cite></div><br>2016-02-03<br><div class="quote"><br>â€¢ Beta 7 Removed restriction on number of entries in station shopping lists. <br>â€¢ Beta 7 Improved station drone launching. <br>â€¢ Beta 7 Improved mission reward balancing. <br>â€¢ Beta 7 Improved AI pathing. <br>â€¢ Beta 7 [HoL] Improved Toride mission chain.<br>â€¢ Beta 7 Fixed cases of ships fleeing while docking or executing trades. <br>â€¢ Beta 7 Fixed target loss and failure to target in certain cases. <br>â€¢ Beta 7 Fixed ships being able to rotate with all engines destroyed. <br>â€¢ Beta 7 Fixed incorrect mass-traffic for Xenon station. <br>â€¢ Beta 7 Fixed stuck ships at highway entrances. <br>â€¢ Beta 7 Fixed problems with station supply delivery. <br>â€¢ Beta 7 Fixed stations warning the player when attacking an ownerless ships. <br>â€¢ Beta 7 Fixed several cases of small and capital escort ships not shooting or being stuck. <br>â€¢ Beta 7 Fixed several cases of capital ships not boosting flying between zones. <br>â€¢ Beta 7 Fixed capital navigation issues due to bad alignment to the boosting orientation. <br>â€¢ Beta 7 Fixed cases where ships cross jump gates and only use them after turning back. <br>â€¢ Beta 7 Fixed some cases of capital ships not defending themselves when being attacked. <br>â€¢ Beta 7 Fixed some cases of mining ships not collecting tagged asteroids on Mining mode. <br>â€¢ Beta 7 Fixed hacked ships still being able to use their jump drive. <br>â€¢ Beta 7 Fixed several cases of ships being invisible, or appearing and disappearing (problem introduced in 4.00). <br>â€¢ Beta 7 Fixed issue with activating auto pilot from a menu while near a large object. <br>â€¢ Beta 7 Fixed pre-selected line in menus not being on-screen in all situations. <br>â€¢ Beta 7 Fixed mouse steering being active initially when starting a game in some cases. <br>â€¢ Beta 7 Fixed text overlapping mission objective bar. <br>â€¢ Beta 7 Fixed muffled exterior sounds after loading a savegame while on a platform without quitting to main menu. <br>â€¢ Beta 7 [HoL] Fixed new HoL weapons not being taken into account for Pimp My Ride achievement. <br>â€¢ Beta 7 [OSX] Fixed ship repairs not working.<br><cite>- &#34;CBJ&#34;</cite></div></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13432">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13432">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1335" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">birdtable</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13432">To those who have already bought the game maybe you should re-download if only for a relevant opinion, good or bad...I play both ELITE and REBIRTH ... Neither perfect, but one offers more variation <img src="/forum/images/smilies/smile.gif" alt="Smile"> </span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+			<div style="width: 100%; text-align: center; font-size: 10pt;">&laquo; Previous
+ | <b>Page:</b> <b class="page_box_on">1</b>
+<a href="viewtopic.php?id=1466&amp;p=2" class="page_box_off">2</a>
+<a href="viewtopic.php?id=1466&amp;p=3" class="page_box_off">3</a>
+ | <a href="viewtopic.php?id=1466&amp;p=2">Next &raquo;</a>
+</div>
+			
+			<br style="clear: both;"><br>
+	<b>You need to log-in to post here.</b><br>
+
+
+			<script src="/modules/syntaxhighlight.js"></script>
+
+			<script>FmtCodeBlocks();</script>
+			
+			<script>
+				// store when editing
+				var old_buttons 	= new Array();
+				var http_edit		= new XMLHttpRequest();
+				
+				function inline_editor(obj_type, obj_id, page)
+				{
+					
+					// store if not set
+					if (old_buttons[obj_id] == null)
+					{
+						old_buttons[obj_id] = document.getElementById('post_buttons_'+obj_id).innerHTML;
+						
+						document.getElementById('post_buttons_'+obj_id).innerHTML	= '';
+						
+						// get UBB code from database
+						http_edit.open('GET', '/forum/ajax/get_post.php?obj_type='+obj_type+'&obj_id='+obj_id, true);
+						http_edit.onreadystatechange=function() 
+						{
+							if ( (http_edit.readyState == 4) && (http_edit.status==200) )
+							{
+								// add support for the old type of editing (not inline)							
+								document.getElementById('post_msg_'+obj_id).innerHTML = '<textarea style="width: 100%; height: 250px;" id="post_editor_'+obj_id+'">'+http_edit.responseText+'</textarea><br><div style="float: right;"><a href="./edit.php?obj_type='+obj_type+'&amp;obj_id='+obj_id+'&amp;p='+page+'" class="smalllink">&raquo; full editor</a></div><input type="button" value="Update post" style="padding: 12px;" onclick="inline_save(\''+obj_type+'\', '+obj_id+', '+page+');">';
+							} 
+						}
+						
+						http_edit.send(null);
+					}
+				}
+	
+				
+				function inline_save(obj_type, obj_id, page)
+				{
+					
+					// fix for & in post data string
+					var postdata		= 	'message='+encodeURIComponent(document.getElementById('post_editor_'+obj_id).value)+
+											'&obj_id='+obj_id+'&obj_type='+obj_type;
+		
+					// open up
+					http_edit.open('POST', './ajax/update_post.php', true);
+					
+					//Send the proper header information along with the request
+					http_edit.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+				
+					http_edit.onreadystatechange=function()  
+					{
+					
+						if( (http_edit.readyState == 4) && (http_edit.status==200) )
+						{
+							document.getElementById('post_msg_'+obj_id).innerHTML  = http_edit.responseText;
+						}
+					}
+					
+					// send
+					http_edit.send(postdata);
+					
+					// change the buttons back
+					document.getElementById('post_buttons_'+obj_id).innerHTML 	= old_buttons[obj_id];
+					
+					// clear
+					old_buttons[obj_id] = null;
+				}
+				
+			</script>
+<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00441 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

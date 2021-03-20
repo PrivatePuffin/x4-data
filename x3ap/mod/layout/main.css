@@ -1,0 +1,147 @@
+/* ----------------------- */
+/* Main styles		   */
+/* ----------------------- */
+
+
+.page-header
+{
+	background-image: url('/x3ap/mod/images/header2.jpg');
+	background-size: cover;
+}
+
+/* ----------------------- */
+/* Standard HTML tags      */
+/* ----------------------- */
+
+h1, h2, h3
+{
+	color: #3BAE2F;
+}
+
+
+/* ----------------------- */
+/* Forum Board		  */
+/* ----------------------- */
+
+.board_table
+{
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse:collapse;
+}
+
+.board_table th
+{
+	border-top: 2px solid #C4D6C4;
+	border-bottom: 2px solid #C4D6C4;
+
+	background-color: #E5EFE5;
+}
+
+.board_table tr.hover:hover
+{
+	background-color: #F4F8F4;
+}
+
+.subheader
+{
+	width: 98%; 
+	background-color: #F0FFF0; 
+	text-align: right; 
+	padding: 5px 8px;
+}
+
+.minorheader
+{
+	width: 98%; 
+	background-color: #E5EFE5; 
+	text-align: right; 
+	padding: 5px 8px;
+}
+
+/* ----------------------- */
+/* Link styles             */
+/* ----------------------- */
+
+a:link, a:visited, a:active 
+{
+	font-weight: normal;
+	COLOR: #679367;
+	text-decoration:none;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+
+a:hover 
+{
+	font-weight: normal;
+	color: #679367;
+	text-decoration: underline;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+}
+
+a:link.smalllink, a:visited.smalllink, a:active.smalllink 
+{
+	font-weight: normal;
+	font-size: 9pt;
+	COLOR: #679367;
+	TEXT-DECORATION: underline;
+}
+
+a:hover.smalllink 
+{
+	text-decoration: none;
+}
+
+a:link.colourlink, a:visited.colourlink, a:active.colourlink 
+{
+	font-weight: normal;
+	COLOR: #A7B647;
+	TEXT-DECORATION: none;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+a:hover.colourlink
+{
+	font-weight: normal;
+	COLOR: #A7B647;
+	text-decoration: underline;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+/* ----------------------- */
+/* Buttons
+/* ----------------------- */
+
+input.small_button
+{
+
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+
+	padding: 2px 10px;
+
+
+	background: -moz-linear-gradient(top, #4EAA3C 0%, #60C24C);
+	background: -webkit-gradient(linear, left top, left bottom, from(#4EAA3C),to(#60C24C));
+	background-color: #4EAA3C;
+
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 1px solid #ffffff;
+}
+
+input.small_button:hover
+{
+	background: -moz-linear-gradient(top, #5EC143 0%, #7CCD69);
+	background: -webkit-gradient(linear, left top, left bottom, from(#5EC143),to(#7CCD69));
+	background-color: #5EC143;
+}
+
+/* ----------------------- */

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=15">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 15 of 16)</span></h1><br>
+	
+		<h2>Getting bing.com to crawl!</h2>
+
+
+		<div class="pad">
+			We get very few visitors from bing.com, something like 1-3 a day while google.com is sending 100&#039;s. I guess its because google has around 14,000 pages in its index vs bing&#039;s 900&#039;ish. I have resubmited the sitemaps to bing (some were missing). <br><br>Take a look at these stats, they are terrible:<br><br><center><a href="/blogs/images/user_1/large/pic_4.jpg"><img src="/blogs/images/user_1/large/pic_4.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>Compare them against google (showing just x3.roguey.co.uk)<br><br> <center><a href="/blogs/images/user_1/large/pic_5.jpg"><img src="/blogs/images/user_1/large/pic_5.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center> <br><br><b>Or</b> x3t.roguey.co.uk<br><br> <center><a href="/blogs/images/user_1/large/pic_6.jpg"><img src="/blogs/images/user_1/large/pic_6.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center> 
+			... <a href="/blogs/roguey/blog-10.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 20th February, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-10.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 3 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-10.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>The Art of Technology</h2>
+
+
+		<div class="pad">
+			Today, searching through my emails find out that Facejacker&#039;s - Brian Badonde has made some technology videos for bing.com. If your not familiar with Facejacker, the best way to explain it is that one guy plays the roles many <i>interesting</i> characters, one of which is Brian Badonde (an fictional art critic). In the <i>The Art of Technology</i> he explores technology.<br><br><center><a href="/blogs/images/user_1/large/pic_2.jpg"><img src="/blogs/images/user_1/large/pic_2.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>I recommend a watch!<br>- <a href="http://video.uk.msn.com/browse/brianbadonde" target="_blank">The Art of Technology</a>
+			... <a href="/blogs/roguey/blog-9.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 11th February, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-9.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-9.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Firefox and hotmail freezing</h2>
+
+
+		<div class="pad">
+			For me, it seems hotmail and firefox are not getting on well. Every so often things keep freezing. The freeze causes the whole computer to freeze just for a few seconds. This has only happen recently, so I guess its something to do with the new updates in hotmail? <br> <center><a href="/blogs/images/user_1/large/pic_1.jpg"><img src="/blogs/images/user_1/large/pic_1.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center>
+			... <a href="/blogs/roguey/blog-8.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Wednesday 9th February, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-8.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-8.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3 &#187; supid fire nova</h2>
+
+
+		<div class="pad">
+			i would just like to retell my first death becuase it&#039;s BS!<br><br>so i&#039;m flying along, harassing freighters, having a good time, when i get like 4 missiles fired at me out of nowhere. next thing i know i&#039;m under attack by a nova mk1 and an escort of split scorpions(m4 i think). no big deal, i take out the escorts, and then toy around with the nova for a little while, hopeing to cap it, when i get more HEPT fire from the back. so now there&#039;s a fire nova on me to, and here&#039;s where it gets interesting. as soon as i get him locked in, to deal with this guy  <b>he runs into me</b>, and i die of course.<br><br>GAYYYY!!!
+			... <a href="/blogs/jacer08/blog-5.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/jacer08/"><b>jacer08</b></a></b> on Monday 7th February, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/jacer08/blog-5.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/jacer08/blog-5.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>PS3 &#187; I hate miss-able trophies</h2>
+
+
+		<div class="pad">
+			I really hate PS3 games that have lots miss-able trophies, it forces you to look stuff up and always be on alert. For me it can stop me from enjoying a game as much. I think in most games you should be able to complete the missed stuff after you have completed the game. Sometimes miss-able trophies arent too bad, like if the game offers a second path of events such as Infamous. In Infamous you could choose to play as good or bad with different side-effects. However simply missing a trophy because you didnt know you had to completed a quest in set time-frame sucks.
+			... <a href="/blogs/roguey/blog-6.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 7th February, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-6.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-6.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>recession over</h2>
+
+
+		<div class="pad">
+			so i took a break from playing X3 for a while. partly because my game kept crashing, and partly so i could finish dragon age - origins awakening. i killed some darkspawn, and now i&#039;m ready to come back and kill some shit with my reaper of death, a.k.a Khaak M3 lol.
+			... <a href="/blogs/jacer08/blog-7.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/jacer08/"><b>jacer08</b></a></b> on Monday 7th February, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/jacer08/blog-7.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/jacer08/blog-7.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3 &#187; starting fresh</h2>
+
+
+		<div class="pad">
+			about to start a new Khaak game in V3.3(beta) of rougey&#039;s mod. i&#039;ve reinstalled X3 from steam, so that i have a fresh game directory to run the mod. the only thing other than the game, is the egosoft bonus pack, which shouldn&#039;t cause any problems.<br><br>unfortunately it&#039;s getting late so i probably won&#039;t play much tonight.
+			... <a href="/blogs/jacer08/blog-4.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/jacer08/"><b>jacer08</b></a></b> on Sunday 6th February, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/jacer08/blog-4.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/jacer08/blog-4.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>markosweb.com broken?</h2>
+
+
+		<div class="pad">
+			Over the past few weeks I have wanted to update my profile on markosweb.com. However in the account section, I just see the following:<br><br><div class="code">Update in progress<br>You have requested statistic update 2 months ago.<br>Your request is 1203th in queue.<br>Estimate update time: 11 hours<br>Thank you for patience</div><br>I have tried to contact them but with no reply. Im guessing the site wont be fixed <img src="/forum/images/smilies/icon_cry.gif" alt="Cry"><br><br>[update] I logged in and could update my site. I dont know if it was reset because of my message or not.
+			... <a href="/blogs/roguey/blog-3.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 31st January, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-3.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 2 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-3.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=14">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<b class="page_box_on">15</b>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=16">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0051 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

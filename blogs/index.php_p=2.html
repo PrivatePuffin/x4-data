@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=2">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 2 of 16)</span></h1><br>
+	
+		<h2>New architecture or not..</h2>
+
+
+		<div class="pad">
+			During the past couple of months ive been following both nvidia and AMD new GPU architecture (Pascal/Polaris). Ive been running a 4k setup since Christmas and my single 980ti was struggling (often seeing 30-40fps). So I wanted to improve on that.<br><br>The first of the two - Pascal came out just over a month ago. I was excited at first - as I thought the new architecture should be a huge leap forward. We been stuck on a 28nm manufacturing process for long time - which has made some gpu&#039;s get pretty big (and costly to make). So with nvidia new 16nm manufacturing process; the chip could be much smaller, faster and maybe even a lower price. So after nvidia press event, I saw an MRRP of $699. Id hope this would translate into around £400
+			... <a href="/blogs/roguey/blog-115.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 1st July, 2016 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-115.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 7 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-115.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>I can Bailey believe it - update on Overclockers</h2>
+
+
+		<div class="pad">
+			During the past week or two, you may I read about the troubles I had with my Zotac 980Ti AMP, if not seen it, look <a href="/blogs/roguey/blog-113.html" target="_blank">here</a> – no need to repost. At the end of the situation I felt I had to take matters into my own hands, which I knew might void the warranty - something I didn’t want to do (but felt I had little choice). So I left a pretty bad review for Overclockers.co.uk, thinking that was that.<br><br>After doing so, James Bailey (the Returns Manager) contacted me and wanted to sort the problem out – he wasn&#039;t happy seeing my low review. It&#039;s not something I wanted to do either - I would much prefer to post when a company does sometimes good. I don&#039;t normally post reviews, as feel you
+			... <a href="/blogs/roguey/blog-114.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 22nd April, 2016 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-114.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-114.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Stay away from Zotac cards</h2>
+
+
+		<div class="pad">
+			Awhile back, you may have seen that I brought a new <b>Zotac 980 Ti Amp</b>. Before purchasing the card I did a lot of research to work out which one I should buy. In the end it came down to price and 5 year warranty. I wish I would of picked another brand now.<br><br><center><a href="/blogs/images/user_1/large/pic_92.jpg"><img src="/blogs/images/user_1/large/pic_92.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>Before Christmas, I had the card running at 1080p. 1080p doesnt put much stress on the card, as 60fps isnt hard for a card of this power. For a Christmas present I got a 4k screen, which meant increasing the resolution to 4k. This is when I noticed some big problems.<br><br>Immediately the card got a lot louder, from barely audible to the loudest part in the PC. If you ever got 3 high speed fans and turned them up to their maximum you may get the idea; I
+			... <a href="/blogs/roguey/blog-113.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Saturday 9th April, 2016 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-113.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 2 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-113.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>something    new</h2>
+
+
+		<div class="pad">
+			 Hi    you  know  me  as   scott, been playing   xgames   for  awhile. Got tired and been here lot  about  this  game.  Steam  had  it  on  sale for   like  20.00   and well as a cheap  guy  i finally   got  it.  Took a few tries  to  figure it  out. La d  was  the  hardest  but   finally   got  it   down     i think.    Any  how      I finally   started to figure  somethings  out.  Ut  please offer  any  tips  sugestion   etc  yawl  feel  I  can  use, which is  any.     I flying  a fed  dropship, before thag a asp  exore  cobra 3  viper  ,adder  eagel  and  of  course a sidewinder.    Want a pytbon  gettingtherr.      I am  combat   expert  trader  and   scout  in  rating.    Been here that  resare good  places to  make  cash  . Have made
+			... <a href="/blogs/scott/blog-112.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/scott/"><b>Scott</b></a></b> on Saturday 13th February, 2016 &nbsp; &middot; &nbsp;
+			<a href="/blogs/scott/blog-112.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/scott/blog-112.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; Reaching a billionaire</h2>
+
+
+		<div class="pad">
+			I know its been awhile since my last Elite: Dangerous blog; back in September when I reached the combat rank of Elite. However its been relativity quiet in Elite for me. The reason is that ive been working on my trade-rank, which has you can imagine is a grind. For this ive been using one of two trade routes, either; <a href="/elite-dangerous/trade-helper/mk2/index.php?s1id=bestii&amp;s2id=ltt8517" target="_blank">Bestii to LTT 8517</a> or <a href="/elite-dangerous/trade-helper/mk2/index.php?s1id=karid&amp;s2id=orang" target="_blank">Karid to Orang</a> - both routes have their advantages and disadvantages (the Karid being faster but with less profit, whilst the Bestii run being slower but makes more profit). Sometimes its worth switching between the two because other players
+			... <a href="/blogs/roguey/blog-111.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 8th November, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-111.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-111.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Reinforcements have arrived</h2>
+
+
+		<div class="pad">
+			Awhile back you may of read that I upgraded my PC from an 2600k to an 5820k. I looked seriously at the 6700k, but for me having 2 real extra cores was better (4x 4.2 vs 6x 3.6ghz). I dont know how things will go with gaming etc. but from past experience the extra cores tend to get used later on (and I do some encoding work from time to time). I also thought my 5820k will overclock (if need be), and ive reached 3.8ghz with 1.0v - I know thats not much of an overclock but I tend to want to keep the noise level low (1.0v is stock voltage). Higher voltages produce more heat and harder my AIO has to work to keep it cool, without louder fan noise. The H110i can get rid of it but ideally I want it to be very quiet. Im a bit of a silence freak to
+			... <a href="/blogs/roguey/blog-110.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Tuesday 27th October, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-110.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-110.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Upgrading to an 5820k</h2>
+
+
+		<div class="pad">
+			A little bit ago, a family member made a decision that they wanted to use a PC for next gen games instead of going down the console path (I think it was the right decision). This was influenced because their copy of Windows 7 couldnt be upgraded on their current pc (AMD X2 3800+), as the cpu didnt support CMPXCHG16B. So I did some research and found out that the cheapest I could put something together was around £400 mark (motherboard, cpu and ram). When comparing the stats to my 2600k (which is 4 years old), I saw only a 7% difference in performance (so pretty much getting something similar). So I started to wonder how much it would take to upgrade mine, so would also get an upgrade. Of-course I was more keen on this path (obvious
+			... <a href="/blogs/roguey/blog-109.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Wednesday 30th September, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-109.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-109.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; An Elite Roguey</h2>
+
+
+		<div class="pad">
+			Its been nearly 2 months since my promotion to Deadly in Elite: Dangerous. When I got Deadly, I moved my focus onto trading - as it felt like it would be a long journey and I was only at the start of it. Every so often I did a bit combat - pushing up my progress by a couple of percentage every now and then. <br><br>However in the past week or so, my turned my focus back onto fighting. I knew there be a bank holiday, so I would have some more time to push on with the rank. <br><br>Progress was slow at first, getting around 5% progress a day until I started to refine things. I learnt the best place to farm the kills was at <i>high resource extraction sites</i> (H-RES), but there were 3 different spawns;<br><br>- One with small ships (Eagles, Cobras,
+			... <a href="/blogs/roguey/blog-108.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Tuesday 1st September, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-108.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-108.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=1">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<b class="page_box_on">2</b>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=3">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0048 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

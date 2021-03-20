@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>How to use a Fuel-Scoop - Elite &amp; Dangerous Roguey</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="fuel, scooping, how to, help, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/elite-dangerous/help/fuel-scoop/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="How to use a Fuel-Scoop">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/elite-dangerous/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/elite-dangerous/"><img src="/elite-dangerous/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #A98135;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #A98135;">
+				<li class="icon" style="background-color: #A98135">&nbsp;</li><li><a href="/elite-dangerous/">News</a></li><li><a href="/elite-dangerous/help/">Help / Guides</a></li><li><a href="/elite-dangerous/trade-helper/">Trade Helper</a></li><li><a href="/elite-dangerous/ships/">Ships</a></li><li><a href="/elite-dangerous/ship-builds/">Builds</a></li><li><a href="/elite-dangerous/universe/">Universe</a></li><li><a href="/elite-dangerous/equipment/">Equipment</a></li><li><a href="/elite-dangerous/engineers/">Engineers</a></li><li><a href="/elite-dangerous/commanders/">Commanders</a></li><li><a href="/elite-dangerous/powers/">Powers</a></li><li><a href="/elite-dangerous/fleet-carriers/">Fleet Carriers</a></li><li><a href="/elite-dangerous/wares/">Wares</a></li><li><a href="/elite-dangerous/videos/">Videos</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=36">Forum</a></li><li><a href="/elite-dangerous/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>What are Fuel-Scoops?</h1><br>
+
+		<div class="vnavbar-div">
+			<div id="vnavbar">
+				<ul id="v_tabs">
+					<li><a href="/elite-dangerous/help/">Help section</a></li>
+					
+					<li><a href="/elite-dangerous/help/beginners/">Beginners guide</a></li>
+					<li><a href="/elite-dangerous/help/ui/">User Interface</a></li>
+					<li><a href="/elite-dangerous/help/navigate/">Navigating space</a></li>
+					<li><a href="/elite-dangerous/help/docking/">How to dock</a></li>
+					<li><a href="/elite-dangerous/help/trade/">How to trade</a></li>
+					<li><a href="/elite-dangerous/help/ship-upgrade/">Upgrading your ship</a></li>
+					<li><a href="/elite-dangerous/help/weapons/">Weapon guide</a></li>
+
+					<li><a href="/elite-dangerous/help/power/">Managing power</a></li>
+					<li><a href="/elite-dangerous/help/uss/">Unidentified signal sources (USS)</a></li>
+					<li><a href="/elite-dangerous/help/res/">Resource Extraction Sites (RES)</a></li>
+					<li><a href="/elite-dangerous/help/fuel-scoop/">What are Fuel-Scoops?</a></li>
+					<li><a href="/elite-dangerous/help/exploration/">Exploration guide</a></li>
+					<li><a href="/elite-dangerous/help/smuggling-goods/">Smuggling goods</a></li>
+					
+					<li><a href="/elite-dangerous/help/land-on-base/">How to land on a base</a></li>
+					<li><a href="/elite-dangerous/help/driving-around/">Driving around</a></li>
+					<li><a href="/elite-dangerous/help/finding-materials-poi/">Finding materials/POI's</a></li>
+			
+					<li><a href="/elite-dangerous/engineers/">The Engineers</a></li>
+
+					<li><a href="/elite-dangerous/help/passenger-missions/">Passenger missions</a> </li>
+					<li><a href="/elite-dangerous/help/ship-launched-fighters/">Ship launched fighters</a></li>
+					<li><a href="/elite-dangerous/help/ship-transfer/">Ship transfer</a></li>
+
+					<li><a href="/elite-dangerous/help/multi-crew/">Multi-crew</a></li>
+					<li><a href="/elite-dangerous/fleet-carriers/">Fleet carriers</a></li>
+					
+					<li><a href="/elite-dangerous/help/ranks/">List of ranks</a></li>
+					
+					<li><a href="/elite-dangerous/trade-helper/">Trade-helper</a></li>
+					<li><a href="/elite-dangerous/ships/">Ship list</a></li>
+					<li><a href="/elite-dangerous/equipment/">Equipment list</a></li>
+					<li><a href="/elite-dangerous/trade-helper/rare-goods/">Rare goods</a></li>
+
+					<li><a href="/elite-dangerous/help/weapon-compare/">Weapon compare</a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="vnavbar-content">
+	
+				<script>
+				
+				var which_tab		= 11;
+				var nav_tabs 		= document.getElementById('v_tabs').getElementsByTagName('li'); 
+
+				// toggle the sub-nav tabs
+				for (var i=0; i < nav_tabs.length; i++)
+				{
+					if (which_tab == i)
+						nav_tabs[i].className = 'tabon';
+					else
+						nav_tabs[i].className = 'taboff';
+				}			
+				</script>
+		<iframe width="1024" height="576" src="//www.youtube.com/embed//bjZAy9BpuDE" frameborder="0" allowfullscreen></iframe>
+		<br><br>
+		
+		From time to time, you may want to travel over a large distance - maybe to explore something.
+		However being forced to land every so-often (to refuel), slows you down. 
+		However with a Fuel-Scoop you can refuel your ship without having to land.
+		<br><br>
+		
+		Obliviously you will need to equip a Fuel-Scoop. These can be brought from many stations, for not much money.
+		Nothing else is required.
+		<br><br>
+		
+		Once installed, your be able to refuel your ship. Simply after warping between stars, loose all your speed (but remain in fast-travel).
+		Now creep forward little by little (increasing your speed, then zero'ing it - I binded 0% speed to Backspace, same button I pressed after wrapping).
+		Once close enough you should see two bars come up;
+		<br><br>
+		
+		<img src="./images/taking-fuel.jpg" alt="Refuelling your ship">
+		<br><br>
+		
+		This means you are now refuelling your ship. The top bar show you how hot your ship is (try and keep it under 100%), 
+		how much fuel we are taking. Keep creeping forward until you reach around 70-80% maximum heat level, then stop.
+		Depending on your fuel-scoop, it may take a few moments to refill your tank. You can not refuel on <i>dead stars</i>.
+		If you get too close to a sun, you will burn yourself up. So approach a suns slowly.
+		<br><br>			
+
+	</div>
+	
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00072 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

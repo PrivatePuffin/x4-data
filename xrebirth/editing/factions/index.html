@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Understanding factions - Roguey's X Rebirth site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="understanding factions - roguey's x rebirth site, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/xrebirth/editing/factions/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Understanding factions">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/xrebirth/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/xrebirth/"><img src="/xrebirth/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #6F9F6F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #6F9F6F;">
+				<li class="icon" style="background-color: #6F9F6F">&nbsp;</li><li><a href="/xrebirth/">News</a></li><li><a href="/xrebirth/pictures/">Pictures</a></li><li><a href="/xrebirth/videos/">Videos</a></li><li><a href="/xrebirth/help/">Help / Guides</a></li><li><a href="/xrebirth/ships/">Ships</a></li><li><a href="/xrebirth/universe/">Maps</a></li><li><a href="/xrebirth/statistics/">Statistics</a></li><li><a href="/xrebirth/stations/">Stations</a></li><li><a href="/xrebirth/wares/">Wares</a></li><li><a href="/xrebirth/teladi-outpost/">Teladi Outpost</a></li><li><a href="/xrebirth/home-of-light/">Home of Light</a></li><li><a href="/xrebirth/editing/">Editing</a></li><li><a href="/xrebirth/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=20">Forum</a></li><li><a href="/xrebirth/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Understanding factions</h1>
+
+	This should be another easy file to understand, as once again we will editing one file, 
+	this time; <b>factions.xml</b> in <i>libraries</i> folder of the dat/cat's.
+	<br><br>
+
+	Now open the file with your editor, and you should see something like:
+	<br><br>
+
+	<div class="code">
+		&nbsp;&lt;faction id="plutarch" name="{20203,201}" description="{20203,202}" primaryrace="argon" behaviourset="default" known="1" tags="police protective"&gt;<br>
+		&nbsp;&nbsp;&lt;icon active="faction_plutarch" inactive="faction_plutarch" /&gt;<br>
+		&nbsp;&nbsp;&lt;licences&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;licence type="hazardousmaterials" name="{20207,1401}" description="{20207,1402}" icon="licence_hazardmats" minrelation="0.1" price="1300" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;licence type="intelligence" name="{20207,1301}" description="{20207,1302}" icon="licence_intelligence" minrelation="0.75" price="5200" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;licence type="intoxicants" name="{20207,1501}" description="{20207,1502}" icon="licence_intoxicants" minrelation="0.2" price="2100" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;licence type="military" name="{20207,1201}" description="{20207,1202}" icon="licence_military" minrelation="0.5" price="3800" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;licence type="pharmaceuticals" name="{20207,1601}" description="{20207,1602}" icon="licence_pharma" minrelation="0.2" price="2600" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;licence type="police" name="{20207,1101}" description="{20207,1102}" icon="licence_police" minrelation="0.35" price="3400" maxlegalscan="3" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;licence type="protectedspecies" name="{20207,1701}" description="{20207,1702}" icon="licence_protect" minrelation="0.1" price="1700" /&gt;<br>
+		&nbsp;&nbsp;&lt;/licences&gt;<br>
+		&nbsp;&nbsp;&lt;relations&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="albionenergy" relation="0.2" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="argongovernment" relation="-0.1" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="beryll" relation="0.3" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="canteran" relation="-0.1" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="criminal" relation="-0.8" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="enemy" relation="-0.8" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="familyryak" relation="-0.1" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="friend" relation="0.8" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="heartofalbion" relation="-0.1" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="hereticvanguards" relation="-0.8" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="leddaindustrial" relation="-0.1" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="nolimits" relation="-0.1" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="reivers" relation="-0.6" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="smuggler" relation="-0.4" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="sovereignsyndicate" relation="-0.8" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="wholesomefoods" relation="0.1" /&gt;<br>
+		&nbsp;&nbsp;&nbsp;&lt;relation faction="xenon" relation="-0.8" /&gt;<br>
+		&nbsp;&nbsp;&lt;/relations&gt;<br>
+		&nbsp;&lt;/faction&gt;
+	</div>
+
+
+
+	<br><br>
+	Now let's break-down the file. 
+	<br><br>
+
+	<h2>First line</h2>
+	The first line of a faction object defines the basic things for the faction. ie.
+	<br><br>
+
+	<div class="code">&nbsp;&lt;faction id="plutarch" name="{20203,201}" description="{20203,202}" primaryrace="argon" behaviourset="default" known="1" tags="police protective"&gt;<br></div>
+	<br><br>
+
+	<table class="board_table">
+	<tr>
+		<th>Item</th>
+		<th>Desc.</th>
+	</tr>
+	<tr>
+		<td>id="plutarch"</td>
+		<td>Used by the game to reference the faction.</td>
+	</tr>
+	<tr>
+		<td>name="{20203,201}"</td>
+		<td>The name of the faction, from the language files; page 20203, id 201.</td>
+	</tr>
+	<tr>
+		<td>description="{20203,202}"</td>
+		<td>The description of the faction, from the language files; page 20203, id 202.</td>
+	</tr>
+	<tr>
+		<td>primaryrace="argon"</td>
+		<td>The default race for this faction, ie. Argon, Boron etc..</td>
+	</tr>
+	<tr>
+		<td>behaviourset="default"</td>
+		<td><i>Unknown at this time</i></td>
+	</tr>
+	<tr>
+		<td>tags="police protective"</td>
+		<td><i>Unknown at this time</i></td>
+	</tr>
+	</table>
+	<br>
+
+	<h2>Licences</h2>
+	Now the the next thing will be licences. Not all factions have licences, but for those who do, here is another break-down:
+	<br><br>
+
+	<div class="code">&lt;licence type="hazardousmaterials" name="{20207,1401}" description="{20207,1402}" icon="licence_hazardmats" minrelation="0.1" price="1300" /&gt;</div>
+	<br><br>
+
+	<table class="board_table">
+	<tr>
+		<th>Item</th>
+		<th>Desc.</th>
+	</tr>
+	<tr>
+		<td>type="hazardousmaterials"</td>
+		<td>Defines the game-name licence, used in wares.xml</td>
+	</tr>
+	<tr>
+		<td>name="{20203,201}"</td>
+		<td>The name of the licence, from the language files; page 20207, id 1401.</td>
+	</tr>
+	<tr>
+		<td>description="{20203,202}"</td>
+		<td>The description of the faction, from the language files; page 20207, id 1402.</td>
+	</tr>
+	<tr>
+		<td>icon="licence_hazardmats"</td>
+		<td>The icon for this faction, defined in <i>icons.xml</i>.</td>
+	</tr>
+	<tr>
+		<td>minrelation="0.1"</td>
+		<td>The required good-will before you can buy the licence</td>
+	</tr>
+	<tr>
+		<td>price="1300"</td>
+		<td>The price of the licence</td>
+	</tr>
+	</table>
+	<br>
+
+	<h2>Relations</h2>
+	In this section the factions relations are defined, ie. if they are hostile or not to another faction.
+	<br><br>
+
+	<div class="code">&lt;faction="xenon" relation="-0.8"&gt; </div>
+	<br><br>
+
+	The first value is the name of the faction (found else-where in the file).
+	Whist the <i>relation</i> defines if they are hostile or not. -3 being hostile, +3 being allies.
+	<br><br>
+
+	<script src="/modules/syntaxhighlight.js"></script>
+	<script>FmtCodeBlocks();</script>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00062 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

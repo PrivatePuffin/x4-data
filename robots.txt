@@ -1,0 +1,14 @@
+User-agent: Googlebot-Image
+Disallow: / 
+User-agent: psbot
+Disallow: /
+
+
+User-agent: *
+Disallow: /admin/
+Disallow: /misc/
+Disallow: /console/admin/
+Disallow: /ammo/admin/
+
+Sitemap: http://roguey.co.uk/sitemap.xml
+

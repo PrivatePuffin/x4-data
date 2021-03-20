@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Missile guide (Page 1 of 8) - Roguey's X3TC site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Missile, statistics, stats, guide, gaming, roguey">
+		<META NAME="Description" CONTENT="Missiles, guide, statistics, page 1 of 8">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3tc/help/missiles1.php">
+		<meta property="og:description" content="Missiles, guide, statistics, page 1 of 8">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Missile guide (Page 1 of 8)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3tc/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3tc/"><img src="/x3tc/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #F34D4D;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #F34D4D;">
+				<li class="icon" style="background-color: #F34D4D">&nbsp;</li><li><a href="/x3tc/">News</a></li><li><a href="/x3tc/pictures/">Pictures</a></li><li><a href="/x3tc/videos/">Videos</a></li><li><a href="/x3tc/help/">Help / Guides</a></li><li><a href="/x3tc/ships/">Ships</a></li><li><a href="/x3tc/universe/">Maps</a></li><li><a href="/x3tc/missiles/">Missiles</a></li><li><a href="/x3tc/lasers/">Lasers</a></li><li><a href="/x3tc/shields/">Shields</a></li><li><a href="/x3tc/stations/">Stations</a></li><li><a href="/x3tc/wares/">Wares</a></li><li><a href="/x3tc/steam/">STEAM achievements</a></li><li><a href="/forum/viewforum.php?id=2">Forum</a></li><li><a href="/x3tc/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+	<h1>Missile guide <font class="smalltext">(page 1 of 8)</font></h1>
+
+	In this guide I will explain about the different missiles and what they do in X3TC.<br>
+	There are so many missiles in X3TC, so your bound to be confused by them at the start.
+	<br><br>
+
+	<b>Tracking types</b>
+	<br>
+
+	<div class="pad_left">
+		<b>Dumbfire</b>: The missile does not track targets and will travel in a straight line from a ship,<br>
+		<b>Yes</b>: Standard missile tracking: does not lock onto new targets,<br>
+		<b>Heat</b>: Automatically locks onto a ship, does not re-target,<br>
+		<b>Prox</b>: Explodes when in proximity of target,<br>
+		<b>Automatic</b>: Finds its own target (missiles, mines, ships etc.) and re-targets,<br>
+	</div>
+
+	<br>
+	
+		<table class="board_table">
+		<tr>
+			<th width="200">Name</a></th>
+
+			<th width="60">Speed</a></th>
+			<th width="70">Lifetime</th>
+			<th width="60">Range</th>
+			<th width="70">Damage</a></th>
+			<th width="80">Radius</a></th>
+			<th width="80">Warhead</th>
+			<th>Tracking</th>
+		</tr>
+
+		
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles2.php#aur">
+					<img src="../images/logo_Missile_dmbf.gif" width="9" alt="Aurora" border="0">
+					Aurora
+				</a>
+
+			</td>
+			<td class="bg2">589 m/s</td><td class="bg2">32 secs</td>
+			<td class="bg2">19km</td>
+			<td class="bg2">8k</td><td class="bg2">200m</td>
+			<td class="bg2">Single</td><td class="bg2">Dumbfire</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles2.php#ban">
+					<img src="../images/logo_Missile_med.gif" width="9" alt="Banshee" border="0">
+					Banshee
+				</a>
+			</td>
+			<td>153 m/s</td><td>97 secs</td>
+
+			<td>15km</td>
+			<td>74k</td><td>100m</td>
+			<td>Single</td><td>Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+
+				 <a href="missiles2.php#bel">
+					<img src="../images/logo_Missile_med.gif" width="9" alt="Beluga" border="0">
+					Beluga
+				</a>
+			</td>
+			<td class="bg2">212 m/s</td><td class="bg2">425 secs</td>
+			<td class="bg2">91km</td>
+			<td class="bg2">100k</td><td class="bg2">40m</td>
+
+			<td class="bg2">Single</td><td class="bg2">Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles2.php#boa">
+					<img src="../images/logo_Missile_board.gif" width="9" alt="Boarding pod" border="0">
+					Boarding pod
+				</a>
+
+			</td>
+			<td>480 m/s</td><td>160 secs</td>
+			<td>77km</td>
+			<td>1k</td><td>0m</td>
+			<td>5 Marines</td><td>Yes</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles2.php#cyc">
+					<img src="../images/logo_Missile_med.gif" width="9" alt="Cyclone" border="0">
+					Cyclone
+				</a>
+			</td>
+			<td class="bg2">149 m/s</td><td class="bg2">403 secs</td>
+
+			<td class="bg2">61km</td>
+			<td class="bg2">23k</td><td class="bg2">20m</td>
+			<td class="bg2">Single</td><td class="bg2">Yes/Prox</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+
+				 <a href="missiles3.php#dis">
+					<img src="../images/logo_Missile_Light.gif" width="9" alt="Disruptor" border="0">
+					Disruptor
+				</a>
+			</td>
+			<td>515 m/s</td><td>78 secs</td>
+			<td>41km</td>
+			<td>6k</td><td>1m</td>
+
+			<td>Single</td><td>Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles3.php#dra">
+					<img src="../images/logo_Missile_dmbf.gif" width="9" alt="Dragonfly" border="0">
+					Dragonfly
+				</a>
+
+			</td>
+			<td class="bg2">250 m/s</td><td class="bg2">75 secs</td>
+			<td class="bg2">19km</td>
+			<td class="bg2">5k</td><td class="bg2">20m</td>
+			<td class="bg2">Single</td><td class="bg2">Yes/Prox</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles3.php#fir">
+					<img src="../images/logo_Missile_heavy.gif" width="9" alt="Fire-storm" border="0">
+					Fire-storm
+				</a>
+			</td>
+			<td>165 m/s</td><td>600 secs</td>
+
+			<td>99km</td>
+			<td>1000k</td><td>1000m</td>
+			<td>Single</td><td>Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+
+				 <a href="missiles3.php#fir">
+					<img src="../images/logo_Missile_dmbf.gif" width="9" alt="Firefly" border="0">
+					Firefly
+				</a>
+			</td>
+			<td class="bg2">576 m/s</td><td class="bg2">43 secs</td>
+			<td class="bg2">25km</td>
+			<td class="bg2">2k</td><td class="bg2">4m</td>
+
+			<td class="bg2">Single</td><td class="bg2">Dumbfire/Prox</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles3.php#fir">
+					<img src="../images/logo_Missile_dmbf.gif" width="9" alt="Firelance" border="0">
+					Firelance
+				</a>
+
+			</td>
+			<td>500 m/s</td><td>100 secs</td>
+			<td>50km</td>
+			<td>5k</td><td>150m</td>
+			<td>Single</td><td>Dumbfire/Prox</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles4.php#fla">
+					<img src="../images/logo_Missile.gif" width="9" alt="Flail Barrage" border="0">
+					Flail Barrage
+				</a>
+			</td>
+			<td class="bg2">486 m/s</td><td class="bg2">155 secs</td>
+
+			<td class="bg2">75km</td>
+			<td class="bg2">5k x 8</td><td class="bg2">10m</td>
+			<td class="bg2">Swarm (8)</td><td class="bg2">Yes/Re</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+
+				 <a href="missiles4.php#gho">
+					<img src="../images/logo_Missile.gif" width="9" alt="Ghoul" border="0">
+					Ghoul
+				</a>
+			</td>
+			<td>450 m/s</td><td>125 secs</td>
+			<td>57km</td>
+			<td>7k x 8</td><td>15m</td>
+			<td>Swarm (8)</td><td>Yes/Re</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles4.php#ham">
+					<img src="../images/logo_Missile_med.gif" width="9" alt="Hammerhead" border="0">
+					Hammerhead
+				</a>
+
+			</td>
+			<td class="bg2">172 m/s</td><td class="bg2">500 secs</td>
+			<td class="bg2">86km</td>
+			<td class="bg2">1250k</td><td class="bg2">1200m</td>
+			<td class="bg2">Single</td><td class="bg2">Yes</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles4.php#ham">
+					<img src="../images/logo_Missile.gif" width="9" alt="Hammer Heavy" border="0">
+					Hammer Heavy
+				</a>
+			</td>
+			<td>253 m/s</td><td>300 secs</td>
+
+			<td>76km</td>
+			<td>300k</td><td>150 m</td>
+			<td>Single</td><td>Yes/Re</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+
+				 <a href="missiles4.php#hor">
+					<img src="../images/logo_Missile_heavy.gif" width="9" alt="Hornet" border="0">
+					Hornet
+				</a>
+			</td>
+			<td class="bg2">186 m/s</td><td class="bg2">168 secs</td>
+			<td class="bg2">32km</td>
+			<td class="bg2">200k</td><td class="bg2">100 m</td>
+
+			<td class="bg2">Single</td><td class="bg2">Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles5.php#hur">
+					<img src="../images/logo_Missile_Light.gif" width="9" alt="Hurricane" border="0">
+					Hurricane
+				</a>
+
+			</td>
+			<td>471 m/s</td><td>64 secs</td>
+			<td>31km</td>
+			<td>6k</td><td>200m</td>
+			<td>Single</td><td>Yes/Prox</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles5.php#mos">
+					<img src="../images/logo_Missile_dmbf.gif" width="9" alt="Mosquito" border="0">
+					Mosquito
+				</a>
+			</td>
+			<td class="bg2">590 m/s</td><td class="bg2">25 secs</td>
+
+			<td class="bg2">15km</td>
+			<td class="bg2">1k</td><td class="bg2">0m</td>
+			<td class="bg2">Single</td><td class="bg2">Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+
+				 <a href="missiles5.php#nee">
+					<img src="../images/logo_Missile_khaak.gif" width="9" alt="Needle" border="0">
+					Needle
+				</a>
+			</td>
+			<td>174 m/s</td><td>153 secs</td>
+			<td>27km</td>
+			<td>8k</td><td>200m</td>
+
+			<td>Single</td><td>Yes/Prox</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles5.php#pha">
+					<img src="../images/logo_Missile.gif" width="9" alt="Phantom" border="0">
+					Phantom
+				</a>
+
+			</td>
+			<td class="bg2">212 m/s</td><td class="bg2">250 secs</td>
+			<td class="bg2">53km</td>
+			<td class="bg2">650k</td><td class="bg2">100m</td>
+			<td class="bg2">Single</td><td class="bg2">Yes/Prox</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles5.php#pol">
+					<img src="../images/logo_Missile.gif" width="9" alt="Poltergeist Missile" border="0">
+					Poltergeist Missile
+				</a>
+			</td>
+			<td>250 m/s</td><td>50 secs</td>
+
+			<td>13km</td>
+			<td>2k</td><td>5m</td>
+			<td>Single</td><td>Yes/Re</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+
+				 <a href="missiles6.php#rap">
+					<img src="../images/logo_Missile_dmbf.gif" width="9" alt="Rapier" border="0">
+					Rapier
+				</a>
+			</td>
+			<td class="bg2">657 m/s</td><td class="bg2">152 secs</td>
+			<td class="bg2">100km</td>
+			<td class="bg2">1k</td><td class="bg2">8m</td>
+
+			<td class="bg2">Single</td><td class="bg2">Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles6.php#rem">
+					<img src="../images/logo_Missile_Light.gif" width="9" alt="Remote Guided Warhead" border="0">
+					Remote Guided Warhead
+				</a>
+
+			</td>
+			<td>143 m/s</td><td>560 secs</td>
+			<td>81km</td>
+			<td>100k</td><td>100 m</td>
+			<td>Single</td><td>Auto</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles6.php#sha">
+					<img src="../images/logo_Missile.gif" width="9" alt="Shadow" border="0">
+					Shadow
+				</a>
+			</td>
+			<td class="bg2">245 m/s</td><td class="bg2">330 secs</td>
+
+			<td class="bg2">81km</td>
+			<td class="bg2">755k x 8</td><td class="bg2">162m</td>
+			<td class="bg2">Swarm (8)</td><td class="bg2">Yes/Re</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+
+				 <a href="missiles6.php#sil">
+					<img src="../images/logo_Missile_Light.gif" width="9" alt="Silkworm" border="0">
+					Silkworm
+				</a>
+			</td>
+			<td>190 m/s</td><td>150 secs</td>
+			<td>29km</td>
+			<td>19k</td><td>20m</td>
+
+			<td>Single</td><td>Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles6.php#spe">
+					<img src="../images/logo_Missile.gif" width="9" alt="Spectre" border="0">
+					Spectre
+				</a>
+
+			</td>
+			<td class="bg2">190 m/s</td><td class="bg2">130 secs</td>
+			<td class="bg2">25km</td>
+			<td class="bg2">260k</td><td class="bg2">20m</td>
+			<td class="bg2">Single</td><td class="bg2">Heat/Prox</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles7.php#sti">
+					<img src="../images/logo_Missile_khaak.gif" width="9" alt="Sting" border="0">
+					Sting
+				</a>
+			</td>
+			<td>257 m/s</td><td>155 secs</td>
+
+			<td>40km</td>
+			<td>4k</td><td>200m</td>
+			<td>Single</td><td>Yes/Prox</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+
+				 <a href="missiles7.php#tem">
+					<img src="../images/logo_Missile_med.gif" width="9" alt="Tempest" border="0">
+					Tempest
+				</a>
+			</td>
+			<td class="bg2">195 m/s</td><td class="bg2">320 secs</td>
+			<td class="bg2">63km</td>
+			<td class="bg2">60k</td><td class="bg2">20m</td>
+
+			<td class="bg2">Single</td><td class="bg2">Automatic</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles7.php#tho">
+					<img src="../images/logo_Missile_khaak.gif" width="9" alt="Thorn" border="0">
+					Thorn
+				</a>
+
+			</td>
+			<td>159 m/s</td><td>112 secs</td>
+			<td>18km</td>
+			<td>15k</td><td>400m</td>
+			<td>Single</td><td>Yes/Prox</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles7.php#thu">
+					<img src="../images/logo_Missile_med.gif" width="9" alt="Thunderbolt" border="0">
+					Thunderbolt
+				</a>
+			</td>
+			<td class="bg2">195 m/s</td><td class="bg2">400 secs</td>
+
+			<td class="bg2">78km</td>
+			<td class="bg2">75k</td><td class="bg2">20m</td>
+			<td class="bg2">Single</td><td class="bg2">Yes/Heat</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+
+				 <a href="missiles7.php#tom">
+					<img src="../images/logo_Missile.gif" width="9" alt="Tomahawk" border="0">
+					Tomahawk
+				</a>
+			</td>
+			<td>196 m/s</td><td>220 secs</td>
+			<td>44km</td>
+			<td>625k</td><td>75 m</td>
+
+			<td>Single</td><td>Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles8.php#tor">
+					<img src="../images/logo_Missile_med.gif" width="9" alt="Tornado" border="0">
+					Tornado
+				</a>
+
+			</td>
+			<td class="bg2">312 m/s</td><td class="bg2">80 secs</td>
+			<td class="bg2">25km</td>
+			<td class="bg2">50k</td><td class="bg2">40 m</td>
+			<td class="bg2">Swarm (8)</td><td class="bg2">Dumbfire/Prox</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles8.php#typ">
+					<img src="../images/logo_Missile_heavy.gif" width="9" alt="Typhoon" border="0">
+					Typhoon
+				</a>
+			</td>
+			<td>195 m/s</td><td>384 secs</td>
+
+			<td>75km</td>
+			<td>30k</td><td>20 m</td>
+			<td>Swarm (8)</td><td>Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+
+				 <a href="missiles8.php#was">
+					<img src="../images/logo_Missile_Light.gif" width="9" alt="Wasp" border="0">
+					Wasp
+				</a>
+			</td>
+			<td class="bg2">560 m/s</td><td class="bg2">32 secs</td>
+			<td class="bg2">18km</td>
+			<td class="bg2">1k</td><td class="bg2">2 m</td>
+
+			<td class="bg2">Swarm (8)</td><td class="bg2">Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+				 <a href="missiles8.php#wid">
+					<img src="../images/logo_Missile_Light.gif" width="9" alt="Wildfire" border="0">
+					Wildfire
+				</a>
+
+			</td>
+			<td>247 m/s</td><td>135 secs</td>
+			<td>34km</td>
+			<td>15k</td><td>20m</td>
+			<td>Single</td><td>Automatic</td>
+
+		</tr>
+			
+		<tr class="hover">
+			<td class="bg2">
+				 <a href="missiles8.php#wnd">
+					<img src="../images/logo_Missile_med.gif" width="9" alt="Windstalker" border="0">
+					Windstalker
+				</a>
+			</td>
+			<td class="bg2">179 m/s</td><td class="bg2">124 secs</td>
+
+			<td class="bg2">23km</td>
+			<td class="bg2">30k</td><td class="bg2">40m</td>
+			<td class="bg2">Dumbfire</td><td class="bg2">Yes</td>
+		</tr>
+			
+		<tr class="hover">
+			<td>
+
+				 <a href="missiles8.php#wra">
+					<img src="../images/logo_Missile.gif" width="9" alt="Wraith" border="0">
+					Wraith
+				</a>
+			</td>
+			<td>170 m/s</td><td>300 secs</td>
+			<td>51km</td>
+			<td>125k</td><td>750 m</td>
+
+			<td>Swarm (8)</td><td>Heat/Prox</td>
+		</tr>
+			
+		</table>
+
+	<br><br>
+
+	On the next pages I will explain each missile in detail.
+	<br><br>
+
+	<div style="text-align: center;">		
+		<font class="smalltext"><b>Next: Aurora missile</b></font><br>
+		<a href="missiles2.php">Next Page >></a>
+	</div>
+
+	<br>
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00079 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

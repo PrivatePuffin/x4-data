@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Goner Plot (Page 1 of 2) - Roguey's X3TC site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Goner, Plot, Walkthrough, Spike, guide, gaming, roguey">
+		<META NAME="Description" CONTENT="Goner Plot Walkthrough written by Spike.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3tc/help/spike/goner1.php">
+		<meta property="og:description" content="Goner Plot Walkthrough written by Spike.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Goner Plot (Page 1 of 2)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3tc/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3tc/"><img src="/x3tc/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #F34D4D;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #F34D4D;">
+				<li class="icon" style="background-color: #F34D4D">&nbsp;</li><li><a href="/x3tc/">News</a></li><li><a href="/x3tc/pictures/">Pictures</a></li><li><a href="/x3tc/videos/">Videos</a></li><li><a href="/x3tc/help/">Help / Guides</a></li><li><a href="/x3tc/ships/">Ships</a></li><li><a href="/x3tc/universe/">Maps</a></li><li><a href="/x3tc/missiles/">Missiles</a></li><li><a href="/x3tc/lasers/">Lasers</a></li><li><a href="/x3tc/shields/">Shields</a></li><li><a href="/x3tc/stations/">Stations</a></li><li><a href="/x3tc/wares/">Wares</a></li><li><a href="/x3tc/steam/">STEAM achievements</a></li><li><a href="/forum/viewforum.php?id=2">Forum</a></li><li><a href="/x3tc/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Goner Plot <span class="smalltext">(Page 1 of 2)</span></h1>
+	Written by <b>Spike</b>,<br><br>
+
+	<center><img src="images/goner-header.jpg" alt="Goner Plot Walkthrough, written by Spike"></center>
+	<br><br>
+
+	<center><b>This guide contains spoilers!</b></center>
+	<br><br>
+
+	As one of the original plotlines, only very early versions of the game have appreciable bugs. However, if you have mods, 
+	it is possible that they may introduce problems with the plot. As this is a Vanilla forum and a repository for information and 
+	issues regarding the unmodded game, if you have a problem with a modded game you are requested to post in the Scripts and Modding forum.
+	<br><br>
+
+	The Goner Plot begins in the Goner sector Elysium of Light. It is available from the beginning of the game on all plotline enabled starts.
+	<br><br>
+
+	The plot begins when you contact Osamu Avens on the Goner TL, the Ozias.
+	<br><br>
+
+
+	<h2>Resource Collection</h2><br>
+
+	Avens is overseeing the construction of the new Goner Temple. Parts of the superstructure are floating in space already, and as you can see, 
+	it's not very temple-like yet. His problem is twofold; firstly, his ship looks like its designer had no sense of aesthetics at all, but 
+	this apparently doesn't concern him, and secondly some of the supply convoys bringing materials to the Temple never arrived. This does concern him, 
+	and is the reason for your new employment.
+	<br><br>
+
+	Your mission is to bring 2000 Ore and 200 Silicon Wafers to the Ozias. Just fly within 5km and the goods will be transferred. 
+	Once everything is collected, you get a thankyou, a payment for the goods, and the Beholder himself, Jani Hall, offers you future work prospects. 
+	A simple first mission, and you may now disappear for a while to do your own thing before returning to contact Hall on the Ozias.
+	<br><br>
+
+	The next mission is to collect another 2000 Ore and 1200 Teladianium. Something which again should not be too difficult, 
+	and you are paid for your efforts. There's nothing now for a while; you'll be contacted when needed again.
+	<br><br>
+
+	When the call comes, it's a cargo run that you'll need a TS for. You must fly to Bright Profit and pick up 625 Teladianium panelling, 
+	then bring it back to the Ozias. Another wait for a mission ensues. You may want to pre-empt it, so read on;
+	<br><br>
+
+	The next mission is to deliver 3 TS class ships to one of the stations in Elysium of Light. Three bog standard Argon TSs from the 
+	Omicron Lyrae shipyard will do just fine. Which station they must be docked at will become apparent on the sector map when the TSs 
+	enter the sector. When they dock, you will receive a message asking you to turn them over. Three messages and the mission is complete. 
+	Hall is now disappearing with the Council of Elders; you will receive orders from Avens whilst he is gone.
+	<br><br>
+
+	You won't get a message telling you about the start of the next mission; it will just appear next to Avens' name on the Ozias' comms menu. 
+	Make sure that you're going to be free for a while before you take it.
+	<br><br>
+
+	It's probably the worst single part of any of the Plots in the game. It is quite hellish and you'll need lots of Salvage Insurances. 
+	Having good relations with the Pirates is going to make your job a hell of a lot easier, so if they hate you, do missions for them until 
+	they like you again. You'll then need to move into Pirate space and scan their ships to reset the relations. You need to be able to 
+	fly up to Pirate Carracks that are blue to you, ideally the Brigantines as well. Alternatively, you'll need a very powerful M7 class ship 
+	that moves faster than 90m/s to complete this next mission set (the Panther or very well-stocked Cobra would make a good choice).
+	<br><br>
+
+	That next mission is to build a Teladianium Foundry in Elysium of Light, so that the Goners don't have to import any more of the stuff. 
+	The mission does not say what type of Teladianium Foundry is required, so buy a cheap and cheerful M type from either Grand Exchange or 
+	PTNI HQ and place it near the beacon in Elysium of Light. Mission complete. That Goner Temple is looking a little more complete now. 
+	There's another wait for the next mission. It won't be a trade run; get a combat ship ready. You didn't think that build station 
+	mission was the promised hell, did you? 
+	<br><br>
+
+
+
+	<center>	
+		<font class="smalltext"><b>Next: Hotting Up</b></font><br>
+		<a href="goner2.php">Next Page >></a>
+	</center>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0007 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>User area - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="user area - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="The user help area.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/users/">
+		<meta property="og:description" content="The user help area.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="User area">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<h1>Recent activity</h1>
+
+		Welcome to the user area, in this section you can find help on registering/logging and browse the current users of the site.
+		If however you can not find an answer to your question/problem please use the <a href="/contact/">contact page</a>.
+		<br><br>
+
+		<div class="vnavbar-div">
+			<div id="vnavbar">
+				<ul id="v_tabs">
+					<li><a href="/users/">Recent</a></li>
+					<li><a href="/users/comments.php">Comments</a></li>
+					<li><a href="/users/list.php">List</a></li>
+					<li><a href="/users/locations/">Locations</a></li>
+					<li><a href="/users/statistics/">Statistics</a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="vnavbar-content">
+	
+			<script>
+			
+			var which_tab		= 0;
+			var nav_tabs 		= document.getElementById('v_tabs').getElementsByTagName('li'); 
+
+			// toggle the sub-nav tabs
+			for (var i=0; i < nav_tabs.length; i++)
+			{
+				if (which_tab == i)
+					nav_tabs[i].className = 'tabon';
+				else
+					nav_tabs[i].className = 'taboff';
+			}			
+			</script>
+
+			<div id="user_activity_div"></div>
+			<br><br>
+		</div>
+		
+		<script>
+			var cur_timestamp	= 1616229567;
+			var log_filename	= '/users/activity/log/changes.html';
+			
+			var log_last_change	= '';
+			var update_count 	= 0;
+			var max_refresh		= 1250;
+			
+			// =============================================
+			// check for change
+			// =============================================
+			
+			function check_activity()
+			{
+				// ------------------------
+				// check header of log
+				// ------------------------
+				
+				var rand 		= Math.random(9999);
+				var cLog		= new XMLHttpRequest();
+				
+				cLog.open('HEAD', log_filename+'?id='+rand, true);
+				cLog.onreadystatechange=function() 
+				{
+					if ( (cLog.readyState == 4) && (cLog.status==200) )
+					{
+						var this_change = cLog.getResponseHeader('Last-Modified');
+
+						// -------------------
+
+						if (this_change != log_last_change)
+						{
+							log_last_change = this_change;
+
+							//load in any new messages
+							setTimeout('load_activity();' , 250);
+						}
+
+					}
+				}
+				
+				cLog.send(null);
+			
+				// ------------------------
+				// refresh
+				// ------------------------
+				
+				if (update_count == 0)
+					setTimeout('check_activity()', 500);
+				
+				else if (update_count < max_refresh)
+					setTimeout('check_activity()', 10000);
+				
+				update_count++;
+				
+			}
+			
+			// =============================================
+			// loads in log when required
+			// =============================================
+			
+			function load_activity()
+			{
+				// setup
+				http = new XMLHttpRequest();
+				var rand = Math.random(9999);
+
+				// what to open
+				http.open('GET', log_filename+'?id='+rand, true);
+				
+				// when got
+				http.onreadystatechange=function() 
+				{
+					if(http.readyState == 4)
+					{
+						document.getElementById('user_activity_div').innerHTML = '<div style="width: 98%; height: 600px;" class="iframe_area"><table class="board_table">'+http.responseText+'</table></div>';
+					}
+				}
+
+				http.send(null);
+			}
+			
+			// =============================================
+			// converts time-stamps into how-long-ago
+			// =============================================
+
+			function update_timestamps()
+			{	
+				// get all time stamp objects on page
+				var time_stamp 		= document.getElementsByClassName('time_stamp');
+			
+				// reset
+				var num_units = 0;
+				
+				for (i=0; i< time_stamp.length; i++)
+				{
+					// work-out time gap
+					
+					var duration	 	= cur_timestamp - time_stamp[i].getAttribute('tag');
+					var time_gap_txt	= '';
+					
+					var time_tokens		= [[31536000, 'year'], [2592000, 'month'], [604800, 'week'], [86400, 'day'], [3600, 'hour'], [60, 'minute'], [0, 'second']];
+
+					for (t=0; t<time_tokens.length; t++)
+					{
+						if (duration > time_tokens[t][0]) 
+						{
+							// workout how much time has passed
+							if (time_tokens[t][0] > 0)
+								num_units	= Math.floor(duration / time_tokens[t][0]);
+							else
+								num_units	= duration;
+							
+							time_gap_txt 	= num_units +' '+time_tokens[t][1];
+							
+							// add 's
+							if (num_units > 1)
+								time_gap_txt += 's';
+								
+							time_gap_txt += ' ago';
+							
+							break;
+						}
+					}
+											
+					time_stamp[i].innerHTML = time_gap_txt;
+				}
+				
+				// add a second to each time we run this code
+				cur_timestamp++;
+			}
+			
+			function init_activity()
+			{
+			
+				// see if anything has happened
+				check_activity();
+				
+				// now do timestamps
+				window.setInterval(update_timestamps, 1000);
+				update_timestamps();
+			}
+			
+			// when ready
+			window.onload = init_activity();
+			
+		
+		</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00032 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

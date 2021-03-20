@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Compare ships - Roguey's X3 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Compare ships, gaming, roguey">
+		<META NAME="Description" CONTENT="Compare up-to 3 ships from X3.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3/ships/compare/">
+		<meta property="og:description" content="Compare up-to 3 ships from X3.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Compare ships">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3/"><img src="/x3/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #FF800F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #FF800F;">
+				<li class="icon" style="background-color: #FF800F">&nbsp;</li><li><a href="/x3/">News</a></li><li><a href="/x3/pictures/">Pictures</a></li><li><a href="/x3/videos/">Videos</a></li><li><a href="/x3/help/">Help / Guides</a></li><li><a href="/x3/ships/">Ships</a></li><li><a href="/x3/universe/">Maps</a></li><li><a href="/x3/stations/">Stations</a></li><li><a href="/x3/lasers/">Lasers</a></li><li><a href="/x3/missiles/">Missiles</a></li><li><a href="/x3/shields/">Shields</a></li><li><a href="/x3/wares/">Wares</a></li><li><a href="/x3/mod/">X3 Mod</a></li><li><a href="/x3/edit/">Editing</a></li><li><a href="/forum/viewforum.php?id=1">Forum</a></li><li><a href="/x3/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+	<h1>Compare ships</h1>
+	<br>
+
+	<table class="board_table">		
+	<tr>
+		<th style="width: 33%;">Ship 1</th>
+		<th style="width: 33%;">Ship 2</th>
+		<th style="width: 33%;">Ship 3</th>
+	</tr>
+
+	<tr>
+		<td>
+			<select size="1" id="select_1" onChange="load_ship('select_1');">
+<optgroup label="TL">
+<option value="1">Argon Mammoth</option>
+<option value="10">Split Elephant</option>
+<option value="19">Paranid Hercules</option>
+<option value="28">Boron Orca</option>
+<option value="37">Teladi Albatross</option>
+</optgroup>
+<optgroup label="TS">
+<option value="2">Argon Mercury</option>
+<option value="11">Split Caiman</option>
+<option value="20">Paranid Demeter</option>
+<option value="29">Boron Dolphin</option>
+<option value="38">Teladi Vulture</option>
+<option value="106">Argon Mercury Tanker</option>
+<option value="107">Argon Mercury Hauler</option>
+<option value="108">Argon Mercury Tanker X</option>
+<option value="110">Argon Mercury Super Fr</option>
+<option value="111">Argon Mercury Super Fr</option>
+<option value="121">Split Caiman Tanker</option>
+<option value="122">Split Caiman Hauler</option>
+<option value="123">Split Caiman Tanker XL</option>
+<option value="125">Split Caiman Super Fre</option>
+<option value="126">Split Caiman Super Fre</option>
+<option value="136">Paranid Demeter Tanker</option>
+<option value="137">Paranid Demeter Hauler</option>
+<option value="138">Paranid Demeter Miner</option>
+<option value="140">Paranid Demeter Super </option>
+<option value="141">Paranid Demeter Super </option>
+<option value="154">Boron Dolphin Tanker</option>
+<option value="155">Boron Dolphin Hauler</option>
+<option value="156">Boron Dolphin Tanker X</option>
+<option value="158">Boron Dolphin Super Fr</option>
+<option value="159">Boron Dolphin Super Fr</option>
+<option value="169">Teladi Vulture Tanker</option>
+<option value="170">Teladi Vulture Hauler</option>
+<option value="171">Teladi Vulture Miner</option>
+<option value="173">Teladi Vulture Super F</option>
+<option value="174">Teladi Vulture Super F</option>
+<option value="211">Split Caiman Miner</option>
+</optgroup>
+<optgroup label="TP">
+<option value="3">Argon Express</option>
+<option value="12">Split Iguana</option>
+<option value="21">Paranid Hermes</option>
+<option value="30">Boron Manta</option>
+<option value="39">Teladi Toucan</option>
+<option value="109">Argon Express Hauler</option>
+<option value="124">Split Iguana Vanguard</option>
+<option value="139">Paranid Hermes Hauler</option>
+<option value="157">Boron Manta Hauler</option>
+<option value="172">Teladi Toucan Hauler</option>
+</optgroup>
+<optgroup label="M1">
+<option value="4">Argon Colossus</option>
+<option value="13">Split Raptor</option>
+<option value="22">Paranid Zeus</option>
+<option value="31">Boron Shark</option>
+<option value="40">Teladi Condor</option>
+<option value="46">Xenon J</option>
+<option value="57">Khaak Carrier</option>
+<option value="89">Terran Odin</option>
+</optgroup>
+<optgroup label="M2">
+<option value="5">Argon Titan</option>
+<option value="14">Split Python</option>
+<option value="23">Paranid Odysseus</option>
+<option value="32">Boron Ray</option>
+<option value="41">Teladi Phoenix</option>
+<option value="47">Xenon K</option>
+<option value="58">Khaak Destroyer</option>
+</optgroup>
+<optgroup label="M3">
+<option value="6">Argon Nova</option>
+<option value="15">Split Mamba</option>
+<option value="24">Paranid Perseus</option>
+<option value="33">Boron Barracuda</option>
+<option value="42">Teladi Falcon</option>
+<option value="48">Xenon L</option>
+<option value="53">Teladi Falcon</option>
+<option value="59">Khaak Fighter</option>
+<option value="90">Terran Thor</option>
+<option value="93">Yaki Susanowa</option>
+<option value="112">Argon Nova Raider</option>
+<option value="113">Argon Nova Vanguard</option>
+<option value="114">Argon Nova Sentinel</option>
+<option value="127">Split Mamba Raider</option>
+<option value="128">Split Mamba Vanguard</option>
+<option value="129">Split Mamba Sentinel</option>
+<option value="142">Paranid Perseus Raider</option>
+<option value="143">Paranid Perseus Vangua</option>
+<option value="144">Paranid Perseus Sentin</option>
+<option value="160">Boron Barracuda Raider</option>
+<option value="161">Boron Barracuda Vangua</option>
+<option value="162">Boron Barracuda Sentin</option>
+<option value="175">Teladi Falcon Hauler</option>
+<option value="176">Teladi Falcon Vanguard</option>
+<option value="177">Teladi Falcon Sentinel</option>
+<option value="187">Argon Nova Raider</option>
+<option value="188">Argon Nova</option>
+<option value="189">Teladi Falcon Vanguard</option>
+<option value="201">Yaki Susanowa Raider</option>
+<option value="202">Yaki Susanowa Hauler</option>
+<option value="216">Paranid Medusa</option>
+<option value="217">Split Chimera</option>
+<option value="218">Xenon LX</option>
+<option value="219">Argon Eclipse</option>
+</optgroup>
+<optgroup label="M4">
+<option value="7">Argon Buster</option>
+<option value="16">Split Scorpion</option>
+<option value="25">Paranid Pericles</option>
+<option value="34">Boron Mako</option>
+<option value="43">Teladi Buzzard</option>
+<option value="49">Xenon M</option>
+<option value="54">Argon Buster</option>
+<option value="60">Khaak Interceptor</option>
+<option value="91">Terran Mjollnir</option>
+<option value="94">Yaki Raijin</option>
+<option value="115">Argon Buster Raider</option>
+<option value="116">Argon Buster Vanguard</option>
+<option value="117">Argon Buster Sentinel</option>
+<option value="130">Split Scorpion Raider</option>
+<option value="131">Split Scorpion Vanguar</option>
+<option value="132">Split Scorpion Sentine</option>
+<option value="145">Paranid Pericles Raide</option>
+<option value="146">Paranid Pericles Vangu</option>
+<option value="147">Paranid Pericles Senti</option>
+<option value="163">Boron Mako Raider</option>
+<option value="164">Boron Mako Vanguard</option>
+<option value="165">Boron Mako Sentinel</option>
+<option value="178">Teladi Buzzard Hauler</option>
+<option value="179">Teladi Buzzard Vanguar</option>
+<option value="180">Teladi Buzzard Sentine</option>
+<option value="190">Teladi Buzzard</option>
+<option value="191">Argon Buster Hauler</option>
+<option value="192">Teladi Buzzard Vanguar</option>
+<option value="203">Yaki Raijin Sentinel</option>
+<option value="204">Yaki Raijin Raider</option>
+</optgroup>
+<optgroup label="M5">
+<option value="8">Argon Discoverer</option>
+<option value="17">Split Jaguar</option>
+<option value="26">Paranid Pegasus</option>
+<option value="35">Boron Octopus</option>
+<option value="44">Teladi Harrier</option>
+<option value="50">Xenon N</option>
+<option value="55">Teladi Harrier</option>
+<option value="61">Khaak Scout</option>
+<option value="92">Terran Valkyrie</option>
+<option value="118">Argon Discoverer Raide</option>
+<option value="119">Argon Discoverer Haule</option>
+<option value="120">Argon Discoverer Vangu</option>
+<option value="133">Split Jaguar Raider</option>
+<option value="134">Split Jaguar Hauler</option>
+<option value="135">Split Jaguar Vanguard</option>
+<option value="148">Paranid Pegasus Raider</option>
+<option value="149">Paranid Pegasus Vangua</option>
+<option value="150">Paranid Pegasus Sentin</option>
+<option value="166">Boron Octopus Raider</option>
+<option value="167">Boron Octopus Vanguard</option>
+<option value="168">Boron Octopus Sentinel</option>
+<option value="181">Teladi Harrier Hauler</option>
+<option value="182">Teladi Harrier Vanguar</option>
+<option value="183">Teladi Harrier Sentine</option>
+<option value="193">Teladi Harrier Raider</option>
+<option value="194">Teladi Harrier Hauler</option>
+<option value="195">Teladi Harrier Vanguar</option>
+<option value="205">Yaki Raijin</option>
+<option value="206">Yaki Raijin Sentinel</option>
+<option value="207">Yaki Raijin Raider</option>
+</optgroup>
+<optgroup label="M6">
+<option value="9">Argon Centaur</option>
+<option value="18">Split Dragon</option>
+<option value="27">Paranid Nemesis</option>
+<option value="36">Boron Hydra</option>
+<option value="45">Teladi Osprey</option>
+<option value="51">Xenon P</option>
+</optgroup>
+<optgroup label="M7">
+<option value="220">Paranid Hyperion</option>
+</optgroup>
+
+			</select>
+		</td>
+		<td>
+			<select size="1" id="select_2" onChange="load_ship('select_2');">
+<optgroup label="TL">
+<option value="1">Argon Mammoth</option>
+<option value="10">Split Elephant</option>
+<option value="19">Paranid Hercules</option>
+<option value="28">Boron Orca</option>
+<option value="37">Teladi Albatross</option>
+</optgroup>
+<optgroup label="TS">
+<option value="2">Argon Mercury</option>
+<option value="11">Split Caiman</option>
+<option value="20">Paranid Demeter</option>
+<option value="29">Boron Dolphin</option>
+<option value="38">Teladi Vulture</option>
+<option value="106">Argon Mercury Tanker</option>
+<option value="107">Argon Mercury Hauler</option>
+<option value="108">Argon Mercury Tanker X</option>
+<option value="110">Argon Mercury Super Fr</option>
+<option value="111">Argon Mercury Super Fr</option>
+<option value="121">Split Caiman Tanker</option>
+<option value="122">Split Caiman Hauler</option>
+<option value="123">Split Caiman Tanker XL</option>
+<option value="125">Split Caiman Super Fre</option>
+<option value="126">Split Caiman Super Fre</option>
+<option value="136">Paranid Demeter Tanker</option>
+<option value="137">Paranid Demeter Hauler</option>
+<option value="138">Paranid Demeter Miner</option>
+<option value="140">Paranid Demeter Super </option>
+<option value="141">Paranid Demeter Super </option>
+<option value="154">Boron Dolphin Tanker</option>
+<option value="155">Boron Dolphin Hauler</option>
+<option value="156">Boron Dolphin Tanker X</option>
+<option value="158">Boron Dolphin Super Fr</option>
+<option value="159">Boron Dolphin Super Fr</option>
+<option value="169">Teladi Vulture Tanker</option>
+<option value="170">Teladi Vulture Hauler</option>
+<option value="171">Teladi Vulture Miner</option>
+<option value="173">Teladi Vulture Super F</option>
+<option value="174">Teladi Vulture Super F</option>
+<option value="211">Split Caiman Miner</option>
+</optgroup>
+<optgroup label="TP">
+<option value="3">Argon Express</option>
+<option value="12">Split Iguana</option>
+<option value="21">Paranid Hermes</option>
+<option value="30">Boron Manta</option>
+<option value="39">Teladi Toucan</option>
+<option value="109">Argon Express Hauler</option>
+<option value="124">Split Iguana Vanguard</option>
+<option value="139">Paranid Hermes Hauler</option>
+<option value="157">Boron Manta Hauler</option>
+<option value="172">Teladi Toucan Hauler</option>
+</optgroup>
+<optgroup label="M1">
+<option value="4">Argon Colossus</option>
+<option value="13">Split Raptor</option>
+<option value="22">Paranid Zeus</option>
+<option value="31">Boron Shark</option>
+<option value="40">Teladi Condor</option>
+<option value="46">Xenon J</option>
+<option value="57">Khaak Carrier</option>
+<option value="89">Terran Odin</option>
+</optgroup>
+<optgroup label="M2">
+<option value="5">Argon Titan</option>
+<option value="14">Split Python</option>
+<option value="23">Paranid Odysseus</option>
+<option value="32">Boron Ray</option>
+<option value="41">Teladi Phoenix</option>
+<option value="47">Xenon K</option>
+<option value="58">Khaak Destroyer</option>
+</optgroup>
+<optgroup label="M3">
+<option value="6">Argon Nova</option>
+<option value="15">Split Mamba</option>
+<option value="24">Paranid Perseus</option>
+<option value="33">Boron Barracuda</option>
+<option value="42">Teladi Falcon</option>
+<option value="48">Xenon L</option>
+<option value="53">Teladi Falcon</option>
+<option value="59">Khaak Fighter</option>
+<option value="90">Terran Thor</option>
+<option value="93">Yaki Susanowa</option>
+<option value="112">Argon Nova Raider</option>
+<option value="113">Argon Nova Vanguard</option>
+<option value="114">Argon Nova Sentinel</option>
+<option value="127">Split Mamba Raider</option>
+<option value="128">Split Mamba Vanguard</option>
+<option value="129">Split Mamba Sentinel</option>
+<option value="142">Paranid Perseus Raider</option>
+<option value="143">Paranid Perseus Vangua</option>
+<option value="144">Paranid Perseus Sentin</option>
+<option value="160">Boron Barracuda Raider</option>
+<option value="161">Boron Barracuda Vangua</option>
+<option value="162">Boron Barracuda Sentin</option>
+<option value="175">Teladi Falcon Hauler</option>
+<option value="176">Teladi Falcon Vanguard</option>
+<option value="177">Teladi Falcon Sentinel</option>
+<option value="187">Argon Nova Raider</option>
+<option value="188">Argon Nova</option>
+<option value="189">Teladi Falcon Vanguard</option>
+<option value="201">Yaki Susanowa Raider</option>
+<option value="202">Yaki Susanowa Hauler</option>
+<option value="216">Paranid Medusa</option>
+<option value="217">Split Chimera</option>
+<option value="218">Xenon LX</option>
+<option value="219">Argon Eclipse</option>
+</optgroup>
+<optgroup label="M4">
+<option value="7">Argon Buster</option>
+<option value="16">Split Scorpion</option>
+<option value="25">Paranid Pericles</option>
+<option value="34">Boron Mako</option>
+<option value="43">Teladi Buzzard</option>
+<option value="49">Xenon M</option>
+<option value="54">Argon Buster</option>
+<option value="60">Khaak Interceptor</option>
+<option value="91">Terran Mjollnir</option>
+<option value="94">Yaki Raijin</option>
+<option value="115">Argon Buster Raider</option>
+<option value="116">Argon Buster Vanguard</option>
+<option value="117">Argon Buster Sentinel</option>
+<option value="130">Split Scorpion Raider</option>
+<option value="131">Split Scorpion Vanguar</option>
+<option value="132">Split Scorpion Sentine</option>
+<option value="145">Paranid Pericles Raide</option>
+<option value="146">Paranid Pericles Vangu</option>
+<option value="147">Paranid Pericles Senti</option>
+<option value="163">Boron Mako Raider</option>
+<option value="164">Boron Mako Vanguard</option>
+<option value="165">Boron Mako Sentinel</option>
+<option value="178">Teladi Buzzard Hauler</option>
+<option value="179">Teladi Buzzard Vanguar</option>
+<option value="180">Teladi Buzzard Sentine</option>
+<option value="190">Teladi Buzzard</option>
+<option value="191">Argon Buster Hauler</option>
+<option value="192">Teladi Buzzard Vanguar</option>
+<option value="203">Yaki Raijin Sentinel</option>
+<option value="204">Yaki Raijin Raider</option>
+</optgroup>
+<optgroup label="M5">
+<option value="8">Argon Discoverer</option>
+<option value="17">Split Jaguar</option>
+<option value="26">Paranid Pegasus</option>
+<option value="35">Boron Octopus</option>
+<option value="44">Teladi Harrier</option>
+<option value="50">Xenon N</option>
+<option value="55">Teladi Harrier</option>
+<option value="61">Khaak Scout</option>
+<option value="92">Terran Valkyrie</option>
+<option value="118">Argon Discoverer Raide</option>
+<option value="119">Argon Discoverer Haule</option>
+<option value="120">Argon Discoverer Vangu</option>
+<option value="133">Split Jaguar Raider</option>
+<option value="134">Split Jaguar Hauler</option>
+<option value="135">Split Jaguar Vanguard</option>
+<option value="148">Paranid Pegasus Raider</option>
+<option value="149">Paranid Pegasus Vangua</option>
+<option value="150">Paranid Pegasus Sentin</option>
+<option value="166">Boron Octopus Raider</option>
+<option value="167">Boron Octopus Vanguard</option>
+<option value="168">Boron Octopus Sentinel</option>
+<option value="181">Teladi Harrier Hauler</option>
+<option value="182">Teladi Harrier Vanguar</option>
+<option value="183">Teladi Harrier Sentine</option>
+<option value="193">Teladi Harrier Raider</option>
+<option value="194">Teladi Harrier Hauler</option>
+<option value="195">Teladi Harrier Vanguar</option>
+<option value="205">Yaki Raijin</option>
+<option value="206">Yaki Raijin Sentinel</option>
+<option value="207">Yaki Raijin Raider</option>
+</optgroup>
+<optgroup label="M6">
+<option value="9">Argon Centaur</option>
+<option value="18">Split Dragon</option>
+<option value="27">Paranid Nemesis</option>
+<option value="36">Boron Hydra</option>
+<option value="45">Teladi Osprey</option>
+<option value="51">Xenon P</option>
+</optgroup>
+<optgroup label="M7">
+<option value="220">Paranid Hyperion</option>
+</optgroup>
+		</select>
+		</td>
+		<td>
+			<select size="1" id="select_3" onChange="load_ship('select_3');">
+<optgroup label="TL">
+<option value="1">Argon Mammoth</option>
+<option value="10">Split Elephant</option>
+<option value="19">Paranid Hercules</option>
+<option value="28">Boron Orca</option>
+<option value="37">Teladi Albatross</option>
+</optgroup>
+<optgroup label="TS">
+<option value="2">Argon Mercury</option>
+<option value="11">Split Caiman</option>
+<option value="20">Paranid Demeter</option>
+<option value="29">Boron Dolphin</option>
+<option value="38">Teladi Vulture</option>
+<option value="106">Argon Mercury Tanker</option>
+<option value="107">Argon Mercury Hauler</option>
+<option value="108">Argon Mercury Tanker X</option>
+<option value="110">Argon Mercury Super Fr</option>
+<option value="111">Argon Mercury Super Fr</option>
+<option value="121">Split Caiman Tanker</option>
+<option value="122">Split Caiman Hauler</option>
+<option value="123">Split Caiman Tanker XL</option>
+<option value="125">Split Caiman Super Fre</option>
+<option value="126">Split Caiman Super Fre</option>
+<option value="136">Paranid Demeter Tanker</option>
+<option value="137">Paranid Demeter Hauler</option>
+<option value="138">Paranid Demeter Miner</option>
+<option value="140">Paranid Demeter Super </option>
+<option value="141">Paranid Demeter Super </option>
+<option value="154">Boron Dolphin Tanker</option>
+<option value="155">Boron Dolphin Hauler</option>
+<option value="156">Boron Dolphin Tanker X</option>
+<option value="158">Boron Dolphin Super Fr</option>
+<option value="159">Boron Dolphin Super Fr</option>
+<option value="169">Teladi Vulture Tanker</option>
+<option value="170">Teladi Vulture Hauler</option>
+<option value="171">Teladi Vulture Miner</option>
+<option value="173">Teladi Vulture Super F</option>
+<option value="174">Teladi Vulture Super F</option>
+<option value="211">Split Caiman Miner</option>
+</optgroup>
+<optgroup label="TP">
+<option value="3">Argon Express</option>
+<option value="12">Split Iguana</option>
+<option value="21">Paranid Hermes</option>
+<option value="30">Boron Manta</option>
+<option value="39">Teladi Toucan</option>
+<option value="109">Argon Express Hauler</option>
+<option value="124">Split Iguana Vanguard</option>
+<option value="139">Paranid Hermes Hauler</option>
+<option value="157">Boron Manta Hauler</option>
+<option value="172">Teladi Toucan Hauler</option>
+</optgroup>
+<optgroup label="M1">
+<option value="4">Argon Colossus</option>
+<option value="13">Split Raptor</option>
+<option value="22">Paranid Zeus</option>
+<option value="31">Boron Shark</option>
+<option value="40">Teladi Condor</option>
+<option value="46">Xenon J</option>
+<option value="57">Khaak Carrier</option>
+<option value="89">Terran Odin</option>
+</optgroup>
+<optgroup label="M2">
+<option value="5">Argon Titan</option>
+<option value="14">Split Python</option>
+<option value="23">Paranid Odysseus</option>
+<option value="32">Boron Ray</option>
+<option value="41">Teladi Phoenix</option>
+<option value="47">Xenon K</option>
+<option value="58">Khaak Destroyer</option>
+</optgroup>
+<optgroup label="M3">
+<option value="6">Argon Nova</option>
+<option value="15">Split Mamba</option>
+<option value="24">Paranid Perseus</option>
+<option value="33">Boron Barracuda</option>
+<option value="42">Teladi Falcon</option>
+<option value="48">Xenon L</option>
+<option value="53">Teladi Falcon</option>
+<option value="59">Khaak Fighter</option>
+<option value="90">Terran Thor</option>
+<option value="93">Yaki Susanowa</option>
+<option value="112">Argon Nova Raider</option>
+<option value="113">Argon Nova Vanguard</option>
+<option value="114">Argon Nova Sentinel</option>
+<option value="127">Split Mamba Raider</option>
+<option value="128">Split Mamba Vanguard</option>
+<option value="129">Split Mamba Sentinel</option>
+<option value="142">Paranid Perseus Raider</option>
+<option value="143">Paranid Perseus Vangua</option>
+<option value="144">Paranid Perseus Sentin</option>
+<option value="160">Boron Barracuda Raider</option>
+<option value="161">Boron Barracuda Vangua</option>
+<option value="162">Boron Barracuda Sentin</option>
+<option value="175">Teladi Falcon Hauler</option>
+<option value="176">Teladi Falcon Vanguard</option>
+<option value="177">Teladi Falcon Sentinel</option>
+<option value="187">Argon Nova Raider</option>
+<option value="188">Argon Nova</option>
+<option value="189">Teladi Falcon Vanguard</option>
+<option value="201">Yaki Susanowa Raider</option>
+<option value="202">Yaki Susanowa Hauler</option>
+<option value="216">Paranid Medusa</option>
+<option value="217">Split Chimera</option>
+<option value="218">Xenon LX</option>
+<option value="219">Argon Eclipse</option>
+</optgroup>
+<optgroup label="M4">
+<option value="7">Argon Buster</option>
+<option value="16">Split Scorpion</option>
+<option value="25">Paranid Pericles</option>
+<option value="34">Boron Mako</option>
+<option value="43">Teladi Buzzard</option>
+<option value="49">Xenon M</option>
+<option value="54">Argon Buster</option>
+<option value="60">Khaak Interceptor</option>
+<option value="91">Terran Mjollnir</option>
+<option value="94">Yaki Raijin</option>
+<option value="115">Argon Buster Raider</option>
+<option value="116">Argon Buster Vanguard</option>
+<option value="117">Argon Buster Sentinel</option>
+<option value="130">Split Scorpion Raider</option>
+<option value="131">Split Scorpion Vanguar</option>
+<option value="132">Split Scorpion Sentine</option>
+<option value="145">Paranid Pericles Raide</option>
+<option value="146">Paranid Pericles Vangu</option>
+<option value="147">Paranid Pericles Senti</option>
+<option value="163">Boron Mako Raider</option>
+<option value="164">Boron Mako Vanguard</option>
+<option value="165">Boron Mako Sentinel</option>
+<option value="178">Teladi Buzzard Hauler</option>
+<option value="179">Teladi Buzzard Vanguar</option>
+<option value="180">Teladi Buzzard Sentine</option>
+<option value="190">Teladi Buzzard</option>
+<option value="191">Argon Buster Hauler</option>
+<option value="192">Teladi Buzzard Vanguar</option>
+<option value="203">Yaki Raijin Sentinel</option>
+<option value="204">Yaki Raijin Raider</option>
+</optgroup>
+<optgroup label="M5">
+<option value="8">Argon Discoverer</option>
+<option value="17">Split Jaguar</option>
+<option value="26">Paranid Pegasus</option>
+<option value="35">Boron Octopus</option>
+<option value="44">Teladi Harrier</option>
+<option value="50">Xenon N</option>
+<option value="55">Teladi Harrier</option>
+<option value="61">Khaak Scout</option>
+<option value="92">Terran Valkyrie</option>
+<option value="118">Argon Discoverer Raide</option>
+<option value="119">Argon Discoverer Haule</option>
+<option value="120">Argon Discoverer Vangu</option>
+<option value="133">Split Jaguar Raider</option>
+<option value="134">Split Jaguar Hauler</option>
+<option value="135">Split Jaguar Vanguard</option>
+<option value="148">Paranid Pegasus Raider</option>
+<option value="149">Paranid Pegasus Vangua</option>
+<option value="150">Paranid Pegasus Sentin</option>
+<option value="166">Boron Octopus Raider</option>
+<option value="167">Boron Octopus Vanguard</option>
+<option value="168">Boron Octopus Sentinel</option>
+<option value="181">Teladi Harrier Hauler</option>
+<option value="182">Teladi Harrier Vanguar</option>
+<option value="183">Teladi Harrier Sentine</option>
+<option value="193">Teladi Harrier Raider</option>
+<option value="194">Teladi Harrier Hauler</option>
+<option value="195">Teladi Harrier Vanguar</option>
+<option value="205">Yaki Raijin</option>
+<option value="206">Yaki Raijin Sentinel</option>
+<option value="207">Yaki Raijin Raider</option>
+</optgroup>
+<optgroup label="M6">
+<option value="9">Argon Centaur</option>
+<option value="18">Split Dragon</option>
+<option value="27">Paranid Nemesis</option>
+<option value="36">Boron Hydra</option>
+<option value="45">Teladi Osprey</option>
+<option value="51">Xenon P</option>
+</optgroup>
+<optgroup label="M7">
+<option value="220">Paranid Hyperion</option>
+</optgroup>
+</select></td>
+	</tr>
+	</table>
+	
+	<table style="border:solid 1px #E6E6E6; width: 100%;">
+	<tr>
+		<td valign="top" width="33%"><div id="div_1"></div></td>
+		<td valign="top" width="33%"><div id="div_2"></div></td>
+		<td valign="top" width="33%"><div id="div_3"></div></td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center" style="background: #E6E6E6;"><div id="share_link">On this page you can compare up-to 3 ships, from any class or race.</div></td>
+	</tr>
+	</table>
+
+	<script>
+
+	var ship1_id = 0;
+	var ship2_id = 0;
+	var ship3_id = 0;
+
+	function Chr(AsciiNum)
+	{
+		return String.fromCharCode(AsciiNum);
+	}
+
+	function encode(id)
+	{
+		return Chr(65 + (id / 26)) + Chr(65 + (id % 26));
+	}
+
+	function decode(id)
+	{
+		var part1 = id.charCodeAt(0)-65;
+		var part2 = id.charCodeAt(1)-65;
+
+		return ((part1 * 26) + part2);
+	}
+
+
+	function load_ship(which)
+	{
+		var select_box = document.getElementById(which);
+		var option_value = select_box.options[select_box.selectedIndex].value;
+
+		http = new XMLHttpRequest();
+		http.open('GET', 'get_comp.php?id='+option_value, true);
+
+		http.onreadystatechange=function() 
+		{
+			if(http.readyState == 4)
+			{
+				if (which == 'select_1')
+				{
+					document.getElementById('div_1').innerHTML = http.responseText;
+					ship1_id = option_value;
+				}
+
+				else if (which == 'select_2')
+				{
+					document.getElementById('div_2').innerHTML = http.responseText;
+					ship2_id = option_value;
+				}
+
+				else
+				{
+					document.getElementById('div_3').innerHTML = http.responseText;
+					ship3_id = option_value;
+				}
+
+
+				//----------------------
+				//work-out share id
+				//----------------------
+	
+
+				var share_id = encode(ship1_id) + encode(ship2_id) + encode(ship3_id);
+
+				document.getElementById('share_link').innerHTML = '<b>Share link</b>: <input value="https://roguey.co.uk/x3/ships/compare/'+share_id+'" readonly type="text" size="75" style="background: #EBEBEB;"><br>';
+
+			}
+		}
+
+	  	http.send(null);
+
+		//----------------------
+	}
+
+	function setSelectedIndex(s, v)
+	{
+		for ( var i = 0; i < s.options.length; i++ )
+		{
+			if ( s.options[i].value == v )
+			{
+				s.options[i].selected = true;
+				return;
+			}
+		}
+	}
+
+	function share_load()
+	{
+		var load_ids = '';
+		var ship1 = decode(load_ids.substring(0,2));
+		var ship2 = decode(load_ids.substring(2,4));
+		var ship3 = decode(load_ids.substring(4,6));
+
+		var load_html = '<br><br><center><b>Loading ship</b>...<br><br><img src="/images/bar.gif"></center>';
+
+		if (ship1 > 0)
+		{
+			setSelectedIndex(select_1, ship1);
+			document.getElementById('div_1').innerHTML = load_html;
+			window.setTimeout("document.getElementById('select_1').onchange();", 100);
+		}
+
+		if (ship2 > 0)
+		{
+			setSelectedIndex(select_2, ship2);
+			document.getElementById('div_2').innerHTML = load_html;
+			window.setTimeout("document.getElementById('select_2').onchange();", 1000);
+		}
+
+		if (ship3 > 0)
+		{
+			setSelectedIndex(select_3, ship3);
+			document.getElementById('div_3').innerHTML = load_html;
+			window.setTimeout("document.getElementById('select_3').onchange();", 2000);
+		}
+
+		
+	}
+
+	
+	</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00168 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

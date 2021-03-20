@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Creating: New Map Data &amp; KeyBinds PDF : X4: Foundations - Roguey's Forum</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Creating: New Map Data &amp; KeyBinds PDF, X4: Foundations, gaming, roguey">
+		<META NAME="Description" CONTENT="I am starting a new Map Data creation, with SVG/Vector based PDF with each area.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/forum/viewtopic.php?id=1655">
+		<meta property="og:description" content="I am starting a new Map Data creation, with SVG/Vector based PDF with each area.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Creating: New Map Data &amp; KeyBinds PDF : X4: Foundations">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/forum/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/forum/"><img src="/forum/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #79B4BD;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #79B4BD;">
+				<li class="icon" style="background-color: #79B4BD">&nbsp;</li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+
+			<br>
+			
+			<span style="font-size: 9pt;">
+				<img src="/forum/images/icons/home.gif" alt="Home"><a href="/forum/" class="nav_link"> Board Index</a> &#187; 
+				<a href="/forum/cat.php?id=1" class="nav_link">X Universe</a> &raquo; 
+				<a href="viewforum.php?id=44" class="nav_link">X4: Foundations</a> &raquo; 
+				<a href="/forum/viewtopic.php?id=1655" class="nav_link">Creating: New Map Data &amp; KeyBinds PDF</a>
+			</span>
+			<br><br>
+			
+			<div style="float: right; padding: 8px; font-size: 10pt;">
+				
+			</div>
+			
+			<h1 style="clear: none;">Creating: New Map Data &amp; KeyBinds PDF</h1>
+			<br>
+
+			<br>
+
+		<div class="post_container" id="1655">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_1655">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 2 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=7331" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Shealladh</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_1655">I am starting a new Map Data creation, with SVG/Vector based PDF with each area.<br>Just wondering, while I do this, is there any of this data you can use Roguey?<br><br>My Idea and aim atm;<br><br>I am also creating a custom KeyBind PDF that will include Layers to show/hide Default Keys and then also allow people to click and ADD their new or Key Choice.<br><br>Just wondering if there is anything anyone is wishing for me to add while I do these?<br><br>Map sheet and Data;<br><br>First Step: Create a map square with hexes that are colour coded and numbered to easily find a location.<br><br>Some map Hex have a Pink, Red, Blue borders. What does the pink, for example mean?<br><br>Inside each of the areas, there are X number of hexes, and is handy to see them all colour coded, say red as Minerals within those subhexes.<br><br>Was thinking if you&#039;re using the website to do the same, or building a DB with this data and so on?<br><br>When you&#039;re in an area, using Scan (Shift+2) use also get to see a 3d version of the asteroids around that range. Note sure if these are random as per player or actual base?<br><br>While I&#039;m thinking of it, is there any other Data, Pictures, and so I can give to you while doing the above?</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="14499">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_14499">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 2 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=7331" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Shealladh</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_14499">as an after thought, maybe some of this you may wish to use for your Guides section?<br><br>BTW: Edit post is showing, you cannot modify someone else&#039;s post :/</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="14500">
+		
+			<div class="post_header" style="background-color: #9bffff;">
+				<div style="float: right;" id="post_buttons_14500">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 2 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1" class="admin">
+					<img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Roguey</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				<img src="/users/badges/tv/reddwarf-smeg.gif" alt="User Badge">
+				<div class="custom_title"><a href="/users/locations/" style="color: black;"><img src="/users/flags/united-kingdom.gif" alt="flag" style="float: left; margin-left: 4px; border: 0;">United Kingdom</a></div>
+				<div class="custom_title">Please insert pizza!</div>
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_14500">so, you are creating a pdf of the X4 universe? How will you get data into the pdf, manually or can you code something into the pdf? I always thought pdf were just for documents - sorry if a little confused.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="14501">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_14501">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 2 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=7331" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Shealladh</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_14501">PDF&#039;s are just documents, but you can do some cool stuff with them if you know how.<br><br>You can place data in a excel, for example, and pull it into tables and  the like.<br>I use illustrator and create the vector graphics then put them in a PDF. I can pass on these as SVG for example if you want them.<br><br>I just though pics and other stuff that I find I can pass on to help out here if you like as well. Just not sure what you&#039;re after.<br><br>Sorry if this didn&#039;t come across the best, was posting while at work <img src="/forum/images/smilies/wink2.gif" alt="Wink"></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="14504">
+		
+			<div class="post_header" style="background-color: #9bffff;">
+				<div style="float: right;" id="post_buttons_14504">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 2 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1" class="admin">
+					<img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Roguey</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				<img src="/users/badges/tv/reddwarf-smeg.gif" alt="User Badge">
+				<div class="custom_title"><a href="/users/locations/" style="color: black;"><img src="/users/flags/united-kingdom.gif" alt="flag" style="float: left; margin-left: 4px; border: 0;">United Kingdom</a></div>
+				<div class="custom_title">Please insert pizza!</div>
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_14504">no worries, I was a bit confused myself - as I thought PDF had to be static pages. It sounds like you can do a lot more with PDF than I thought. So you are going to make the universe map in PDF, will you be using the game files or creating it from images? as for the SVG files, well the site creates the maps from the game files, and javascript (which could be rescaled etc). Im interested to see what you make,</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="14508">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_14508">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 2 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=7331" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Shealladh</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_14508">PDF are mainly static, you can use a lot of JavaScript to add function. It may be a lot of work though to get the &quot;whole&quot; Universe map in PDF.<br><br>That said, am creating some temp blank maps to begin with, maybe as a placeholder for those who want to plan their station, or maybe use for notes etc.<br><br>I have never looked at  the games&#039; files, so mostly from images maps/taken and s o on<br><br>Maybe there is a way to have the PDF map populate from a script linked to the game files, this would be a cool way to auto update them maybe.<br><br>For example, being able to show the area in which is covered by asteroids, mine fields etc. I was down in Atiya&#039;s Misfortune and there are a lot of Mines around that are nearly invisible. Not sure, but if you could use the game files as you explore and remember the last &quot;map&quot; of when you travelled through would be a boon.<br><br>Sadly, I&#039;m no programmer by any long shot.<br><br>If you have some thoughts or wishes let us know, I always like to attempt something new to try.<br><br>At the moment, figuring how I can link these things together and how it&#039;s all done, then what we can do with them. It would certainly help if there is a way to &quot;see&quot; the map data, however, I don&#039;t even know where to look and what I&#039;d be looking for *blush*<br><br>Aside from the above, one thing I thought of last nigh, what if we could have ship diagrams and show the # slots, which slots are used, etc. I took down a Xenon Destroyer in my Eclipse Vanguard (took some doing) but they have a blind spot and you can kill each shield, weapon etc., one by one if you know where they are on the ship you&#039;re attacking. Hence the idea of ship schematics/diagram, say something like WWII bomber/fighter visual guides.<br><br>This could be expanded to the various stations, as you can see where each element is, shields, turrets, comms, etc. and when one is attacking them, these are handy &quot;advance&quot; surveillance information.<br><br>They way I see these being done is like a silhouette and then Slot Squares showing on the underneath, top, side etc. Just a thought <img src="/forum/images/smilies/wink2.gif" alt="Wink"><br><br>So going back to the SVG and Game Data, could you use SVG underlays on the website for the hexes (with their colours) and then use the data as x/y points or at X/Y pixels?<br><br>ie. using &lt;iframe src=&quot;mySvgImage.svg&quot; width=&quot;200&quot; height=&quot;200&quot; &gt; or &lt;img src=&quot;/svg/circle-element-1.jsp&quot;&gt; or maybe;<br><br>div {<br>    background-image: url(&#039;my-svg-image.svg&#039;);<br>    background-size : 100px 100px;<br>}<br><br>Use could even use these elements as ICONs and manipulate via CSS, a JavaScript API, etc.<br><br>This is how I was thinking of making the first map, basically an iframe with vectors that you can zoom and because it&#039;s vector, gets more and more details. I have yet to try, but seen many animated SVGs where you can have key frames for the state of the image, think of keyframes as if it were a video, it then jumps to the &quot;display&quot; frame as you need too. Saves a lot of raster imaging etc.<br><br>For some of what I mean as working examples, have a look here;<br><br>http://tutorials.jenkov.com/svg/svg-examples.html<br><br>and<br><br>http://tutorials.jenkov.com/svg/svg-animation.html<br><br>All just theory and ideas atm, let us know what you thought are and in the mean time I&#039;ll work on some tests.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="14512">
+		
+			<div class="post_header" style="background-color: #9bffff;">
+				<div style="float: right;" id="post_buttons_14512">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 2 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1" class="admin">
+					<img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Roguey</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				<img src="/users/badges/tv/reddwarf-smeg.gif" alt="User Badge">
+				<div class="custom_title"><a href="/users/locations/" style="color: black;"><img src="/users/flags/united-kingdom.gif" alt="flag" style="float: left; margin-left: 4px; border: 0;">United Kingdom</a></div>
+				<div class="custom_title">Please insert pizza!</div>
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_14512">hi there, <br><br>thanks for explaining about pdf, as only ever use them for lookup - so I dont know much about how they work. Im surprised that pdf can use javascript - is a cut-down version or anythinng?<br><br>as for the universe map, that does sound interesting - although not sure how javascript would do it all. Although the more I learn about javascript, the more it seems to be able to do. However creating the universe maps from gamefile could be very hard. It was a nightmare working out how the jump-gates destinations.<br><br>You said about ship diagrams - so you can see where the various equipment is located. That would be a great idea - although would that mean they would have to be in 2D?<br><br>I never really looked at SVG before, but I can see them being very useful. How do they handle click events? ie. if a box is moving etc.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="14538">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_14538">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 2 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=7331" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Shealladh</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_14538">Sorry for no reply in ages, been on holidays and still pondering the best approach to get started on all this.<br><br>Just thought I&#039;d drop in to say I hadn&#039;t been abducted by Jabba or anything.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="14539">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_14539">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 2 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=7331" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Shealladh</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_14539">GOt side tracked on trying to covert the X4 wiki into what looks and reads like a proper manual and digging into the code more and finding out what I can add to the above</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+			<div style="width: 100%; text-align: center; font-size: 10pt;">&laquo; Previous
+ | <b>Page:</b> <b class="page_box_on">1</b>
+ | Next &raquo;
+</div>
+			
+			<br style="clear: both;"><br>
+	<b>You need to log-in to post here.</b><br>
+
+
+			<script src="/modules/syntaxhighlight.js"></script>
+
+			<script>FmtCodeBlocks();</script>
+			
+			<script>
+				// store when editing
+				var old_buttons 	= new Array();
+				var http_edit		= new XMLHttpRequest();
+				
+				function inline_editor(obj_type, obj_id, page)
+				{
+					
+					// store if not set
+					if (old_buttons[obj_id] == null)
+					{
+						old_buttons[obj_id] = document.getElementById('post_buttons_'+obj_id).innerHTML;
+						
+						document.getElementById('post_buttons_'+obj_id).innerHTML	= '';
+						
+						// get UBB code from database
+						http_edit.open('GET', '/forum/ajax/get_post.php?obj_type='+obj_type+'&obj_id='+obj_id, true);
+						http_edit.onreadystatechange=function() 
+						{
+							if ( (http_edit.readyState == 4) && (http_edit.status==200) )
+							{
+								// add support for the old type of editing (not inline)							
+								document.getElementById('post_msg_'+obj_id).innerHTML = '<textarea style="width: 100%; height: 250px;" id="post_editor_'+obj_id+'">'+http_edit.responseText+'</textarea><br><div style="float: right;"><a href="./edit.php?obj_type='+obj_type+'&amp;obj_id='+obj_id+'&amp;p='+page+'" class="smalllink">&raquo; full editor</a></div><input type="button" value="Update post" style="padding: 12px;" onclick="inline_save(\''+obj_type+'\', '+obj_id+', '+page+');">';
+							} 
+						}
+						
+						http_edit.send(null);
+					}
+				}
+	
+				
+				function inline_save(obj_type, obj_id, page)
+				{
+					
+					// fix for & in post data string
+					var postdata		= 	'message='+encodeURIComponent(document.getElementById('post_editor_'+obj_id).value)+
+											'&obj_id='+obj_id+'&obj_type='+obj_type;
+		
+					// open up
+					http_edit.open('POST', './ajax/update_post.php', true);
+					
+					//Send the proper header information along with the request
+					http_edit.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+				
+					http_edit.onreadystatechange=function()  
+					{
+					
+						if( (http_edit.readyState == 4) && (http_edit.status==200) )
+						{
+							document.getElementById('post_msg_'+obj_id).innerHTML  = http_edit.responseText;
+						}
+					}
+					
+					// send
+					http_edit.send(postdata);
+					
+					// change the buttons back
+					document.getElementById('post_buttons_'+obj_id).innerHTML 	= old_buttons[obj_id];
+					
+					// clear
+					old_buttons[obj_id] = null;
+				}
+				
+			</script>
+<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00559 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

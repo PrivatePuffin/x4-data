@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Modifications - Roguey's X2 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Modifications, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x2/mods.php">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Modifications">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x2/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x2/"><img src="/x2/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #D401DC;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #D401DC;">
+				<li class="icon" style="background-color: #D401DC">&nbsp;</li><li><a href="/x2/">News</a></li><li><a href="/x2/pictures/">Pictures</a></li><li><a href="/x2/videos/">Videos</a></li><li><a href="/x2/help/">Help / Guides</a></li><li><a href="/x2/ships/">Ships</a></li><li><a href="/x2/universe/">Maps</a></li><li><a href="/x2/lasers/">Lasers</a></li><li><a href="/x2/missiles/">Missiles</a></li><li><a href="/x2/shields/">Shields</a></li><li><a href="/x2/wares/">Wares</a></li><li><a href="/x2/mods.php">My Mods</a></li><li><a href="/forum/viewforum.php?id=11">Forum</a></li><li><a href="/x2/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Modifications</h1><br>
+
+	<h2>Extreme v2.0b</h2>
+		<div class="pad">
+			<img src="./images/rogueyextreme_paranidmstriker.jpg" width="200" alt="Extreme v2.0b picture" align="right">
+
+			This mod is about combining my other two mods (Balance and Beam mod) into one larger mod. The beam part in this mod works an little different than in my previous mod - an slower charge up but delivers more power. Shortly after combing the two mods I learnt how to change much more in the game including textures, ships and text in the game. In couple of cases I have changed the original ship design to feature more weaponry ie. Boron Hydra (extra turret) and Split Mamba (2 extra guns on the front) as many ships were lacking.
+			<br><br>
+
+			<b>Main features</b>
+			<ul>
+				<li> Beam Cannons on all M1/M2/TL ships,</li>
+				<li> Many new ships added,
+				<li> Many ship tweaks including speed, weapons and gun mounts,</li>
+				<li> More Xenon activity - specially in later sectors,</li>
+				<li> More Khaak activity,</li>
+				<li> Shield upgrades now 3Mw, 8Mw, 26Mw or 135Mw,</li>
+				<li> Improved/changed textures,</li>
+				<li> Goods prices tweaked,</li>
+				<li> Many changes to the universe,</li>
+				<li> Missile and bullet speed increases,</li>
+			</ul>
+			<br>
+
+			<a href="http://blue.roguey.co.uk/downloads/x2/Rogueys_Extreme-v2b.zip"><b>Download</b></a>
+		</div>
+
+
+	<br>
+
+	<h2>Balance V1.00</h2>
+		<div class="pad">
+			<img src="./images/my_mod2c_s.jpg" width="200" alt="X2 mod picture" align="right">
+
+			This mod is all about changing the game around so things arent so similar and some cases making things fair. 
+			An example of this is that the M2 ships have very different layouts now, some better than others, however the 
+			price will generally reflect this like it should do. Some of the bigger mods to ships would be the M6 Hyrda now has 
+			3 guns on the back, M2 Ray is a lot worse but much cheaper (an good starting M2 ship), M1 Condor changed into a 
+			big cargo ship and the Boron M1 shark is more an fighting ship due to the lack of fire-power on the Boron M2.
+			<br><br>
+
+			All weapons have had their bullet speed increased around 3 times and due to this the range also
+			improved some what but not a lot.
+			<br><br>
+
+			I have also looked into the changes of price for wares, trying to give a better return on more costly items. 
+			Ive done this to try and make trading more useful in the game as the profits you could make were very small. 
+			For example you can make around 300k on buying an 125Mw at the lowest price and selling it for the max price.
+			<br><br>
+
+			Maybe a couple more options will be possible now, such as collecting slaves and selling them for good money, 
+			building an big trade empire, putting mines around, etc.
+			<br><br>
+
+			Things now in the X2 world may be a lot different, sometimes fairer, sometimes not, however this time 
+			there is a lot more mix in the galaxy.
+			<br><br>
+
+			<a href="http://blue.roguey.co.uk/downloads/x2/roguey_balance_mod.rar"><b>Download</b></a>
+		</div>
+
+	<h2>PPC Mod v1.00</h2>
+		<div class="pad">
+			<img src="./images/my_mod2a_s.jpg" width="200" alt="X2 mod picture" align="right">
+
+			M1/M2 ships have the PPC changed from a spammie weapons into ion cannons which take time to charge up and then 
+			fire with a lot of fire power. One thing I have tried to do with this is make an M2 vs M2 battle more equal as 
+			all you had to is to strafe and your always win. This way it adds a bit of fairness to the CPU ships in the game. 
+			It might be also fair to say that equiping a ship with only one type of weapon might be a bad idea, as HEPT can offer 
+			some fire fire power for faster moving ships whist PPC are good at shield damage and slower moving ships. 
+			This is all geared to make the bigger ships in the game feel bigger with larger weaponary.
+			<br><br>
+
+			M1 ships have been changed a lot, more cargo space, more weapons and more shields. So M1 might be able to get into 
+			some more fights. One big change is that the Tedai M1 can carry station class cargo, with a lot of shields however 
+			much less weapons are on it, as it only a trading ship.
+			<br><br>
+
+			The split M2 has some extra weapons added to it to make up the shield difference, as well only taking 25Mw shields, 
+			however 22 of them.
+			<br><br>
+
+			I have also up some of the power generator sizes of some of the M6 ships, increased the speed of the Alpha, 
+			Beta and Gamma HEPT lasers, increased the mining laser distance increase and adjusted PPC price change a little.
+			<br><br>
+
+			<a href="http://blue.roguey.co.uk/downloads/x2/roguey_mod.rar"><b>Download</b></a>
+		</div>
+
+	
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00052 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

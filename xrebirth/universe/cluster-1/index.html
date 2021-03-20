@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Maelstrom (cluster) - Roguey's X Rebirth site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Maelstrom, cluster, map, gaming, roguey">
+		<META NAME="Description" CONTENT="A cluster map of Maelstrom">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/xrebirth/universe/cluster-1/">
+		<meta property="og:description" content="A cluster map of Maelstrom">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Maelstrom (cluster)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/xrebirth/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/xrebirth/"><img src="/xrebirth/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #6F9F6F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #6F9F6F;">
+				<li class="icon" style="background-color: #6F9F6F">&nbsp;</li><li><a href="/xrebirth/">News</a></li><li><a href="/xrebirth/pictures/">Pictures</a></li><li><a href="/xrebirth/videos/">Videos</a></li><li><a href="/xrebirth/help/">Help / Guides</a></li><li><a href="/xrebirth/ships/">Ships</a></li><li><a href="/xrebirth/universe/">Maps</a></li><li><a href="/xrebirth/statistics/">Statistics</a></li><li><a href="/xrebirth/stations/">Stations</a></li><li><a href="/xrebirth/wares/">Wares</a></li><li><a href="/xrebirth/teladi-outpost/">Teladi Outpost</a></li><li><a href="/xrebirth/home-of-light/">Home of Light</a></li><li><a href="/xrebirth/editing/">Editing</a></li><li><a href="/xrebirth/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=20">Forum</a></li><li><a href="/xrebirth/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<h1>Maelstrom <span class="smalltext">(cluster)</span></h1>
+
+	<a href="../">Universe</a> &#187; Maelstrom
+	<br><br>
+
+	<div style="position:relative; 100%; height: 620px;">
+		<canvas id="bg_canvas" width="850" height="600" style="position:absolute; left:0; top:0;">Your browser does not support the canvas object.</canvas>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_1">
+				<a href="./sector-1/"  class="info">
+					<img src="../images/orange-dot.gif" border="0"><b class="smalltext" style="color: red;">Sigma Sector</b>
+					<span>
+						<b>Sigma Sector</b><br><i class="smalltext">Containing <b>zones</b>:<br>
+<ul>
+<li>Aged Ductwork</li>
+<li style="color: red;">Alpha Quadrant (gate)</li>
+<li style="color: red;">Blast Quarry (gate)</li>
+<li>Deceptive Dead End</li>
+<li>Grim Keepers</li>
+<li>Imminent Mischief</li>
+<li>Inviting Colossus</li>
+<li>Sturdy Crusader</li>
+<li>Sunken Frigate</li>
+<li>Timid Star</li>
+</ul></i>
+
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_2">
+				<a href="./sector-2/"  class="info">
+					<img src="../images/orange-dot.gif" border="0"><b class="smalltext">Blurred Reflection</b>
+					<span>
+						<b>Blurred Reflection</b><br><i class="smalltext">Containing <b>zones</b>:<br>
+<ul>
+<li>Indignity</li>
+<li>Prevarication</li>
+<li>The Sixth Scripture</li>
+<li>Twisted Faith</li>
+<li>Unending Path</li>
+</ul></i>
+
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_3">
+				<a href="./sector-3/"  class="info">
+					<img src="../images/orange-dot.gif" border="0"><b class="smalltext">Sable Vortex</b>
+					<span>
+						<b>Sable Vortex</b><br><i class="smalltext">Containing <b>zones</b>:<br>
+<ul>
+<li>Cryptic Heart</li>
+<li>Gravity Anomaly</li>
+<li>Schrödingers Drift</li>
+<li>Shattered Singularity</li>
+<li>Time Distortion</li>
+<li>Venturous Profit</li>
+</ul></i>
+
+					</span>
+				</a>				
+			</div>
+
+
+		<script src="../js/cluster.js"></script>
+
+		<script>
+
+			// map item data
+			var map_items_x=[56459092, 21615, -52361260];
+			var map_items_z=[-5069391, -61614, 39248600];
+
+			// highway data
+			var sec_highway_x=[221620, 19831618, 32787380, 42012330, 56259095, 0.01, 56259095, 46738137, 32647810, 17806380, 221620, 0.01, -52161262, -49304055, -40972907, -31988036, -22910462, -13796868, -178388, 0.01, -178386, -15124274, -27400180, -38103485, -46588012, -48831336, -50599438, -52161262, 0.01];
+			var sec_highway_z=[-29514, -11504940, -14117062, -13302251, -5033096, 0.01, -5028483, 1104280, 4188194, 3408513, -24490, 0.01, 39286958, 40120548, 42999458, 32641300, 14178715, 7468579, -9202, 0.01, -15320, 2182119, 6730702, 13339346, 22412826, 32518175, 37685937, 39295563, 0.01];
+
+			//highway checkpoints
+			var sec_highway_cp1_x=[10876181, 24213977, 35729079, 46463271, 56259095, 0.01, 53944986, 43037325, 29272443, 11698634, -10640925, 0.01, -50833067, -46431598, -39284982, -29364711, -18936972, -10315527, 7455204, 0.01, -11210072, -19325857, -31414604, -41760344, -48370635, -49494706, -51154874, -52161262, 0.01];
+			var sec_highway_cp1_z=[-8259680, -12905896, -14420366, -11987784, -5033096, 0.01, -4377270, 2646772, 4250450, 2706542, -2212901, 0.01, 39416683, 41418363, 42721674, 27679557, 10641292, 5062358, -4273016, 0.01, 536510, 3495707, 8591584, 15956817, 25612978, 35065413, 38815324, 39295563, 0.01];
+			var sec_highway_cp2_x=[15449259, 29845681, 37561389, 50730436, 42074040, 0.01, 50438949, 36023177, 23914126, 11325907, 42074040, 0.01, -49483644, -42660832, -34611361, -26883952, -17278209, -7921427, -33112278, 0.01, -10922691, -23385756, -34446633, -44805389, -48167966, -50044002, -51897437, -32502938, 0.01];
+			var sec_highway_cp2_z=[-10103984, -13813758, -14616718, -9618852, -6714367, 0.01, -438212, 4125938, 4110484, 2212624, -5776243, 0.01, 40039407, 43277242, 37603043, 17716138, 9874800, 4315745, 18033204, 0.01, 868531, 4869820, 10721880, 19212674, 29970937, 36556550, 39359944, 14109545, 0.01];
+
+			window.onload = draw_cluster();
+
+		</script>
+
+	</div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00071 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

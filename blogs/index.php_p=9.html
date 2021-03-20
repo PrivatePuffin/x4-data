@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=9">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 9 of 16)</span></h1><br>
+	
+		<h2>X3TC &#187; Blogging away</h2>
+
+
+		<div class="pad">
+			Greetings and salutations,<br><br>This will be my first ever blog, thus it will likely be wrought with errors.  I have owned the X3 games for about 15 months now, yet I&#039;ve not honestly had the patience to really get into a single save before now.  I recently played relatively far into X3AP, getting the HQ and Xenon Hub before becoming disgusted by my ineptly built system of trade, and decided to give X3:TC a try after almost a year long hiatus.<br><br>I&#039;ve now played for about 3 hours real time, yet I&#039;ve managed to die at least twice that number.  I started out with the Terran character.  I tried to complete the main quest with out any additional help; that failed resoundingly after I died twice attempting to scan the pirate base. 
+			... <a href="/blogs/sha1hulud/blog-59.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/sha1hulud/"><b>Sha1hulud</b></a></b> on Friday 1st June, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/sha1hulud/blog-59.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/sha1hulud/blog-59.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>DIABLO 3 &#187; Onto Nightmare mode</h2>
+
+
+		<div class="pad">
+			A bit ago I was a little worried that Diablo 3 was a bit easy. However by around act 4 in normal the game did start to get a lot tougher: I was getting killed a few times.<br><br>Now I am on Nightmare mode (where you go around again but with harder monsters and better items drop) and I&#039;m getting some good battles, although having to be careful as some monsters put out some massive damage. I remember one skeleton guy with large axe charging it up, and then doing over 4,000 damage! I also seem to have problems with molten guys too (usually forget about their little parting gift, doh). <br><br><center><a href="/blogs/images/user_1/large/pic_44.jpg"><img src="/blogs/images/user_1/large/pic_44.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>Now I had a bit more time with the level system, I can understand how they done a few things. I do like the idea about
+			... <a href="/blogs/roguey/blog-58.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 28th May, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-58.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-58.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>DIABLO 3 &#187; Further in, now at level 20</h2>
+
+
+		<div class="pad">
+			I am now a bit further into Diablo 3, at act two and being level 20 Demon Hunter. So I had a bit more time to get used to the game and its mechanics now.<br><br>My only real gripe so far is with levelling system, as it kind-of does everything itself now. In Diablo 2, you would gain 1 skill point and like 15 attribute points (to place where you like). However in Diablo 3, skills are simply unlocked at certain levels (ie. No skill points to boost skills, so skills don&#039;t really improve per level) and attribute points are automatically assigned. Whilst automatically assigning attribute points means that you can&#039;t put a load of points in the wrong place, equally means you have less freedom on how you develop your character. You may want
+			... <a href="/blogs/roguey/blog-57.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 20th May, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-57.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-57.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>DIABLO 3 &#187; Wheres Roguey?... </h2>
+
+
+		<div class="pad">
+			In the next few days you may wonder why Roguey has gone a bit quieter than normal.. well, the reason is that Diablo 3 came out. It seam it&#039;s a hard game to find: being sold out at so many places. One seller play.com said <i>in-stock within 3-5 weeks</i>! However a few retailers are taking advantage of this, hiking the prices up-to £45+ (which is just crazy for a PC game). I understand a bit of a price hike, but £45+ just seems extreme!<br><br>Anyway... Ive had a few hours in it and things are kind-of strange.. The first thing to note is <b>the graphics</b>. They havnt changed the view (like Guildwars), so it plays much like Diablo 2 but with vastly improved graphics. Towns, dungeons etc. look very well
+			... <a href="/blogs/roguey/blog-56.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 18th May, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-56.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-56.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Repairing a Denon RC-970</h2>
+
+
+		<div class="pad">
+			You may wonder what the heck is a Denon Dc-970.. well it&#039;s an old remote control for Denon A/V unit (AVR3805). Because the remote control is quite old now, it is much harder to find a replacement for it. So I decided to try and repair the unit after all of the lighted panels went out. This is what I did a while back: its took me awhile to get around to posting this.<br><br>The first part is actually getting the thing undone, as it&#039;s held by 8 clips. So the first thing to do is to undo all 8 clips, here:<br><br><center><a href="/blogs/images/user_1/large/pic_35.jpg"><img src="/blogs/images/user_1/large/pic_35.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>This is quite hard to undo as each clip pretty hard to unleash. You also have to careful has the screw-driver could slip or mark the side of the remote. It took a while but in the end I got it undone. The
+			... <a href="/blogs/roguey/blog-55.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 23rd April, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-55.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-55.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Complex building... pays off.</h2>
+
+
+		<div class="pad">
+			So I have started to go into complex building, and I have got myself addicted to it. I have built a self-sufficient complex that supplies will supply my HQ for ship building. I will be building up a huge fleet even though it will take a long time.<br>My complex in PTNI was originally for Energy Cells but it branched off onto a lot of other things.<br>My first one in Argon Prime is self-sufficiant up to the point of ore and silicon, but they are always stocked to the max, with one freighter for each.  <br>I plan to build in an uninhabited a sector and huge complex designed to resuppy my fleet with shields and weapons. May take a while and will be expensive put will pay off in the long run <img src="/forum/images/smilies/biggrin.gif" alt="Big grin">
+			... <a href="/blogs/bozo64r/blog-54.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/bozo64r/"><b>bozo64r</b></a></b> on Sunday 26th February, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/bozo64r/blog-54.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 3 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/bozo64r/blog-54.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>New compare program</h2>
+
+
+		<div class="pad">
+			In the past ive relied on people feebck and the change list to update my stats. However with v2.0 due too, I wanted something better so I could update my stats easier, quicker and with more detail. So I set about creating a small program in VB to scan two CSV files and tell me all the differences. <br><br>My program can also understand the tships file, telling me the name of the ship and even what columns have changed. (v1.0 to v1.1): <br><br><center><a href="/blogs/images/user_1/large/pic_34.jpg"><img src="/blogs/images/user_1/large/pic_34.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>Hopefully this should make updating much easier for me... Let the computer do all the hard work! <img src="/forum/images/smilies/tongue2.gif" alt=":P">
+			... <a href="/blogs/roguey/blog-53.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Thursday 23rd February, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-53.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-53.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3AP &#187; X3 AP, Rebirth and some other thoughts</h2>
+
+
+		<div class="pad">
+			Heyo everyone!<br><br>So, yeah long time no see. Had a lot of work going on for school and some personal BS to top it off. <br>Well, now Im hopefully back. A couple things changed, and a couple didnt. I still code, and I still prefer my operating systems to be Linux, but I got a copy of Windows 7 now, and a copy of X3 AP too.<br><br>X3 AP:<br>As some might know, Ive played only X2 and X3R, because they were available on linux. For X3AP, I actually installed a copy of windows, started a new game, and was pleasantly surprised.<br><br>GUI: The GUI redesign was a smart move, its much easier to play on 26inch screens now. I also seem to have less trouble navigating the menus (but thats probably just imagined. About the siderbar, well...I dont like it. it
+			... <a href="/blogs/nethawk/blog-52.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/nethawk/"><b>NetHawk</b></a></b> on Tuesday 21st February, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/nethawk/blog-52.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/nethawk/blog-52.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=8">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<b class="page_box_on">9</b>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=10">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00193 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

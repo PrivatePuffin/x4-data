@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=14">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 14 of 16)</span></h1><br>
+	
+		<h2>Starting X-Tension</h2>
+
+
+		<div class="pad">
+			Yesterday I started X-Tension after finishing the plot in X-BTF.<br><br>X-Tension was a big leap from X-BTF, with maps, changeable ships, ship stats, missions and capturing. I havnt got far yet but I found something interesting, which I thought may help to anyone playing it.<br><br>Once you have enough money, get 5 x <b>Silkworm missiles</b>. You can buy these from Equipment dock (in Argon Prime). A good idea is to save now. Next find a <b>Argon Elite</b> without a homebase and follow it.  Once you can close enough, launch all 5 missiles (with roughly a 100-200ms delay). After all 5 hit, the Argon Elite shields should be very low and you have a chance of him bailing. If he didnt, then re-load and try again. After a few attempts he may bail and you
+			... <a href="/blogs/roguey/blog-18.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Wednesday 27th April, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-18.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-18.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X Beyond the Frontier starting tips</h2>
+
+
+		<div class="pad">
+			Over the past few days ive been re-playing X Beyond the Frontier (ie. the first X game). You are really thrown in without no help, so I thought ill post some of my tips to help you get started - encase anyone else tries X-BTF.<br><br>You start off in <b>Seizewell</b> with one 1MW shield and a few credits. The first thing I recommend doing is to travel to the equipment dock and sell the shield. Contrary to the Teladi Capitan, you ship will be fine without a shield, just dont use the booster (this can make your ship explode without a shield). You can use the booster to reach the equipment dock.<br><br><center><a href="/blogs/images/user_1/large/pic_8.jpg"><img src="/blogs/images/user_1/large/pic_8.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>Once at the equipment dock you will need to dock manually (you will need to do all your docking manually). I really miss
+			... <a href="/blogs/roguey/blog-16.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 24th April, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-16.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 8 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-16.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Cant find the special asteroid in Chinns clouds?</h2>
+
+
+		<div class="pad">
+			At first I wondered where the heck <b>Chinns clouds</b> was. Looking around on the net, its south of <b>Family Pride</b>. I thought it was <b>Rhonkars Clouds</b>, I guess it got renamed in a later X.<br><br>Anyway... When you have to look for the special asteroid, it is here (for anyone having problems).<br><br> <center><a href="/blogs/images/user_1/large/pic_10.jpg"><img src="/blogs/images/user_1/large/pic_10.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>After you find the asteroid, use a <b>Hornet</b> missile to break the asteroid open. When the asteroid is broken, you should see a data recorder which you need to pick-up.
+			... <a href="/blogs/roguey/blog-17.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 24th April, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-17.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-17.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>PS3 &#187; Over 2,000 ps3 trophies</h2>
+
+
+		<div class="pad">
+			I have just gained over 2,000 trophies on the PS3. This is a bit of a landmark for me, as I normally take my time with games. I normally try to get the most trophies from a game before moving onto another, although I do have a few games on the go atm (Little big planet 2, Assassins creed: brotherhood, gt5, fallout: new vegas, blood stone and few more). <br><br><div style="text-align: center"><img src="http://ps3.roguey.co.uk/images/trophy_ps3.jpg" style="border: 0;" alt="Picture"></div><br><br>I am trying to finish off Fallout3: New vegas, however it is fighting back with crashing. It even crashed when I went to start the game <img src="/forum/images/smilies/icon_cry.gif" alt="Cry">
+			... <a href="/blogs/roguey/blog-15.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 10th April, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-15.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-15.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>siteadvisor.com HTTP 2xx or 3xx status</h2>
+
+
+		<div class="pad">
+			After the recent report from bing I wanted to check the site to see if any other site reports any malware, or a reason why bing thinks there is. I thought id try siteadvisor to see, however when I go to add this site it just comes up with:<br><br><div class="quote">It appears that the Web site roguey.co.uk (or www.roguey.co.uk) is returning an HTTP 2xx or 3xx status response code in the header of 404 pages</div><br><br>Ive checked everything here, and our 404&#039;s are correct. Oh well, stupid site <img src="/forum/images/smilies/smile.gif" alt="Smile">
+			... <a href="/blogs/roguey/blog-14.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Tuesday 29th March, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-14.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-14.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Bozo&#039;s Blog</h2>
+
+
+		<div class="pad">
+			Ergh.... I like blogging... It&#039;s a way of getting things out there.<br>Well... today I completed X3 Terran Conflict for the third time, this time in an M7, Yaki Kariudo. Good ship. I started on X3 Reunion again, decided to get a few (10) Argon Goliaths mixed with fighters and stuff.... to try and take town the Terran defense in Heretics End at the end of the game, turns out it&#039;s not possible, I ended up in an Argon Arrow, (ship i always use for escape 1000+m/s) Dodging M1s and M2s <img src="/forum/images/smilies/smile.gif" alt="Smile"> Got through the gate then the game crashed. Did not get to see Earth!<br>Recently go made a Mod... <img src="/forum/images/smilies/smile.gif" alt="Smile"> *sings I have the Power* <img src="/forum/images/smilies/smile.gif" alt="Smile"> and also I make signatures for anyone on the forums. I am glad to be back on here <img src="/forum/images/smilies/smile.gif" alt="Smile"> Just wanted to see what this was
+			... <a href="/blogs/bozo64r/blog-13.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/bozo64r/"><b>bozo64r</b></a></b> on Monday 21st March, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/bozo64r/blog-13.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/bozo64r/blog-13.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>what i&#039;ve been up to</h2>
+
+
+		<div class="pad">
+			i just wanted to touch base with anyone who cares, and let them know what ive been up to.<br><br>actually, i&#039;ve been reading a lot lately on my Kindle. not only do i enjoy PC games, and PS3 games, but i also read fantasy. along with all that i work at least 8 hours a day on weekdays, and i have to fit in some exercise sometime in there too. oh and i guess i should mention my wife too.<br><br>so, rather than try to do everything that i like doing, every day, i usually just focus on one thing at a time, untill i get tired of it. when i first joined this site, i was on a X3 kick, and i was playing that game almost every spare minute i had. i got kinda bored with that after a month or so, and i moved on to trying some old N64/PSX games on my
+			... <a href="/blogs/jacer08/blog-12.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/jacer08/"><b>jacer08</b></a></b> on Wednesday 9th March, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/jacer08/blog-12.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/jacer08/blog-12.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Bing activity but still low results</h2>
+
+
+		<div class="pad">
+			Bing seems to be going mad: Constantly I keep seeing <i>MSNBot</i> on the recent unique visitors on the extreme counter (the blue planet icon at the bottom). So at-least the bot is actually visiting the site now. However... the status have only slightly improved (since last time):<br><br><center><a href="/blogs/images/user_1/large/pic_7.jpg"><img src="/blogs/images/user_1/large/pic_7.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>I hope Bing&#039;s statistics start improving drastically, atm its taking a lot of bandwidth and only sending very few people here. Maybe the bot has took an interest in X3? TC? Just look how low those clicks and crawls are! <img src="/forum/images/smilies/frown.gif" alt="Sad">
+			... <a href="/blogs/roguey/blog-11.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Tuesday 1st March, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-11.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-11.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=13">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<b class="page_box_on">14</b>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=15">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00518 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+/* ----------------------- 	*/
+/* primary					*/
+/* -----------------------	*/
+
+.content
+{
+	width: 99%;
+}
+
+.site-container
+{
+	max-width: 1280px;
+	min-width: 860px;
+}
+
+.content
+{
+	margin: 1px 2.25%;
+}
+
+.page-header, .page-nav, .content-container
+{
+	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------------- */
+
+.subheader
+{	
+	background-color: #DDEDEF; 
+}
+
+.minorheader
+{
+	width: 98%; 
+	background-color: #F1F8F9; 
+	text-align: right; 
+	padding: 5px 8px;
+}
+
+/* ----------------------- */
+/* Standard HTML tags      */
+/* ----------------------- */
+
+h1, h2, h3
+{
+	color: #5AA3AE;
+}
+
+/* ----------------------- */
+/* Sub/Small navbar		   */
+/* ----------------------- */
+
+#snavbar
+{
+	background-color: #F3F9FB;
+}
+#snavbar ul
+{
+
+	border-bottom: 4px solid #C3DDE5;
+}
+
+#snavbar ul li a 
+{
+	color: #333333;
+	
+	background-color: #EAF4F6;
+}
+#snavbar ul li a:hover 
+{
+	border-bottom: 4px solid #39F164;
+}
+
+
+/* ----------------------- */
+
+#snavbar .tabon a
+{
+
+	border-bottom: 4px solid #6CADC0;
+	background-color: #DCECF0;
+	color: #3B77F1;
+}
+
+/* ----------------------- */
+/* Subscription box */
+/* ----------------------- */
+
+.subscription_box
+{
+	margin-left: 8px;
+	float: left;
+	
+	padding: 4px;
+
+	color: #D29F4E;
+
+	text-align: right;
+}
+
+
+/* ----------------------- */
+/* Forum Board		  */
+/* ----------------------- */
+
+.board_table td
+{
+	background-color: #FCFEFE;
+	font-size: 1.2em;
+}
+
+.board_table th
+{
+	background-color: #5AA3AE;
+	color: #ffffff;
+	
+	padding: 4px 1px;
+	
+	font-size: 11pt;
+	
+	border-top: 2px solid #5298A2;
+	border-bottom: 2px solid #5298A2;
+}
+
+.board_table td.info
+{
+	font-size: 10pt;
+}
+
+.board_table tr.hover:hover td
+{
+	background-color: #EAF6F4;
+}
+
+a:link.cat_link, a:visited.cat_link, a:active.cat_link 
+{
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #424242;	
+}
+
+a:link.nav_link, a:visited.nav_link, a:active.nav_link 
+{
+	font-size: 10pt;
+	font-weight: bold;
+	color: #424242;
+}
+
+.board_table td.bt-bg1
+{
+	background-color: #F9F9F9;
+}
+
+.board_table td.bt-bg2
+{
+	background-color: #F5F5F5;
+}
+
+/* ----------------------- */
+/* Link styles             */
+/* ----------------------- */
+
+a:link, a:visited, a:active 
+{
+	font-weight: normal;
+	COLOR: #5EACBA;
+	text-decoration:none;
+}
+
+a:hover 
+{
+	font-weight: normal;
+	color: #5EACBA;
+	text-decoration: underline;
+}
+
+a:link.smalllink, a:visited.smalllink, a:active.smalllink 
+{
+	font-weight: normal;
+	font-size: 9pt;
+	COLOR: #5EACBA;
+	text-decoration: underline;
+}
+
+a:hover.smalllink 
+{
+	text-decoration: none;
+}
+
+a:link.colourlink, a:visited.colourlink, a:active.colourlink 
+{
+	font-weight: bold;
+	COLOR: #B79751;
+	TEXT-DECORATION: none;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+a:hover.colourlink
+{
+	font-weight: bold;
+	COLOR: #B79751;
+	text-decoration: underline;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+
+
+/* ----------------------- */
+/* Buttons
+/* ----------------------- */
+
+
+input.sub_button
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	color: #ffffff;
+
+	padding: 3px 10px;
+
+	background: -moz-linear-gradient(top, #DEB97E 0%, #D4A254);
+	background: -webkit-gradient(linear, left top, left bottom, from(#DEB97E),to(#D4A254));
+	background-color: #DEB97E;
+	
+	border: 1px solid #ffffff;
+}
+
+input.sub_button:hover
+{
+	background: -moz-linear-gradient(top, #E1BA7D 0%, #E2BE86);
+	background: -webkit-gradient(linear, left top, left bottom, from(#E1BA7D),to(#E2BE86));
+	background-color: #E1BA7D;
+}
+
+
+/* ----------------------- */
+
+input.editor_button
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+
+	padding: 2px 2px;
+
+}
+
+/* ----------------------- */

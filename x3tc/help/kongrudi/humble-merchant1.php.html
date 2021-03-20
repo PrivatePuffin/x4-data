@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Humble Merchant starting-guide (Page 1 of 8) - Roguey's X3TC site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Humble, Merchant, starting, guide, KongRudi, gaming, roguey">
+		<META NAME="Description" CONTENT="Humble Merchant starting-guide written by KongRudi.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3tc/help/kongrudi/humble-merchant1.php">
+		<meta property="og:description" content="Humble Merchant starting-guide written by KongRudi.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Humble Merchant starting-guide (Page 1 of 8)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3tc/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3tc/"><img src="/x3tc/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #F34D4D;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #F34D4D;">
+				<li class="icon" style="background-color: #F34D4D">&nbsp;</li><li><a href="/x3tc/">News</a></li><li><a href="/x3tc/pictures/">Pictures</a></li><li><a href="/x3tc/videos/">Videos</a></li><li><a href="/x3tc/help/">Help / Guides</a></li><li><a href="/x3tc/ships/">Ships</a></li><li><a href="/x3tc/universe/">Maps</a></li><li><a href="/x3tc/missiles/">Missiles</a></li><li><a href="/x3tc/lasers/">Lasers</a></li><li><a href="/x3tc/shields/">Shields</a></li><li><a href="/x3tc/stations/">Stations</a></li><li><a href="/x3tc/wares/">Wares</a></li><li><a href="/x3tc/steam/">STEAM achievements</a></li><li><a href="/forum/viewforum.php?id=2">Forum</a></li><li><a href="/x3tc/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Humble Merchant starting-guide <font class="Smalltext">(Page 1 of 8)</font></h1>
+	Written by <b>KongRudi</b>,<br><br>
+
+	<center><img src="images/humble-header.jpg" alt="Humble Merchant starting-guide, written by KongRudi"></center>
+	<br><br>
+
+
+	<h2>Basic ship keyboard commands</h2><br>
+
+	<table class="board_table">
+  	<tr>
+		<th colspan="2">Navigation commands</th>
+	</tr>
+	<tr>
+		<td>[ TAB ]</td>
+		<td>Full speed ahead</td>
+	</tr>
+	<tr>
+		<td>[Backspace]</td>
+		<td>Stop</td></tr>
+	<tr>
+		<td>[Z] / [X]</td>
+		<td>Lower/Higher speed (Can also be controlled with mouse scroll button)</td>
+	</tr>
+	<tr>
+		<td>[A] [S] [D] [W]</td>
+		<td>Left, Down, Right, Up (Can also be controlled by holding down LMB and  moving the mouse)</td>
+	</tr>
+	<tr>
+		<td>[Q] [E]</td>
+		<td>Barre roll left and right</td>
+	</tr>
+	<tr>
+		<td>[Shift] + [E]</td>
+		<td>Eject from ship into a spacesuit</td>
+	</tr>
+	<tr>
+		<td>[Shift] + [A]</td>
+		<td>Engage Autopilot (Turns off automatically if you try to adjust direction on ship)</td>
+	</tr>
+
+
+  	<tr>
+		<th colspan="2">Combat commands</th>
+	</tr>
+	<tr>
+		<td>[Shift] + [T]</td>
+		<td>Select&nbsp;closest enemy target (HUD turns Red while searching)</td>
+	</tr>
+	<tr>
+		<td>[1] [2] [3] [4]</td>
+		<td>Select laser-group</td>
+	</tr>
+	<tr>
+		<td>[CTRL]</td>
+		<td>Fire Lasers (Can also be fired by pressing RMB)</td>
+	</tr>
+	<tr>
+		<td>[M] / [L]</td>
+		<td>Missile selection / Fire selected missile</td>
+	</tr>
+
+
+  	<tr>
+		<th colspan="2">Additional usefull commands</th>
+	</tr>
+	<tr>
+		<td>[T]</td>
+		<td>Select target</td>
+	</tr>
+	<tr>
+		<td>[C]</td>
+		<td>Comunicate with target (Range 25 km)</td></tr>
+	<tr>
+		<td>[J]</td>
+		<td>Engage SETI (Singularity Engine Time Accelerator)	if installed in your ship</td>
+	</tr>
+	<tr>
+		<td>[Shift] + [C]</td>
+		<td>Open command console of your current ship</td>
+	</tr>
+	<tr>
+		<td>[ , ]&nbsp;[ . ]</td>
+		<td>Open Universe map, Sector map</td>
+	</tr>
+	<tr>
+		<td>[R]</td>
+		<td>Open player properties menu</td>
+	</tr>
+	<tr>
+		<td>[Shift] + [J]</td>
+		<td>Engage jumpdrive, if installed in your ship.</td>
+	</tr>
+	<tr>
+		<td>  [Shift] + [M]</td>
+		<td>    Open Message log.</td>
+	</tr>
+	</table>
+
+	<br>
+
+	<h2>Selecting your start</h2><br>
+
+	Once you select a new game, you'll be granted a few options to select your start.
+	<br><br>
+
+	<center><img src="images/humble-start1.jpg" alt="Terran Conflict start screen"></center>
+	<br><br>
+
+	Humble Merchant-start, is somewhat broken, and will pose some people a few problems, due to you 
+	starting out in a Merchant-ship, without any weapons.
+	<br><br>
+
+	Once you have started, and seen the intro, you'll be flying a ship.. And be 
+	hailed by a ship called 'Argon Flight School'.
+	<br><br>
+
+	<center><img src="images/humble-firstsector.jpg" alt="Argon Flight School"></center>
+	<br><br>
+
+	Some of the people will get trouble now, since the ship you're flying dosn't 
+	have any weapons, and you'll need weappons to finnish the Flight 
+	School-mission.
+	<br><br>
+
+	This start gives you two ships, one scout-ship, and one 
+	transporter-ship. I'll get back to that, once we do the mission..
+	<br><br>
+
+
+	<center>	
+		<font class="smalltext"><b>Next: Options</b></font><br>
+		<a href="humble-merchant2.php">Next Page >></a>
+	</center>
+
+	<br>	
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0006 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

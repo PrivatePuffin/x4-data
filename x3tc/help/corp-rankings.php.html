@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Corporations rank list - Roguey's X3TC site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="rank, list, gaming, roguey">
+		<META NAME="Description" CONTENT="A list of Corporations ranks in Terran Conflict.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3tc/help/corp-rankings.php">
+		<meta property="og:description" content="A list of Corporations ranks in Terran Conflict.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Corporations rank list">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3tc/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3tc/"><img src="/x3tc/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #F34D4D;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #F34D4D;">
+				<li class="icon" style="background-color: #F34D4D">&nbsp;</li><li><a href="/x3tc/">News</a></li><li><a href="/x3tc/pictures/">Pictures</a></li><li><a href="/x3tc/videos/">Videos</a></li><li><a href="/x3tc/help/">Help / Guides</a></li><li><a href="/x3tc/ships/">Ships</a></li><li><a href="/x3tc/universe/">Maps</a></li><li><a href="/x3tc/missiles/">Missiles</a></li><li><a href="/x3tc/lasers/">Lasers</a></li><li><a href="/x3tc/shields/">Shields</a></li><li><a href="/x3tc/stations/">Stations</a></li><li><a href="/x3tc/wares/">Wares</a></li><li><a href="/x3tc/steam/">STEAM achievements</a></li><li><a href="/forum/viewforum.php?id=2">Forum</a></li><li><a href="/x3tc/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Corporations Ranks</h1>
+
+	Here is a complete list of all the Corporations Ranks found in Terran Conflict.
+	<br><br>
+
+
+	<table width="100%">
+	<tr>
+		<td valign="top">
+			<h2><img src="../images/logo_Argon.gif" alt="TerraCorp ranks"> TerraCorp ranks</h2>
+
+			<ul>
+				<li>Enemy of Terracorp,</li>
+				<li>Confirmed Insurgent,</li>
+				<li>Confirmed Antagonist,</li>
+				<li>Suspected Enemy,</li>
+				<li>Potential Security Breach,</li>
+				<li>Contracted,</li>
+				<li>Hired Protection,</li>
+				<li>Combat Support,</li>
+				<li>Security Specialist,</li>
+				<li>Terracorp Professional,</li>
+				<li>Terracorp Protection Agent,</li>
+				<li>Terracorp Protection Specialist,</li>
+				<li>Security Master Chief,</li>
+				<li>Crusader of Getsu Fune,</li>
+				<li>Kho's Hero,</li>
+				<li>Terracorp Legend,</li>
+			</ul>
+		</td>
+
+		<td>
+  			<h2><img src="../images/logo_Argon.gif" alt="OTAS ranks"> OTAS ranks</h2>
+
+			<ul>
+				<li>Enemy of OTAS,</li>
+				<li>Confirmed Insurgent,</li>
+				<li>Confirmed Enemy,</li>
+				<li>Known Antagonist,</li>
+				<li>Suspected Security Breach,</li>
+				<li>Contracted,</li>
+				<li>Hired Security,</li>
+				<li>Combat Support,</li>
+				<li>Security Specialist,</li>
+				<li>Armaments Professional,</li>
+				<li>Combat Field Agent,</li>
+				<li>Combat Expert,</li>
+				<li>OTAS Master Chief,</li>
+				<li>OTAS Guardian,</li>
+				<li>OTAS Hero,</li>
+				<li>OTAS Legend,</li>
+			</ul>
+		</td>
+
+		<td>
+			<h2><img src="../images/logo_Argon.gif" alt="Jonferson ranks"> Jonferson ranks</h2>
+			<ul> 
+				<li>Enemy of Jonferson,</li>
+				<li>Enemy of Progress,</li>
+				<li>Confirmed Enemy,</li>
+				<li>Disruption,</li>
+				<li>Nuisance,</li>
+				<li>Apprentice,</li>
+				<li>Hired,</li>
+				<li>Skilled Dealer,</li>
+				<li>Capitalist,</li>
+				<li>JSDD Professional,</li>
+				<li>JSDD Broker,</li>
+				<li>JSDD Specialist,</li>
+				<li>JSDD Protector,</li>
+				<li>JSDD Shareholder,</li>
+				<li>Jonferson Crusader,</li>
+				<li>Hero of Jonferson,</li>
+			</ul>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="3"><br></td>
+	</tr>
+
+	<tr>
+		<td>
+			<h2><img src="../images/logo_Argon.gif" alt="Plutarch ranks"> Plutarch ranks</h2>
+
+			<ul>
+				<li>Enemy of Plutarch,</li>
+				<li>Enemy of Free Trade,</li>
+				<li>Confirmed Enemy,</li>
+				<li>Disruption,</li>
+				<li>Nuisance,</li>
+				<li>Potential Contact,</li>
+				<li>Hired Trader,</li>
+				<li>Confirmed Supplier,</li>
+				<li>Professional Supplier,</li>
+				<li>Mineral Specialist,</li>
+				<li>Merchant Miner,</li>
+				<li>Transportation Specialist,</li>
+				<li>Merchant Protector,</li>
+				<li>Plutarch Shareholder,</li>
+				<li>Trade Guardian,</li>
+				<li>Industrialist Legend,</li>
+			</ul>
+		</td>
+
+		<td>
+			<h2><img src="../images/logo_Teladi.gif" alt="NMMC ranks"> NMMC ranks</h2>
+
+			<ul>
+				<li>Enemy of PTNI,</li>
+				<li>Enemy of Nividium,</li>
+				<li>Kha'ak Sympathiser,</li>
+				<li>Mining Disruption,</li>
+				<li>Trade Nuisance,</li>
+				<li>Friend,</li>
+				<li>Contracted Trader,</li>
+				<li>Confirmed Supplier,</li>
+				<li>Professional Supplier,</li>
+				<li>Mineral Specialist,</li>
+				<li>Nividium Broker,</li>
+				<li>Professional Nividium Broker,</li>
+				<li>Nividium Specialist,</li>
+				<li>PTNI Shareholder,</li>
+				<li>Profit Overlord,</li>
+				<li>Hero of Profit,</li>
+			</ul>
+		</td>
+
+		<td valign="top">
+			<h2><img src="../images/logo_Paranid.gif" alt="Duke's ranks"> Duke's ranks</h2>
+
+			<ul>
+				<li>Enemy of the Duke,</li>
+				<li>Confirmed Insurgent,</li>
+				<li>Confirmed Enemy,</li>
+				<li>Enemy,</li>
+				<li>Suspected Informer,</li>
+				<li>Potential Contact,</li>
+				<li>Accomplice,</li>
+				<li>Associate,</li>
+				<li>Duke's Buccaneer,</li>
+				<li>Buccaneers' Professional,</li>
+				<li>Buccaneers' Assassin,</li>
+				<li>Buccaneers' Specialist,</li>
+				<li>Priest's Guard,</li>
+				<li>Priest Duke's Warrior,</li>
+				<li>Priest Duke's Guardian,</li>
+				<li>Honour Guard of Priest Duke,</li>
+			</ul>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="3"><br></td>
+	</tr>
+
+	<tr>
+		<td valign="top">
+
+			<h2><img src="../images/logo_Boron.gif" alt="Atreus ranks"> Atreus ranks</h2>
+
+			<ul>
+				<li>Enemy of Atreus,</li>
+				<li>Enemy of Shipbuilding,</li>
+				<li>Confirmed Enemy,</li>
+				<li>Adversary,</li>
+				<li>Antagonist,</li>
+				<li>Potential Friend,</li>
+				<li>Potential Contact,</li>
+				<li>Confirmed Supplier,</li>
+				<li>Specialist Supplier,</li>
+				<li>Technology Broker,</li>
+				<li>Shipbuilding Specialist,</li>
+				<li>Trusted Wholesaler,</li>
+				<li>Shipbuilding Protector,</li>
+				<li>Atreus Currents Shareholder,</li>
+				<li>Shipbuilding Guardian,</li>
+				<li>Knight of Atreus,</li>
+			</ul>
+		</td>
+
+
+		<td valign="top">
+			<h2><img src="../images/logo_Split.gif" alt="Strong Arms ranks"> Strong Arms ranks</h2>
+
+			<ul>
+				<li>Enemy of Strong Arms,</li>
+				<li>Enemy Warrior,</li>
+				<li>Confirmed Enemy,</li>
+				<li>Combat Nuisance,</li>
+				<li>Outcast,</li>
+				<li>Friend,</li>
+				<li>Accomplice,</li>
+				<li>Associate,</li>
+				<li>Combat Support,</li>
+				<li>Warrior,</li>
+				<li>Warrior Specialist,</li>
+				<li>Strong Arms' Assassin,</li>
+				<li>Strong Arms' Protector,</li>
+				<li>Strong Arms' Battlemaster,</li>
+				<li>Imperator of Strong Arms,</li>
+				<li>Honoured Strong Arms Legend,</li>
+			</ul>
+		</td>
+	</tr>
+	</table>
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00072 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

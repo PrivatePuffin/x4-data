@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Fleet Carriers - Elite &amp; Dangerous Roguey</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Fleet Carriers (Home), gaming, roguey">
+		<META NAME="Description" CONTENT="In this article we discuss about the new addition to Elite Dangerous - Fleet Carriers.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/elite-dangerous/fleet-carriers/">
+		<meta property="og:description" content="In this article we discuss about the new addition to Elite Dangerous - Fleet Carriers.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Fleet Carriers">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/elite-dangerous/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/elite-dangerous/"><img src="/elite-dangerous/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #A98135;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #A98135;">
+				<li class="icon" style="background-color: #A98135">&nbsp;</li><li><a href="/elite-dangerous/">News</a></li><li><a href="/elite-dangerous/help/">Help / Guides</a></li><li><a href="/elite-dangerous/trade-helper/">Trade Helper</a></li><li><a href="/elite-dangerous/ships/">Ships</a></li><li><a href="/elite-dangerous/ship-builds/">Builds</a></li><li><a href="/elite-dangerous/universe/">Universe</a></li><li><a href="/elite-dangerous/equipment/">Equipment</a></li><li><a href="/elite-dangerous/engineers/">Engineers</a></li><li><a href="/elite-dangerous/commanders/">Commanders</a></li><li><a href="/elite-dangerous/powers/">Powers</a></li><li><a href="/elite-dangerous/fleet-carriers/">Fleet Carriers</a></li><li><a href="/elite-dangerous/wares/">Wares</a></li><li><a href="/elite-dangerous/videos/">Videos</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=36">Forum</a></li><li><a href="/elite-dangerous/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+ <h1>Fleet Carriers <span class="smalltext">(Home)</span></h1>
+
+		<div class="vnavbar-div">
+			<div id="vnavbar">
+				<ul id="v_tabs">
+					<li><a href="/elite-dangerous/fleet-carriers/">Home</a></li>
+					<li><a href="/elite-dangerous/fleet-carriers/services/">Services</a></li>
+					<li><a href="/elite-dangerous/fleet-carriers/cost/">Cost</a></li>
+					<li><a href="/elite-dangerous/fleet-carriers/sale-locations/">Sale locations</a></li>
+					<li><a href="/elite-dangerous/fleet-carriers/pictures/">Pictures</a></li>
+					<li><a href="/elite-dangerous/fleet-carriers/faq/">FAQ</a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="vnavbar-content">
+			
+			<script>
+			
+			var which_tab		= 0;
+			var nav_tabs 		= document.getElementById('v_tabs').getElementsByTagName('li'); 
+
+			// toggle the sub-nav tabs
+			for (var i=0; i < nav_tabs.length; i++)
+			{
+				if (which_tab == i)
+					nav_tabs[i].className = 'tabon';
+				else
+					nav_tabs[i].className = 'taboff';
+			}			
+			</script>
+
+			<b style="font-size: 1.8em;">Introduction</b>
+			<br><br>
+			
+			Fleet carriers are giant capital ships that support services such as equipping ships, trading of goods, long distance traveling, building ships and more. 
+			They are owned by a single commander, and not by a squadron, group or friends.
+			<br><br>
+			
+			They can not be destroyed with conventional weapons and will retaliate when attacked; similar to that of most stations when attacked.
+			Newly brought carriers come with a bare-bones setup - additional modules can be brought to increase the functionally of the carrier.
+			<br><br>
+			
+			A-side from the initial costs, carriers will have a weekly upkeep cost. This will vary depending on which modules have been installed and their state. 
+			Modules can be <i>powered-down</i> to reduce running costs. The upkeep cost will be taken on each server refresh - which usually happens on Thursdays.
+			<br><br>
+			
+			Carriers can jump long distances between systems, with the use a new type of fuel called <i>Tritium</i>. This new fuel can be brought at starports,
+			mined from surface/sub-surface deposits (icy asteroids) or donated by fellow commanders. This fuel is not required to power subsystems.
+			Carriers can not jump to permit-locked systems, even if the owner has the permit for the system.
+			When a carrier is ordered to jump to a new location, it will charge up the jumpdrive before executing the jump.
+			When the ship arrives at its new location, it will also have a cooldown peroid before its ready to jump again.
+			<br><br>
+			
+			If a commander is unable to afford the running cost of a carrier, the owner will have one week to come up with the money required.
+			If after one week the commander is still unable to afford the costs, the ship will be decommissioned.
+			When a carrier is in a decommissioned state a recovery crew will be dispatched, and the ship will be dismantled (no ships can land).
+			The owner will receive a partial refund for the carrier. Any ships parked on the carrier by other commanders will be relocated to a safe place.
+			<br><br>
+			
+			So far, there is only one style of Fleet carrier - the <b>Drake-class</b> carrier. 			
+			<br><br>
+			
+			<b style="font-size: 1.8em;">The Drake-class carrier</b>
+			<br><br>
+			
+			The Drake-class carrier is currently the only style of carrier available to purchase by any independent pilot.
+			It is manufactured by the Brewer Corporation, and features 16 landing pads (4x small, 4x medium, 8x large).
+			The ship features a cargo capacity of 25,000 units, which can be used to store cargo, modules or extra fuel.
+			Tritium is stored in its 1,000 unit fuel tank, making it possible to travel roughly 1,500ly before refuelling.
+			<br><br>
+			
+			<a href="./images/big/drake-carrier-side.jpg" target="_blank"><img src="./images/med/drake-carrier-side.jpg" alt="A side-view of the Drake-class carrier"></a>
+			<br><br>
+			
+		</div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00055 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

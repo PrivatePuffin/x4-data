@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Frequently asked questions - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="frequently asked questions - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/users/help/faq.php">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Frequently asked questions">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+	<h1>Account and members FAQ's</h1>
+
+	<div class="pad">
+	
+		<b style="font-size: 1.2em;">Why do I need to register?</b><br>
+		You do not need to register on this site but to use some of the more advanced features you will need to, such as the forum, comments, voting etc. 
+		I have tried to keep registering as simple as possible:
+		<br><br><br>
+		
+		
+	
+		<table style="text-align: center; font-size: 8pt; margin: 0px auto; border-spacing: 0; border-collapse: collapse;">
+		<tr>
+			<td style="padding: 0;"><span style="height: 52px; width: 52px; background-color: #0E86B8; border-radius: 50%; margin: 0; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 4px; width: 100px; background-color: #bbbbbb; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 52px; width: 52px; background-color: #bbbbbb; border-radius: 50%; margin: 0; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 4px; width: 100px; background-color: #bbbbbb; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 52px; width: 52px; background-color: #bbbbbb; border-radius: 50%; margin: 0; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 4px; width: 100px; background-color: #bbbbbb; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 52px; width: 52px; background-color: #bbbbbb; border-radius: 50%; margin: 0; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 4px; width: 100px; background-color: #bbbbbb; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 52px; width: 52px; background-color: #bbbbbb; border-radius: 50%; margin: 0; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 4px; width: 100px; background-color: #bbbbbb; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 52px; width: 52px; background-color: #bbbbbb; border-radius: 50%; margin: 0; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 4px; width: 100px; background-color: #bbbbbb; display: block;"></span></td>
+			<td style="padding: 0;"><span style="height: 52px; width: 52px; background-color: #bbbbbb; border-radius: 50%; margin: 0; display: block;"></span></td>
+
+		</tr>
+
+		<tr>
+			<td style="color: #0E86B8;">Start</td>
+			<td></td>
+			<td style="color: #bbbbbb;">Anti-spam<br>question</td>
+			<td></td>
+			<td style="color: #bbbbbb;">email sent</td>
+			<td></td>
+			<td style="color: #bbbbbb;">email/FB<br>approved</td>
+			<td></td>
+			<td style="color: #bbbbbb;">Set a<br>username</td>
+			<td></td>
+			<td style="color: #bbbbbb;">Set a <br>Password</td>
+			<td></td>
+			<td style="color: #bbbbbb;">Done</td>
+
+		</tr>
+		</table>
+
+	
+	<br><br>
+		
+
+		<b style="font-size: 1.2em;">I tried to register but had a error</b><br>
+		If something went wrong, please <a href="/contact/"><img src="/images/link_s.gif"> contact me</a>, alternatively you could try <a href="check.php"><img src="/images/link_s.gif"> check the account</a> status. 
+		If you do decide to contact me, I will look into the matter ASAP for you. Please include a correct email address.
+		<br><br><br>
+
+
+		<b style="font-size: 1.2em;">I made account but what do I now?</b><br>
+		Once you have created an account and confirmed your email, you can log-in <a href="/users/register/"><img src="/images/link_s.gif"> here</a>.
+		<br><br><br>
+
+		<b style="font-size: 1.2em;">Which is better, registering with Facebook or using my system?</b><br>
+		Use whichever is easier for you, either works just as well. The only difference is that Facebook registration do not need to wait for an confirmation email.
+		<br><br><br>
+
+		<b style="font-size: 1.2em;">A had no email</b><br>
+		If the email did not turn up, then please check your spam/junk folders just encase. 
+		You can <a href="/contact/"><img src="/images/link_s.gif"> contact me</a> if your having any problems with the email.
+		<br><br><br>
+
+		<b style="font-size: 1.2em;">I forgotten my password, d'oh!</b><br>
+		Please use the <a href="forgot.php"><img src="/images/link_s.gif"> forgotten password</a> feature to reset your password.
+		<br><br><br>
+		
+		<b style="font-size: 1.2em;">I cant find my account?!?</b><br>
+		All account names go through a filter which may change the username slightly. 
+		This is to filter out foreign letters (and spaces) from the name. 
+		You can <a href="check.php"><img src="/images/link_s.gif"> check the account</a> to find out how your username has been filtered, and see the current status of your account.
+		Just visit the page and enter in your email address.
+		<br><br><br>
+
+		<b style="font-size: 1.2em;">Ive been banned, why?</b><br>
+		If you feel that your have been banned unfairly, please <a href="/contact/"><img src="/images/link_s.gif"> contact me</a>. Bans are very rare unless you have broken the rules!
+		<br><br><br>
+	</div>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0006 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

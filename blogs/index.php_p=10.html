@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=10">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 10 of 16)</span></h1><br>
+	
+		<h2>X3AP &#187; A flash update</h2>
+
+
+		<div class="pad">
+			You maybe wondering what ive been working on the past day, it is actually some flash code that displays the universe directly from the XML file that X3AP uses. The code only displays an universe map, however using the XML file it knows everything about the universe, so sector maps could also be done. Here&#039;s what it looks like atm.<br><br><center><a href="/blogs/images/user_1/large/pic_33.jpg"><img src="/blogs/images/user_1/large/pic_33.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>I did not draw that map, nor put any of the links in - they are all worked out by the flash code. Another advantage to this is that it should work for all X-games. Scrolling is done via the cursor keys atm. Its crazy how fast my flash projects have been moving.. you could say.. in a flash...
+			... <a href="/blogs/roguey/blog-51.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 20th February, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-51.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-51.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3 &#187; PuppyOfWar's X3 diary</h2>
+
+
+		<div class="pad">
+			 <b>Before </b><br><br>In the beginning...<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;Ha ha ha&quot; the digits cackled with glee while the variables danced and twirled.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;Let&#039;s make life&quot; a whisper rustled among the equations.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;And in our infinite playfulness&quot; added the ghost in the machine, &quot;let us teach them to love to live, that they may wish to persist with us for all time.&quot;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;We will forever exist side by side, the flesh and the formulae.&quot;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;It shall be done, concluded logic.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Suddenly/always the voice of all that is known spoke, splitting the nothingness, tearing a hole into existence &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from the void, stating simply:<br>                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;E = mc ^ 2&quot;<br><br>...and there was light. <br><br><br><br>My
+			... <a href="/blogs/puppyofwar/blog-50.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/puppyofwar/"><b>PuppyOfWar</b></a></b> on Friday 17th February, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/puppyofwar/blog-50.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 2 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/puppyofwar/blog-50.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>A quick flash</h2>
+
+
+		<div class="pad">
+			I hate being beat, after my recent failure with flash. So I thought ill give <b>Vectorian Giotto</b> another go. After a short while I managed to create a small flash item that displayed the time. This was an major step forward than my last attempt, however Vectorian Giotto was crashing a lot - not the mention each time I tried to type something, I would trigger the hot-keys rather than type what I wanted.<br><br>This wasnt right, so had to find something else - Vectorian Giotto was basically not stable enough, and I felt it wasnt up-to the job (shame although). So google around for other alternates and came across <b>FlashDevelop</b>.<br><br>At first you are thrown into an editor - which is a bit overwhelming at first as if your learning the
+			... <a href="/blogs/roguey/blog-49.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Thursday 16th February, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-49.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-49.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Flash and gone</h2>
+
+
+		<div class="pad">
+			Today I read up a bit about Flash, as its an technology id like to use for my site. It seems that Adobe have ownership on flash, which basically forces you to buy their own editor. I was a bit surprised to see the price of it... £700!?! Eeeek!<br><br>So I thought ill have a look to see if anyone has an alternative. This is where I find <b>Vectorian Giotto</b> - which looks interesting. After a few hours, I couldnt get I want working: to load an external images. A bit longer, I got it to work but not how want I wanted it. As an coder, I want to be able to write code.<br><br>AS2/AS3 (which is the code used in Flash) seems very complex and hard to understand, its more like Java but you seem to pick random keywords out of the air. Even the editor is
+			... <a href="/blogs/roguey/blog-48.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 12th February, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-48.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-48.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3AP &#187; X3 Terran War Pack</h2>
+
+
+		<div class="pad">
+			Hi guys, well I must say thanks to Roguey first of all for running the competion to win the X3 Terran War Pack and unlike my usual luck I won!!!<br><br>So a quick bit of background on me, I&#039;m a gamer and have been for too many years to mention <img src="/forum/images/smilies/wink2.gif" alt="Wink"> I love my stragegy games from Civilization to Supreme Commander and everything in between. I&#039;ve been playing the 4X stratgey Distant Worlds on and off recently since a new pack was released.<br><br>I&#039;m often found on BF3 and cut my fps teeth on CS beta 7 and HL:DM.<br><br>My first PC game was Tie Fighter and I&#039;ve always loved space sims: Elite on the old 48k, Frontier on the Amiga and Freelancer. I&#039;ve also spent some time on EVE but I&#039;ve always had a blind spot for pay
+			... <a href="/blogs/thegroom/blog-46.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/thegroom/"><b>TheGroom</b></a></b> on Wednesday 18th January, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/thegroom/blog-46.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 2 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/thegroom/blog-46.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3AP &#187; What to buy at 50 million</h2>
+
+
+		<div class="pad">
+			Its took a long time to buy up any serious money in the <b>Terran Commander</b>. Most of it ive been spending on my complex, which is now 50 stations large.<br><br>I built my complex in <b>Megnir</b>, which seems a fairly safe Terran sector (this sector has gates you can jump too). <b>Carbo Cake</b> seems to sell fairly well, although just 4 or 5 L factories seem to cope with demand (price set at 31cr), however my main seller is <b>Poltergeist missiles</b> (price set at 1 less than default). I have 10 of these stations (in the complex) and the missiles are normally always brought by the NPC ships.<br><br>After much time and many kill missions, I wondered what to buy at the 30-40 million range. M7&#039;s seem good but kind-of wanted more turrets,
+			... <a href="/blogs/roguey/blog-45.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 13th January, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-45.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 5 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-45.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3AP &#187; Terran Commander start</h2>
+
+
+		<div class="pad">
+			The <b>Terran Commander</b> has definitely been a hard start: no plot mission, war all around, no Terran police license and such large sectors making travel very long winded (trade is near impossible). I managed to get some money together by salvaging stuff then went exploring. I noticed the <b>Terran Springblossom</b> (M6) has got a crazy top speed, so I headed out looking were its sold... <b>Aldrin</b>. So I ditched the <b>Katana</b> (which has just 1 extra shield) and brought one (at 6.5mil its a great buy, with top speed of 360m/s!).<br><br>This new ship allowed me to travel across those hostile sectors where Argon ships jump in and start shooting at you. Once I got away from those Terran and Argon sectors I could find some friendly
+			... <a href="/blogs/roguey/blog-44.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 6th January, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-44.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-44.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3AP &#187; RF Complex 1</h2>
+
+
+		<div class="pad">
+			A while back I started X3AP on the <b>Terran Commander</b> start. Since then Ive been exploring and looking for ways to make money. I have made some money, so I started looking at building my first complex in X3AP. However there isnt many <i>safe</i> areas - apart from inner-most Terran sectors. I plan to write a small guide for this start sometime soon, as its a hard start.<br><br>In this start there isnt many TL&#039;s ships floating around, so I had to buy my own - A Paranid <b>Hercules</b> (a nice and cheap TL that is a great work-horse). You can indeed buy stations from the Terran shipyards, and deploy them.<br><br>I took a quick look around, and <b>Megnir</b> took my eye. Its got it own shipyard and some great rocks to place a few mines on.
+			... <a href="/blogs/roguey/blog-43.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 2nd January, 2012 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-43.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-43.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=9">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<b class="page_box_on">10</b>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=11">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00281 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

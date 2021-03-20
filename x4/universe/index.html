@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Universe map - Roguey's X4 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="X4 foundations, egosoft, gaming, roguey">
+		<META NAME="Description" CONTENT="A Universe map, containing maps for each cluster, sector and zone.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x4/universe/">
+		<meta property="og:description" content="A Universe map, containing maps for each cluster, sector and zone.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Universe map">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x4/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x4/"><img src="/x4/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #4830AE;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #4830AE;">
+				<li class="icon" style="background-color: #4830AE">&nbsp;</li><li><a href="/x4/">Home</a></li><li><a href="/x4/help/">Help</a></li><li><a href="/x4/ships/">Ships</a></li><li><a href="/x4/shields/">Shields</a></li><li><a href="/x4/weapons/">Weapons</a></li><li><a href="/x4/universe/">Maps</a></li><li><a href="/x4/wares/">Wares</a></li><li><a href="/x4/factions/">Factions</a></li><li><a href="/x4/dlc/split-vendetta/">Split Vendetta</a></li><li><a href="/x4/dlc/cradle-of-humanity/">Cradle of Humanity</a></li><li><a href="/x4/steam/">Achievements</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=44">Forum</a></li><li><a href="/x4/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Universe map</h1>
+	
+	<span style="font-size: 9pt;">Last updated: 19/3/2021 (v4.0)</span>
+	<br><br>
+
+	<div style="position:relative; width: 100%; height: 875px;">
+
+		<canvas id="bg_canvas" width="1200" height="875" style="position:absolute; left:0; top:0;">Your browser does not support the canvas object.</canvas>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_1">
+				<a href="./cluster_01_macro/"  class="info">
+					<img src="images/cluster_green.gif" style="border: none;" alt="cluster_green"><i style="font-size: 9px; font-style: normal; color: #212121;">Grand Exchange</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Grand Exchange</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Grand Exchange I</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Grand Exchange III</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Grand Exchange IV</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_2">
+				<a href="./cluster_02_macro/"  class="info">
+					<img src="images/cluster_green.gif" style="border: none;" alt="cluster_green"><i style="font-size: 9px; font-style: normal; color: #212121;">Eighteen Billion</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Eighteen Billion</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Eighteen Billion</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_3">
+				<a href="./cluster_03_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Memory of Profit</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Memory of Profit</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Memory of Profit IX</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_4">
+				<a href="./cluster_04_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Nopileos' Fortune</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Nopileos' Fortune</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Nopileos' Fortune II</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Nopileos' Fortune VI</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_5">
+				<a href="./cluster_05_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Path to Profit</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Path to Profit</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Path to Profit</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_6">
+				<a href="./cluster_06_macro/"  class="info">
+					<img src="images/cluster_darkblue.gif" style="border: none;" alt="cluster_darkblue"><i style="font-size: 9px; font-style: normal; color: #212121;">Black Hole Sun</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Black Hole Sun</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Black Hole Sun IV</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Black Hole Sun V</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_7">
+				<a href="./cluster_07_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">The Reach</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">The Reach</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">The Reach</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_8">
+				<a href="./cluster_08_macro/"  class="info">
+					<img src="images/cluster_darkblue.gif" style="border: none;" alt="cluster_darkblue"><i style="font-size: 9px; font-style: normal; color: #212121;">Silent Witness</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Silent Witness</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Silent Witness I</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_9">
+				<a href="./cluster_09_macro/"  class="info">
+					<img src="images/cluster_green.gif" style="border: none;" alt="cluster_green"><i style="font-size: 9px; font-style: normal; color: #212121;">Bright Promise</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Bright Promise</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Bright Promise</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_10">
+				<a href="./cluster_10_macro/"  class="info">
+					<img src="images/cluster_orange.gif" style="border: none;" alt="cluster_orange"><i style="font-size: 9px; font-style: normal; color: #212121;">Unholy Retribution</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Unholy Retribution</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Unholy Retribution</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_11">
+				<a href="./cluster_11_macro/"  class="info">
+					<img src="images/cluster_orange.gif" style="border: none;" alt="cluster_orange"><i style="font-size: 9px; font-style: normal; color: #212121;">Pontifex's Claim</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Pontifex's Claim</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Pontifex's Claim</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_12">
+				<a href="./cluster_12_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">True Sight</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">True Sight</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">True Sight</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_13">
+				<a href="./cluster_13_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Second Contact</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Second Contact</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Second Contact II Flashpoint</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_14">
+				<a href="./cluster_14_macro/"  class="info">
+					<img src="images/cluster_darkblue.gif" style="border: none;" alt="cluster_darkblue"><i style="font-size: 9px; font-style: normal; color: #212121;">Argon Prime</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Argon Prime</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Argon Prime</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_15">
+				<a href="./cluster_15_macro/"  class="info">
+					<img src="images/cluster_green.gif" style="border: none;" alt="cluster_green"><i style="font-size: 9px; font-style: normal; color: #212121;">Ianamus Zura</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Ianamus Zura</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Ianamus Zura IV</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Ianamus Zura VII</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_16">
+				<a href="./cluster_16_macro/"  class="info">
+					<img src="images/cluster_darkred.gif" style="border: none;" alt="cluster_darkred"><i style="font-size: 9px; font-style: normal; color: #212121;">Matrix #451</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Matrix #451</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Matrix #451</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_17">
+				<a href="./cluster_17_macro/"  class="info">
+					<img src="images/cluster_darkred.gif" style="border: none;" alt="cluster_darkred"><i style="font-size: 9px; font-style: normal; color: #212121;">Matrix #9</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Matrix #9</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Matrix #9</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_18">
+				<a href="./cluster_18_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Trinity Sanctum</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Trinity Sanctum</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Trinity Sanctum III</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_19">
+				<a href="./cluster_19_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Hewa's Twin</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Hewa's Twin</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Hewa's Twin I</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Hewa's Twin II</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_20">
+				<a href="./cluster_20_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Company Regard</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Company Regard</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Company Regard</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_21">
+				<a href="./cluster_21_macro/"  class="info">
+					<img src="images/cluster_darkred.gif" style="border: none;" alt="cluster_darkred"><i style="font-size: 9px; font-style: normal; color: #212121;">Scale Plate Green</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Scale Plate Green</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Scale Plate Green I</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Scale Plate Green VII</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_22">
+				<a href="./cluster_22_macro/"  class="info">
+					<img src="images/cluster_orange.gif" style="border: none;" alt="cluster_orange"><i style="font-size: 9px; font-style: normal; color: #212121;">Pious Mists</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Pious Mists</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Pious Mists II</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_23">
+				<a href="./cluster_23_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sacred Relic</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sacred Relic</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Sacred Relic</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_24">
+				<a href="./cluster_24_macro/"  class="info">
+					<img src="images/cluster_orange.gif" style="border: none;" alt="cluster_orange"><i style="font-size: 9px; font-style: normal; color: #212121;">Holy Vision</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Holy Vision</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Holy Vision</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_25">
+				<a href="./cluster_25_macro/"  class="info">
+					<img src="images/cluster_darkred.gif" style="border: none;" alt="cluster_darkred"><i style="font-size: 9px; font-style: normal; color: #212121;">Faulty Logic</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Faulty Logic</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Faulty Logic I</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Faulty Logic VII</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_26">
+				<a href="./cluster_26_macro/"  class="info">
+					<img src="images/cluster_darkred.gif" style="border: none;" alt="cluster_darkred"><i style="font-size: 9px; font-style: normal; color: #212121;">Atiya's Misfortune</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Atiya's Misfortune</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Atiya's Misfortune I</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Atiya's Misfortune III</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_27">
+				<a href="./cluster_27_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">The Void</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">The Void</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">The Void</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_28">
+				<a href="./cluster_28_macro/"  class="info">
+					<img src="images/cluster_darkblue.gif" style="border: none;" alt="cluster_darkblue"><i style="font-size: 9px; font-style: normal; color: #212121;">Antigone Memorial</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Antigone Memorial</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Antigone Memorial</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_29">
+				<a href="./cluster_29_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Hatikvah's Choice</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Hatikvah's Choice</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Hatikvah's Choice I</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Hatikvah's Choice III</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_30">
+				<a href="./cluster_30_macro/"  class="info">
+					<img src="images/cluster_darkblue.gif" style="border: none;" alt="cluster_darkblue"><i style="font-size: 9px; font-style: normal; color: #212121;">Morning Star</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Morning Star</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Morning Star III</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_31">
+				<a href="./cluster_31_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Heretic's End</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Heretic's End</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Heretic's End</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_32">
+				<a href="./cluster_32_macro/"  class="info">
+					<img src="images/cluster_darkred.gif" style="border: none;" alt="cluster_darkred"><i style="font-size: 9px; font-style: normal; color: #212121;">Tharka's Cascade</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Tharka's Cascade</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Tharka's Cascade XV</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Tharka's Cascade XVII</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_33">
+				<a href="./cluster_33_macro/"  class="info">
+					<img src="images/cluster_darkred.gif" style="border: none;" alt="cluster_darkred"><i style="font-size: 9px; font-style: normal; color: #212121;">Matrix #79B</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Matrix #79B</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Matrix #79B</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_34">
+				<a href="./cluster_34_macro/"  class="info">
+					<img src="images/cluster_green.gif" style="border: none;" alt="cluster_green"><i style="font-size: 9px; font-style: normal; color: #212121;">Profit Center Alpha</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Profit Center Alpha</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Profit Center Alpha</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_35">
+				<a href="./cluster_35_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Lasting Vengeance</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Lasting Vengeance</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Lasting Vengeance</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_36">
+				<a href="./cluster_36_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Cardinal's Redress</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Cardinal's Redress</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Cardinal's Redress</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_37">
+				<a href="./cluster_37_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Pious Mists</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Pious Mists</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Pious Mists IV</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_38">
+				<a href="./cluster_38_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Pious Mists</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Pious Mists</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Pious Mists XI</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_39">
+				<a href="./cluster_39_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Memory of Profit</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Memory of Profit</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Memory of Profit X</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_40">
+				<a href="./cluster_40_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Second Contact</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Second Contact</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Second Contact VII</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_41">
+				<a href="./cluster_41_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Second Contact</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Second Contact</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Second Contact XI</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_42">
+				<a href="./cluster_42_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Hewa's Twin</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Hewa's Twin</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Hewa's Twin III</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Hewa's Twin IV The Cove</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_43">
+				<a href="./cluster_43_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Hewa's Twin</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Hewa's Twin</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Hewa's Twin V</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_44">
+				<a href="./cluster_44_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Silent Witness</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Silent Witness</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Silent Witness XI</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_45">
+				<a href="./cluster_45_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Silent Witness</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Silent Witness</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Silent Witness XII</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_46">
+				<a href="./cluster_46_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Morning Star</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Morning Star</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Morning Star IV</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_47">
+				<a href="./cluster_47_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Trinity Sanctum</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Trinity Sanctum</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Trinity Sanctum VII</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_48">
+				<a href="./cluster_49_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Frontier Edge</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Frontier Edge</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Frontier Edge</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_49">
+				<a href="./cluster_48_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Getsu Fune</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Getsu Fune</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Getsu Fune</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_50">
+				<a href="./cluster_50_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Turquoise Sea</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Turquoise Sea</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Turquoise Sea IX</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Turquoise Sea X</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_51">
+				<a href="./cluster_401_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Family Zhin</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Family Zhin</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Family Zhin</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_52">
+				<a href="./cluster_402_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Family Kritt</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Family Kritt</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Family Kritt</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_53">
+				<a href="./cluster_403_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Wretched Skies</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Wretched Skies</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Wretched Skies V Family Phi</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_54">
+				<a href="./cluster_400_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Wretched Skies</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Wretched Skies</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Wretched Skies IV Family Valka</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_55">
+				<a href="./cluster_408_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Thuruk's Demise</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Thuruk's Demise</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Thuruk's Demise III</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Thuruk's Demise II First Impact</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_56">
+				<a href="./cluster_407_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Family Tkr</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Family Tkr</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Family Tkr</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_57">
+				<a href="./cluster_409_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Tharka's Ravine</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Tharka's Ravine</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Tharka's Ravine XXIV</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_58">
+				<a href="./cluster_410_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Tharka's Ravine</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Tharka's Ravine</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Tharka's Ravine XVI</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_59">
+				<a href="./cluster_411_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Heart of Acrimony</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Heart of Acrimony</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Heart of Acrimony II</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_60">
+				<a href="./cluster_405_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Zyarth's Dominion</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Zyarth's Dominion</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Zyarth's Dominion IV</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_61">
+				<a href="./cluster_406_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Zyarth's Dominion</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Zyarth's Dominion</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Zyarth's Dominion X</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_62">
+				<a href="./cluster_404_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Zyarth's Dominion</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Zyarth's Dominion</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Zyarth's Dominion I</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_63">
+				<a href="./cluster_418_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Family Nhuut</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Family Nhuut</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Family Nhuut</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_64">
+				<a href="./cluster_419_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Open Market</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Open Market</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Open Market</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_65">
+				<a href="./cluster_420_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Two Grand</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Two Grand</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Two Grand</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_66">
+				<a href="./cluster_416_macro/"  class="info">
+					<img src="images/cluster_darkblue.gif" style="border: none;" alt="cluster_darkblue"><i style="font-size: 9px; font-style: normal; color: #212121;">Guiding Star</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Guiding Star</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Guiding Star V</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Guiding Star VII</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_67">
+				<a href="./cluster_417_macro/"  class="info">
+					<img src="images/cluster_darkblue.gif" style="border: none;" alt="cluster_darkblue"><i style="font-size: 9px; font-style: normal; color: #212121;">Eleventh Hour</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Eleventh Hour</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Eleventh Hour</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_68">
+				<a href="./cluster_421_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Fires of Defeat</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Fires of Defeat</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Fires of Defeat</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_69">
+				<a href="./cluster_422_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Wretched Skies</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Wretched Skies</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Wretched Skies X</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_70">
+				<a href="./cluster_423_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Litany of Fury</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Litany of Fury</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Litany of Fury IX</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Litany of Fury XII</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_71">
+				<a href="./cluster_412_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Tharka's Ravine</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Tharka's Ravine</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Tharka's Ravine VIII</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_72">
+				<a href="./cluster_413_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Tharka's Ravine</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Tharka's Ravine</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Tharka's Ravine IV Tharka's Fall</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_73">
+				<a href="./cluster_414_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Rhy's Defiance</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Rhy's Defiance</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Rhy's Defiance</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_74">
+				<a href="./cluster_415_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Matrix #598</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Matrix #598</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Matrix #598</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_75">
+				<a href="./cluster_424_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Emperor's Pride</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Emperor's Pride</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Emperor's Pride IV</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Emperor's Pride VI</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_76">
+				<a href="./cluster_425_macro/"  class="info">
+					<img src="images/cluster_lightred.gif" style="border: none;" alt="cluster_lightred"><i style="font-size: 9px; font-style: normal; color: #212121;">Heart of Acrimony</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Heart of Acrimony</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Heart of Acrimony I The Boneyard</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_77">
+				<a href="./cluster_100_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Asteroid Belt</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_78">
+				<a href="./cluster_101_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Mars</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_79">
+				<a href="./cluster_102_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Venus</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_80">
+				<a href="./cluster_104_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Earth</i><i style="display: inline-block; display: list-item; margin-left: 24px;">The Moon</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_81">
+				<a href="./cluster_106_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Mercury</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_82">
+				<a href="./cluster_107_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Jupiter</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_83">
+				<a href="./cluster_108_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Saturn</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Titan</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_84">
+				<a href="./cluster_109_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Uranus</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_85">
+				<a href="./cluster_110_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Neptune</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_86">
+				<a href="./cluster_111_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Pluto</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_87">
+				<a href="./cluster_112_macro/"  class="info">
+					<img src="images/cluster_lightblue.gif" style="border: none;" alt="cluster_lightblue"><i style="font-size: 9px; font-style: normal; color: #212121;">Savage Spur</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Savage Spur</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Savage Spur I</i><i style="display: inline-block; display: list-item; margin-left: 24px;">Savage Spur II</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_88">
+				<a href="./cluster_113_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Segaris</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Segaris</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Segaris</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_89">
+				<a href="./cluster_114_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Gaian Prophecy</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Gaian Prophecy</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Gaian Prophecy</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_90">
+				<a href="./cluster_115_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Brennan's Triumph</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Brennan's Triumph</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Brennan's Triumph</i><br>
+					</span>
+				</a>				
+			</div>
+
+			<div style="position:absolute; top: 0px; left: 0px;" id="map_item_91">
+				<a href="./cluster_116_macro/"  class="info">
+					<img src="images/cluster_gray.gif" style="border: none;" alt="cluster_gray"><i style="font-size: 9px; font-style: normal; color: #212121;">Sol</i>
+
+					<span style="font-size: 9pt;">
+						<b style="font-size: 12pt;">Sol</b><br>Containing <b>sectors</b>:<br><i style="display: inline-block; display: list-item; margin-left: 24px;">Oort Cloud</i><br>
+					</span>
+				</a>				
+			</div>
+
+			</div>
+		<br style="clear: both;">
+		Looking for a specific place? Try <a href="/x4/help/locations/">location help</a>.
+		<br><br>
+
+		<script src="js/galaxy.js"></script>
+
+		<script>
+
+			var map_items_x=[0, 15000000, 30000000, 30000000, 0, -15000000, -60000000, 0, 60000000, 60000000, 0, -30000000, -30000000, -45000000, 105000000, 105000000, 90000000, 60000000, 75000000, 90000000, 90000000, 30000000, 45000000, -15000000, -30000000, -60000000, -90000000, -105000000, -30000000, -45000000, -75000000, -30000000, -45000000, 45000000, 0, -15000000, 45000000, 30000000, 30000000, -45000000, -45000000, 90000000, 90000000, 15000000, 0, -45000000, 45000000, -75000000, -90000000, 105000016, -30000000, -30000000, -75000000, -60000000, 120000000, 120000000, 135000000, 150000000, 150000000, 45000000, 45000000, 30000000, 30000000, 45000000, 60000000, 75000000, 75000000, 120000000, -90000000, -120000000, 165000000, 180000000, -30000000, -15000000, -135000000, 135000000, -150000000, -165000000, -180000000, -165000000, -180000000, -165000000, -180000000, -195000000, -180000000, -195000000, -75000000, -105000000, -120000000, -135000000, -210000000];
+			var map_items_y=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+			var map_items_z=[0, 25980000, 17320000, -17320000, -17320000, -8660000, 34640000, 51960000, 34640000, -17320000, -51960000, -34640000, 0, 25980000, 25980000, 43310000, 51960000, 0, -8660000, -17330000, -34640000, -34650000, -60640000, -43310000, -51960000, -51970000, 17320000, 8660000, 34650000, 43300000, 60630000, 69280000, 77940000, 43310000, -69280000, -60640000, -43310000, -51970000, 0, -8660000, 8660000, 0, 17320000, 60620000, 69280000, 60620000, 8660000, -8660000, 34650000, -25990000, 86600000, 103920000, 77940000, 86600000, 34640000, 51960000, 60620000, 69280000, 86600000, 95260000, 112580000, 103920000, 86600000, 77940000, 69280000, 95260000, 129900000, 69280000, 86600000, 86600000, 60620000, 69280000, 121240000, 129900000, 95260000, 95260000, 0, 8660000, 17320000, 25980000, 34640000, -25980000, -34640000, -43300000, -51970000, -60620000, 43300000, -60620000, -69280000, -60620000, -69280000];
+
+			var map_items_id=['cluster_01_macro', 'cluster_02_macro', 'cluster_03_macro', 'cluster_04_macro', 'cluster_05_macro', 'cluster_06_macro', 'cluster_07_macro', 'cluster_08_macro', 'cluster_09_macro', 'cluster_10_macro', 'cluster_11_macro', 'cluster_12_macro', 'cluster_13_macro', 'cluster_14_macro', 'cluster_15_macro', 'cluster_16_macro', 'cluster_17_macro', 'cluster_18_macro', 'cluster_19_macro', 'cluster_20_macro', 'cluster_21_macro', 'cluster_22_macro', 'cluster_23_macro', 'cluster_24_macro', 'cluster_25_macro', 'cluster_26_macro', 'cluster_27_macro', 'cluster_28_macro', 'cluster_29_macro', 'cluster_30_macro', 'cluster_31_macro', 'cluster_32_macro', 'cluster_33_macro', 'cluster_34_macro', 'cluster_35_macro', 'cluster_36_macro', 'cluster_37_macro', 'cluster_38_macro', 'cluster_39_macro', 'cluster_40_macro', 'cluster_41_macro', 'cluster_42_macro', 'cluster_43_macro', 'cluster_44_macro', 'cluster_45_macro', 'cluster_46_macro', 'cluster_47_macro', 'cluster_49_macro', 'cluster_48_macro', 'cluster_50_macro', 'cluster_401_macro', 'cluster_402_macro', 'cluster_403_macro', 'cluster_400_macro', 'cluster_408_macro', 'cluster_407_macro', 'cluster_409_macro', 'cluster_410_macro', 'cluster_411_macro', 'cluster_405_macro', 'cluster_406_macro', 'cluster_404_macro', 'cluster_418_macro', 'cluster_419_macro', 'cluster_420_macro', 'cluster_416_macro', 'cluster_417_macro', 'cluster_421_macro', 'cluster_422_macro', 'cluster_423_macro', 'cluster_412_macro', 'cluster_413_macro', 'cluster_414_macro', 'cluster_415_macro', 'cluster_424_macro', 'cluster_425_macro', 'cluster_100_macro', 'cluster_101_macro', 'cluster_102_macro', 'cluster_104_macro', 'cluster_106_macro', 'cluster_107_macro', 'cluster_108_macro', 'cluster_109_macro', 'cluster_110_macro', 'cluster_111_macro', 'cluster_112_macro', 'cluster_113_macro', 'cluster_114_macro', 'cluster_115_macro', 'cluster_116_macro'];
+
+			var gate_connection=['cluster_01_macro', 'cluster_04_macro', 'cluster_01_macro', 'cluster_05_macro', 'cluster_01_macro', 'cluster_06_macro', 'cluster_01_macro', 'cluster_02_macro', 'cluster_02_macro', 'cluster_03_macro', 'cluster_02_macro', 'cluster_08_macro', 'cluster_03_macro', 'cluster_09_macro', 'cluster_03_macro', 'cluster_39_macro', 'cluster_04_macro', 'cluster_22_macro', 'cluster_06_macro', 'cluster_13_macro', 'cluster_07_macro', 'cluster_14_macro', 'cluster_08_macro', 'cluster_44_macro', 'cluster_08_macro', 'cluster_34_macro', 'cluster_08_macro', 'cluster_29_macro', 'cluster_09_macro', 'cluster_34_macro', 'cluster_09_macro', 'cluster_18_macro', 'cluster_09_macro', 'cluster_15_macro', 'cluster_10_macro', 'cluster_22_macro', 'cluster_10_macro', 'cluster_18_macro', 'cluster_11_macro', 'cluster_24_macro', 'cluster_11_macro', 'cluster_22_macro', 'cluster_12_macro', 'cluster_24_macro', 'cluster_12_macro', 'cluster_13_macro', 'cluster_13_macro', 'cluster_27_macro', 'cluster_13_macro', 'cluster_40_macro', 'cluster_13_macro', 'cluster_14_macro', 'cluster_14_macro', 'cluster_29_macro', 'cluster_15_macro', 'cluster_16_macro', 'cluster_16_macro', 'cluster_17_macro', 'cluster_18_macro', 'cluster_19_macro', 'cluster_18_macro', 'cluster_47_macro', 'cluster_19_macro', 'cluster_42_macro', 'cluster_19_macro', 'cluster_20_macro', 'cluster_20_macro', 'cluster_21_macro', 'cluster_22_macro', 'cluster_37_macro', 'cluster_22_macro', 'cluster_23_macro', 'cluster_22_macro', 'cluster_38_macro', 'cluster_24_macro', 'cluster_25_macro', 'cluster_24_macro', 'cluster_36_macro', 'cluster_25_macro', 'cluster_26_macro', 'cluster_27_macro', 'cluster_28_macro', 'cluster_29_macro', 'cluster_30_macro', 'cluster_29_macro', 'cluster_32_macro', 'cluster_30_macro', 'cluster_46_macro', 'cluster_30_macro', 'cluster_31_macro', 'cluster_32_macro', 'cluster_33_macro', 'cluster_35_macro', 'cluster_36_macro', 'cluster_37_macro', 'cluster_38_macro', 'cluster_40_macro', 'cluster_41_macro', 'cluster_42_macro', 'cluster_43_macro', 'cluster_44_macro', 'cluster_45_macro', 'cluster_27_macro', 'cluster_49_macro', 'cluster_27_macro', 'cluster_48_macro', 'cluster_26_macro', 'cluster_49_macro', 'cluster_20_macro', 'cluster_50_macro', 'cluster_21_macro', 'cluster_50_macro', 'cluster_401_macro', 'cluster_402_macro', 'cluster_401_macro', 'cluster_32_macro', 'cluster_400_macro', 'cluster_403_macro', 'cluster_400_macro', 'cluster_401_macro', 'cluster_401_macro', 'cluster_418_macro', 'cluster_402_macro', 'cluster_414_macro', 'cluster_403_macro', 'cluster_422_macro', 'cluster_403_macro', 'cluster_31_macro', 'cluster_404_macro', 'cluster_406_macro', 'cluster_404_macro', 'cluster_415_macro', 'cluster_404_macro', 'cluster_418_macro', 'cluster_405_macro', 'cluster_406_macro', 'cluster_405_macro', 'cluster_419_macro', 'cluster_406_macro', 'cluster_417_macro', 'cluster_407_macro', 'cluster_409_macro', 'cluster_407_macro', 'cluster_421_macro', 'cluster_407_macro', 'cluster_408_macro', 'cluster_407_macro', 'cluster_16_macro', 'cluster_409_macro', 'cluster_421_macro', 'cluster_409_macro', 'cluster_410_macro', 'cluster_410_macro', 'cluster_411_macro', 'cluster_410_macro', 'cluster_412_macro', 'cluster_412_macro', 'cluster_413_macro', 'cluster_414_macro', 'cluster_415_macro', 'cluster_416_macro', 'cluster_420_macro', 'cluster_416_macro', 'cluster_417_macro', 'cluster_420_macro', 'cluster_421_macro', 'cluster_418_macro', 'cluster_419_macro', 'cluster_419_macro', 'cluster_420_macro', 'cluster_420_macro', 'cluster_34_macro', 'cluster_421_macro', 'cluster_17_macro', 'cluster_422_macro', 'cluster_423_macro', 'cluster_423_macro', 'cluster_424_macro', 'cluster_411_macro', 'cluster_425_macro', 'cluster_408_macro', 'cluster_15_macro', 'cluster_114_macro', 'cluster_115_macro', 'cluster_113_macro', 'cluster_114_macro', 'cluster_110_macro', 'cluster_115_macro', 'cluster_110_macro', 'cluster_111_macro', 'cluster_108_macro', 'cluster_109_macro', 'cluster_109_macro', 'cluster_110_macro', 'cluster_107_macro', 'cluster_108_macro', 'cluster_102_macro', 'cluster_104_macro', 'cluster_102_macro', 'cluster_106_macro', 'cluster_100_macro', 'cluster_101_macro', 'cluster_100_macro', 'cluster_107_macro', 'cluster_101_macro', 'cluster_102_macro', 'cluster_100_macro', 'cluster_48_macro', 'cluster_111_macro', 'cluster_116_macro', 'cluster_113_macro', 'cluster_28_macro', 'cluster_112_macro', 'cluster_48_macro', 'cluster_112_macro', 'cluster_33_macro'];
+
+			window.onload = draw_galaxy();
+		
+		</script>
+<br style="clear: both;">
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00058 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

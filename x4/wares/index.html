@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Wares - Roguey's X4 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="X4 foundations, egosoft, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x4/wares/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Wares">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x4/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x4/"><img src="/x4/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #4830AE;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #4830AE;">
+				<li class="icon" style="background-color: #4830AE">&nbsp;</li><li><a href="/x4/">Home</a></li><li><a href="/x4/help/">Help</a></li><li><a href="/x4/ships/">Ships</a></li><li><a href="/x4/shields/">Shields</a></li><li><a href="/x4/weapons/">Weapons</a></li><li><a href="/x4/universe/">Maps</a></li><li><a href="/x4/wares/">Wares</a></li><li><a href="/x4/factions/">Factions</a></li><li><a href="/x4/dlc/split-vendetta/">Split Vendetta</a></li><li><a href="/x4/dlc/cradle-of-humanity/">Cradle of Humanity</a></li><li><a href="/x4/steam/">Achievements</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=44">Forum</a></li><li><a href="/x4/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+ 
+	<h1>Wares</h1>
+
+	<span style="font-size: 9pt;">Last updated: 19/3/2021 (v4.0)</span>
+	<br><br>
+	
+	<div class="subheader">
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="energy" checked> Energy &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="gases" checked> Gases &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="minerals" checked> Minerals &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="food" checked> Food &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="agricultural" checked> Agricultural &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="pharmaceutical" checked> Pharmaceutical &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="refined" checked> Refined &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="hightech" checked> Hightech &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="shiptech" checked> Shiptech &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="drones" checked> Drones &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="software" checked> Software &nbsp;</label>
+<label style="font-size: 8.5pt;"><input name="ware_type" onclick="category_filter();" type="checkbox" value="inventory" checked> Inventory &nbsp;</label>
+
+
+		&nbsp;&nbsp;&nbsp; <input type="text" placeholder="search for ware" id="ware_search_str" onkeyup="category_filter();" size="30">
+	</div>
+
+	<div id="ware_stats"></div>
+
+	<script>
+		var ware_data 	= {0: {wid: 'advancedcomposites', wname: 'Advanced Composites', wtype: 'container', wgroup: 'hightech', volume: 32, price_min: 432, price_avg: 540, price_max: 648, profit: 216, dlc: 0}, 1: {wid: 'advancedelectronics', wname: 'Advanced Electronics', wtype: 'container', wgroup: 'shiptech', volume: 30, price_min: 710, price_avg: 1014, price_max: 1318, profit: 608, dlc: 0}, 2: {wid: 'antimattercells', wname: 'Antimatter Cells', wtype: 'container', wgroup: 'refined', volume: 18, price_min: 121, price_avg: 202, price_max: 282, profit: 161, dlc: 0}, 3: {wid: 'antimatterconverters', wname: 'Antimatter Converters', wtype: 'container', wgroup: 'shiptech', volume: 10, price_min: 248, price_avg: 354, price_max: 461, profit: 213, dlc: 0}, 4: {wid: 'bomb_player_limpet_emp_01_mk1', wname: 'Spacesuit EMP', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 110000, price_avg: 120000, price_max: 130000, profit: 20000, dlc: 0}, 5: {wid: 'bomb_player_limpet_mine_01_mk1', wname: 'Spacesuit Bomb', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 85000, price_avg: 90000, price_max: 100000, profit: 15000, dlc: 0}, 6: {wid: 'claytronics', wname: 'Claytronics', wtype: 'container', wgroup: 'shiptech', volume: 24, price_min: 1734, price_avg: 2040, price_max: 2346, profit: 612, dlc: 0}, 7: {wid: 'dronecomponents', wname: 'Drone Components', wtype: 'container', wgroup: 'shiptech', volume: 30, price_min: 685, price_avg: 914, price_max: 1142, profit: 457, dlc: 0}, 8: {wid: 'energycells', wname: 'Energy Cells', wtype: 'container', wgroup: 'energy', volume: 1, price_min: 10, price_avg: 16, price_max: 22, profit: 12, dlc: 0}, 9: {wid: 'engineparts', wname: 'Engine Parts', wtype: 'container', wgroup: 'hightech', volume: 15, price_min: 128, price_avg: 182, price_max: 237, profit: 109, dlc: 0}, 10: {wid: 'engine_gen_spacesuit_01_mk1', wname: 'Spacesuit Thrusters Mk1', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 800, price_avg: 1000, price_max: 1200, profit: 400, dlc: 0}, 11: {wid: 'engine_gen_spacesuit_01_mk2', wname: 'Spacesuit Thrusters Mk2', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 45000, price_avg: 60000, price_max: 75000, profit: 30000, dlc: 0}, 12: {wid: 'fieldcoils', wname: 'Field Coils', wtype: 'container', wgroup: 'shiptech', volume: 15, price_min: 247, price_avg: 412, price_max: 576, profit: 329, dlc: 0}, 13: {wid: 'foodrations', wname: 'Food Rations', wtype: 'container', wgroup: 'food', volume: 1, price_min: 12, price_avg: 21, price_max: 29, profit: 17, dlc: 0}, 14: {wid: 'graphene', wname: 'Graphene', wtype: 'container', wgroup: 'refined', volume: 20, price_min: 100, price_avg: 166, price_max: 233, profit: 133, dlc: 0}, 15: {wid: 'helium', wname: 'Helium', wtype: 'liquid', wgroup: 'gases', volume: 6, price_min: 37, price_avg: 44, price_max: 51, profit: 14, dlc: 0}, 16: {wid: 'hullparts', wname: 'Hull Parts', wtype: 'container', wgroup: 'hightech', volume: 12, price_min: 146, price_avg: 209, price_max: 272, profit: 126, dlc: 0}, 17: {wid: 'hydrogen', wname: 'Hydrogen', wtype: 'liquid', wgroup: 'gases', volume: 6, price_min: 49, price_avg: 58, price_max: 67, profit: 18, dlc: 0}, 18: {wid: 'inv_advancedtargetingmodule', wname: 'Advanced Targeting Module', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 8548, price_avg: 10056, price_max: 11565, profit: 3017, dlc: 0}, 19: {wid: 'inv_agidevice_01', wname: 'AGI Processor', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 7939, price_avg: 10585, price_max: 13232, profit: 5293, dlc: 0}, 20: {wid: 'inv_agidevice_02', wname: 'AGI Heuristic Core', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 3879, price_avg: 4563, price_max: 5248, profit: 1369, dlc: 0}, 21: {wid: 'inv_agidevice_03', wname: 'AGI Neural Network', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 7488, price_avg: 9983, price_max: 12479, profit: 4991, dlc: 0}, 22: {wid: 'inv_algaescrubber', wname: 'Algae Scrubber', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 742, price_avg: 872, price_max: 1003, profit: 261, dlc: 0}, 23: {wid: 'inv_argnusteak', wname: 'Argnu Steak', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 644, price_avg: 757, price_max: 871, profit: 227, dlc: 0}, 24: {wid: 'inv_bandages', wname: 'Bandages', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 96, price_avg: 112, price_max: 129, profit: 33, dlc: 0}, 25: {wid: 'inv_carbonfilter', wname: 'Carbon Filter', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 691, price_avg: 812, price_max: 934, profit: 243, dlc: 0}, 26: {wid: 'inv_crystalbit', wname: 'Crystal Bit', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 827, price_avg: 972, price_max: 1118, profit: 291, dlc: 0}, 27: {wid: 'inv_crystal_01', wname: 'Bandannite Crystal', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 850, price_avg: 1000, price_max: 1150, profit: 300, dlc: 0}, 28: {wid: 'inv_crystal_02', wname: 'Menelaene Crystal', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 8500, price_avg: 10000, price_max: 11500, profit: 3000, dlc: 0}, 29: {wid: 'inv_crystal_03', wname: 'Aguilite Crystal', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 12000, price_avg: 15000, price_max: 17000, profit: 5000, dlc: 0}, 30: {wid: 'inv_crystal_04', wname: 'Mitonene Crystal', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 15555, price_avg: 20000, price_max: 24500, profit: 8945, dlc: 0}, 31: {wid: 'inv_crystal_05', wname: 'Burnite Crystal', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 100000, price_avg: 125000, price_max: 150000, profit: 50000, dlc: 0}, 32: {wid: 'inv_damagedsingularityengine', wname: 'Damaged Singularity Engine', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 88886, price_avg: 118514, price_max: 148143, profit: 59257, dlc: 0}, 33: {wid: 'inv_decryptionmodule', wname: 'Decryption Module', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 7668, price_avg: 9021, price_max: 10375, profit: 2707, dlc: 0}, 34: {wid: 'inv_digitalseminar_boarding', wname: 'Digital Seminar &#40;Boarding&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 85, price_avg: 100, price_max: 115, profit: 30, dlc: 0}, 35: {wid: 'inv_digitalseminar_engineering', wname: 'Digital Seminar &#40;Engineering&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 85, price_avg: 100, price_max: 115, profit: 30, dlc: 0}, 36: {wid: 'inv_digitalseminar_management', wname: 'Digital Seminar &#40;Management&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 85, price_avg: 100, price_max: 115, profit: 30, dlc: 0}, 37: {wid: 'inv_digitalseminar_morale', wname: 'Digital Seminar &#40;Morale&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 85, price_avg: 100, price_max: 115, profit: 30, dlc: 0}, 38: {wid: 'inv_digitalseminar_piloting', wname: 'Digital Seminar &#40;Piloting&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 85, price_avg: 100, price_max: 115, profit: 30, dlc: 0}, 39: {wid: 'inv_electronics', wname: 'Electronics', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 15407, price_avg: 18125, price_max: 20844, profit: 5437, dlc: 0}, 40: {wid: 'inv_finemeal', wname: 'Fine Meal', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 12786, price_avg: 15042, price_max: 17299, profit: 4513, dlc: 0}, 41: {wid: 'inv_firstaidkit', wname: 'First Aid Kit', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 8944, price_avg: 10523, price_max: 12101, profit: 3157, dlc: 0}, 42: {wid: 'inv_fluxcapacitor', wname: 'Flux Capacitor', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 97365, price_avg: 129819, price_max: 162274, profit: 64909, dlc: 0}, 43: {wid: 'inv_hallucinogenics', wname: 'Hallucinogenics', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 6264, price_avg: 8352, price_max: 10440, profit: 4176, dlc: 0}, 44: {wid: 'inv_harddrug_01', wname: 'Delirium', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 45671, price_avg: 60895, price_max: 76118, profit: 30447, dlc: 0}, 45: {wid: 'inv_head_of_split', wname: 'Head of a Split', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 8500000, price_avg: 10000000, price_max: 11500000, profit: 3000000, dlc: 0}, 46: {wid: 'inv_herbicide', wname: 'Herbicide', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 201, price_avg: 236, price_max: 272, profit: 71, dlc: 0}, 47: {wid: 'inv_hydraulicpump', wname: 'Hydraulic Pump', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 408, price_avg: 479, price_max: 551, profit: 143, dlc: 0}, 48: {wid: 'inv_interfaceunit', wname: 'Interface Unit', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 811, price_avg: 954, price_max: 1098, profit: 287, dlc: 0}, 49: {wid: 'inv_kyondevice_01', wname: 'Kyon Crystallite', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 15018, price_avg: 20023, price_max: 25029, profit: 10011, dlc: 0}, 50: {wid: 'inv_kyondevice_02', wname: 'Kyon Crystal Shard', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 34544, price_avg: 40639, price_max: 46735, profit: 12191, dlc: 0}, 51: {wid: 'inv_kyondevice_03', wname: 'Kyon Crystal', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 60409, price_avg: 80545, price_max: 100682, profit: 40273, dlc: 0}, 52: {wid: 'inv_magneticmaterial', wname: 'Lodestone', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 46, price_avg: 54, price_max: 63, profit: 17, dlc: 0}, 53: {wid: 'inv_majaglit', wname: 'Majaglit', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 1020, price_avg: 1200, price_max: 1380, profit: 360, dlc: 0}, 54: {wid: 'inv_microgimble', wname: 'Micro-Gimbal', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 553, price_avg: 650, price_max: 748, profit: 195, dlc: 0}, 55: {wid: 'inv_micromotor', wname: 'Micro-Motor', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 482, price_avg: 567, price_max: 653, profit: 171, dlc: 0}, 56: {wid: 'inv_mixedfruit', wname: 'Mixed Fruit', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 342, price_avg: 402, price_max: 463, profit: 121, dlc: 0}, 57: {wid: 'inv_modulartrigger', wname: 'Modular Trigger', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 482, price_avg: 567, price_max: 653, profit: 171, dlc: 0}, 58: {wid: 'inv_needle', wname: 'Needle', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 544, price_avg: 640, price_max: 736, profit: 192, dlc: 0}, 59: {wid: 'inv_programmablefieldarray', wname: 'Programmable Field Array', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 105882, price_avg: 141176, price_max: 176470, profit: 70588, dlc: 0}, 60: {wid: 'inv_rapidsandfilter', wname: 'Rapid Sand Filter', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 673, price_avg: 791, price_max: 910, profit: 237, dlc: 0}, 61: {wid: 'inv_rarespices', wname: 'Rare Spices', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 819, price_avg: 963, price_max: 1108, profit: 289, dlc: 0}, 62: {wid: 'inv_remotedetonator', wname: 'Remote Detonator', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 13513, price_avg: 15897, price_max: 18282, profit: 4769, dlc: 0}, 63: {wid: 'inv_salvagedelectronics', wname: 'Salvaged Electronics', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 124, price_avg: 145, price_max: 167, profit: 43, dlc: 0}, 64: {wid: 'inv_securecontainer', wname: 'Secure Container', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 3877, price_avg: 4561, price_max: 5246, profit: 1369, dlc: 0}, 65: {wid: 'inv_securitybypasssystem', wname: 'Security Bypass System', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 141704, price_avg: 155605, price_max: 169507, profit: 27803, dlc: 0}, 66: {wid: 'inv_securitydecryptionsystem', wname: 'Security Decryption System', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 151704, price_avg: 165606, price_max: 179507, profit: 27803, dlc: 0}, 67: {wid: 'inv_securityslicer', wname: 'Security Slicer', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 146704, price_avg: 159605, price_max: 185507, profit: 38803, dlc: 0}, 68: {wid: 'inv_sedative', wname: 'Sedative', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 223, price_avg: 262, price_max: 302, profit: 79, dlc: 0}, 69: {wid: 'inv_seminar_management_0', wname: 'Basic Seminar &#40;Management&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 255, price_avg: 300, price_max: 345, profit: 90, dlc: 0}, 70: {wid: 'inv_seminar_management_1', wname: 'Seminar for 1-Star Crew &#40;Management&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 510, price_avg: 600, price_max: 690, profit: 180, dlc: 0}, 71: {wid: 'inv_seminar_management_2', wname: 'Seminar for 2-Star Crew &#40;Management&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 1530, price_avg: 1800, price_max: 2070, profit: 540, dlc: 0}, 72: {wid: 'inv_seminar_management_3', wname: 'Seminar for 3-Star Crew &#40;Management&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 7650, price_avg: 9000, price_max: 10350, profit: 2700, dlc: 0}, 73: {wid: 'inv_seminar_management_4', wname: 'Advanced Seminar for 4-Star Crew &#40;Management&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 53550, price_avg: 63000, price_max: 72450, profit: 18900, dlc: 0}, 74: {wid: 'inv_seminar_piloting_0', wname: 'Basic Seminar &#40;Piloting&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 255, price_avg: 300, price_max: 345, profit: 90, dlc: 0}, 75: {wid: 'inv_seminar_piloting_1', wname: 'Seminar for 1-Star Crew &#40;Piloting&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 510, price_avg: 600, price_max: 690, profit: 180, dlc: 0}, 76: {wid: 'inv_seminar_piloting_2', wname: 'Seminar for 2-Star Crew &#40;Piloting&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 1530, price_avg: 1800, price_max: 2070, profit: 540, dlc: 0}, 77: {wid: 'inv_seminar_piloting_3', wname: 'Seminar for 3-Star Crew &#40;Piloting&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 7650, price_avg: 9000, price_max: 10350, profit: 2700, dlc: 0}, 78: {wid: 'inv_seminar_piloting_4', wname: 'Advanced Seminar for 4-Star Crew &#40;Piloting&#41;', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 53550, price_avg: 63000, price_max: 72450, profit: 18900, dlc: 0}, 79: {wid: 'inv_spaceflycaviar', wname: 'Spacefly Caviar', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 898450, price_avg: 1057000, price_max: 1215550, profit: 317100, dlc: 0}, 80: {wid: 'inv_spaceflyeggs', wname: 'Spacefly Eggs', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 8995, price_avg: 10570, price_max: 12156, profit: 3161, dlc: 0}, 81: {wid: 'inv_split_ceremonial_dagger', wname: 'Split Ceremonial Dagger', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 12750000, price_avg: 15000000, price_max: 17250000, profit: 4500000, dlc: 0}, 82: {wid: 'inv_timewarp', wname: 'SETA', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 1, price_avg: 1, price_max: 2, profit: 1, dlc: 0}, 83: {wid: 'inv_unstablecrystal', wname: 'Unstable Crystal', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 4080, price_avg: 5440, price_max: 6800, profit: 2720, dlc: 0}, 84: {wid: 'majadust', wname: 'Maja Dust', wtype: 'container', wgroup: 'pharmaceutical', volume: 6, price_min: 94, price_avg: 208, price_max: 323, profit: 229, dlc: 0}, 85: {wid: 'majasnails', wname: 'Maja Snails', wtype: 'container', wgroup: 'agricultural', volume: 6, price_min: 35, price_avg: 58, price_max: 81, profit: 46, dlc: 0}, 86: {wid: 'meat', wname: 'Meat', wtype: 'container', wgroup: 'agricultural', volume: 6, price_min: 29, price_avg: 48, price_max: 68, profit: 39, dlc: 0}, 87: {wid: 'medicalsupplies', wname: 'Medical Supplies', wtype: 'container', wgroup: 'pharmaceutical', volume: 2, price_min: 43, price_avg: 66, price_max: 89, profit: 46, dlc: 0}, 88: {wid: 'methane', wname: 'Methane', wtype: 'liquid', wgroup: 'gases', volume: 6, price_min: 41, price_avg: 48, price_max: 55, profit: 14, dlc: 0}, 89: {wid: 'microchips', wname: 'Microchips', wtype: 'container', wgroup: 'hightech', volume: 22, price_min: 805, price_avg: 948, price_max: 1090, profit: 285, dlc: 0}, 90: {wid: 'missilecomponents', wname: 'Missile Components', wtype: 'container', wgroup: 'shiptech', volume: 2, price_min: 6, price_avg: 9, price_max: 13, profit: 7, dlc: 0}, 91: {wid: 'nividium', wname: 'Nividium', wtype: 'solid', wgroup: 'minerals', volume: 10, price_min: 434, price_avg: 510, price_max: 587, profit: 153, dlc: 0}, 92: {wid: 'nostropoil', wname: 'Nostrop Oil', wtype: 'container', wgroup: 'food', volume: 1, price_min: 20, price_avg: 34, price_max: 47, profit: 27, dlc: 0}, 93: {wid: 'ore', wname: 'Ore', wtype: 'solid', wgroup: 'minerals', volume: 10, price_min: 43, price_avg: 50, price_max: 58, profit: 15, dlc: 0}, 94: {wid: 'plasmaconductors', wname: 'Plasma Conductors', wtype: 'container', wgroup: 'hightech', volume: 32, price_min: 769, price_avg: 1026, price_max: 1282, profit: 513, dlc: 0}, 95: {wid: 'quantumtubes', wname: 'Quantum Tubes', wtype: 'container', wgroup: 'hightech', volume: 22, price_min: 225, price_avg: 300, price_max: 375, profit: 150, dlc: 0}, 96: {wid: 'refinedmetals', wname: 'Refined Metals', wtype: 'container', wgroup: 'refined', volume: 14, price_min: 89, price_avg: 148, price_max: 207, profit: 118, dlc: 0}, 97: {wid: 'scanningarrays', wname: 'Scanning Arrays', wtype: 'container', wgroup: 'hightech', volume: 38, price_min: 842, price_avg: 1053, price_max: 1264, profit: 422, dlc: 0}, 98: {wid: 'shieldcomponents', wname: 'Shield Components', wtype: 'container', wgroup: 'shiptech', volume: 10, price_min: 113, price_avg: 188, price_max: 264, profit: 151, dlc: 0}, 99: {wid: 'ship_arg_xs_police_01_a', wname: 'Argon Station Security Vessel', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 9707, price_avg: 11420, price_max: 13133, profit: 3426, dlc: 0}, 100: {wid: 'ship_gen_m_transdrone_container_01_a', wname: 'Medium Drop Drone', wtype: 'ship', wgroup: 'drones', volume: 1, price_min: 39610, price_avg: 46600, price_max: 53590, profit: 13980, dlc: 0}, 101: {wid: 'ship_gen_s_fightingdrone_01_a', wname: 'Defence Drone', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 11611, price_avg: 13660, price_max: 15709, profit: 4098, dlc: 0}, 102: {wid: 'ship_gen_s_miningdrone_liquid_01_a', wname: 'Gas Collector Drone', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 11781, price_avg: 13860, price_max: 15939, profit: 4158, dlc: 0}, 103: {wid: 'ship_gen_s_miningdrone_solid_01_a', wname: 'Mining Drone', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 11781, price_avg: 13860, price_max: 15939, profit: 4158, dlc: 0}, 104: {wid: 'ship_gen_s_transdrone_container_01_a', wname: 'Small Drop Drone', wtype: 'ship', wgroup: 'drones', volume: 1, price_min: 19805, price_avg: 23300, price_max: 26795, profit: 6990, dlc: 0}, 105: {wid: 'ship_gen_xs_buildingdrone_01_a', wname: 'Building Drone', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 12980, price_avg: 15270, price_max: 17561, profit: 4581, dlc: 0}, 106: {wid: 'ship_gen_xs_cargodrone_empty_01_a', wname: 'Cargo Drone', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 13728, price_avg: 16150, price_max: 18573, profit: 4845, dlc: 0}, 107: {wid: 'ship_gen_xs_repairdrone_01_a', wname: 'Repair Drone', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 12980, price_avg: 15270, price_max: 17561, profit: 4581, dlc: 0}, 108: {wid: 'ship_par_xs_police_01_a', wname: 'Paranid Station Security Vessel', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 9707, price_avg: 11420, price_max: 13133, profit: 3426, dlc: 0}, 109: {wid: 'ship_tel_xs_police_01_a', wname: 'Teladi Station Security Vessel A', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 9707, price_avg: 11420, price_max: 13133, profit: 3426, dlc: 0}, 110: {wid: 'ship_tel_xs_police_02_a', wname: 'Teladi Station Security Vessel B', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 9707, price_avg: 11420, price_max: 13133, profit: 3426, dlc: 0}, 111: {wid: 'ship_tel_xs_police_03_a', wname: 'Teladi Station Security Vessel C', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 9707, price_avg: 11420, price_max: 13133, profit: 3426, dlc: 0}, 112: {wid: 'silicon', wname: 'Silicon', wtype: 'solid', wgroup: 'minerals', volume: 10, price_min: 111, price_avg: 130, price_max: 150, profit: 39, dlc: 0}, 113: {wid: 'siliconwafers', wname: 'Silicon Wafers', wtype: 'container', wgroup: 'refined', volume: 18, price_min: 180, price_avg: 299, price_max: 419, profit: 239, dlc: 0}, 114: {wid: 'smartchips', wname: 'Smart Chips', wtype: 'container', wgroup: 'shiptech', volume: 2, price_min: 46, price_avg: 57, price_max: 69, profit: 23, dlc: 0}, 115: {wid: 'software_dockmk1', wname: 'Docking Computer Mk1', wtype: 'software', wgroup: 'software', volume: 1, price_min: 5000, price_avg: 7500, price_max: 10000, profit: 5000, dlc: 0}, 116: {wid: 'software_dockmk2', wname: 'Docking Computer Mk2', wtype: 'software', wgroup: 'software', volume: 1, price_min: 24576, price_avg: 32768, price_max: 40960, profit: 16384, dlc: 0}, 117: {wid: 'software_economymk1', wname: 'Economy Analytics Software Mk1', wtype: 'software', wgroup: 'software', volume: 1, price_min: 5000, price_avg: 7500, price_max: 10000, profit: 5000, dlc: 0}, 118: {wid: 'software_flightassistmk1', wname: 'Flight Assist Software Mk1', wtype: 'software', wgroup: 'software', volume: 1, price_min: 6825, price_avg: 9100, price_max: 11375, profit: 4550, dlc: 0}, 119: {wid: 'software_scannerlongrangemk1', wname: 'Long-range Scanner Software Mk1', wtype: 'equipment', wgroup: 'software', volume: 1, price_min: 29274, price_avg: 32526, price_max: 35779, profit: 6505, dlc: 0}, 120: {wid: 'software_scannerlongrangemk2', wname: 'Long-range Scanner Software Mk2', wtype: 'equipment', wgroup: 'software', volume: 1, price_min: 58547, price_avg: 65052, price_max: 71558, profit: 13011, dlc: 0}, 121: {wid: 'software_scannerminingmk1', wname: 'Mining Scanner Software Mk1', wtype: 'equipment', wgroup: 'software', volume: 1, price_min: 21814, price_avg: 24238, price_max: 26661, profit: 4847, dlc: 0}, 122: {wid: 'software_scannerminingmk2', wname: 'Mining Scanner Software Mk2', wtype: 'equipment', wgroup: 'software', volume: 1, price_min: 65096, price_avg: 72329, price_max: 79562, profit: 14466, dlc: 0}, 123: {wid: 'software_scannerobjectmk1', wname: 'Basic Scanner', wtype: 'equipment', wgroup: 'software', volume: 1, price_min: 10907, price_avg: 12119, price_max: 13331, profit: 2424, dlc: 0}, 124: {wid: 'software_scannerobjectmk2', wname: 'Police Scanner', wtype: 'equipment', wgroup: 'software', volume: 1, price_min: 36733, price_avg: 40815, price_max: 44896, profit: 8163, dlc: 0}, 125: {wid: 'software_scannerobjectmk3', wname: 'Spacesuit Scanner', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 800, price_avg: 1000, price_max: 1200, profit: 400, dlc: 0}, 126: {wid: 'software_targetmk1', wname: 'Targeting Computer Extension Mk1', wtype: 'software', wgroup: 'software', volume: 1, price_min: 6144, price_avg: 8192, price_max: 10240, profit: 4096, dlc: 0}, 127: {wid: 'software_targetmk2', wname: 'Targeting Computer Extension Mk2', wtype: 'software', wgroup: 'software', volume: 1, price_min: 5000, price_avg: 7500, price_max: 10000, profit: 5000, dlc: 0}, 128: {wid: 'software_trademk1', wname: 'Trading Computer Extension Mk1', wtype: 'software', wgroup: 'software', volume: 1, price_min: 8438, price_avg: 11250, price_max: 14063, profit: 5625, dlc: 0}, 129: {wid: 'software_trademk2', wname: 'Trading Computer Extension Mk2', wtype: 'software', wgroup: 'software', volume: 1, price_min: 5000, price_avg: 7500, price_max: 10000, profit: 5000, dlc: 0}, 130: {wid: 'software_trademk3', wname: 'Trading Computer Extension Mk3', wtype: 'software', wgroup: 'software', volume: 1, price_min: 5000, price_avg: 7500, price_max: 10000, profit: 5000, dlc: 0}, 131: {wid: 'sojabeans', wname: 'Soja Beans', wtype: 'container', wgroup: 'agricultural', volume: 5, price_min: 40, price_avg: 67, price_max: 93, profit: 53, dlc: 0}, 132: {wid: 'sojahusk', wname: 'Soja Husk', wtype: 'container', wgroup: 'food', volume: 1, price_min: 19, price_avg: 32, price_max: 45, profit: 26, dlc: 0}, 133: {wid: 'spacefuel', wname: 'Spacefuel', wtype: 'container', wgroup: 'pharmaceutical', volume: 2, price_min: 60, price_avg: 133, price_max: 207, profit: 147, dlc: 0}, 134: {wid: 'spaceweed', wname: 'Spaceweed', wtype: 'container', wgroup: 'pharmaceutical', volume: 3, price_min: 75, price_avg: 166, price_max: 257, profit: 182, dlc: 0}, 135: {wid: 'spices', wname: 'Spices', wtype: 'container', wgroup: 'agricultural', volume: 3, price_min: 12, price_avg: 20, price_max: 28, profit: 16, dlc: 0}, 136: {wid: 'sunriseflowers', wname: 'Sunrise Flowers', wtype: 'container', wgroup: 'agricultural', volume: 5, price_min: 48, price_avg: 80, price_max: 112, profit: 64, dlc: 0}, 137: {wid: 'superfluidcoolant', wname: 'Superfluid Coolant', wtype: 'container', wgroup: 'refined', volume: 16, price_min: 90, price_avg: 150, price_max: 211, profit: 121, dlc: 0}, 138: {wid: 'swampplant', wname: 'Swamp Plant', wtype: 'container', wgroup: 'agricultural', volume: 6, price_min: 50, price_avg: 84, price_max: 117, profit: 67, dlc: 0}, 139: {wid: 'teladianium', wname: 'Teladianium', wtype: 'container', wgroup: 'refined', volume: 16, price_min: 121, price_avg: 202, price_max: 283, profit: 162, dlc: 0}, 140: {wid: 'turretcomponents', wname: 'Turret Components', wtype: 'container', wgroup: 'shiptech', volume: 20, price_min: 164, price_avg: 273, price_max: 383, profit: 219, dlc: 0}, 141: {wid: 'weaponcomponents', wname: 'Weapon Components', wtype: 'container', wgroup: 'shiptech', volume: 20, price_min: 171, price_avg: 285, price_max: 399, profit: 228, dlc: 0}, 142: {wid: 'weapon_gen_spacesuit_demolition_01_mk1', wname: 'Bomb Launcher', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 175000, price_avg: 200000, price_max: 225000, profit: 50000, dlc: 0}, 143: {wid: 'weapon_gen_spacesuit_laser_01_mk1', wname: 'Hand Laser', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 45000, price_avg: 60000, price_max: 75000, profit: 30000, dlc: 0}, 144: {wid: 'weapon_gen_spacesuit_laser_02_mk1', wname: 'Personal Blaster', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 80000, price_avg: 100000, price_max: 120000, profit: 40000, dlc: 0}, 145: {wid: 'weapon_gen_spacesuit_repairlaser_01_mk1', wname: 'Repair Laser', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 800, price_avg: 1000, price_max: 1200, profit: 400, dlc: 0}, 146: {wid: 'wheat', wname: 'Wheat', wtype: 'container', wgroup: 'agricultural', volume: 4, price_min: 19, price_avg: 31, price_max: 44, profit: 25, dlc: 0}, 147: {wid: 'cheltmeat', wname: 'Chelt Meat', wtype: 'container', wgroup: 'agricultural', volume: 7, price_min: 31, price_avg: 51, price_max: 72, profit: 41, dlc: 0}, 148: {wid: 'scruffinfruits', wname: 'Scruffin Fruit', wtype: 'container', wgroup: 'agricultural', volume: 6, price_min: 17, price_avg: 28, price_max: 40, profit: 23, dlc: 0}, 149: {wid: 'ship_spl_xs_police_01_a', wname: 'Split Station Security Vessel', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 7999, price_avg: 9410, price_max: 10822, profit: 2823, dlc: 1}, 150: {wid: 'computronicsubstrate', wname: 'Computronic Substrate', wtype: 'container', wgroup: 'hightech', volume: 50, price_min: 7452, price_avg: 8280, price_max: 9108, profit: 1656, dlc: 0}, 151: {wid: 'engine_spacesuit_weak', wname: 'Disrupted Engine', wtype: 'inventory', wgroup: 'inventory', volume: 1, price_min: 800, price_avg: 1000, price_max: 1200, profit: 400, dlc: 0}, 152: {wid: 'metallicmicrolattice', wname: 'Metallic Microlattice', wtype: 'container', wgroup: 'hightech', volume: 1, price_min: 42, price_avg: 50, price_max: 57, profit: 15, dlc: 0}, 153: {wid: 'proteinpaste', wname: 'Protein Paste', wtype: 'container', wgroup: 'agricultural', volume: 4, price_min: 57, price_avg: 96, price_max: 134, profit: 77, dlc: 0}, 154: {wid: 'ship_gen_m_transdrone_container_02_a', wname: 'Medium Terraforming Drone', wtype: 'ship', wgroup: 'drones', volume: 1, price_min: 39610, price_avg: 46600, price_max: 53590, profit: 13980, dlc: 0}, 155: {wid: 'ship_gen_s_transdrone_container_02_a', wname: 'Small Terraforming Drone', wtype: 'ship', wgroup: 'drones', volume: 1, price_min: 19805, price_avg: 23300, price_max: 26795, profit: 6990, dlc: 0}, 156: {wid: 'ship_ter_xs_police_01_a', wname: 'Terran Station Security Vessel', wtype: 'equipment', wgroup: 'drones', volume: 1, price_min: 24676, price_avg: 27418, price_max: 30160, profit: 5484, dlc: 2}, 157: {wid: 'siliconcarbide', wname: 'Silicon Carbide', wtype: 'container', wgroup: 'hightech', volume: 20, price_min: 1202, price_avg: 1414, price_max: 1627, profit: 425, dlc: 0}, 158: {wid: 'stimulants', wname: 'Stimulants', wtype: 'container', wgroup: 'pharmaceutical', volume: 12, price_min: 153, price_avg: 340, price_max: 527, profit: 374, dlc: 0}, 159: {wid: 'terranmre', wname: 'Terran MRE', wtype: 'container', wgroup: 'food', volume: 2, price_min: 32, price_avg: 54, price_max: 75, profit: 43, dlc: 0}};
+		var ware_count	= 160;
+	</script>
+
+	<script src="/modules/sorttable.js"></script>
+
+	<script>
+		
+		function capitaliseFirstLetter(string)
+		{
+			return string.charAt(0).toUpperCase() + string.slice(1);
+		}
+
+		function number_comma(x)
+		{
+			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
+
+		function BuildWareList()
+		{
+			// get div
+			var div_ware_stats			= document.getElementById('ware_stats');
+
+
+			// start table
+			var ware_table				= "<table class='board_table sortable'><th id='data_name'>Name</th><th>Type</th><th>Volume</th><th style='text-align: right;'>Min</th><th class='sorttable_nosort'>-</th><th style='text-align: center;'>Avg</th><th class='sorttable_nosort'>-</th><th style='text-align: left;'>Max</th><th>Profit</th></tr>";
+
+			for (var i=0; i<ware_count; i++)
+			{
+				// ----------------
+				// Check for DLC
+				// ----------------
+				
+				// DLC0: Base-game
+				// DLC1: Split Vendetta
+				// DLC2: Cradle of Humanity
+
+				if (ware_data[i].dlc == 0)
+					dlc_colour = "black";
+				
+				else if (ware_data[i].dlc == 1)
+					dlc_colour = "red";
+				
+				else if (ware_data[i].dlc == 2)
+					dlc_colour = "blue";
+				
+				// ----------------
+			
+				ware_table			+= "	<tr class='hover' id='wareid_"+i+"'><td sorttable_customkey='"+ware_data[i].wname+"'><a href='./"+ware_data[i].wid+"/' style='color: "+dlc_colour+";'> <img src='./images/icon_"+ware_data[i].wtype+".gif' style='border: none;'> "+ware_data[i].wname+"</td><td class='smalltext' style='text-align: center;'>"+capitaliseFirstLetter(ware_data[i].wgroup)+"</td><td class='smalltext' style='text-align: center;'>"+ware_data[i].volume+"</td><td style='width: 120px; text-align: right; color: red;' sorttable_customkey='"+ware_data[i].price_min+"'>"+number_comma(ware_data[i].price_min)+"<span style='font-size: 8pt;'>cr</span></td><td style='width: 10px;'>-</td><td style='width: 120px; color: purple; text-align: center;' sorttable_customkey='"+ware_data[i].price_avg+"'>"+number_comma(ware_data[i].price_avg)+"<span style='font-size: 8pt;'>cr</span></td><td style='width: 10px;'>-</td><td style='width: 120px; color: green;' sorttable_customkey='"+ware_data[i].price_max+"'>"+number_comma(ware_data[i].price_max)+"<span style='font-size: 8pt;'>cr</span></td><td style='width: 70px; color: orange;' sorttable_customkey='"+ware_data[i].profit+"'>"+number_comma(ware_data[i].profit)+"<span style='font-size: 8pt;'>cr</span></td></tr>";
+			}
+				
+			// end table
+			ware_table					+= "</table><br><br>"
+			
+			div_ware_stats.innerHTML	= ware_table;
+			
+			// reset
+			category_filter();
+		}
+		
+		function category_filter()
+		{
+			var ware_check_array		= document.getElementsByName('ware_type');
+			var ware_check_count		= ware_check_array.length;
+			
+			var category_types			= new Array();
+			
+			for (var i=0; i<ware_check_count; i++)
+			{
+				// if checked
+				if ( ware_check_array[i].checked)
+					category_types.push(ware_check_array[i].value);
+			}
+			
+			// get search string
+			var search_str	= document.getElementById('ware_search_str').value;
+			
+			// show or hide category
+			for (var i=0; i<ware_count; i++)
+			{			
+				var ware_tr_state	= 'none';
+				
+				// show
+				if (category_types.includes(ware_data[i].wgroup))
+				{
+					// ware matches category, but check if we searching too
+					
+					if ( ((search_str.length > 0) && (ware_data[i].wname.toLowerCase().includes(search_str.toLowerCase() ) )) || (search_str.length == 0) )
+						ware_tr_state = 'table-row';
+				}
+				
+				// now apply
+				document.getElementById('wareid_'+i).style.display = ware_tr_state;
+			}
+		}
+
+		// on startup
+		window.onLoad 		= BuildWareList();
+
+
+	</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00064 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

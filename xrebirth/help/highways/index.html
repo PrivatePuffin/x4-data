@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Highways - Roguey's X Rebirth site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="highways - roguey's x rebirth site, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/xrebirth/help/highways/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Highways">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/xrebirth/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/xrebirth/"><img src="/xrebirth/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #6F9F6F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #6F9F6F;">
+				<li class="icon" style="background-color: #6F9F6F">&nbsp;</li><li><a href="/xrebirth/">News</a></li><li><a href="/xrebirth/pictures/">Pictures</a></li><li><a href="/xrebirth/videos/">Videos</a></li><li><a href="/xrebirth/help/">Help / Guides</a></li><li><a href="/xrebirth/ships/">Ships</a></li><li><a href="/xrebirth/universe/">Maps</a></li><li><a href="/xrebirth/statistics/">Statistics</a></li><li><a href="/xrebirth/stations/">Stations</a></li><li><a href="/xrebirth/wares/">Wares</a></li><li><a href="/xrebirth/teladi-outpost/">Teladi Outpost</a></li><li><a href="/xrebirth/home-of-light/">Home of Light</a></li><li><a href="/xrebirth/editing/">Editing</a></li><li><a href="/xrebirth/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=20">Forum</a></li><li><a href="/xrebirth/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Highways</h1>
+
+	In X-R, highway's are a new addition to the x-universe. We first started to see them form in Albion Prelude (X3AP) during the plot. 
+	Think of Highways like large <i>pipes</i> in your house - that carry water to set places. 
+	The same happens in X-R but rather than water, the highways carry ship at extremely high-speeds. 
+	There are two types of highway's; <b>Super highways</b>, and <b>Local highways</b>. 
+	Super highways are always blue, whilst Local highways are green.
+	<br><br>
+
+	<h2>Super highways</h2>
+
+	Super highways are the larger highways that connect sectors together. 
+	Because they connect you across large distances, you can not exit them at will. 
+	Super highways are directional, so if you try to enter an exit gate, you will be pushed away.
+	Super highways are normally blue.
+	<br><br>
+
+	Below is a picture of a super-highway gate:
+	<br><br>
+
+	<div style="width: 100%; text-align: center;">
+		<img src="../../pictures/roguey/med/pic_6_med.jpg"  alt="A super-highway gate"></div><br>
+
+
+
+
+	<h2>Local highways</h2>
+
+
+	Local highways are a little different to the Super highways; firstly they are coloured in green (which is obvious I know but still). 
+	However that's not the only difference - Local highways are positioned in a way to take you around a sector, often stopping at certain zones.
+	Unlike Super highways you can leave a Local highway at any-time by breaking or heading out of the highway,
+	this maybe required to visit certain zones on the way (some local highways go in a continuous loop from their start zone). 
+	You can rejoin the highway at anytime by simply flying into it (you do not need join the highway at set positions).
+	<br><br>
+
+	Highways also have lanes, that you can switch for over-taking and/or combat reasons.<br>
+	To over-take, you must use your <b>booster</b>. However this will drain your energy much faster than in normal-space. 
+	<br><br>
+
+	Like Super highways, Local highways are also directional - meaning you must follow the flow.
+	<br><br>
+
+
+	<div style="width: 100%; text-align: center;">
+		<img src="../../info/new/images/highway_1.jpg"  alt="A Local highway"></div><br>
+
+
+
+	<h2>Travelling faster in highways</h2>
+	It is possible to travel even faster in a highway. Once inside a highway you will notice ships whizzing pass you, as they have much faster engines than you.
+	However it is possible to hitch a ride in their engine wake. To do this you must change lanes just after they go pass you. 
+	If timed correctly, you will then be directly behind them and travelling at their speed not your max.
+	You have to be careful when doing this, as you may accidentally leave a local-highway if you near one of the outside lanes.
+	However in super-highways this isnt a problem, because you cant leave until its reached its destination.
+	<br><br>
+
+	<iframe width="700" height="394" src="//www.youtube.com/embed/UhiUtKGWcBY" frameborder="0" allowfullscreen></iframe>
+	<br><br>
+
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0008 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

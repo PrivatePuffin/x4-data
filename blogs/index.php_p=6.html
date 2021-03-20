@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=6">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 6 of 16)</span></h1><br>
+	
+		<h2>X3AP &#187; A bit of a Balancing Act</h2>
+
+
+		<div class="pad">
+			I was throwing ideas against the wall the other day about X3TC and AP, and one that&#039;s been bugging me for a while now is how useless most of the M4 class is compared to the M3&#039;s, the M3&#039;s are simply better, and only a tad slower! So here&#039;e my idea for a bit of an overhaul.... <br><br>It should be changed so M4 = Workhorse civilian ship/defense fighter; M4+ = Interceptor; M3 = Fighter-Bomber; M3+ = Tank. I’ll explain how I would like this done, firstly with weapons: <br><br>The PAC, PRG and PBE should be dedicated Interceptor weapons, as they are all generally low damage per shot, high ROF and high bullet speed. The PAC should be the hard hitter of the 3; doing the highest hull damage (400 instead of 140), highest shield
+			... <a href="/blogs/randomtank/blog-84.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/randomtank/"><b>RandomTank</b></a></b> on Thursday 11th July, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/randomtank/blog-84.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/randomtank/blog-84.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; My Burgeoning Fleet</h2>
+
+
+		<div class="pad">
+			After a bit of sorting, selling and stealing, my ship list is looking a lot more manageable; there is still about 50 TS&#039;s that need repairing and selling, but now all the excess fighters have gone, been put into wings or stored away for the PHQ.  <br><br>I now have my Shrike outfitted as an RRF Destroyer that packs quite a punch, but it also has Red Wing mounted in it, which comprises of 5 Nova Raiders toting 4 HEPT and 4 PRG each, allowing for quite flexible usage; but I also keep my X-Shuttle in its hanger for personal use. My main ship though is my Panther, equipped to be a Carrier/Cruiser with plenty of ISR, CIG and FAA, and it carries Gold and Silver Wing in its hangers; Gold Wing being 10 Solano&#039;s all equipped with 6 Mass
+			... <a href="/blogs/randomtank/blog-82.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/randomtank/"><b>RandomTank</b></a></b> on Tuesday 2nd July, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/randomtank/blog-82.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/randomtank/blog-82.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Too much.... Stuff!!</h2>
+
+
+		<div class="pad">
+			Been playing a TC save for a while now, an I now officially have more ships than I know what to do with...<br>Lets start the list shall we? I have:<br><b>M7</b><br>A Panther, fully equipped, needs more fighters for escort (uses the Nova Raiders);<br>A Shrike, fully equipped, needs fighter escort;<br>A Cobra, partially equipped (needs hammers), needs more marines (10 4 star)<br>A Griffon, needs equipping (has nothing useful), needs fighter escort;<br>A Gannet, needs equipping (has nothing, may sell), has no marines;<br>A Carrack, needs equipping (has nothing, may sell);<br>A Minotaur, needs equipping (has nothing, may sell);<br><b>M6 &amp; M8</b><br>A Skiron, fully equipped, no marines;<br>A Pirate Osprey, needs equipping (has nothing, may sell), no marines;<br>A
+			... <a href="/blogs/randomtank/blog-81.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/randomtank/"><b>RandomTank</b></a></b> on Tuesday 18th June, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/randomtank/blog-81.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 4 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/randomtank/blog-81.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>DUKE NUKEM: FOREVER &#187; Glitch insane difficultly</h2>
+
+
+		<div class="pad">
+			If like me, you started to pull your hair-out when trying to complete <b>Duke Nukem: Forever</b> on Insane (or very hard difficultly), then this may help. <br><br>Quite often you can walk into a area, you can be killed in a mere second then forced to wait 30 seconds for the game to reload (especially on the consoles). After a few tries, the load time gets very annoying. The end-boss is very annoying having no check-points between the battle. However this glitch works with him, as there are a check-point before and after.<br><br>This glitch basically allows you to play most of the game with God-mode on and Instant-kill enabled. You will need to unlock the cheats by completing the game on normal.<br><br><b>Background on the glitch</b><br>The glitch works
+			... <a href="/blogs/roguey/blog-80.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Thursday 2nd May, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-80.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-80.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Way of the Gun Chapter 5</h2>
+
+
+		<div class="pad">
+			<a href="http://roguey.co.uk/blogs/kirlack/blog-78.html" target="_blank">Chapter 4</a><br><br><b><span style="font-size: 2&#48;px;">Chapter 5: Back in the saddle</span></b><br><br>&nbsp;&nbsp;&nbsp;&nbsp;Aww, mate! I swear, if I ever give up my life o&#039; crime I&#039;m movin&#039; up here with these boys. They sure can party! I even got the pleasure of some post alchohol fun! Man, I love my job.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;So, I started the day by kicking lover boy outta bed, grabbin&#039; a shower and eatin&#039; breakfast with my mercs. Daye Bro, the cocky frakker I was thinkin&#039; about shootin&#039; a couple nights back, is one of the ten still on the Metatron, and I&#039;ve banned &#039;em all from carryin&#039; weapons in the common cabin in case their poker games turn ugly again. I might have to sit in myself one night and see
+			... <a href="/blogs/kirlack/blog-79.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/kirlack/"><b>Kirlack</b></a></b> on Tuesday 23rd April, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/kirlack/blog-79.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/kirlack/blog-79.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Way of the Gun Chapter 4</h2>
+
+
+		<div class="pad">
+			<a href="http://roguey.co.uk/blogs/kirlack/blog-75.html" target="_blank">Interlude</a><br><br><b><span style="font-size: 4&#48;px;">Chapter 4: Gone Fishin&#039;</span></b><br><br>&nbsp;&nbsp;&nbsp;&nbsp;Decided to take the day off from my regular &#039;kill &#039;n&#039; steal&#039; methods and do some scoutin&#039; today. Before I called it a night yesterday I sent &#039;Small Fry&#039;, my little Octopus, off to Company Pride for some shields and software, and got it tuned all the way to max. Whilst she was busy getting fitted out I fixed up the Caiman as well and sent Creed off to OTAS for a couple more shields to get her ship-shape. I had an interestin&#039; run in with one o&#039; my mercs last  night as well. Cocky frakker was a hair&#039;s breadth from gettin&#039; shot. That said, if Yohandris hadn&#039;t
+			... <a href="/blogs/kirlack/blog-78.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/kirlack/"><b>Kirlack</b></a></b> on Monday 15th April, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/kirlack/blog-78.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/kirlack/blog-78.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Problems with the HUB Plot</h2>
+
+
+		<div class="pad">
+			&nbsp;&nbsp;&nbsp;&nbsp;Now some people have had problems with the hub plot. I am one of those people. But I have found a way to do the Hub plot with out bashing my face in to the keyboard repeably. For some money can be hard to come by for others not so much. I have a solution to the money problem but at a cost. Most of this money will go to completing the hub plot but at the end it will end up paying for its self. So solution i found was on this forum. It was posted by cjm3fl. He posed about and exploit that will make you a ton of money mining nividum. What he wrote can be found here <a href="http://roguey.co.uk/forum/viewtopic.php?id=417" target="_blank">http://roguey.co.uk/forum/viewtopic.php?id=417</a> . It is a great guide on how to use this exploit. So, on to how I completed the hub plot. Now i tried this 6 different
+			... <a href="/blogs/caffeeine/blog-77.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/caffeeine/"><b>caffeeine</b></a></b> on Wednesday 27th March, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/caffeeine/blog-77.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 13 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/caffeeine/blog-77.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Way of the Gun - An Interlude</h2>
+
+
+		<div class="pad">
+			<a href="http://roguey.co.uk/blogs/kirlack/blog-74.html" target="_blank">Chapter 3</a><br><br><b><span style="font-size: 4&#48;px;">Interlude</span></b><br><br><b>Argon News Network bulletin: Aladna Hill</b><br><br>[i]Local police and federal authorities are still looking for leads in a recent triple murder case. The victims, two Paranid and a Boron, were slaughtered in their hotel room on the trading station in Aladna Hill just three days ago. They have now been named by their respective governments. Tuli Sa, professor of micro-biology and former head of genetics research at the Royal research facility in Great Trench was shot twice and is believed to have been the first victim. The two Paranid have been named as Taimancketlat, reknowned astrophysicist and one of the few members of the Empire
+			... <a href="/blogs/kirlack/blog-75.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/kirlack/"><b>Kirlack</b></a></b> on Wednesday 20th March, 2013 &nbsp; &middot; &nbsp;
+			<a href="/blogs/kirlack/blog-75.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/kirlack/blog-75.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=5">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<b class="page_box_on">6</b>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=7">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00533 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

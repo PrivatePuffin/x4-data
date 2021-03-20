@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Terran Plot (Page 1 of 3) - Roguey's X3TC site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Terran, Plot, Walkthrough, Spike, guide, gaming, roguey">
+		<META NAME="Description" CONTENT="Terran Plot Walkthrough written by Spike.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3tc/help/spike/terran1.php">
+		<meta property="og:description" content="Terran Plot Walkthrough written by Spike.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Terran Plot (Page 1 of 3)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3tc/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3tc/"><img src="/x3tc/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #F34D4D;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #F34D4D;">
+				<li class="icon" style="background-color: #F34D4D">&nbsp;</li><li><a href="/x3tc/">News</a></li><li><a href="/x3tc/pictures/">Pictures</a></li><li><a href="/x3tc/videos/">Videos</a></li><li><a href="/x3tc/help/">Help / Guides</a></li><li><a href="/x3tc/ships/">Ships</a></li><li><a href="/x3tc/universe/">Maps</a></li><li><a href="/x3tc/missiles/">Missiles</a></li><li><a href="/x3tc/lasers/">Lasers</a></li><li><a href="/x3tc/shields/">Shields</a></li><li><a href="/x3tc/stations/">Stations</a></li><li><a href="/x3tc/wares/">Wares</a></li><li><a href="/x3tc/steam/">STEAM achievements</a></li><li><a href="/forum/viewforum.php?id=2">Forum</a></li><li><a href="/x3tc/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Terran Plot <span class="smalltext">(Page 1 of 3)</span></h1>
+	Written by <b>Spike</b>,<br><br>
+
+	<center><img src="images/terran-header.jpg" alt="Terran Plot Walkthrough, written by Spike"></center>
+	<br><br>
+
+	<center><b>This guide contains spoilers!</b></center>
+	<br><br>
+
+	As one of the original plotlines, only very early versions of the game have appreciable bugs. However, if you have mods, 
+	it is possible that they may introduce problems with the plot. As this is a Vanilla forum and a repository for information and 
+	issues regarding the unmodded game, if you have a problem with a modded game you are requested to post in the Scripts and Modding forum.
+	<br><br>
+
+	The Terran Plot begins immediately if you begin as the Terran Defender.<br> 
+	Otherwise, you have to complete the bridging mission to access it; <br>
+	- <a href="terran-bridge.php" target="_blank">Bridging mission</a>,
+	<br><br>
+
+
+	<h2>The Sol Incident</h2><br>
+
+	You begin by getting a message from Lt Samuel Plinter, a USC Commander in Uranus sector with your patrol assignment. 
+	Fly there and talk to him to begin the plot. You don't have to go immediately, you can do some trading first if you want.
+	<br><br>
+
+	The patrol mission you are given begins quite simply. Just set your autopilot to follow Plinter's ship. 
+	It won't take long for the first part of the plot to get underway.
+	<br><br>
+
+	Your squad mates will pick up targets on their sensors moving in from the outer Solar System. Plinter thinks they're meteoroids until a 
+	distress signal comes in from ships in Neptune under attack by AGI - Xenon - forces. Plinter will head over there, keep following him.
+	<br><br>
+
+	When you arrive in-sector a cutscene shows Terran and Xenon forces battling. Head over and join them. Terran forces will make short work of them, 
+	and if you're in the Terran Defender starting ship, you won't have even the basic combat amenities such as auto-aim, 
+	making killing enemies quite a challenge. Just do your best.
+	<br><br>
+
+	Xenon forces will continue to jump in in the vicinity of a jump beacon. After a couple of waves, you are ordered to scan the beacon; to do so, 
+	simply fly in close. A scan notification appears at the bottom of the screen when you're close enough; stay in range (about 300m). 
+	Once scanned, the beacon turns red; blow it to pieces.
+	<br><br>
+
+	Word now comes in of a bigger attack wave that has broken into a Mars research lab and is now in the Oort Cloud; 
+	you have to head over there and patrol the gate for stragglers. Off you go; it's to the West. Some good news; 
+	Plinter has finally figured out that you're not fighting meteoroids. Our esteemed commander isn't totally incompetent after all.
+	<br><br>
+
+	Docking and saving is a good idea at this point; if this isn't your first plot and you've got some Salvage Insurance, then there's no need to dock to save. 
+	Either way, you should save regularly.
+	<br><br>
+
+	When you arrive in Oort Cloud, a cutscene shows a message drone making a run for it. Your mission is to follow it; use the autopilot. 
+	It may jump out before you catch it; if so, return to the gate and wait for the next one.
+	<br><br>
+
+	You'll follow the drones to an Argon Nova sitting next to a jump beacon. When you get in range; the Nova will blow the beacon up and jump out. 
+	Mission complete. Save, and return to Lt Plinter's ship for the next mission.
+	<br><br>
+
+	We're heading to Pluto to clean up any remaining Xenon ships. You'll be paid a bounty for each one you destroy. 
+	Once they're all dead, you do the same thing in Neptune. Once all of those are dead (they may be finished off by security 
+	forces before you get to them) you head to Uranus. Same again; wipe out all AGI forces. Keep saving.
+	<br><br>
+
+	Saturn next; dock at the Saturn Research Station to upload your sensor logs for the Terran scientists to take a peek at.
+	<br><br>
+
+
+	<h2>Terran Recon</h2><br>
+
+	You can break from the plot to do some trading here if you like.
+	<br><br>
+
+	Next mission is to meet with Major-General Ichiyama in the Asteroid Belt. Head on over, dock at the base, and he'll start chatting to you. 
+	Being a man in the elite AGI Task Force, or ATF, working for him is a big promotion.
+	<br><br>
+
+	Apparently, the Argon ship is causing quite some concerns. You're now being allowed into Mars sector, and you've been given a new 
+	ship to play with, an M5 Rapier. You have to dock at the Shipyard to get it; do with it as you please. The M4 Sabre is a better combat 
+	ship but the M5 Rapier is much faster and makes a reasonable scout craft. And for the next mission, you want a decent combat ship.
+	<br><br>
+
+	Once you've picked up your scout, head back to Ishiyama's patrol base in Asteroid Belt. He passes the buck to Mark Jackson in Heretic's End, 
+	one sector south of your current location. Go there.
+	<br><br>
+
+	If this is your first time playing, then say hello to your first jumpgate. The Trans-Orbital Accelerators you've been playing with to 
+	date are nothing compared to this baby, and outside Terran space they're the one single way of getting around. They're better than TOA's 
+	because a jumpdrive can lock onto them, taking you anywhere in the X-Universe except, of course, Terran space, as it has no gates.
+	<br><br>
+
+	Jackson's briefing is a little long; they know that the Xenon attacks are being manipulated by an entity in the Commonwealth, 
+	possibly the Argon, and they need you to find the base of operations. He'll contact you when a suitable Xenon raiding party to follow is found. 
+	It won't take long; mine was in Nyana's Hideout and I think this is always the case, but it might be different for you. Just follow the signs.
+	<br><br>
+
+	You'll come across some Argon stations in the south end of Heretic's End. They're a little smaller than Terran equivalents. Docking at them is much more pleasant.
+	<br><br>
+
+	At your destination, a cutscene of a Xenon strike force with our Argon Nova will play. We have to follow the Nova. Be careful, 
+	as the Xenon ships may be bigger than anything you have encountered before; skirt round them. Their weapons will shred anything smaller 
+	than a heavy fighter in seconds. Follow the Nova at a little distance; if you get too close an anxiety meter will appear and if 
+	it counts to 100% you fail the mission, but the same happens if you get too far away. The match speed key is your friend; 
+	look it up in the controls menu if you don't know what it is.
+	<br><br>
+
+	The Nova will lead you through Teladi space to the Unknown Sector east of PTNI Headquarters. Save when you enter the Unknown Sector. 
+	There, it will dock at a Pirate Base, which you have to scan. Problem is, there's a welcoming committee for you; several Xenon and Pirate ships. 
+	You can either try and hide behind the base whilst the scan completes, which is darned near impossible, or you can fight and destroy your 
+	opponents before scanning in clear air. You'll probably need that save whichever option you pick, unless you've got a decent ship by now.
+	<br><br>
+
+	Once you've worked your way past that bit, save again. You don't want to go crashing into the next station you dock at to find you have 
+	to do that really hard bit all over again. You'll probably want to go spacewalking to repair your ship with your suit's Repair Laser as well.
+	<br><br>
+
+	Then fly back to Jackson in Heretic's End. If you like, you can break from the plot again before doing this.
+	<br><br>
+
+	Jackson's next mission is another patrol. This time, though, you're the leader. You are given two Sabre escorts and three drone Rapiers. 
+	Best use for the Rapiers are as scrap for cash, but take off their expensive weapons first and put them on something a bit more worthy. 
+	When you're ready, fly to your Sabres. You're better off in something faster if you're early in the game; an M4 is ideal. 
+	If you are later you might need something bigger.
+	<br><br>
+
+	Your patrol route takes you through Circle of Labour, Omicron Lyrae and Treasure Chest. In the first two you meet Xenon; in the last one, 
+	you come across your first Terraformer ships. Just destroy red blips until you're told to move to the next Sector, and remember to save between sectors. 
+	At the end, you are told to return to Jackson to fill him in on the latest bad news. You don't have to go immediately though, 
+	if you want to do some more trading etc then feel free.
+	<br><br>
+
+	When you dock, Jackson pawns you off back to Plinter, who is escorting a convoy to Venus. Your access rights are now 
+	upgraded to include Venus in your list of allowed visits.
+	<br><br>
+
+	Rendezvous with Plinter and comm him to start the mission. There's USC and ATF patrols everywhere so we won't run into any trouble, 
+	he says. I for one don't believe him. Weapons at the ready.
+	<br><br>
+
+	When you reach Mars, a report comes back that a lone scout has breached the lines. It gets to Mars and drops a Jump Beacon. 
+	An entire Xenon fleet jumps in, and guess whose job it is to blow up the jump beacon? That's right. You've got two choices, 
+	either engage elements of the Xenon fleet (the whole lot will be too much for you unless you're flying a Destroyer) and fight your way through, 
+	gaining a bit of rep and rank in the process, or skirt round them and perform a surgical strike before showing the enemy the true meaning of cowardly. 
+	Either way you have to destroy the beacon, because otherwise the Xenon will lay waste to mars sector. 
+	Then get to Venus, leaving the locals to mop up the mess they've created.
+
+	When you get to Venus, talk to the girl with the book symbol. She gives you a rest and an Advanced Discoverer. That's why they call them the 'fairer sex'!
+	<br><br>
+
+	Wait for orders. Do as you please in the meantime. When you come back, it'll be to Jackson in Heretic's End. 
+	<br><br>
+
+	<center>	
+		<font class="smalltext"><b>Next: Rendezvous</b></font><br>
+		<a href="terran2.php">Next Page >></a>
+	</center>
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00061 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

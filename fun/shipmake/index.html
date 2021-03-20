@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Make your own ship - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="make your own ship - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/fun/shipmake/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Make your own ship">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+	<h1>Make your own ship</h1>
+
+	After making your ship, did you want an name for it? well try my <a href="../shipnamer/" target="_new">ship namer</a>.
+	<br><br>
+
+
+	<table class="board_table">
+	<tr>
+		<th id="share_title"></th>
+	</tr>
+	<tr>
+		<td align="center" style="background: #E6E6E6;"><div id="share_link">On this page you can make your own ship designs.</div></td>
+	</tr>
+	</table>
+
+	<div style="position:relative; background-image: url('images/grid.gif'); background-position:center; height: 675px;">
+		<div style="width: 362px; height: 455px; float: left; position:absolute; top: 110px; left: 288px; background-image: url('body/1.gif');" id="body"></div>
+		<div style="width: 320px; height: 394px; float: right; position:absolute; top: 132px; right: 294px; background-image: url('nose/0.gif');" id="nose"></div>
+		<div style="width: 110px; height: 288px; float: left; position:absolute; top: 194px; left: 278px; background-image: url('back/0.gif');" id="back"></div>
+		<div style="width: 90px; height: 200px; float: right; position:absolute; top: 236px; right: 692px; background-image: url('detail/0.gif');" id="cockpit"></div>
+
+		<div style="float: right; text-align: right;"><b>Top view, Front ></b><br>roguey.co.uk</div>
+	</div>
+
+	<table class="board_table">
+	<tr>
+		<th>Body</th>
+		<th>Nose</th>
+		<th>Back</th>
+		<th>Cockpit</th>
+	</tr>
+
+	<tr>
+		<td>
+			<select id="sel_body" onChange="change_part('body');" size="5" style="width: 140px;">
+				<option value="1">Body 1</option>
+				<option value="2">Body 2</option>
+				<option value="3">Body 3</option>
+				<option value="4">Body 4</option>
+				<option value="5">Body 5</option>
+				<option value="6">Body 6</option>
+				<option value="7">Body 7</option>
+				<option value="8">Body 8</option>
+				<option value="9">Body 9</option>
+				<option value="10">Body 10</option>
+				<option value="11">Body 11</option>
+				<option value="12">Body 12</option>
+				<option value="13">Body 13</option>
+				<option value="14">Body 14</option>
+				<option value="15">Body 15</option>
+				<option value="16">Body 16</option>
+				<option value="17">Body 17</option>
+				<option value="18">Body 18</option>
+				<option value="19">Body 19</option>
+				<option value="20">Body 20</option>
+				<option value="21">Body 21</option>
+				<option value="22">Body 22</option>
+				<option value="23">Body 23</option>
+				<option value="24">Body 24</option>
+				<option value="25">Body 25</option>
+				<option value="26">Body 26</option>
+				<option value="27">Body 27</option>
+				<option value="28">Body 28</option>
+				<option value="29">Body 29</option>
+				<option value="30">Body 30</option>
+				<option value="31">Body 31</option>
+				<option value="32">Body 32</option>
+				<option value="33">Body 33</option>
+				<option value="34">Body 34</option>
+				<option value="35">Body 35</option>
+				<option value="36">Body 36</option>
+				<option value="37">Body 37</option>
+			</select>
+		</td>
+
+		<td>
+			<select id="sel_nose" onChange="change_part('nose');" size="5" style="width: 140px;">
+				<option value="0">No Nose</option>
+				<option value="1">Nose 1</option>
+				<option value="2">Nose 2</option>
+				<option value="3">Nose 3</option>
+				<option value="4">Nose 4</option>
+				<option value="5">Nose 5</option>
+				<option value="6">Nose 6</option>
+				<option value="7">Nose 7</option>
+				<option value="8">Nose 8</option>
+				<option value="9">Nose 9</option>
+				<option value="10">Nose 10</option>
+				<option value="11">Nose 11</option>
+				<option value="12">Nose 12</option>
+				<option value="13">Nose 13</option>
+				<option value="14">Nose 14</option>
+				<option value="15">Nose 15</option>
+				<option value="16">Nose 16</option>
+				<option value="17">Nose 17</option>
+				<option value="18">Nose 18</option>
+				<option value="19">Nose 19</option>
+				<option value="20">Nose 20</option>
+				<option value="21">Nose 21</option>
+				<option value="22">Nose 22</option>
+				<option value="23">Nose 23</option>
+				<option value="24">Nose 24</option>
+				<option value="25">Nose 25</option>
+				<option value="26">Nose 26</option>
+				<option value="27">Nose 27</option>
+				<option value="28">Nose 28</option>
+				<option value="29">Nose 29</option>
+				<option value="30">Nose 30</option>
+				<option value="31">Nose 31</option>
+				<option value="32">Nose 32</option>
+				<option value="33">Nose 33</option>
+				<option value="34">Nose 34</option>
+				<option value="35">Nose 35</option>
+				<option value="36">Nose 36</option>
+				<option value="37">Nose 37</option>
+				<option value="38">Nose 38</option>
+				<option value="39">Nose 39</option>
+				<option value="40">Nose 40</option>
+			</select>
+		</td>
+
+		<td>
+			<select id="sel_back" onChange="change_part('back');" size="5" style="width: 140px;">
+				<option value="0">No back</option>
+				<option value="1">Back 1</option>
+				<option value="2">Back 2</option>
+				<option value="3">Back 3</option>
+				<option value="4">Back 4</option>
+				<option value="5">Back 5</option>
+				<option value="6">Back 6</option>
+				<option value="7">Back 7</option>
+				<option value="8">Back 8</option>
+				<option value="9">Back 9</option>
+				<option value="10">Back 10</option>
+				<option value="11">Back 11</option>
+				<option value="12">Back 12</option>
+				<option value="13">Back 13</option>
+				<option value="14">Back 14</option>
+				<option value="15">Back 15</option>
+				<option value="16">Back 16</option>
+				<option value="17">Back 17</option>
+				<option value="18">Back 18</option>
+				<option value="19">Back 19</option>
+				<option value="20">Back 20</option>
+				<option value="21">Back 21</option>
+			</select>
+		</td>
+
+		<td>
+			<select id="sel_cockpit" onChange="change_part('cockpit');" size="5" style="width: 140px;">
+				<option value="0">None</option>
+				<option value="1">1. Left</option>
+				<option value="2">1. Middle</option>
+				<option value="3">1. Right</option>
+				<option value="4">1. Twin</option>
+				<option value="5">2. Left</option>
+				<option value="6">2. Middle</option>
+				<option value="7">2. Right</option>
+				<option value="8">3. Left</option>
+				<option value="9">3. Middle</option>
+				<option value="10">3. Right</option>
+				<option value="11">4. Left</option>
+				<option value="12">4. Middle</option>
+				<option value="13">4. Right</option>
+				<option value="14">5. Left</option>
+				<option value="15">5. Middle</option>
+				<option value="16">5. Right</option>
+			</select>
+		</td>
+	</tr>
+	</table>
+
+	<script language="JavaScript">
+	<!--
+
+	var part1_id = 0;
+	var part2_id = 0;
+	var part3_id = 0;
+	var part4_id = 0;
+
+	function Chr(AsciiNum)
+	{
+		return String.fromCharCode(AsciiNum);
+	}
+
+	function encode(id)
+	{
+		return Chr(65 + (id / 26)) + Chr(65 + (id % 26));
+	}
+
+	function decode(id)
+	{
+		var highbit = id.charCodeAt(0)-65;
+		var lowbit = id.charCodeAt(1)-65;
+
+		return ((highbit* 26) + lowbit);
+	}
+
+	function change_part(which_part)
+	{
+		//change part
+		var select_box = document.getElementById('sel_'+which_part);
+		var option_value = select_box.options[select_box.selectedIndex].value;
+		var part_image = which_part+'/'+option_value+'.gif';
+
+		document.getElementById(which_part).style.backgroundImage = 'url('+part_image+')';
+
+		if (which_part == 'body')
+			part1_id = option_value;
+
+		else if (which_part == 'nose')
+			part2_id = option_value;
+
+		else if (which_part == 'back')
+			part3_id = option_value;
+
+		else if (which_part == 'cockpit')
+			part4_id = option_value;
+
+		//new share url
+		var share_id = encode(part1_id) + encode(part2_id) + encode(part3_id) + encode(part4_id);
+		document.getElementById('share_title').innerHTML = 'Share link';		
+		document.getElementById('share_link').innerHTML = 
+
+			'<input value="http://roguey.co.uk/fun/shipmake/4'+share_id+'" readonly type="text" size="58" style="background: #EBEBEB;"><br>';
+
+
+	}
+
+	function setSelectedIndex(s, v)
+	{
+		for ( var i = 0; i < s.options.length; i++ )
+		{
+			if ( s.options[i].value == v )
+			{
+				s.options[i].selected = true;
+				return;
+			}
+		}
+	}
+
+
+	function share_load()
+	{
+		var load_ids = '';
+
+		var part1 = decode(load_ids.substring(0,2));
+		var part2 = decode(load_ids.substring(2,4));
+		var part3 = decode(load_ids.substring(4,6));
+		var part4 = decode(load_ids.substring(6,8));
+
+		if (part1 > 0)
+		{
+			setSelectedIndex(sel_body, part1);
+			window.setTimeout("document.getElementById('sel_body').onchange();", 250);
+		}
+
+		if (part2 > 0)
+		{
+			setSelectedIndex(sel_nose, part2);
+			window.setTimeout("document.getElementById('sel_nose').onchange();", 750);
+		}
+
+		if (part3 > 0)
+		{
+			setSelectedIndex(sel_back, part3);
+			window.setTimeout("document.getElementById('sel_back').onchange();", 1250);
+		}
+
+		if (part4 > 0)
+		{
+			setSelectedIndex(sel_cockpit, part4);
+			window.setTimeout("document.getElementById('sel_cockpit').onchange();", 1750);
+		}
+
+		
+	}
+
+	
+
+	</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00083 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

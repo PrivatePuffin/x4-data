@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Universe map - Roguey's X3 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Universe map, sector maps, gaming, roguey">
+		<META NAME="Description" CONTENT="A Universe map covering all of X3 with detailed sector maps.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3/universe/">
+		<meta property="og:description" content="A Universe map covering all of X3 with detailed sector maps.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Universe map">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3/"><img src="/x3/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #FF800F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #FF800F;">
+				<li class="icon" style="background-color: #FF800F">&nbsp;</li><li><a href="/x3/">News</a></li><li><a href="/x3/pictures/">Pictures</a></li><li><a href="/x3/videos/">Videos</a></li><li><a href="/x3/help/">Help / Guides</a></li><li><a href="/x3/ships/">Ships</a></li><li><a href="/x3/universe/">Maps</a></li><li><a href="/x3/stations/">Stations</a></li><li><a href="/x3/lasers/">Lasers</a></li><li><a href="/x3/missiles/">Missiles</a></li><li><a href="/x3/shields/">Shields</a></li><li><a href="/x3/wares/">Wares</a></li><li><a href="/x3/mod/">X3 Mod</a></li><li><a href="/x3/edit/">Editing</a></li><li><a href="/forum/viewforum.php?id=1">Forum</a></li><li><a href="/x3/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+				<h1>Universe map</h1>
+				
+				<div style="overflow-x: auto; overflow-y: auto; width: 99%; height: 800px; position: relative; background-image: url('/images/bg/grid1.gif'); background-attachment: local;" id="map_container">
+					<div style="margin: 8px; position: absolute;" id="map_div"></div>
+				</div>
+			
+				<script>
+					var sector_info = [];
+					sector_info[0] = {x: 0, y: 0, r: 2, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Kingdom End", gn: 0, gs: 1, gw: 0, ge: 1};
+					sector_info[1] = {x: 1, y: 0, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Rolk's Drift", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[2] = {x: 2, y: 0, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Queen's Space", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[3] = {x: 3, y: 0, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Menelaus' Frontier", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[4] = {x: 4, y: 0, r: 5, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Ceo's Buckzoid", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[5] = {x: 5, y: 0, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Teladi Gain", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[6] = {x: 6, y: 0, r: 3, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Family Whi", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[7] = {x: 13, y: 0, r: 5, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "The Vault", gn: 0, gs: 1, gw: 0, ge: 0};
+					sector_info[8] = {x: 16, y: 0, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Sector", gn: 0, gs: 0, gw: 0, ge: 1};
+					sector_info[9] = {x: 17, y: 0, r: 6, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Xenon Sector 534", gn: 0, gs: 1, gw: 1, ge: 0};
+					sector_info[10] = {x: 19, y: 0, r: 6, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Xenon Sector 596", gn: 0, gs: 1, gw: 0, ge: 0};
+					sector_info[11] = {x: 0, y: 1, r: 1, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Three Worlds", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[12] = {x: 1, y: 1, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Power Circle", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[13] = {x: 2, y: 1, r: 1, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Antigone Memorial", gn: 0, gs: 1, gw: 1, ge: 0};
+					sector_info[14] = {x: 3, y: 1, r: 2, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Rolk's Fate", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[15] = {x: 4, y: 1, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Profit Share", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[16] = {x: 5, y: 1, r: 5, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Seizewell", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[17] = {x: 6, y: 1, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Family Zein", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[18] = {x: 13, y: 1, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Shareholder's Fortune", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[19] = {x: 14, y: 1, r: 5, mines: 0, pbase: 1, eq: 0, syard: 0, sector_name: "Mines Of Fortune", gn: 0, gs: 1, gw: 1, ge: 0};
+					sector_info[20] = {x: 17, y: 1, r: 1, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Getsu Fune", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[21] = {x: 18, y: 1, r: 2, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Menelaus' Paradise", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[22] = {x: 19, y: 1, r: 6, mines: 0, pbase: 1, eq: 0, syard: 0, sector_name: "Xenon Sector 597", gn: 1, gs: 0, gw: 1, ge: 0};
+					sector_info[23] = {x: 0, y: 2, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Cloudbase North West", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[24] = {x: 1, y: 2, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Herron's Nebula", gn: 1, gs: 1, gw: 1, ge: 1};
+					sector_info[25] = {x: 2, y: 2, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "The Hole", gn: 1, gs: 1, gw: 1, ge: 1};
+					sector_info[26] = {x: 3, y: 2, r: 2, mines: 0, pbase: 1, eq: 0, syard: 0, sector_name: "Atreus' Clouds", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[27] = {x: 4, y: 2, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Spaceweed Drift", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[28] = {x: 5, y: 2, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Greater Profit", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[29] = {x: 6, y: 2, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Thuruk's Pride", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[30] = {x: 7, y: 2, r: 3, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Family Pride", gn: 0, gs: 1, gw: 1, ge: 0};
+					sector_info[31] = {x: 9, y: 2, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Patriarch's Retreat", gn: 0, gs: 1, gw: 0, ge: 1};
+					sector_info[32] = {x: 10, y: 2, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Sector", gn: 0, gs: 0, gw: 1, ge: 0};
+					sector_info[33] = {x: 14, y: 2, r: 5, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Home Of Opportunity", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[34] = {x: 18, y: 2, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Bluish Snout", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[35] = {x: 0, y: 3, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Ringo Moon", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[36] = {x: 1, y: 3, r: 1, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Argon Prime", gn: 1, gs: 1, gw: 1, ge: 1};
+					sector_info[37] = {x: 2, y: 3, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "The Wall", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[38] = {x: 3, y: 3, r: 8, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Farnham's Legend", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[39] = {x: 4, y: 3, r: 8, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Bala Gi's Joy", gn: 0, gs: 1, gw: 1, ge: 0};
+					sector_info[40] = {x: 5, y: 3, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Blue Profit", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[41] = {x: 6, y: 3, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Rhonkar's Fire", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[42] = {x: 7, y: 3, r: 3, mines: 0, pbase: 1, eq: 0, syard: 0, sector_name: "Rhonkar's Clouds", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[43] = {x: 8, y: 3, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Tharka's Sun", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[44] = {x: 9, y: 3, r: 3, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Cho's Defeat", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[45] = {x: 14, y: 3, r: 3, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Family Tkr", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[46] = {x: 15, y: 3, r: 3, mines: 1, pbase: 0, eq: 0, syard: 0, sector_name: "Tkr's Deprivation", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[47] = {x: 16, y: 3, r: 3, mines: 0, pbase: 1, eq: 0, syard: 0, sector_name: "Ghinn's Escape", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[48] = {x: 17, y: 3, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Hila's Joy", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[49] = {x: 18, y: 3, r: 2, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Ocean of Fantasy", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[50] = {x: 0, y: 4, r: 1, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Red Light", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[51] = {x: 1, y: 4, r: 1, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Home of Light", gn: 1, gs: 1, gw: 1, ge: 1};
+					sector_info[52] = {x: 2, y: 4, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "President's End", gn: 1, gs: 1, gw: 1, ge: 1};
+					sector_info[53] = {x: 3, y: 4, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Elena's Fortune", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[54] = {x: 4, y: 4, r: 8, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Olmancketslat's Treaty", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[55] = {x: 5, y: 4, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Ceo's Sprite", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[56] = {x: 6, y: 4, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Family Rhonkar", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[57] = {x: 9, y: 4, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Patriarch's Keep", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[58] = {x: 10, y: 4, r: 5, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Two Grand", gn: 0, gs: 1, gw: 1, ge: 0};
+					sector_info[59] = {x: 13, y: 4, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Heretics End", gn: 0, gs: 1, gw: 0, ge: 0};
+					sector_info[60] = {x: 16, y: 4, r: 3, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Family Njy", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[61] = {x: 17, y: 4, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Njy's Deception", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[62] = {x: 18, y: 4, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Family Ryk", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[63] = {x: 0, y: 5, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Cloudbase South West", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[64] = {x: 1, y: 5, r: 1, mines: 0, pbase: 1, eq: 0, syard: 0, sector_name: "Ore Belt", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[65] = {x: 2, y: 5, r: 1, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Cloudbase South East", gn: 1, gs: 0, gw: 1, ge: 0};
+					sector_info[66] = {x: 3, y: 5, r: 8, mines: 1, pbase: 0, eq: 0, syard: 0, sector_name: "Split Fire", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[67] = {x: 4, y: 5, r: 8, mines: 0, pbase: 1, eq: 0, syard: 0, sector_name: "Brennan's Triumph", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[68] = {x: 5, y: 5, r: 5, mines: 0, pbase: 1, eq: 1, syard: 0, sector_name: "Company Pride", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[69] = {x: 6, y: 5, r: 3, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Thuruk's Beard", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[70] = {x: 10, y: 5, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Profit Center Alpha", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[71] = {x: 11, y: 5, r: 5, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "PTNI Headquarters", gn: 0, gs: 1, gw: 1, ge: 0};
+					sector_info[72] = {x: 13, y: 5, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Circle Of Labour", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[73] = {x: 14, y: 5, r: 9, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Elysium of Light", gn: 0, gs: 1, gw: 0, ge: 0};
+					sector_info[74] = {x: 15, y: 5, r: 6, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Xenon Sector 472", gn: 0, gs: 1, gw: 0, ge: 1};
+					sector_info[75] = {x: 16, y: 5, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Thyn's Abyss", gn: 1, gs: 0, gw: 1, ge: 0};
+					sector_info[76] = {x: 18, y: 5, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Family Z'rt", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[77] = {x: 19, y: 5, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Z'rt's Dominion", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[78] = {x: 20, y: 5, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Sector", gn: 0, gs: 0, gw: 1, ge: 0};
+					sector_info[79] = {x: 0, y: 6, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Emperor Mines", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[80] = {x: 1, y: 6, r: 4, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Paranid Prime", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[81] = {x: 2, y: 6, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Priest Rings", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[82] = {x: 3, y: 6, r: 4, mines: 0, pbase: 1, eq: 1, syard: 0, sector_name: "Priest's Pity", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[83] = {x: 4, y: 6, r: 8, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Danna's Chance", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[84] = {x: 5, y: 6, r: 8, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Nopileos' Memorial", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[85] = {x: 6, y: 6, r: 8, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Hatikvah's Faith", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[86] = {x: 7, y: 6, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Aladna Hill", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[87] = {x: 8, y: 6, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Akeela's Beacon", gn: 0, gs: 0, gw: 1, ge: 0};
+					sector_info[88] = {x: 11, y: 6, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Scale Plate Green", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[89] = {x: 12, y: 6, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Nyana's Hideout", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[90] = {x: 13, y: 6, r: 1, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Omicron Lyrae", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[91] = {x: 14, y: 6, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Treasure Chest", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[92] = {x: 15, y: 6, r: 1, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Black Hole Sun", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[93] = {x: 19, y: 6, r: 6, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Xenon Sector 598", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[94] = {x: 0, y: 7, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Savage Spur", gn: 0, gs: 1, gw: 0, ge: 1};
+					sector_info[95] = {x: 1, y: 7, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Empire's Edge", gn: 1, gs: 1, gw: 1, ge: 1};
+					sector_info[96] = {x: 2, y: 7, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Duke's Domain", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[97] = {x: 3, y: 7, r: 4, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Emperor's Ridge", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[98] = {x: 4, y: 7, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Freedom's Reach", gn: 1, gs: 0, gw: 0, ge: 0};
+					sector_info[99] = {x: 5, y: 7, r: 6, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Xenon Sector 101", gn: 1, gs: 0, gw: 0, ge: 0};
+					sector_info[100] = {x: 7, y: 7, r: 1, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Light of Heart", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[101] = {x: 10, y: 7, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Eighteen Billion", gn: 0, gs: 1, gw: 0, ge: 1};
+					sector_info[102] = {x: 11, y: 7, r: 6, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Xenon Sector 347", gn: 1, gs: 0, gw: 1, ge: 0};
+					sector_info[103] = {x: 15, y: 7, r: 1, mines: 0, pbase: 1, eq: 0, syard: 0, sector_name: "Nathan's Voyage", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[104] = {x: 16, y: 7, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Wastelands", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[105] = {x: 17, y: 7, r: 1, mines: 1, pbase: 0, eq: 0, syard: 0, sector_name: "Midnight Star", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[106] = {x: 18, y: 7, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Belt of Aguilar", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[107] = {x: 19, y: 7, r: 5, mines: 0, pbase: 0, eq: 0, syard: 1, sector_name: "Grand Exchange", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[108] = {x: 0, y: 8, r: 19, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Ocracoke's Storm", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[109] = {x: 1, y: 8, r: 4, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Preacher's Void", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[110] = {x: 3, y: 8, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Pontifex' Realm", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[111] = {x: 5, y: 8, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Light Water", gn: 0, gs: 1, gw: 0, ge: 0};
+					sector_info[112] = {x: 7, y: 8, r: 1, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Montalaar", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[113] = {x: 8, y: 8, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Sector", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[114] = {x: 9, y: 8, r: 5, mines: 1, pbase: 1, eq: 0, syard: 0, sector_name: "New Income", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[115] = {x: 10, y: 8, r: 5, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Ianamus Zura", gn: 1, gs: 0, gw: 1, ge: 0};
+					sector_info[116] = {x: 16, y: 8, r: 1, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Interworlds", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[117] = {x: 19, y: 8, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Merchant Haven", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[118] = {x: 0, y: 9, r: 19, mines: 1, pbase: 0, eq: 0, syard: 0, sector_name: "Senator's Badlands", gn: 1, gs: 0, gw: 0, ge: 0};
+					sector_info[119] = {x: 1, y: 9, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Duke's Vision", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[120] = {x: 2, y: 9, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Emperor's Wisdom", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[121] = {x: 3, y: 9, r: 4, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Trinity Sanctum", gn: 1, gs: 1, gw: 1, ge: 1};
+					sector_info[122] = {x: 4, y: 9, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Preacher's Refuge", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[123] = {x: 5, y: 9, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Shore of Infinity", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[124] = {x: 6, y: 9, r: 2, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Lucky Planets", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[125] = {x: 7, y: 9, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Rolk's Legacy", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[126] = {x: 8, y: 9, r: 2, mines: 0, pbase: 0, eq: 1, syard: 0, sector_name: "Great Trench", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[127] = {x: 9, y: 9, r: 5, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Ceo's Doubt", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[128] = {x: 18, y: 9, r: 14, mines: 1, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Sector", gn: 0, gs: 1, gw: 0, ge: 1};
+					sector_info[129] = {x: 19, y: 9, r: 8, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Maelstrom", gn: 1, gs: 0, gw: 1, ge: 0};
+					sector_info[130] = {x: 3, y: 10, r: 5, mines: 0, pbase: 1, eq: 0, syard: 0, sector_name: "Bad Debt", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[131] = {x: 9, y: 10, r: 8, mines: 1, pbase: 0, eq: 0, syard: 0, sector_name: "LooManckStrat's Legacy", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[132] = {x: 18, y: 10, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Sector", gn: 1, gs: 0, gw: 0, ge: 0};
+					sector_info[133] = {x: 1, y: 11, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Rhy's Crusade", gn: 0, gs: 0, gw: 0, ge: 1};
+					sector_info[134] = {x: 2, y: 11, r: 3, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Rhy's Desire", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[135] = {x: 3, y: 11, r: 5, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Ministry Of Finance", gn: 1, gs: 0, gw: 1, ge: 0};
+					sector_info[136] = {x: 9, y: 11, r: 8, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Mi Ton's Refuge", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[137] = {x: 14, y: 11, r: 7, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Enemy Sector", gn: 0, gs: 0, gw: 0, ge: 0};
+					sector_info[138] = {x: 16, y: 11, r: 7, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Enemy Sector", gn: 0, gs: 0, gw: 0, ge: 0};
+					sector_info[139] = {x: 2, y: 12, r: 3, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Family Rhy", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[140] = {x: 9, y: 12, r: 8, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Moo-Kye's Revenge", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[141] = {x: 15, y: 12, r: 7, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Enemy Sector", gn: 0, gs: 0, gw: 0, ge: 0};
+					sector_info[142] = {x: 0, y: 13, r: 2, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Depths Of Silence", gn: 0, gs: 0, gw: 0, ge: 1};
+					sector_info[143] = {x: 1, y: 13, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Dark Waters", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[144] = {x: 2, y: 13, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Reservoir Of Tranquillity", gn: 1, gs: 1, gw: 1, ge: 1};
+					sector_info[145] = {x: 3, y: 13, r: 2, mines: 0, pbase: 1, eq: 0, syard: 0, sector_name: "Barren Shores", gn: 0, gs: 0, gw: 1, ge: 1};
+					sector_info[146] = {x: 8, y: 13, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Priest Refuge", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[147] = {x: 9, y: 13, r: 4, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Cardinal's Domain", gn: 1, gs: 1, gw: 1, ge: 1};
+					sector_info[148] = {x: 10, y: 13, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Sacred Relic", gn: 0, gs: 1, gw: 1, ge: 1};
+					sector_info[149] = {x: 14, y: 13, r: 7, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Enemy Sector", gn: 0, gs: 0, gw: 0, ge: 0};
+					sector_info[150] = {x: 16, y: 13, r: 7, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Enemy Sector", gn: 0, gs: 0, gw: 0, ge: 0};
+					sector_info[151] = {x: 1, y: 14, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Shining Currents", gn: 1, gs: 0, gw: 0, ge: 1};
+					sector_info[152] = {x: 2, y: 14, r: 2, mines: 0, pbase: 0, eq: 1, syard: 1, sector_name: "Great Reef", gn: 1, gs: 1, gw: 1, ge: 0};
+					sector_info[153] = {x: 8, y: 14, r: 4, mines: 0, pbase: 1, eq: 1, syard: 0, sector_name: "Spring Of Belief", gn: 1, gs: 1, gw: 0, ge: 1};
+					sector_info[154] = {x: 9, y: 14, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Friar's Retreat", gn: 1, gs: 1, gw: 1, ge: 1};
+					sector_info[155] = {x: 10, y: 14, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Pontifex' Seclusion", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[156] = {x: 11, y: 14, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Sector", gn: 0, gs: 0, gw: 1, ge: 0};
+					sector_info[157] = {x: 2, y: 15, r: 2, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Mists of Elysium", gn: 1, gs: 1, gw: 0, ge: 0};
+					sector_info[158] = {x: 7, y: 15, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Sector", gn: 0, gs: 1, gw: 0, ge: 1};
+					sector_info[159] = {x: 8, y: 15, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unholy Descent", gn: 1, gs: 0, gw: 1, ge: 1};
+					sector_info[160] = {x: 9, y: 15, r: 4, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Consecrated Fire", gn: 1, gs: 0, gw: 1, ge: 0};
+					sector_info[161] = {x: 2, y: 16, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Sector", gn: 1, gs: 0, gw: 0, ge: 0};
+					sector_info[162] = {x: 7, y: 16, r: 14, mines: 0, pbase: 0, eq: 0, syard: 0, sector_name: "Unknown Sector", gn: 1, gs: 0, gw: 0, ge: 0};
+				</script>
+				<script src="./js/universe_map.js"></script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00131 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

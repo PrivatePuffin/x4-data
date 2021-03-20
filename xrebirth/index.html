@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Roguey's X Rebirth site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="news, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/xrebirth/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Roguey's X Rebirth site">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/xrebirth/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/xrebirth/"><img src="/xrebirth/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #6F9F6F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #6F9F6F;">
+				<li class="icon" style="background-color: #6F9F6F">&nbsp;</li><li><a href="/xrebirth/">News</a></li><li><a href="/xrebirth/pictures/">Pictures</a></li><li><a href="/xrebirth/videos/">Videos</a></li><li><a href="/xrebirth/help/">Help / Guides</a></li><li><a href="/xrebirth/ships/">Ships</a></li><li><a href="/xrebirth/universe/">Maps</a></li><li><a href="/xrebirth/statistics/">Statistics</a></li><li><a href="/xrebirth/stations/">Stations</a></li><li><a href="/xrebirth/wares/">Wares</a></li><li><a href="/xrebirth/teladi-outpost/">Teladi Outpost</a></li><li><a href="/xrebirth/home-of-light/">Home of Light</a></li><li><a href="/xrebirth/editing/">Editing</a></li><li><a href="/xrebirth/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=20">Forum</a></li><li><a href="/xrebirth/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<h1>News</h1>
+<br>
+	<h2>X4 to release on the 30th of November</h2>
+
+			<span class="smalltext">
+				Wednesday 3rd October, 2018 &middot; Posted by <a href="/users/profile.php?id=1" class="admin">Roguey</a> 
+					
+				&middot; 
+
+				<a href="/xrebirth/news/single.php?id=625#comments" class="smalllink colourlink">
+					<img src="/images/site/comment.gif" style="border: 0;" alt="Comment"> 16 comments</a>			
+
+			</span>
+
+
+			<div class="pad">
+				A few days ago Egosoft announced X4 should be released on the 30th of November. This time they have chosen to follow from X3 era instead of Rebirth - and hence the reason for calling it X4. Rebirth was a bit of a disappointment, as it tried to force the series into a new direction. Personally I didn&#39;t understand some of the design decisions, and still don&#39;t. I am glad they have moved back to X3.<br><br><div style="text-align: center;"><img src="/news/pics/user_1/large/news_222_b.jpg" alt="News picture 222" style="border: none;"></div><br><br>X4 does have a lot of changes, even although it based on the Rebirth engine. We can now fly nearly all of the ships, build custom complexes, command fleets, modify ships, etc. It looks like they are also planning expansion packs to the game (already) which should be released about a year later. A big FAQ section can be <a href="https://forum.egosoft.com/viewtopic.php?p=4675696" target="_blank">found here</a>, or the official gameplay youtube video can explain things quicker;<br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/N6s9sXjqCME" allowfullscreen></iframe></div><br><br>X4 can be pre-ordered either through the Egosoft store or directly on Steam. I personally would not advise pre-ordering any game – nothing to do with X4. Wait for the reviews, community comments, posts, videos, etc. - I really dislike pre-ordering games not knowing exactly what you are getting. Speaking of which - I did try and reach-out to Egosoft but seemed they weren&#39;t keen. Maybe I&#39;ve upset someone? Not confident with X4? Or want to keep testing to a very small group (is that a good thing?)? ... In any case, I just don&#39;t know. It&#39;s just after Rebirth I am more sceptical, and need to play the game myself before supporting X4 (hopefully you understand). At the moment there are no plans for creating an X4 site. What are your thoughts? I am very eager (no pun) to hear from you.<br>
+				<br><br>
+
+			</div>
+			<br><br>
+	<h2>Updates to the X2, X3, X3TC and X3AP sites</h2>
+
+			<span class="smalltext">
+				Thursday 19th July, 2018 &middot; Posted by <a href="/users/profile.php?id=1" class="admin">Roguey</a> 
+					
+				&middot; 
+
+				<a href="/xrebirth/news/single.php?id=623#comments" class="smalllink colourlink">
+					<img src="/images/site/comment.gif" style="border: 0;" alt="Comment"> 0 comments</a>			
+
+			</span>
+
+
+			<div class="pad">
+				Its awhile since ive done any updates to the X-sites (X2, X3, X3TC, X3AP), but just recently I had some extra time. A long time ago I started the process of converting how the X-sites get their data. In the past those sites relied on a database that I built up from various resources. This was time-consuming process and often lead to inconsistencies, due to how hard it was to create. So started the process of changing the x-sites to use in-game files. The X3TC and X3AP sites were changed over, but the X2 and X3 sites werent. Those two sites still relied on the old method, the database.<br><br>So just recently ive been working on X2 and X3 sites, making them use in-game files too. They both had their own challenges, X2 being very old and X3 require more sections (lasers, missiles, shields, wares, etc.). This should be completed now - so now the X2, X3, X3TC and X3AP sites all use in-game files now, but I have still some minor things to fix.<br><br>During the process however I noticed the universe maps werent showing correctly. The reason for this is that they used flash. Flash itself isnt supported that well by browsers nowadays. So I wanted to build a new map using standard HTML. This has been rolled out to X2, X3, X3TC and X3AP sites. The new map also shows sectors containing mines, pirate bases, equipment docks and shipyards, with a little icon at the bottom right of the sector box. The X2 and X3 sites use my newer design sector maps too.<br><br>I know the X2 and X3 sites arent heavily used areas any-more, but I wanted to update them. So now finally the database has been removed for all x-sites apart from X-Rebirth. I dont plan on re-working the X-Rebirth site, since this use in-game files to populate the database - a half-way solution, I know but still is a lot easier to update than building a database. There is still a few more sections id like to update - like my X3 mod area.
+				<br><br>
+
+			</div>
+			<br><br>
+	<h2>Egosoft reaches 30 years old; some X4 info</h2>
+
+			<span class="smalltext">
+				Thursday 7th June, 2018 &middot; Posted by <a href="/users/profile.php?id=1" class="admin">Roguey</a> 
+					
+				&middot; 
+
+				<a href="/xrebirth/news/single.php?id=621#comments" class="smalllink colourlink">
+					<img src="/images/site/comment.gif" style="border: 0;" alt="Comment"> 1 comments</a>			
+
+			</span>
+
+
+			<div class="pad">
+				You may of not known, but Egosoft announced a few days ago that its been 30 years since their first game release - Hotel Detective (June 1988). Whilst I wish Egosoft congratulations for this landmark, Its not the main reason for this news post.<br><br>To celebrate, Egosoft have posted a few screen-shots from the new X-game: X4. To view them simply click the picture below;<br><br><a href="https://www.egosoft.com/games/x4/screenshots_en.php" target="_blank"><div style="text-align: center;"><img src="/news/pics/user_1/large/news_219_b.jpg" alt="News picture 219" style="border: none;"></div></a><br><br>There will also be a live Stream on their <a href="https://www.twitch.tv/egosoftofficial" target="_blank">Twitch channel</a> on the 20th of June 19:00 CEST (18:00 BST, 120 CDT, 10:00 PDT). I am not sure whether the Stream will show more content from X4, but thought you may want to know. What are your thoughts/feelings on the new screenshots?
+				<br><br>
+
+			</div>
+			<br><br>
+
+		
+		<b>Older news</b><br>
+		<ul>
+			<li><a href="/xrebirth/news/archive.php">News archive</a></li>
+		</ul>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00156 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

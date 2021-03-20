@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Links - Elite &amp; Dangerous Roguey</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Links, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/elite-dangerous/links/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Links">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/elite-dangerous/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/elite-dangerous/"><img src="/elite-dangerous/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #A98135;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #A98135;">
+				<li class="icon" style="background-color: #A98135">&nbsp;</li><li><a href="/elite-dangerous/">News</a></li><li><a href="/elite-dangerous/help/">Help / Guides</a></li><li><a href="/elite-dangerous/trade-helper/">Trade Helper</a></li><li><a href="/elite-dangerous/ships/">Ships</a></li><li><a href="/elite-dangerous/ship-builds/">Builds</a></li><li><a href="/elite-dangerous/universe/">Universe</a></li><li><a href="/elite-dangerous/equipment/">Equipment</a></li><li><a href="/elite-dangerous/engineers/">Engineers</a></li><li><a href="/elite-dangerous/commanders/">Commanders</a></li><li><a href="/elite-dangerous/powers/">Powers</a></li><li><a href="/elite-dangerous/fleet-carriers/">Fleet Carriers</a></li><li><a href="/elite-dangerous/wares/">Wares</a></li><li><a href="/elite-dangerous/videos/">Videos</a></li><li><a href="/donation/">Donation</a></li><li><a href="/forum/viewforum.php?id=36">Forum</a></li><li><a href="/elite-dangerous/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+			<h1>Links</h1>
+			<br>
+			
+			<div class="subheader">
+				Filter: 
+				<label><input name="link_cat" type="radio" onclick="filter_links();" value="all" checked> All</label> &nbsp;
+				<label><input name="link_cat" type="radio" onclick="filter_links();" value="website"> Website</label> &nbsp;
+				<label><input name="link_cat" type="radio" onclick="filter_links();" value="youtube"> YouTuber/channel</label> &nbsp;
+				<label><input name="link_cat" type="radio" onclick="filter_links();" value="other"> Other</label> &nbsp;
+			</div>
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_13">
+			<a href="https://elitepve.com/" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/elite-dangerous.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				Elite Dangerous PvE (Mobius)
+			</a><br style="clear: both;">
+			
+			If youre not a fan of PvP, and do not want to fight other people; then mobius might be for you. Mobius is a dedicated PvE group with no PvP allowed.<br>
+		</div>
+
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_11">
+			<a href="https://community.elitedangerous.com/" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/elite-dangerous.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				The offical community fansite
+			</a><br style="clear: both;">
+			
+			The official community fansite.<br>
+		</div>
+
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_10">
+			<a href="https://edsy.org/" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/cp_id_10.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				EDSY
+			</a><br style="clear: both;">
+			
+			If you wish to check out ship-builds, then EDSY has you covered. You can build fleets of ship and see all the stats!<br>
+		</div>
+
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_9">
+			<a href="https://www.youtube.com/channel/UCIj_8jqzRSU2JWGnIjK7bNw" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/cp_id_9.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				Mini
+			</a><br style="clear: both;">
+			
+			Mini might be somewhat crazy but makes some excellent videos. He does do some live-streaming too and seems to enjoy his engineering.<br>
+		</div>
+
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_12">
+			<a href="http://edcodex.info/" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/elite-dangerous.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				Elite:Dangerous Codex
+			</a><br style="clear: both;">
+			
+			A useful site for finding third party tools and websites. Well worth a visit!<br>
+		</div>
+
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_16">
+			<a href="https://www.youtube.com/channel/UCM0Buyva95ogZBwKnvkeIVw" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/cp_id_16.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				CMDR Plater
+			</a><br style="clear: both;">
+			
+			CMDR Plater is a youtuber who creates guides and has discussions on Elite Dangerous. He also does a couple of live -streams every week too. UK based.<br>
+		</div>
+
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_19">
+			<a href="https://www.edtutorials.com/" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/cp_id_19.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				EDTutorials
+			</a><br style="clear: both;">
+			
+			EDTutorials is full of useful site covering many aspects of the game, from beginer to expert. The site is well designed with many videos. Contributors are welcomed!<br>
+		</div>
+
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_15">
+			<a href="https://www.youtube.com/channel/UCo6p2NdDfoUvH2Iw3O3ipPg" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/cp_id_15.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				TheYamiks
+			</a><br style="clear: both;">
+			
+			He may sound crazy, but his videos often make a lot of sense. You will often find his videos contain a lot of humour - which makes them an joy to watch.<br>
+		</div>
+
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_17">
+			<a href="https://www.youtube.com/channel/UCg3QI9rHzPgvR7KTKSCtPHg" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/cp_id_17.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				Down to Earth Astronomy
+			</a><br style="clear: both;">
+			
+			An extremely popular youtuber who does a boat-load of guides, tutorials and news videos. He also does many live-streams!<br>
+		</div>
+
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_18">
+			<a href="https://www.youtube.com/user/ObsidianAnt" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/cp_id_18.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				ObsidianAnt
+			</a><br style="clear: both;">
+			
+			ObsidianAnt is probably the most own youtuber covering Elite Dangerous content. He covers guides, news, tutorials and first impressions.<br>
+		</div>
+
+		<div style="width: 30%; float: left; padding: 4px; margin: 4px; min-height: 325px;" id="link_id_21">
+			<a href="http://www.thecasualcrew.space" target="_blank" style="font-weight: bold; font-size: 1.2em;">
+				<img src="/images/links/cp_id_21.jpg" style="height: 100%; width: 100%; object-fit: contain;"><br>
+				The Casual Crew
+			</a><br style="clear: both;">
+			
+			The Casual Crew is a player group who welcomes like-minded individuals, in the pursuit of sharing knowledge, resources and advancement.<br>
+		</div>
+
+			<br style="clear: both;">
+			
+			<script>
+				var link_data 			= {0: {id: 13, cat: 'website'}, 1: {id: 11, cat: 'website'}, 2: {id: 10, cat: 'website'}, 3: {id: 9, cat: 'youtube'}, 4: {id: 12, cat: 'website'}, 5: {id: 16, cat: 'youtube'}, 6: {id: 19, cat: 'website'}, 7: {id: 15, cat: 'youtube'}, 8: {id: 17, cat: 'youtube'}, 9: {id: 18, cat: 'youtube'}, 10: {id: 21, cat: 'website'}};
+				var link_count			= 11;
+
+				function get_radio_value(id_name)
+				{
+					// get selected tab
+					var items 			= document.getElementsByName(id_name);
+					var selected_tab	= '';
+					
+					for (var i = 0; i < items.length; i++)
+					{
+						if (items[i].checked)
+							return items[i].value;
+					}
+					
+					return false
+				}
+				
+				// filter the links
+				function filter_links()
+				{
+					var filter_type			= get_radio_value('link_cat').toLowerCase();
+					var display_filter		= 'none';
+					
+					for (var i=0; i<link_count; i++)
+					{
+						// show all/selected type
+						if ((filter_type == 'all') || (filter_type == link_data[i]['cat']))
+							display_filter		= 'inline-block';
+						
+						else
+							display_filter		= 'none';
+						
+						document.getElementById('link_id_'+link_data[i]['id']).style.display = display_filter;
+					}
+				}
+				
+				
+				// on startup
+				window.onLoad 		= filter_links();
+			</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00109 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

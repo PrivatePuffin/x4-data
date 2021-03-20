@@ -1,0 +1,4034 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Asteroid search - Roguey's X3AP site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Asteroid search, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3ap/universe/asteroids.php">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Asteroid search">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3ap/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3ap/"><img src="/x3ap/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3BAE2F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3BAE2F;">
+				<li class="icon" style="background-color: #3BAE2F">&nbsp;</li><li><a href="/x3ap/">News</a></li><li><a href="/x3ap/pictures/">Pictures</a></li><li><a href="/x3ap/videos/">Videos</a></li><li><a href="/x3ap/help/">Help / Guides</a></li><li><a href="/x3ap/ships/">Ships</a></li><li><a href="/x3ap/universe/">Maps</a></li><li><a href="/x3ap/missiles/">Missiles</a></li><li><a href="/x3ap/lasers/">Lasers</a></li><li><a href="/x3ap/shields/">Shields</a></li><li><a href="/x3ap/stations/">Stations</a></li><li><a href="/x3ap/wares/">Wares</a></li><li><a href="/x3ap/mod/">X3AP Mod</a></li><li><a href="/x3ap/edit/">Editing</a></li><li><a href="/x3ap/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=31">Forum</a></li><li><a href="/x3ap/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	
+			<h1>Asteroid search</h1>
+			
+			Below is a list of asteroids with yields of 35 or higher. You can click the table headers, if you wish to change the sort.
+			<br><br>
+			
+			<table class="board_table sortable">
+			<tr>
+				<th style="text-align: right;">Yield</th>
+				<th style="text-align: left;">Type</th>
+				<th style="text-align: left; width: 40%;">Sector</th>				
+				<th style="text-align: left; width: 30%;">Cords</th>
+			</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x16-y0/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(16, 0)</span>
+						</td>
+						
+						<td class="smalltext">(9.68km, 3.03km, 15.8km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x16-y0/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(16, 0)</span>
+						</td>
+						
+						<td class="smalltext">(-4.88km, 4.88km, 7.55km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="57" style="text-align: right;">57 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x16-y0/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(16, 0)</span>
+						</td>
+						
+						<td class="smalltext">(-1.99km, 9.72km, 3.06km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="67" style="text-align: right;">67 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x17-y0/" target="_blank">
+								<img src="../images/logo_Xenon.gif" alt="Xenon" style="border: none;">
+								Xenon Sector 534
+							</a>
+							<span class="smalltext">(17, 0)</span>
+						</td>
+						
+						<td class="smalltext">(-29.75km, -0.95km, -5.03km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/nividium.gif" alt="dot"> Nividium</td>
+						<td>
+							<a href="./x17-y0/" target="_blank">
+								<img src="../images/logo_Xenon.gif" alt="Xenon" style="border: none;">
+								Xenon Sector 534
+							</a>
+							<span class="smalltext">(17, 0)</span>
+						</td>
+						
+						<td class="smalltext">(10.64km, 6.03km, 6.78km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="90" style="text-align: right;">90 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x2-y1/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Antigone Memorial
+							</a>
+							<span class="smalltext">(2, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-5.42km, -2.59km, 6.24km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="61" style="text-align: right;">61 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x2-y1/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Antigone Memorial
+							</a>
+							<span class="smalltext">(2, 1)</span>
+						</td>
+						
+						<td class="smalltext">(13.25km, -1.14km, 17.57km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="65" style="text-align: right;">65 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x6-y1/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Family Zein
+							</a>
+							<span class="smalltext">(6, 1)</span>
+						</td>
+						
+						<td class="smalltext">(5.63km, -0.87km, 21.5km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x6-y1/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Family Zein
+							</a>
+							<span class="smalltext">(6, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-2.37km, -1.59km, 4.25km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="44" style="text-align: right;">44 x </td>
+						<td><img src="./images/ice.gif" alt="dot"> Ice</td>
+						<td>
+							<a href="./x7-y1/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Oort Cloud
+							</a>
+							<span class="smalltext">(7, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-41.51km, 6.03km, -33.9km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x7-y1/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Oort Cloud
+							</a>
+							<span class="smalltext">(7, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-29.04km, -6.09km, -37.76km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x7-y1/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Oort Cloud
+							</a>
+							<span class="smalltext">(7, 1)</span>
+						</td>
+						
+						<td class="smalltext">(23.42km, 2.8km, -47.62km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x7-y1/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Oort Cloud
+							</a>
+							<span class="smalltext">(7, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-17.04km, -6.09km, -39.76km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x8-y1/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Pluto
+							</a>
+							<span class="smalltext">(8, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-18.56km, 6.68km, -34.69km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x8-y1/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Pluto
+							</a>
+							<span class="smalltext">(8, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-38.79km, -6.09km, -22.64km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="72" style="text-align: right;">72 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x14-y1/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Mines of Fortune
+							</a>
+							<span class="smalltext">(14, 1)</span>
+						</td>
+						
+						<td class="smalltext">(32.1km, 8.31km, 30.09km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x14-y1/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Mines of Fortune
+							</a>
+							<span class="smalltext">(14, 1)</span>
+						</td>
+						
+						<td class="smalltext">(6.96km, -12.5km, 76.89km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x14-y1/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Mines of Fortune
+							</a>
+							<span class="smalltext">(14, 1)</span>
+						</td>
+						
+						<td class="smalltext">(39.44km, 10.03km, -53.74km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x14-y1/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Mines of Fortune
+							</a>
+							<span class="smalltext">(14, 1)</span>
+						</td>
+						
+						<td class="smalltext">(0.11km, -6.74km, -33.5km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x14-y1/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Mines of Fortune
+							</a>
+							<span class="smalltext">(14, 1)</span>
+						</td>
+						
+						<td class="smalltext">(1.81km, -9.8km, 43.99km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x14-y1/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Mines of Fortune
+							</a>
+							<span class="smalltext">(14, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-14.72km, -8.12km, -19.68km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x14-y1/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Mines of Fortune
+							</a>
+							<span class="smalltext">(14, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-52.04km, 1.27km, -10.58km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="70" style="text-align: right;">70 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x14-y1/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Mines of Fortune
+							</a>
+							<span class="smalltext">(14, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-4.26km, 3.83km, -52.79km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x14-y1/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Mines of Fortune
+							</a>
+							<span class="smalltext">(14, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-2.71km, -13.35km, 17.43km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x14-y1/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Mines of Fortune
+							</a>
+							<span class="smalltext">(14, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-36.78km, -3.38km, 44.26km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="78" style="text-align: right;">78 x </td>
+						<td><img src="./images/ice.gif" alt="dot"> Ice</td>
+						<td>
+							<a href="./x16-y1/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Saturn 
+							</a>
+							<span class="smalltext">(16, 1)</span>
+						</td>
+						
+						<td class="smalltext">(-19.55km, -6.1km, 18.48km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="93" style="text-align: right;">93 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x17-y1/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Getsu Fune
+							</a>
+							<span class="smalltext">(17, 1)</span>
+						</td>
+						
+						<td class="smalltext">(18.59km, -1.87km, 10.9km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x18-y1/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Menelaus' Paradise
+							</a>
+							<span class="smalltext">(18, 1)</span>
+						</td>
+						
+						<td class="smalltext">(6km, -2.18km, 32.05km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x20-y1/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Guiding Star
+							</a>
+							<span class="smalltext">(20, 1)</span>
+						</td>
+						
+						<td class="smalltext">(28.88km, 11.69km, -28.19km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x20-y1/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Guiding Star
+							</a>
+							<span class="smalltext">(20, 1)</span>
+						</td>
+						
+						<td class="smalltext">(47.44km, -10.31km, 41.94km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x20-y1/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Guiding Star
+							</a>
+							<span class="smalltext">(20, 1)</span>
+						</td>
+						
+						<td class="smalltext">(39.19km, -7.56km, -11km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x1-y2/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Herron's Nebula
+							</a>
+							<span class="smalltext">(1, 2)</span>
+						</td>
+						
+						<td class="smalltext">(11.32km, -1.96km, 11.34km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x8-y2/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Rhonkar's Might
+							</a>
+							<span class="smalltext">(8, 2)</span>
+						</td>
+						
+						<td class="smalltext">(-19.06km, 0.92km, 21.3km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="54" style="text-align: right;">54 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x9-y2/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Patriarch's Retreat
+							</a>
+							<span class="smalltext">(9, 2)</span>
+						</td>
+						
+						<td class="smalltext">(36.78km, 16.19km, -30.43km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="45" style="text-align: right;">45 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x9-y2/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Patriarch's Retreat
+							</a>
+							<span class="smalltext">(9, 2)</span>
+						</td>
+						
+						<td class="smalltext">(55.83km, -8.57km, 26.75km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x9-y2/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Patriarch's Retreat
+							</a>
+							<span class="smalltext">(9, 2)</span>
+						</td>
+						
+						<td class="smalltext">(-36.64km, 11.54km, -10.41km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x16-y2/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Jupiter 
+							</a>
+							<span class="smalltext">(16, 2)</span>
+						</td>
+						
+						<td class="smalltext">(14.11km, -6.02km, 36.74km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x18-y2/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Bluish Snout
+							</a>
+							<span class="smalltext">(18, 2)</span>
+						</td>
+						
+						<td class="smalltext">(-18.79km, -1.1km, -7.09km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x19-y2/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Spires of Elusion
+							</a>
+							<span class="smalltext">(19, 2)</span>
+						</td>
+						
+						<td class="smalltext">(0km, 13.75km, 41.94km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x19-y2/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Spires of Elusion
+							</a>
+							<span class="smalltext">(19, 2)</span>
+						</td>
+						
+						<td class="smalltext">(38.5km, 0km, 34.38km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="39" style="text-align: right;">39 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x19-y2/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Spires of Elusion
+							</a>
+							<span class="smalltext">(19, 2)</span>
+						</td>
+						
+						<td class="smalltext">(18.56km, 4.13km, -9.62km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x19-y2/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Spires of Elusion
+							</a>
+							<span class="smalltext">(19, 2)</span>
+						</td>
+						
+						<td class="smalltext">(35.75km, 8.25km, -32.31km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x20-y2/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								CEO's Wellspring
+							</a>
+							<span class="smalltext">(20, 2)</span>
+						</td>
+						
+						<td class="smalltext">(9.78km, -0.2km, 34.39km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="39" style="text-align: right;">39 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x20-y2/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								CEO's Wellspring
+							</a>
+							<span class="smalltext">(20, 2)</span>
+						</td>
+						
+						<td class="smalltext">(10.23km, 11.29km, 46.84km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x20-y2/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								CEO's Wellspring
+							</a>
+							<span class="smalltext">(20, 2)</span>
+						</td>
+						
+						<td class="smalltext">(27.5km, 16.5km, 29.56km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x20-y2/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								CEO's Wellspring
+							</a>
+							<span class="smalltext">(20, 2)</span>
+						</td>
+						
+						<td class="smalltext">(18.56km, 9.63km, 24.06km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="39" style="text-align: right;">39 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x20-y2/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								CEO's Wellspring
+							</a>
+							<span class="smalltext">(20, 2)</span>
+						</td>
+						
+						<td class="smalltext">(41.94km, 2.75km, 26.81km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x21-y2/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Cathedral of Xaar
+							</a>
+							<span class="smalltext">(21, 2)</span>
+						</td>
+						
+						<td class="smalltext">(-7.5km, -7.5km, -34.5km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x21-y2/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Cathedral of Xaar
+							</a>
+							<span class="smalltext">(21, 2)</span>
+						</td>
+						
+						<td class="smalltext">(-13.5km, -4.5km, -46.5km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="44" style="text-align: right;">44 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x21-y2/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Cathedral of Xaar
+							</a>
+							<span class="smalltext">(21, 2)</span>
+						</td>
+						
+						<td class="smalltext">(24km, -9.75km, -45.75km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x21-y2/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Cathedral of Xaar
+							</a>
+							<span class="smalltext">(21, 2)</span>
+						</td>
+						
+						<td class="smalltext">(29.25km, 14.25km, -15km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x7-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Rhonkar's Clouds
+							</a>
+							<span class="smalltext">(7, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-16.84km, -1.71km, -36.68km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="70" style="text-align: right;">70 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x9-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Cho's Defeat
+							</a>
+							<span class="smalltext">(9, 3)</span>
+						</td>
+						
+						<td class="smalltext">(20.21km, -10.5km, 11.09km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x11-y3/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Asteroid Belt
+							</a>
+							<span class="smalltext">(11, 3)</span>
+						</td>
+						
+						<td class="smalltext">(39.44km, 10.03km, -53.74km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="133" style="text-align: right;">133 x </td>
+						<td><img src="./images/ice.gif" alt="dot"> Ice</td>
+						<td>
+							<a href="./x11-y3/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Asteroid Belt
+							</a>
+							<span class="smalltext">(11, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-48.49km, -1.41km, 46.96km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="70" style="text-align: right;">70 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x11-y3/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Asteroid Belt
+							</a>
+							<span class="smalltext">(11, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-4.26km, 3.83km, -52.79km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x11-y3/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Asteroid Belt
+							</a>
+							<span class="smalltext">(11, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-29.14km, -6.74km, -36.5km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x11-y3/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Asteroid Belt
+							</a>
+							<span class="smalltext">(11, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-52.04km, 9.52km, -10.58km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x14-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Family Tkr
+							</a>
+							<span class="smalltext">(14, 3)</span>
+						</td>
+						
+						<td class="smalltext">(18.47km, -7.1km, -20.6km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x14-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Family Tkr
+							</a>
+							<span class="smalltext">(14, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-33.57km, -7.46km, -8.88km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Tkr's Deprivation
+							</a>
+							<span class="smalltext">(15, 3)</span>
+						</td>
+						
+						<td class="smalltext">(2.26km, -10.03km, 54.99km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x15-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Tkr's Deprivation
+							</a>
+							<span class="smalltext">(15, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-15.9km, -13.9km, -24.6km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Tkr's Deprivation
+							</a>
+							<span class="smalltext">(15, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-65.05km, 1.59km, -13.22km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="45" style="text-align: right;">45 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x18-y3/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Ocean of Fantasy
+							</a>
+							<span class="smalltext">(18, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-19.08km, -13.59km, -18.13km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x18-y3/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Ocean of Fantasy
+							</a>
+							<span class="smalltext">(18, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-17.23km, 9.05km, 12.19km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x20-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Twisted Skies
+							</a>
+							<span class="smalltext">(20, 3)</span>
+						</td>
+						
+						<td class="smalltext">(27km, -13.5km, -30km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x20-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Twisted Skies
+							</a>
+							<span class="smalltext">(20, 3)</span>
+						</td>
+						
+						<td class="smalltext">(11.25km, 9km, 40.5km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x20-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Twisted Skies
+							</a>
+							<span class="smalltext">(20, 3)</span>
+						</td>
+						
+						<td class="smalltext">(36.75km, 9km, 28.5km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x20-y3/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Twisted Skies
+							</a>
+							<span class="smalltext">(20, 3)</span>
+						</td>
+						
+						<td class="smalltext">(-8.25km, -8.25km, 25.5km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x3-y4/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Elena's Fortune
+							</a>
+							<span class="smalltext">(3, 4)</span>
+						</td>
+						
+						<td class="smalltext">(-5.42km, -7.73km, 1.4km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x7-y4/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(7, 4)</span>
+						</td>
+						
+						<td class="smalltext">(-11.04km, -6.09km, -14.76km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x7-y4/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(7, 4)</span>
+						</td>
+						
+						<td class="smalltext">(-8.81km, 2.93km, -2.44km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x8-y4/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(8, 4)</span>
+						</td>
+						
+						<td class="smalltext">(10.36km, -6.02km, 26.99km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x8-y4/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(8, 4)</span>
+						</td>
+						
+						<td class="smalltext">(-23.04km, -6.09km, -38.01km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x8-y4/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(8, 4)</span>
+						</td>
+						
+						<td class="smalltext">(25.69km, 2.93km, -13.69km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x9-y4/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Patriarch's Keep
+							</a>
+							<span class="smalltext">(9, 4)</span>
+						</td>
+						
+						<td class="smalltext">(7.85km, -5.08km, 7.12km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x9-y4/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Patriarch's Keep
+							</a>
+							<span class="smalltext">(9, 4)</span>
+						</td>
+						
+						<td class="smalltext">(-6.69km, -9.81km, -11.16km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x2-y5/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Cloudbase South East
+							</a>
+							<span class="smalltext">(2, 5)</span>
+						</td>
+						
+						<td class="smalltext">(-8.51km, -0.83km, 5.66km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x7-y5/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(7, 5)</span>
+						</td>
+						
+						<td class="smalltext">(-18.56km, 6.68km, -34.69km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x7-y5/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(7, 5)</span>
+						</td>
+						
+						<td class="smalltext">(-47.79km, -6.09km, -30.64km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x8-y5/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(8, 5)</span>
+						</td>
+						
+						<td class="smalltext">(-10.29km, -6.09km, -18.51km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x20-y5/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Zyarth's Stand
+							</a>
+							<span class="smalltext">(20, 5)</span>
+						</td>
+						
+						<td class="smalltext">(-20.18km, 2.91km, 5.08km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x21-y5/" target="_blank">
+								<img src="../images/logo_Xenon.gif" alt="Xenon" style="border: none;">
+								Xenon Sector 695
+							</a>
+							<span class="smalltext">(21, 5)</span>
+						</td>
+						
+						<td class="smalltext">(-31.15km, 9.81km, -8.85km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="44" style="text-align: right;">44 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x5-y6/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								Nopileos' Memorial
+							</a>
+							<span class="smalltext">(5, 6)</span>
+						</td>
+						
+						<td class="smalltext">(7.9km, 4km, 11.71km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="44" style="text-align: right;">44 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x6-y6/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								Hatikvah's Faith
+							</a>
+							<span class="smalltext">(6, 6)</span>
+						</td>
+						
+						<td class="smalltext">(8.38km, 1.31km, 4.3km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x7-y6/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Aladna Hill
+							</a>
+							<span class="smalltext">(7, 6)</span>
+						</td>
+						
+						<td class="smalltext">(-5.76km, 3.35km, 14.41km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x11-y6/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Scale Plate Green
+							</a>
+							<span class="smalltext">(11, 6)</span>
+						</td>
+						
+						<td class="smalltext">(14.01km, 4.4km, 1.32km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="44" style="text-align: right;">44 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x14-y6/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Treasure Chest
+							</a>
+							<span class="smalltext">(14, 6)</span>
+						</td>
+						
+						<td class="smalltext">(1.04km, -1.66km, -17.3km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x20-y6/" target="_blank">
+								<img src="../images/logo_Xenon.gif" alt="Xenon" style="border: none;">
+								Xenon Sector 627
+							</a>
+							<span class="smalltext">(20, 6)</span>
+						</td>
+						
+						<td class="smalltext">(-16.21km, 5.11km, -4.61km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x21-y6/" target="_blank">
+								<img src="../images/logo_Xenon.gif" alt="Xenon" style="border: none;">
+								Xenon Core 023
+							</a>
+							<span class="smalltext">(21, 6)</span>
+						</td>
+						
+						<td class="smalltext">(-47.64km, 15km, -13.54km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x0-y7/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Savage Spur
+							</a>
+							<span class="smalltext">(0, 7)</span>
+						</td>
+						
+						<td class="smalltext">(23.42km, 2.8km, -33.62km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x0-y7/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Savage Spur
+							</a>
+							<span class="smalltext">(0, 7)</span>
+						</td>
+						
+						<td class="smalltext">(5.99km, 7.13km, -8.92km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="46" style="text-align: right;">46 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x0-y7/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Savage Spur
+							</a>
+							<span class="smalltext">(0, 7)</span>
+						</td>
+						
+						<td class="smalltext">(17.9km, 22.36km, -36.79km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="57" style="text-align: right;">57 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x0-y7/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Savage Spur
+							</a>
+							<span class="smalltext">(0, 7)</span>
+						</td>
+						
+						<td class="smalltext">(10.39km, 14.4km, -24.76km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="39" style="text-align: right;">39 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x0-y7/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Savage Spur
+							</a>
+							<span class="smalltext">(0, 7)</span>
+						</td>
+						
+						<td class="smalltext">(10.51km, 20.97km, -20.1km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x10-y7/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Eighteen Billion
+							</a>
+							<span class="smalltext">(10, 7)</span>
+						</td>
+						
+						<td class="smalltext">(12.93km, -2.02km, 5.41km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x10-y7/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Eighteen Billion
+							</a>
+							<span class="smalltext">(10, 7)</span>
+						</td>
+						
+						<td class="smalltext">(-18.03km, 4.19km, 10.38km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x14-y7/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(14, 7)</span>
+						</td>
+						
+						<td class="smalltext">(-10.43km, -31.81km, 52.61km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="102" style="text-align: right;">102 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x17-y7/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(17, 7)</span>
+						</td>
+						
+						<td class="smalltext">(7.33km, 7.5km, -27.97km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="45" style="text-align: right;">45 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x17-y7/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(17, 7)</span>
+						</td>
+						
+						<td class="smalltext">(19.57km, 15.75km, -16.9km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x17-y7/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(17, 7)</span>
+						</td>
+						
+						<td class="smalltext">(-2.02km, 0km, 11.99km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x20-y7/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Tears of Greed
+							</a>
+							<span class="smalltext">(20, 7)</span>
+						</td>
+						
+						<td class="smalltext">(-14.72km, -8.12km, -19.68km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x20-y7/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Tears of Greed
+							</a>
+							<span class="smalltext">(20, 7)</span>
+						</td>
+						
+						<td class="smalltext">(6.96km, -12.5km, 76.89km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x20-y7/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Tears of Greed
+							</a>
+							<span class="smalltext">(20, 7)</span>
+						</td>
+						
+						<td class="smalltext">(1.81km, -9.8km, 43.99km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="70" style="text-align: right;">70 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x20-y7/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Tears of Greed
+							</a>
+							<span class="smalltext">(20, 7)</span>
+						</td>
+						
+						<td class="smalltext">(-4.26km, 3.83km, -52.79km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x1-y8/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Preacher's Void
+							</a>
+							<span class="smalltext">(1, 8)</span>
+						</td>
+						
+						<td class="smalltext">(-0.1km, -10.23km, 16.22km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x3-y8/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Pontifex' Realm
+							</a>
+							<span class="smalltext">(3, 8)</span>
+						</td>
+						
+						<td class="smalltext">(21.85km, 10.3km, 13.64km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="45" style="text-align: right;">45 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x3-y8/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Pontifex' Realm
+							</a>
+							<span class="smalltext">(3, 8)</span>
+						</td>
+						
+						<td class="smalltext">(-21.68km, -8km, 14.72km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="45" style="text-align: right;">45 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x3-y8/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Pontifex' Realm
+							</a>
+							<span class="smalltext">(3, 8)</span>
+						</td>
+						
+						<td class="smalltext">(-14.63km, -5.1km, -1.83km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="60" style="text-align: right;">60 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x5-y8/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Light Water
+							</a>
+							<span class="smalltext">(5, 8)</span>
+						</td>
+						
+						<td class="smalltext">(-47.24km, 17.76km, -50.53km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="55" style="text-align: right;">55 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x8-y8/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Avarice
+							</a>
+							<span class="smalltext">(8, 8)</span>
+						</td>
+						
+						<td class="smalltext">(20.7km, -3.51km, -51.6km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x8-y8/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Avarice
+							</a>
+							<span class="smalltext">(8, 8)</span>
+						</td>
+						
+						<td class="smalltext">(12.67km, -1.24km, -41.98km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x9-y8/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								New Income
+							</a>
+							<span class="smalltext">(9, 8)</span>
+						</td>
+						
+						<td class="smalltext">(12.93km, 11.53km, -25.32km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="39" style="text-align: right;">39 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x10-y8/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Ianamus Zura
+							</a>
+							<span class="smalltext">(10, 8)</span>
+						</td>
+						
+						<td class="smalltext">(1.41km, -11.06km, -8.49km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x10-y8/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Ianamus Zura
+							</a>
+							<span class="smalltext">(10, 8)</span>
+						</td>
+						
+						<td class="smalltext">(12.25km, -1.71km, 7.01km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x14-y8/" target="_blank">
+								<img src="../images/logo_Argon.gif" alt="Argon" style="border: none;">
+								Argon Sector M148
+							</a>
+							<span class="smalltext">(14, 8)</span>
+						</td>
+						
+						<td class="smalltext">(-11.01km, -0.83km, 22.16km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x0-y9/" target="_blank">
+								<img src="../images/logo_Yaki.gif" alt="Yaki" style="border: none;">
+								Senator's Badlands
+							</a>
+							<span class="smalltext">(0, 9)</span>
+						</td>
+						
+						<td class="smalltext">(-5.58km, 0.04km, 18.38km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x0-y9/" target="_blank">
+								<img src="../images/logo_Yaki.gif" alt="Yaki" style="border: none;">
+								Senator's Badlands
+							</a>
+							<span class="smalltext">(0, 9)</span>
+						</td>
+						
+						<td class="smalltext">(11.41km, 21.91km, 6.35km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x1-y9/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Duke's Vision
+							</a>
+							<span class="smalltext">(1, 9)</span>
+						</td>
+						
+						<td class="smalltext">(2.64km, -91.55km, -13.12km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="45" style="text-align: right;">45 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x2-y9/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Emperor's Wisdom
+							</a>
+							<span class="smalltext">(2, 9)</span>
+						</td>
+						
+						<td class="smalltext">(151.52km, 0.92km, -59.75km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x2-y9/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Emperor's Wisdom
+							</a>
+							<span class="smalltext">(2, 9)</span>
+						</td>
+						
+						<td class="smalltext">(138.74km, 17.52km, 18.28km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x3-y9/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Trinity Sanctum
+							</a>
+							<span class="smalltext">(3, 9)</span>
+						</td>
+						
+						<td class="smalltext">(8.26km, 5.48km, -17.81km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x3-y9/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Trinity Sanctum
+							</a>
+							<span class="smalltext">(3, 9)</span>
+						</td>
+						
+						<td class="smalltext">(20.87km, 1.27km, 11.93km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x4-y9/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Preacher's Refuge
+							</a>
+							<span class="smalltext">(4, 9)</span>
+						</td>
+						
+						<td class="smalltext">(-10.81km, 0.3km, -19.72km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x4-y9/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Preacher's Refuge
+							</a>
+							<span class="smalltext">(4, 9)</span>
+						</td>
+						
+						<td class="smalltext">(5.53km, 5.78km, 6.86km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="72" style="text-align: right;">72 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x7-y10/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								Gunne's Crusade
+							</a>
+							<span class="smalltext">(7, 10)</span>
+						</td>
+						
+						<td class="smalltext">(16.05km, 4.15km, 15.04km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x7-y10/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								Gunne's Crusade
+							</a>
+							<span class="smalltext">(7, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-18.39km, -1.69km, 22.13km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x9-y10/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								LooManckStrat's Legacy
+							</a>
+							<span class="smalltext">(9, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-3.11km, -0.16km, -31.7km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="70" style="text-align: right;">70 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x9-y10/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								LooManckStrat's Legacy
+							</a>
+							<span class="smalltext">(9, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-2.13km, 1.92km, -26.39km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="72" style="text-align: right;">72 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x9-y10/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								LooManckStrat's Legacy
+							</a>
+							<span class="smalltext">(9, 10)</span>
+						</td>
+						
+						<td class="smalltext">(16.05km, 4.15km, 15.04km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x9-y10/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								LooManckStrat's Legacy
+							</a>
+							<span class="smalltext">(9, 10)</span>
+						</td>
+						
+						<td class="smalltext">(4.94km, -3.37km, -16.75km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x9-y10/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								LooManckStrat's Legacy
+							</a>
+							<span class="smalltext">(9, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-18.39km, -1.69km, 22.13km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x9-y10/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								LooManckStrat's Legacy
+							</a>
+							<span class="smalltext">(9, 10)</span>
+						</td>
+						
+						<td class="smalltext">(19.72km, 2.8km, -26.87km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="48" style="text-align: right;">48 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(17.01km, -33.53km, 222.4km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-101.98km, 28.02km, 258.51km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-183km, 37.6km, 266.36km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(9.33km, -6.16km, 188.69km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="52" style="text-align: right;">52 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-325.45km, -19.42km, 133.91km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(13.6km, -18.04km, 192.83km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(83.53km, -37.38km, 115.95km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-164.66km, -12.96km, 294.61km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="52" style="text-align: right;">52 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-326.45km, 18.98km, 78.86km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="54" style="text-align: right;">54 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(50.04km, 5.36km, 227.43km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-28.42km, 41.49km, -110.19km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="52" style="text-align: right;">52 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-301.76km, 21.84km, -15.38km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-236.46km, 29.24km, 174.6km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="46" style="text-align: right;">46 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-15.68km, -11.64km, -25.44km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="52" style="text-align: right;">52 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-31.52km, -30.84km, -49.31km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="46" style="text-align: right;">46 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-168.27km, 28.76km, -99.83km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-85.95km, 52.82km, 262.25km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-261.45km, -0.02km, 115.56km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="52" style="text-align: right;">52 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-272.67km, -19.44km, -32.29km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-288.33km, -56.46km, 52.97km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="46" style="text-align: right;">46 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-230.7km, 23.65km, 184.59km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="44" style="text-align: right;">44 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(36.84km, -2.44km, -1.15km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="48" style="text-align: right;">48 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-204.39km, -32.12km, 207.16km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="58" style="text-align: right;">58 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(19.01km, 4.23km, 17.23km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="44" style="text-align: right;">44 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-62.68km, 22.19km, 252.34km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="54" style="text-align: right;">54 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-130.09km, -45.72km, -87.41km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-59.7km, -48.43km, 259.3km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(35.82km, -19.17km, 126.13km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(27.07km, -45.77km, 205.49km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="58" style="text-align: right;">58 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-37.48km, -42.03km, -32.58km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="48" style="text-align: right;">48 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-341.16km, 3.55km, 98.09km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(21.33km, 45.23km, 20.39km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="44" style="text-align: right;">44 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-255.25km, 18.77km, 200.51km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-4.59km, 55.52km, -54.2km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x13-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								Aldrin
+							</a>
+							<span class="smalltext">(13, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-286.14km, 10.81km, 191.27km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(15, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-16.43km, 1.6km, -23.97km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x15-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(15, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-18.16km, 0.45km, -14.02km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="39" style="text-align: right;">39 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x15-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(15, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-2.88km, 3.93km, -23.51km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(15, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-34.41km, -2.83km, 33.75km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(15, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-25.42km, 0.41km, 23.05km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(15, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-20.87km, 2.6km, 28.38km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(15, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-33.44km, 7.3km, -13.12km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(15, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-15.09km, 3.06km, 30.78km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(15, 10)</span>
+						</td>
+						
+						<td class="smalltext">(3.86km, -9.47km, -31.59km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(15, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-30.39km, 15.62km, 26.47km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x16-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(16, 10)</span>
+						</td>
+						
+						<td class="smalltext">(47km, 20.37km, -13.55km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x16-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(16, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-36.05km, 15.26km, -50.29km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x16-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(16, 10)</span>
+						</td>
+						
+						<td class="smalltext">(66.65km, -3.86km, 19.78km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x16-y10/" target="_blank">
+								<img src="../images/logo_Terran.gif" alt="Terran" style="border: none;">
+								 Unknown Sector 
+							</a>
+							<span class="smalltext">(16, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-27.79km, 16.87km, 47.8km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="46" style="text-align: right;">46 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x17-y10/" target="_blank">
+								<img src="../images/logo_Xenon.gif" alt="Xenon" style="border: none;">
+								Xenon Sector
+							</a>
+							<span class="smalltext">(17, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-67.62km, -17.26km, -45.05km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x17-y10/" target="_blank">
+								<img src="../images/logo_Xenon.gif" alt="Xenon" style="border: none;">
+								Xenon Sector
+							</a>
+							<span class="smalltext">(17, 10)</span>
+						</td>
+						
+						<td class="smalltext">(49.19km, 20.37km, -27.11km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="54" style="text-align: right;">54 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x17-y10/" target="_blank">
+								<img src="../images/logo_Xenon.gif" alt="Xenon" style="border: none;">
+								Xenon Sector
+							</a>
+							<span class="smalltext">(17, 10)</span>
+						</td>
+						
+						<td class="smalltext">(7.76km, 28.97km, -27.12km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="49" style="text-align: right;">49 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x17-y10/" target="_blank">
+								<img src="../images/logo_Xenon.gif" alt="Xenon" style="border: none;">
+								Xenon Sector
+							</a>
+							<span class="smalltext">(17, 10)</span>
+						</td>
+						
+						<td class="smalltext">(8.13km, 23.36km, 68.83km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="45" style="text-align: right;">45 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x18-y10/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								Lost Order
+							</a>
+							<span class="smalltext">(18, 10)</span>
+						</td>
+						
+						<td class="smalltext">(-8.6km, -11.23km, 24.11km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x1-y11/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(1, 11)</span>
+						</td>
+						
+						<td class="smalltext">(23.95km, 0km, -7.4km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x2-y11/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Rhy's Desire
+							</a>
+							<span class="smalltext">(2, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-19.06km, 0.92km, 21.3km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x2-y11/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Rhy's Desire
+							</a>
+							<span class="smalltext">(2, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-41.18km, -5.81km, -6.09km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x2-y11/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Rhy's Desire
+							</a>
+							<span class="smalltext">(2, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-10.67km, -5.89km, -14.27km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x2-y11/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Rhy's Desire
+							</a>
+							<span class="smalltext">(2, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-7.79km, 2.83km, -11.78km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x3-y11/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Ministry of Finance
+							</a>
+							<span class="smalltext">(3, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-5.06km, 25.75km, -24.77km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x4-y11/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Rhonkar's Trial
+							</a>
+							<span class="smalltext">(4, 11)</span>
+						</td>
+						
+						<td class="smalltext">(7.94km, 10.63km, -16.75km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="72" style="text-align: right;">72 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x4-y11/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Rhonkar's Trial
+							</a>
+							<span class="smalltext">(4, 11)</span>
+						</td>
+						
+						<td class="smalltext">(16.05km, 4.15km, 15.04km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x6-y11/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Clarity's End
+							</a>
+							<span class="smalltext">(6, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-3.47km, 3.74km, 34.76km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x7-y11/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Third Redemption
+							</a>
+							<span class="smalltext">(7, 11)</span>
+						</td>
+						
+						<td class="smalltext">(23.82km, -5.03km, 15.51km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x8-y11/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Perdition's End
+							</a>
+							<span class="smalltext">(8, 11)</span>
+						</td>
+						
+						<td class="smalltext">(8.72km, 21.32km, -19.34km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="39" style="text-align: right;">39 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x17-y11/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(17, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-2.88km, 3.93km, -23.51km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x17-y11/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(17, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-16.43km, 1.6km, -23.97km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x17-y11/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(17, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-33.44km, 7.3km, -13.12km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x17-y11/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(17, 11)</span>
+						</td>
+						
+						<td class="smalltext">(3.86km, -9.47km, -31.59km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x17-y11/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(17, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-18.16km, 0.45km, -14.02km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x17-y11/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(17, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-25.42km, 0.41km, 23.05km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x17-y11/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(17, 11)</span>
+						</td>
+						
+						<td class="smalltext">(-7.24km, 8km, 38.45km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x2-y12/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Family Rhy
+							</a>
+							<span class="smalltext">(2, 12)</span>
+						</td>
+						
+						<td class="smalltext">(3.62km, -2.42km, -15.47km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x9-y12/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								Moo-Kye's Revenge
+							</a>
+							<span class="smalltext">(9, 12)</span>
+						</td>
+						
+						<td class="smalltext">(29.28km, 5.02km, -32.59km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x9-y12/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								Moo-Kye's Revenge
+							</a>
+							<span class="smalltext">(9, 12)</span>
+						</td>
+						
+						<td class="smalltext">(17.61km, -17.73km, -28.36km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x9-y12/" target="_blank">
+								<img src="../images/logo_Pirate.gif" alt="Pirate" style="border: none;">
+								Moo-Kye's Revenge
+							</a>
+							<span class="smalltext">(9, 12)</span>
+						</td>
+						
+						<td class="smalltext">(7.89km, -19.06km, -25.22km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x12-y12/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Perpetual Sin
+							</a>
+							<span class="smalltext">(12, 12)</span>
+						</td>
+						
+						<td class="smalltext">(11.06km, 3.46km, 18.05km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x12-y12/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Perpetual Sin
+							</a>
+							<span class="smalltext">(12, 12)</span>
+						</td>
+						
+						<td class="smalltext">(-2.08km, 5.58km, 24.13km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="57" style="text-align: right;">57 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x12-y12/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Perpetual Sin
+							</a>
+							<span class="smalltext">(12, 12)</span>
+						</td>
+						
+						<td class="smalltext">(4.72km, 11.11km, 13.49km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x18-y12/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Bright Profit
+							</a>
+							<span class="smalltext">(18, 12)</span>
+						</td>
+						
+						<td class="smalltext">(-18.03km, 4.19km, 10.38km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x18-y12/" target="_blank">
+								<img src="../images/logo_Teladi.gif" alt="Teladi" style="border: none;">
+								Bright Profit
+							</a>
+							<span class="smalltext">(18, 12)</span>
+						</td>
+						
+						<td class="smalltext">(12.93km, -2.02km, 5.41km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="58" style="text-align: right;">58 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x1-y13/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Dark Waters
+							</a>
+							<span class="smalltext">(1, 13)</span>
+						</td>
+						
+						<td class="smalltext">(6.66km, -11.72km, 7.1km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x3-y13/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Barren Shores
+							</a>
+							<span class="smalltext">(3, 13)</span>
+						</td>
+						
+						<td class="smalltext">(-4km, 11.99km, 26.64km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x3-y13/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Barren Shores
+							</a>
+							<span class="smalltext">(3, 13)</span>
+						</td>
+						
+						<td class="smalltext">(12.98km, 5.77km, 27.12km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="56" style="text-align: right;">56 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x3-y13/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Barren Shores
+							</a>
+							<span class="smalltext">(3, 13)</span>
+						</td>
+						
+						<td class="smalltext">(13.76km, 10.21km, 17.76km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x3-y13/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Barren Shores
+							</a>
+							<span class="smalltext">(3, 13)</span>
+						</td>
+						
+						<td class="smalltext">(18.2km, 9.77km, 12.43km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x3-y13/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Barren Shores
+							</a>
+							<span class="smalltext">(3, 13)</span>
+						</td>
+						
+						<td class="smalltext">(-7.55km, 9.32km, 22.64km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x10-y13/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Sacred Relic
+							</a>
+							<span class="smalltext">(10, 13)</span>
+						</td>
+						
+						<td class="smalltext">(50.94km, 11.86km, 41.66km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="48" style="text-align: right;">48 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x10-y13/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Sacred Relic
+							</a>
+							<span class="smalltext">(10, 13)</span>
+						</td>
+						
+						<td class="smalltext">(-44.09km, -8.29km, 34.01km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x10-y13/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Sacred Relic
+							</a>
+							<span class="smalltext">(10, 13)</span>
+						</td>
+						
+						<td class="smalltext">(-15.83km, -13km, 34.37km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x2-y14/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Great Reef
+							</a>
+							<span class="smalltext">(2, 14)</span>
+						</td>
+						
+						<td class="smalltext">(-25.75km, 1.05km, 4.88km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x2-y14/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Great Reef
+							</a>
+							<span class="smalltext">(2, 14)</span>
+						</td>
+						
+						<td class="smalltext">(26.64km, -12.86km, -21.76km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="70" style="text-align: right;">70 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x8-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Spring of Belief
+							</a>
+							<span class="smalltext">(8, 14)</span>
+						</td>
+						
+						<td class="smalltext">(-4.26km, 3.83km, -52.79km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x8-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Spring of Belief
+							</a>
+							<span class="smalltext">(8, 14)</span>
+						</td>
+						
+						<td class="smalltext">(-36.78km, -3.38km, 44.26km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="72" style="text-align: right;">72 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x8-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Spring of Belief
+							</a>
+							<span class="smalltext">(8, 14)</span>
+						</td>
+						
+						<td class="smalltext">(32.1km, 8.31km, 30.09km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x8-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Spring of Belief
+							</a>
+							<span class="smalltext">(8, 14)</span>
+						</td>
+						
+						<td class="smalltext">(39.44km, 5.59km, -53.74km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x8-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Spring of Belief
+							</a>
+							<span class="smalltext">(8, 14)</span>
+						</td>
+						
+						<td class="smalltext">(6.96km, -5.5km, 76.89km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x8-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Spring of Belief
+							</a>
+							<span class="smalltext">(8, 14)</span>
+						</td>
+						
+						<td class="smalltext">(-14.72km, -8.12km, -19.68km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x8-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Spring of Belief
+							</a>
+							<span class="smalltext">(8, 14)</span>
+						</td>
+						
+						<td class="smalltext">(0.84km, -1.35km, 17.43km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x8-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Spring of Belief
+							</a>
+							<span class="smalltext">(8, 14)</span>
+						</td>
+						
+						<td class="smalltext">(0.11km, -6.74km, -33.5km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x10-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Pontifex' Seclusion
+							</a>
+							<span class="smalltext">(10, 14)</span>
+						</td>
+						
+						<td class="smalltext">(-9.82km, -9.05km, -7.93km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x10-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Pontifex' Seclusion
+							</a>
+							<span class="smalltext">(10, 14)</span>
+						</td>
+						
+						<td class="smalltext">(6.3km, -10.11km, -1.27km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="41" style="text-align: right;">41 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x10-y14/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Pontifex' Seclusion
+							</a>
+							<span class="smalltext">(10, 14)</span>
+						</td>
+						
+						<td class="smalltext">(7.66km, 5.26km, 4.15km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x17-y14/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Queen's Retribution
+							</a>
+							<span class="smalltext">(17, 14)</span>
+						</td>
+						
+						<td class="smalltext">(-25.75km, 1.05km, 4.88km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="60" style="text-align: right;">60 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x18-y14/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Hollow Infinity
+							</a>
+							<span class="smalltext">(18, 14)</span>
+						</td>
+						
+						<td class="smalltext">(-47.24km, 17.76km, -50.53km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="37" style="text-align: right;">37 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x18-y14/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Hollow Infinity
+							</a>
+							<span class="smalltext">(18, 14)</span>
+						</td>
+						
+						<td class="smalltext">(-17.23km, 9.05km, 12.19km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="51" style="text-align: right;">51 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x7-y15/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Emperor's Pride
+							</a>
+							<span class="smalltext">(7, 15)</span>
+						</td>
+						
+						<td class="smalltext">(10.39km, 14.4km, -24.76km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="39" style="text-align: right;">39 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x7-y15/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Emperor's Pride
+							</a>
+							<span class="smalltext">(7, 15)</span>
+						</td>
+						
+						<td class="smalltext">(7.51km, 20.97km, -19.1km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x10-y15/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Heaven's Assertion
+							</a>
+							<span class="smalltext">(10, 15)</span>
+						</td>
+						
+						<td class="smalltext">(-17.66km, 14.15km, 21.93km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="40" style="text-align: right;">40 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x10-y15/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Heaven's Assertion
+							</a>
+							<span class="smalltext">(10, 15)</span>
+						</td>
+						
+						<td class="smalltext">(-36.78km, -8.88km, 44.26km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x7-y16/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Unseen Domain
+							</a>
+							<span class="smalltext">(7, 16)</span>
+						</td>
+						
+						<td class="smalltext">(107.5km, 100km, 52.5km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x7-y16/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Unseen Domain
+							</a>
+							<span class="smalltext">(7, 16)</span>
+						</td>
+						
+						<td class="smalltext">(77.5km, 100km, 90km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="42" style="text-align: right;">42 x </td>
+						<td><img src="./images/ice.gif" alt="dot"> Ice</td>
+						<td>
+							<a href="./x7-y16/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Unseen Domain
+							</a>
+							<span class="smalltext">(7, 16)</span>
+						</td>
+						
+						<td class="smalltext">(51.51km, 20.01km, -25.99km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x7-y16/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Unseen Domain
+							</a>
+							<span class="smalltext">(7, 16)</span>
+						</td>
+						
+						<td class="smalltext">(22.5km, 100km, 60km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="38" style="text-align: right;">38 x </td>
+						<td><img src="./images/ice.gif" alt="dot"> Ice</td>
+						<td>
+							<a href="./x7-y16/" target="_blank">
+								<img src="../images/logo_Paranid.gif" alt="Paranid" style="border: none;">
+								Unseen Domain
+							</a>
+							<span class="smalltext">(7, 16)</span>
+						</td>
+						
+						<td class="smalltext">(-53.3km, 87.03km, -38.23km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="64" style="text-align: right;">64 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x8-y16/" target="_blank">
+								<img src="../images/logo_Shared.gif" alt="Shared" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(8, 16)</span>
+						</td>
+						
+						<td class="smalltext">(-8.06km, 2.93km, -12.19km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="54" style="text-align: right;">54 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y16/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Thyn's Excavation
+							</a>
+							<span class="smalltext">(15, 16)</span>
+						</td>
+						
+						<td class="smalltext">(36.78km, 16.19km, -30.43km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y16/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Thyn's Excavation
+							</a>
+							<span class="smalltext">(15, 16)</span>
+						</td>
+						
+						<td class="smalltext">(-45.64km, 11.54km, -20.41km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="36" style="text-align: right;">36 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x15-y16/" target="_blank">
+								<img src="../images/logo_Split.gif" alt="Split" style="border: none;">
+								Thyn's Excavation
+							</a>
+							<span class="smalltext">(15, 16)</span>
+						</td>
+						
+						<td class="smalltext">(-52.14km, 11.54km, -10.41km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="57" style="text-align: right;">57 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x18-y16/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(18, 16)</span>
+						</td>
+						
+						<td class="smalltext">(-31.49km, 9.72km, 17.56km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="50" style="text-align: right;">50 x </td>
+						<td><img src="./images/ore.gif" alt="dot"> Ore</td>
+						<td>
+							<a href="./x18-y16/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(18, 16)</span>
+						</td>
+						
+						<td class="smalltext">(6.18km, 6.03km, 17.3km )</td>
+				</tr>
+
+				<tr class="hover">
+						
+						<td sorttable_customkey="43" style="text-align: right;">43 x </td>
+						<td><img src="./images/silicon.gif" alt="dot"> Silicon</td>
+						<td>
+							<a href="./x18-y16/" target="_blank">
+								<img src="../images/logo_Boron.gif" alt="Boron" style="border: none;">
+								Unknown Sector
+							</a>
+							<span class="smalltext">(18, 16)</span>
+						</td>
+						
+						<td class="smalltext">(-24.38km, 10.38km, 6.05km )</td>
+				</tr>
+</table>
+
+		<script src="/modules/sorttable.js"></script>
+	
+		<script>
+		
+		function reset_sorttable()
+		{
+			var myTH = document.getElementsByTagName('th')[0];
+			sorttable.init();
+			sorttable.innerSortFunction.apply(myTH, []);
+			sorttable.innerSortFunction.apply(myTH, []);
+		}
+		
+		// onload
+		window.onload = reset_sorttable();
+		</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00066 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

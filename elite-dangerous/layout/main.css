@@ -1,0 +1,203 @@
+/* ----------------------- */
+/* Main styles		   */
+/* ----------------------- */
+
+
+.page-header
+{
+	background-image: url('/elite-dangerous/images/site/bg2.jpg');
+	background-size: cover;
+}
+
+/* ----------------------- */
+/* Standard HTML tags      */
+/* ----------------------- */
+
+h1
+{
+	color: #C79B45;
+}
+
+h2
+{
+	color: #333333;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+h3
+{
+	color: #333333;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+
+/* ----------------------- */
+/* Special table / separators  */
+/* ----------------------- */
+
+.board_table
+{
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse:collapse;
+}
+
+.board_table th
+{
+	color: #ffffff;
+	background-color: #A98135;
+	
+	border-top: 2px solid #FBE5BB;
+	border-bottom: 2px solid #FBE5BB;	
+}
+
+.board_table tr.hover:hover
+{
+	background-color: #F9F6F1;
+}
+
+.subheader
+{
+	width: 98%; 
+	background-color: #F4E8D4; 
+	text-align: right; 
+	padding: 5px 8px;
+}
+
+.minorheader
+{
+	width: 98%; 
+	background-color: #F4E8D4; 
+	text-align: right; 
+	padding: 5px 8px;
+}
+
+#snavbar
+{
+	background-color: #FBF6ED;
+}
+
+#snavbar ul
+{
+	border-bottom: 4px solid #C59643;
+}
+
+#snavbar ul li a 
+{
+	background-color: #F7EEDF;
+}
+
+/* ----------------------- */
+/* Link styles             */
+/* ----------------------- */
+
+a:link, a:visited, a:active 
+{
+	font-weight: normal;
+	COLOR: #406DC4;
+	text-decoration:none;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+
+a:hover 
+{
+	font-weight: normal;
+	color: #406DC4;
+	text-decoration: underline;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+}
+
+a:link.smalllink, a:visited.smalllink, a:active.smalllink 
+{
+	font-weight: normal;
+	font-size: 9pt;
+	COLOR: #406DC4;
+	TEXT-DECORATION: underline;
+}
+
+a:hover.smalllink 
+{
+	text-decoration: none;
+}
+
+a:link.colourlink, a:visited.colourlink, a:active.colourlink 
+{
+	font-weight: normal;
+	COLOR: #E1D555;
+	TEXT-DECORATION: none;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+a:hover.colourlink
+{
+	font-weight: normal;
+	COLOR: #E1D555;
+	text-decoration: underline;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+/* ----------------------- */
+/* Trade-Helper            */
+/* ----------------------- */
+
+.th_demand, a:link.th_demand, a:visited.th_demand, a:active.th_demand 
+{
+	color: #2F812F;
+}
+
+.th_supply, a:link.th_supply, a:visited.th_supply, a:active.th_supply
+{
+	color: #5454FF;
+}
+
+/* ----------------------- */
+/* Used for stats at the bottom (ships) */
+/* ----------------------- */
+
+.lower_stat_number
+{
+	width: 175px;
+	height: 100px; 
+	display: inline-block; 
+	text-align: center; 
+	vertical-align: top;
+}
+
+/* ----------------------- */
+/* Buttons
+/* ----------------------- */
+
+input.small_button
+{
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+
+	padding: 2px 10px;
+
+
+	background: -moz-linear-gradient(top, #BF923B 0%, #AF8337);
+	background: -webkit-gradient(linear, left top, left bottom, from(#BF923B),to(#AF8337));
+	background-color: #BF923B;
+
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 1px solid #ffffff;
+}
+
+input.small_button:hover
+{
+	background: -moz-linear-gradient(top, #C49140 0%, #CC9E56);
+	background: -webkit-gradient(linear, left top, left bottom, from(#C49140),to(#CC9E56));
+	background-color: #C49140;
+}
+
+/* ----------------------- */

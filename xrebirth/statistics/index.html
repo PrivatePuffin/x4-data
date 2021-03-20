@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Statistics - Roguey's X Rebirth site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="statistics - roguey's x rebirth site, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/xrebirth/statistics/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Statistics">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/xrebirth/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/xrebirth/"><img src="/xrebirth/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #6F9F6F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #6F9F6F;">
+				<li class="icon" style="background-color: #6F9F6F">&nbsp;</li><li><a href="/xrebirth/">News</a></li><li><a href="/xrebirth/pictures/">Pictures</a></li><li><a href="/xrebirth/videos/">Videos</a></li><li><a href="/xrebirth/help/">Help / Guides</a></li><li><a href="/xrebirth/ships/">Ships</a></li><li><a href="/xrebirth/universe/">Maps</a></li><li><a href="/xrebirth/statistics/">Statistics</a></li><li><a href="/xrebirth/stations/">Stations</a></li><li><a href="/xrebirth/wares/">Wares</a></li><li><a href="/xrebirth/teladi-outpost/">Teladi Outpost</a></li><li><a href="/xrebirth/home-of-light/">Home of Light</a></li><li><a href="/xrebirth/editing/">Editing</a></li><li><a href="/xrebirth/steam/">Achievements</a></li><li><a href="/forum/viewforum.php?id=20">Forum</a></li><li><a href="/xrebirth/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+ 
+		<h1>Statistics</h1>
+
+		Last updated: 4/3/2016 (v4.0)
+		<br><br>
+
+		<div class="subheader">
+
+			<select id="ship_id" onChange="change_ship();">
+				<option value="0" selected>---</option>
+					<option value="1">Albion Skunk</option>
+					<option value="89">Arawn</option>
+					<option value="60">Artio</option>
+					<option value="109">Assault URV</option>
+					<option value="32">Balor</option>
+					<option value="42">Betaver</option>
+					<option value="64">Birog</option>
+					<option value="19">Boann</option>
+					<option value="107">Boarding Pod</option>
+					<option value="80">Bonescout</option>
+					<option value="102">Bulk Carrier</option>
+					<option value="65">Camulos Raider</option>
+					<option value="67">Camulos Sentinel</option>
+					<option value="66">Camulos Vanguard</option>
+					<option value="108">Cargolifter URV</option>
+					<option value="10">Carrier</option>
+					<option value="75">Cennelath</option>
+					<option value="110">Construction URV</option>
+					<option value="88">Construction Vessel</option>
+					<option value="86">Construction Vessel AL</option>
+					<option value="85">Construction Vessel DV</option>
+					<option value="87">Construction Vessel OL</option>
+					<option value="106">Consumer Compact Craft</option>
+					<option value="105">Crew & Equipment Carrier</option>
+					<option value="35">Daito</option>
+					<option value="74">Domelch</option>
+					<option value="82">Drostan</option>
+					<option value="37">Dwalin</option>
+					<option value="5">Escape Pod</option>
+					<option value="71">Eterscel Raider</option>
+					<option value="73">Eterscel Sentinel</option>
+					<option value="72">Eterscel Vanguard</option>
+					<option value="11">Fedhelm</option>
+					<option value="68">Foltor Raider</option>
+					<option value="70">Foltor Sentinel</option>
+					<option value="69">Foltor Vanguard</option>
+					<option value="94">Fulmekron</option>
+					<option value="98">Gangrene Chaser</option>
+					<option value="38">Gigurum Bulk</option>
+					<option value="36">Gigurum Container</option>
+					<option value="39">Gigurum Energy</option>
+					<option value="43">Gigurum Liquid</option>
+					<option value="52">Golem</option>
+					<option value="55">Hayabusa</option>
+					<option value="24">Heavy Sul</option>
+					<option value="31">Hermod</option>
+					<option value="63">Hesus</option>
+					<option value="41">Hymir</option>
+					<option value="100">I</option>
+					<option value="104">Industrial Surveillance Craft</option>
+					<option value="33">K</option>
+					<option value="34">Katana</option>
+					<option value="9">Lepton</option>
+					<option value="23">Light Sul</option>
+					<option value="96">Lyramekron</option>
+					<option value="93">Lyranea</option>
+					<option value="83">M</option>
+					<option value="76">Maelchon</option>
+					<option value="101">Maintenance & Engineering Craft</option>
+					<option value="45">Mercancias Bulk</option>
+					<option value="47">Mercancias Container</option>
+					<option value="46">Mercancias Energy</option>
+					<option value="44">Mercancias Liquid</option>
+					<option value="21">Midir</option>
+					<option value="56">Moebius</option>
+					<option value="84">N</option>
+					<option value="62">Nechtan</option>
+					<option value="40">Nudung</option>
+					<option value="49">Nyanae Bulk</option>
+					<option value="51">Nyanae Container</option>
+					<option value="50">Nyanae Energy</option>
+					<option value="48">Nyanae Liquid</option>
+					<option value="95">Olmekron</option>
+					<option value="8">Onil Gas</option>
+					<option value="7">Onil Mineral</option>
+					<option value="57">Orlam</option>
+					<option value="59">Ossian</option>
+					<option value="54">P</option>
+					<option value="22">Rahanas Bulk</option>
+					<option value="28">Rahanas Bulk & Liquid</option>
+					<option value="25">Rahanas Container</option>
+					<option value="29">Rahanas Container & Energy</option>
+					<option value="27">Rahanas Energy</option>
+					<option value="30">Rahanas Liquid</option>
+					<option value="26">Sanahar Container</option>
+					<option value="92">Scaldis</option>
+					<option value="20">Sequana</option>
+					<option value="81">Skull Crusher</option>
+					<option value="15">Stromvok</option>
+					<option value="12">Styrvok Bulk</option>
+					<option value="13">Styrvok Bulk & Liquid</option>
+					<option value="14">Styrvok Container</option>
+					<option value="17">Styrvok Container & Energy</option>
+					<option value="16">Styrvok Energy</option>
+					<option value="18">Styrvok Liquid</option>
+					<option value="97">Sucellus</option>
+					<option value="99">Super-Freighter</option>
+					<option value="58">Talorcan</option>
+					<option value="90">Taranis</option>
+					<option value="111">TF/X Utility Craft</option>
+					<option value="91">Titurel</option>
+					<option value="103">Traffic & Riot Control Craft</option>
+					<option value="77">Triath Raider</option>
+					<option value="79">Triath Sentinel</option>
+					<option value="78">Triath Vanguard</option>
+					<option value="53">Unidentified Flying Object</option>
+					<option value="61">Vasio</option>
+					<option value="6">Zepp</option>
+
+			</select>
+
+			&nbsp;&nbsp;&nbsp;
+
+			<label><input name="stat_type" onclick="Load_stats('weapon');" type="radio"> Weapons</label>
+			<label><input name="stat_type" onclick="Load_stats('engine');" type="radio"> Engines</label>
+			<label><input name="stat_type" onclick="Load_stats('shield');" type="radio"> Shields</label>
+			<label><input name="stat_type" onclick="Load_stats('missile');" type="radio"> Missiles</label>
+
+		</div>
+
+
+
+		<div id="wep_stats" style="min-height: 300px;"></div>
+
+
+
+		<script src="/modules/sorttable.js"></script>
+
+		<script>
+
+		var last_load 	= '';
+		var ship_id	= 0;
+
+		function get_ship_id()
+		{
+			// get value from select
+			var select_box 	= document.getElementById('ship_id');
+			ship_id 	= select_box.options[select_box.selectedIndex].value;
+		}
+
+		function Load_stats(ship_stat)
+		{
+
+			get_ship_id();
+
+			// once loaded, stop repeat clicks reloading the page
+			if ((ship_stat != last_load) && (ship_id > 0))
+			{
+				http1 = new XMLHttpRequest();
+
+				// ----------------
+
+				http1.open('GET', 'get.php?id='+ship_id+'&type='+ship_stat, true);
+				last_load = ship_id +'_'+ ship_stat;
+
+				// ----------------
+
+				http1.onreadystatechange=function() 
+				{
+					if(http1.readyState == 4)
+					{
+						//load html
+						document.getElementById('wep_stats').innerHTML = http1.responseText;
+
+						//reset sortable
+						forEach(document.getElementsByTagName('table'), function(table)
+						{
+							if (table.className.search(/\bsortable\b/) != -1) 
+								sorttable.makeSortable(table);
+						});
+
+						sorttable.innerSortFunction.apply(document.getElementById('data_name'), []);
+
+					}
+				}
+
+		  		http1.send(null);
+			}
+
+		}
+
+		function change_ship()
+		{
+
+			var old_ship_id = ship_id;
+			get_ship_id();
+
+			if (old_ship_id != ship_id)
+			{
+				var ele = document.getElementsByName('stat_type');
+
+				for(var i=0;i<ele.length;i++)
+					ele[i].checked = false;
+
+				document.getElementById('wep_stats').innerHTML = '';
+			}
+		}
+		</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0015 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

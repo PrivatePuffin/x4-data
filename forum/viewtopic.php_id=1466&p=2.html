@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>X: Rebirth version 4.00 : X: Rebirth - Roguey's Forum</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="X: Rebirth version 4.00, X: Rebirth, gaming, roguey">
+		<META NAME="Description" CONTENT="X: Rebirth version 4.00 on the X: Rebirth forum board.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/forum/viewtopic.php?id=1466&p=2">
+		<meta property="og:description" content="X: Rebirth version 4.00 on the X: Rebirth forum board.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="X: Rebirth version 4.00 : X: Rebirth">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/forum/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/forum/"><img src="/forum/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #79B4BD;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #79B4BD;">
+				<li class="icon" style="background-color: #79B4BD">&nbsp;</li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+
+			<br>
+			
+			<span style="font-size: 9pt;">
+				<img src="/forum/images/icons/home.gif" alt="Home"><a href="/forum/" class="nav_link"> Board Index</a> &#187; 
+				<a href="/forum/cat.php?id=1" class="nav_link">X Universe</a> &raquo; 
+				<a href="viewforum.php?id=20" class="nav_link">X: Rebirth</a> &raquo; 
+				<a href="/forum/viewtopic.php?id=1466" class="nav_link">X: Rebirth version 4.00</a>
+			</span>
+			<br><br>
+			
+			<div style="float: right; padding: 8px; font-size: 10pt;">
+				
+			</div>
+			
+			<h1 style="clear: none;">X: Rebirth version 4.00</h1>
+			<br>
+
+			<br>
+
+		<div class="post_container" id="13433">
+		
+			<div class="post_header" style="background-color: #9bffff;">
+				<div style="float: right;" id="post_buttons_13433">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1" class="admin">
+					<img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Roguey</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				<img src="/users/badges/tv/reddwarf-smeg.gif" alt="User Badge">
+				<div class="custom_title"><a href="/users/locations/" style="color: black;"><img src="/users/flags/united-kingdom.gif" alt="flag" style="float: left; margin-left: 4px; border: 0;">United Kingdom</a></div>
+				<div class="custom_title">Please insert pizza!</div>
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13433">Sounds like egosoft are still very active patching XR. In the past they havnt gone as far as version 4.0 with any other of their projects. Thanks for letting me know.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13435">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13435">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1767" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Orbot</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13435"><div class="quote">To those who have already bought the game maybe you should re-download if only for a relevant opinion, good or bad...I play both ELITE and REBIRTH ... Neither perfect, but one offers more variation  <br><cite>- birdtable</cite></div><br>This is definitely good times for people who like space games. I&#39;m playing X Rebirth and Star Citizen but I will definitely give Elite a new change at some point.<br><br>X Rebirth engine has progressed well and hopefully they are able to use OpenGL renderer on all platforms soon and start to move to Vulkan over time.<br><br>Star Citizen 2.2 PTU release is near and it seems it is going to be <i>huge</i> what comes to features. Star Citizen PU 2.1.2 is already impressive and leading the way if you ask me. It doesn&#39;t mean you couldn&#39;t enjoy other space games at the same time <img src="/forum/images/smilies/smile.gif" alt="Smile"></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13440">
+		
+			<div class="post_header" style="background-color: #9bffff;">
+				<div style="float: right;" id="post_buttons_13440">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1" class="admin">
+					<img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Roguey</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				<img src="/users/badges/tv/reddwarf-smeg.gif" alt="User Badge">
+				<div class="custom_title"><a href="/users/locations/" style="color: black;"><img src="/users/flags/united-kingdom.gif" alt="flag" style="float: left; margin-left: 4px; border: 0;">United Kingdom</a></div>
+				<div class="custom_title">Please insert pizza!</div>
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13440">I guess ill have to look into v4.0 when it comes out; I did have a look at 3.61 on my youtube channel, although the aim was to somewhat set things right (I was pretty mad at XR when posting my earlier relook). </span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13443">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13443">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13443">Thanks for mentioning your 3.61 video. I didn&#39;t know about it and shall have to give it a viewing.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13447">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13447">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1335" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">birdtable</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13447">Grinned when I saw the confusion over controls (Youtube 3.61), I am playing Elite, Rebirth and just started on Squadron 42 (Star Cit)..Somebody called J.Harshaw on Ego is trying to get a link between Player and Producer, give the man his due he is trying.... <br>Did not fancy Star Citizen but thought solo in Squadron 42 might be OK but it is a bit delicate at present...Will you be doing any research into Squadron 42 ...??? hopefully yes.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13449">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13449">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13449">Annnnnnd, the final stretch begins with a Release Candidate. At ~230* entries overall, it&#39;s a bit of a monster.<br><br>*Excluding issues introduced and fixed within b4.00, and improvements to things introduced within b4.00.<br><br><div class="quote"><br>â€¢ RC1 Improved balancing, timing and behaviour of Pirate ship groups. <br>â€¢ RC1 Improved shielding of drone launch pad for Balor. <br>â€¢ RC1 Fixed some zones not being visible from inside nearby highway. <br>â€¢ RC1 Fixed visibility range of huge asteroid in Verdant Profit. <br>â€¢ RC1 Fixed external camera view on mass traffic ships aborting when zooming out too far. <br>â€¢ RC1 Fixed external target view being zoomed out far too much on some ships. <br>â€¢ RC1 Fixed cockpit camera movement not working directly after loading a savegame. <br>â€¢ RC1 Fixed missing icon for selected mass traffic ship in external target view in some situations (problem introduced in 4.00). <br>â€¢ RC1 Fixed obstructed target elements when docked at Teladi capital ships. <br>â€¢ RC1 Fixed several issues with mission guidance involving highways. <br>â€¢ RC1 Fixed stations not always being connected to each other with mass traffic if there is more than one highway nearby. <br>â€¢ RC1 Fixed case where having the auto pilot follow a jumping capital ship could make the player end up in an invalid position. <br>â€¢ RC1 Fixed engines on small ship wrecks sometimes appearing not to be wrecked even though they are wrecked and do not function. <br>â€¢ RC1 Fixed relative movement when entering the Skunk&#39;s back room. <br>â€¢ RC1 Fixed trading menus not remembering previous sort settings. <br>â€¢ RC1 Fixed equip drone/missile trades not updating when scheduled. <br>â€¢ RC1 Fixed rounding issue in trade price display. <br>â€¢ RC1 Fixed escape pods immediately self-destructing. <br>â€¢ RC1 Fixed ships assigned to a commander not working after receiving a new Captain. <br>â€¢ RC1 Fixed lockboxes dropping useless Boarding Experience seminars (problem introduced in 4.00). <br>â€¢ RC1 Fixed upkeep missions to transfer credits not completing if the wanted amount was reduced. <br>â€¢ RC1 Fixed Game Paused message text not being centered. <br>â€¢ RC1 Fixed throttle feedback sound being played when pressing &#34;full stop&#34; key while in a menu. <br>â€¢ RC1 Fixed menu crash when viewing certain modules of R&#38;D Chem Labs in the Encyclopedia. <br>â€¢ RC1 Fixed huge savegames caused by economy statistics data (problem introduced in 4.00). <br>â€¢ Beta 5 [HoL] Fixed player-owned warehouses being magically filled with certain wares and configured to trade these when a manager is assigned. <br></div></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13472">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13472">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13472"><div class="quote"><br>â€¢ RC2 Added several new in-game tutorials.<br>â€¢ RC2 Improved visibility of target arrows in external view on bright backgrounds. <br>â€¢ RC2 Improved radar range of all CVs from 12km to 32km. <br>â€¢ RC2 Improved mission guidance. <br>â€¢ RC2 Fixed external view camera getting too close to the player ship (problem introduced in 4.00). <br>â€¢ RC2 Fixed incorrect throttle setting when returning from the Skunk&#39;s back room while being dragged along by a capital ship. <br>â€¢ RC2 Fixed trade ships remaining passive when new planned trips are added while undocking after last planned trip. <br>â€¢ RC2 Fixed capital ships losing combat drones that tried to follow enemies into highways. <br>â€¢ RC2 Fixed erratic autopilot movement when flying near station&#39;s surface elements. <br>â€¢ RC2 Fixed inventory ware entries not being marked as read in the encyclopedia. <br>â€¢ RC2 Fixed &#39;Withdraw from Battle&#39; order not properly working in some situations. <br>â€¢ RC2 Fixed several cases of lost combat drones launched from capital ships. <br>â€¢ RC2 Fixed player owned escort capital ships having wrong behaviour when their commander&#39;s captain is replaced. <br>â€¢ RC2 Fixed rare cases of ships teleporting after giving new fly orders if they were moving previously. <br>â€¢ RC2 Fixed some cases of area damage not working correctly. <br>â€¢ RC2 Fixed follow behavior for squad ships, where occasionally bumped the Skunk. <br>â€¢ RC2 Fixed Minimum Recommended Budget for drones/missiles sometimes not updating correctly. <br>â€¢ RC2 Fixed builder ships not being able to receive wares from stations in high attention. <br>â€¢ RC2 Fixed transport drones taking too much time to reach their destination. <br>â€¢ RC2 Fixed rare cases of incorrectly positioned elements in menus. <br>â€¢ RC2 Fixed cases where no mission target was displayed. <br>â€¢ RC2 Fixed crosshair not showing mission target arrow. <br>â€¢ RC2 Fixed targeting issues in gamepad mode. <br>â€¢ RC2 Fixed several issues with event monitor during campaign. <br>â€¢ RC2 Fixed too frequent &#34;Incoming missile&#34; warnings. <br>â€¢ RC2 Fixed various cases of ships and other objects that moved too far away from any known zones. <br>â€¢ RC2 Fixed issues with certain savegames taking an excessively long time to load. <br>â€¢ RC2 [HoL] Fixed transitions from local highways into superhighways in Home of Light. <br><br><cite>- &#34;CBJ&#34;</cite></div></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13474">
+		
+			<div class="post_header" style="background-color: #9bffff;">
+				<div style="float: right;" id="post_buttons_13474">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1" class="admin">
+					<img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Roguey</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				<img src="/users/badges/tv/reddwarf-smeg.gif" alt="User Badge">
+				<div class="custom_title"><a href="/users/locations/" style="color: black;"><img src="/users/flags/united-kingdom.gif" alt="flag" style="float: left; margin-left: 4px; border: 0;">United Kingdom</a></div>
+				<div class="custom_title">Please insert pizza!</div>
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13474">so im guessing its due out soon?</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13476">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13476">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13476">25th Feb according to a reply posted on their facebook page.<br><br>https://www.facebook.com/EgosoftGmbH/<br></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13485">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13485">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13485"><div class="quote"><br>• RC3 Fixed collision avoidance being active when controlling a torpedo. <br>• RC3 Fixed ships becoming invisible, especially during escort missions. <br>• RC3 Fixed autoaim being very inaccurate for weapons with a weapon mod (new feature in 4.00). <br>• RC3 Fixed repair drones getting damaged by their owner&#39;s engines. <br>• RC3 Fixed boarded capital ship escorts continuing to escort after boarding. <br>• RC3 Fixed various issues with Ship in Distress and Xenon Incursion missions. <br>• RC3 Fixed pirate station being selected for hacking mission in plot (new feature in 4.00). <br>• RC3 Fixed tutorials placing objects in highways (new feature in 4.00). <br>• RC3 Fixed &#34;collectables&#34; tutorial sometimes getting stuck (new feature in 4.00). <br>• RC3 Fixed flight school not aborting when another tutorial starts (new feature in 4.00). <br>• RC3 Fixed object menu layout with NPC subordinate ships. <br>• RC3 Fixed build upgrade selection not preselecting lines correctly (problem introduced in 4.00). <br>• RC3 Fixed buttons in upkeep section of mission manager menu (new feature in 4.00). <br>• RC3 Fixed trade transactions with outdated amounts (new feature in 4.00). <br>• RC3 Fixed price and profit calculation in trade deal case (new feature in 4.00). <br>• RC3 Fixed green trade deals menu (new feaature in 4.00). <br>• RC3 Fixed missing text for Onil engine. <br>• RC3 Fixed external camera clipping through the playership in highways (problem introduced in 4.00). <br>• RC3 [HoL] Fixed Terracorp not having licence traders. <br><br><cite>- &#34;CBJ&#34;</cite></div><br></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13488">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13488">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=1767" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Orbot</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13488">Steam forums: <a href="http://steamcommunity.com/app/2870/discussions/0/405692758703086976/" target="_blank">Home of Light release announcement in Reddit.</a><br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/o32MgUF-xU8" allowfullscreen></iframe></div><br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/hySENB0kQzw" allowfullscreen></iframe></div></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13489">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13489">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13489">The accompanying guide to 4.0 / HoL is on the Rebirth wiki <a href="http://www.egosoft.com:8292/confluence/pages/viewpage.action?pageId=41419571" target="_blank">here</a>.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13490">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13490">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2933" class="normal">
+					<img src="/users/avatars/Battlestar%20Galactica/74.jpg" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">BigVern</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13490">I see there is a mailshot from Ego this morning announcing the expansion. TBH I&#39;ve been so busy with Fallout 4 the last 2 - 3 months (now on the elusive keep everyone friendly apart from the Institute playthrough) I haven&#39;t touched Rebirth at all. I wonder how the new territories and any plot expansion will meld into the existing story or campaign, or whether you need to start over.<br><br>If it&#39;s reasonably priced on Steam might take a look, if only to get away from Preston Garvey and his, &#34;There&#39;s a settlement that needs our help...&#34; for a bit.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13491">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13491">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=2692" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Sparks</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13491">Lore-wise, the DLC is consistent with gate shutdown theme although in this case, the 3 included systems were connected to each other for at least some time before Albion connected with DV.<br><br>Campaign-wise, it is the same as for TTO DLC in that the gates to the HoL DLC don&#39;t open until after the gate to DV opens. Similarly, you are able to use the HoL DLC with ongoing saves. Although personally, I found the experience of exploring the HoL DLC in a fresh start without a pimped out Skunk or armada lots of fun.<br><br><br>Edit: Fixed wrong timepoint for gate opening during the plot.</span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+		<div class="post_container" id="13492">
+		
+			<div class="post_header">
+				<div style="float: right;" id="post_buttons_13492">
+					
+				</div>
+				
+				<img src="/images/icons/clock_i.gif" style="float: left; padding-right: 4px;"> Posted 5 years ago.
+			</div>
+			
+
+			<div class="post_left">
+				<a href="/users/profile.php?id=4127" class="normal">
+					<img src="/images/Img_Logo_None.gif" alt=" avatar" style="border: none; height: 50px; width: 50px;"><br>
+					<b style="font-size: 0.8em;">Beaniebaby4000</b>
+				</a>
+				<br>
+				
+				
+
+				<br><br>
+				
+				
+				
+				
+			</div>
+			
+			<div class="post_right">
+			
+				<div class="post_text">
+					<span id="post_msg_13492">Just saw a post regarding HoL, just started playing again. Hopefully this will be alot easier to play. Looking forward to it. <img src="/forum/images/smilies/smile.gif" alt="Smile"></span>
+				</div>
+				<br>
+				
+				
+			</div>
+			
+			
+			
+		</div>
+
+			<div style="width: 100%; text-align: center; font-size: 10pt;"><a href="viewtopic.php?id=1466&amp;p=1">&laquo; Previous</a>
+ | <b>Page:</b> <a href="viewtopic.php?id=1466&amp;p=1" class="page_box_off">1</a>
+<b class="page_box_on">2</b>
+<a href="viewtopic.php?id=1466&amp;p=3" class="page_box_off">3</a>
+ | <a href="viewtopic.php?id=1466&amp;p=3">Next &raquo;</a>
+</div>
+			
+			<br style="clear: both;"><br>
+	<b>You need to log-in to post here.</b><br>
+
+
+			<script src="/modules/syntaxhighlight.js"></script>
+
+			<script>FmtCodeBlocks();</script>
+			
+			<script>
+				// store when editing
+				var old_buttons 	= new Array();
+				var http_edit		= new XMLHttpRequest();
+				
+				function inline_editor(obj_type, obj_id, page)
+				{
+					
+					// store if not set
+					if (old_buttons[obj_id] == null)
+					{
+						old_buttons[obj_id] = document.getElementById('post_buttons_'+obj_id).innerHTML;
+						
+						document.getElementById('post_buttons_'+obj_id).innerHTML	= '';
+						
+						// get UBB code from database
+						http_edit.open('GET', '/forum/ajax/get_post.php?obj_type='+obj_type+'&obj_id='+obj_id, true);
+						http_edit.onreadystatechange=function() 
+						{
+							if ( (http_edit.readyState == 4) && (http_edit.status==200) )
+							{
+								// add support for the old type of editing (not inline)							
+								document.getElementById('post_msg_'+obj_id).innerHTML = '<textarea style="width: 100%; height: 250px;" id="post_editor_'+obj_id+'">'+http_edit.responseText+'</textarea><br><div style="float: right;"><a href="./edit.php?obj_type='+obj_type+'&amp;obj_id='+obj_id+'&amp;p='+page+'" class="smalllink">&raquo; full editor</a></div><input type="button" value="Update post" style="padding: 12px;" onclick="inline_save(\''+obj_type+'\', '+obj_id+', '+page+');">';
+							} 
+						}
+						
+						http_edit.send(null);
+					}
+				}
+	
+				
+				function inline_save(obj_type, obj_id, page)
+				{
+					
+					// fix for & in post data string
+					var postdata		= 	'message='+encodeURIComponent(document.getElementById('post_editor_'+obj_id).value)+
+											'&obj_id='+obj_id+'&obj_type='+obj_type;
+		
+					// open up
+					http_edit.open('POST', './ajax/update_post.php', true);
+					
+					//Send the proper header information along with the request
+					http_edit.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+				
+					http_edit.onreadystatechange=function()  
+					{
+					
+						if( (http_edit.readyState == 4) && (http_edit.status==200) )
+						{
+							document.getElementById('post_msg_'+obj_id).innerHTML  = http_edit.responseText;
+						}
+					}
+					
+					// send
+					http_edit.send(postdata);
+					
+					// change the buttons back
+					document.getElementById('post_buttons_'+obj_id).innerHTML 	= old_buttons[obj_id];
+					
+					// clear
+					old_buttons[obj_id] = null;
+				}
+				
+			</script>
+<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00651 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

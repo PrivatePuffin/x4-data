@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Elite Dangerous board - Roguey's Forum</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="Elite Dangerous, gaming, roguey">
+		<META NAME="Description" CONTENT="In this area, post about Elite Dangerous are found.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/forum/viewforum.php?id=36">
+		<meta property="og:description" content="In this area, post about Elite Dangerous are found.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Elite Dangerous board">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/forum/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/forum/"><img src="/forum/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #79B4BD;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #79B4BD;">
+				<li class="icon" style="background-color: #79B4BD">&nbsp;</li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+
+	
+		<br>
+		
+		<span style="font-size: 9pt;">
+			<img src="/forum/images/icons/home.gif" alt="Home"> <a href="/forum/" class="nav_link">Board Index</a> &raquo;
+			<a href="/forum/cat.php?id=2" class="nav_link">Gaming</a> &raquo; <a href="viewforum.php?id=36" class="nav_link">Elite Dangerous</a>
+		</span>
+
+		<br><br>
+		
+		<h1>Elite Dangerous board</h1>
+		<br>
+<div style="width: 100%; height: 220px; background-color: #000000; background-size: cover; background-position-y: 35%; text-align: center; background-repeat:no-repeat; background-image: url('/forum/images/tab/elite-dangerous.jpg');"></div>
+
+
+		<table class="board_table">
+		<tr>
+			<th colspan="2"></th>
+			<th>Replies</th>
+			<th colspan="2">Last Post</th>
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="query re navlock - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1705" class="cat_link" style="font-size: 1.0em;">query re navlock</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=5807" target="_blank"><b>Bazr</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_5807_avatar.jpg" alt="Bazr avatar" title="Last posted by Bazr, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=5807" target="_blank" class="normal">Bazr</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 weeks ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="json format - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1703" class="cat_link" style="font-size: 1.0em;">json format</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=9213" target="_blank"><b>Geometer</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">4</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=9213" target="_blank" class="normal">Geometer</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 1 month ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Roguey, about the Crusader/Chieftain - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1700" class="cat_link" style="font-size: 1.0em;">Roguey, about the Crusader/Chieftain</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=5630" target="_blank"><b>Warchild</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="can&#039;t pay bounty on me ??? - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1701" class="cat_link" style="font-size: 1.0em;">can&#039;t pay bounty on me ???</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=9069" target="_blank"><b>EEMPIRE</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=9069" target="_blank" class="normal">EEMPIRE</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="where to buy cobra mk IV , is not in the systems i - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1699" class="cat_link" style="font-size: 1.0em;">where to buy cobra mk IV , is not in the systems i</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=9069" target="_blank"><b>EEMPIRE</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">5</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=9069" target="_blank" class="normal">EEMPIRE</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="What have you been doing 2020 - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1678" class="cat_link" style="font-size: 1.0em;">What have you been doing 2020</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=1790" target="_blank"><b>JayVee</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"> <a href="viewtopic.php?id=1678&amp;p=1" class="page_box_off">1</a>  <a href="viewtopic.php?id=1678&amp;p=2" class="page_box_off">2</a>  <a href="viewtopic.php?id=1678&amp;p=3" class="page_box_off">3</a> &#8230; <a href="viewtopic.php?id=1678&amp;p=4" class="page_box_off">4</a></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">54</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_5807_avatar.jpg" alt="Bazr avatar" title="Last posted by Bazr, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=5807" target="_blank" class="normal">Bazr</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 2 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Best way to make money - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1698" class="cat_link" style="font-size: 1.0em;">Best way to make money</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=8804" target="_blank"><b>Bloodmass8</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">6</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_5807_avatar.jpg" alt="Bazr avatar" title="Last posted by Bazr, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=5807" target="_blank" class="normal">Bazr</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 3 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="What have you been up to in Elite? - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1485" class="cat_link" style="font-size: 1.0em;">What have you been up to in Elite?</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=411" target="_blank"><b>Sinxar</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"> <a href="viewtopic.php?id=1485&amp;p=1" class="page_box_off">1</a>  <a href="viewtopic.php?id=1485&amp;p=2" class="page_box_off">2</a>  <a href="viewtopic.php?id=1485&amp;p=3" class="page_box_off">3</a>  <a href="viewtopic.php?id=1485&amp;p=4" class="page_box_off">4</a>  <a href="viewtopic.php?id=1485&amp;p=5" class="page_box_off">5</a>  <a href="viewtopic.php?id=1485&amp;p=6" class="page_box_off">6</a>  <a href="viewtopic.php?id=1485&amp;p=7" class="page_box_off">7</a>  <a href="viewtopic.php?id=1485&amp;p=8" class="page_box_off">8</a>  <a href="viewtopic.php?id=1485&amp;p=9" class="page_box_off">9</a> &#8230; <a href="viewtopic.php?id=1485&amp;p=47" class="page_box_off">47</a></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">692</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_5807_avatar.jpg" alt="Bazr avatar" title="Last posted by Bazr, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=5807" target="_blank" class="normal">Bazr</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 3 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Anaconda Ship launched fighters - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1697" class="cat_link" style="font-size: 1.0em;">Anaconda Ship launched fighters</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=8804" target="_blank"><b>Bloodmass8</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=8804" target="_blank" class="normal">Bloodmass8</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Best trade I&rsquo;ve found - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1696" class="cat_link" style="font-size: 1.0em;">Best trade I&rsquo;ve found</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=8804" target="_blank"><b>Bloodmass8</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">4</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=8804" target="_blank" class="normal">Bloodmass8</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="First attempt at a build - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1695" class="cat_link" style="font-size: 1.0em;">First attempt at a build</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=8759" target="_blank"><b>RexRaglan</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">3</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_5807_avatar.jpg" alt="Bazr avatar" title="Last posted by Bazr, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=5807" target="_blank" class="normal">Bazr</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 5 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="I&#039;m new around here - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1694" class="cat_link" style="font-size: 1.0em;">I&#039;m new around here</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=8759" target="_blank"><b>RexRaglan</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">8</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=8759" target="_blank" class="normal">RexRaglan</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 6 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Help with type-10 build for LTD mining. - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1689" class="cat_link" style="font-size: 1.0em;">Help with type-10 build for LTD mining.</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=8175" target="_blank"><b>BioProof</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">2</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=8388" target="_blank" class="normal">RomanSharpe</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 9 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Adding Objects to planets - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1690" class="cat_link" style="font-size: 1.0em;">Adding Objects to planets</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=8100" target="_blank"><b>HNSxSKY</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">4</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 10 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Factions gives 404 - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1688" class="cat_link" style="font-size: 1.0em;">Factions gives 404</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=8075" target="_blank"><b>waTTana</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">0</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">---</td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Ship Building upgrade? - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1682" class="cat_link" style="font-size: 1.0em;">Ship Building upgrade?</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=7993" target="_blank"><b>Scarecrow7170</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">12</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 11 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Agronomic Treatment in trade helper - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1685" class="cat_link" style="font-size: 1.0em;">Agronomic Treatment in trade helper</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=8075" target="_blank"><b>waTTana</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 11 months ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Creating a ship build - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1670" class="cat_link" style="font-size: 1.0em;">Creating a ship build</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=7481" target="_blank"><b>xboss456</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">15</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"><img src="/users/avatars/Uploaded/user_1_avatar.jpg" alt="Roguey avatar" title="Last posted by Roguey, 51 years ago." style="border: none; height: 40px; width: 40px;"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1" target="_blank" class="admin">Roguey</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 1 year ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="Advanced Docking Computer - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1669" class="cat_link" style="font-size: 1.0em;">Advanced Docking Computer</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=7542" target="_blank"><b>solrac42</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">1</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">by <a href="/users/profile.php?id=1790" target="_blank" class="normal">JayVee</a><br><span style="font-size: 9pt;"><img src="./images/icons/status_bad.gif"> 1 year ago.</span></td>
+			
+		</tr>
+
+		<tr class="hover">
+			<td style="width: 34px;"><img src="/images/buttons/document.gif" style="border: none; height: 32px; width: 32px" alt="The Casual Crew - Elite Dangerous"></td>
+
+			<td style="padding: 6px 2px; line-height: 13pt;">
+				
+				<a href="viewtopic.php?id=1668" class="cat_link" style="font-size: 1.0em;">The Casual Crew</a><br>
+
+				<span class="smalltext">by <a href="/users/profile.php?id=6275" target="_blank"><b>dexatron</b></a></span>
+				
+				<div style="float: right; padding-right: 12px;"></div>
+			</td>
+
+			<td style="width: 10%; text-align: center; line-height: 13pt; padding: 6px 2px;" class="bt-bg1">
+				<span style="font-size: 1.0em;">0</span><br>				
+				<span style="font-size: 9pt;">replies</span>
+			</td>
+			
+
+			<td style="width: 5%; text-align: center; padding: 6px 2px;" class="bt-bg2"></td>
+			<td style="width: 20%; font-size: 10pt; line-height: 13pt;" class="bt-bg2">---</td>
+			
+		</tr>
+
+		</table>
+
+		<br>
+
+		<div id="last"></div>
+
+		<table style="width: 100%">
+		<tr>
+			<td style="width: 20%"></td>
+
+			<td style="text-align: center; padding: 4px;">
+&laquo; Previous | <b>Pages</b> <b class="page_box_on">1</b><a href="viewforum.php?id=36&amp;p=2" class="page_box_off">2</a><a href="viewforum.php?id=36&amp;p=3" class="page_box_off">3</a><a href="viewforum.php?id=36&amp;p=4" class="page_box_off">4</a><a href="viewforum.php?id=36&amp;p=5" class="page_box_off">5</a><a href="viewforum.php?id=36&amp;p=6" class="page_box_off">6</a><a href="viewforum.php?id=36&amp;p=7" class="page_box_off">7</a><a href="viewforum.php?id=36&amp;p=8" class="page_box_off">8</a> | <a href="viewforum.php?id=36&amp;p=2">Next &raquo;</a></td>
+
+			<td style="width: 20%; text-align: center">
+</td>
+
+		</tr>
+		</table>
+<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00181 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

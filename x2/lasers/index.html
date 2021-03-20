@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Laser index - Roguey's X2 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="database, list, lasers, gaming, roguey">
+		<META NAME="Description" CONTENT="List of all the Lasers">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x2/lasers/">
+		<meta property="og:description" content="List of all the Lasers">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Laser index">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x2/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x2/"><img src="/x2/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #D401DC;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #D401DC;">
+				<li class="icon" style="background-color: #D401DC">&nbsp;</li><li><a href="/x2/">News</a></li><li><a href="/x2/pictures/">Pictures</a></li><li><a href="/x2/videos/">Videos</a></li><li><a href="/x2/help/">Help / Guides</a></li><li><a href="/x2/ships/">Ships</a></li><li><a href="/x2/universe/">Maps</a></li><li><a href="/x2/lasers/">Lasers</a></li><li><a href="/x2/missiles/">Missiles</a></li><li><a href="/x2/shields/">Shields</a></li><li><a href="/x2/wares/">Wares</a></li><li><a href="/x2/mods.php">My Mods</a></li><li><a href="/forum/viewforum.php?id=11">Forum</a></li><li><a href="/x2/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<h1>Lasers</h1><br>
+
+			<table class="board_table sortable">
+			<tr>
+				<th id="data_name">Name</th>
+				<th class="smalltext">S. DMG</th>
+				<th class="smalltext">H. DMG</th>
+				<th class="smalltext">RPM</th>
+				<th class="smalltext">S. DPS</th>
+				<th class="smalltext">H. DPS</th>
+				<th class="smalltext">Speed</th>
+				<th class="smalltext">Range</th>
+				<th class="smalltext">Price</th>
+			</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Alpha Impulse Ray Emitter" class="smalltext"><img src="/x2/images/icons/weapons/wep_aire.gif"> <b>Alpha Impulse Ray Emitter</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="50">50 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="25">25 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="750">750 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="625">625 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="312.5">313 dps</td>
+					<td class="smalltext" sorttable_customkey="260">260 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.468">0.5 km</td>
+					<td class="smalltext" sorttable_customkey="3116">3,116 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Beta Impulse Ray Emitter" class="smalltext"><img src="/x2/images/icons/weapons/wep_bire.gif"> <b>Beta Impulse Ray Emitter</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="100">100 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="37">37 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="500">500 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="833.33333333333">833 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="308.33333333333">308 dps</td>
+					<td class="smalltext" sorttable_customkey="240">240 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.48">0.5 km</td>
+					<td class="smalltext" sorttable_customkey="6232">6,232 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Gamma Impulse Ray Emitter" class="smalltext"><img src="/x2/images/icons/weapons/wep_gire.gif"> <b>Gamma Impulse Ray Emitter</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="200">200 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="50">50 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="300">300 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="1000">1,000 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="250">250 dps</td>
+					<td class="smalltext" sorttable_customkey="240">240 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.48">0.5 km</td>
+					<td class="smalltext" sorttable_customkey="15580">15,580 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Alpha Particle Accelerator Cannon" class="smalltext"><img src="/x2/images/icons/weapons/wep_apac.gif"> <b>Alpha Particle Accelerator Cannon</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="200">200 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="50">50 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="200">200 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="666.66666666667">667 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="166.66666666667">167 dps</td>
+					<td class="smalltext" sorttable_customkey="120">120 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.6">0.6 km</td>
+					<td class="smalltext" sorttable_customkey="31160">31,160 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Beta Particle Accelerator Cannon" class="smalltext"><img src="/x2/images/icons/weapons/wep_bpac.gif"> <b>Beta Particle Accelerator Cannon</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="500">500 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="125">125 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="240">240 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="2000">2,000 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="500">500 dps</td>
+					<td class="smalltext" sorttable_customkey="120">120 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.6">0.6 km</td>
+					<td class="smalltext" sorttable_customkey="62320">62,320 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Gamma Particle Accelerator Cannon" class="smalltext"><img src="/x2/images/icons/weapons/wep_gpac.gif"> <b>Gamma Particle Accelerator Cannon</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="1000">1,000 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="250">250 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="300">300 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="5000">5,000 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="1250">1,250 dps</td>
+					<td class="smalltext" sorttable_customkey="104">104 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.52">0.5 km</td>
+					<td class="smalltext" sorttable_customkey="155800">155,800 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Alpha High Energy Plasma Thrower" class="smalltext"><img src="/x2/images/icons/weapons/wep_ahept.gif"> <b>Alpha High Energy Plasma Thrower</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="1000">1,000 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="900">900 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="315.78947368421">316 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="5263.1578947368">5,263 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="4736.8421052632">4,737 dps</td>
+					<td class="smalltext" sorttable_customkey="120">120 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.72">0.7 km</td>
+					<td class="smalltext" sorttable_customkey="311600">311,600 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Beta High Energy Plasma Thrower" class="smalltext"><img src="/x2/images/icons/weapons/wep_bhept.gif"> <b>Beta High Energy Plasma Thrower</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="1700">1,700 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="1000">1,000 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="333.33333333333">333 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="9444.4444444444">9,444 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="5555.5555555556">5,556 dps</td>
+					<td class="smalltext" sorttable_customkey="120">120 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.72">0.7 km</td>
+					<td class="smalltext" sorttable_customkey="623200">623,200 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Gamma High Energy Plasma Thrower" class="smalltext"><img src="/x2/images/icons/weapons/wep_ghept.gif"> <b>Gamma High Energy Plasma Thrower</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="3000">3,000 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="2000">2,000 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="222.22222222222">222 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="11111.111111111">11,111 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="7407.4074074074">7,407 dps</td>
+					<td class="smalltext" sorttable_customkey="120">120 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.72">0.7 km</td>
+					<td class="smalltext" sorttable_customkey="1246400">1,246,400 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Alpha Phased Shockwave Generator" class="smalltext"><img src="/x2/images/icons/weapons/wep_apsg.gif"> <b>Alpha Phased Shockwave Generator</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="300">300 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="15">15 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="133.33333333333">133 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="666.66666666667">667 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="33.333333333333">33 dps</td>
+					<td class="smalltext" sorttable_customkey="140">140 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.56">0.6 km</td>
+					<td class="smalltext" sorttable_customkey="490770">490,770 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Beta Phased Shockwave Generator" class="smalltext"><img src="/x2/images/icons/weapons/wep_bpsg.gif"> <b>Beta Phased Shockwave Generator</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="500">500 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="20">20 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="100">100 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="833.33333333333">833 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="33.333333333333">33 dps</td>
+					<td class="smalltext" sorttable_customkey="170">170 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.765">0.8 km</td>
+					<td class="smalltext" sorttable_customkey="973750">973,750 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Gamma Phased Shockwave Generator" class="smalltext"><img src="/x2/images/icons/weapons/wep_gpsg.gif"> <b>Gamma Phased Shockwave Generator</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="1000">1,000 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="90">90 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="300">300 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="5000">5,000 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="450">450 dps</td>
+					<td class="smalltext" sorttable_customkey="200">200 m/s</td>
+					<td class="smalltext" sorttable_customkey="1.2">1.2 km</td>
+					<td class="smalltext" sorttable_customkey="1947500">1,947,500 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Mobile Drilling System" class="smalltext"><img src="/x2/images/icons/weapons/wep_mds.gif"> <b>Mobile Drilling System</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="4000">4,000 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="6000">6,000 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="100">100 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="6666.6666666667">6,667 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="10000">10,000 dps</td>
+					<td class="smalltext" sorttable_customkey="40">40 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.24">0.2 km</td>
+					<td class="smalltext" sorttable_customkey="311600">311,600 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Alpha Kyon Emitter" class="smalltext"><img src="/x2/images/icons/weapons/wep_ake.gif"> <b>Alpha Kyon Emitter</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="400">400 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="350">350 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="200">200 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="1333.3333333333">1,333 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="1166.6666666667">1,167 dps</td>
+					<td class="smalltext" sorttable_customkey="1600">1,600 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.8">0.8 km</td>
+					<td class="smalltext" sorttable_customkey="1947500">1,947,500 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Beta Kyon Emitter" class="smalltext"><img src="/x2/images/icons/weapons/wep_bke.gif"> <b>Beta Kyon Emitter</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="1800">1,800 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="1500">1,500 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="120">120 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="3600">3,600 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="3000">3,000 dps</td>
+					<td class="smalltext" sorttable_customkey="2800">2,800 m/s</td>
+					<td class="smalltext" sorttable_customkey="1.4">1.4 km</td>
+					<td class="smalltext" sorttable_customkey="3895000">3,895,000 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Gamma Kyon Emitter" class="smalltext"><img src="/x2/images/icons/weapons/wep_gke.gif"> <b>Gamma Kyon Emitter</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="4500">4,500 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="2250">2,250 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="85.714285714286">86 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="6428.5714285714">6,429 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="3214.2857142857">3,214 dps</td>
+					<td class="smalltext" sorttable_customkey="3600">3,600 m/s</td>
+					<td class="smalltext" sorttable_customkey="1.8">1.8 km</td>
+					<td class="smalltext" sorttable_customkey="5842500">5,842,500 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Mass Driver" class="smalltext"><img src="/x2/images/icons/weapons/wep_md.gif"> <b>Mass Driver</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="0">0 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="12">12 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="1200">1,200 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="0">0 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="240">240 dps</td>
+					<td class="smalltext" sorttable_customkey="480">480 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.6">0.6 km</td>
+					<td class="smalltext" sorttable_customkey="623200">623,200 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Ion Disruptor" class="smalltext"><img src="/x2/images/icons/weapons/wep_id.gif"> <b>Ion Disruptor</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="4000">4,000 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="0">0 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="300">300 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="20000">20,000 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="0">0 dps</td>
+					<td class="smalltext" sorttable_customkey="2000">2,000 m/s</td>
+					<td class="smalltext" sorttable_customkey="0.6">0.6 km</td>
+					<td class="smalltext" sorttable_customkey="584250">584,250 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Alpha Photon Pulse Cannon" class="smalltext"><img src="/x2/images/icons/weapons/wep_appc.gif"> <b>Alpha Photon Pulse Cannon</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="1000">1,000 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="1000">1,000 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="222.22222222222">222 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="3703.7037037037">3,704 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="3703.7037037037">3,704 dps</td>
+					<td class="smalltext" sorttable_customkey="220">220 m/s</td>
+					<td class="smalltext" sorttable_customkey="1.21">1.2 km</td>
+					<td class="smalltext" sorttable_customkey="1168500">1,168,500 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Beta Photon Pulse Cannon" class="smalltext"><img src="/x2/images/icons/weapons/wep_bppc.gif"> <b>Beta Photon Pulse Cannon</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="1500">1,500 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="1250">1,250 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="222.22222222222">222 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="5555.5555555556">5,556 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="4629.6296296296">4,630 dps</td>
+					<td class="smalltext" sorttable_customkey="240">240 m/s</td>
+					<td class="smalltext" sorttable_customkey="1.392">1.4 km</td>
+					<td class="smalltext" sorttable_customkey="2337000">2,337,000 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Gamma Photon Pulse Cannon" class="smalltext"><img src="/x2/images/icons/weapons/wep_gppc.gif"> <b>Gamma Photon Pulse Cannon</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="2500">2,500 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="2000">2,000 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="222.22222222222">222 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="9259.2592592593">9,259 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="7407.4074074074">7,407 dps</td>
+					<td class="smalltext" sorttable_customkey="250">250 m/s</td>
+					<td class="smalltext" sorttable_customkey="1.8">1.8 km</td>
+					<td class="smalltext" sorttable_customkey="4674000">4,674,000 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Lasertower Weapon" class="smalltext"><img src="/x2/images/icons/weapons/wep_lw.gif"> <b>Lasertower Weapon</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="2500">2,500 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="2200">2,200 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="300">300 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="12500">12,500 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="11000">11,000 dps</td>
+					<td class="smalltext" sorttable_customkey="2400">2,400 m/s</td>
+					<td class="smalltext" sorttable_customkey="1.8">1.8 km</td>
+					<td class="smalltext" sorttable_customkey="65">65 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Gamma Kyon Emitter" class="smalltext"><img src="/x2/images/icons/weapons/wep_gke.gif"> <b>Gamma Kyon Emitter</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="3000">3,000 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="2000">2,000 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="85.714285714286">86 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="4285.7142857143">4,286 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="2857.1428571429">2,857 dps</td>
+					<td class="smalltext" sorttable_customkey="3000">3,000 m/s</td>
+					<td class="smalltext" sorttable_customkey="1.5">1.5 km</td>
+					<td class="smalltext" sorttable_customkey="11685000">11,685,000 cr</td>
+				</tr>
+
+		
+				<tr class="hover">
+					<td sorttable_customkey="Unknown Object" class="smalltext"><img src="/x2/images/icons/weapons/wep_uo.gif"> <b>Unknown Object</b></td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="0">0 dmg</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="0">0 dmg</td>
+					<td class="smalltext" style="color: orange;" sorttable_customkey="300">300 rpm</td>
+					<td class="smalltext" style="color: blue;" sorttable_customkey="0">0 dps</td>
+					<td class="smalltext" style="color: green;" sorttable_customkey="0">0 dps</td>
+					<td class="smalltext" sorttable_customkey="2400">2,400 m/s</td>
+					<td class="smalltext" sorttable_customkey="1.2">1.2 km</td>
+					<td class="smalltext" sorttable_customkey="65">65 cr</td>
+				</tr>
+</table>
+<br><span class="subtext">* DPS = Damage per second.<br>* RPM = Rounds per minute.</span><br>
+<script src="/modules/sorttable.js"></script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00125 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

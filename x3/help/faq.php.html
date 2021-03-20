@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Frequently Asked Questions (FAQ) - Roguey's X3 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="faq, Frequently Asked Questions, gaming, roguey">
+		<META NAME="Description" CONTENT="A bunch of FAQ questions on X3, ranging from  ships, stations, upgrades and more.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3/help/faq.php">
+		<meta property="og:description" content="A bunch of FAQ questions on X3, ranging from  ships, stations, upgrades and more.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Frequently Asked Questions (FAQ)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3/"><img src="/x3/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #FF800F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #FF800F;">
+				<li class="icon" style="background-color: #FF800F">&nbsp;</li><li><a href="/x3/">News</a></li><li><a href="/x3/pictures/">Pictures</a></li><li><a href="/x3/videos/">Videos</a></li><li><a href="/x3/help/">Help / Guides</a></li><li><a href="/x3/ships/">Ships</a></li><li><a href="/x3/universe/">Maps</a></li><li><a href="/x3/stations/">Stations</a></li><li><a href="/x3/lasers/">Lasers</a></li><li><a href="/x3/missiles/">Missiles</a></li><li><a href="/x3/shields/">Shields</a></li><li><a href="/x3/wares/">Wares</a></li><li><a href="/x3/mod/">X3 Mod</a></li><li><a href="/x3/edit/">Editing</a></li><li><a href="/forum/viewforum.php?id=1">Forum</a></li><li><a href="/x3/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>X3: Frequently Asked Questions</h1>
+	<ul>
+		<li><a href="faq.php#g-faq">General FAQ</a></li>
+		<li><a href="faq.php#s-faq">Ships FAQ</a></li>
+		<li><a href="faq.php#st-faq">Stations FAQ</a></li>
+		<li><a href="faq.php#u-faq">Upgrades FAQ</a></li>
+		<li><a href="faq.php#o-faq">Other FAQ</a></li>
+	</ul>
+	<br>
+
+	<!-- General section of FAQ -->
+	<!-- ====================== -->
+
+	<a name="g-faq"></a>
+	<h2>General FAQ</h2>
+	<br>
+
+		<div style="padding: 8px 32px;">
+		<b>Does Alt + Tab work? why doesn't it?</b><br>
+		No, it doesn't work before version 1.3 switching between applications will make X3 crash. 
+		However in version 1.4 it should work correctly.
+		<br><br>
+
+		<b>Do I need to patch my game?</b><br>
+		Yes, out of box there is a lot of bugs and Performance problems. Newer patches have
+		fixed many things including bugs, performance issues etc.
+		<br><br>
+
+		<b>How I make X3 play faster?</b><br>
+		Make sure you have AA and AF turn off on your graphic card.
+		Turning off post-filtering (in game) can help improve performance at the cost of graphic detail.
+		<br><br>
+
+		<b>Is X2 and X3 Similar?</b><br>
+		Yes, the only major advancements have been in graphics.
+		<br><br>
+
+		<b>Why is the benchmark option ghosted out?</b><br>
+		Egosoft hasnt enabled it yet, as of version 1.3.
+		<br><br>
+
+		<b>Havnt I heard that music before?</b><br>
+		You probably have, most of it is from either X1/X-Tension or X2.
+		<br><br>
+
+		<b>Is there any way to clear up the HUD?</b><br>
+		Nope, im afraid your stuck with all the boxes.
+		<br><br>
+
+		<b>What does it all mean on the HUD?</b><br>
+		Check <a href="hud.php">here</a>.
+		<br><br>
+
+		<b>Can I make the menu bigger?</b><br>
+		Nope, higher resolution, smaller menus.
+		<br><br>
+
+		<b>Can change the colour of the menus?</b><br>
+		Nope.
+		<br><br>
+
+		<b>Can I increase the in-game brightness?</b><br>
+		Yes, in the video menu, increase the gamma setting.
+		<br><br>
+
+		<b>Is the manual different than the actual game?</b><br>
+		Yes, its not very good manual as was printed well out of date. 
+		There is a lot of things which did not make it to the
+		final game but are in the manual. ie. There is no repair lasers.
+		<br><br>
+
+		<b>Why does "Ore belt" etc. run very slow in verison 1.3?</b><br>
+		Egosoft added in 'mini' rocks, there is no way to turn them off either.
+		</div>
+	  <br><br>
+
+	<a name="s-faq"></a>
+	<h2>Ships FAQ</h2>
+	<br>
+
+		<div style="padding: 8px 32px;">
+		<b>Whats the best ship?</b><br>
+		There simply isn't one ship for every thing. You will find different ships are better for different things.
+		<br><br>
+	
+		<b>What does M6/M5/M4/M3/M2/M1 mean?</b><br>
+		It simply means what class the ship is. M5 is the smallest to M1 is the biggest. M6 is an later added class 
+		which is in between M3 and M2. It would of made more sense renaming the M6 an M3 and knocking down the other 
+		classes, but they didn't do that.
+		<br><br>
+	
+		<b>What does TL/TS/TP mean?</b><br>
+		TL is an large transport ship designed to dock ships and place stations, TS is the trade class ship and TP
+		is an transport ship which is able to carry passengers.
+		<br><br>
+	
+		<b>How do I make my ship faster?</b><br>
+		Buy engine tuning upgrades from any equipment dock. Every ship does have an maximum speed however.
+		<br><br>
+	
+	    <b>How do I lower turning speed?</b><br>
+	    You cant, unless you buy another ship. Best rule is to buy half way and try it (any M3/4/5 ship), any M1/2/6 
+	    just do the maximum.
+	    <br><br>
+	
+	    <b>How do I repair the hull?</b><br>
+	    You have to dock the ship at any shipyard. Then trade with the station and you will be able to repair the hull.
+	    <br><br>
+	
+	    <b>Will the hull auto-repair?</b><br>
+	    There is no auto-hull repair system, however in my mod <a href="../x3mod/">Roguey's X3 Mod</a> 
+		I did code in an auto-hull repair system which you may want to check out. 
+	    <br><br>
+	
+	    <b>Are there 'free' ships?</b><br>
+	    Yes, found further out sectors, However none of the 'free ships' are M6/2/1 or TL/TS/TP ships.
+	    <br><br>
+	
+		<b>Whats an Xenon P?</b><br>
+		A Xenon M6 ship, more information can be found <a href="../get_ship.php?id=51">here</a>. In X2 the Xenons did not have an M6 class ship.
+		<br><br>
+	
+		<b>Ive seen some M1/2 ships saying Beam weapon, is that true?</b><br>
+		No, the 'beam' weapon is more or less the same as the PPC, although it an little different in stats.
+		<br><br>
+	
+	    <b>Does it cost anything to run a ship?</b><br>
+	    No, you dont need to buy thing to run a ship, not even fuel nor to dock. Its all free.
+	    <br><br>
+	
+	    <b>Where can I find a list of all the ships?</b><br>
+	    You can find one <a href="../ships/">here</a>.
+	</div>
+	<br><br>
+
+	<a name="st-faq"></a>	
+	<h2>Stations FAQ</h2>
+	<br>
+
+		<div style="padding: 8px 32px;">
+		<b>How do I build my own?</b><br>
+		Firstly you need to hire an TL ship and ask him to dock at the shipyard. Once his is docked, buy the station and command
+		the captian to move to your new location (which can be in another sector). When finally they are there, ask the captain
+		to "drop my goods" and then press enter to confirm it. Your factory will now be built
+		<br><br>
+	
+		<b>How can I repair my stations hull?</b><br>
+		You will need to find an message in the BBS saying about repairing stations, in the same sector.
+		<br><br>
+
+		<b>How come the pirate station has gone red?</b><br>
+		They dont like you and dont wont you to dock either.
+		<br><br>
+
+		<b>What is an 'trade' station?</b><br>
+		The 'trade' station is normally the main station in each sector. Here you can buy a few upgrades and sell selected 
+		things for the average price.
+		<br><br>
+
+		<b>What is an 'shipyard' station?</b><br>
+		This is the place you buy and sell ships, as well as buy stations.
+		<br><br>
+
+		<b>What is an 'equipment' station?</b><br>
+		This is the place to upgrade your own existing ships, including upgrades, missiles and lasers.
+		<br><br>
+
+		<b>How come they wont let me land?</b><br>
+		Your relationship with people in the current sector isnt high enough. They dont trust you enough to dock with them.
+		<br><br>
+
+		<b>Where can I find a list of all the stations?</b><br>
+		You can find one <a href="../stations/">here</a>.
+		</div>
+	<br><br>
+
+	<a name="u-faq"></a>
+	<h2>Upgrades FAQ</h2>
+	<br>
+
+		<div style="padding: 8px 32px;">
+		<b>What does upgrade software do?</b><br>
+		This allows your onboard computer to do more things (orders).
+		<br><br>
+
+		<b>How do I use the jumpdrive?</b><br>
+		Either press shift + J or on the menu select "Navigation" then "Jump-drive". Jumpdrives need energy cells
+		to add. The amount of energy cells depends on size of jump and the size of the ship.
+		<br><br>
+
+		<b>Where can I get a Jumpdrive from?</b><br>
+		You can get an jumpdrive from either Goner temple, Terracorp HQ or free in the story mode. There is no jump-drive 
+		in the later sectors.
+		<br><br>
+
+		<b>Where can I get best buys/sell locator from?</b><br>
+		Any Teladi equipment dock, both together cost around 40,000cr.
+		<br><br>
+
+		<b>What does UT mean?</b><br>
+		UT means Universal Trader.
+		<br><br>
+
+		<b>How does an universal trade work?</b><br>
+		You have have an fully equipped TS ship (ie. all the software upgrades, jumpdrive and full shields is an good idea).
+		Then once you have brought the "Trade system extension MKIII" for 500,000cr, then give the ship an order of "start
+		sector trade". The UT will start trading in only the same sector and will buy and sell things for profit. You will 
+		notice an set brackets after the pilots name, that is their level. After level 8 they can start using the universe 
+		trader which allows them to trade between sectors, later on they can even use the jumpdrive and repair thier hulls.
+		<br><br>
+
+		<b>How do I escape missiles?</b><br>
+		Depends, some you can out-run, some you can turn nearly in, whist some you you cant. Depends on the missile.
+		<br><br>
+
+		<b>Ive seen some goods on my sector map, can I pick them up?</b><br>
+		Yes, as long you have enough space and have the same or large cargo bay type (S, M, L or XL). Fly other to it and
+		just "O" to open up your cargo bay, then fly at it and you will pick it up. If you have the "Special software upgrade"
+		you can order to ship to either pick up everything in the current sector or just the one item.
+		</div>
+		<br><br>
+
+	<a name="o-faq"></a>
+	<h2>Other FAQ</h2>
+	<br>
+
+		<div style="padding: 8px 32px;">
+		<b>How do I increase my trading rank?</b><br>
+		Either trade more yourself or have more of your own ships trading. People who trade with your stations can
+		also help your ranks.
+		<br><br>
+
+		<b>How do I increase my combat rank?</b><br>
+		You have shoot some more ships down. A captured ship doesnt improve your combat ranks.
+		<br><br>
+
+		<b>How do I increase my relationship to the argon, boron, split etc.?</b><br>
+		Basically more argon, boron etc ships have to dock at your stations, or you to land on thiers. Also shooting down 
+		enemy ships will help as well.
+		<br><br>
+
+		<b>What does an satellite do?</b><br>
+		This allows you to view the sector 'live'. With this you can see any enemy ships, check prices and even trade 
+		with the stations. One other very useful function for many traders is with the best buys/sells locator you can
+		use your satellite to find the best buys and sells from other sectors.
+		<br><br>
+
+		<b>What does an advanced satellite do extra?</b><br>
+		Extra scan range, around double. One minor werid thing, advanced satellite's dont have any shields, whist normal
+		satellites do, not that it makes a lot of differents.
+		<br><br>
+
+		<b>What are fighter drones?</b><br>
+		Theses are little computer control robots that fly and attack enemies. Whist they are weak on there own, in 
+		groups they can be fairly deadly.
+		<br><br>
+
+		<b>What are laser towers?</b><br>
+		Laser towers are basically ships which cant move and have large laser. They are often used to defend locations,
+		however they dont have massive amounts of fire-power so dont think they can destory an M1/2/6 ship.
+		<br><br>
+
+		<b>Can I mine rocks?</b><br>
+		As of patch 1.3+ you can. However it doesnt work the same as X2, no auto-pickup and you must check to see if its
+		'collectable' by pressing "I" when targeted. I think in 1.4 is an auto-pickup.
+		<br><br>
+
+		<b>Can the lotto be won?</b><br>
+		Yes, but the chances are soo small it really makes it not worth it - more chance winning the real one.
+		<br><br>
+
+		<b>Where can I find a list of all the ranks?</b><br>
+		You can find one <a href="rankings.php">here</a>.
+		</div>
+
+		<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00071 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

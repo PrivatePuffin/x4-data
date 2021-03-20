@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The upstairs project 2016 (Index) - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="roof windows, velux windows, project, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/projects/upstairs-2016/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="The upstairs project 2016 (Index)">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>The upstairs project 2016 <span class="smalltext">(Index)</span></h1>
+
+	<div class="fb-like" data-href="http://roguey.co.uk/projects/upstairs-2016/" data-send="false" data-width="350" data-show-faces="false" data-colorscheme="light"></div>
+	<br><br>
+	
+	<h3>Introduction</h3>
+	
+	Way back in 2005, we decided to revamp the upstairs because it wasnt suitable for our needs and required major repair.
+	Originally the room was a bit of an after-thought; being added just after a couple years of the house being built.
+	I guess at the time it was thought the room wouldnt be used all that much, and hence why it was revamped in 2005.
+	However during this time, the windows have been suffering due our weather -
+	the wood has problems and water has got between the glass (its kind-of hard to show you on a picture);
+	<br><br>
+	
+	<a href="./images/large/old-window-state.jpg"><img src="./images/med/old-window-state.jpg" alt="The old windows"></a>
+	<br><br>
+	
+	These windows have done well, as they are getting on for 30 years old now. For quite awhile we have been talking about adding a third window,
+	to improve the amount of light in the middle of the room - two windows isnt enough for this room.
+	So recently (May 2016) we started looking into replacing these windows with new ones.
+	<br><br>
+	
+	The original plan was to simply replace the old windows (Velux GGL-5 - 70x118cm <i>...I think</i>) and add a third one. 
+	After doing some research we thought about replacing the windows with larger ones (Velux SK06 - 114x118cm, in pine), like so;
+	<br><br>
+	
+	<img src="./images/med/plan-3-windows.jpg" alt="The 3 window plan">
+	<br><br>
+	
+	However when we went to order them, we were told the model we had selected were discontinued. 
+	So we went back home and did a lot more research. I had another idea, if we got smaller windows (still larger than the old) we might be able to add four windows.
+	Both solutions worked out around the same cost, and would double the amount of light in the room.
+	It was a hard choice to select between the two, as both had their positive and negative issues. 3 bigger windows was easier to install, but may be kind-of heavy to move..
+	whilst 4 slightly smaller windows would be harder to install but would give much more control and throw light down the staircase (usually quite dark). 
+	In the end I opted for the 4 windows, which should kind-of look like;
+	<br><br>
+	
+	<img src="./images/med/plan-4-windows.jpg" alt="The 4 window plan">
+	<br><br>
+	
+	4 windows will mean pretty much one side of the upstairs being removed. This will cause quite a bit of mess (as plaster board and the ceiling will come down - to change the lighting hopefully). 
+	During this time, the upstairs wont be very habitable so I will move some of my stuff to my bedroom (like the pc). 
+	The plan at the moment is to take a couple of weeks off to do it (whilst the weather is okay - we dont want rain).
+	<br><br>
+	
+	The windows were ordered on <i>21st May 2016</i>, with a delivery date of <i>30th May 2016</i> (a bank holiday for us).
+	I decided to go for 4x Velux GGU 0070 MK06 with duo blinds (I like the idea of having defused, blackout or no blind).
+	I didnt want to go for painted white, as I felt they would be harder to repair in the future.
+	<br><br>
+	
+	Another thing we should look into is the lightning. At the moment we have 22x 50w halogen bulbs - which arent energy efficient and produce a lot of heat.
+	I did want to use LED back in 2005, but it was way too expensive then. Now its a lot cheaper, so hopefully it should be an option.
+	This will require the celling to come down however, as the transformers are in the roof.
+	<br><br>
+	
+	So for me the first task is to start packing away things, and getting the pc downstairs. Here's how the upstairs looked before any work.
+	You see what I mean about being dark in the middle? sorry for the mess. oh and btw, the white tape is to show where either 3 or 4 windows will go (top was for three, lower for 4).
+	<br><br>
+	
+	<a href="./images/large/upstairs-before-work-1.jpg"><img src="./images/med/upstairs-before-work-1.jpg" alt="The upstairs 2016 before any work #1"></a>
+	<a href="./images/large/upstairs-before-work-2.jpg"><img src="./images/med/upstairs-before-work-2.jpg" alt="The upstairs 2016 before any work #2"></a>
+	<br><br>
+	
+	<!-- ------------ End ------------ -->
+
+	<div style="text-align: center;">	
+		<span class="smalltext"><b>Next: The delivery</b></span><br>
+		<a href="page-1.php">Next Page >></a>
+	</div>
+	
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00058 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

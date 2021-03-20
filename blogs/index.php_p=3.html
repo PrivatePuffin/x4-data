@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=3">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 3 of 16)</span></h1><br>
+	
+		<h2>Swapping cases</h2>
+
+
+		<div class="pad">
+			A week or so ago I was looking through my pictures of my PC - sometimes I find it nice to see how its changed over the years. However, I noticed that I had the same case for well over 12 years now. The Thermaltake Xaser III V2000A had been a good case, housing 3 or 4 different PC&#039;s including my current one - a 2600k. Below is a picture from 2003, however I dont know how long I had it before.<br><br><center><a href="/blogs/images/user_1/large/pic_80.jpg"><img src="/blogs/images/user_1/large/pic_80.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>Inside the case was a AMD 3000+, 2x256Mb DDR1 and Winfast A250 Ultra TD GeForce4 Ti 4600. This was the first time I looked at overclocking a system, so I installed 7 high performance fans;<br><br><center><a href="/blogs/images/user_1/large/pic_81.jpg"><img src="/blogs/images/user_1/large/pic_81.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>This was great for awhile and lasting me a couple of years. Computer tech used to change a lot
+			... <a href="/blogs/roguey/blog-107.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Tuesday 18th August, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-107.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-107.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Upgrading the memory of a Acer E15</h2>
+
+
+		<div class="pad">
+			A week or so ago, I got a Acer E15. Everything seemed good apart from one thing for me - 4Gb of ram. I know 4Gb of ram isnt exactly low but for a system that uses the main memory for GPU memory too I thought it needed more (Windows/GPU probably want around a gigabyte each, not leaving much afterwards). I also noticed that the memory was running in single-channel, so just one 4Gb module (so there was speed bonuses too).<br><br>Usually the process of increasing an laptop&#039;s memory is a fairly easy process - simply remove the underside flaps and install the extra memory. However on this laptop Acer decided not to install flaps, meaning to get to the memory you had to dissemble the whole laptop. As you can imagine I was some what hesitant,
+			... <a href="/blogs/roguey/blog-106.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 26th July, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-106.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-106.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; A sneaky Tycoon</h2>
+
+
+		<div class="pad">
+			For the past few days ive been working on my trade rank, seeing it was the 85%+ area. Trading isnt the most fun thing to do, but it brings in money which is always a good thing in Elite: Dangerous. Earlier, I knew I was getting close - as it said I was at 99%. However when I logged back in, I saw this;<br><br><center><a href="/blogs/images/user_1/large/pic_77.jpg"><img src="/blogs/images/user_1/large/pic_77.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>I was thinking that you needed 384/385 million profit, so I was expecting to do a few more runs to be honest. <br><br>Anyway, now begins the long road to Elite for two ranks - combat and trade. As you can see I made a little progress on the combat one.
+			... <a href="/blogs/roguey/blog-105.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 10th July, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-105.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-105.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; A deadly Roguey</h2>
+
+
+		<div class="pad">
+			Its been just under a month now since my last blog, when I reached the combat rating of <i>Dangerous</i>. I was so sick of seeing <i>Master</i>, as all I could think about was <i>I am a master-blaster</i> (as someone kept saying it to me). So I was so glad to get the Dangerous title. I carried on doing kills (probably 75% to 25% - trading, you still make a lot of money from trading). <br><br>Today, I have just reached <b>Deadly</b>! So now just one more title before coming <i>Elite</i>. I know this one will take some time, but atleast each percent I do, I know its getting closer - rather than thinking I have to do another step afterwards (if that makes any sense). Here is my promotion;<br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/AEt3nPv2zwo" allowfullscreen></iframe></div><br><br>However before I
+			... <a href="/blogs/roguey/blog-104.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Saturday 4th July, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-104.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-104.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; Dangerous title</h2>
+
+
+		<div class="pad">
+			Its been a long time since my last blog post on Elite: Dangerous. A lot has changed since - just recently Elite: Dangerous was updated to include powers. However v1.3 hasnt gone with fair share of problems too (some still needing fixing).<br><br>On and off ive been working on the combat rank - trying to progress. I got so fed up seeing <i>Master</i> - which felt <i>lacking</i>. Today - finally I managed to reach <b>Dangerous</b>. <br><br>I know there are commanders out there who have already reached Elite, but im just sharing my progress. I would like to reach Elite one day but I feel that&#039;s a long way off. Thanks for Shadowplay I have the moment recorded;<br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/U4R-MVZYrTU" allowfullscreen></iframe></div><br><br>Anyway, Good luck out there commanders,
+			... <a href="/blogs/roguey/blog-103.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 12th June, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-103.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-103.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>hello everyone</h2>
+
+
+		<div class="pad">
+			hello <a href="http://google.co.uk" target="_blank">everyone</a>
+			... <a href="/blogs/vijaysingh/blog-102.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/vijaysingh/"><b>Vijay Singh</b></a></b> on Saturday 9th May, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/vijaysingh/blog-102.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/vijaysingh/blog-102.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>MSi RMA process</h2>
+
+
+		<div class="pad">
+			In my last blog you may of read that my old MSi 670GTX OC (N670GTX-PM2D2GD5/OC) failed. After some testing I couldnt get the card to work properly again (Windows reported an error 43, and had switched to vgasafe). I also noticed some corruption in the pictures (looking like the graphic-card memory had failed). <br><br>So I started to read around, it looked like MSi did offer 3 year warranties on some cards but I wasnt sure if mine was covered. I checked all over the box and the included paper-work, but nothing about the warranty period. I contacted MSi to see if the card was covered or not, as the card was 2 years and 10 months old. They told me the card was covered and they would do the RMA of the card.<br><br>However, MSi said the card would
+			... <a href="/blogs/roguey/blog-101.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 27th April, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-101.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 3 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-101.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; Elite killed my 670 GTX</h2>
+
+
+		<div class="pad">
+			Probably the first thing you thought when reading the blog title was - is this some spam random post? I wish it was the case.. but my Nvidia 670 GTX has now gone on its last journey after just 2 and half years;<br><br><center><a href="/blogs/images/user_1/large/pic_72.jpg"><img src="/blogs/images/user_1/large/pic_72.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>I havnt been playing Elite for a few days as ive been working on the site, or playing on the PS3. I just recently wrote some code to save the best deals back into the database. So, today I thought ill check a run that the site worked out between <b>Deneb Algedi</b> to <b>V374 Pegasi</b> - it looked promising. So I launched the game, got into the game and set my location to V374 Pegasi. Next I asked for permission to launch, went to pull-up, then a big blue-screen of death. I knew it wasnt a good but I
+			... <a href="/blogs/roguey/blog-100.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 13th April, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-100.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 5 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-100.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=2">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<b class="page_box_on">3</b>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=4">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00466 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Forum statistics - Roguey's Forum</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="index, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/forum/statistics/">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Forum statistics">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/forum/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/forum/"><img src="/forum/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #79B4BD;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #79B4BD;">
+				<li class="icon" style="background-color: #79B4BD">&nbsp;</li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+
+
+		<br>
+		
+		<img src="/forum/images/icons/home.gif" alt="Home"><a href="/forum/" class="nav_link"> Board Index</a>
+		<br><br>
+		
+		<h1>Statistics</h1>
+		<br>
+		
+		<div id="snavbar">
+			<ul id="th_tabs">
+				<li class="taboff"><a href="/forum/">Forum Index</a></li>
+				<li class="taboff"><a href="/forum/recent/">Recent</a></li>
+				<li class="tabon"><a href="/forum/statistics/">Statistics</a></li>
+				<li class="taboff"><a href="/forum/search/">Search</a></li>
+			</ul>
+		</div>
+		<br style="clear: both;">
+		<br>
+
+		<canvas id="forum_stat_graph" width="1080" height="300">No HTML5</canvas>
+		<br><br>
+		
+
+		<div style="float: right; width: 380px; height: 380px;">
+			<canvas id="mp_graph" width="375" height="375">No HTML5</canvas>
+		</div>
+		
+
+		<table class="board_table" style="width: 65%">
+		<tr>
+			<th colspan="2">General</th>
+		</tr>
+		
+		<tr>
+			<td class="table_cell_gray"><b>Forum age</b></td>
+			<td>3,940 days,</td>
+		</tr>
+
+		<tr>
+			<td class="table_cell_gray"><b>Forum system</b></td>
+			<td>Created and coded by <a href="/users/profile.php?id=1" class="admin"><b>Roguey</b></a>,</td>
+		</tr>
+
+		<tr>
+			<td class="table_cell_gray"><b>Supported functions</b></td>
+			<td>
+				UBB code, posting/replying, polls, mod tools <i>(lock, stick, move, split, delete)</i>, subforums, email subscriptions, user groups,
+				AJAX UBB preview,
+			</td>
+		</tr>
+
+		<tr>
+			<th colspan="2">User Statistics</th>
+		</tr>
+		<tr>
+			<td class="table_cell_gray" width="30%"><b>Members</b></td>
+			<td>7,499 (101 active last month) </td>
+		</tr>
+
+		<tr>
+			<td class="table_cell_gray"><b>Moderators</b></td>
+			<td>4 global, 1 Admin</td>
+		</tr>
+
+		<tr>
+			<td class="table_cell_gray"><b>Banned members</b></td>
+			<td>63 banned</td>
+		</tr>
+
+		</table>
+
+		<br>
+		
+		<script src="/modules/js/draw_ml_graph.js"></script>
+		<script src="./draw_most_popular.js"></script>
+		
+		<script>
+			function draw_graphs()
+			{
+				// -------------------
+				// pie-chart
+				// -------------------
+				
+				var pBoards		= new Array('X3: Albion Prelude', 'X3: Terran Conflict', 'Elite Dangerous', 'X: Rebirth', 'Chit-chat', 'Other');
+				var pPosts 		= new Array(3921, 2414, 1748, 1685, 1562, 5214);
+			
+				draw_piechart(pPosts, pBoards);
+			
+				// -------------------
+				// graph
+				// -------------------
+				// data_points
+				var data_points 	= new Array();
+				data_points[0]		= [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+			data_points[1]		= [0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+			data_points[2]		= [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+			data_points[3]		= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+			data_points[4]		= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+				
+				for (var i=0; i<data_points.length; i++)
+					data_points[i].reverse();
+				
+				
+				// x_axis_data
+				var x_axis_data		= ["Sat 20th", "Fri 19th", "Thu 18th", "Wed 17th", "Tue 16th", "Mon 15th", "Sun 14th", "Sat 13th", "Fri 12th", "Thu 11th", "Wed 10th", "Tue 9th", "Mon 8th", "Sun 7th", "Sat 6th", "Fri 5th"];
+				x_axis_data.reverse();
+				
+				// x-axis labels
+				var label_names		= ['Replies', 'Threads', 'Edits', 'Reports', 'Moderation'];
+
+				// colours
+				var line_colours	= ['#40CBE0', '#E09E40', '#80E040', '#F0E040', '#016DFF'];
+
+				
+				// now draw graph (data_points, x_axis_data, label_names, line_colours)
+				draw_ml_graph('forum_stat_graph', data_points, x_axis_data, label_names, line_colours);
+			}
+			window.onload = draw_graphs();
+		</script>
+<br>
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.0198 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=4">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 4 of 16)</span></h1><br>
+	
+		<h2>Elite Dangerous &#187; Cmd Roguey, Chapter 4</h2>
+
+
+		<div class="pad">
+			Boy... its been a long time since my last blog on Elite - almost 4 months! Since then a lot has changed for me - ive switch from an Asp (which was a great ship), to an Anaconda, got 100 million in the bank and have explored the universe a little.<br><br>A little after my last post I found mention of a luxury run called - Tenche. On face-value it didn&#039;t look like it would offer much, but after trying a test run with my Asp seem to be a fast way to make money. The run invoiced picking up performance-enhancers (from the nearby station), then selling them at a nearby point. Whilst the profit wasn&#039;t ground breaking, it meant you could sell them very quickly. So it was time to sell the Asp, for a Type 7. I knew this run would be removed by
+			... <a href="/blogs/roguey/blog-99.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 3rd April, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-99.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-99.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; A new beginning..</h2>
+
+
+		<div class="pad">
+			Reasons to delete your commander and start fresh over..<br><br><b>First try</b><br>The first start of E:D made me think I bought the wrong game!<br>There were too many commands for Elite:Dangerous.<br>So I tried this and that, got confused with the keyboard and finally connected an old TM Hotas-X.<br>Tried the training mission and were unhappy with the game.<br>Controls were so confusing!<br>Spend more hours to find other peoples joystick configuration.<br>Tested them and well played finally E:D.<br>Got again unhappy with multi-used buttons and bought a TM Hotas Warthog.<br><br>Got even MORE unhappy with those beatiful hardware because of configuration and strange device problems.<br>TLTR..<br>Finally I was happy with the configuration and played some
+			... <a href="/blogs/dhlf/blog-98.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/dhlf/"><b>DHLF</b></a></b> on Thursday 29th January, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/dhlf/blog-98.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 5 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/dhlf/blog-98.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; I have never written a blog before..</h2>
+
+
+		<div class="pad">
+			Normally I do not like the idea of posting my personal view in the public.<br>But elite:dangerous is eating my spare time like no other game before.<br>Therefore I will give it a try for this..<br><br>So what am I expected to do with a blog?<br><br>Maybe I should &quot;talk&quot; about my <b>first contact with ELITE</b> in the last CENTURY ^^<br>Games for home-computers were sold on tapes. Yuck!<br>The game box contempts:<br>-a PRINTED manual<br>-a pretty A3 sized poster with the ship types(filled, not wireframed Smile )<br>-the tape itself<br>and a strange plastic lense.<br><br>Because of the possibility to copy tapes easily from one to the other <img src="/forum/images/smilies/tongue2.gif" alt=":p"> they decided to sell the tape with a special &quot;lense&quot; which you had to put on your TV-screen.<br>There was a
+			... <a href="/blogs/dhlf/blog-97.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/dhlf/"><b>DHLF</b></a></b> on Wednesday 28th January, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/dhlf/blog-97.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 5 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/dhlf/blog-97.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; Cmd Roguey, Chapter 3</h2>
+
+
+		<div class="pad">
+			In my last blog I had switched back to an Asp, making me feel some-what safer. However things have changed - the universe is more hostile than ever.<br><br>It seems more human players have taken up the role of pirating - stealing and killing from other players, especially on main trade routes / rares (Lave / Altair areas). Myself, I have lost over 350k in hull damage to them and only narrowing escaping a couple of times. Elite &amp; Dangerous is quickly turning into a PvP game which is not what I wanted. I guess I could head off the beaten track, or play solo but that defeats the point of online play, eh?<br><br><center><a href="/blogs/images/user_1/large/pic_70.jpg"><img src="/blogs/images/user_1/large/pic_70.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br><br>Many months ago, the online mode sounded great - being able to meet other players and maybe party with them
+			... <a href="/blogs/roguey/blog-96.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Saturday 24th January, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-96.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 7 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-96.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; Cmd Roguey, Chapter 2</h2>
+
+
+		<div class="pad">
+			Its been awhile since my last blog, and a lot has changed since. In my last blog I had only just got a Cobra, which had only basic equipment. Ideally I wanted to reach an Asp but it was a long way off.<br><br>Building up money took a long time. I originally wanted to make my money through bounty hunting than trading (I just wanted to do it a different way). I havnt really looked at trading too much (to be honest) as I find it a bit of a mixed bag - sometimes you take goods to a place (which the in-game map says it wants) and yet they dont.<br><br>A little time later <i>Gomorragh</i> told me of <b>rare-trading</b>, so I started to look into it. At first it seemed a little confusing;<br><br>[list][*] Where are they sold? can I work-out some kind-of
+			... <a href="/blogs/roguey/blog-95.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Saturday 17th January, 2015 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-95.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 2 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-95.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; Cmd Roguey, Chapter 1</h2>
+
+
+		<div class="pad">
+			During the past few days ive been playing Elite: Dangerous. The main reason for getting back into it, was that Frontier decided not to wipe our progress at launch. The past our progress has be wiped at very major version.<br><br>So instead of opting for the trade route (easiest and safest way), I went down the combat path - praying on wanted ships. I started with a Sidewinder, installing one pulse laser and one multi-cannon when I could. This did okay but I was looking for something better. At this point I was scouting around looking for wanted ships everywhere.<br><br>Being a alpha/beta backer I noticed we get a free eagle - dubed as a freeagle by some. At first I was a little apprehensive of the Eagle because on paper it didnt look much better -
+			... <a href="/blogs/roguey/blog-94.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 14th December, 2014 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-94.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-94.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Double Rainbow</h2>
+
+
+		<div class="pad">
+			It doesnt happen often... seeing a double Rainbow. However today I managed to get a picture of one just outside my window;<br><br><center><a href="/blogs/images/user_1/large/pic_67.jpg"><img src="/blogs/images/user_1/large/pic_67.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>The one on the left was very strong, whilst the one on the right was hard to see; disappearing now and again. I did think about having a look over there, but isnt that an old-wife&#039;s tale?... there is gold at the end of a Rainbow? 
+			... <a href="/blogs/roguey/blog-93.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Tuesday 18th November, 2014 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-93.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-93.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; A bit further in</h2>
+
+
+		<div class="pad">
+			As you may of seen, ive spending a bit of time playing Elite: Dangerous Beta 1.03. At-first it was a bit confusing (like most games), although Beta&#039;s games are often even more confusing as there can be a lack of documentation, things missing etc. I think now I have gotten the grips of things.<br><br>When you start in your <b>Sidewinder</b> you wonder what to do; so I started to explore, fight and test things - it doesnt matter if you destroy it, as you get another free one. Although being in the weakest ship does mean you have hard start (top-heavy).<br><br><a href="/elite-dangerous/ships/images/ships/sidewinder-mk1.jpg" target="_blank"><img src="/elite-dangerous/ships/images/ships/sidewinder-mk1.jpg" alt="Picture" style="max-width: 825px; width: expression(this.width > 825 ? 825: true); border: 0;"></a><br><br>For awhile, I wrestled with the controls - changing between keyboard, mouse and gamepad until I found something which
+			... <a href="/blogs/roguey/blog-92.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Thursday 28th August, 2014 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-92.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 3 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-92.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=3">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<b class="page_box_on">4</b>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=5">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00202 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Old Websites - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="old websites - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/projects/websites.php">
+		<meta property="og:description" content="A fan-site covering Elite: Dangerous, X-Series and gaming.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Old Websites">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>My Older web-sites</h1>
+
+	My first ever web site was a site designed just for the games I like, such as Worms, Quake 2/3, Unreal Tournament etc. 
+	The site was purely written in html and was created way back in 1999. The site was written fairly basic but it allowed me to learn much about html, 
+	ftp's etc. Here is a picture from the site, however it is missing the pictures as much of it was lost: 	
+	<br><br>
+	<center>
+		<a href="./website_pics/lees_site.jpg"><img src="website_pics/lees_site_s.jpg" border="0"></a>
+	</center>
+	<br>
+
+	The site ran for a bit but got shut down later on because the web host went. A few months later (now in 2000) I thought up an idea for a new web site. 
+	The idea was to have a web site for each game. The whole 'network' of sites would have a common name - Ammo.
+	<br><br>
+
+	The first <i>Ammo</i> site was one called "Tiberian Sun Ammo" for the much awaited "Tiberian Sun". 
+	The site featured some basic information on the game. This site really got off the ground and was shortly closed. 
+	The site looked something like this:
+	<br><br>
+	<center>
+		<a href="./website_pics/tib_sun.jpg"><img src="website_pics/tib_sun_s.jpg" border="0"></a>
+	</center>
+	<br>
+
+
+	The next biggest game to hit the market was Unreal Tournament. I thought about creating "Unreal Ammo". 
+	The site was created but had a mass storage of visitors, this shortly left to its end. 
+	The site never really had massive amounts of content either.
+	<br><br>
+		
+	<center>
+		<a href="./website_pics/ut_ammo.jpg"><img src="website_pics/ut_ammo_s.jpg" border="0"></a>
+	</center>
+	<br>
+
+
+	About half way though the "Unreal Ammo" site I was also making a Quake 2 Mod. I was able to create a fair amount of things in the mod, 
+	such as bots, game improvements, new game modes and more. It turned into such a big thing, that I showed it to my tutors at college. 
+	I thought about getting the mod on the internet so other people could try it. I applied to PlanetQuake on the off-chance of getting hosted, 
+	but never really thought I would. However, I was offered hosting, everyone in my class gave me a cheer, 
+	as I was checking my email at college and told everyone. 
+	<br><br>
+
+	Unsure what site to design, I thought I would "re-use" my older "Unreal Ammo" design. The site was closed and never really got anywhere, 
+	so the design could be re-used. The site came together fairly quickly and was placed on PlanetQuake. 
+	You can see how similar my "Lee Mod" and "Unreal Ammo" in the following picture:
+	<br><br>
+
+	<center>
+		<a href="./website_pics/lees_mod.jpg"><img src="website_pics/lees_mod_s.jpg" border="0"></a>
+	</center>
+	<br>
+
+
+	For awhile my "Lee Mod" site was updated, featuring new versions of the Quake 2 mod and news. After the mod came to a end, 
+	I stopped updating the site and got into my degree course. About half way into the degree course, I thought of a new idea, 
+	a new ammo, "Renegade Ammo".
+	<br><br>
+
+
+	The hip game at the time was called "C&amp;C Renegade". This was the first time command and conquer went into 3D. 
+	I emit I played this game a lot. I heard about how you could change the 'boink' noise in the game to whatever you like. 
+	Once I found out how, I finished "Renegade Ammo" and added a lot of "boinks" to the site. The site shortly grew, and looked something like this:
+	<br><br>
+
+	<center>
+		<a href="./website_pics/ren_ammo.jpg"><img src="website_pics/ren_ammo_s.jpg" border="0"></a>
+	</center>
+	<br>
+
+	I thought again about some better hosting, as I knew how many hits I got on PlanetQuake with my "Lee's Mod" site. 
+	So I emailed PlanetCNC for hosting, shortly after they agreed to host me. This was when the first 'real' "Renegade Ammo" was started. 
+	This was my first site to use PHP. New sections were added to "Renegade Ammo" but the main ones were skins, maps, admin section and boinks. 
+	I was creating my own content, but shortly after I was adding other peoples too. After while I asked for some help update the 
+	site - A "Mats" offered. He was helpping me add much content to the site, whist I code the site and make skins. The "Regenade Ammo" 
+	grew and grew, hits increasing and more megabytes used.
+	<br><br>
+
+	A bit later, westwood (the creators of C&amp;C games) said that they were took over by EA games. 
+	At first this sounded like it was the end of all C&amp;C games, however a new "C&amp;C" was being created - "Generals".
+	<br><br>
+
+	I thought how easy I could create another site for "Generals". Seeing im already hosted on PlanetC&amp;C, I could host it there. 
+	<br><br>
+	I created a new site just for "Generals". The site didnt recieve anywhere near "Renegade Ammo" hits, so I thought of combing the two sites into one. 
+	A  "Command and Conquer Ammo", this was going to lead to my biggest site let.
+	<br><br>
+
+	At first I designed a basic template of how the two sites would looked:
+	<br><br>
+
+	<center>
+		<a href="./website_pics/rengen_ammo.jpg"><img src="website_pics/rengen_ammo_s.jpg" border="0"></a>
+	</center>
+	<br>
+
+	The site was finally put together and came online. My final design looked something like this:
+	<br><br>
+
+	<center>
+		<a href="./website_pics/ammo_old.jpg"><img src="website_pics/ammo_old_s.jpg" border="0"></a>
+	</center>
+	<br>
+
+	I ran the site with a few other people for some time before I started to get bored with the site. The site was taking up so much time and I was losing control of it. Later on some of the "C&amp;C: Ammo" staff wanted me to use someone elses design, whist the design looked good, it make me feel I was losing more control on the site. The site now looked something like this:
+	<br><br>
+
+	<center>
+		<a href="./website_pics/ammo_new.jpg"><img src="website_pics/ammo_new_s.jpg" border="0"></a>
+	</center>
+	<br>
+
+	The site grew and grew, hitting 1,000 unique hits a day and over 4Gb of web space. At the time "C&amp;C Ammo" could offer a 
+	lot more than the "main" PlanetCNC site. I think this was one reason why PlanetCNC pulled hosting on "C&amp;C Ammo". 
+	Shortly after PlanetCNC started to add thier 'own' maps, skins etc. sections.
+	<br><br>
+
+	A long time past, "C&amp;C Ammo" wasnt a site I could easy forget, nor could any of the staff - specially Mats. 
+	I wanted to have a site again, but not lose control like "C&amp;C: Ammo". 
+	I thought about going back to my first ever site and doing something like that again but with the skills I have learnt. 
+	The site however would not become a 'generic' site either, but have my own content. This formed into - "Roguey's Site". 
+	<br><br>
+
+	This site used a fair amount of PHP code from "C&amp;C: Ammo" but only the code I wrote. 
+	This time I could create a far more complex site and keep it all my own, from content, coding and design.
+	<br>
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00067 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

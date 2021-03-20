@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Missile index - Roguey's X3TC site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="database, list, missiles, gaming, roguey">
+		<META NAME="Description" CONTENT="List of all the Missiles">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3tc/missiles/">
+		<meta property="og:description" content="List of all the Missiles">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Missile index">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3tc/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3tc/"><img src="/x3tc/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #F34D4D;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #F34D4D;">
+				<li class="icon" style="background-color: #F34D4D">&nbsp;</li><li><a href="/x3tc/">News</a></li><li><a href="/x3tc/pictures/">Pictures</a></li><li><a href="/x3tc/videos/">Videos</a></li><li><a href="/x3tc/help/">Help / Guides</a></li><li><a href="/x3tc/ships/">Ships</a></li><li><a href="/x3tc/universe/">Maps</a></li><li><a href="/x3tc/missiles/">Missiles</a></li><li><a href="/x3tc/lasers/">Lasers</a></li><li><a href="/x3tc/shields/">Shields</a></li><li><a href="/x3tc/stations/">Stations</a></li><li><a href="/x3tc/wares/">Wares</a></li><li><a href="/x3tc/steam/">STEAM achievements</a></li><li><a href="/forum/viewforum.php?id=2">Forum</a></li><li><a href="/x3tc/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<h1>Missiles</h1><br>
+
+
+			<table class="board_table sortable">
+			<tr>
+				<th id="data_name">Name</th>
+				<th>Group</th>
+				<th>Damage</th>
+				<th>Lifetime</th>
+				<th>Speed</th>
+				<th>Range</th>
+				<th>Price</th>
+			</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Mosquito Missile">
+							<a href="./id-1/">
+								<img src="/x3ap/images/icons/weapons/miss_dmbf.gif"> <b>Mosquito Missile</b>
+							</a>
+						</td>
+						<td>Dmbf</td>
+						<td sorttable_customkey="200">200 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="24.904">24.9 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="590">590.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="14.69336">14.7 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="168.4">168 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Wasp Missile">
+							<a href="./id-2/">
+								<img src="/x3ap/images/icons/weapons/miss_light.gif"> <b>Wasp Missile</b>
+							</a>
+						</td>
+						<td>Light</td>
+						<td sorttable_customkey="1000">1,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="32.375">32.4 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="560">560.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="18.13">18.1 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="1347.2">1,347 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Dragonfly Missile">
+							<a href="./id-3/">
+								<img src="/x3ap/images/icons/weapons/miss_dmbf.gif"> <b>Dragonfly Missile</b>
+							</a>
+						</td>
+						<td>Dmbf</td>
+						<td sorttable_customkey="5000">5,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="75">75.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="250">250.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="18.75">18.8 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="1010.4">1,010 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Silkworm Missile">
+							<a href="./id-4/">
+								<img src="/x3ap/images/icons/weapons/miss_light.gif"> <b>Silkworm Missile</b>
+							</a>
+						</td>
+						<td>Light</td>
+						<td sorttable_customkey="19000">19,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="149.645">149.6 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="190">190.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="28.43255">28.4 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="5052">5,052 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Hornet Missile">
+							<a href="./id-5/">
+								<img src="/x3ap/images/icons/weapons/miss_heavy.gif"> <b>Hornet Missile</b>
+							</a>
+						</td>
+						<td>Heavy</td>
+						<td sorttable_customkey="200000">200,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="167.907">167.9 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="186">186.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="31.230702">31.2 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="10104">10,104 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Disruptor Missile">
+							<a href="./id-6/">
+								<img src="/x3ap/images/icons/weapons/miss_light.gif"> <b>Disruptor Missile</b>
+							</a>
+						</td>
+						<td>Light</td>
+						<td sorttable_customkey="6000">6,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="77.698">77.7 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="514.808">514.8 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="39.999551984">40.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="3368">3,368 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Sting">
+							<a href="./id-7/">
+								<img src="/x3ap/images/icons/weapons/miss_khaak.gif"> <b>Sting</b>
+							</a>
+						</td>
+						<td>Khaak</td>
+						<td sorttable_customkey="4000">4,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="155.494">155.5 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="257.242">257.2 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="39.999587548">40.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="3368">3,368 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Needle">
+							<a href="./id-8/">
+								<img src="/x3ap/images/icons/weapons/miss_khaak.gif"> <b>Needle</b>
+							</a>
+						</td>
+						<td>Khaak</td>
+						<td sorttable_customkey="7450">7,450 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="153.014">153.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="174.274">174.3 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="26.666361836">26.7 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="6736">6,736 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Thorn">
+							<a href="./id-9/">
+								<img src="/x3ap/images/icons/weapons/miss_khaak.gif"> <b>Thorn</b>
+							</a>
+						</td>
+						<td>Khaak</td>
+						<td sorttable_customkey="15000">15,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="112.084">112.1 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="158.61">158.6 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="17.77764324">17.8 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="13472">13,472 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Firefly Missile">
+							<a href="./id-10/">
+								<img src="/x3ap/images/icons/weapons/miss_dmbf.gif"> <b>Firefly Missile</b>
+							</a>
+						</td>
+						<td>Dmbf</td>
+						<td sorttable_customkey="1500">1,500 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="43.359">43.4 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="576">576.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="24.974784">25.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="224.53333333333">225 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Thunderbolt Missile">
+							<a href="./id-11/">
+								<img src="/x3ap/images/icons/weapons/miss_medium.gif"> <b>Thunderbolt Missile</b>
+							</a>
+						</td>
+						<td>Medium</td>
+						<td sorttable_customkey="75000">75,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="400">400.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="195">195.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="78">78.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="8420">8,420 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Tempest Missile">
+							<a href="./id-12/">
+								<img src="/x3ap/images/icons/weapons/miss_medium.gif"> <b>Tempest Missile</b>
+							</a>
+						</td>
+						<td>Medium</td>
+						<td sorttable_customkey="60000">60,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="320.006">320.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="195">195.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="62.40117">62.4 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="13472">13,472 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Hurricane Missile">
+							<a href="./id-13/">
+								<img src="/x3ap/images/icons/weapons/miss_light.gif"> <b>Hurricane Missile</b>
+							</a>
+						</td>
+						<td>Light</td>
+						<td sorttable_customkey="6000">6,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="63.66">63.7 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="471.25">471.3 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="29.999775">30.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="4041.6">4,042 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Cyclone Missile">
+							<a href="./id-14/">
+								<img src="/x3ap/images/icons/weapons/miss_medium.gif"> <b>Cyclone Missile</b>
+							</a>
+						</td>
+						<td>Medium</td>
+						<td sorttable_customkey="23000">23,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="402.971">403.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="148.892">148.9 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="59.999158132">60.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="20208">20,208 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Tornado Missile">
+							<a href="./id-15/">
+								<img src="/x3ap/images/icons/weapons/miss_medium.gif"> <b>Tornado Missile</b>
+							</a>
+						</td>
+						<td>Medium</td>
+						<td sorttable_customkey="50000">50,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="80.001">80.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="312.492">312.5 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="24.999672492">25.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="16840">16,840 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Typhoon Missile">
+							<a href="./id-16/">
+								<img src="/x3ap/images/icons/weapons/miss_heavy.gif"> <b>Typhoon Missile</b>
+							</a>
+						</td>
+						<td>Heavy</td>
+						<td sorttable_customkey="30000">30,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="384.008">384.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="195">195.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="74.88156">74.9 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="33680">33,680 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Firestorm Torpedo">
+							<a href="./id-17/">
+								<img src="/x3ap/images/icons/weapons/miss_heavy.gif"> <b>Firestorm Torpedo</b>
+							</a>
+						</td>
+						<td>Heavy</td>
+						<td sorttable_customkey="1000000">1,000,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="600">600.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="165">165.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="99">99.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="80832">80,832 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Aurora Missile">
+							<a href="./id-18/">
+								<img src="/x3ap/images/icons/weapons/miss_dmbf.gif"> <b>Aurora Missile</b>
+							</a>
+						</td>
+						<td>Dmbf</td>
+						<td sorttable_customkey="8000">8,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="31.83">31.8 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="589">589.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="18.74787">18.7 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="2020.8">2,021 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Remote Guided Warhead">
+							<a href="./id-19/">
+								<img src="/x3ap/images/icons/weapons/miss_light.gif"> <b>Remote Guided Warhead</b>
+							</a>
+						</td>
+						<td>Light</td>
+						<td sorttable_customkey="100000">100,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="560.448">560.4 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="142.742">142.7 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="79.999468416">80.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="26944">26,944 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Beluga Missile">
+							<a href="./id-20/">
+								<img src="/x3ap/images/icons/weapons/miss_medium.gif"> <b>Beluga Missile</b>
+							</a>
+						</td>
+						<td>Medium</td>
+						<td sorttable_customkey="100000">100,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="425.267">425.3 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="211.63">211.6 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="89.99925521">90.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="26944">26,944 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Hammerhead Missile">
+							<a href="./id-21/">
+								<img src="/x3ap/images/icons/weapons/miss_medium.gif"> <b>Hammerhead Missile</b>
+							</a>
+						</td>
+						<td>Medium</td>
+						<td sorttable_customkey="1250000">1,250,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="500">500.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="172">172.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="86">86.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="80832">80,832 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Rapier Missile">
+							<a href="./id-22/">
+								<img src="/x3ap/images/icons/weapons/miss_dmbf.gif"> <b>Rapier Missile</b>
+							</a>
+						</td>
+						<td>Dmbf</td>
+						<td sorttable_customkey="1000">1,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="152.095">152.1 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="657.482">657.5 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="99.99972479">100.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="1347.2">1,347 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Firelance Missile">
+							<a href="./id-23/">
+								<img src="/x3ap/images/icons/weapons/miss_dmbf.gif"> <b>Firelance Missile</b>
+							</a>
+						</td>
+						<td>Dmbf</td>
+						<td sorttable_customkey="4500">4,500 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="99.98">100.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="500.098">500.1 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="49.99979804">50.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="2694.4">2,694 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Wildfire Missile">
+							<a href="./id-24/">
+								<img src="/x3ap/images/icons/weapons/miss_light.gif"> <b>Wildfire Missile</b>
+							</a>
+						</td>
+						<td>Light</td>
+						<td sorttable_customkey="15000">15,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="135.172">135.2 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="246.598">246.6 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="33.333144856">33.3 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="3368">3,368 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Windstalker Missile">
+							<a href="./id-25/">
+								<img src="/x3ap/images/icons/weapons/miss_medium.gif"> <b>Windstalker Missile</b>
+							</a>
+						</td>
+						<td>Medium</td>
+						<td sorttable_customkey="30000">30,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="124.089">124.1 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="179.082">179.1 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="22.222106298">22.2 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="6736">6,736 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Banshee Missile">
+							<a href="./id-26/">
+								<img src="/x3ap/images/icons/weapons/miss_medium.gif"> <b>Banshee Missile</b>
+							</a>
+						</td>
+						<td>Medium</td>
+						<td sorttable_customkey="74000">74,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="96.739">96.7 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="153.14">153.1 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="14.81461046">14.8 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="13472">13,472 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Wraith Missile">
+							<a href="./id-27/">
+								<img src="/x3ap/images/icons/weapons/miss_tr_heavy.gif"> <b>Wraith Missile</b>
+							</a>
+						</td>
+						<td>Tr_heavy</td>
+						<td sorttable_customkey="125000">125,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="300">300.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="170">170.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="51">51.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="33680">33,680 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Poltergeist Missile">
+							<a href="./id-28/">
+								<img src="/x3ap/images/icons/weapons/miss_tr_light.gif"> <b>Poltergeist Missile</b>
+							</a>
+						</td>
+						<td>Tr_light</td>
+						<td sorttable_customkey="1500">1,500 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="50">50.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="250">250.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="12.5">12.5 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="3368">3,368 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Spectre Missile">
+							<a href="./id-29/">
+								<img src="/x3ap/images/icons/weapons/miss_tr_medium.gif"> <b>Spectre Missile</b>
+							</a>
+						</td>
+						<td>Tr_medium</td>
+						<td sorttable_customkey="260000">260,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="130">130.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="190">190.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="24.7">24.7 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="7858.6666666667">7,859 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Tomahawk Heavy Missile">
+							<a href="./id-30/">
+								<img src="/x3ap/images/icons/weapons/miss_bomber.gif"> <b>Tomahawk Heavy Missile</b>
+							</a>
+						</td>
+						<td>Bomber</td>
+						<td sorttable_customkey="625000">625,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="220">220.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="196">196.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="43.12">43.1 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="22453.333333333">22,453 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Hammer Heavy Torpedo">
+							<a href="./id-31/">
+								<img src="/x3ap/images/icons/weapons/miss_torp_capital.gif"> <b>Hammer Heavy Torpedo</b>
+							</a>
+						</td>
+						<td>Torp_capital</td>
+						<td sorttable_customkey="300000">300,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="300">300.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="253">253.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="75.9">75.9 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="50520">50,520 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Flail Barrage Missile">
+							<a href="./id-32/">
+								<img src="/x3ap/images/icons/weapons/miss_af_capital.gif"> <b>Flail Barrage Missile</b>
+							</a>
+						</td>
+						<td>Af_capital</td>
+						<td sorttable_customkey="5000">5,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="120">120.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="486">486.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="58.32">58.3 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="33680">33,680 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Phantom Missile">
+							<a href="./id-33/">
+								<img src="/x3ap/images/icons/weapons/miss_tr_bomber.gif"> <b>Phantom Missile</b>
+							</a>
+						</td>
+						<td>Tr_bomber</td>
+						<td sorttable_customkey="650000">650,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="250">250.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="212">212.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="53">53.0 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="22453.333333333">22,453 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Shadow Missile">
+							<a href="./id-34/">
+								<img src="/x3ap/images/icons/weapons/miss_tr_torp_capital.gif"> <b>Shadow Missile</b>
+							</a>
+						</td>
+						<td>Tr_torp_capital</td>
+						<td sorttable_customkey="755000">755,000 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="330">330.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="245">245.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="80.85">80.9 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="53326.666666667">53,327 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Ghoul Missile">
+							<a href="./id-35/">
+								<img src="/x3ap/images/icons/weapons/miss_tr_af_capital.gif"> <b>Ghoul Missile</b>
+							</a>
+						</td>
+						<td>Tr_af_capital</td>
+						<td sorttable_customkey="6500">6,500 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="125">125.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="450">450.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="56.25">56.3 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="33680">33,680 <span class="smalltext">cr</span></td>
+					</tr>
+
+					<tr class="hover">
+					
+						<td sorttable_customkey="Boarding Pod">
+							<a href="./id-36/">
+								<img src="/x3ap/images/icons/weapons/miss_boardingpod.gif"> <b>Boarding Pod</b>
+							</a>
+						</td>
+						<td>Boardingpod</td>
+						<td sorttable_customkey="5">5 <span style="color: red;" class="smalltext">dmg</span></td>
+						<td sorttable_customkey="160">160.0 <span class="smalltext">secs</span></td>
+						<td sorttable_customkey="480">480.0 <span class="smalltext">m/s</span></td>
+						<td sorttable_customkey="76.8">76.8 <span class="smalltext">km</span></td>
+						<td sorttable_customkey="80832">80,832 <span class="smalltext">cr</span></td>
+					</tr>
+</table>
+<script src="/modules/sorttable.js"></script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00066 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

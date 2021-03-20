@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 1 of 16)</span></h1><br>
+	
+		<h2>Missing PSU bracket - no problem!</h2>
+
+
+		<div class="pad">
+			About a week ago started to look for a new case for my test server &ndash; an old i5 2400 test server. The original case was pretty old and featured one 80mm on the front, and a second 92mm fan on the rear. I wanted a case that supported a Micro ATX motherboard (so hopefully a little shorter than your standard ATX), was compact, no optical drive bays (I don&#039;t really have much use of these any-more) and could fit 120/140mm size fans (as I generally prefer those). The server has only one drive &ndash; an SSD, but could be expanded with another two SSD&#039;s and two hard drives (if required).<br><br>So after much looking around, I came across the <b>Fractal Design Define Mini C</b>. This to me had everything I wanted, including the looks.
+			... <a href="/blogs/roguey/blog-123.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 25th June, 2018 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-123.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-123.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; Triple elite</h2>
+
+
+		<div class="pad">
+			Well.. I have finally reached <b>triple Elite</b>! The last title I had to finish was the exportation rank. This is a very slow title to complete without sightseeing missions. I must salute those who completed the title without them;<br><br><center><a href="/blogs/images/user_1/large/pic_117.jpg"><img src="/blogs/images/user_1/large/pic_117.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>Gaining triple Elite is something I wanted to do, but havnt been in a rush. The first title I got was in combat. I gained this title on 1st Sep 2015. Next title I completed was the trading, on 13th Nov 2015. The trading rank pushed my money up a lot, as you are required to make a billion worth of profit. And finally the last title - exportation on 9th Feb 2017.<br><br>I know I am not the the first commander to gain triple Elite, that was done by Commander One Percent. Techically I
+			... <a href="/blogs/roguey/blog-122.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 10th February, 2017 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-122.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 2 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-122.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; Docked at Jaques Station</h2>
+
+
+		<div class="pad">
+			Around 9:40pm last night I completed the last part of my Colonia trip. This final run was between Polo Harbour to Jaques Station, which lasted around two and half hours. Jaques Station is around 4.7k ly from Polo Harbour. Generally this trip went fairly smoothly, apart from the route planner taking ages to work-out the path.<br><br><center><a href="/blogs/images/user_1/large/pic_116.jpg"><img src="/blogs/images/user_1/large/pic_116.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>The whole journey lasted just under 12 hours, which I think is pretty good (averaging 2,000ly per hour). Anyway, so im finally at Jaques Station, but having a rest for a few days.<br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/oCVx2BSvFV8" allowfullscreen></iframe></div>
+			... <a href="/blogs/roguey/blog-121.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 9th December, 2016 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-121.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-121.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; Made it to Gagarin Gate</h2>
+
+
+		<div class="pad">
+			On the 6th Dec (Tuesday night at around 10:45pm) I started the long journey to <b>Colonia</b>. Just after an hour I reached the first check-point - <i>Hillary Depot</i> (which is around 2,200ly from the <i>home-bubble</i>). So the next day Wednesday I carried on my journey.<br><br>The next place to reach was <b>Amundsen Terminal</b> (in Lagoon Sector NI-S b4-10). This took around an hour and 10 minutes. I must admit my landing wasnt the best because there are some very large mountains which surround the base - making it tricky to land.<br><br><center><a href="/blogs/images/user_1/large/pic_113.jpg"><img src="/blogs/images/user_1/large/pic_113.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>After which it was time to travel to the next location - <b>Eagle&#039;s Landing</b> (Eagle Sector IR-W d1-117). This took another hour and 20 minutes. I did suffer some minor
+			... <a href="/blogs/roguey/blog-120.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Thursday 8th December, 2016 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-120.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-120.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; First check-point reached</h2>
+
+
+		<div class="pad">
+			So last night I started the long trip to Colonia. After an hour I managed to reach the first <i>check-point</i> or base at <b>Blu Thua AI-A c14-10</b>, A 4A (called Hillary Depot). This is around 2,200ly from the <i>home bubble</i>;<br><br><center><a href="/blogs/images/user_1/large/pic_111.jpg"><img src="/blogs/images/user_1/large/pic_111.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>So this puts me around 10% of the way of Colonia. Hopefully the trip will remain easy going. I want to say a big thanks to <i>buht cheeks</i> (I didnt pick the name) giving me advice on my youtube video. If progress remains at this rate, I should reach Colonia in 5 hours of game-play time. How that works out in real-life is another matter.<br><br><center><a href="/blogs/images/user_1/large/pic_112.jpg"><img src="/blogs/images/user_1/large/pic_112.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center>
+			... <a href="/blogs/roguey/blog-119.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Wednesday 7th December, 2016 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-119.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-119.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Elite Dangerous &#187; Heading to Colonia</h2>
+
+
+		<div class="pad">
+			A few days ago I created a video saying that I was interested in traveling to Colonia (the new settlement which is around 22,000ly away from <i>home area</i>). After posting the video, a few commanders said I should make the journey. So for the past few days ive been preparing my ship for the long road ahead. The main thing I had to do is to boost the FSD range (originally I had 21y).<br><br><center><a href="/blogs/images/user_1/large/pic_109.jpg"><img src="/blogs/images/user_1/large/pic_109.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>After gaining favor with an engineer and getting him to upgrade my drive, I am now ready to head out. I will be using the following <a href="/elite-dangerous/ships/anaconda/eq=4b6d6a5d2d8d5cal0067e0066e0136a0146c0065e0065e0243a0204h0081c0011c0251e000000000000000000000000000000000000000000000000000000000000000000000000" target="_blank">build</a>,
+			... <a href="/blogs/roguey/blog-118.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Tuesday 6th December, 2016 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-118.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-118.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Order of 10: Origins Sweepstakes winner?</h2>
+
+
+		<div class="pad">
+			A month ago nvidia ran a competition where you had to solve a series of daily puzzles. In-return you were to be entered into a free-prize draw to win a range of things, including a pc, graphics cards (1070/1080&#039;s) and a couple of games. I solved each puzzle but didnt expect to hear anything again - the chances of winning these things is astronomically small but might as well give it ago eh? someone has to win, right? <br><br>I was contacted on Friday 2nd September 2016 to say I had won fourth prize;<br><br><center><a href="/blogs/images/user_1/large/pic_107.jpg"><img src="/blogs/images/user_1/large/pic_107.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>However to this day (1st October) I havnt been contacted about the prize (a month later). I know its not that big of deal in the grand-scheme of things, but still it would of been nice. Ill update this post
+			... <a href="/blogs/roguey/blog-117.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Saturday 1st October, 2016 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-117.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-117.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Going 7 meters with 4:4:4 / 4k@60hz</h2>
+
+
+		<div class="pad">
+			Over the past week or so, I have been looking into a HDMI cable for 4:4:4 / 4k@60hz with a length of around 6+ meters. I know that over 5 meters is pushing it somewhat; but in my situation I required a longer cable. The first cable I tried was with a standard HDMI cable from ebay (which I found out later was 30AWG). This cable had problems with anything higher than 4:2:0 - every 5-10 seconds the picture would cut-out and it would have corruption (a series of green dots). I also had the 5 meter version of the same cable, which did work without a problem oddly (at 4:4:4, 4:2:2 or RGB). I did try and add a picture here but its hard to show you random flashing pixels on a screen.<br><br>So I had a look around the net, there seem to be two popular
+			... <a href="/blogs/roguey/blog-116.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 14th August, 2016 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-116.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 2 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-116.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+&laquo; Previous | <b>Pages</b> <b class="page_box_on">1</b>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<a href="index.php?p=11" class="page_box_off">11</a>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=2">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00462 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

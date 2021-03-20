@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Recent Blogs - Rogueys website</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="recent blogs - rogueys website, gaming, roguey">
+		<META NAME="Description" CONTENT="View the most recent blogs, created by members.">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/blogs/index.php?p=11">
+		<meta property="og:description" content="View the most recent blogs, created by members.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Recent Blogs">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/"><img src="/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #3B77F1;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #3B77F1;">
+				<li class="icon" style="background-color: #3B77F1">&nbsp;</li><li><a href="/fun/arcade/">Arcade</a></li><li><a href="/blogs/">Blogs</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/users/comments.php">Comments</a></li><li><a href="/projects/">Projects</a></li><li><a href="/users/">Users</a></li><li><a href="/fun/shipnamer/">Ship namer</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/donation/">Donation</a></li><li><a href="/contact/">Contact</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	<h1>Current blog's <span class="smalltext">(Page 11 of 16)</span></h1><br>
+	
+		<h2>Bozo&#039;s Blog #4</h2>
+
+
+		<div class="pad">
+			 <center><a href="/blogs/images/user_21/large/pic_1.jpg"><img src="/blogs/images/user_21/large/pic_1.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center><br><br>I thought would write a quick blog whilst I am d&#039;loading the new X3 <img src="/forum/images/smilies/wink2.gif" alt="Wink"> <br>I will be adding screen shots to my forum page for them, so you lot can see what it is like. If you have any think you want me to take a look at feel free to ask on a forum page. <img src="/forum/images/smilies/biggrin.gif" alt="Big grin"><br><br>I am looking forward to playing AB, just hoping my system can handle it.<br><br>Something that really annoys me is the fact that I have a 50mb/s fiber optic broadband and I am just cracking 5.5mb/s d&#039;load and it had a peak of 6.1mb/s.<br><br>Currently I am on 48% and it is only just making 4.8mb/s big drop.... so I am annoyed. I suppose a lot of people d&#039;load from the Steam servers.<br><br>There is manual available online... I will see if i can get the link
+			... <a href="/blogs/bozo64r/blog-42.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/bozo64r/"><b>bozo64r</b></a></b> on Friday 16th December, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/bozo64r/blog-42.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/bozo64r/blog-42.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>November activity round-up</h2>
+
+
+		<div class="pad">
+			Today (whilst my internet is working), ive been checking to see what activity has been happening on the sites. Here&#039;s a little round-up of the site activity.<br><br>In general there is a reduction of X3/TC visitors (I guess people are finishing the game and moving onto new things/waiting for Rebirth). Glitches in the game I guess haven&#039;t helped.<br><br>The hits on the Rebirth site have dropped also (to between 15-30) - however with very little new Rebirth news I can understand why. Ego have introduced a lot of changes, yet very little news - just a few odd forum posts on the official boards. Even from months ago we still only have a few odd pictures/videos.<br><br>The forum is doing okay, although its seeing around half the amount of viewers
+			... <a href="/blogs/roguey/blog-41.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 20th November, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-41.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-41.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>Bozo&#039;s blog #3 (I think)</h2>
+
+
+		<div class="pad">
+			Hmmm, not much to say but knowing me I can make it into a lot.... ;P<br><br>I have started looking for various things involving the X games that are worthy for the news feed. I will post them from time to time so please take a look. These will mainly involve updates and other major things such as the recent one of the X Wiki shutting down. So please feel free  to look at them <img src="/forum/images/smilies/smile.gif" alt="Smile"><br>I have now become re-addicted to X3TC I am currently going around blowing people up in my Taladi Shrike, I had just completed a mission killing someone, it gave me 5million credits, I was happy as I could finally buy another M3 fighter for my docking bay... I know have enough wing-men to keep me happy. I was just about to jump out of Paranid Prime when a bloody
+			... <a href="/blogs/bozo64r/blog-40.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/bozo64r/"><b>bozo64r</b></a></b> on Tuesday 30th August, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/bozo64r/blog-40.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 6 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/bozo64r/blog-40.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Vanilla madness</h2>
+
+
+		<div class="pad">
+			Since discovering a flaw in X3TC, ive gone a little nuts making PPC&#039;s, then putting them on Orca&#039;s for sale. Money is no longer a problem:<br><br><center><a href="/blogs/images/user_1/large/pic_27.jpg"><img src="/blogs/images/user_1/large/pic_27.jpg" alt="Blog picture" border="0" style="max-width: 850px; width: expression(this.width > 850 ? 850: true);"></a></center> <br><br>The worse bit is that my game is still unmodified - I guess because the flaw is in X3TC then technically its not cheating, nor modding the game: as basically the game has a flaw. If you want to see the flaw, check <a href="/x3tc/spoilers/clonewares.php" target="_blank">here</a>.<br><br>Oh, btw im going to kill everyone in the X-Universe when my armada gets big enough. I already have 8 Borea&#039;s getting ready <img src="/forum/images/smilies/evil.gif" alt="Evil">
+			... <a href="/blogs/roguey/blog-39.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Monday 22nd August, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-39.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-39.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Capturing a Atmospheric Lifter made easy</h2>
+
+
+		<div class="pad">
+			I was floating around Terran space when I noticed the Terran TL - <b>Atmospheric Lifter</b>. It has no guns but 80,000 cargo size, 20k more than the next biggest the <b>Argon Mammoth</b>! This would be great for complex building.<br><br>At first I tried to chase after one in my Split Cobra, however the Terran TL has a slightly higher top speed - I couldnt keep up. I noticed the ship travels to the planet (around 450km from the first location), disappears, then a few moments later reappears at around 110km - heading towards the <b>USC Orbital Supply Base</b>. <br><br>So the Terran TL starts from 100km&#039;ish away from the USC Orbital Supply Base, then travels to the base, stops, sends out drones, then flies to the planet (450km) then
+			... <a href="/blogs/roguey/blog-38.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Sunday 14th August, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-38.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 1 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-38.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; The joining of complexes</h2>
+
+
+		<div class="pad">
+			When you start building your own complex, if like me you keep adding more and more stations until it becomes a messy or so busy its hard to find a place where to add another station.<br><br>There is a 20-25km limit of where you can place station away from a HUB, however there is a way to extend your complex even further by <b>joining</b> complexes together.<br><br>For example, you make complex 1 have all your mines, then make complex 2 with all your food/bio resources and so on. Then you can link all the complex together to form one giant complex. The only rule for joining complex hubs is that they need to be within 20-25km of each other.<br><br>Using this information I have extended my complex to reach nearly across a whole sector:<br><br>
+			... <a href="/blogs/roguey/blog-37.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Friday 12th August, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-37.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-37.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; Getting your own Hyperion</h2>
+
+
+		<div class="pad">
+			In X3TC the old Hyperion from X3 has been changed from an M7 to a M6. Most of the stats are the same, apart from the shields (1GJ) and few other things. This makes the Hyperion one of the best normal M6&#039;s to have (it can also dock at any station). However this ship can not be brought, so its boarding time!<br><br>In my game I used an M7M with some Flail missiles and 1 boarding pod. I used Flails missiles to bring down the shields to under 10% - You could use Hammer&#039;s but they do too much damage.<br><br>Once you got the shields down, send 1 boarding pod (with 5 marines). If you send any more marines, they wont attack and will eject into space. After sending the Boarding pod -it might be worth sending just a few more Flails to stop the
+			... <a href="/blogs/roguey/blog-36.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Wednesday 10th August, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-36.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-36.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+	
+		<h2>X3TC &#187; My real boarding success</h2>
+
+
+		<div class="pad">
+			A while back I saved up the money for an M7M rather than a M7, because I wanted to try and board ships. I also wanted to know why M7M were so costly. Ive invested a lot of money into training my marines, with little return.<br><br>Today I got 20 marines ready after much training and thought ill have a go at a Boreas, seeing its a ship I really wanted. I didnt hold out much hope but figured ill have a go anyway.<br><br>So, I changed my race relationship to hostile to the Argons, then started to fire Hammer Heavy&#039;s at the ship - so to bring down the shield and make the ship go hostile. As soon as the ship went hostile, I used the jump-drive and moved the nearest gate. Seeing as I had a Split Cobra (which is faster than the Boreas), I turned the
+			... <a href="/blogs/roguey/blog-35.html"><b>Read more</b></a>
+		</div>
+		<br><br>
+
+		<div class="subheader smalltext">
+			<b>Posted by <a href="/blogs/roguey/"><b>Roguey</b></a></b> on Thursday 28th July, 2011 &nbsp; &middot; &nbsp;
+			<a href="/blogs/roguey/blog-35.html#comments"><img src="/images/site/comment.gif" border="0" alt="Comment"> 0 comments</a> &nbsp; &middot; &nbsp;
+			<div class="fb-like" data-href="https://roguey.co.uk/blogs/roguey/blog-35.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+
+		<div class="bar"></div><br>
+
+	</table>
+	<br>
+	
+
+	<div style="text-align: center;">
+<a href="index.php?p=10">&laquo; Previous</a> | <b>Pages</b> <a href="index.php?p=1" class="page_box_off">1</a>
+<a href="index.php?p=2" class="page_box_off">2</a>
+<a href="index.php?p=3" class="page_box_off">3</a>
+<a href="index.php?p=4" class="page_box_off">4</a>
+<a href="index.php?p=5" class="page_box_off">5</a>
+<a href="index.php?p=6" class="page_box_off">6</a>
+<a href="index.php?p=7" class="page_box_off">7</a>
+<a href="index.php?p=8" class="page_box_off">8</a>
+<a href="index.php?p=9" class="page_box_off">9</a>
+<a href="index.php?p=10" class="page_box_off">10</a>
+<b class="page_box_on">11</b>
+<a href="index.php?p=12" class="page_box_off">12</a>
+<a href="index.php?p=13" class="page_box_off">13</a>
+<a href="index.php?p=14" class="page_box_off">14</a>
+<a href="index.php?p=15" class="page_box_off">15</a>
+<a href="index.php?p=16" class="page_box_off">16</a>
+ | <a href="index.php?p=12">Next &raquo;</a></div>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00207 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

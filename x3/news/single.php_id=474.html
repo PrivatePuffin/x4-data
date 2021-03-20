@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The future of my X - Roguey's X3 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT=", news, gaming, roguey">
+		<META NAME="Description" CONTENT="Hi guys; I know its been awhile since I last posted anything but been thinking through a few things with the x-community">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3/news/single.php?id=474">
+		<meta property="og:description" content="Hi guys; I know its been awhile since I last posted anything but been thinking through a few things with the x-community">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="The future of my X">
+		<meta property="og:image" content="https://roguey.co.uk/news/pics/user_1/large/news_55_b.jpg">
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3/"><img src="/x3/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #FF800F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #FF800F;">
+				<li class="icon" style="background-color: #FF800F">&nbsp;</li><li><a href="/x3/">News</a></li><li><a href="/x3/pictures/">Pictures</a></li><li><a href="/x3/videos/">Videos</a></li><li><a href="/x3/help/">Help / Guides</a></li><li><a href="/x3/ships/">Ships</a></li><li><a href="/x3/universe/">Maps</a></li><li><a href="/x3/stations/">Stations</a></li><li><a href="/x3/lasers/">Lasers</a></li><li><a href="/x3/missiles/">Missiles</a></li><li><a href="/x3/shields/">Shields</a></li><li><a href="/x3/wares/">Wares</a></li><li><a href="/x3/mod/">X3 Mod</a></li><li><a href="/x3/edit/">Editing</a></li><li><a href="/forum/viewforum.php?id=1">Forum</a></li><li><a href="/x3/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+			<h1>The future of my X</h1>
+
+			Tuesday 6th May, 2014
+			<a href="#comments" class="colourlink">
+				<img src="/images/site/comment.gif" alt="Comments" style="border: 0;">
+				19 comments
+			</a><br>
+			<b>Posted by <a href="/users/profile.php?id=1" class="admin">Roguey</a>, Global Admin</b>.<br>
+
+
+
+			<div class="pad">
+				Hi guys; I know its been awhile since I last posted anything but been thinking through a few things with the x-community. The x-games have been a big part of my life. <br><br>I noticed the x-games when I brought their first game; <b>X: Beyond the frontier</b>. At the time I was looking for another Elite game but there wasnt any. The two big-names (David Braben and Ian Bell) had a large disagreement which carried on for many years - putting a halt to the all rumoured <i>Elite 4</i>. Many other companies out there thought space-sim games were a lost cause.<br><br>This strange space-sim was a bit <i>wacky</i>, with its large graphics (but easy to read menu) and very cool computer-voice (I still think its one of the best);<br><br><div style="text-align: center;"><img src="/news/pics/user_1/large/news_55_b.jpg" alt="News picture 55" style="border: none;"></div><br><br>So after completing the plot (if I remmeber correctly) there were some special wares dropped in space. Whilst the game was a bit limited (one ship) and broken economy (Solar-power plants produced endless wares for very little), it had potential. I knew it wasnt created by the biggest development crew out there, so I was willing to forgive.<br><br>So I was delighted to hear when <b>X-Tension</b> was released. One of the most <i>limiting things</i>; the one-player-ship was removed (capitals weren&#39;t flyable) but a lot of things made much more sense. In X-BTF the capital ships flew faster than the fighters. Later on during X-Tension life-cycle, support was added to fly TL&#39;s ships (wicked).<br><br><div style="text-align: center;"><img src="/news/pics/user_1/large/news_56_b.jpg" alt="News picture 56" style="border: none;"></div><br><br>At this point, the x-games were gaining a lot of respect from me and egosoft were building the next big project <b>X2: The Threat</b>. For me this is when the x-games became serious. X2 offered a lot more than its predecessor; from graphics, ships, new enemy - the khaak, and more things to-do etc. Still to this day X3AP/TC still borrows bits from X2 (suns, objects etc.).<br><br>At this point, I started feeling like I wanted to support them. So I started to build an X2 site. My web-knowledge was rather limited at the time, but I thought it would help. During this time, egosoft announced an add-on pack to X2. This was later cancelled, for full-game: <b>X3</b>.<br><br><a href="/x3/pictures/med/pic_39_med.jpg" target="_blank"><img src="/x3/pictures/med/pic_39_med.jpg" alt="Picture" style="max-width: 1024px; width: expression(this.width > 1024 ? 1024: true); border: 0;"></a><br><br>When X3 came-out, things were far from perfect. At one stage the HUD would take 50% of your frame-rate, plus there were a lot of buggy plots. It was kind-of expected that Egosoft struggled to make non-buggy plots. In time everything was fixed, and X3 turned into a fantastic game. This is when I really started to support them with an X3 site, and later with <b>Roguey X3 Mod</b>. I had some incredible help on the way - a big thanks to them.<br><br>X3 held the fort for along time until <b>X3: Terran Conflict</b> came out. At this point I was little sadden by the release. This time egosoft <i>borrowed</i> content from X3 mod-teams. So for awhile I held-back developing the site/mod - since my mod was gaining support but yet never asked for anything. I was later asked to have my mod included in the super-box but egosoft decided later to drop mods from the super-box (probably due to size).<br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/ro3LcyZ0Lu4" allowfullscreen></iframe></div><br><br>I waited on X3TC, and finally after some-time created a X3TC site. This time I added other peoples guides rather than create my own. I felt there was some already great guides out there, just that a few had broken images etc. So rather than write my own, I could offer them a better home... I still think a forum isnt the best place for a guide, as they can get quickly lost in the pile of threads.<br><br>Time past, and things started to go quiet. However on the <b>20th April, 2011</b>, <a href="/xrebirth/news/single.php?id=278" target="_blank">Egosoft announce <i>X Rebirth</i></a>. This was strange in some-ways has few days before I created a <b>Fair well video</b> (on the 17th, with a speech version on the 18th). Maybe it was just me, but seem very close.<br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/qvKyt6e0iic" allowfullscreen></iframe></div><br><br>It was exciting to hear about a new x-game - something that would brake the mould that egosoft had fell into. Since X2, egosoft had kept bolting onto its engine but didnt really push the series forward technically. Sure we had more ships to fly, more sectors etc. but there were no more gameplay features as such. Some of us wanted to see advancement in the series.<br><br>Time went by and egosoft fell silent. After all the hype of a new-game - nothing. This is when we got to XMas, when out the blue <b>X3: Albion Prelude</b> was released. No warning at all.<br><br><div style="text-align: center;"><img src="/news/pics/user_1/large/news_57_b.jpg" alt="News picture 57" style="border: none;"></div><br><br>At this time egosoft gave away free-copies to super-box users which meant <i>us</i> fans who had brought each instalment didnt get a free copy. So after all the support I gave them, I went onto their Facebook page and said my peace (I wasnt happy they were giving free copies to people but not me, after all the years of supporting them) - I wouldnt of minded if I had to buy a copy, if everyone had did.... A few days later I was given a copy - when I started to work on my X3AP site. This time I would do all the guides myself. <br><br>After playing X3AP for awhile, I felt it was rushed. Fortunately the community behind egosoft, it was later patched - including more plots, fixes, ships etc. For me, it could probably be one of the best x-games yet.<br><br>As time flies (as it does), I kept an eye on the news of X3AP. One random day I saw someone sending in some food, were all the staff would join into the chat-room (normally empty). This is when CBJ invited me to be apart of DevNet, as I was interested helping with Egosoft next instalment - X-Rebirth.<br><br>A few weeks past and I was in, now part of DevNet and a tester of X-Rebirth. I thought I could help test the game and offer my advice about things. However my first initial impression was... it looks big? and very, very different? is this even a x-game? However being very confused about it, I started working on a site to make some sense out of the game. Quite a few of the testers had access to the site, as I felt it helped them to get around - egosoft&#39;s documentation was rather lacking at this time.<br><br>During this time my enthusiasm wavered; I found it hard to like X-Rebirth but stuck in there in the hopes that things would improve. When it was getting near release I started rebuilding the site, so to help other people, seeing as I didnt <i>get-it</i>. Maybe suddenly egosoft would bolt on another big module or something - I didnt know, but I didnt think it would get released like that.<br><br>As we all know X-Rebirth release was probably one of the worse. I couldnt believe the amount of hate messages I was seeing. It didnt help their site died at the time (sending the wrong message to gamers). At this time I felt it was important to write <a href="/gaming/game-442/review.html" target="_blank">my own review</a>, as I didnt want to give players the wrong message about the game (I pride myself on being open, honest and fair). However all this activity was short lived, a few months later everything went back to <i>normal</i>. At the most busiest time had to increase my hosting plan to cope with the extra traffic, but now we back to half the existing plan.<br><br><a href="/blogs/images/user_1/large/pic_59.jpg" target="_blank"><img src="/blogs/images/user_1/large/pic_59.jpg" alt="Picture" style="max-width: 1024px; width: expression(this.width > 1024 ? 1024: true); border: 0;"></a><br><br>I was shocked to learn about all the x-box tags found in the shader files (<a href="/xrebirth/news/single.php?id=443" target="_blank">here</a>). I never thought to search through the game-files - I was confused enough! I was told later those tags dont mean much, but still... there is a lot of them! Maybe I over-reacted? but its still hard ignore. Around the same time Diablo 3 suddenly was being launched on the PS3/4 (the 4 skills made sense then; since they can be mapped  to an d-pad).<br><br>So now 6 months later, and I havnt seen a big change. I know we are due another <i>big patch</i> soon, so I will wait until then to decide.. however I feel X-Rebirth needs a major rebuild. During the development I did moan at quite a few people, although after while I stopped (as it felt it was falling on deaf-ears to be honest). I reckon I must of posted between 6-10 pages of stuff - saying what I didnt like with the game (sorry to CBJ for the ear-bashing).<br><br>This is one of the reasons I started a <a href="/x3ap/mod/" target="_blank">X3AP Mod</a> - to make the game how I feel. I was expecting a lot more feedback and help with the mod, much like my older X3 mod but it didnt happen on the same scale. This mod took along time to make, because of a new universe. Once again thanks to those who did help.<br><br><br><div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"><iframe style="position: absolute; width: 98%; height: 98%; left: 0; top: 0; border: 0;" src="//www.youtube.com/embed/5PzNvmKCxV0" allowfullscreen></iframe></div><br><br>This is why I am now deciding whether to ditch future support of the x-games. If I do then wont be supporting egosoft, but will be on the look-out for the next big thing. I would love to be able to work with the developers. My x-sites will remain open regardless btw (just not updated etc.).<br><br>I feel its a shame what things have turned into. It was nice working along side a developer (finally), to build a resource for people at launch. I learnt to hang-in a bit; cause sometimes you can right-off a game too early; take Guild Wars 2 - which I have re-picked up. However unless anything big is planned, I feel the future looks bleak. <br><br>Please let me know what you think, as its now more than ever important to post your comments. thank-you for reading - sorry for the long post but atleast you know how I feel, and why I havnt been responding.
+				<br><br>
+			</div>
+
+			<br>
+<h2 id="comments">Comments</h2>
+
+				<table style="width: 100%; padding: 2px;">
+				<tr>
+					<td class="com_left"><img src="/images/Img_Logo_None.gif" alt="Avatar" style="width: 48px; border: none;"></td>
+					<td class="com_right">To <b>post comments</b> you need to register and log-in.</td>
+				</tr>
+				</table>
+
+				<div id="comment_area"></div>
+				<div id="comment_more" class="table_cell_gray" style="color: #4448FA; text-align: center; margin-top: 16px; cursor: pointer;" onClick="load_comments('next');">&#8650; Load more comments &#8650;</div>
+			
+				<script>
+				
+				// ===================================
+				// Comment JS
+				// ===================================
+				
+				var http_comments 		= new XMLHttpRequest();
+				
+				var db_name				= 'news_474';
+				var page_name			= 'The future of my X';
+				var page_url			= '/xrebirth/news/single.php?id=474';
+				var db_table			= 'roguey_main';
+				
+				var news_id				= 474;
+				var blog_id				= 0;
+				
+				var current_page		= 1;
+				var current_textbox		= 'comment_textarea';
+				var cid					= 'comment_textarea';
+				var page_total			= 2;
+				
+				var last_reply_id		= 0;
+				var user_id				= 0;
+				
+				// -----------------------------------
+				// Edit comment
+				// -----------------------------------
+				
+				function edit_comment_editor(cid)
+				{
+					if (user_id == 0)
+						return;
+					
+					// -------------
+					// blank current comment
+					// -------------
+					
+					document.getElementById('com_div_id_'+cid).innerHTML		= 
+					
+								'<textarea id="com_edit_id_'+cid+'_textarea" rows="1" cols="90" style="width: 95%; padding: 4px 0px;" onkeydown="comment_box_update(\'com_edit_id_'+cid+'\');" placeholder="Your comment"></textarea>'+
+								'<br><br>'+
+								
+								'<input id="com_edit_id_'+cid+'_submit" type="button" value="Update comment" onClick="edit_comment_post('+cid+');" disabled="disabled"> &nbsp; '+
+								'<span style="color: red;" class="smalltext" id="com_edit_id_'+cid+'_error"></span>';
+					
+					// update					
+					current_textbox = 'com_edit_id_'+cid+'_textarea';
+					
+					// -------------
+					// now get UBB code
+					// -------------
+					
+					// start a new AJAX
+					http_post_com = new XMLHttpRequest();
+
+					/// post data to send
+					var postdata		= 	'comment_id='+cid+
+											'&db_table='+encodeURIComponent(db_table);
+
+					// select correct file
+					http_post_com.open('POST', '/modules/comments_get.php', true);
+
+					// send the proper header information along with the request
+					http_post_com.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+					
+					http_post_com.onreadystatechange=function() 
+					{
+						if ( (http_post_com.readyState == 4) && (http_post_com.status==200) )
+						{
+							// change the textarea with UBB code
+							document.getElementById('com_edit_id_'+cid+'_textarea').value = http_post_com.responseText;
+							
+							// now update textarea
+							comment_box_update('com_edit_id_'+cid);
+						}
+					}
+
+					// send the data
+					http_post_com.send(postdata);
+					
+					// stop double-clickers
+					document.getElementById('com_edit_id_'+cid+'_submit').disabled = true;
+				}
+				
+				// -----------------------------------
+				// Post a new edit
+				// -----------------------------------
+				
+				function edit_comment_post(cid)
+				{
+					if (user_id == 0)
+						return;
+					
+					// get variables
+					var comment_txt			= document.getElementById('com_edit_id_'+cid+'_textarea').value;
+
+					// check if empty
+					if (comment_txt.length < 5)
+						return;
+					
+					// start a new AJAX
+					http_edit_com = new XMLHttpRequest();
+
+					/// post data to send
+					var postdata		= 	'comment_txt='+encodeURIComponent(comment_txt)+
+											'&comment_id='+cid+
+											'&db_table='+encodeURIComponent(db_table);
+
+					// select correct file
+					http_edit_com.open('POST', '/modules/comments_edit.php', true);
+
+					// send the proper header information along with the request
+					http_edit_com.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+					
+					http_edit_com.onreadystatechange=function() 
+					{
+						if ( (http_edit_com.readyState == 4) && (http_edit_com.status==200) )
+						{
+							// check for success - successful
+							if (http_edit_com.responseText == 'success')
+							{
+								// now update the comments section
+								load_comments('restart');
+							}
+							
+							else
+								document.getElementById('com_edit_id_'+cid+'_error').innerHTML = http_edit_com.responseText;
+						}
+					}
+
+					// send the data
+					http_edit_com.send(postdata);
+					
+					// stop double-clickers
+					document.getElementById('com_edit_id_'+cid+'_submit').disabled = true;
+				}
+				
+				// -----------------------------------
+				// Reply to comment
+				// -----------------------------------
+				
+				function reply_comment(cid)
+				{
+					if (user_id == 0)
+						return;
+					
+					// move old reply editor
+					if (last_reply_id > 0)
+					{
+						var editor_html	= document.getElementById('com_reply_'+last_reply_id).innerHTML;
+						document.getElementById('com_reply_'+last_reply_id).innerHTML		= '';
+					}
+						
+					else
+						var editor_html	= document.getElementById('comment_editor').innerHTML;
+						
+					
+					document.getElementById('com_reply_'+cid).innerHTML 	= editor_html;
+					document.getElementById('comment_editor').innerHTML		= '';
+					
+					// update id
+					last_reply_id = cid;
+				}
+				
+				// -----------------------------------
+				// Post new comment
+				// -----------------------------------
+				
+				function post_comment()
+				{
+					if (user_id == 0)
+						return;
+					
+					// get variables
+					var comment_txt			= document.getElementById('comment_textarea').value;
+					
+					// start a new AJAX
+					http_post_com = new XMLHttpRequest();
+
+					/// post data to send
+					var postdata		= 	'comment_txt='+encodeURIComponent(comment_txt)+
+											'&reply_id='+last_reply_id+
+											'&db_name='+encodeURIComponent(db_name)+
+											'&page_name='+encodeURIComponent(page_name)+
+											'&page_url='+page_url+
+											'&news_id='+news_id+
+											'&blog_id='+blog_id+
+											'&db_table='+encodeURIComponent(db_table);
+
+					// select correct file
+					http_post_com.open('POST', '/modules/comments_post.php', true);
+
+					// send the proper header information along with the request
+					http_post_com.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+					
+					http_post_com.onreadystatechange=function() 
+					{
+						if ( (http_post_com.readyState == 4) && (http_post_com.status==200) )
+						{
+							// check for success - successful
+							if (http_post_com.responseText == 'success')
+							{
+								// now update the comments section
+								load_comments('restart');
+								
+								// clear
+								document.getElementById('comment_txt').value = '';
+							}
+							
+							else
+								document.getElementById('com_error_msg').innerHTML = http_post_com.responseText;
+						}
+					}
+
+					// send the data
+					http_post_com.send(postdata);
+					
+					// stop double-clickers
+					document.getElementById('comment_submit').disabled = true;
+				}
+				
+				// -----------------------------------
+				// Update comment box (basically sizing)
+				// -----------------------------------
+				
+				function comment_box_update(obj_id) 
+				{
+					// resizing of text-area
+					var textarea = document.getElementById(obj_id+'_textarea');
+
+					a = textarea.value.split('\n');
+					b = 0;
+
+					for (x=0;x < a.length; x++)
+					{
+						if (a[x].length >= textarea.cols) 
+							b+= Math.floor(a[x].length/textarea.cols);
+					}
+
+					b+= a.length;
+
+					textarea.rows = b;
+
+					// remaining characters
+					var com_char_max 		= 2000;
+					var sub_but				= document.getElementById(obj_id+'_submit');
+					var com_char_count		= textarea.value.length;
+					
+					if (com_char_count < 4)
+						sub_but.disabled = true;
+					
+					else if	(com_char_count > com_char_max)
+						sub_but.disabled = true;
+						
+					else
+						sub_but.disabled = false;
+				}
+				
+				// -----------------------------------
+				// load in comments
+				// -----------------------------------
+				
+				function load_comments(action)
+				{
+					// decide on action
+					if (action == 'restart')
+					{
+						document.getElementById('comment_area').innerHTML = '';
+						
+						// check page count
+						if (page_total < 2)
+							document.getElementById('comment_more').style.display = 'none';
+					}
+					
+					else if (action == 'next')
+					{
+						// next page
+						current_page++;
+					
+						// end of comments?
+						if (current_page > page_total)
+						{
+							document.getElementById('comment_more').style.display = 'none';
+							return;
+						}
+					}
+					
+					var rand = Math.random(9999);
+					
+					http_comments.open('POST', '/modules/comments_ajax.php?id='+rand, true);
+					
+					http_comments.onreadystatechange=function() 
+					{
+						if ( (http_comments.readyState == 4) && (http_comments.status==200) )
+						{
+							// load comments into area
+							document.getElementById('comment_area').innerHTML += '<table style="width: 100%; padding: 2px;">'+http_comments.responseText+'</table>';
+						}
+					}
+					
+					/// post data to send
+					var postdata		= 	'db_name='+db_name+
+											'&page='+current_page+
+											'&user_id='+
+											'&user_rights=';
+			
+					http_comments.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+					
+					http_comments.send(postdata);
+					
+					// init meme, if registered viewer
+					if (user_id > 0)
+						init_auto_meme();
+				}
+				
+				// -----------------------------------
+				// MEME section
+				// -----------------------------------
+			
+				var meme_inp_search			= document.getElementById('meme_search_str');
+				var meme_old_search			= '-';
+				
+				var meme_preview_total		= 5;
+				var meme_global_timeout;
+				var meme_top_gifs;
+				
+				var meme_url 				= 'https://api.tenor.com/v1/anonid?key=LIVDSRZULELA';
+				
+				var meme_gTimeout;
+
+				// url Async requesting function
+				function httpGetAsync(theUrl, callback)
+				{
+					// create the request object
+					var xmlHttp = new XMLHttpRequest();
+
+					// set the state change callback to capture when the response comes in
+					xmlHttp.onreadystatechange = function()
+					{
+						if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+						{
+							callback(xmlHttp.responseText);
+						}
+					}
+
+					// open as a GET call, pass in the url and set async = True
+					xmlHttp.open('GET', theUrl, true);
+
+					// call send with no params as they were passed in on the url string
+					xmlHttp.send(null);
+
+					return;
+				}
+
+				// callback for the top 8 GIFs of search
+				function tenorCallback_search(responsetext)
+				{
+					// parse the json response
+					var response_objects = JSON.parse(responsetext);
+
+					// empty
+					meme_top_gifs = null;
+					meme_top_gifs = response_objects['results'];
+					
+					if (meme_top_gifs == null)
+						return;
+
+
+					// add previews
+					for (var i=0; i<meme_preview_total;i++)
+					{
+						
+						if (meme_top_gifs[i] != null)
+							document.getElementById('meme_preview_box').innerHTML += '<img src="'+meme_top_gifs[i]["media"][0]["nanogif"]["url"]+'" alt="" style="cursor: pointer; height: 90px; padding: 2px; border: 1px solid #AFAFAF;" name="preview_memes" onclick="meme_add_to_text('+i+');">\n';
+					}
+						
+					return;
+
+				}
+
+
+				// function to call the trending and category endpoints
+				function meme_search_data(anon_id)
+				{
+				
+					 // stop repeat search
+					 if (meme_inp_search.value == meme_old_search)
+						return;
+						
+					meme_old_search = meme_inp_search.value;
+					
+					// empty
+					document.getElementById('meme_preview_box').innerHTML = '';
+						
+					// set the apikey and limit
+					var apikey = 'LV975UUMSTU9';
+
+					// using default locale of en_US
+					var search_url = 'https://api.tenor.com/v1/search?tag=' + meme_inp_search.value + '&key=' +
+							apikey + '&limit=' + meme_preview_total + '&anon_id=' + anon_id;
+
+					httpGetAsync(search_url,tenorCallback_search);
+
+					// data will be loaded by each call's callback
+					return;
+				}
+
+
+				// callback for anonymous id -- for first time users
+				function tenorCallback_anonid(responsetext)
+				{
+					// parse the json response
+					var response_objects = JSON.parse(responsetext);
+
+					anon_id = response_objects['anon_id'];
+
+					user_anon_id = anon_id;
+
+					// pass on to search_meme_data
+					meme_search_data(anon_id);
+				}
+
+				// SUPPORT FUNCTIONS ABOVE
+				// MAIN BELOW
+
+				function meme_delayed_search ()
+				{
+					
+					// make sure there is something
+					if (meme_inp_search.value == '')
+					 return;		 
+					
+					httpGetAsync(meme_url,tenorCallback_anonid);
+
+					meme_inp_search.onkeypress = function ()
+					{
+						
+						if (meme_global_timeout) 
+							clearTimeout(meme_global_timeout);
+						
+						meme_global_timeout = setTimeout(function () { meme_search_data(anon_id); }, 500);
+					}
+				}
+				
+				function meme_add_to_text(id)
+				{
+					// add meme as picture
+					addtext('[img]'+meme_top_gifs[id]['media'][0]['gif']['url']+'[/img]');	
+
+					// now hide it
+					meme_hide_section();
+				}
+	
+				function meme_toggle_section()
+				{
+					// show or hide section
+					var meme_div = document.getElementById('meme_div_section');
+					
+					if (meme_div.style.display == 'none')
+						meme_div.style.display = 'block';
+					else
+						meme_div.style.display = 'none';
+					
+				}
+				
+				function meme_hide_section()
+				{
+					// show or hide section
+					var meme_div = document.getElementById('meme_div_section');
+					
+					if (meme_div.style.display == 'none')
+						meme_div.style.display = 'block';
+					else
+						meme_div.style.display = 'none';
+					
+				}
+				
+				// -----------------------------------
+				// automatic meme
+				// -----------------------------------
+				
+				function init_auto_meme ()
+				{
+					// handles when user types			
+					var meme_search			= document.getElementById('meme_search_str');
+					
+					meme_search.onkeypress = function ()
+					{
+						if (meme_gTimeout) 
+							clearTimeout(meme_gTimeout);
+						
+						meme_gTimeout = setTimeout(function () { meme_delayed_search (); }, 1500);
+					}
+				}
+				
+				function insertAtCursor(myField, myValue)
+				{
+					//IE support
+					if (document.selection)
+					{
+						myField.focus();
+						sel = document.selection.createRange();
+						sel.text = myValue;
+					}
+					//MOZILLA/NETSCAPE support
+					else if (myField.selectionStart || myField.selectionStart == '0')
+					{
+						var startPos = myField.selectionStart;
+						var endPos = myField.selectionEnd;
+						myField.value = myField.value.substring(0, startPos) + myValue + myField.value.substring(endPos, myField.value.length);
+					} 
+					else
+					{
+						myField.value += myValue;
+					}
+				}
+				
+				function addtext(newtext) 
+				{
+					insertAtCursor(document.getElementById(current_textbox), newtext);
+				}
+			
+				
+				// -----------------------------------
+			
+				window.onload = load_comments('restart');
+				
+				// ===================================
+				</script>
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00118 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>

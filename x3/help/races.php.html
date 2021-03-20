@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Races - Roguey's X3 site</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<META NAME="Keywords" CONTENT="races, gaming, roguey">
+		<META NAME="Description" CONTENT="A list of all the races in X3">
+		<META NAME="Author" CONTENT="Roguey">
+		<META NAME="ROBOTS" CONTENT="ALL">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+		
+		<meta property="og:site_name" content="Roguey.co.uk">
+		<meta property="og:url" content="https://roguey.co.uk/x3/help/races.php">
+		<meta property="og:description" content="A list of all the races in X3">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Races">
+		
+		
+		<link type="text/css" rel="stylesheet" href="/layout/main.css">
+		<link type="text/css" rel="stylesheet" href="/x3/layout/main.css">
+
+
+		<link rel="icon" href="/images/site-icon.gif">
+
+		<link rel="alternate" type="application/rss+xml" href="/news/rss/news.xml" title="Roguey.co.uk RSS Feed">
+
+		<script>
+		
+		var http_cAccept		= new XMLHttpRequest();
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22473597-10']);
+		_gaq.push(['_trackPageview']);
+
+			(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		function dismiss_cookie_notice()
+		{
+			// removes the cookie notice
+			document.getElementById('cookie_notice').style.display = 'none';
+			  
+			// now place a cookie on the user's pc, to say its been accepted (irony)
+			http_cAccept.open('GET', '/modules/accept_cookie_warning.php', true);
+			http_cAccept.send(null);
+		}
+		  
+		function Show_navs ()
+		{
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('top_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+			// get li's
+			var nav_bar		= document.getElementsByClassName('lower_nav_bar')[0];
+			var list 		= nav_bar.getElementsByTagName('li');
+
+			// display/hide
+			for (var i=0; i < list.length; i++)
+			{
+				if (list[i].className != 'icon')
+				{
+					if ((list[i].style.display == 'inline-block') || (list[i].style.display == 'block'))
+						list[i].style.display = 'none';				
+					else
+						list[i].style.display = 'inline-block';
+				}
+			}
+			
+		}
+		
+
+	</script>
+		
+	</head>
+
+<body>
+
+<div class="site-container">
+
+		<div id="cookie_notice" class="top-warning-notice"><span style="float: right; padding: 4px; font-size: 2.0em;"><a href="javascript:void(0);" onclick="dismiss_cookie_notice();" style="color: black;">X</a></span> This site uses cookies to enhance the experience. For more information see our <a href="/privacy-policy/" target="_blank">privacy policy</a>.</div>
+
+		
+		<div class="page-header">
+		
+			<div class="user_option_box">
+		
+		
+			
+			<div id="div_user_options">
+				<div style="padding: 4px; font-weight: bold;">
+					<a href="/users/register/"><img src="/images/site/login.gif" alt="login"> Login / Register</a>
+				</div>
+			</div>
+
+			</div>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/roguey.co.uk/" target="_blank"><img src="/images/icons/facebook.gif" alt="roguey.co.uk on Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCh_kt5x79g8VOMC3SLxnaew" target="_blank"><img src="/images/icons/youtube.gif" alt="roguey.co.uk on YouTube"></a>
+			</div>
+			
+			<div class="logo">
+				<a href="/x3/"><img src="/x3/images/site/logo.gif" alt="Roguey's Site" style="border: none;"></a><br>
+			</div>
+			
+
+			<br style="clear: both;">
+		</div>
+		
+		<div class="page-nav">
+			
+			<ul class="top_nav_bar">
+				<li class="icon" style="background-color: #FF800F;"><a href="javascript:void(0);" onclick="Show_navs();">Menu ☰</a></li><li style="background-color: #3B77F1;"><a href="/">Home</a></li><li style="background-color: #000000;"><a href="/ammo/">Ammo</a></li><li style="background-color: #D401DC;"><a href="/x2/">X2</a></li><li style="background-color: #FF800F;"><a href="/x3/">X3</a></li><li style="background-color: #F34D4D;"><a href="/x3tc/">X3TC</a></li><li style="background-color: #3BAE2F;"><a href="/x3ap/">X3AP</a></li><li style="background-color: #6F9F6F;"><a href="/xrebirth/">X-Rebirth</a></li><li style="background-color: #4830AE;"><a href="/x4/">X4</a></li><li style="background-color: #A98135;"><a href="/elite-dangerous/">Elite: Dangerous</a></li><li style="background-color: #79B4BD;"><a href="/forum/">Forum</a></li>
+			</ul>
+			
+ 			<ul class="lower_nav_bar" style="background-color: #FF800F;">
+				<li class="icon" style="background-color: #FF800F">&nbsp;</li><li><a href="/x3/">News</a></li><li><a href="/x3/pictures/">Pictures</a></li><li><a href="/x3/videos/">Videos</a></li><li><a href="/x3/help/">Help / Guides</a></li><li><a href="/x3/ships/">Ships</a></li><li><a href="/x3/universe/">Maps</a></li><li><a href="/x3/stations/">Stations</a></li><li><a href="/x3/lasers/">Lasers</a></li><li><a href="/x3/missiles/">Missiles</a></li><li><a href="/x3/shields/">Shields</a></li><li><a href="/x3/wares/">Wares</a></li><li><a href="/x3/mod/">X3 Mod</a></li><li><a href="/x3/edit/">Editing</a></li><li><a href="/forum/viewforum.php?id=1">Forum</a></li><li><a href="/x3/links/">Links</a></li>
+			</ul> 
+
+		</div>
+		
+		<div class="content-container">
+		
+			<div class="content">
+		
+			<!-- Content, START -->
+<div class="div_advert">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive-top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7136080688716353"
+     data-ad-slot="4978955514"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+	<h1>Races</h1>
+
+	In X3 there are many different races with their own background story. Not all the races are friendly - some of them are hostile!
+	<br><br>
+
+		<!-- ----------------------------------------- -->
+		<!-- Argon                                     -->
+		<!-- ----------------------------------------- -->
+
+		
+	<h2>Argon</h2>
+	<br>
+
+		<img src="/x2/help/images/logo_argon.gif" align="left" alt="Argon">
+
+				The Argon people are believed to be descends of the Earth people many years 
+				ago. A long time ago the AP Sorja 44 (AP Gunner) was in a battle with the Xenon's
+				near earth. The captain of the AP Sorja 44 lured a large group of Xenon's away from 
+				earth, though an unknown jump gate. The capitan then ordered the destruction of the jumpgate 
+				trapping them and the Xenon's on this side of the galaxy. Shortly after the 
+				pursuing Xenon ships shotdown the AP Gunner somewhere in the known X universe. 
+				Ever since the Argon's have been battling the Xenon's. 
+				<br><br>
+				20 or so years ago a ship believed to be from Earth jumped across the 
+				galaxy without the use of a jumpgate into the X universe. However his jumpdrive 
+				was destroyed. This left the pilot of the ship alone, in a far away galaxy with 
+				no hope of returning home to earth. Many Argon's dont belive this ship was from 
+				earth. The pilot helped to land a major blow to the Xenon's in one battle.
+				<br><br>
+				Shortly after this, the pilot formed Tera-corp to fund his research on returning home
+				to earth. 
+				<br><br>
+				Argon ships very reversible but not being good or bad at anything.
+				<br><br>
+				<b>Learn more</b>
+				  <ul>
+				    <li><a href="../ships/mod-0/race-1/">Argon Ships</a></li>
+				    <li><a href="../stations/type.php?id=Argon">Argon Stations</a></li>
+				  </ul>
+
+		<br>
+
+		<!-- ----------------------------------------- -->
+		<!-- Boron                                     -->
+		<!-- ----------------------------------------- -->
+
+
+	<h2>Boron</h2>
+	<br>
+
+		<img src="/x2/help/images/logo_boron.gif" align="left" alt="Boron">
+				The Boron are a friendly species who live primarily under the sea. Boron ships must be 
+				able to travel under the seas and also into space where awaiting factories supply them 
+				with resources. The Boron normally consider anyone to be a friend, only 
+				fighting if they really have too.
+				<br><br>
+				Tera-Corp and the Boron's are working on drives to enable other races to travel
+				in Boron seas like Boron ships.
+
+				<br><br>
+				<b>Learn more</b>
+				  <ul>
+				    <li><a href="../ships/mod-0/race-2/">Boron Ships</a></li>
+				    <li><a href="../stations/type.php?id=Boron">Boron Stations</a></li>
+				  </ul>
+
+		<br>
+		<!-- ----------------------------------------- -->
+		<!-- Paranid                                   -->
+		<!-- ----------------------------------------- -->
+
+	<h2>Paranid</h2>
+	<br>
+
+		<img src="/x2/help/images/logo_paranid.gif" align="left" alt="Paranid">
+				The correctly called Paranid, are simply paranoid of everyone. In order even to speak to a
+				Paranid pilots have to show good will and prove they can be trusted.
+				<br><br>
+				Paraniod's are known for their advance technology however the same cant be said about thier 
+				hospitality. They see most other races to be inferior, specially human's.
+				<br><br>
+				Paranid ships are fast, powerful and deadly.
+				<br><br>
+				<b>Learn more</b>
+				  <ul>
+				    <li><a href="../ships/mod-0/race-4/">Paranid Ships</a></li>
+				    <li><a href="../stations/type.php?id=Paranid">Paranid Stations</a></li>
+				  </ul>
+		<br>
+		<!-- ----------------------------------------- -->
+		<!-- Pirates                                   -->
+		<!-- ----------------------------------------- -->
+
+	<h2>Pirates</h2>
+	<br>
+
+		<img src="/x2/help/images/logo_pirates.gif" align="left" alt="Pirates">
+				The Pirates are people who don't want to conform to the  'standard' way of 
+				life. The Pirates are believed that their ships are created 
+				by the Teladi has they can have a very similar design.
+				<br><br>
+				Pirate ships are always armed and will attack anyone they dont like. 
+				Pirates will often attack other ships just for cargo. The Pirates would rather 
+				lose a bit of cargo space so they can carry some extra guns.
+				<br><br>
+				<b>Learn more</b>
+				  <ul>
+				    <li><a href="../ships/mod-0/race-8/">Pirate Ships</a></li>
+				    <li><a href="../stations/type.php?id=Pirate">Pirate Stations</a></li>
+				  </ul>
+		<br>
+
+		<!-- ----------------------------------------- -->
+		<!-- Split                                     -->
+		<!-- ----------------------------------------- -->
+
+	<h2>Split</h2>
+	<br>
+
+		<img src="/x2/help/images/logo_split.gif" align="left" alt="Split">
+
+				The split are a warrior race who would rather fight than to die a coward death. 
+				This makes the Split people very wearily of anyone new in their space. To be
+				allowed to dock you will need to show the Split some good will by shooting down
+				some enemy ships. Split ships are often fast and powerful in order to attack
+				thier pray, however Split ships often have lower amounts of shielding. 
+				<br><br>
+				<b>Learn more</b>
+				  <ul>
+				    <li><a href="../ships/mod-0/race-3/">Split Ships</a></li>
+				    <li><a href="../stations/type.php?id=Split">Split Stations</a></li>
+				</ul>
+
+		<br>
+		<!-- ----------------------------------------- -->
+		<!-- Teladi                                    -->
+		<!-- ----------------------------------------- -->
+
+	<h2>Teladi</h2>
+	<br>
+
+		<img src="/x2/help/images/logo_teladi.gif" align="left" alt="Teladi">
+
+				The Teladi are relatively friendly to other races. The Teladi's are very well 
+				known for doing anything which makes them profit. Most Teladi's live to make 
+				profit. Thier snake like voices can put many pilots on edge which is a good thing 
+				as they often cant be trusted.
+				<br><br>
+				Teladi ships normally have a bigger cargo bay so they can make more profit. 
+				Teladi's will often guard their cargo and ships by their lifes.
+
+				<br><br>
+				<b>Learn more</b>
+				  <ul>
+				    <li><a href="../ships/mod-0/race-5/">Teladi Ships</a></li>
+				    <li><a href="../stations/type.php?id=Teladi">Teladi Stations</a></li>
+				</ul>
+
+
+		<!-- ----------------------------------------- -->
+		<!-- Xenon                                     -->
+		<!-- ----------------------------------------- -->
+
+	<h2>Xenon</h2>
+	<br>
+
+		<img src="/x2/help/images/logo_xenon.gif" align="left" alt="Xenon">
+
+				The Xenon are a product of man's creation which turned on them. Xenon's were 
+				used to convert a planet into a livable place for humans to live on. However 
+				after many years, the Xenon developed a problem in their programming and 
+				started to turn on their human masters. One captain managed draw them away from Earth 
+				in his ship named 'AP-Sorja 44' aka AP Gunner. The captian managed to lure the Xenon's 
+				into a unknown jumpgate and blew it up just after they arrived. This was the only 
+				jumpgate back to Earth, trapping both himself and the Xenon's in the X part of the galaxy.
+				<br><br>
+				The captain of the AP Gunner had to crashed land and was never found. It is 
+				believed that the Argon people are descends of that of the Earth people. Much of this story 
+				has been forgotten over the years.
+				<br><br>
+				After the last Xenon war the Argon's nearly lost their homeland, however since then the 
+				Argons have been fighting back winning countless battles agaisnt the Xenon. 
+				The biggest blow to the Xenon was the lost of the Xenon mothership in Brennan's Triumph. 
+				<br><br>
+				Xenon ships are still deadly to this day, and are constantly researching ways to 
+				upgrade ships and weapons. The Xenon's are planning to one day attack the Argon's again.
+				<br><br>
+				<b>Learn more</b>
+				  <ul>
+				    <li><a href="../ships/mod-0/race-6/">Xenon Ships</a></li>
+				    <li><a href="../stations/type.php?id=Xenon">Xenon Stations</a></li>
+				  </ul>
+				<br>
+
+
+		<!-- Content, END -->
+
+			<br style="clear: both;">
+				
+			</div>
+		</div>
+
+
+		<br style="clear: both;">
+		
+
+		<div class="copyright-area">
+			All names, logos, images and trademarks are the property of their respective owners. 
+			Website created, designed and coded by <a href="/contact/" class="contact">Roguey</a> &copy; 2019. 
+			<a href="/privacy-policy/">Privacy policy</a>.<br>			This page loaded in 0.00075 seconds.
+							If you like to help, please consider making <a href="/donation/">donation</a>.<br><br>
+
+		</div>
+	</div>
+</body>
+</html>
